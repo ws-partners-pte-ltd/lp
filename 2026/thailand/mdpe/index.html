@@ -39,7 +39,7 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
+        html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100vw; }
         body {
             font-family: var(--font-main);
             color: var(--text-main);
@@ -547,9 +547,9 @@
         .scroll-box { height: 300px; overflow-y: auto; background: var(--bg-surface); padding: 20px; border: 1px solid #e2e8f0; border-radius: var(--radius-md); font-size: 0.9rem; line-height: 1.8; }
 
         /* [4] Footer: WS PARTNERSブランドカラー（鮮やかな青） */
-        footer { background: #0050b3; color: rgba(255,255,255,0.85); text-align: center; padding: 50px 0; font-size: 0.9rem; }
-        footer a { color: rgba(255,255,255,0.7); transition: color 0.3s; }
-        footer a:hover { color: var(--secondary); }
+        footer { background: #ffffff; color: #555; text-align: center; padding: 50px 0; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+        footer a { color: #666; transition: color 0.3s; }
+        footer a:hover { color: var(--primary); }
 
         /* [6] Back-to-top button */
         .back-to-top {
@@ -678,7 +678,10 @@
         @media (max-width: 768px) {
             .header-top { height: 60px; padding: 0 15px; }
             .logo-group img { height: 35px; }
+            .logo-kawaijuku { display: none !important; }
+            .btn-entry-header { display: none !important; }
             .header-contact-row { display: none; }
+            * { max-width: 100%; }
             .header-bottom { overflow-x: auto; -ms-overflow-style: none; scrollbar-width: none; }
             .header-bottom::-webkit-scrollbar { display: none; }
             .nav-container { justify-content: flex-start; padding: 0 15px; min-width: max-content; gap: 20px; }
@@ -710,8 +713,8 @@
         <div class="header-top">
             <!-- [2] ヘッダー左上ロゴ：河合塾 → WS PARTNERS の2つ横並び -->
             <div class="logo-group">
-                <img src="images/logo_kawaijuku.png" alt="河合塾">
-                <div class="logo-divider"></div>
+                <img src="images/logo_kawaijuku.gif" alt="河合塾" class="logo-kawaijuku">
+                <div class="logo-divider logo-kawaijuku"></div>
                 <img src="images/logo_wsp.png" alt="WS PARTNERS">
             </div>
             <div class="header-action">
@@ -788,17 +791,11 @@
             <div style="max-width: 900px; margin: 0 auto; text-align: center;">
                 <!-- 見出し3つ -->
                 <div class="reveal" style="margin-bottom: 40px;">
-                    <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-bottom: 30px;">
-                        <div style="background: linear-gradient(135deg, var(--primary), #0070f3); color: #fff; padding: 14px 28px; border-radius: 50px; font-size: clamp(0.95rem,1.5vw,1.1rem); font-weight: 900; box-shadow: var(--shadow-md);">
-                            「思った以上に変わってくれた」
-                        </div>
-                        <div style="background: linear-gradient(135deg, var(--primary), #0070f3); color: #fff; padding: 14px 28px; border-radius: 50px; font-size: clamp(0.95rem,1.5vw,1.1rem); font-weight: 900; box-shadow: var(--shadow-md);">
-                            「自分から動くようになって、驚いた」
-                        </div>
-                        <div style="background: linear-gradient(135deg, var(--primary), #0070f3); color: #fff; padding: 14px 28px; border-radius: 50px; font-size: clamp(0.95rem,1.5vw,1.1rem); font-weight: 900; box-shadow: var(--shadow-md);">
-                            「あの彼が、人を育てるようになるなんて思わなかった」
-                        </div>
-                    </div>
+                    <p style="font-size: 1.1rem; font-weight: 700; color: var(--bg-dark); text-align: center; margin-bottom: 30px;">
+                        「思った以上に変わってくれた」<br>
+                        「自分から動くようになって、驚いた」<br>
+                        「あの彼が、人を育てるようになるなんて思わなかった」
+                    </p>
                 </div>
                 <!-- 本文 -->
                 <div class="reveal delay-100" style="background: var(--bg-body); padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); text-align: left; line-height: 1.9; font-size: 1.02rem;">
@@ -808,7 +805,9 @@
                                 <div style="background: var(--primary); color: #fff; padding: 8px 20px; border-radius: 30px; font-size: 0.9rem; font-weight: 900; white-space: nowrap;">ASEAN累計 <strong style="font-size:1.15rem;">1,200名以上</strong> 育成</div>
                                 <div style="background: var(--accent-orange); color: #fff; padding: 8px 20px; border-radius: 30px; font-size: 0.9rem; font-weight: 900; white-space: nowrap;">タイ <strong style="font-size:1.15rem;">500名以上</strong> 育成</div>
                             </div>
-                            <p style="margin-bottom: 0;">ASEANの日系企業においてこれまでに延べ1,200名を超えるローカルマネジャーを育てた、弊社の実践型マネジメント教育、マネジメント・デベロップメント・プログラム（MDP）。タイでは500名以上のマネジャーを育成してまいりました。従来は１社で8〜9カ月間にわたり継続するプログラムでしたが、このたび「エッセンシャル版」として、お１人様でも参加しやすい短期プログラムを開講いたします（タイ語、オンライン方式）。マネジメントに重要なエッセンスを８回のプログラムに凝縮しました。昇格者の教育や、小〜中規模の拠点のローカルマネジャー教育にも最適です。</p>
+                            <p style="margin-bottom: 1em;">弊社の実践型マネジメント教育「マネジメント・デベロップメント・プログラム（MDP）」は、ASEANの日系企業で延べ1,200名以上、タイで500名以上のローカルマネジャーを育成してきました。</p>
+                            <p style="margin-bottom: 1em;">このたび「エッセンシャル版」として、従来の１社完結型（8〜9カ月）から、お１人様でも参加しやすい短期プログラムを開講いたします（タイ語・オンライン方式）。</p>
+                            <p style="margin-bottom: 0;">マネジメントに重要なエッセンスを全8回に凝縮。昇格者の教育や、小〜中規模の拠点のローカルマネジャー教育にも最適です。</p>
                         </div>
                     </div>
                 </div>
@@ -858,10 +857,8 @@
                 </p>
                 <p>
                     今後の貴社を支えるタイ人マネジャー・リーダー候補者を育てます。<br>
-                    ぜひこの機会にお申し込みください。<br>
-                    プログラムの特徴や、内容・日時・費用などは以下をご覧ください。
+                    ぜひこの機会にお申し込みください。
                 </p>
-                <!-- [9] タイ語サイトテキスト追加 -->
                 <p style="margin-top: 12px; color: var(--primary); font-weight: 700; font-size: 0.95rem;">
                     タイ人の視点で書かれた、タイ語サイトからもお申し込みいただけます。
                 </p>
@@ -918,12 +915,6 @@
 
             <div class="reveal" style="text-align: center; margin-bottom: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
                 <img src="images/workshop_scene.jpg" alt="研修風景" class="section-image" style="margin-left: auto; margin-right: auto;">
-                <!-- [19] 文字化け修正 -->
-                <p style="font-size: 1.1rem; font-weight: 700; color: var(--bg-dark);">
-                    「最近、自分から打合せをセットして動くようになった。だいぶ主体的になったと思う。」<br>
-                    「研修後、部下の面倒を見るようになった。つい昨日も教えていたのを見た」<br>
-                    「急に会議で意見や数字を出してくれるようになり『おっ』と思った」
-                </p>
             </div>
 
             <div class="value-grid" style="max-width: 900px; margin: 0 auto;">
@@ -972,7 +963,7 @@
                 </div>
                 <div class="interview-card">
                     <blockquote>「複数名を同時に受講させたことで、共通言語が生まれました。マネジャー同士が研修内容をもとに話し合うシーンが増え、組織としての成長を感じています。」</blockquote>
-                    <p class="interviewee">物流業／Country Manager（日本人）</p>
+                    <p class="interviewee">物流業／Managing Director（日本人）</p>
                 </div>
             </div>
         </div>
@@ -1139,7 +1130,7 @@
                         <li style="margin-bottom: 8px; list-style-type: none;">📌 <strong>形式：</strong>オンライン（Zoom使用）</li>
                         <li style="margin-bottom: 8px; list-style-type: none;">📌 <strong>実施言語：</strong>タイ語</li>
                         <li style="margin-bottom: 8px; list-style-type: none;">📌 <strong>定員：</strong>1クラス8名限定 <span style="color: var(--accent-orange); font-weight: 700;">（定員次第締切）</span></li>
-                        <li style="margin-bottom: 8px; list-style-type: none;">📌 <strong>1社あたりの参加人数：</strong>最大3名まで。4名以上は「個社別研修」にてご対応。</li>
+                        <li style="margin-bottom: 8px; list-style-type: none;">📌 <strong>1社あたりの参加人数：</strong>最大3名まで。4名以上は「個社別研修」にてご対応。お気軽にお問合せください。</li>
                         <li style="list-style-type: none;">📌 <strong>修了証：</strong>全回分の宿題提出＋事後サーベイ回答で発行</li>
                     </ul>
                 </div>
@@ -1486,16 +1477,16 @@
         <div class="container">
             <!-- [24] 3社ロゴ：河合塾 → WS PARTNERS → Will Seed -->
             <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-bottom: 25px; flex-wrap: wrap;">
-                <img src="images/logo_kawaijuku.png" alt="河合塾" style="height: 40px; object-fit: contain; opacity: 0.9;">
-                <img src="images/logo_wsp.png" alt="WS PARTNERS" style="height: 40px; object-fit: contain; opacity: 0.9;">
-                <img src="images/logo_willseed.png" alt="株式会社ウィル・シード" style="height: 40px; object-fit: contain; opacity: 0.9;">
+                <img src="images/logo_kawaijuku.gif" alt="河合塾" style="height: 40px; object-fit: contain;">
+                <img src="images/logo_wsp.png" alt="WS PARTNERS" style="height: 40px; object-fit: contain;">
+                <img src="images/logo_willseed.png" alt="株式会社ウィル・シード" style="height: 40px; object-fit: contain;">
             </div>
             <p style="margin-bottom: 15px;">
                 <a href="https://www.ws-partners.com.sg/" target="_blank" style="margin: 0 10px;">会社サイト</a>
                 <a href="mailto:support@ws-partners.com.sg" style="margin: 0 10px;">お問い合わせ</a>
             </p>
-            <p style="color: rgba(255,255,255,0.9);">© 2026 WS PARTNERS PTE LTD. All Rights Reserved.</p>
-            <p style="font-size: 0.8rem; margin-top: 10px; color: rgba(255,255,255,0.5);">1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989</p>
+            <p style="color: #333;">© 2026 WS PARTNERS PTE LTD. All Rights Reserved.</p>
+            <p style="font-size: 0.8rem; margin-top: 10px; color: #999;">1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989</p>
         </div>
     </footer>
 
