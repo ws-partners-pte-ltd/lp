@@ -1675,16 +1675,48 @@
                 // ===================================
                 // フォーム送信検知 → 完了メッセージ表示
                 // ===================================
-                window.addEventListener('message', function(e) {
-                    if (e.data === 'formResponse') {
-                        var msg = document.getElementById('form-submitted-msg');
-                        if (msg) {
-                            msg.style.display = 'block';
-                            setTimeout(function() {
-                                msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                            }, 300);
-                        }
+                var formSubmitted = false;
+
+                function showFormConfirmation() {
+                    if (formSubmitted) return;
+                    formSubmitted = true;
+                    // iframeを非表示にして完了メッセージを表示
+                    iframe.style.display = 'none';
+                    var msg = document.getElementById('form-submitted-msg');
+                    if (msg) {
+                        msg.style.display = 'block';
+                        // フォームがあった位置へスムーズスクロール
+                        setTimeout(function() {
+                            msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 100);
                     }
+                }
+
+                // 方法1: iframeのloadイベント
+                // Google Formsは送信完了後にiframeをリロードするため、
+                // 2回目のloadイベント = フォーム送信完了
+                var iframeLoadCount = 0;
+                iframe.addEventListener('load', function() {
+                    iframeLoadCount++;
+                    if (iframeLoadCount >= 2) {
+                        showFormConfirmation();
+                    }
+                });
+
+                // 方法2: Google FormsのpostMessageをフォールバックとして使用
+                // （フォームの高さが大幅に減少 = 確認ページへ切り替わった）
+                window.addEventListener('message', function(e) {
+                    // 旧来の 'formResponse' 文字列にも対応
+                    if (e.data === 'formResponse') {
+                        showFormConfirmation();
+                        return;
+                    }
+                    try {
+                        var data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+                        if (data && typeof data.height === 'number' && iframeLoadCount >= 1 && data.height < 500) {
+                            showFormConfirmation();
+                        }
+                    } catch(err) {}
                 });
 
             } else {
