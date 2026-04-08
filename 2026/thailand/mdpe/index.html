@@ -1549,6 +1549,15 @@
                 iframe.style.background = 'transparent';
                 iframe.innerHTML = '読み込み中…';
                 container.appendChild(iframe);
+
+                // フォールバックリンク（Edge等でiframeが表示されない場合の案内）
+                var fallback = document.createElement('div');
+                fallback.style.cssText = 'text-align:center; margin-top:20px; padding:18px 24px; background:#f4f7f9; border-radius:12px; border:1px solid #dde3ea;';
+                fallback.innerHTML =
+                    '<p style="color:#4a5568; font-size:0.92rem; margin-bottom:12px;">&#x26A0;&#xFE0F; フォームが表示されない場合（Edge・Safari等）は、下のボタンからお申し込みください。</p>' +
+                    '<a href="' + GOOGLE_FORM_URL.replace('?embedded=true', '') + '" target="_blank" rel="noopener" ' +
+                    'style="display:inline-block; background:#f39c12; color:#fff; font-weight:700; padding:12px 32px; border-radius:8px; text-decoration:none; font-size:1rem;">&#x1F4DD; 申込フォームを別タブで開く</a>';
+                container.appendChild(fallback);
             } else {
                 container.innerHTML =
                     '<div class="form-placeholder">' +
