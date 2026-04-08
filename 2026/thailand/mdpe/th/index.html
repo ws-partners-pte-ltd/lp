@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TLGVMTDZ');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมพัฒนาผู้จัดการชาวไทย MDP-Essentials พ.ค.–ก.ค. 2026 | WS PARTNERS</title>
+    <meta name="description" content="โปรแกรมพัฒนาทักษะการบริหารสำหรับบริษัทญี่ปุ่นในไทย สอนเป็นภาษาไทย ออนไลน์ 8 ครั้ง เริ่ม 28 พฤษภาคม 2026">
+    <link rel="icon" href="../images/favicon_wsp_logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* =========================================
+           Variables & Theme Settings
+        ========================================= */
+        :root {
+            --bg-body: #f4f7f9;
+            --bg-surface: #ffffff;
+            --bg-dark: #041434;
+            --primary: #0050b3;
+            --secondary: #00dfd8;
+            --accent-orange: #f39c12;
+            --accent-orange-dark: #d35400;
+            --accent-gradient: linear-gradient(135deg, var(--primary) 0%, #0070f3 100%);
+            --text-main: #1a202c;
+            --text-muted: #4a5568;
+            --text-light: #a0aec0;
+            --text-inverse: #ffffff;
+            --shadow-sm: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.15), 0 10px 10px -5px rgba(0,0,0,0.04);
+            --shadow-orange: 0 10px 20px rgba(243,156,18,0.3);
+            --shadow-hover: 0 25px 35px -5px rgba(0,0,0,0.2);
+            --header-top-height: 70px;
+            --header-bottom-height: 45px;
+            --header-total-height: calc(var(--header-top-height) + var(--header-bottom-height));
+            --font-main: 'Noto Sans Thai', 'Noto Sans JP', sans-serif;
+            --radius-lg: 24px;
+            --radius-md: 16px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; max-width: 100%; }
+        html { scroll-behavior: smooth; overflow-x: hidden; }
+        body {
+            font-family: var(--font-main);
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            line-height: 1.8;
+            overflow-x: hidden;
+            width: 100%;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 5%;
+            position: relative;
+            z-index: 2;
+        }
+        section { padding: 80px 0; position: relative; }
+
+        .gradient-text {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        .sec-title {
+            font-size: 2.2rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 0.02em;
+            color: var(--text-main);
+            line-height: 1.4;
+        }
+        .sec-title span.en {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+        .sec-title.inverse { color: var(--text-inverse); }
+        .sec-title.inverse span.en { color: var(--secondary); }
+
+        /* =========================================
+           Animations
+        ========================================= */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1s cubic-bezier(0.16,1,0.3,1), transform 1s cubic-bezier(0.16,1,0.3,1);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 1s cubic-bezier(0.16,1,0.3,1), transform 1s cubic-bezier(0.16,1,0.3,1);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: opacity 1s cubic-bezier(0.16,1,0.3,1), transform 1s cubic-bezier(0.16,1,0.3,1);
+        }
+        .reveal.is-visible, .reveal-left.is-visible, .reveal-right.is-visible {
+            opacity: 1;
+            transform: translate(0,0);
+        }
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+        .delay-300 { transition-delay: 0.3s; }
+
+        /* =========================================
+           Header
+        ========================================= */
+        .site-header {
+            position: fixed;
+            top: 0; left: 0; width: 100%;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        .header-top {
+            background: var(--bg-surface);
+            height: var(--header-top-height);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+        }
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .logo-group img {
+            height: 45px;
+            object-fit: contain;
+        }
+        .logo-divider {
+            width: 1px;
+            height: 30px;
+            background: #ddd;
+        }
+        .header-action {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .header-contact-row {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .header-contact-row .phone {
+            font-weight: 900;
+            font-size: 1.2rem;
+            color: var(--text-main);
+            line-height: 1;
+            margin-bottom: 2px;
+        }
+        .header-contact-row .time {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            line-height: 1;
+        }
+        .header-buttons { display: flex; height: 100%; }
+        .btn-lang {
+            display: flex;
+            align-items: center;
+            background-color: #e74c3c;
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 0 20px;
+            height: 45px;
+            transition: all 0.3s;
+        }
+        .btn-lang:hover { background-color: #c0392b; }
+        .btn-entry-header {
+            display: flex;
+            align-items: center;
+            background: var(--accent-orange);
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 0 25px;
+            height: 45px;
+            transition: all 0.3s;
+        }
+        .btn-entry-header:hover { background-color: var(--accent-orange-dark); }
+
+        .header-bottom {
+            background: #0050b3;
+            height: var(--header-bottom-height);
+            display: flex;
+            align-items: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+        }
+        .nav-container a {
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 5px 0;
+            position: relative;
+        }
+        .nav-container a::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 0; height: 2px;
+            background-color: var(--secondary);
+            transition: width 0.3s ease;
+        }
+        .nav-container a:hover::after { width: 100%; }
+
+        /* =========================================
+           Buttons
+        ========================================= */
+        .btn-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-dark) 100%);
+            color: #fff;
+            font-size: clamp(1rem,2vw,1.15rem);
+            font-weight: 700;
+            padding: clamp(10px,2vh,15px) clamp(25px,4vw,45px);
+            border-radius: 4px;
+            box-shadow: var(--shadow-orange);
+            transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
+            cursor: pointer;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.02em;
+        }
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(243,156,18,0.4);
+        }
+        .btn-cta::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 50%; height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-20deg);
+            animation: shine 4s infinite;
+        }
+        @keyframes shine {
+            0% { left: -100%; }
+            20% { left: 200%; }
+            100% { left: 200%; }
+        }
+
+        /* =========================================
+           Hero Section
+        ========================================= */
+        .hero {
+            background-image: url('../images/hero_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: var(--header-total-height);
+            padding-bottom: 0;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to right, rgba(0,30,80,0.65) 0%, rgba(0,30,80,0.25) 100%);
+            z-index: 1;
+        }
+        .hero-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            z-index: 2;
+        }
+        .hero-text-content { flex: 1; max-width: 55%; }
+        .hero-subtitle {
+            font-size: clamp(0.95rem,1.5vw,1.1rem);
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .hero-title {
+            font-size: clamp(1.8rem,3.5vw,2.8rem);
+            font-weight: 900;
+            color: var(--text-inverse);
+            line-height: 1.25;
+            margin-bottom: 30px;
+            letter-spacing: 0.02em;
+        }
+        .hero-info-box {
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: var(--radius-md);
+            padding: 20px 25px;
+            margin-bottom: 30px;
+        }
+        .hero-info-box .lead {
+            font-size: 1.05rem;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .hero-info-box .date {
+            font-size: clamp(1rem,1.8vw,1.2rem);
+            color: var(--secondary);
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+        .hero-info-box .deadline {
+            font-size: 0.9rem;
+            color: #ffd700;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .hero-info-box .note {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.6;
+        }
+        .hero-visual-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+            height: auto;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-images-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+        }
+        .img-collage {
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            object-fit: cover;
+        }
+        .img-online {
+            width: 100%;
+            height: 260px;
+        }
+        .img-instructor {
+            width: 55%;
+            height: 160px;
+            position: absolute;
+            bottom: -40px;
+            right: -20px;
+            border: 4px solid #fff;
+        }
+        .hero-badge-circle {
+            position: absolute;
+            bottom: -10%;
+            left: -5%;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-orange-dark));
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-orange);
+            border: 3px solid #fff;
+        }
+        .badge-en {
+            font-size: 0.65rem;
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: 0.1em;
+        }
+        .badge-ja {
+            font-size: 0.75rem;
+            font-weight: 900;
+            color: #fff;
+            text-align: center;
+            line-height: 1.2;
+        }
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.7rem;
+            letter-spacing: 0.3em;
+            z-index: 2;
+            animation: scrollBounce 2s infinite;
+        }
+        .scroll-indicator::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 40px;
+            background: rgba(255,255,255,0.5);
+            margin: 5px auto 0;
+            animation: scrollBounce 2s infinite;
+        }
+        @keyframes scrollBounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(8px); }
+        }
+
+        /* =========================================
+           Sections: Issues / Value
+        ========================================= */
+        .issue-section { background-color: var(--bg-body); }
+        .issue-box {
+            background: var(--bg-surface);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-md);
+        }
+        .issue-checklist { padding: 0; }
+        .issue-checklist li {
+            padding: 12px 0 12px 35px;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            position: relative;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        .issue-checklist li:last-child { border-bottom: none; }
+        .issue-checklist li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 900;
+            font-size: 1.1rem;
+        }
+        .value-section { background-color: var(--bg-surface); }
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .value-card {
+            background: var(--bg-body);
+            border-radius: var(--radius-md);
+            padding: 35px;
+            box-shadow: var(--shadow-sm);
+        }
+        .value-num {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            letter-spacing: 0.05em;
+        }
+        /* =========================================
+           Audience Sections (①②③)
+        ========================================= */
+        .audience-section {
+            background: var(--bg-surface);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 30px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .audience-section:last-child { margin-bottom: 0; }
+        .audience-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 900;
+            border-radius: 50%;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        .audience-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .audience-title h3 {
+            font-size: 1.15rem;
+            font-weight: 900;
+            color: var(--bg-dark);
+        }
+        .audience-lead {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+            padding-left: 48px;
+        }
+        .audience-stat {
+            display: inline-block;
+            background: rgba(0,80,179,0.08);
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 14px;
+            margin-left: 48px;
+        }
+        .audience-list {
+            padding-left: 48px;
+        }
+        .audience-list li {
+            padding: 8px 0 8px 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            position: relative;
+            font-size: 0.97rem;
+            line-height: 1.7;
+        }
+        .audience-list li:last-child { border-bottom: none; }
+        .audience-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent-orange);
+            font-weight: 900;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        /* =========================================
+           Interview
+        ========================================= */
+        .interview-section { background-color: var(--bg-body); }
+        .interview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .interview-card {
+            background: var(--bg-surface);
+            border-radius: var(--radius-md);
+            padding: 30px;
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid var(--secondary);
+        }
+        .interview-card blockquote {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        .interview-card .interviewee {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+
+        /* =========================================
+           CTA Banner
+        ========================================= */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #0a1a3e 100%);
+            padding: 60px 0;
+        }
+        .cta-banner-inner {
+            text-align: center;
+        }
+        .cta-banner h2 {
+            font-size: clamp(1.3rem,2.5vw,1.8rem);
+            font-weight: 900;
+            color: var(--text-inverse);
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        /* =========================================
+           Features
+        ========================================= */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .feature-card {
+            background: var(--bg-surface);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+        .feature-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .feature-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 20px 25px 12px;
+            color: var(--bg-dark);
+            line-height: 1.5;
+        }
+        .feature-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin: 0 25px 25px;
+            line-height: 1.8;
+        }
+        .independent-box {
+            background: var(--bg-surface);
+            border-radius: var(--radius-lg);
+            padding: 35px 40px;
+            box-shadow: var(--shadow-md);
+            border-top: 4px solid var(--secondary);
+        }
+
+        /* =========================================
+           Domain Grid
+        ========================================= */
+        .domain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .domain-card {
+            background: var(--bg-surface);
+            border-radius: var(--radius-md);
+            padding: 30px 25px;
+            box-shadow: var(--shadow-sm);
+            border-top: 4px solid var(--primary);
+            text-align: center;
+        }
+        .domain-num {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 0.15em;
+            margin-bottom: 10px;
+        }
+        .domain-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--bg-dark);
+            line-height: 1.5;
+        }
+
+        /* =========================================
+           Program / Timeline
+        ========================================= */
+        .program-section {
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #0a1a3e 100%);
+        }
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0; bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--secondary), var(--primary));
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 20px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--secondary);
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 3px var(--secondary);
+        }
+        .timeline-content {
+            background: rgba(255,255,255,0.05);
+            border-radius: var(--radius-md);
+            padding: 25px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s;
+        }
+        .timeline-content:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        .part-label {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--bg-dark);
+            font-size: 0.75rem;
+            font-weight: 900;
+            padding: 3px 12px;
+            border-radius: 30px;
+            margin-bottom: 8px;
+        }
+        .date-label {
+            display: block;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 8px;
+        }
+        .timeline-content h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-inverse);
+            margin-bottom: 8px;
+        }
+        .session-desc {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.7;
+        }
+
+        /* =========================================
+           Speakers
+        ========================================= */
+        .speakers-section { background-color: var(--bg-body); }
+        .speaker-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            background: var(--bg-surface);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+        .speaker-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--secondary);
+            flex-shrink: 0;
+        }
+
+        /* =========================================
+           Company
+        ========================================= */
+        .company-section { background-color: var(--bg-surface); }
+        .company-box {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .company-img {
+            width: 40%;
+            border-radius: var(--radius-md);
+            object-fit: cover;
+        }
+        .company-info { flex: 1; }
+
+        /* =========================================
+           Info Box / Scroll Box / FAQ
+        ========================================= */
+        .info-box {
+            background: var(--bg-surface);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-md);
+            border-top: 4px solid var(--primary);
+        }
+        .scroll-box {
+            height: 300px;
+            overflow-y: auto;
+            background: var(--bg-surface);
+            padding: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e2e8f0;
+            padding: 20px 0;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-q {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        .faq-a {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+
+        /* =========================================
+           Entry / Form
+        ========================================= */
+        .entry-section { background-color: var(--bg-body); }
+        .form-wrapper {
+            background: var(--bg-surface);
+            padding: 50px 60px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .form-placeholder {
+            text-align: center;
+            padding: 60px 40px;
+            background: var(--bg-body);
+            border-radius: var(--radius-md);
+        }
+
+        /* =========================================
+           Section Image
+        ========================================= */
+        .section-image {
+            width: 100%;
+            max-width: 800px;
+            border-radius: var(--radius-md);
+            object-fit: cover;
+        }
+
+        /* =========================================
+           Footer
+        ========================================= */
+        footer {
+            background: #0050b3;
+            color: rgba(255,255,255,0.85);
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.85rem;
+        }
+        footer a { color: rgba(255,255,255,0.85); transition: color 0.3s; }
+        footer a:hover { color: var(--secondary); }
+
+        /* =========================================
+           Back to Top
+        ========================================= */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.3rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s;
+            z-index: 999;
+            box-shadow: var(--shadow-md);
+        }
+        .back-to-top.visible { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background: var(--accent-orange); transform: translateY(-3px); }
+
+        /* =========================================
+           Hamburger
+        ========================================= */
+        .hamburger-btn {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 26px;
+            height: 20px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin-left: 10px;
+            flex-shrink: 0;
+        }
+        .hamburger-btn span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: var(--text-main);
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        .hamburger-btn.active span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
+        .hamburger-btn.active span:nth-child(2) { opacity: 0; }
+        .hamburger-btn.active span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+
+        /* ボタンバー（モバイル専用） */
+        .header-btn-bar { display: none; }
+
+        @media (max-width: 768px) {
+            .header-top { height: 60px; padding: 0 0 0 15px; }
+            .logo-group img { height: 35px; }
+            .logo-kawaijuku { display: none !important; }
+            .header-action { align-self: stretch; gap: 0; }
+            .header-buttons { display: none; }
+            .hamburger-btn { display: flex; margin-right: 14px; }
+            .header-contact-row { display: none; }
+            .header-btn-bar {
+                display: flex;
+                width: 100%;
+                height: 44px;
+                position: absolute;
+                top: 60px;
+                left: 0; right: 0;
+                z-index: 1000;
+            }
+            .header-btn-bar a {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.82rem;
+                font-weight: 700;
+                text-decoration: none;
+                border-radius: 0;
+            }
+            .header-btn-bar .btn-bar-lang {
+                background-color: #e74c3c;
+                color: #fff;
+                border-right: 1px solid rgba(255,255,255,0.3);
+            }
+            .header-btn-bar .btn-bar-entry {
+                background: var(--accent-orange);
+                color: #fff;
+            }
+            .header-bottom {
+                display: none;
+                position: absolute;
+                top: calc(60px + 44px);
+                left: 0; right: 0;
+                height: auto;
+                z-index: 999;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            }
+            .header-bottom.menu-open { display: flex; }
+            .nav-container {
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 0;
+                gap: 0;
+                min-width: auto;
+                width: 100%;
+            }
+            .nav-container a {
+                padding: 14px 20px;
+                border-bottom: 1px solid rgba(255,255,255,0.15);
+                font-size: 0.95rem;
+                width: 100%;
+            }
+            .hero { padding-top: calc(60px + 44px + 30px); padding-bottom: 80px; height: auto; min-height: 100vh; }
+            .hero-container { flex-direction: column; text-align: center; }
+            .hero-text-content { max-width: 100%; transform: none; }
+            .hero-info-box { text-align: left; padding: 20px; }
+            .hero-visual-content { min-height: 350px; height: auto; width: 100%; margin-top: 20px; transform: none; }
+            .hero-images-wrapper { max-width: 400px; }
+            .hero-badge-circle { right: 0; bottom: -5%; }
+            .issue-box { padding: 30px 20px; }
+            .audience-section { padding: 30px 20px; }
+            .audience-list { padding-left: 24px; }
+            .audience-stat { margin-left: 0; }
+            .audience-lead { padding-left: 0; }
+            .value-card { padding: 30px 20px; }
+            .timeline { padding-left: 20px; }
+            .speaker-card { flex-direction: column; align-items: center; text-align: center; }
+            .company-box { flex-direction: column; gap: 30px; }
+            .company-img, .company-info { width: 100%; }
+            .form-wrapper { padding: 20px; }
+            .sec-title { font-size: 1.7rem; }
+            .back-to-top { bottom: 20px; right: 15px; width: 44px; height: 44px; font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLGVMTDZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- =========================================
+         Header
+    ========================================= -->
+    <header class="site-header">
+        <div class="header-top">
+            <div class="logo-group">
+                <img src="../images/logo_kawaijuku.png" alt="Kawaijuku" class="logo-kawaijuku">
+                <div class="logo-divider logo-kawaijuku"></div>
+                <img src="../images/logo_wsp.png" alt="WS PARTNERS">
+            </div>
+            <div class="header-action">
+                <div class="header-contact-row">
+                    <span class="phone">+65-6978-4066</span>
+                    <span class="time">เวลาทำการ: จันทร์–ศุกร์ 9:00–18:00 (เวลาสิงคโปร์)</span>
+                </div>
+                <div class="header-buttons">
+                    <a href="../ja/" class="btn-lang">日本語版はこちら</a>
+                    <a href="#apply" class="btn-entry-header">สมัครเข้าร่วม</a>
+                </div>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="เปิดเมนู">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <!-- โมบายล์ปุ่มบาร์ -->
+        <div class="header-btn-bar">
+            <a href="../ja/" class="btn-bar-lang">日本語版はこちら</a>
+            <a href="#apply" class="btn-bar-entry">สมัครเข้าร่วม</a>
+        </div>
+        <nav class="header-bottom" id="mobile-nav">
+            <div class="container nav-container">
+                <a href="#features">คุณสมบัติโปรแกรม</a>
+                <a href="#program">เนื้อหาโปรแกรม</a>
+                <a href="#instructor">วิทยากร</a>
+                <a href="#pricing">ค่าธรรมเนียม</a>
+                <a href="#company">เกี่ยวกับเรา</a>
+                <a href="#faq">FAQ</a>
+                <a href="#cancel">นโยบายการยกเลิก</a>
+                <a href="#apply">สมัครเรียน</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- =========================================
+         Hero
+    ========================================= -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+
+            <div class="hero-text-content reveal-left">
+                <h2 class="hero-subtitle">โปรแกรมพัฒนาทักษะการบริหารสำหรับผู้จัดการชาวไทย</h2>
+                <h1 class="hero-title">Management Development Program<br>（Essential Edition）</h1>
+
+                <div class="hero-info-box">
+                    <p class="lead">เราพัฒนาผู้จัดการชาวไทยที่จะเป็นกำลังสำคัญขององค์กรของคุณ</p>
+                    <p class="date">เริ่ม 28 พฤษภาคม 2026<br>ทุกสัปดาห์ รวม 8 ครั้ง</p>
+                    <p class="deadline">🗓 ปิดรับสมัคร: 14 พฤษภาคม 2026 (พฤหัสบดี)</p>
+                    <p class="note">
+                        ※ จำเป็นต้องเข้าร่วมต่อเนื่องทุกสัปดาห์<br>
+                        ※ รายละเอียดโปรแกรมเพิ่มเติมด้านล่าง
+                    </p>
+                </div>
+
+                <a href="#apply" class="btn-cta">สมัครเข้าร่วมโปรแกรม</a>
+            </div>
+
+            <div class="hero-visual-content reveal-right">
+                <div class="hero-images-wrapper">
+                    <img src="../images/online_training.jpg" alt="การอบรมออนไลน์" class="img-collage img-online">
+                    <img src="../images/instructor_yaninee.jpg" alt="Dr. Yaninee วิทยากร" class="img-collage img-instructor">
+                    <div class="hero-badge-circle">
+                        <span class="badge-en">ONLINE</span>
+                        <span class="badge-ja">สอนเป็น<br>ภาษาไทย</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="scroll-indicator">SCROLL</div>
+    </section>
+
+    <!-- =========================================
+         MDP ผลงานและประวัติ
+    ========================================= -->
+    <section style="padding: 80px 0; background: var(--bg-surface);">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <div class="reveal" style="margin-bottom: 40px;">
+                    <p style="font-size: 1.1rem; font-weight: 700; color: var(--bg-dark); text-align: center; margin-bottom: 30px;">
+                        "เปลี่ยนแปลงไปมากกว่าที่คาดไว้"<br>
+                        "เริ่มลงมือทำด้วยตัวเองโดยไม่ต้องรอคำสั่ง ทำให้แปลกใจมาก"<br>
+                        "ไม่เคยคิดว่าเขาจะกลายมาเป็นคนที่พัฒนาคนอื่นได้"
+                    </p>
+                </div>
+                <div class="reveal delay-100" style="background: var(--bg-body); padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); text-align: left; line-height: 1.9; font-size: 1.02rem;">
+                    <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+                        <div style="flex: 1; min-width: 280px;">
+                            <div style="display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap;">
+                                <div style="background: var(--primary); color: #fff; padding: 8px 20px; border-radius: 30px; font-size: 0.9rem; font-weight: 900; white-space: nowrap;">ASEAN รวมกว่า <strong style="font-size:1.15rem;">1,200 คน</strong></div>
+                                <div style="background: var(--accent-orange); color: #fff; padding: 8px 20px; border-radius: 30px; font-size: 0.9rem; font-weight: 900; white-space: nowrap;">ไทย กว่า <strong style="font-size:1.15rem;">500 คน</strong></div>
+                            </div>
+                            <p style="margin-bottom: 1em;">โปรแกรมพัฒนาการบริหาร "Management Development Program (MDP)" ของเรา ได้พัฒนาผู้จัดการท้องถิ่นในบริษัทญี่ปุ่นทั่ว ASEAN มาแล้วกว่า 1,200 คน และในประเทศไทยมากกว่า 500 คน</p>
+                            <p style="margin-bottom: 1em;">ในครั้งนี้ เราเปิดตัว "Essential Edition" ซึ่งเป็นโปรแกรมระยะสั้นที่เหมาะสำหรับผู้เข้าร่วมแบบรายบุคคล (สอนเป็นภาษาไทย รูปแบบออนไลน์) จากเดิมที่เป็นโปรแกรมเฉพาะบริษัท 8–9 เดือน</p>
+                            <p style="margin-bottom: 0;">สรุปสาระสำคัญของการบริหารใน 8 ครั้ง เหมาะทั้งสำหรับการพัฒนาพนักงานที่เพิ่งได้รับการเลื่อนตำแหน่ง และผู้จัดการท้องถิ่นในสาขาขนาดเล็กถึงกลาง</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         การให้คำปรึกษาฟรี
+    ========================================= -->
+    <section style="padding: 80px 0 20px;">
+        <div class="container reveal">
+            <div style="background: var(--bg-surface); border: none; box-shadow: var(--shadow-lg); padding: 40px; border-radius: var(--radius-lg); position: relative; overflow: hidden; max-width: 900px; margin: 0 auto;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 6px; background: var(--accent-gradient);"></div>
+                <h3 style="color: var(--bg-dark); font-size: 1.5rem; margin-bottom: 20px; font-weight: 900; text-align: center;">เปิดให้คำปรึกษาออนไลน์ฟรี (รายบุคคล)</h3>
+                <p style="font-size: 1.05rem; margin-bottom: 30px; color: var(--text-main); text-align: center;">
+                    สำหรับบริษัทที่ต้องการตรวจสอบรายละเอียดก่อนตัดสินใจ เราจัดให้คำปรึกษาออนไลน์รายบุคคล<br>
+                    สามารถดูเวลาว่างแบบเรียลไทม์และจองได้ทันที
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: stretch;">
+                    <div style="flex: 1; min-width: 280px; background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                        <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 15px; font-weight: 700;">รายละเอียด</h4>
+                        <ul style="padding-left: 0; margin-bottom: 0;">
+                            <li style="margin-bottom: 10px;"><strong>รูปแบบ：</strong>ออนไลน์ (Zoom)</li>
+                            <li style="margin-bottom: 10px;"><strong>เวลา：</strong>ประมาณ 30 นาที</li>
+                            <li><strong>ค่าใช้จ่าย：</strong><span style="color: var(--accent-orange); font-weight: 700;">ฟรี</span></li>
+                        </ul>
+                    </div>
+                    <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: center; background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                        <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 15px; font-weight: 700;">วิธีการจอง</h4>
+                        <p style="margin-bottom: 20px; font-size: 0.95rem;">กรุณาเลือกวันและเวลาที่สะดวกผ่านลิงก์ด้านล่าง</p>
+                        <a href="https://meetings-na2.hubspot.com/wataru-taya/meeting?uuid=08620425-1d7e-414a-98cd-7500ce319c01" target="_blank" class="btn-cta" style="padding: 12px 20px; font-size: 1rem; width: 100%;">จองการให้คำปรึกษา</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         ประกาศ / ภาพรวม
+    ========================================= -->
+    <section style="padding: 40px 0 0;">
+        <div class="container reveal">
+            <div class="info-box" style="text-align: center; max-width: 900px; margin: 0 auto;">
+                <p style="font-weight: 700; font-size: 1.1rem; margin-bottom: 15px;">
+                    โปรแกรมพัฒนาผู้นำ "MDP-Essentials" โดย WS PARTNERS<br>ที่มีประสบการณ์พัฒนาผู้จัดการชาวไทยมาอย่างยาวนาน พร้อมเปิดอีกครั้งแล้ว!
+                </p>
+                <p>
+                    พัฒนาผู้จัดการและผู้นำชาวไทยที่จะเป็นกำลังสำคัญขององค์กรของคุณในอนาคต<br>
+                    อย่าพลาดโอกาสนี้ สมัครได้เลย
+                </p>
+                <p style="margin-top: 12px; color: var(--primary); font-weight: 700; font-size: 0.95rem;">
+                    สามารถสมัครผ่านเว็บไซต์ภาษาญี่ปุ่นได้เช่นกัน สำหรับผู้ดูแลโครงการชาวญี่ปุ่น
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         ปัญหาและความต้องการ (①②③)
+    ========================================= -->
+    <section class="issue-section" style="background-color: var(--bg-body);">
+        <div class="container">
+            <h2 class="sec-title reveal">
+                <span class="en">For You</span>
+                คุณมีปัญหาเหล่านี้อยู่ไหม?
+            </h2>
+
+            <!-- ① HR Manager -->
+            <div class="audience-section reveal delay-100">
+                <div class="audience-title">
+                    <span class="audience-num">①</span>
+                    <h3>สำหรับผู้รับผิดชอบด้านทรัพยากรบุคคล</h3>
+                </div>
+                <p class="audience-lead">ในฐานะผู้ดูแลด้านการพัฒนาบุคลากร คุณมีความคิดเหล่านี้หรือไม่?</p>
+                <ul class="audience-list">
+                    <li>กำลังมองหาโปรแกรมฝึกอบรมการบริหาร แต่ยังหาไม่พบโปรแกรมที่มีประสิทธิภาพจริงๆ</li>
+                    <li>ต้องการวิทยากรชาวไทยที่เข้าใจบริบทองค์กรและสามารถสอนได้อย่างเข้าถึงจิตใจผู้เรียน</li>
+                    <li>ต้องการโปรแกรมที่เหมาะสมกับบริษัทญี่ปุ่น และให้ผลลัพธ์ที่ผู้บริหารชาวญี่ปุ่นพึงพอใจด้วย</li>
+                </ul>
+            </div>
+
+            <!-- ② Manager / Aspiring Manager -->
+            <div class="audience-section reveal delay-200">
+                <div class="audience-title">
+                    <span class="audience-num">②</span>
+                    <h3>สำหรับผู้จัดการ หรือผู้ที่กำลังจะก้าวขึ้นเป็นผู้จัดการ</h3>
+                </div>
+                <p class="audience-stat">77% ของบริษัทญี่ปุ่น รู้สึกว่ามีข้อจำกัดด้านบุคลากรระดับบริหาร (จากการสำรวจของเรา)</p>
+                <p class="audience-lead">คุณต้องการเติบโตผ่านการฝึกอบรมของเราหรือไม่?</p>
+                <ul class="audience-list">
+                    <li>ไม่แน่ใจว่าในฐานะผู้จัดการควรทำอะไร แต่ไม่มีใครให้ปรึกษา</li>
+                    <li>ยังไม่เคยได้รับการสอนอย่างชัดเจนว่าผู้จัดการควรทำอะไร</li>
+                    <li>รู้สึกว่าทำดีที่สุดแล้ว แต่บางครั้งยังถูกตำหนิจากผู้บริหารชาวญี่ปุ่น</li>
+                    <li>มีลูกน้องที่บริหารจัดการได้ยาก</li>
+                    <li>ต้องการเป็นผู้จัดการที่มีคุณภาพมากขึ้น</li>
+                </ul>
+            </div>
+
+            <!-- ③ President / Director -->
+            <div class="audience-section reveal delay-300">
+                <div class="audience-title">
+                    <span class="audience-num">③</span>
+                    <h3>สำหรับกรรมการผู้จัดการ หรือผู้บริหารระดับสูง</h3>
+                </div>
+                <p class="audience-lead">คุณมีปัญหาเหล่านี้เกี่ยวกับบุคลากรระดับบริหารของคุณหรือไม่?</p>
+                <ul class="audience-list">
+                    <li>พนักงานที่เพิ่งได้รับการเลื่อนตำแหน่ง ยังคงมีแนวคิดแบบผู้ปฏิบัติงาน ไม่ได้เปลี่ยนมาเป็นแนวคิดแบบผู้บริหาร</li>
+                    <li>ผู้จัดการมักรอคำสั่ง ไม่ริเริ่มด้วยตนเอง</li>
+                    <li>ผู้จัดการปัจจุบันยังไม่มีคุณภาพตามที่คาดหวังไว้</li>
+                    <li>มีความท้าทายด้านการบริหารทรัพยากรบุคคล แต่ยังไม่เห็นการปรับปรุง แม้จะมีการฝึกอบรมภายในแล้ว</li>
+                    <li>ต้องการพัฒนาผู้จัดการรุ่นต่อไป แต่ทักษะของสมาชิกทีมปัจจุบันยังไม่เพียงพอ จึงต้องการการพัฒนาเพิ่มเติม</li>
+                </ul>
+            </div>
+
+            <div class="reveal delay-300" style="margin-top: 30px; max-width: 900px; margin-left: auto; margin-right: auto; background: linear-gradient(to right, rgba(0,80,179,0.03), rgba(0,223,216,0.03)); border: 1px solid rgba(0,80,179,0.1); border-radius: var(--radius-lg); padding: 35px 40px; text-align: center;">
+                <h3 style="color: var(--primary); font-size: 1.25rem; margin-bottom: 15px;">
+                    ▶ โปรแกรมนี้พัฒนา "ทักษะการบริหาร" ของผู้จัดการชาวไทยอย่างเป็นระบบ
+                </h3>
+                <p style="margin-bottom: 10px; font-weight: 500;">
+                    อบรมออนไลน์เป็นภาษาไทย สัปดาห์ละ 1 ครั้ง รวม 8 ครั้งต่อเนื่อง
+                </p>
+                <p style="font-weight: 500;">
+                    เหมาะสำหรับพนักงานที่ดำรงตำแหน่งผู้บริหารในปัจจุบัน หรือผู้จัดการรุ่นใหม่ในอนาคต ไม่จำกัดสาขาอุตสาหกรรม
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         เสียงจากผู้เข้าร่วม (Voices)
+    ========================================= -->
+    <section class="value-section">
+        <div class="container">
+            <h2 class="sec-title reveal">
+                <span class="en">Voices</span>
+                เสียงจากผู้เข้าร่วมและผู้บริหาร
+            </h2>
+
+            <div class="reveal" style="text-align: center; margin-bottom: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <img src="../images/workshop_scene.jpg" alt="ภาพการอบรม" class="section-image" style="margin-left: auto; margin-right: auto;">
+            </div>
+
+            <div class="value-grid" style="max-width: 900px; margin: 0 auto;">
+                <div class="value-card reveal delay-100">
+                    <span class="value-num">เสียงจากผู้เข้าร่วม (บางส่วน)</span>
+                    <ul style="padding-left: 20px; margin-bottom: 0;">
+                        <li style="list-style-type: disc; margin-bottom: 10px;">การอบรมสะท้อนความเป็นจริงในที่ทำงาน เข้าใจง่ายและนำไปปฏิบัติได้จริง</li>
+                        <li style="list-style-type: disc; margin-bottom: 10px;">ผ่านการปฏิบัติจริง เข้าใจแล้วว่าการสร้างความไว้วางใจกับลูกน้องนำมาสู่ผลลัพธ์ที่ดี</li>
+                        <li style="list-style-type: disc;">รู้สึกว่าผู้บังคับบัญชาคาดหวังในตัว ทำให้มีแรงจูงใจมากขึ้น อยากนำแผนปฏิบัติการไปใช้ต่อ</li>
+                    </ul>
+                </div>
+                <div class="value-card reveal delay-200">
+                    <span class="value-num">เสียงจากผู้บริหาร (บางส่วน)</span>
+                    <ul style="padding-left: 20px; margin-bottom: 0;">
+                        <li style="list-style-type: disc; margin-bottom: 10px;">เมื่อก่อนนี้เขาเป็นคนที่ชอบทำทุกอย่างเอง แต่ตอนนี้เริ่มมอบงานให้ลูกน้องและรอรายงาน</li>
+                        <li style="list-style-type: disc; margin-bottom: 10px;">หลังการอบรม เริ่มดูแลลูกน้องมากขึ้น เห็นเขาสอนงานเมื่อวานนี้เอง</li>
+                        <li style="list-style-type: disc;">เริ่มแสดงความคิดเห็นและตัวเลขในที่ประชุม ทำให้รู้สึกประหลาดใจและดีใจมาก</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         สัมภาษณ์ลูกค้า (Interview)
+    ========================================= -->
+    <section class="interview-section">
+        <div class="container">
+            <h2 class="sec-title reveal">
+                <span class="en">Interview</span>
+                สัมภาษณ์จากลูกค้า
+            </h2>
+
+            <div class="reveal" style="text-align: center; margin-bottom: 30px;">
+                <p style="color: var(--text-muted); font-size: 1rem;">ผู้จัดการชาวญี่ปุ่นจากบริษัทที่ใช้ MDP แบ่งปันการเปลี่ยนแปลงหลังจากนำโปรแกรมมาใช้</p>
+            </div>
+
+            <div class="interview-grid reveal delay-100" style="max-width: 1000px; margin: 0 auto;">
+                <div class="interview-card">
+                    <blockquote>"ก่อนหน้านี้เขาชอบทำทุกอย่างด้วยตัวเอง แต่ตอนนี้รู้จักมอบหมายงานให้ลูกน้องและรอรายงานได้แล้ว ไม่คิดว่าจะเปลี่ยนแปลงได้ขนาดนี้"</blockquote>
+                    <p class="interviewee">อุตสาหกรรมการผลิต / General Manager (ชาวญี่ปุ่น)</p>
+                </div>
+                <div class="interview-card">
+                    <blockquote>"สังเกตได้ว่าวิธีการพูดคุยกับลูกน้องเปลี่ยนไป แต่เดิมแค่สั่งงานฝ่ายเดียว หลังอบรมพยายามดึงความคิดของอีกฝ่ายออกมา บรรยากาศทีมดีขึ้นอย่างเห็นได้ชัด"</blockquote>
+                    <p class="interviewee">บริษัทการค้า / ผู้อำนวยการฝ่าย (ชาวญี่ปุ่น)</p>
+                </div>
+                <div class="interview-card">
+                    <blockquote>"การให้หลายคนอบรมพร้อมกัน ทำให้เกิดภาษากลางร่วมกัน เห็นผู้จัดการพูดคุยกันโดยอ้างอิงเนื้อหาการอบรมมากขึ้น รู้สึกว่าองค์กรเติบโตขึ้นจริงๆ"</blockquote>
+                    <p class="interviewee">อุตสาหกรรมโลจิสติกส์ / Managing Director (ชาวญี่ปุ่น)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         CTA Banner
+    ========================================= -->
+    <div class="cta-banner">
+        <div class="container">
+            <div class="cta-banner-inner reveal">
+                <h2>พัฒนาทักษะการบริหารของผู้จัดการชาวไทย<br>และเดินหน้าสู่การบริหารงานโดยคนท้องถิ่น</h2>
+                <a href="#apply" class="btn-cta">สมัครเข้าร่วมโปรแกรม</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================
+         คุณสมบัติโปรแกรม (Features)
+    ========================================= -->
+    <section id="features" style="background-color: var(--bg-body);">
+        <div class="container">
+            <h2 class="sec-title reveal">
+                <span class="en">Features</span>
+                คุณสมบัติของโปรแกรมนี้
+            </h2>
+
+            <div class="feature-grid reveal delay-100" style="max-width: 1000px; margin: 0 auto;">
+                <div class="feature-card">
+                    <img src="../images/instructor_yaninee.jpg" alt="วิทยากรมืออาชีพชาวไทย">
+                    <h3>วิทยากรมืออาชีพชาวไทยที่เข้าใจวัฒนธรรมองค์กรญี่ปุ่นอย่างลึกซึ้ง</h3>
+                    <p>การที่วิทยากรที่ประสบความสำเร็จในตำแหน่งผู้จัดการในองค์กรญี่ปุ่นมาสอนโดยตรง ช่วยให้ผู้เรียนเข้าใจบทบาทและมุมมองที่บริษัทญี่ปุ่นต้องการจากผู้จัดการได้อย่าง "ซึมซับ" มากกว่าการฟังทฤษฎีล้วนๆ</p>
+                </div>
+                <div class="feature-card">
+                    <img src="../images/homework_scene.jpg" alt="ระบบบังคับการปฏิบัติจริง">
+                    <h3>มีระบบที่บังคับให้นำสิ่งที่เรียนไปปฏิบัติจริงเสมอ</h3>
+                    <p>ปัญหาของการอบรมทั่วไปคือเรียนแล้วเข้าใจแต่ไม่ได้นำไปปฏิบัติ ในโปรแกรมนี้ ผู้เรียนต้องเขียนว่า "จะทำอะไร กับใคร เมื่อไร" อย่างชัดเจน และนำไปปฏิบัติก่อนครั้งถัดไป ซึ่งมีการทบทวนร่วมกัน ทำให้ผู้เรียนส่วนใหญ่ลงมือทำจริง</p>
+                </div>
+                <div class="feature-card">
+                    <img src="../images/continuous_learning.jpg" alt="การเรียนต่อเนื่องสร้างนิสัย">
+                    <h3>การเรียนซ้ำต่อเนื่องทำให้ฝังรากและกลายเป็นนิสัย</h3>
+                    <p>มนุษย์ลืม 67%* ของสิ่งที่เรียนภายในเพียงหนึ่งวัน แต่การทบทวนซ้ำจะเปลี่ยนเป็นความจำระยะยาว โปรแกรมนี้ใช้รูปแบบต่อเนื่อง โดยทบทวนในช่วงต้นของแต่ละครั้ง เพื่อส่งเสริมให้เกิดนิสัยที่ดี<br><span style="font-size: 0.8rem; color: var(--text-muted);">(*Hermann Ebbinghaus 1885)</span></p>
+                </div>
+            </div>
+
+            <div class="independent-box reveal delay-200" style="max-width: 900px; margin: 30px auto 0;">
+                <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 15px; font-weight: 900;">การเปลี่ยนแปลงที่แท้จริง เกิดขึ้นได้เพราะรูปแบบต่อเนื่อง</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;"><strong>ต่อเนื่อง: จำกัดครั้งละ 2 ชั่วโมง เรียนทุกสัปดาห์</strong> รูปแบบนี้รวบรวมประสบการณ์และความรู้ที่เราสั่งสมมาในการพัฒนาผู้จัดการ ผู้เรียนต้องนำความรู้ไปปฏิบัติก่อนครั้งถัดไป ในโปรแกรมต่อเนื่องของเรา ผลลัพธ์เริ่มปรากฏให้เห็นตั้งแต่กลางหลักสูตร</p>
+                <div style="background: rgba(0,223,216,0.05); padding: 15px 20px; border-radius: 8px; border-left: 4px solid var(--secondary);">
+                    <p style="font-weight: 700; color: var(--bg-dark); margin-bottom: 5px;">"ลูกน้องที่เคยต่อต้าน เริ่มฟังมากขึ้น"</p>
+                    <p style="font-weight: 700; color: var(--bg-dark); margin-bottom: 0;">"เปลี่ยนวิธีสั่งงาน ลูกน้องเริ่มคิดเองได้"</p>
+                </div>
+                <p style="margin-top: 15px; font-size: 0.95rem;">เมื่อผู้เรียนได้สัมผัสผลลัพธ์ด้วยตนเอง พวกเขาจะเชื่อมั่นอย่างแท้จริงและทำต่อเนื่องแม้หลักสูตรจบแล้ว</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         กลุ่มเป้าหมาย (Target)
+    ========================================= -->
+    <section class="value-section">
+        <div class="container">
+            <h2 class="sec-title reveal">
+                <span class="en">Target &amp; Goals</span>
+                กลุ่มเป้าหมายของโปรแกรม
+            </h2>
+
+            <div class="reveal" style="max-width: 900px; margin: 0 auto;">
+                <img src="../images/thailand_landscape.jpg" alt="ภาพธุรกิจในประเทศไทย" class="section-image" style="margin-left: auto; margin-right: auto; max-height: 320px;">
+            </div>
+
+            <div class="issue-box reveal delay-100" style="margin-bottom: 30px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <h3 style="color: var(--bg-dark); margin-bottom: 20px;">กลุ่มเป้าหมายของโปรแกรมนี้</h3>
+                <ul style="padding-left: 0;">
+                    <li style="list-style-type: none; margin-bottom: 15px;">
+                        <strong style="color: var(--primary);">• กลุ่มเป้าหมาย: พนักงานชาวไทยที่ดำรงตำแหน่งบริหาร หรือผู้จัดการรุ่นใหม่</strong><br>
+                        เหมาะสำหรับผู้ที่ดำรงตำแหน่งผู้จัดการขึ้นไปในปัจจุบัน หรือผู้ที่จะเป็นผู้จัดการในอนาคต ไม่ว่าจะอยู่ในระดับใดก็ตาม ขอแค่มีลูกน้องหรือรุ่นน้องที่ต้องดูแล
+                    </li>
+                    <li style="list-style-type: none; margin-bottom: 15px;">
+                        <strong style="color: var(--primary);">• ด้านประสบการณ์</strong><br>
+                        เราคำนึงถึงความแตกต่างด้านประสบการณ์ของผู้เข้าร่วม โดยแบ่งกลุ่มสนทนาตามความเหมาะสม ในอดีตมีผู้เข้าร่วมตั้งแต่ระดับ Supervisor ฝ่ายผลิต จนถึง General Manager ของบริษัทจัดจำหน่าย
+                    </li>
+                    <li style="list-style-type: none;">
+                        <strong style="color: var(--primary);">• ด้านอุตสาหกรรม</strong><br>
+                        เปิดรับจากทุกอุตสาหกรรม ทั้งการผลิต การค้า โลจิสติกส์ ก่อสร้าง ค้าปลีก การเงิน และ IT
+                    </li>
+                </ul>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;" class="reveal delay-300">
+                <p style="margin-bottom: 10px;">สมัครเข้าร่วมโปรแกรม<br><span style="font-size: 0.85rem; color: var(--text-muted);">ไปยังฟอร์มสมัครด้านล่าง</span></p>
+                <a href="#apply" class="btn-cta">สมัครเข้าร่วม</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         สาขาการบริหารที่จะได้เรียน
+    ========================================= -->
+    <section style="background-color: var(--bg-body); padding: 60px 0;">
+        <div class="container">
+            <h2 class="sec-title reveal">
+                <span class="en">Learning Domains</span>
+                สาขาการบริหารที่จะได้เรียนในโปรแกรมนี้
+            </h2>
+            <p class="reveal" style="text-align: center; color: var(--text-muted); margin-bottom: 10px; font-size: 1rem;">ตลอด 8 ครั้ง จะได้เรียนรู้ 4 สาขาที่จำเป็นสำหรับผู้จัดการอย่างเป็นระบบ</p>
+
+            <div class="domain-grid reveal delay-100" style="max-width: 1000px; margin: 0 auto;">
+                <div class="domain-card">
+                    <p class="domain-num">DOMAIN 01</p>
+                    <h3>บทบาทของผู้จัดการ<br>และสไตล์การบริหาร</h3>
+                </div>
+                <div class="domain-card">
+                    <p class="domain-num">DOMAIN 02</p>
+                    <h3>การบริหารงาน<br>และการรายงาน-ประสานงาน</h3>
+                </div>
+                <div class="domain-card">
+                    <p class="domain-num">DOMAIN 03</p>
+                    <h3>การรักษาบุคลากร<br>(การสร้างความไว้วางใจ)</h3>
+                </div>
+                <div class="domain-card">
+                    <p class="domain-num">DOMAIN 04</p>
+                    <h3>การพัฒนาบุคลากร<br>(การมอบงานและส่งเสริมการเติบโต)</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         รายละเอียดโปรแกรม (Program)
+    ========================================= -->
+    <section id="program" class="program-section">
+        <div class="container">
+            <h2 class="sec-title inverse reveal">
+                <span class="en">Program</span>
+                รายละเอียดโปรแกรม
+            </h2>
+
+            <div class="reveal" style="background: var(--bg-surface); padding: 40px; border-radius: var(--radius-lg); margin-bottom: 60px; box-shadow: var(--shadow-lg); color: var(--text-main); max-width: 900px; margin-left: auto; margin-right: auto;">
+                <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.4rem; border-bottom: 2px solid rgba(0,80,179,0.1); padding-bottom: 10px;">ภาพรวมโปรแกรมและตารางเรียน</h3>
+                <p style="margin-bottom: 25px; font-size: 1rem; color: var(--text-muted);">โปรแกรมของเราดำเนินการควบคู่กับการปฏิบัติจริง จึงแบ่งการเรียนออกเป็น 8 ครั้ง แทนการเรียนรัดเดียว<br><span style="color: #e53e3e; font-weight: 700;">※ โดยหลักการต้องเข้าร่วมครบทั้ง 8 ครั้ง</span></p>
+
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-bottom: 25px;">
+                    <h4 style="color: var(--bg-dark); margin-bottom: 10px; font-size: 1.1rem;">MDP-Essentials หลักสูตร 8 ครั้ง</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px; font-weight: 700;">
+                        ปิดรับสมัคร: 14 พฤษภาคม 2026 (พฤหัสบดี)<br>
+                        <span style="font-size: 0.85rem; font-weight: normal;">※ เวลาทั้งหมดเป็นเวลากรุงเทพฯ</span>
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-bottom: 20px; font-size: 0.95rem; font-weight: 500;">
+                        <div style="background: #fff; padding: 8px 12px; border-radius: 4px; box-shadow: var(--shadow-sm);"><span style="color: var(--primary); font-weight: 700;">【ครั้งที่ 1】</span> 28 พ.ค. (พฤ.) 10:00-12:00</div>
+                        <div style="background: #fff; padding: 8px 12px; border-radius: 4px; box-shadow: var(--shadow-sm);"><span style="color: var(--primary); font-weight: 700;">【ครั้งที่ 2】</span> 4 มิ.ย. (พฤ.) 10:00-12:00</div>
+                        <div style="background: #fff; padding: 8px 12px; border-radius: 4px; box-shadow: var(--shadow-sm);"><span style="color: var(--primary); font-weight: 700;">【ครั้งที่ 3】</span> 11 มิ.ย. (พฤ.) 10:00-12:00</div>
+                        <div style="background: #fff; padding: 8px 12px; border-radius: 4px; box-shadow: var(--shadow-sm);"><span style="color: var(--primary); font-weight: 700;">【ครั้งที่ 4】</span> 18 มิ.ย. (พฤ.) 10:00-12:00</div>
+                        <div style="background: #fff; padding: 8px 12px; border-radius: 4px; box-shadow: var(--shadow-sm);"><span style="color: var(--primary); font-weight: 700;">【ครั้งที่ 5】</span> 25 มิ.ย. (พฤ.) 10:00-12:00</div>
+                        <div style="background: #fff; padding: 8px 12px; border-radius: 4px; box-shadow: var(--shadow-sm);"><span style="color: var(--primary); font-weight: 700;">【ครั้งที่ 6】</span> 2 ก.ค. (พฤ.) 10:00-12:00</div>
+                        <div style="background: #fff; padding: 8px 12px; border-radius: 4px; box-shadow: var(--shadow-sm);"><span style="color: var(--primary); font-weight: 700;">【ครั้งที่ 7】</span> 9 ก.ค. (พฤ.) 10:00-12:00</div>
+                        <div style="background: #fff; padding: 8px 12px; border-radius: 4px; box-shadow: var(--shadow-sm);"><span style="color: var(--primary); font-weight: 700;">【ครั้งที่ 8】</span> 16 ก.ค. (พฤ.) 10:00-12:00</div>
+                    </div>
+                    <ul style="font-size: 0.95rem; color: var(--text-main); padding-left: 0;">
+                        <li style="margin-bottom: 8px; list-style-type: none;">📌 <strong>รูปแบบ：</strong>ออนไลน์ (Zoom)</li>
+                        <li style="margin-bottom: 8px; list-style-type: none;">📌 <strong>ภาษาที่ใช้：</strong>ภาษาไทย</li>
+                        <li style="margin-bottom: 8px; list-style-type: none;">📌 <strong>จำนวนที่รับ：</strong>จำกัด 8 คนต่อคลาส <span style="color: var(--accent-orange); font-weight: 700;">(ปิดรับเมื่อเต็ม)</span></li>
+                        <li style="margin-bottom: 8px; list-style-type: none;">📌 <strong>จำนวนผู้เข้าร่วมต่อบริษัท：</strong>สูงสุด 3 คน หากมากกว่านั้น กรุณาสอบถามเพิ่มเติม</li>
+                        <li style="list-style-type: none;">📌 <strong>ใบรับรอง：</strong>ออกให้เมื่อส่งการบ้านครบทุกครั้ง + ตอบแบบสำรวจหลังจบหลักสูตร</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="reveal" style="text-align: center; margin-bottom: 20px; color: var(--text-inverse); font-size: 1.8rem; font-weight: 900;">เนื้อหาของโปรแกรม</h3>
+            <p class="reveal" style="text-align: center; margin-bottom: 50px; color: var(--text-light); font-size: 1rem;">※ แต่ละครั้งจะมีการบ้านประเภทการวิเคราะห์หรือการปฏิบัติจริง</p>
+
+            <div class="timeline">
+                <div class="timeline-item reveal-right delay-100">
+                    <div class="timeline-content">
+                        <span class="part-label">【ครั้งที่ 1】</span>
+                        <span class="date-label">28 พ.ค. (พฤ.) | 10:00-12:00 (เวลากรุงเทพฯ)</span>
+                        <h3>บทบาทของผู้จัดการ และความแตกต่างของสไตล์การบริหาร</h3>
+                        <p class="session-desc">บทบาทของผู้จัดการคืออะไร? ตนเองเป็นผู้จัดการแบบไหน? ไม่เพียงแต่ฟังการบรรยาย แต่เรียนรู้ผ่านการทำกิจกรรมด้วย</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right delay-200">
+                    <div class="timeline-content">
+                        <span class="part-label">【ครั้งที่ 2】</span>
+                        <span class="date-label">4 มิ.ย. (พฤ.) | 10:00-12:00 (เวลากรุงเทพฯ)</span>
+                        <h3>การบริหารงาน และการรายงาน-ประสานงาน (ตอนที่ 1)</h3>
+                        <p class="session-desc">เรียนรู้วิธีการทำงานและการบริหารจัดการ ผู้จัดการจะเข้าใจและติดตามงานของลูกน้องอย่างไร และเคลื่อนไหวอย่างไรเพื่อบรรลุเป้าหมาย ผ่านตัวอย่างจริง</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right delay-300">
+                    <div class="timeline-content">
+                        <span class="part-label">【ครั้งที่ 3】</span>
+                        <span class="date-label">11 มิ.ย. (พฤ.) | 10:00-12:00 (เวลากรุงเทพฯ)</span>
+                        <h3>การบริหารงาน และการรายงาน-ประสานงาน (ตอนที่ 2)</h3>
+                        <p class="session-desc">ทำไมการรายงานถึงสำคัญ? และทำอย่างไรให้ลูกน้องรายงานมากขึ้น? ทบทวนการบ้านจากครั้งก่อนและเจาะลึกเพิ่มเติม</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right delay-100">
+                    <div class="timeline-content">
+                        <span class="part-label">【ครั้งที่ 4】</span>
+                        <span class="date-label">18 มิ.ย. (พฤ.) | 10:00-12:00 (เวลากรุงเทพฯ)</span>
+                        <h3>การรักษาบุคลากร: การสร้างความไว้วางใจกับลูกน้อง</h3>
+                        <p class="session-desc">เรียนรู้วิธีสร้างความไว้วางใจที่จำเป็นเพื่อป้องกันการลาออกและเพิ่มแรงจูงใจ เช่น การ 1on1 และวิธีการพูดคุย ซึ่งสามารถนำไปใช้ได้ตั้งแต่วันถัดไป</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right delay-200">
+                    <div class="timeline-content">
+                        <span class="part-label">【ครั้งที่ 5】</span>
+                        <span class="date-label">25 มิ.ย. (พฤ.) | 10:00-12:00 (เวลากรุงเทพฯ)</span>
+                        <h3>การพัฒนาบุคลากร: มอบงานและพัฒนาคน (ตอนที่ 1)</h3>
+                        <p class="session-desc">ทำไมการมอบงานให้ลูกน้องถึงยาก? เรียนรู้ลักษณะของผู้จัดการที่ "ไม่สามารถมอบงานได้" และพื้นฐานของการมอบงานที่มีประสิทธิภาพ</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right delay-300">
+                    <div class="timeline-content">
+                        <span class="part-label">【ครั้งที่ 6】</span>
+                        <span class="date-label">2 ก.ค. (พฤ.) | 10:00-12:00 (เวลากรุงเทพฯ)</span>
+                        <h3>การพัฒนาบุคลากร: มอบงานและพัฒนาคน (ตอนที่ 2)</h3>
+                        <p class="session-desc">เรียนรู้การปรับสไตล์การสอนตามระดับการเติบโตของลูกน้อง และพัฒนาเกณฑ์การตัดสินใจว่า "จะมอบงานแค่ไหน และจะเข้าแทรกแซงเมื่อใด"</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right delay-100">
+                    <div class="timeline-content">
+                        <span class="part-label">【ครั้งที่ 7】</span>
+                        <span class="date-label">9 ก.ค. (พฤ.) | 10:00-12:00 (เวลากรุงเทพฯ)</span>
+                        <h3>การพัฒนาบุคลากร: มอบงานและพัฒนาคน (ตอนที่ 3)</h3>
+                        <p class="session-desc">เรียนรู้วิธีการให้ feedback การยอมรับ การกำหนดเป้าหมาย และรูปแบบการมีส่วนร่วมของผู้จัดการที่ส่งเสริมการเติบโตระยะยาวของลูกน้องอย่างครบถ้วน</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right delay-200">
+                    <div class="timeline-content">
+                        <span class="part-label">【ครั้งที่ 8】</span>
+                        <span class="date-label">16 ก.ค. (พฤ.) | 10:00-12:00 (เวลากรุงเทพฯ)</span>
+                        <h3>ทบทวนสิ่งที่เรียนและ Case Study เพิ่มเติม</h3>
+                        <p class="session-desc">ทบทวนสิ่งที่เรียนตลอด 8 ครั้ง และสรุปด้วย Case Study ที่จำลองสถานการณ์ธุรกิจจริง พร้อมสร้าง Action Plan สำหรับการนำไปปฏิบัติต่อเนื่องหลังจบหลักสูตร</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal delay-300" style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(0,223,216,0.1); border-radius: var(--radius-md); max-width: 850px; margin-left: auto; margin-right: auto; border: 1px solid rgba(0,223,216,0.3);">
+                <h4 style="color: var(--secondary); margin-bottom: 10px; font-size: 1.2rem;">【รายงานผลการดำเนินงานจากเรา】</h4>
+                <p style="font-size: 1rem; color: rgba(255,255,255,0.9);">หลังจบหลักสูตร เราจะรายงานสรุปเนื้อหาและทัศนคติของผู้เข้าร่วมให้ผู้ประสานงานทราบ<br><span style="font-size: 0.9rem;">(โดยทั่วไปเป็นภาษาญี่ปุ่น ในรูปแบบรายงานสรุปหรือการประชุมออนไลน์)</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         วิทยากร (Instructor)
+    ========================================= -->
+    <section id="instructor" class="speakers-section">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <h2 class="sec-title reveal">
+                <span class="en">Instructor</span>
+                แนะนำวิทยากร
+            </h2>
+
+            <div class="speaker-card reveal delay-100">
+                <img src="../images/instructor_yaninee.jpg" alt="Dr. Yaninee Songkajorn" class="speaker-img">
+                <div class="speaker-info">
+                    <h3 style="font-size: 1.4rem; font-weight: 900; margin-bottom: 5px;">Dr. Yaninee Songkajorn (ดร.ยานินี ทรงกาจร)</h3>
+                    <p style="color: var(--primary); font-weight: 700; margin-bottom: 15px;">วิทยากรรับรองของ WS PARTNERS</p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.9;">
+                        ปัจจุบันเป็นอาจารย์พิเศษที่มหาวิทยาลัยจุฬาลงกรณ์ (คณะวิศวกรรมศาสตร์ และคณะนวัตกรรมบูรณาการ หลักสูตรนานาชาติ) เคยอาศัยอยู่ในญี่ปุ่นในวัยเด็กตามบิดาที่เป็นนักการทูต จึงมีความผูกพันกับญี่ปุ่นอย่างลึกซึ้ง นอกจากนี้ยังก่อตั้งบริษัทที่ปรึกษาสำหรับบริษัทที่เข้ามาลงทุนในประเทศไทยอีกด้วย<br><br>
+                        มีประสบการณ์เป็นวิทยากรกว่า 20 ปี หลังจากประสบความสำเร็จในการพัฒนาผู้จัดการให้แก่บริษัทญี่ปุ่นกว่า 10 แห่งในฐานะวิทยากรรับเชิญ ได้เข้าร่วมเป็นวิทยากรประจำของ WS PARTNERS อย่างเป็นทางการ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         ค่าธรรมเนียม (Pricing)
+    ========================================= -->
+    <section id="pricing" style="background-color: var(--bg-body);">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <h2 class="sec-title reveal">
+                <span class="en">Pricing &amp; Flow</span>
+                ค่าธรรมเนียมและรายละเอียดการสมัคร
+            </h2>
+
+            <div class="info-box reveal delay-100" style="text-align: center;">
+                <h3 style="color: var(--bg-dark); margin-bottom: 20px;">【ค่าธรรมเนียม】ต่อ 1 คน (ครบ 8 ครั้ง)</h3>
+                <div style="background: linear-gradient(135deg, var(--primary), #0070f3); color: #fff; padding: 20px; border-radius: 8px; display: inline-block; margin-bottom: 10px;">
+                    <span style="font-weight: 900; font-size: 1.5rem;">SGD $1,800 (ไม่รวมภาษี รวมค่าเอกสาร)</span>
+                </div>
+                <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 5px;">
+                    อ้างอิง: ประมาณ <strong style="color: var(--text-main);">฿48,000</strong> (อัตราแลกเปลี่ยนอ้างอิง ณ เมษายน 2026: 1 SGD ≈ 26.7 THB)
+                </p>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">
+                    ※ โดยทั่วไปชำระเป็นสกุลเงินดอลลาร์สิงคโปร์ หากมีความยากลำบาก กรุณาปรึกษา<br>
+                    ※ ค่าธรรมเนียมแลกเปลี่ยนเงินตราและค่าโอนเป็นความรับผิดชอบของลูกค้า
+                </p>
+            </div>
+
+            <div class="issue-box reveal delay-200" style="margin-bottom: 30px;">
+                <h3 style="color: var(--primary); margin-bottom: 15px;">【รายละเอียดการสมัคร】</h3>
+                <ul style="padding-left: 0;">
+                    <li style="list-style-type: none; margin-bottom: 10px;">• จำนวนที่รับ: จำกัด 8 คนต่อคลาส (รับตามลำดับก่อน-หลัง) สูงสุด 3 คนต่อบริษัท หากมากกว่านั้นจัด "การอบรมเฉพาะบริษัท"</li>
+                    <li style="list-style-type: none; margin-bottom: 10px;">• สิ่งที่รวมอยู่ในค่าธรรมเนียม: ค่าเอกสาร รายงานสรุป ใบรับรองการจบหลักสูตร</li>
+                    <li style="list-style-type: none; margin-bottom: 10px;">• วิธีการชำระเงิน: โดยหลักการโอนเงินผ่านธนาคารในสกุลดอลลาร์สิงคโปร์ (SGD)</li>
+                    <li style="list-style-type: none;">• ราคาที่แสดงไม่รวมภาษี ค่าธรรมเนียมแลกเปลี่ยนและค่าโอนเป็นความรับผิดชอบของลูกค้า</li>
+                </ul>
+            </div>
+
+            <div class="issue-box reveal delay-300">
+                <h3 style="color: var(--primary); margin-bottom: 25px;">【ขั้นตอนหลังสมัครจนถึงเริ่มโปรแกรม】</h3>
+                <ol style="padding-left: 30px; font-size: 0.95rem; line-height: 1.8;">
+                    <li style="margin-bottom: 15px;">สมัครผ่านฟอร์มด้านล่างของเว็บไซต์นี้ภายในวันที่ปิดรับสมัคร (14 พฤษภาคม 2026)</li>
+                    <li style="margin-bottom: 15px;">ต่อจากนั้น เราจะติดต่อเพื่อแจ้งข้อควรระวังและรายละเอียดการชำระเงิน กรุณาตอบกลับอีเมลที่ส่งไป</li>
+                    <li style="margin-bottom: 15px;">เราจะส่งใบแจ้งหนี้ (Invoice) ทางอีเมล</li>
+                    <li style="margin-bottom: 15px;">กรุณาชำระเงินตามใบแจ้งหนี้ (Invoice)</li>
+                    <li>หลังยืนยันการชำระเงิน เราจะส่งข้อมูล Login ให้ผู้เข้าร่วมโดยเร็ว</li>
+                </ol>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;" class="reveal delay-300">
+                <p style="margin-bottom: 10px;">สมัครเข้าร่วมโปรแกรม<br><span style="font-size: 0.85rem; color: var(--text-muted);">ไปยังฟอร์มสมัครด้านล่าง</span></p>
+                <a href="#apply" class="btn-cta">สมัครเข้าร่วม</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         เกี่ยวกับบริษัท (Company)
+    ========================================= -->
+    <section id="company" class="company-section">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <h2 class="sec-title reveal">
+                <span class="en">Company</span>
+                เกี่ยวกับเรา
+            </h2>
+            <div class="company-box reveal delay-100">
+                <img src="../images/ws-partners.jpeg" alt="WS PARTNERS" class="company-img">
+                <div class="company-info">
+                    <h3 style="font-size: 1.4rem; font-weight: 900; margin-bottom: 15px;">WS PARTNERS PTE LTD</h3>
+                    <p style="margin-bottom: 15px;"><strong>【พันธกิจของ WS PARTNERS】</strong><br>
+                    WS PARTNERS มุ่งมั่นสนับสนุนธุรกิจระดับโลกของบริษัทญี่ปุ่น ผ่านการพัฒนาบุคลากรท้องถิ่น การปรับตัวของพนักงานญี่ปุ่นในต่างประเทศ และการแก้ปัญหาด้านองค์กรและทรัพยากรบุคคล สำหรับบริษัทสาขาของญี่ปุ่นในอาเซียน</p>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); background: var(--bg-body); padding: 15px; border-radius: 8px; line-height: 1.8;">
+                        <strong>ชื่อบริษัท：</strong>WS PARTNERS PTE LTD<br>
+                        <strong>ที่อยู่：</strong>1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989<br>
+                        <strong>โทรศัพท์：</strong>+65 6978 4066<br>
+                        <strong>ก่อตั้ง：</strong>1 ธันวาคม 2015<br>
+                        <strong>เว็บไซต์：</strong><a href="https://www.ws-partners.com.sg/" target="_blank" style="text-decoration: underline; color: var(--primary);">https://www.ws-partners.com.sg/</a><br>
+                        <strong>ผู้ถือหุ้น：</strong>Will Seed Co., Ltd. / CL HOLDINGS PTE LTD<br>
+                        <strong>ผู้บริหาร：</strong>Managing Director Kenta Kato<br>
+                        <strong>ธุรกิจ：</strong>ให้บริการที่ปรึกษาและบริการฝึกอบรมสำหรับบริษัทสาขาและกลุ่มบริษัทญี่ปุ่นในอาเซียน<br>
+                        <span style="display:inline-block; margin-top:8px; color: var(--primary); font-weight:bold;">＊ เป็นสาขาต่างประเทศแห่งเดียวของ Kawaijuku Group</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         FAQ
+    ========================================= -->
+    <section id="faq" style="background-color: var(--bg-body);">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <h2 class="sec-title reveal">
+                <span class="en">FAQ</span>
+                คำถามที่พบบ่อย
+            </h2>
+
+            <div class="reveal delay-100">
+                <div class="faq-item">
+                    <div class="faq-q">Q มีการชดเชยหากขาดเรียนไหม?</div>
+                    <div class="faq-a">หากขาดเรียน จะไม่มีการชดเชย กรุณาทราบไว้ล่วงหน้า</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Q หากมีหลายคนจากบริษัทเดียวกัน การชำระเงินเป็นอย่างไร?</div>
+                    <div class="faq-a">เราจะส่งใบแจ้งหนี้รวมตามจำนวนผู้สมัครไปยังบริษัทของคุณ</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Q ใครคือกลุ่มเป้าหมาย?</div>
+                    <div class="faq-a">เหมาะสำหรับทุกคนที่ต้องบริหารลูกน้อง ไม่ว่าจะเป็นสาขาหรืออุตสาหกรรมใด เหมาะทั้งสำหรับผู้จัดการปัจจุบันและผู้จัดการรุ่นใหม่ในอนาคต</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Q ติดต่อสอบถามได้ที่ไหน?</div>
+                    <div class="faq-a">กรุณาติดต่อทางอีเมล: support@ws-partners.com.sg</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Q ขั้นตอนหลังสมัครเป็นอย่างไร?</div>
+                    <div class="faq-a">หลังสมัครผ่านเว็บไซต์นี้:
+1. เราจะติดต่อเพื่อแจ้งข้อควรระวังและรายละเอียดการชำระเงิน
+2. กรุณาตอบกลับอีเมลที่ส่งไป
+3. เราจะส่งใบแจ้งหนี้ (Invoice) ทางอีเมล
+4. กรุณาชำระเงินตามใบแจ้งหนี้
+5. หลังยืนยันการชำระเงิน เราจะส่งข้อมูล Login ให้โดยเร็ว</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Q การอบรมออนไลน์มีประสิทธิภาพไหม? มีข้อควรระวังอะไรบ้าง?</div>
+                    <div class="faq-a">ได้รับการยืนยันแล้วว่าการอบรมออนไลน์มีประสิทธิภาพ เพื่อให้ได้ผลดีที่สุด กรุณาทราบสิ่งเหล่านี้:
+• เตรียมคอมพิวเตอร์ที่มีกล้องและไมโครโฟน และตรวจสอบให้แน่ใจว่า Zoom ทำงานได้ปกติ
+• เข้าเรียนในสถานที่ที่หัวหน้าหรือลูกน้องไม่ได้ยินการสนทนา
+• แจ้งให้ผู้เข้าร่วมทราบถึงความสำคัญและความคาดหวังล่วงหน้า</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         นโยบายการยกเลิก / ติดต่อ
+    ========================================= -->
+    <section id="cancel" class="value-section">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <h2 class="sec-title reveal">
+                <span class="en">Policy &amp; Contact</span>
+                นโยบายการยกเลิกและติดต่อ
+            </h2>
+
+            <div class="reveal delay-100" style="margin-bottom: 40px;">
+                <h3 style="color: var(--bg-dark); font-size: 1.2rem; margin-bottom: 10px;">นโยบายการยกเลิก</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 10px;">&lt;เลื่อนเพื่ออ่านเพิ่มเติม&gt;</p>
+                <div class="scroll-box">
+                    <strong>(1) กรณีสมัครเพียง 1 คน</strong><br>
+                    ขาดเรียนโดยไม่แจ้ง: 100% ของค่าธรรมเนียม<br>
+                    ยกเลิกในวันเรียนถึง 1 วันก่อน: 100% ของค่าธรรมเนียม<br>
+                    ยกเลิก 2–9 วันก่อน: 50% ของค่าธรรมเนียม<br>
+                    ยกเลิกก่อนหน้านั้น: ฟรี<br><br>
+
+                    <strong>(2) กรณีสมัครหลายคน</strong><br>
+                    หากจำนวนผู้เข้าร่วมลดลง ค่ายกเลิกจะคำนวณตามจำนวนที่ลดลง<br>
+                    ขาดเรียนโดยไม่แจ้ง: 100% ของค่าธรรมเนียม<br>
+                    ยกเลิกในวันเรียนถึง 9 วันก่อน: 100% ของค่าธรรมเนียม<br>
+                    ยกเลิกก่อนหน้านั้น: ฟรี<br>
+                    ※ หากยกเลิกหลังเข้าร่วมแล้วอย่างน้อย 1 ครั้ง จะไม่มีการคืนเงิน<br><br>
+
+                    <strong>(3) การยกเลิกอัตโนมัติเมื่อไม่ชำระเงิน</strong><br>
+                    กรุณาชำระค่าธรรมเนียมภายใน 10 วันหลังได้รับการยืนยัน หากไม่ชำระภายในกำหนด จะถือเป็น【การยกเลิก】<br>
+                    ※ หากสมัครภายใน 7 วันก่อนเริ่ม กรุณาชำระก่อนวันเริ่มโปรแกรม<br><br>
+
+                    <strong>(4) การยกเลิกโปรแกรมจากฝ่ายเรา</strong><br>
+                    หากเราต้องยกเลิกโปรแกรม ยกเว้นกรณีภัยพิบัติหรือวิทยากรป่วยฉุกเฉิน โดยหลักการจะแจ้งล่วงหน้า 7 วัน และคืนเงินเต็มจำนวนสำหรับครั้งที่ยกเลิก<br><br>
+
+                    <strong>(5) การเลื่อนเนื่องจากภัยพิบัติหรือวิทยากรป่วย</strong><br>
+                    ในกรณีที่เกิดภัยพิบัติหรือวิทยากรป่วยฉุกเฉิน อาจมีการปรึกษาเพื่อเลื่อนครั้งนั้นออกไป 1 สัปดาห์
+                </div>
+            </div>
+
+            <div class="info-box reveal delay-200">
+                <h3 style="color: var(--primary); font-size: 1.2rem; margin-bottom: 15px;">ช่องทางติดต่อ</h3>
+                <p style="font-weight: 700; margin-bottom: 10px;">สำหรับคำถามและการปรึกษาเกี่ยวกับโปรแกรม</p>
+                <p style="font-size: 0.95rem; margin-bottom: 15px;">หากมีคำถามหรือต้องการข้อมูลเพิ่มเติม กรุณาติดต่อเราได้ตลอดเวลา เรายังรองรับการตอบคำถามผ่าน Zoom หรือ Teams ด้วย</p>
+                <div style="background: rgba(0,80,179,0.05); padding: 15px; border-radius: 8px;">
+                    <p style="font-weight: 700; margin-bottom: 5px;">【ติดต่อ】 support@ws-partners.com.sg</p>
+                    <ul style="padding-left: 20px; font-size: 0.9rem;">
+                        <li style="list-style-type: disc;">สอบถามเกี่ยวกับเนื้อหาการอบรม: Hea (ภาษาญี่ปุ่น / ภาษาอังกฤษ)</li>
+                        <li style="list-style-type: disc;">สอบถามเกี่ยวกับที่นั่งว่าง ใบแจ้งหนี้ และเรื่องธุรการ: Kantaya (ภาษาญี่ปุ่น / ภาษาอังกฤษ)</li>
+                    </ul>
+                </div>
+                <p style="font-size: 0.9rem; margin-top: 15px;">รับปรึกษาการจัดอบรมเฉพาะบริษัท (In-house) ด้วย</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         ฟอร์มสมัคร (Apply)
+    ========================================= -->
+    <section id="apply" class="entry-section">
+        <div class="container">
+            <h2 class="sec-title reveal">
+                <span class="en">Entry</span>
+                สมัครเข้าร่วมโปรแกรม
+            </h2>
+
+            <div class="reveal" style="text-align: center; margin-bottom: 40px; font-size: 0.95rem;">
+                <p>กรอกข้อมูลในฟอร์มด้านล่าง แล้วกดปุ่ม "ส่ง"<br>
+                หากมีผู้เข้าร่วมหลายคน กรุณากรอกฟอร์มแยกกันสำหรับแต่ละคน</p>
+
+                <div style="background: var(--bg-surface); padding: 20px; border-radius: 8px; max-width: 850px; margin: 20px auto 0; text-align: left; border-left: 4px solid var(--secondary); box-shadow: var(--shadow-sm);">
+                    <p style="font-weight: 700; margin-bottom: 5px;">เกี่ยวกับข้อมูลติดต่อผู้ประสานงาน</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 15px;">โปรแกรมนี้จัดสำหรับบริษัทญี่ปุ่น กรุณากรอกชื่อผู้รับผิดชอบชาวญี่ปุ่นด้วย</p>
+                    <p style="font-weight: 700; margin-bottom: 5px;">เกี่ยวกับการติดต่อจากเรา</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 15px;">อีเมลยืนยันการสมัครจะส่งไปยังผู้ประสานงานชาวญี่ปุ่น ไม่ใช่ผู้เข้าร่วมโดยตรง</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 15px;">หลังจากนั้น เราจะติดต่อผู้ประสานงานทั้งชาวญี่ปุ่นและชาวไทยเกี่ยวกับการชำระเงิน รายละเอียดการอบรม เช่น ลิงก์ Zoom จะส่งไปยังผู้เข้าร่วมโดยตรงในภายหลัง</p>
+                    <p style="font-size: 0.9rem; color: var(--primary); font-weight: 700;">สามารถสมัครผ่านเว็บไซต์ภาษาญี่ปุ่นได้เช่นกัน</p>
+                </div>
+
+                <div style="margin-top: 30px; font-weight: 700; background: rgba(255,255,255,0.8); padding: 15px; border-radius: 8px; display: inline-block; box-shadow: var(--shadow-sm);">
+                    ตารางเรียน: ทุกวันพฤหัสบดี 10:00-12:00 (เวลากรุงเทพฯ)<br>
+                    <span style="font-size: 0.9rem; font-weight: normal; color: var(--text-muted);">
+                        【ครั้งที่ 1】28/5 【ครั้งที่ 2】4/6 【ครั้งที่ 3】11/6 【ครั้งที่ 4】18/6<br>
+                        【ครั้งที่ 5】25/6 【ครั้งที่ 6】2/7 【ครั้งที่ 7】9/7 【ครั้งที่ 8】16/7
+                    </span>
+                </div>
+            </div>
+
+            <p style="text-align:center; font-size:0.88rem; color:#4a5568; margin-bottom:18px;">
+                กรุณาอ่าน <a href="https://ws-partners.com.sg/privacy/" target="_blank" rel="noopener"
+                   style="color:#0050b3; text-decoration:underline;">ข้อกำหนดการใช้งานและนโยบายความเป็นส่วนตัว</a> ก่อนส่งแบบฟอร์ม
+            </p>
+            <div class="form-wrapper reveal delay-100" id="form-container">
+                <!-- ฟอร์มจะถูกใส่โดย JavaScript -->
+            </div>
+
+            <!-- ข้อความยืนยันการส่งฟอร์ม -->
+            <div id="form-submitted-msg" style="display:none; margin-top:24px; padding:28px 24px; background:#e8f5e9; border-radius:12px; border-left:4px solid #2e7d32; max-width:680px; margin-left:auto; margin-right:auto; text-align:center;">
+                <p style="font-size:1.5rem; margin-bottom:8px;">✅</p>
+                <p style="font-size:1.05rem; font-weight:700; color:#1b5e20; margin-bottom:8px;">ได้รับการสมัครของคุณแล้ว</p>
+                <p style="font-size:0.9rem; color:#2d3748;">เจ้าหน้าที่จะติดต่อกลับภายใน 2–3 วันทำการ<br>WS PARTNERS PTE LTD / <a href="mailto:support@ws-partners.com.sg" style="color:#0050b3;">support@ws-partners.com.sg</a></p>
+            </div>
+
+            <!-- ทางเลือกส่งอีเมล -->
+            <div style="margin-top:32px; padding:20px 24px; background:#f0f4ff; border-radius:12px; border-left:4px solid #0050b3; max-width:680px; margin-left:auto; margin-right:auto;">
+                <p style="font-size:0.9rem; color:#1a365d; font-weight:700; margin-bottom:8px;">🔒 หากฟอร์มไม่แสดง (เนื่องจากการตั้งค่าความปลอดภัยของบริษัท)</p>
+                <p style="font-size:0.88rem; color:#2d3748; margin-bottom:10px;">
+                    กรุณาส่งข้อมูลต่อไปนี้ทางอีเมลไปยัง <strong>support@ws-partners.com.sg</strong>
+                </p>
+                <ul style="font-size:0.85rem; color:#4a5568; padding-left:1.2em; margin-bottom:12px; line-height:1.8;">
+                    <li>ชื่อ-นามสกุล</li>
+                    <li>ชื่อบริษัทและแผนก</li>
+                    <li>อีเมลและหมายเลขโทรศัพท์</li>
+                    <li>โปรแกรมที่ต้องการ (Thailand MDP-Essentials / พ.ค.–ก.ค. 2026)</li>
+                </ul>
+                <a href="mailto:support@ws-partners.com.sg?subject=【สมัคร】Thailand MDP-Essentials 2026&body=ชื่อ-นามสกุล：%0Aบริษัท/แผนก：%0Aอีเมล：%0Aโทรศัพท์："
+                   style="display:inline-block; background:#0050b3; color:#fff; font-weight:700; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:0.9rem;">
+                    ✉️ สมัครทางอีเมล
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         Footer
+    ========================================= -->
+    <footer>
+        <div class="container">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-bottom: 25px; flex-wrap: wrap;">
+                <img src="../images/logo_kawaijuku.png" alt="Kawaijuku" style="height: 40px; object-fit: contain;">
+                <img src="../images/logo_wsp.png" alt="WS PARTNERS" style="height: 40px; object-fit: contain;">
+                <img src="../images/logo_willseed.png" alt="Will Seed Co., Ltd." style="height: 40px; object-fit: contain;">
+            </div>
+            <p style="margin-bottom: 15px;">
+                <a href="https://www.ws-partners.com.sg/" target="_blank" style="margin: 0 10px;">เว็บไซต์บริษัท</a>
+                <a href="mailto:support@ws-partners.com.sg" style="margin: 0 10px;">ติดต่อเรา</a>
+            </p>
+            <p style="color: #ccc;">© 2026 WS PARTNERS PTE LTD. All Rights Reserved.</p>
+            <p style="font-size: 0.8rem; margin-top: 10px; color: #999;">1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="กลับด้านบน">↑</button>
+
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -10% 0px',
+                threshold: 0.1
+            };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+            // TOPに戻るボタン
+            const backToTopBtn = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add('visible');
+                } else {
+                    backToTopBtn.classList.remove('visible');
+                }
+            });
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // ハンバーガーメニュー
+            var hamburgerBtn = document.getElementById('hamburger-btn');
+            var mobileNav    = document.getElementById('mobile-nav');
+            if (hamburgerBtn && mobileNav) {
+                hamburgerBtn.addEventListener('click', function() {
+                    hamburgerBtn.classList.toggle('active');
+                    mobileNav.classList.toggle('menu-open');
+                });
+                mobileNav.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        hamburgerBtn.classList.remove('active');
+                        mobileNav.classList.remove('menu-open');
+                    });
+                });
+            }
+
+            // フォーム
+            var GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdmThnPvjKB_SN5_Vy0ixW2ssTLpD4j9_R7_oHkMMjGnJK2dA/viewform?embedded=true';
+            var container = document.getElementById('form-container');
+
+            if (GOOGLE_FORM_URL && GOOGLE_FORM_URL.indexOf('※') === -1) {
+                var directUrl = GOOGLE_FORM_URL.replace('?embedded=true', '');
+
+                var fallback = document.createElement('div');
+                fallback.style.cssText = 'text-align:center; margin-bottom:16px; padding:14px 20px; background:#fff8ec; border-radius:10px; border:1px solid #f5c97a; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;';
+                fallback.innerHTML =
+                    '<span style="color:#7a5000; font-size:0.9rem;">&#x26A0;&#xFE0F; หากฟอร์มไม่แสดง (Edge, Safari ฯลฯ)</span>' +
+                    '<a href="' + directUrl + '" target="_blank" rel="noopener" ' +
+                    'style="display:inline-block; background:#f39c12; color:#fff; font-weight:700; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:0.95rem; white-space:nowrap;">&#x1F4DD; เปิดฟอร์มในแท็บใหม่</a>';
+                container.appendChild(fallback);
+
+                var iframe = document.createElement('iframe');
+                iframe.src = GOOGLE_FORM_URL;
+                iframe.width = '100%';
+                iframe.height = '2400';
+                iframe.frameBorder = '0';
+                iframe.marginHeight = '0';
+                iframe.marginWidth = '0';
+                iframe.style.background = 'transparent';
+                iframe.innerHTML = 'กำลังโหลด…';
+                container.appendChild(iframe);
+
+                var formSubmitted = false;
+
+                function showFormConfirmation() {
+                    if (formSubmitted) return;
+                    formSubmitted = true;
+                    iframe.style.display = 'none';
+                    var msg = document.getElementById('form-submitted-msg');
+                    if (msg) {
+                        msg.style.display = 'block';
+                        setTimeout(function() {
+                            msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 100);
+                    }
+                }
+
+                var iframeLoadCount = 0;
+                iframe.addEventListener('load', function() {
+                    iframeLoadCount++;
+                    if (iframeLoadCount >= 2) {
+                        showFormConfirmation();
+                    }
+                });
+
+                window.addEventListener('message', function(e) {
+                    if (e.data === 'formResponse') {
+                        showFormConfirmation();
+                        return;
+                    }
+                    try {
+                        var data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+                        if (data && typeof data.height === 'number' && iframeLoadCount >= 1 && data.height < 500) {
+                            showFormConfirmation();
+                        }
+                    } catch(err) {}
+                });
+
+            } else {
+                container.innerHTML =
+                    '<div class="form-placeholder">' +
+                    '<p style="font-size: 1.5rem; margin-bottom: 15px;">🚧</p>' +
+                    '<h3 style="color: var(--primary); margin-bottom: 15px;">กำลังเตรียมฟอร์มสมัคร</h3>' +
+                    '<p style="color: var(--text-muted); margin-bottom: 25px;">หากต้องการข้อมูลเพิ่มเติม กรุณาติดต่อเรา</p>' +
+                    '<a href="mailto:support@ws-partners.com.sg" class="btn-cta">ติดต่อทางอีเมล</a>' +
+                    '</div>';
+            }
+        });
+    </script>
+</body>
+</html>
