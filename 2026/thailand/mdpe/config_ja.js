@@ -279,7 +279,7 @@ support@ws-partners.com.sg
   },
 
   forms: {
-    google_url:         '※タイ用GoogleフォームのURLをここに記入',
+    google_url:         'https://docs.google.com/forms/d/e/1FAIpQLSdmThnPvjKB_SN5_Vy0ixW2ssTLpD4j9_R7_oHkMMjGnJK2dA/viewform?embedded=true',
     hubspot_portal_id:  '※HubSpotのポータルIDをここに記入',
     hubspot_form_id:    '※タイ用HubSpotフォームIDをここに記入',
     hubspot_region:     'na1',
