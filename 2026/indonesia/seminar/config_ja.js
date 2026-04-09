@@ -57,33 +57,46 @@ window.LP_CONFIG = {
 </div>
 <p>日本人上司とインドネシア人マネージャーのあいだで起きるこうした衝突の背景には、<br>
 能力の問題ではなく、<strong>「仕事に対する基準の違い」</strong>があります。</p>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0 20px 0">
-  <div style="background:linear-gradient(135deg,#fff7ed,#fff);border:2px solid var(--accent-orange);border-radius:10px;padding:16px 18px;display:flex;align-items:flex-start;gap:10px">
-    <span style="color:var(--accent-orange);font-size:1.4em;line-height:1;flex-shrink:0">▶</span>
-    <span style="font-weight:900;font-size:1.05rem;color:var(--text-main);line-height:1.4">納期の重み</span>
-  </div>
-  <div style="background:linear-gradient(135deg,#fff7ed,#fff);border:2px solid var(--accent-orange);border-radius:10px;padding:16px 18px;display:flex;align-items:flex-start;gap:10px">
-    <span style="color:var(--accent-orange);font-size:1.4em;line-height:1;flex-shrink:0">▶</span>
-    <span style="font-weight:900;font-size:1.05rem;color:var(--text-main);line-height:1.4">報告のタイミング</span>
-  </div>
-  <div style="background:linear-gradient(135deg,#fff7ed,#fff);border:2px solid var(--accent-orange);border-radius:10px;padding:16px 18px;display:flex;align-items:flex-start;gap:10px">
-    <span style="color:var(--accent-orange);font-size:1.4em;line-height:1;flex-shrink:0">▶</span>
-    <span style="font-weight:900;font-size:1.05rem;color:var(--text-main);line-height:1.4">主体性の意味</span>
-  </div>
-  <div style="background:linear-gradient(135deg,#fff7ed,#fff);border:2px solid var(--accent-orange);border-radius:10px;padding:16px 18px;display:flex;align-items:flex-start;gap:10px">
-    <span style="color:var(--accent-orange);font-size:1.4em;line-height:1;flex-shrink:0">▶</span>
-    <span style="font-weight:900;font-size:1.05rem;color:var(--text-main);line-height:1.4">評価における"姿勢"の捉え方</span>
+<div style="background:#fff7ed;border:3px solid #f39c12;border-radius:12px;padding:20px 24px;margin:16px 0 20px 0">
+  <p style="font-size:0.8rem;font-weight:700;color:#f39c12;letter-spacing:0.1em;margin:0 0 12px 0;text-transform:uppercase">── 基準の違いとは、具体的にはこういうことです ──</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+    <div style="background:#fff;border-left:4px solid #f39c12;border-radius:6px;padding:14px 16px;display:flex;align-items:flex-start;gap:8px">
+      <span style="color:#f39c12;font-size:1.2em;line-height:1;flex-shrink:0;font-weight:900">▶</span>
+      <span style="font-weight:900;font-size:1rem;color:#1a202c;line-height:1.4">納期の重み</span>
+    </div>
+    <div style="background:#fff;border-left:4px solid #f39c12;border-radius:6px;padding:14px 16px;display:flex;align-items:flex-start;gap:8px">
+      <span style="color:#f39c12;font-size:1.2em;line-height:1;flex-shrink:0;font-weight:900">▶</span>
+      <span style="font-weight:900;font-size:1rem;color:#1a202c;line-height:1.4">報告のタイミング</span>
+    </div>
+    <div style="background:#fff;border-left:4px solid #f39c12;border-radius:6px;padding:14px 16px;display:flex;align-items:flex-start;gap:8px">
+      <span style="color:#f39c12;font-size:1.2em;line-height:1;flex-shrink:0;font-weight:900">▶</span>
+      <span style="font-weight:900;font-size:1rem;color:#1a202c;line-height:1.4">主体性の意味</span>
+    </div>
+    <div style="background:#fff;border-left:4px solid #f39c12;border-radius:6px;padding:14px 16px;display:flex;align-items:flex-start;gap:8px">
+      <span style="color:#f39c12;font-size:1.2em;line-height:1;flex-shrink:0;font-weight:900">▶</span>
+      <span style="font-weight:900;font-size:1rem;color:#1a202c;line-height:1.4">評価における"姿勢"の捉え方</span>
+    </div>
   </div>
 </div>
 <p>これらが言語化されないままでは、同じ誤解や衝突が繰り返されてしまいます。</p>
 <div class="seminar-detail-box">
 <p><strong>本セミナーでは</strong>、実際に弊社がインドネシア人マネージャー向けに実施している<br>異文化理解研修の一部をご紹介します。</p>
-<p style="margin-top:12px">
-・日本人上司は何を基準に判断しているのか<br>
-・なぜ「言われた通りにやったのに怒られる」が起きるのか<br>
-・基準の違いをどう整理し、組織の中で共通言語にしていくのか<br>
-・経営戦略と人材育成をどう接続するか
-</p>
+<div style="background:#e8f0fb;border:2px solid #0050b3;border-radius:10px;padding:18px 22px;margin-top:14px">
+  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px">
+    <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
+      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>日本人上司は何を基準に判断しているのか
+    </li>
+    <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
+      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>なぜ「言われた通りにやったのに怒られる」が起きるのか
+    </li>
+    <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
+      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>基準の違いをどう整理し、組織の中で共通言語にしていくのか
+    </li>
+    <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
+      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>経営戦略と人材育成をどう接続するか
+    </li>
+  </ul>
+</div>
 <p style="margin-top:12px;font-weight:700;color:var(--primary)">具体的な事例をもとにご体験いただけます。</p>
 </div>`,
     btn_text: '無料で申し込む',
@@ -178,11 +191,17 @@ window.LP_CONFIG = {
 <p>本セミナーで扱う内容は、単なる異文化理解の話ではありません。<br>
 実際に、インドネシア人マネジャー向けに提供している「基準理解研修」の一部です。</p>
 <p>もし御社の現場で、</p>
-<div style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-left:4px solid var(--accent-orange);border-radius:8px;padding:20px 24px;margin:12px 0 16px 0">
-  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
-    <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:#fff"><span style="color:var(--accent-orange);font-size:1.1em">✔</span>同じ衝突が繰り返されている</li>
-    <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:#fff"><span style="color:var(--accent-orange);font-size:1.1em">✔</span>主体性が伸び悩んでいる</li>
-    <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:#fff"><span style="color:var(--accent-orange);font-size:1.1em">✔</span>上司交代で基準が揺れている</li>
+<div style="background:rgba(243,156,18,.15);border:2px solid #f39c12;border-radius:10px;padding:20px 24px;margin:14px 0 18px 0">
+  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px">
+    <li style="display:flex;align-items:flex-start;gap:12px;font-weight:900;font-size:1.05rem;color:#fff">
+      <span style="color:#f39c12;font-size:1.3em;line-height:1;flex-shrink:0">✔</span>同じ衝突が繰り返されている
+    </li>
+    <li style="display:flex;align-items:flex-start;gap:12px;font-weight:900;font-size:1.05rem;color:#fff">
+      <span style="color:#f39c12;font-size:1.3em;line-height:1;flex-shrink:0">✔</span>主体性が伸び悩んでいる
+    </li>
+    <li style="display:flex;align-items:flex-start;gap:12px;font-weight:900;font-size:1.05rem;color:#fff">
+      <span style="color:#f39c12;font-size:1.3em;line-height:1;flex-shrink:0">✔</span>上司交代で基準が揺れている
+    </li>
   </ul>
 </div>
 <p>という状況があるなら、ぜひ一度覗いてみてください。</p>
