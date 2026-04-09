@@ -57,12 +57,24 @@ window.LP_CONFIG = {
 </div>
 <p>日本人上司とインドネシア人マネージャーのあいだで起きるこうした衝突の背景には、<br>
 能力の問題ではなく、<strong>「仕事に対する基準の違い」</strong>があります。</p>
-<ul style="list-style:none;padding:0;margin:12px 0 16px 0;display:flex;flex-direction:column;gap:8px">
-  <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:var(--text-main)"><span style="color:var(--accent-orange);font-size:1.2em">▶</span>納期の重み</li>
-  <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:var(--text-main)"><span style="color:var(--accent-orange);font-size:1.2em">▶</span>報告のタイミング</li>
-  <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:var(--text-main)"><span style="color:var(--accent-orange);font-size:1.2em">▶</span>主体性の意味</li>
-  <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:var(--text-main)"><span style="color:var(--accent-orange);font-size:1.2em">▶</span>評価における"姿勢"の捉え方</li>
-</ul>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0 20px 0">
+  <div style="background:linear-gradient(135deg,#fff7ed,#fff);border:2px solid var(--accent-orange);border-radius:10px;padding:16px 18px;display:flex;align-items:flex-start;gap:10px">
+    <span style="color:var(--accent-orange);font-size:1.4em;line-height:1;flex-shrink:0">▶</span>
+    <span style="font-weight:900;font-size:1.05rem;color:var(--text-main);line-height:1.4">納期の重み</span>
+  </div>
+  <div style="background:linear-gradient(135deg,#fff7ed,#fff);border:2px solid var(--accent-orange);border-radius:10px;padding:16px 18px;display:flex;align-items:flex-start;gap:10px">
+    <span style="color:var(--accent-orange);font-size:1.4em;line-height:1;flex-shrink:0">▶</span>
+    <span style="font-weight:900;font-size:1.05rem;color:var(--text-main);line-height:1.4">報告のタイミング</span>
+  </div>
+  <div style="background:linear-gradient(135deg,#fff7ed,#fff);border:2px solid var(--accent-orange);border-radius:10px;padding:16px 18px;display:flex;align-items:flex-start;gap:10px">
+    <span style="color:var(--accent-orange);font-size:1.4em;line-height:1;flex-shrink:0">▶</span>
+    <span style="font-weight:900;font-size:1.05rem;color:var(--text-main);line-height:1.4">主体性の意味</span>
+  </div>
+  <div style="background:linear-gradient(135deg,#fff7ed,#fff);border:2px solid var(--accent-orange);border-radius:10px;padding:16px 18px;display:flex;align-items:flex-start;gap:10px">
+    <span style="color:var(--accent-orange);font-size:1.4em;line-height:1;flex-shrink:0">▶</span>
+    <span style="font-weight:900;font-size:1.05rem;color:var(--text-main);line-height:1.4">評価における"姿勢"の捉え方</span>
+  </div>
+</div>
 <p>これらが言語化されないままでは、同じ誤解や衝突が繰り返されてしまいます。</p>
 <div class="seminar-detail-box">
 <p><strong>本セミナーでは</strong>、実際に弊社がインドネシア人マネージャー向けに実施している<br>異文化理解研修の一部をご紹介します。</p>
