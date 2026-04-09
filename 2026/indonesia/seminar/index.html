@@ -932,12 +932,21 @@
       .hero-info-box .lead { font-size: 0.85rem; margin-bottom: 8px; }
       .hero-info-box .date { font-size: 1.05rem; margin-bottom: 6px; }
       .hero-info-box .note { font-size: 0.75rem; }
+      /* ── Hero visual: aspect-ratio に合わせた高さ設定 ── */
       .hero-visual-content {
         flex: none; width: 100%;
-        height: clamp(210px, 58vw, 330px);
+        height: clamp(280px, 78vw, 400px);
         transform: none;
       }
-      .hero-images-wrapper { max-width: 86%; margin: 0 auto; }
+      /* wrapper を 78vw の正方形に固定（aspect-ratio: 1/1 を維持） */
+      .hero-images-wrapper {
+        width: min(78vw, 360px);
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      /* モバイルでは画像を少し小さく・位置を調整してカブリを軽減 */
+      .img-online     { width: 62%; top: 2%; right: 1%; }
+      .img-instructor { width: 56%; bottom: 2%; left: 2%; }
       .scroll-indicator { display: none; }
 
       /* ── Content boxes ── */
@@ -948,8 +957,8 @@
       .pricing-box { padding: 24px 18px; }
       #cancel-contact-box { padding: 18px 16px; }
 
-      /* ── Program: 2col → 1col ── */
-      .program-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+      /* ── Program: 2col → 1col、十分な余白 ── */
+      .program-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
 
       /* ── Speaker / Company ── */
       .speaker-card { flex-direction: column; align-items: center; text-align: center; padding: 20px 16px; gap: 16px; }
@@ -957,6 +966,8 @@
       .speaker-img img { width: 100px; height: 100px; }
       .company-box  { flex-direction: column; gap: 24px; }
       .company-img  { flex: none; width: 100%; }
+      /* 会社概要の各項目に余白を追加 */
+      .company-info p { margin-bottom: 14px !important; line-height: 1.7; }
 
       /* ── Grids ── */
       .value-grid, .feature-grid { grid-template-columns: 1fr; }
