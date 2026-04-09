@@ -208,8 +208,8 @@ window.LP_CONFIG = {
       { href: 'https://www.ws-partners.com.sg/', label: '会社サイト' },
       { href: 'mailto:support@ws-partners.com.sg', label: 'お問い合わせ' }
     ],
-    address: '1 Marina Blvd, #20-00, Singapore 018989',
-    copyright: '© WS PARTNERS PTE LTD'
+    address: '1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989',
+    copyright: '© 2026 WS PARTNERS PTE LTD. All Rights Reserved.'
   },
 
   forms: {
