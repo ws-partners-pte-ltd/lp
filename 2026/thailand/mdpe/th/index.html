@@ -296,10 +296,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 40px;
+            gap: 4vw;
+            width: 100%;
+            height: 100%;
             z-index: 2;
         }
-        .hero-text-content { flex: 1; max-width: 55%; }
+        .hero-text-content {
+            flex: 1;
+            max-width: 750px;
+            transform: translateY(-2vh);
+        }
         .hero-subtitle {
             font-size: clamp(0.95rem,1.5vw,1.1rem);
             font-weight: 700;
@@ -309,10 +315,10 @@
             text-transform: uppercase;
         }
         .hero-title {
-            font-size: clamp(1.8rem,3.5vw,2.8rem);
+            font-size: clamp(1.6rem,2.5vw,2.5rem);
             font-weight: 900;
             color: var(--text-inverse);
-            line-height: 1.25;
+            line-height: 1.3;
             margin-bottom: 30px;
             letter-spacing: 0.02em;
         }
@@ -349,40 +355,49 @@
         }
         .hero-visual-content {
             flex: 1;
+            position: relative;
+            height: clamp(300px,60vh,550px);
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 400px;
-            height: auto;
-            position: relative;
+            transform: translateY(-2vh);
             z-index: 2;
         }
         .hero-images-wrapper {
             position: relative;
             width: 100%;
-            max-width: 450px;
+            height: 100%;
+            max-width: 55vh;
+            aspect-ratio: 1 / 1;
         }
         .img-collage {
-            border-radius: var(--radius-md);
-            box-shadow: var(--shadow-lg);
+            position: absolute;
+            border: clamp(4px,1vh,8px) solid #ffffff;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border-radius: 4px;
             object-fit: cover;
+            transition: transform 0.4s ease;
         }
+        .img-collage:hover { transform: scale(1.05) !important; z-index: 10; }
         .img-online {
-            width: 100%;
-            height: 260px;
+            width: 70%;
+            top: 5%;
+            right: 0;
+            transform: rotate(4deg);
+            z-index: 1;
         }
         .img-instructor {
             width: 55%;
-            height: 160px;
-            position: absolute;
-            bottom: -40px;
-            right: -20px;
-            border: 4px solid #fff;
+            bottom: 5%;
+            left: 5%;
+            transform: rotate(-6deg);
+            z-index: 2;
         }
         .hero-badge-circle {
             position: absolute;
-            bottom: -10%;
-            left: -5%;
+            bottom: 10%;
+            right: -5%;
+            transform: rotate(-5deg);
             width: 100px;
             height: 100px;
             background: linear-gradient(135deg, var(--accent-orange), var(--accent-orange-dark));
@@ -785,6 +800,11 @@
             display: flex;
             gap: 40px;
             align-items: flex-start;
+            background: var(--bg-surface);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(0,0,0,0.03);
         }
         .company-img {
             width: 40%;
@@ -864,14 +884,15 @@
            Footer
         ========================================= */
         footer {
-            background: #0050b3;
-            color: rgba(255,255,255,0.85);
+            background: #ffffff;
+            color: var(--text-muted);
             text-align: center;
             padding: 40px 20px;
             font-size: 0.85rem;
+            border-top: 1px solid #e2e8f0;
         }
-        footer a { color: rgba(255,255,255,0.85); transition: color 0.3s; }
-        footer a:hover { color: var(--secondary); }
+        footer a { color: var(--text-muted); transition: color 0.3s; }
+        footer a:hover { color: var(--primary); }
 
         /* =========================================
            Back to Top
@@ -1192,7 +1213,7 @@
             <!-- ① HR Manager -->
             <div class="audience-section reveal delay-100">
                 <div class="audience-title">
-                    <span class="audience-num">①</span>
+                    <span class="audience-num">1</span>
                     <h3>สำหรับผู้รับผิดชอบด้านทรัพยากรบุคคล</h3>
                 </div>
                 <p class="audience-lead">ในฐานะผู้ดูแลด้านการพัฒนาบุคลากร คุณมีความคิดเหล่านี้หรือไม่?</p>
@@ -1206,7 +1227,7 @@
             <!-- ② Manager / Aspiring Manager -->
             <div class="audience-section reveal delay-200">
                 <div class="audience-title">
-                    <span class="audience-num">②</span>
+                    <span class="audience-num">2</span>
                     <h3>สำหรับผู้จัดการ หรือผู้ที่กำลังจะก้าวขึ้นเป็นผู้จัดการ</h3>
                 </div>
                 <p class="audience-stat">77% ของบริษัทญี่ปุ่น รู้สึกว่ามีข้อจำกัดด้านบุคลากรระดับบริหาร (จากการสำรวจของเรา)</p>
@@ -1223,7 +1244,7 @@
             <!-- ③ President / Director -->
             <div class="audience-section reveal delay-300">
                 <div class="audience-title">
-                    <span class="audience-num">③</span>
+                    <span class="audience-num">3</span>
                     <h3>สำหรับกรรมการผู้จัดการ หรือผู้บริหารระดับสูง</h3>
                 </div>
                 <p class="audience-lead">คุณมีปัญหาเหล่านี้เกี่ยวกับบุคลากรระดับบริหารของคุณหรือไม่?</p>
@@ -1604,7 +1625,7 @@
                 </p>
             </div>
 
-            <div class="issue-box reveal delay-200" style="margin-bottom: 30px;">
+            <div class="issue-box reveal delay-200" style="margin-top: 30px; margin-bottom: 30px;">
                 <h3 style="color: var(--primary); margin-bottom: 15px;">【รายละเอียดการสมัคร】</h3>
                 <ul style="padding-left: 0;">
                     <li style="list-style-type: none; margin-bottom: 10px;">• จำนวนที่รับ: จำกัด 8 คนต่อคลาส (รับตามลำดับก่อน-หลัง) สูงสุด 3 คนต่อบริษัท หากมากกว่านั้นจัด "การอบรมเฉพาะบริษัท"</li>
