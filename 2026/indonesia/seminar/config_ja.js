@@ -29,9 +29,9 @@ window.LP_CONFIG = {
 
   hero: {
     bg_image: 'images/hero_bg.jpg',
-    img_main: 'images/photo_meeting.jpg',
-    img_sub1: 'images/photo_instructor_collage.jpg',
-    img_sub2: 'images/photo_trainer_takaoka.jpg',
+    img_main: 'images/workshop_scene.jpg',
+    img_sub1: 'images/lecture_scene.jpg',
+    img_sub2: 'images/thinking_scene.jpg',
     subtitle: 'インドネシア人のための日本人上司との基準理解と実践',
     title: 'なぜ、言われた通りにやったのに怒られるのか？',
     date_label: '開催日時',
@@ -67,7 +67,7 @@ window.LP_CONFIG = {
   issues: {
     en: 'CHALLENGES',
     title: 'このような課題をお持ちのHRの方へ',
-    img: 'images/photo_team_issues.jpg',
+    img: 'images/challenge_scene.jpg',
     items: [
       'インドネシア人マネージャーと日本人上司の間で、同じ衝突が繰り返されている',
       '「なぜ怒られたのか分からない」という声が現場から上がっている',
@@ -132,7 +132,7 @@ window.LP_CONFIG = {
     title: '登壇者紹介',
     items: [
       {
-        img: 'images/photo_trainer_takaoka.jpg',
+        img: 'images/thinking_scene.jpg',
         name: '高岡',
         role: 'WS PARTNERS コンサルタント・ファシリテーター',
         profile: '（プロフィールは準備中です。後日更新いたします。）'
@@ -178,7 +178,7 @@ window.LP_CONFIG = {
   company: {
     en: 'ABOUT US',
     title: '弊社について',
-    img: 'images/photo_company.jpg',
+    img: 'images/ws-partners.jpeg',
     name: 'WS PARTNERS PTE LTD',
     items: [
       { label: '【WS PARTNERSのミッション】', value: '私たちWS PARTNERSは、ASEANの日系現地法人を対象に、現地人材の育成・駐在員の現地適応・組織や人材上の問題解決を通じて、日本企業のグローバルビジネスに貢献します。' },
