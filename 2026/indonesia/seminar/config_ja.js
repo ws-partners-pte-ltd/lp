@@ -57,9 +57,12 @@ window.LP_CONFIG = {
 </div>
 <p>日本人上司とインドネシア人マネージャーのあいだで起きるこうした衝突の背景には、<br>
 能力の問題ではなく、<strong>「仕事に対する基準の違い」</strong>があります。</p>
-<p style="color:var(--text-muted);font-size:var(--fs-small)">
-　納期の重み。&emsp;報告のタイミング。&emsp;主体性の意味。&emsp;評価における"姿勢"の捉え方。
-</p>
+<ul style="list-style:none;padding:0;margin:12px 0 16px 0;display:flex;flex-direction:column;gap:8px">
+  <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:var(--text-main)"><span style="color:var(--accent-orange);font-size:1.2em">▶</span>納期の重み</li>
+  <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:var(--text-main)"><span style="color:var(--accent-orange);font-size:1.2em">▶</span>報告のタイミング</li>
+  <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:var(--text-main)"><span style="color:var(--accent-orange);font-size:1.2em">▶</span>主体性の意味</li>
+  <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:var(--text-main)"><span style="color:var(--accent-orange);font-size:1.2em">▶</span>評価における"姿勢"の捉え方</li>
+</ul>
 <p>これらが言語化されないままでは、同じ誤解や衝突が繰り返されてしまいます。</p>
 <div class="seminar-detail-box">
 <p><strong>本セミナーでは</strong>、実際に弊社がインドネシア人マネージャー向けに実施している<br>異文化理解研修の一部をご紹介します。</p>
@@ -106,7 +109,7 @@ window.LP_CONFIG = {
       { label: '開催方式', value: 'Web会議ツール Zoom（インドネシア語で実施）' },
       { label: '主催',     value: 'WS PARTNERS PTE LTD' },
       { label: '参加費',   value: '無料' },
-      { label: 'お問合せ', value: 'オンラインセミナー担当：松下・友澤　／　support@ws-partners.com.sg　／　+65-6978-4066' }
+      { label: 'お問合せ', value: '<span style="display:block;line-height:2">オンラインセミナー担当：松下・友澤<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6569784066" style="color:var(--primary)">+65-6978-4066</a></span>' }
     ],
     schedule: [
       {
@@ -163,11 +166,13 @@ window.LP_CONFIG = {
 <p>本セミナーで扱う内容は、単なる異文化理解の話ではありません。<br>
 実際に、インドネシア人マネジャー向けに提供している「基準理解研修」の一部です。</p>
 <p>もし御社の現場で、</p>
-<ul style="list-style:none;padding:0;margin:8px 0 12px 0">
-  <li>・同じ衝突が繰り返されている</li>
-  <li>・主体性が伸び悩んでいる</li>
-  <li>・上司交代で基準が揺れている</li>
-</ul>
+<div style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-left:4px solid var(--accent-orange);border-radius:8px;padding:20px 24px;margin:12px 0 16px 0">
+  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+    <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:#fff"><span style="color:var(--accent-orange);font-size:1.1em">✔</span>同じ衝突が繰り返されている</li>
+    <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:#fff"><span style="color:var(--accent-orange);font-size:1.1em">✔</span>主体性が伸び悩んでいる</li>
+    <li style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:#fff"><span style="color:var(--accent-orange);font-size:1.1em">✔</span>上司交代で基準が揺れている</li>
+  </ul>
+</div>
 <p>という状況があるなら、ぜひ一度覗いてみてください。</p>
 <p>本セミナーは、御社への導入をご検討いただくための<strong>体験型プレビュー</strong>です。<br>
 実際の内容、進め方、反応の引き出し方をそのままご覧いただけます。</p>
@@ -177,7 +182,12 @@ window.LP_CONFIG = {
 
   contact: {
     title: 'お問い合わせ先',
-    body: 'セミナーに関するご質問はお気軽にご連絡ください。\nオンラインセミナー担当：松下・友澤\nsupport@ws-partners.com.sg\n+65-6978-4066'
+    body: `セミナーに関するご質問はお気軽にご連絡ください。<br><br>
+<span style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>オンラインセミナー担当：<strong>松下・友澤</strong></span></span>
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">✉</span><span><a href="mailto:support@ws-partners.com.sg" style="color:rgba(255,255,255,.85);text-decoration:underline">support@ws-partners.com.sg</a></span></span>
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6569784066" style="color:rgba(255,255,255,.85);text-decoration:underline">+65-6978-4066</a></span></span>
+</span>`
   },
 
   apply: {
