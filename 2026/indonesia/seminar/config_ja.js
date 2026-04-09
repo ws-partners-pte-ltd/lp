@@ -29,16 +29,16 @@ window.LP_CONFIG = {
 
   hero: {
     bg_image: 'images/hero_bg.jpg',
-    img_main: 'images/workshop_scene.jpg',
-    img_sub1: 'images/lecture_scene.jpg',
-    img_sub2: 'images/thinking_scene.jpg',
+    img_main: 'images/photo_trainer_takaoka.jpg',
+    img_sub1: 'images/online_training.jpg',
+    img_sub2: '',
     subtitle: 'インドネシア人のための日本人上司との基準理解と実践',
     title: 'なぜ、言われた通りにやったのに怒られるのか？',
     date_label: '開催日時',
-    date: '2026年5月5日（火） 15:00〜16:30（インドネシア時間）',
+    date: '<strong>2026年5月5日（火）　15:00〜16:30</strong>　インドネシア時間',
     deadline_label: '参加費',
-    deadline: '無料',
-    note: '※Web会議ツール Zoom にて開催（インドネシア語で実施）　締切：当日午前10時（インドネシア時間）',
+    deadline: '<strong style="font-size:1.3em;color:#fff">無 料</strong>',
+    note: 'Web会議ツール <strong>Zoom</strong> にて開催（インドネシア語で実施）<br>申込締切：当日午前10時（インドネシア時間）',
     cta_text: '無料で申し込む',
     badge_en: 'FREE',
     badge_ja: 'インドネシア語で実施'
@@ -47,19 +47,30 @@ window.LP_CONFIG = {
   consult: {
     en: 'ABOUT THIS SEMINAR',
     title: 'なぜ、言われた通りにやったのに怒られるのか？',
-    body: `日系企業で働くインドネシア人マネージャーから、こんな声を聞いたことはありませんか。<br><br>
-「指示通りにやったのに怒られた」<br>
-「どこが問題だったのか分からない」<br>
-「納期が少し遅れただけで、なぜそこまで厳しく言われるのか」<br><br>
-日本人上司とインドネシア人マネージャーのあいだで起きるこうした衝突の背景には、能力の問題ではなく、<strong>"仕事に対する基準の違い"</strong>があります。<br><br>
-納期の重み。報告のタイミング。主体性の意味。評価における"姿勢"の捉え方。<br><br>
-これらが言語化されないままでは、同じ誤解や衝突が繰り返されてしまいます。<br><br>
-本セミナーでは、実際に弊社がインドネシア人マネージャー向けに実施している異文化理解研修の一部をご紹介します。<br><br>
+    body: `<div class="voice-box">
+<p>日系企業で働くインドネシア人マネージャーから、こんな声を聞いたことはありませんか。</p>
+<p>
+「<strong>指示通りにやったのに怒られた</strong>」<br>
+「<strong>どこが問題だったのか分からない</strong>」<br>
+「<strong>納期が少し遅れただけで、なぜそこまで厳しく言われるのか</strong>」
+</p>
+</div>
+<p>日本人上司とインドネシア人マネージャーのあいだで起きるこうした衝突の背景には、<br>
+能力の問題ではなく、<strong>「仕事に対する基準の違い」</strong>があります。</p>
+<p style="color:var(--text-muted);font-size:var(--fs-small)">
+　納期の重み。&emsp;報告のタイミング。&emsp;主体性の意味。&emsp;評価における"姿勢"の捉え方。
+</p>
+<p>これらが言語化されないままでは、同じ誤解や衝突が繰り返されてしまいます。</p>
+<div class="seminar-detail-box">
+<p><strong>本セミナーでは</strong>、実際に弊社がインドネシア人マネージャー向けに実施している<br>異文化理解研修の一部をご紹介します。</p>
+<p style="margin-top:12px">
 ・日本人上司は何を基準に判断しているのか<br>
 ・なぜ「言われた通りにやったのに怒られる」が起きるのか<br>
 ・基準の違いをどう整理し、組織の中で共通言語にしていくのか<br>
-・経営戦略と人材育成をどう接続するか<br><br>
-を、具体的な事例をもとに体験いただけます。`,
+・経営戦略と人材育成をどう接続するか
+</p>
+<p style="margin-top:12px;font-weight:700;color:var(--primary)">具体的な事例をもとにご体験いただけます。</p>
+</div>`,
     btn_text: '無料で申し込む',
     btn_url: '#apply'
   },
@@ -67,7 +78,7 @@ window.LP_CONFIG = {
   issues: {
     en: 'CHALLENGES',
     title: 'このような課題をお持ちのHRの方へ',
-    img: 'images/challenge_scene.jpg',
+    img: 'images/workshop_scene.jpg',
     items: [
       'インドネシア人マネージャーと日本人上司の間で、同じ衝突が繰り返されている',
       '「なぜ怒られたのか分からない」という声が現場から上がっている',
@@ -132,10 +143,10 @@ window.LP_CONFIG = {
     title: '登壇者紹介',
     items: [
       {
-        img: 'images/thinking_scene.jpg',
-        name: '高岡',
-        role: 'WS PARTNERS コンサルタント・ファシリテーター',
-        profile: '（プロフィールは準備中です。後日更新いたします。）'
+        img: 'images/photo_trainer_takaoka.jpg',
+        name: '高岡 結貴　Yuki Takaoka',
+        role: 'WS PARTNERS PTE LTD　Senior Facilitator',
+        profile: '大阪大学大学院文学研究科博士課程修了後、1994年にジャカルタへ移住。1997年より日系企業にて人事担当としてキャリアをスタート。以降、日系大手3社（製造業・非製造業）において約24年間、人事・労務分野を中心に部長職として現場を指揮。「意義のない研修はしない」を信条に、現場理解と理論に裏打ちされた実践的なマネジメント指導を行う。在住30年以上、インドネシア語は法律文書にも対応できるネイティブレベル。'
       }
     ]
   },

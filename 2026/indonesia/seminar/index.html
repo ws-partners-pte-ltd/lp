@@ -150,8 +150,9 @@
     .site-header { position: sticky; top: 0; z-index: 100; }
 
     .header-top {
-      background: var(--bg-dark);
+      background: #ffffff;
       padding: 8px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
     }
     .header-top .container {
       display: flex;
@@ -159,12 +160,17 @@
       align-items: center;
       gap: 12px;
     }
-    .header-logo img { height: 50px; width: auto; }
+    .header-logo { display: flex; align-items: center; gap: 14px; }
+    .header-logo img { height: 44px; width: auto; }
+    .header-logo .logo-divider {
+      width: 1px; height: 32px;
+      background: #cbd5e0;
+    }
     .header-action { display: flex; align-items: center; gap: 12px; }
 
-    .header-contact-row { display: flex; align-items: center; gap: 6px; color: #fff; }
-    .header-contact-row .phone { font-size: 1.1rem; font-weight: 700; }
-    .header-contact-row .time  { font-size: var(--fs-small); color: var(--text-light); }
+    .header-contact-row { display: flex; align-items: center; gap: 6px; color: var(--text-main); }
+    .header-contact-row .phone { font-size: 1.1rem; font-weight: 700; color: var(--text-main); }
+    .header-contact-row .time  { font-size: var(--fs-small); color: var(--text-muted); }
 
     .header-buttons { display: flex; gap: 8px; }
 
@@ -195,8 +201,8 @@
     .btn-entry-header:hover { background: var(--accent-orange-dark); }
 
     .header-bottom {
-      background: var(--bg-dark);
-      border-top: 1px solid rgba(255,255,255,.1);
+      background: var(--primary);
+      border-top: none;
       padding: 0;
     }
     .nav-container { display: flex; justify-content: center; }
@@ -212,9 +218,16 @@
     /* ========================================
        Hero
        ======================================== */
+    @keyframes pulse-glow {
+      0%   { box-shadow: var(--shadow-orange), 0 0 0 0   rgba(243,156,18,.55); }
+      70%  { box-shadow: var(--shadow-orange), 0 0 0 18px rgba(243,156,18,0); }
+      100% { box-shadow: var(--shadow-orange), 0 0 0 0   rgba(243,156,18,0); }
+    }
+    .btn-cta.pulse { animation: pulse-glow 2.2s ease-out infinite; }
+
     .hero {
       position: relative;
-      min-height: 85vh;
+      min-height: 72vh;
       display: flex;
       align-items: center;
       overflow: hidden;
@@ -236,7 +249,7 @@
       display: flex;
       align-items: center;
       gap: 48px;
-      padding: 80px 20px;
+      padding: 48px 20px 52px;
       max-width: 1100px;
       margin: 0 auto;
       width: 100%;
@@ -336,16 +349,39 @@
     /* ========================================
        Consult Section
        ======================================== */
-    #consult { background: linear-gradient(135deg, #0050b3 0%, #0070f3 100%); }
+    #consult { background: var(--bg-body); }
     .independent-box {
-      background: rgba(255,255,255,.1);
-      border: 1px solid rgba(255,255,255,.25);
+      background: var(--bg-surface);
+      border: 1px solid #e2e8f0;
       border-radius: var(--radius-lg);
-      padding: 40px;
-      text-align: center;
-      color: #fff;
+      padding: 48px;
+      text-align: left;
+      color: var(--text-main);
+      box-shadow: var(--shadow-sm);
     }
-    .independent-box p { color: rgba(255,255,255,.85); margin: 12px 0 24px; }
+    .independent-box .sec-title { color: var(--text-main); text-align: center; }
+    .independent-box .sec-title .en { color: var(--primary); }
+    .independent-box p { color: var(--text-main); margin: 0 0 24px; }
+
+    /* Consult: quote box */
+    .voice-box {
+      background: #f0f4ff;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+    }
+    .voice-box p { color: var(--text-main); margin: 0; font-style: italic; line-height: 2; }
+
+    /* Consult: seminar details box */
+    .seminar-detail-box {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-top: 8px;
+    }
+    .seminar-detail-box p { color: var(--text-muted); margin: 0; }
 
     /* ========================================
        Issues Section
@@ -549,20 +585,34 @@
     }
 
     /* ========================================
-       Cancel / Contact Section
+       Cancel / Contact Section  (クローズ文に転用)
        ======================================== */
-    #cancel { background: var(--bg-body); }
+    #cancel { background: var(--bg-dark); }
+    #cancel .sec-title { color: #fff; text-align: center; }
+    #cancel .sec-title .en { color: var(--secondary); }
     .scroll-box {
-      background: #fff;
-      border-radius: var(--radius);
-      padding: 24px;
-      max-height: 220px;
-      overflow-y: auto;
-      font-size: var(--fs-small); /* 14px */
-      color: var(--text-muted);
-      line-height: 1.9;
-      border: 1px solid #e2e8f0;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: var(--radius-lg);
+      padding: 36px 40px;
+      max-height: none;
+      overflow-y: visible;
+      font-size: var(--fs-body);
+      color: rgba(255,255,255,.88);
+      line-height: 2;
     }
+    .scroll-box p { color: rgba(255,255,255,.88); margin-bottom: 16px; }
+    .scroll-box ul li { color: rgba(255,255,255,.88); }
+    .scroll-box strong { color: #fff; }
+    #cancel-contact-box {
+      background: rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      color: rgba(255,255,255,.75);
+    }
+    #cancel-contact-box h3 { color: #fff; }
+    #cancel-contact-box p  { color: rgba(255,255,255,.75); white-space: pre-line; }
+    #cancel .btn-cta-wrap { text-align: center; margin-top: 32px; }
 
     /* ========================================
        Apply / Form Section
@@ -637,16 +687,18 @@
        Footer
        ======================================== */
     footer {
-      background: var(--bg-dark);
-      color: rgba(255,255,255,.7);
+      background: #ffffff;
+      color: var(--text-muted);
       padding: 40px 0 24px;
       font-size: var(--fs-small);
       text-align: center;
+      border-top: 1px solid #e2e8f0;
     }
-    footer a { color: rgba(255,255,255,.6); transition: color .2s; }
-    footer a:hover { color: #fff; }
-    footer .footer-logo { margin-bottom: 16px; }
-    footer .footer-logo img { height: 40px; margin: 0 auto; }
+    footer a { color: var(--text-muted); transition: color .2s; }
+    footer a:hover { color: var(--primary); }
+    footer .footer-logo { margin-bottom: 16px; display: flex; align-items: center; justify-content: center; gap: 16px; }
+    footer .footer-logo img { height: 36px; width: auto; }
+    footer .footer-logo .logo-divider { width: 1px; height: 28px; background: #cbd5e0; }
     footer .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 16px; flex-wrap: wrap; }
 
     /* ========================================
@@ -693,7 +745,13 @@
   <div class="header-top">
     <div class="container">
       <div class="header-logo">
-        <a href="#"><img id="header-logo" src="images/logo_wsp.png" alt="WS PARTNERS"></a>
+        <a href="https://www.ws-partners.com.sg/">
+          <img src="images/logo_kawaijuku.png" alt="河合塾グループ">
+        </a>
+        <span class="logo-divider"></span>
+        <a href="https://www.ws-partners.com.sg/">
+          <img src="images/logo_wsp.png" alt="WS PARTNERS" id="header-logo">
+        </a>
       </div>
       <div class="header-action">
         <div class="header-contact-row">
@@ -729,7 +787,7 @@
         <p class="date" id="hero-deadline"></p>
         <p class="note"  id="hero-note"></p>
       </div>
-      <a href="#apply" class="btn-cta reveal delay-100" id="hero-cta-text">お申し込みはこちら</a>
+      <a href="#apply" class="btn-cta pulse reveal delay-100" id="hero-cta-text">お申し込みはこちら</a>
     </div>
     <div class="hero-visual-content reveal-right">
       <div class="hero-badge-circle">
@@ -741,10 +799,10 @@
           <img id="hero-img-main" src="images/photo_meeting.jpg" alt="">
         </div>
         <div class="img-online">
-          <img id="hero-img-sub1" src="images/photo_feature_retention.jpg" alt="">
+          <img id="hero-img-sub1" src="images/online_training.jpg" alt="">
         </div>
-        <div class="img-instructor">
-          <img id="hero-img-sub2" src="images/photo_instructor_collage.jpg" alt="">
+        <div class="img-instructor" style="display:none">
+          <img id="hero-img-sub2" src="" alt="">
         </div>
       </div>
     </div>
@@ -758,14 +816,16 @@
 <section id="consult">
   <div class="container">
     <div class="independent-box reveal">
-      <h2 class="sec-title inverse" style="margin-bottom:12px">
+      <h2 class="sec-title" style="margin-bottom:28px">
         <span class="en" id="consult-en"></span>
         <span id="consult-title"></span>
       </h2>
-      <p id="consult-body"></p>
-      <a id="consult-btn" href="#" target="_blank" class="btn-cta" style="display:none">
-        <span id="consult-btn-text">無料相談を予約する</span>
-      </a>
+      <div id="consult-body"></div>
+      <div style="text-align:center;margin-top:28px">
+        <a id="consult-btn" href="#apply" class="btn-cta pulse" style="display:none">
+          <span id="consult-btn-text">無料で申し込む</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -933,9 +993,12 @@
       <span id="cancel-title"></span>
     </h2>
     <div class="scroll-box reveal" id="cancel-body"></div>
-    <div style="margin-top:32px;padding:24px;background:#fff;border-radius:var(--radius)" class="reveal">
+    <div class="btn-cta-wrap reveal">
+      <a href="#apply" class="btn-cta pulse">無料でセミナーに申し込む</a>
+    </div>
+    <div id="cancel-contact-box" style="margin-top:32px" class="reveal">
       <h3 style="font-size:var(--fs-h3);margin-bottom:12px" id="contact-title"></h3>
-      <p style="font-size:var(--fs-body);color:var(--text-muted)" id="contact-body"></p>
+      <p style="font-size:var(--fs-body)" id="contact-body"></p>
     </div>
   </div>
 </section>
@@ -982,7 +1045,9 @@
 <footer>
   <div class="container">
     <div class="footer-logo">
-      <img id="footer-logo" src="images/logo_wsp.png" alt="WS PARTNERS">
+      <img src="images/logo_kawaijuku.png" alt="河合塾グループ">
+      <span class="logo-divider"></span>
+      <img src="images/logo_wsp.png" alt="WS PARTNERS" id="footer-logo">
     </div>
     <div class="footer-links" id="footer-links"></div>
     <p id="footer-address" style="margin-bottom:8px"></p>
