@@ -282,7 +282,7 @@
             align-items: center;
             position: relative;
             padding-top: var(--header-total-height);
-            padding-bottom: 0;
+            padding-bottom: 60px;
             z-index: 1;
             overflow: hidden;
         }
@@ -304,7 +304,6 @@
         .hero-text-content {
             flex: 1;
             max-width: 750px;
-            transform: translateY(-2vh);
         }
         .hero-subtitle {
             font-size: clamp(0.95rem,1.5vw,1.1rem);
@@ -356,11 +355,10 @@
         .hero-visual-content {
             flex: 1;
             position: relative;
-            height: clamp(300px,60vh,550px);
+            height: clamp(300px,50vh,480px);
             display: flex;
             justify-content: center;
             align-items: center;
-            transform: translateY(-2vh);
             z-index: 2;
         }
         .hero-images-wrapper {
@@ -1009,12 +1007,12 @@
                 font-size: 0.95rem;
                 width: 100%;
             }
-            .hero { padding-top: calc(60px + 44px + 40px); padding-bottom: 60px; height: auto; min-height: 0; }
-            .hero-container { flex-direction: column; text-align: center; gap: 0; }
-            .hero-text-content { max-width: 100%; transform: none; }
-            .hero-info-box { text-align: left; padding: 18px 20px; margin-bottom: 24px; }
-            .hero-visual-content { display: none; }
-            .hero-images-wrapper { max-width: 400px; }
+            .hero { padding-top: calc(60px + 44px + 30px); padding-bottom: 60px; height: auto; min-height: 0; }
+            .hero-container { flex-direction: column; text-align: center; gap: 20px; }
+            .hero-text-content { max-width: 100%; }
+            .hero-info-box { text-align: left; padding: 18px 20px; }
+            .hero-visual-content { height: 260px; width: 100%; margin-top: 0; }
+            .hero-images-wrapper { height: 100%; max-width: 360px; aspect-ratio: unset; }
             .hero-badge-circle { right: 0; bottom: -5%; }
             .issue-box { padding: 30px 20px; }
             .audience-section { padding: 30px 20px; }
