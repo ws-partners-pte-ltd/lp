@@ -810,39 +810,176 @@
     .back-to-top:hover { background: #0070f3; transform: translateY(-3px); }
 
     /* ========================================
+       Hamburger Button (PC: hidden)
+       ======================================== */
+    .hamburger-btn {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 26px; height: 20px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin-left: 10px;
+      flex-shrink: 0;
+    }
+    .hamburger-btn span {
+      display: block;
+      width: 100%; height: 3px;
+      background: var(--primary);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .hamburger-btn.active span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
+    .hamburger-btn.active span:nth-child(2) { opacity: 0; }
+    .hamburger-btn.active span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+
+    /* ボタンバー（モバイル専用）: PC では非表示 */
+    .header-btn-bar { display: none; }
+
+    /* ========================================
        Responsive – Mobile
        ======================================== */
     @media (max-width: 768px) {
-      section { padding: 56px 0; }
+      /* ── Variables: top=60px, btn-bar=44px ── */
+      :root {
+        --header-top-height:    60px;
+        --header-bottom-height: 44px;
+      }
 
-      /* Hero */
-      .hero { height: auto; min-height: auto; }
-      .hero-container { flex-direction: column; padding: 40px 20px; gap: 32px; }
-      .hero-visual-content { flex: none; width: 100%; height: clamp(240px, 55vw, 380px); transform: none; }
-      .hero-images-wrapper { max-width: 90%; margin: 0 auto; }
-      .hero-title  { font-size: clamp(1.6rem, 6vw, 2rem); }
+      section { padding: 48px 0; }
+      .container { padding: 0 16px; }
 
-      /* Header */
-      .header-top { padding: 0 16px; }
+      /* ── Header Top ── */
+      .header-top { height: 60px; padding: 0 0 0 14px; }
+      .header-logo { gap: 10px; }
+      /* 河合塾ロゴはモバイルで非表示 */
+      .header-logo > a:first-child,
+      .header-logo .logo-divider { display: none; }
+      .header-logo img { height: 34px; }
       .header-contact-row { display: none; }
-      .nav-container a { padding: 0 10px; font-size: .75rem; }
-      .back-to-top { bottom: 20px; right: 15px; width: 44px; height: 44px; font-size: 1.2rem; }
+      .header-action { align-self: stretch; gap: 0; }
+      /* PC用ボタン非表示 → ハンバーガー表示 */
+      .header-buttons { display: none; }
+      .hamburger-btn  { display: flex; margin-right: 14px; }
 
-      /* Sections */
-      .company-box   { flex-direction: column; }
-      .company-img   { flex: none; width: 100%; }
-      .speaker-card  { flex-direction: column; }
-      .speaker-img   { flex: none; }
+      /* ── ボタンバー（ヘッダー直下、横100%） ── */
+      .header-btn-bar {
+        display: flex;
+        width: 100%;
+        height: 44px;
+        position: absolute;
+        top: 60px; left: 0; right: 0;
+        z-index: 1000;
+      }
+      .header-btn-bar a {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 0;
+      }
+      .header-btn-bar .btn-bar-lang {
+        background-color: #e74c3c;
+        color: #fff;
+        border-right: 1px solid rgba(255,255,255,.3);
+      }
+      .header-btn-bar .btn-bar-entry {
+        background: var(--accent-orange);
+        color: #fff;
+      }
+
+      /* ── Nav: dropdown (ボタンバーの下) ── */
+      .header-bottom {
+        display: none;
+        position: absolute;
+        top: calc(60px + 44px);
+        left: 0; right: 0;
+        height: auto;
+        z-index: 999;
+        box-shadow: 0 4px 12px rgba(0,0,0,.2);
+        overflow: visible;
+      }
+      .header-bottom.menu-open { display: flex; }
+      .nav-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+        gap: 0;
+        min-width: auto;
+        width: 100%;
+      }
+      .nav-container a {
+        padding: 14px 20px;
+        border-bottom: 1px solid rgba(255,255,255,.15);
+        font-size: 0.95rem;
+        font-weight: 700;
+        height: auto;
+        width: 100%;
+        white-space: normal;
+      }
+
+      /* ── Hero ── */
+      .hero { height: auto; min-height: 100vh; padding-bottom: 60px; }
+      .hero-container { flex-direction: column; padding: 20px 16px 32px; gap: 20px; }
+      .hero-subtitle { margin-top: 0.5rem; font-size: 0.82rem; }
+      .hero-title { font-size: clamp(1.45rem, 5.8vw, 1.9rem); }
+      .hero-info-box { padding: 14px 16px; margin-bottom: 2vh; }
+      .hero-info-box .lead { font-size: 0.85rem; margin-bottom: 8px; }
+      .hero-info-box .date { font-size: 1.05rem; margin-bottom: 6px; }
+      .hero-info-box .note { font-size: 0.75rem; }
+      .hero-visual-content {
+        flex: none; width: 100%;
+        height: clamp(210px, 58vw, 330px);
+        transform: none;
+      }
+      .hero-images-wrapper { max-width: 86%; margin: 0 auto; }
+      .scroll-indicator { display: none; }
+
+      /* ── Content boxes ── */
+      .independent-box { padding: 24px 16px; border-radius: var(--radius); }
+      .voice-box { padding: 16px; }
+      .seminar-detail-box { padding: 16px 18px; }
+      .scroll-box { padding: 22px 18px; }
+      .pricing-box { padding: 24px 18px; }
+      #cancel-contact-box { padding: 18px 16px; }
+
+      /* ── Program: 2col → 1col ── */
+      .program-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+
+      /* ── Speaker / Company ── */
+      .speaker-card { flex-direction: column; align-items: center; text-align: center; padding: 20px 16px; gap: 16px; }
+      .speaker-img  { flex: none; }
+      .speaker-img img { width: 100px; height: 100px; }
+      .company-box  { flex-direction: column; gap: 24px; }
+      .company-img  { flex: none; width: 100%; }
+
+      /* ── Grids ── */
       .value-grid, .feature-grid { grid-template-columns: 1fr; }
 
-      /* Buttons */
+      /* ── Section images ── */
+      .section-image img { height: 180px; }
+
+      /* ── Buttons ── */
       .btn-cta { width: 100%; justify-content: center; }
+      .back-to-top { bottom: 20px; right: 14px; width: 44px; height: 44px; font-size: 1.2rem; }
+
+      /* ── Typography ── */
+      .sec-title { font-size: 1.45rem; }
     }
 
     @media (max-width: 480px) {
-      .hero-title { font-size: 1.5rem; }
-      .sec-title  { font-size: 1.4rem; }
-      .header-buttons .btn-lang { display: none; }
+      .hero-title { font-size: 1.35rem; }
+      .sec-title  { font-size: 1.3rem; }
+
+      /* consult内 2カラムグリッドを1カラムに */
+      #consult-body [style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
     }
   </style>
 </head>
@@ -872,10 +1009,18 @@
           <a id="btn-lang" href="#" class="btn-lang"></a>
           <a href="#apply" class="btn-entry-header" id="header-cta-text">今すぐ申し込む</a>
         </div>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="メニューを開く">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </div>
-  <nav class="header-bottom">
+  <!-- モバイル専用ボタンバー（ヘッダー直下・横100%） -->
+  <div class="header-btn-bar">
+    <a id="btn-bar-lang" href="#" class="btn-bar-lang">Indonesian Language</a>
+    <a href="#apply" class="btn-bar-entry" id="btn-bar-entry">今すぐ申し込む</a>
+  </div>
+  <nav class="header-bottom" id="mobile-nav">
     <div class="nav-container" id="nav-links"></div>
   </nav>
 </header>
@@ -1583,6 +1728,39 @@
   btn.addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+})();
+
+// ===================================
+// ハンバーガーメニュー（モバイル用）
+// ===================================
+(function () {
+  var hamburgerBtn = document.getElementById('hamburger-btn');
+  var mobileNav    = document.getElementById('mobile-nav');
+  if (!hamburgerBtn || !mobileNav) return;
+
+  hamburgerBtn.addEventListener('click', function () {
+    hamburgerBtn.classList.toggle('active');
+    mobileNav.classList.toggle('menu-open');
+  });
+  // ナビリンクをタップしたらメニューを閉じる
+  mobileNav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      hamburgerBtn.classList.remove('active');
+      mobileNav.classList.remove('menu-open');
+    });
+  });
+
+  // ボタンバーの言語スイッチを config と同期
+  var cfg = window.LP_CONFIG || {};
+  var barLang  = document.getElementById('btn-bar-lang');
+  var barEntry = document.getElementById('btn-bar-entry');
+  if (barLang && cfg.header && cfg.header.langSwitchUrl) {
+    barLang.href = cfg.header.langSwitchUrl;
+    if (cfg.header.langSwitchText) barLang.textContent = cfg.header.langSwitchText;
+  }
+  if (barEntry && cfg.header && cfg.header.ctaText) {
+    barEntry.textContent = cfg.header.ctaText;
+  }
 })();
 </script>
 </body>
