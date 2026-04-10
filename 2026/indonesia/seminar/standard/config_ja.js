@@ -28,9 +28,9 @@ window.LP_CONFIG = {
   ],
 
   hero: {
-    bg_image: 'images/hero_bg.jpg',
-    img_main: 'images/photo_trainer_takaoka.jpg',
-    img_sub1: 'images/online_training.jpg',
+    bg_image: '../images/hero_bg.jpg',
+    img_main: '../images/photo_trainer_takaoka.jpg',
+    img_sub1: '../images/online_training.jpg',
     img_sub2: '',
     subtitle: 'インドネシア人のための日本人上司との基準理解と実践',
     title: 'なぜ、言われた通りにやったのに怒られるのか？',
@@ -106,7 +106,7 @@ window.LP_CONFIG = {
   issues: {
     en: 'CHALLENGES',
     title: 'このような課題をお持ちのHRの方へ',
-    img: 'images/workshop_scene.jpg',
+    img: '../images/workshop_scene.jpg',
     items: [
       'インドネシア人マネージャーと日本人上司の間で、同じ衝突が繰り返されている',
       '「なぜ怒られたのか分からない」という声が現場から上がっている',
@@ -171,7 +171,7 @@ window.LP_CONFIG = {
     title: '登壇者紹介',
     items: [
       {
-        img: 'images/photo_trainer_takaoka.jpg',
+        img: '../images/photo_trainer_takaoka.jpg',
         name: '高岡 結貴　Yuki Takaoka',
         role: 'WS PARTNERS PTE LTD　Senior Facilitator',
         profile: '大阪大学大学院文学研究科博士課程修了後、1994年にジャカルタへ移住。1997年より日系企業にて人事担当としてキャリアをスタート。以降、日系大手3社（製造業・非製造業）において約24年間、人事・労務分野を中心に部長職として現場を指揮。「意義のない研修はしない」を信条に、現場理解と理論に裏打ちされた実践的なマネジメント指導を行う。在住30年以上、インドネシア語は法律文書にも対応できるネイティブレベル。'
@@ -230,7 +230,7 @@ window.LP_CONFIG = {
   company: {
     en: 'ABOUT US',
     title: '弊社について',
-    img: 'images/ws-partners.jpeg',
+    img: '../images/ws-partners.jpeg',
     name: 'WS PARTNERS PTE LTD',
     items: [
       { label: '【WS PARTNERSのミッション】', value: '私たちWS PARTNERSは、ASEANの日系現地法人を対象に、現地人材の育成・駐在員の現地適応・組織や人材上の問題解決を通じて、日本企業のグローバルビジネスに貢献します。' },
