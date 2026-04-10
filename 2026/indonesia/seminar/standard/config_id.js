@@ -40,8 +40,8 @@ window.LP_CONFIG = {
     deadline: '<strong style="font-size:1.3em;color:#fff">GRATIS</strong>',
     note: 'Diselenggarakan via <strong>Zoom</strong> (dalam Bahasa Indonesia)<br>Batas pendaftaran: pukul 10:00 WIB pada hari pelaksanaan',
     cta_text: 'Daftar Gratis',
-    badge_en: 'FREE',
-    badge_ja: 'Dalam Bahasa\nIndonesia'
+    badge_en: 'Untuk Peserta<br>Indonesia!',
+    badge_ja: 'Dalam Bahasa<br>Indonesia!'
   },
 
   consult: {

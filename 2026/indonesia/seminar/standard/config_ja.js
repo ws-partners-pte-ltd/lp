@@ -40,8 +40,8 @@ window.LP_CONFIG = {
     deadline: '<strong style="font-size:1.3em;color:#fff">無 料</strong>',
     note: 'Web会議ツール <strong>Zoom</strong> にて開催（インドネシア語で実施）<br>申込締切：当日午前10時（インドネシア時間）',
     cta_text: '無料で申し込む',
-    badge_en: 'FREE',
-    badge_ja: 'インドネシア語で実施'
+    badge_en: 'インドネシア<br>人向け',
+    badge_ja: 'インドネシア語で実施！'
   },
 
   consult: {
