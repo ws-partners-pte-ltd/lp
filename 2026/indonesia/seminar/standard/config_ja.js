@@ -172,7 +172,7 @@ window.LP_CONFIG = {
     items: [
       {
         img: '../images/photo_trainer_takaoka.jpg',
-        name: '高岡 結貴　Yuki Takaoka',
+        name: '高岡 結貴（博士）　Dr. Yuki Takaoka',
         role: 'WS PARTNERS PTE LTD　Senior Facilitator',
         profile: '大阪大学大学院文学研究科博士課程修了後、1994年にジャカルタへ移住。1997年より日系企業にて人事担当としてキャリアをスタート。以降、日系大手3社（製造業・非製造業）において約24年間、人事・労務分野を中心に部長職として現場を指揮。「意義のない研修はしない」を信条に、現場理解と理論に裏打ちされた実践的なマネジメント指導を行う。在住30年以上、インドネシア語は法律文書にも対応できるネイティブレベル。'
       }

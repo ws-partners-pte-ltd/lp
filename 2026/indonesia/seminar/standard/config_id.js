@@ -171,7 +171,7 @@ window.LP_CONFIG = {
     items: [
       {
         img: '../images/photo_trainer_takaoka.jpg',
-        name: 'Yuki Takaoka　高岡 結貴',
+        name: 'Dr. Yuki Takaoka　高岡 結貴（博士）',
         role: 'WS PARTNERS PTE LTD　Senior Facilitator',
         profile: 'Setelah menyelesaikan program doktoral di Graduate School of Letters, Osaka University, beliau pindah ke Jakarta pada tahun 1994. Sejak 1997, memulai karier di bidang HR di perusahaan Jepang. Selama sekitar 24 tahun, beliau menjabat sebagai manajer senior bidang HR & hubungan industrial di tiga perusahaan Jepang besar (manufaktur dan non-manufaktur). Dengan prinsip "tidak ada pelatihan tanpa makna", beliau memberikan pelatihan manajemen praktis yang dilandasi pemahaman lapangan dan teori yang kuat. Tinggal di Indonesia selama lebih dari 30 tahun, dengan kemampuan Bahasa Indonesia setara penutur asli, termasuk dokumen hukum.'
       }
