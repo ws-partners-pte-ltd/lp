@@ -9,7 +9,7 @@ window.LP_CONFIG = {
     title: 'なぜ、言われた通りにやったのに怒られるのか？ インドネシア人向けセミナー 2026年5月5日 | WS PARTNERS',
     description: '日系企業のインドネシア人マネージャーと日本人上司の間の「基準の違い」を体験型で学ぶ無料セミナー。2026年5月5日（火）オンライン開催・インドネシア語実施。',
     other_lang_label: 'Bahasa Indonesia',
-    other_lang_url: 'https://event.ws-partners.com.sg/horenso/indonesia/2026/id'
+    other_lang_url: '../id/'
   },
 
   header: {
