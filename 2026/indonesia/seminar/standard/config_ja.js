@@ -35,7 +35,7 @@ window.LP_CONFIG = {
     subtitle: 'インドネシア人のための日本人上司との基準理解と実践',
     title: 'なぜ、言われた通りにやったのに怒られるのか？',
     date_label: '開催日時',
-    date: '<strong>2026年5月5日（火）　15:00〜16:30</strong>　インドネシア時間',
+    date: '<strong>2026年5月5日（火）　15:00〜16:30</strong>（インドネシア時間）',
     deadline_label: '参加費',
     deadline: '<strong style="font-size:1.3em;color:#fff">無 料</strong>',
     note: 'Web会議ツール <strong>Zoom</strong> にて開催（インドネシア語で実施）<br>申込締切：当日午前10時（インドネシア時間）',

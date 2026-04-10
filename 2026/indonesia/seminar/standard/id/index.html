@@ -314,16 +314,17 @@
       box-shadow: 0 20px 40px rgba(0,0,0,.3);
     }
     .hero-info-box .lead {
-      font-size: clamp(.9rem, 1.2vw, 1.05rem);
+      font-size: clamp(.75rem, 1.0vw, .85rem);
       font-weight: 700;
-      margin-bottom: 0.8vh;
-      letter-spacing: .04em;
-      color: #fff;
+      margin-bottom: .3vh;
+      letter-spacing: .1em;
+      color: #ffc800;
+      text-transform: uppercase;
     }
     .hero-info-box .date {
       font-size: clamp(1rem, 1.6vw, 1.3rem);
       font-weight: 900;
-      margin-bottom: 0.8vh;
+      margin-bottom: 2vh;
       color: #ffffff;
       line-height: 1.3;
       letter-spacing: .03em;
@@ -332,6 +333,9 @@
       font-size: clamp(.75rem, 1vw, .9rem);
       line-height: 1.6;
       color: rgba(255,255,255,.9);
+      border-top: 1px solid rgba(255,255,255,.25);
+      padding-top: 1vh;
+      margin-top: .5vh;
     }
 
     .hero-visual-content {
@@ -932,9 +936,9 @@
       .hero-subtitle { margin-top: 0.5rem; font-size: 0.82rem; }
       .hero-title { font-size: clamp(1.45rem, 5.8vw, 1.9rem); }
       .hero-info-box { padding: 14px 16px; margin-bottom: 2vh; }
-      .hero-info-box .lead { font-size: 0.85rem; margin-bottom: 8px; }
-      .hero-info-box .date { font-size: 1.05rem; margin-bottom: 6px; }
-      .hero-info-box .note { font-size: 0.75rem; }
+      .hero-info-box .lead { font-size: 0.85rem; margin-bottom: 4px; color: #ffc800; }
+      .hero-info-box .date { font-size: 1.05rem; margin-bottom: 10px; }
+      .hero-info-box .note { font-size: 0.75rem; border-top: 1px solid rgba(255,255,255,.25); padding-top: 8px; margin-top: 4px; }
       /* ── Hero visual: aspect-ratio に合わせた高さ設定 ── */
       .hero-visual-content {
         flex: none; width: 100%;

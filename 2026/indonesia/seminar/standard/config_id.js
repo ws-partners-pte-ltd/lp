@@ -35,7 +35,7 @@ window.LP_CONFIG = {
     subtitle: 'Memahami Standar Atasan Jepang untuk Profesional Indonesia',
     title: 'Mengapa Sudah Dikerjakan Sesuai Perintah, Tapi Tetap Dimarahi?',
     date_label: 'Tanggal & Waktu',
-    date: '<strong>5 Mei 2026 (Selasa) pukul 15:00–16:30</strong>&nbsp; Waktu Indonesia Barat (WIB)',
+    date: '<strong>5 Mei 2026 (Selasa) pukul 15:00–16:30</strong>（Waktu Indonesia Barat / WIB）',
     deadline_label: 'Biaya Pendaftaran',
     deadline: '<strong style="font-size:1.3em;color:#fff">GRATIS</strong>',
     note: 'Diselenggarakan via <strong>Zoom</strong> (dalam Bahasa Indonesia)<br>Batas pendaftaran: pukul 10:00 WIB pada hari pelaksanaan',
