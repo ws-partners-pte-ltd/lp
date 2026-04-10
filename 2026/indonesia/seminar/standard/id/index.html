@@ -294,36 +294,36 @@
       font-size: clamp(.88rem, 1.6vw, 1.04rem);
       font-weight: 500;
       color: var(--secondary);
-      margin-top: 6rem;
-      margin-bottom: 12px;
+      margin-top: 2rem;
+      margin-bottom: 8px;
     }
     .hero-title {
-      font-size: var(--fs-hero);  /* 36–40px */
+      font-size: clamp(1.6rem, 3.2vw, 2.1rem);
       font-weight: 900;
       line-height: 1.25;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
     .hero-info-box {
       background: rgba(36,107,185,0.85);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      padding: clamp(15px, 2.5vh, 30px) clamp(20px, 3vw, 40px);
+      padding: clamp(12px, 1.8vh, 22px) clamp(16px, 2.5vw, 32px);
       border-left: 4px solid var(--secondary);
-      margin-bottom: 3vh;
+      margin-bottom: 2vh;
       color: #ffffff;
       box-shadow: 0 20px 40px rgba(0,0,0,.3);
     }
     .hero-info-box .lead {
       font-size: clamp(.9rem, 1.2vw, 1.05rem);
       font-weight: 700;
-      margin-bottom: 1.5vh;
-      letter-spacing: .05em;
+      margin-bottom: 0.8vh;
+      letter-spacing: .04em;
       color: #fff;
     }
     .hero-info-box .date {
-      font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+      font-size: clamp(1rem, 1.6vw, 1.3rem);
       font-weight: 900;
-      margin-bottom: 1.5vh;
+      margin-bottom: 0.8vh;
       color: #ffffff;
       line-height: 1.3;
       letter-spacing: .03em;
@@ -1088,7 +1088,7 @@
       <div id="consult-body"></div>
       <div style="text-align:center;margin-top:28px">
         <a id="consult-btn" href="#apply" class="btn-cta pulse" style="display:none">
-          <span id="consult-btn-text">無料で申し込む</span>
+          <span id="consult-btn-text">Daftar Gratis</span>
         </a>
       </div>
     </div>
@@ -1111,7 +1111,7 @@
       <ul class="issue-checklist" id="issues-list"></ul>
     </div>
     <div style="text-align:center">
-      <a href="#apply" class="btn-cta reveal">お申し込みはこちら</a>
+      <a href="#apply" class="btn-cta reveal">Daftar Sekarang</a>
     </div>
   </div>
 </section>
@@ -1210,7 +1210,7 @@
       <div class="price-amount"><span class="currency" id="pricing-currency">SGD </span><span id="pricing-amount"></span></div>
       <p class="price-note" id="pricing-note"></p>
       <div style="margin-top:24px">
-        <a href="#apply" class="btn-cta">お申し込みはこちら</a>
+        <a href="#apply" class="btn-cta">Daftar Sekarang</a>
       </div>
     </div>
     <div id="pricing-flow" style="margin-top:40px"></div>
@@ -1259,7 +1259,7 @@
     </h2>
     <div class="scroll-box reveal" id="cancel-body"></div>
     <div class="btn-cta-wrap reveal">
-      <a href="#apply" class="btn-cta pulse">無料でセミナーに申し込む</a>
+      <a href="#apply" class="btn-cta pulse">Daftar Seminar Gratis</a>
     </div>
     <div id="cancel-contact-box" style="margin-top:32px" class="reveal">
       <h3 style="font-size:var(--fs-h3);margin-bottom:12px" id="contact-title"></h3>
@@ -1281,7 +1281,7 @@
 
     <div class="form-wrapper">
       <!-- Loading state -->
-      <div id="form-loading">フォームを読み込み中...</div>
+      <div id="form-loading">Memuat formulir...</div>
 
       <!-- Google Form (primary) -->
       <div id="google-form-wrap" style="display:none">
@@ -1292,7 +1292,7 @@
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          title="申込フォーム"
+          title="Formulir Pendaftaran"
         >読み込んでいます…</iframe>
       </div>
 
@@ -1406,12 +1406,12 @@
     if (c.hero) {
       setEl('hero-subtitle', c.hero.subtitle || '');
       setEl('hero-title',    c.hero.title    || '');
-      setEl('hero-date-label',     c.hero.date_label || '開催日時');
+      setEl('hero-date-label',     c.hero.date_label || 'Tanggal & Waktu');
       setEl('hero-date',           c.hero.date       || '');
-      setEl('hero-deadline-label', c.hero.deadline_label || '申込期限');
+      setEl('hero-deadline-label', c.hero.deadline_label || 'Biaya Pendaftaran');
       setEl('hero-deadline',       c.hero.deadline   || '');
       setEl('hero-note',           c.hero.note       || '');
-      setEl('hero-cta-text',       c.hero.cta_text   || 'お申し込みはこちら');
+      setEl('hero-cta-text',       c.hero.cta_text   || 'Daftar Gratis');
       setEl('badge-en', c.hero.badge_en || '');
       setEl('badge-ja', c.hero.badge_ja || '');
       if (c.hero.bg_image)   setStyle('hero-bg', 'backgroundImage', 'url(' + c.hero.bg_image + ')');
@@ -1429,7 +1429,7 @@
         var btn = document.getElementById('consult-btn');
         btn.href = d.btn_url;
         btn.style.display = 'inline-flex';
-        setEl('consult-btn-text', d.btn_text || '無料相談を予約する');
+        setEl('consult-btn-text', d.btn_text || 'Daftar Gratis');
       }
     });
 
@@ -1548,7 +1548,7 @@
       setEl('pricing-note',     d.note     || '');
       var flow = document.getElementById('pricing-flow');
       if (flow && d.flow) {
-        flow.innerHTML = '<h3 style="font-size:var(--fs-h3);margin-bottom:16px">' + (d.flow_title || '申込の流れ') + '</h3>'
+        flow.innerHTML = '<h3 style="font-size:var(--fs-h3);margin-bottom:16px">' + (d.flow_title || 'Alur Pendaftaran') + '</h3>'
           + '<ol style="list-style:decimal inside;display:flex;flex-direction:column;gap:10px">'
           + d.flow.map(function(step){ return '<li style="font-size:var(--fs-body)">' + step + '</li>'; }).join('')
           + '</ol>';
@@ -1597,7 +1597,7 @@
     /* Apply */
     if (c.apply) {
       setEl('apply-en',    c.apply.en    || '');
-      setEl('apply-title', c.apply.title || 'お申し込みフォーム');
+      setEl('apply-title', c.apply.title || 'Formulir Pendaftaran');
       setEl('apply-body',  c.apply.body  || '');
     }
 
@@ -1640,9 +1640,9 @@
       var fallbackBanner = document.createElement('div');
       fallbackBanner.style.cssText = 'text-align:center; margin-bottom:16px; padding:14px 20px; background:#fff8ec; border-radius:10px; border:1px solid #f5c97a; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;';
       fallbackBanner.innerHTML =
-        '<span style="color:#7a5000; font-size:0.9rem;">&#x26A0;&#xFE0F; フォームが表示されない場合（Edge・Safari等）はこちら</span>' +
+        '<span style="color:#7a5000; font-size:0.9rem;">&#x26A0;&#xFE0F; Formulir tidak tampil? (Edge, Safari, dll.) — klik di sini</span>' +
         '<a href="' + directUrl + '" target="_blank" rel="noopener" ' +
-        'style="display:inline-block; background:#f39c12; color:#fff; font-weight:700; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:0.95rem; white-space:nowrap;">&#x1F4DD; 別タブで申込フォームを開く</a>';
+        'style="display:inline-block; background:#f39c12; color:#fff; font-weight:700; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:0.95rem; white-space:nowrap;">&#x1F4DD; Buka Formulir di Tab Baru</a>';
       googleWrap.insertBefore(fallbackBanner, googleWrap.firstChild);
 
       googleIframe.src = forms.google_url;
