@@ -1646,6 +1646,16 @@
 
     /* -- Try Google Form first -- */
     if (forms.google_url) {
+      /* 別タブバナー */
+      var directUrl = forms.google_url.replace('?embedded=true', '');
+      var fallbackBanner = document.createElement('div');
+      fallbackBanner.style.cssText = 'text-align:center; margin-bottom:16px; padding:14px 20px; background:#fff8ec; border-radius:10px; border:1px solid #f5c97a; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;';
+      fallbackBanner.innerHTML =
+        '<span style="color:#7a5000; font-size:0.9rem;">&#x26A0;&#xFE0F; フォームが表示されない場合（Edge・Safari等）はこちら</span>' +
+        '<a href="' + directUrl + '" target="_blank" rel="noopener" ' +
+        'style="display:inline-block; background:#f39c12; color:#fff; font-weight:700; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:0.95rem; white-space:nowrap;">&#x1F4DD; 別タブで申込フォームを開く</a>';
+      googleWrap.insertBefore(fallbackBanner, googleWrap.firstChild);
+
       googleIframe.src = forms.google_url;
 
       var googleLoaded = false;
