@@ -140,14 +140,14 @@
 
   <p class="subtitle" id="card-subtitle">
     フォームへのご入力ありがとうございます。<br>
-    担当者より<strong>2〜3営業日以内</strong>にご連絡いたします。
+    後日ご連絡いたします。
   </p>
 
-  <div class="info-box">
-    <p><strong>確認メール</strong>について</p>
-    <p>ご登録のメールアドレスに自動返信メールをお送りしています。届いていない場合は迷惑メールフォルダをご確認ください。</p>
+  <div class="info-box" id="card-info">
+    <p><strong id="info-email-title">確認メール</strong>について</p>
+    <p id="info-email-body">ご登録のメールアドレスに自動返信メールをお送りしています。届いていない場合は迷惑メールフォルダをご確認ください。</p>
     <br>
-    <p><strong>お問い合わせ</strong></p>
+    <p><strong id="info-contact-title">お問い合わせ</strong></p>
     <p>
       WS PARTNERS PTE LTD<br>
       <a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br>
@@ -155,7 +155,7 @@
     </p>
   </div>
 
-  <a href="javascript:history.back()" class="btn-return">LPページへ戻る</a>
+  <a href="javascript:history.back()" class="btn-return" id="btn-return">LPページへ戻る</a>
 </div>
 
 <footer>
@@ -164,19 +164,86 @@
 
 <script>
   /* -------------------------------------------------------
-     Analytics: fire a conversion event on page load
-     GTM dataLayer push (uncomment if GTM is installed)
+     Multi-language support + prog/lang URL params
   ------------------------------------------------------- */
-  // window.dataLayer = window.dataLayer || [];
-  // window.dataLayer.push({ event: 'lp_form_complete' });
-
-  /* Customise title/message via URL param ?prog=Horenso */
-  (function() {
-    var prog = new URLSearchParams(window.location.search).get('prog');
-    if (prog) {
-      var titleEl = document.getElementById('card-title');
-      if (titleEl) titleEl.textContent = prog + 'のお申し込みを受け付けました';
+  var i18n = {
+    ja: {
+      htmlLang:     'ja',
+      title:        'のお申し込みを受け付けました',
+      titleDefault: 'お申し込みを受け付けました',
+      subtitle:     'フォームへのご入力ありがとうございます。<br>後日ご連絡いたします。',
+      emailTitle:   '確認メール',
+      emailAbout:   'について',
+      emailBody:    'ご登録のメールアドレスに自動返信メールをお送りしています。届いていない場合は迷惑メールフォルダをご確認ください。',
+      contactTitle: 'お問い合わせ',
+      btnReturn:    'LPページへ戻る'
+    },
+    id: {
+      htmlLang:     'id',
+      title:        ' Telah Diterima',
+      titleDefault: 'Pendaftaran Anda Telah Diterima',
+      subtitle:     'Terima kasih telah mengisi formulir.<br>Kami akan menghubungi Anda secepatnya.',
+      emailTitle:   'Email Konfirmasi',
+      emailAbout:   '',
+      emailBody:    'Email konfirmasi otomatis telah dikirim ke alamat email yang terdaftar. Jika tidak ditemukan, harap periksa folder spam Anda.',
+      contactTitle: 'Hubungi Kami',
+      btnReturn:    'Kembali ke Halaman LP'
+    },
+    th: {
+      htmlLang:     'th',
+      title:        ' ได้รับการสมัครของคุณแล้ว',
+      titleDefault: 'รับการสมัครของคุณแล้ว',
+      subtitle:     'ขอบคุณที่กรอกแบบฟอร์ม<br>เจ้าหน้าที่จะติดต่อกลับในเร็วๆ นี้',
+      emailTitle:   'อีเมลยืนยัน',
+      emailAbout:   '',
+      emailBody:    'ระบบได้ส่งอีเมลตอบกลับอัตโนมัติไปยังที่อยู่อีเมลที่ลงทะเบียน หากไม่พบ กรุณาตรวจสอบในโฟลเดอร์สแปม',
+      contactTitle: 'ติดต่อเรา',
+      btnReturn:    'กลับสู่หน้า LP'
     }
+  };
+
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var prog   = params.get('prog') || '';
+    var lang   = params.get('lang') || 'ja';
+    var t      = i18n[lang] || i18n['ja'];
+
+    /* Set html lang attribute */
+    document.documentElement.lang = t.htmlLang;
+
+    /* Title */
+    var titleEl = document.getElementById('card-title');
+    if (titleEl) {
+      titleEl.textContent = prog ? (prog + t.title) : t.titleDefault;
+    }
+
+    /* Subtitle */
+    var subtitleEl = document.getElementById('card-subtitle');
+    if (subtitleEl) subtitleEl.innerHTML = t.subtitle;
+
+    /* Info box */
+    var emailTitleEl   = document.getElementById('info-email-title');
+    var emailAboutEl   = document.getElementById('card-info');
+    var emailBodyEl    = document.getElementById('info-email-body');
+    var contactTitleEl = document.getElementById('info-contact-title');
+
+    if (emailTitleEl)   emailTitleEl.textContent = t.emailTitle;
+    if (emailBodyEl)    emailBodyEl.textContent  = t.emailBody;
+    if (contactTitleEl) contactTitleEl.textContent = t.contactTitle;
+
+    /* Rebuild info box first line for languages without "について" */
+    var infoFirstP = document.querySelector('.info-box p:first-child');
+    if (infoFirstP) {
+      if (t.emailAbout) {
+        infoFirstP.innerHTML = '<strong id="info-email-title">' + t.emailTitle + '</strong>' + t.emailAbout;
+      } else {
+        infoFirstP.innerHTML = '<strong id="info-email-title">' + t.emailTitle + '</strong>';
+      }
+    }
+
+    /* Return button */
+    var btnEl = document.getElementById('btn-return');
+    if (btnEl) btnEl.textContent = t.btnReturn;
   })();
 </script>
 </body>

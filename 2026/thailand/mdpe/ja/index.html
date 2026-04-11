@@ -1709,16 +1709,7 @@
                 function showFormConfirmation() {
                     if (formSubmitted) return;
                     formSubmitted = true;
-                    // iframeを非表示にして完了メッセージを表示
-                    iframe.style.display = 'none';
-                    var msg = document.getElementById('form-submitted-msg');
-                    if (msg) {
-                        msg.style.display = 'block';
-                        // フォームがあった位置へスムーズスクロール
-                        setTimeout(function() {
-                            msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                        }, 100);
-                    }
+                    window.location.href = '../../../../_template/_thank-you.html?prog=タイMDPEプログラム&lang=ja';
                 }
 
                 // 方法1: iframeのloadイベント

@@ -1953,14 +1953,7 @@
                 function showFormConfirmation() {
                     if (formSubmitted) return;
                     formSubmitted = true;
-                    iframe.style.display = 'none';
-                    var msg = document.getElementById('form-submitted-msg');
-                    if (msg) {
-                        msg.style.display = 'block';
-                        setTimeout(function() {
-                            msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                        }, 100);
-                    }
+                    window.location.href = '../../../../_template/_thank-you.html?prog=Thailand+MDP-Essentials+2026&lang=th';
                 }
 
                 var iframeLoadCount = 0;

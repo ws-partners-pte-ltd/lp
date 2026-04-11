@@ -258,7 +258,7 @@ window.LP_CONFIG = {
     hubspot_portal_id: '※HubSpotのポータルIDをここに記入',
     hubspot_form_id:   '※HubSpotのインドネシア用フォームIDを登録後にここに追記',
     hubspot_region:    'na1',
-    thank_you_url:     '../../../../../_template/_thank-you.html?prog=インドネシア人向けセミナー2026年5月'
+    thank_you_url:     '../../../../../_template/_thank-you.html?prog=インドネシア人向けセミナー2026年5月&lang=ja'
   }
 
 };
