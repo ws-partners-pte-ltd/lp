@@ -1304,6 +1304,7 @@
           googleLoaded = true;
           formLoading.style.display  = 'none';
           googleWrap.style.display   = 'block';
+          hubspotWrap.style.display  = 'none'; /* ensure HubSpot fallback stays hidden */
         } else {
           /* Second load = user submitted the form → redirect to thank-you */
           window.location.href = thankYouUrl;
@@ -1322,10 +1323,11 @@
     function showHubspot() {
       formLoading.style.display  = 'none';
       googleWrap.style.display   = 'none';
-      hubspotWrap.style.display  = 'block';
 
       if (!forms.hubspot_portal_id || !forms.hubspot_form_id) return;
       if (forms.hubspot_portal_id.indexOf('※') !== -1) return; /* not configured yet */
+
+      hubspotWrap.style.display  = 'block';
 
       /* Load HubSpot embed script */
       var hs = document.createElement('script');
