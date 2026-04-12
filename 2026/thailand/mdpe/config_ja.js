@@ -9,7 +9,7 @@ window.LP_CONFIG = {
     title: 'タイ人マネジャー育成プログラム MDP-Essentials 2026年5月-7月 | WS PARTNERS',
     description: 'タイの日系企業向けマネジメント力育成プログラム。全8回オンライン・タイ語実施。2026年5月28日開講。',
     other_lang_label: 'ภาษาไทย',
-    other_lang_url: '※タイ語版LPのURLをここに記入'
+    other_lang_url: '../th/'
   },
 
   header: {
