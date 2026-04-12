@@ -1000,6 +1000,30 @@
         grid-template-columns: 1fr !important;
       }
     }
+
+    /* ── New-tab form submission: thank-you card ── */
+    #newtab-thankyou {
+      display: none;
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px 32px;
+      max-width: 560px;
+      margin: 0 auto;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,.15);
+      animation: fadeUp .5s ease both;
+    }
+    #newtab-thankyou .ty-icon {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: var(--accent-orange);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px;
+    }
+    #newtab-thankyou h2 { font-size: 1.25rem; font-weight: 900; color: var(--text-main); margin-bottom: 10px; line-height: 1.4; }
+    #newtab-thankyou .ty-sub { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px; line-height: 1.7; }
+    #newtab-thankyou .ty-info { background: #f4f7f9; border-radius: 10px; padding: 16px 20px; text-align: left; margin-bottom: 20px; font-size: 0.875rem; color: var(--text-muted); line-height: 1.7; }
+    #newtab-thankyou .ty-back { display: inline-block; background: var(--primary); color: #fff; font-weight: 700; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-size: 0.95rem; }
+    #newtab-thankyou .ty-back:hover { opacity: .85; }
   </style>
 </head>
 <body>
@@ -1034,6 +1058,17 @@
         <button class="hamburger-btn" id="hamburger-btn" aria-label="メニューを開く">
           <span></span><span></span><span></span>
         </button>
+      </div>
+
+      <!-- New-tab form submission thank-you card -->
+      <div id="newtab-thankyou">
+        <div class="ty-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width:32px;height:32px"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h2 id="ty-title"></h2>
+        <p class="ty-sub" id="ty-sub"></p>
+        <div class="ty-info" id="ty-info"></div>
+        <a href="#apply" class="ty-back" id="ty-back">LPページへ戻る</a>
       </div>
     </div>
   </div>
@@ -1649,6 +1684,76 @@
         '<a href="' + directUrl + '" target="_blank" rel="noopener" ' +
         'style="display:inline-block; background:#f39c12; color:#fff; font-weight:700; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:0.95rem; white-space:nowrap;">&#x1F4DD; Buka Formulir di Tab Baru</a>';
       googleWrap.insertBefore(fallbackBanner, googleWrap.firstChild);
+
+      /* ---- New-tab submission detection ---- */
+      (function () {
+        var progMatch = thankYouUrl.match(/[?&]prog=([^&]+)/);
+        var eventName = progMatch ? decodeURIComponent(progMatch[1].replace(/\+/g, ' ')) : '';
+        var langMatch = thankYouUrl.match(/[?&]lang=([^&]+)/);
+        var lang = langMatch ? langMatch[1] : 'ja';
+        var tyI18n = {
+          ja: {
+            title: 'のお申し込みを受け付けました',
+            titleDefault: 'お申し込みを受け付けました',
+            sub: 'フォームへのご入力ありがとうございます。当日のZoom URL等、詳細は後日ご連絡いたします。',
+            emailHead: '確認メールについて',
+            emailBody: 'ご登録のメールアドレスに自動返信メールをお送りしています。届いていない場合は迷惑メールフォルダをご確認ください。',
+            contactHead: 'お問い合わせ',
+            backBtn: 'LPページへ戻る'
+          },
+          id: {
+            title: ' Telah Diterima',
+            titleDefault: 'Pendaftaran Anda Telah Diterima',
+            sub: 'Terima kasih telah mengisi formulir. Kami akan mengirimkan informasi Zoom dan detail lainnya melalui email.',
+            emailHead: 'Email Konfirmasi',
+            emailBody: 'Email konfirmasi otomatis telah dikirim ke alamat email Anda. Jika belum menerima, silakan periksa folder spam.',
+            contactHead: 'Hubungi Kami',
+            backBtn: 'Kembali ke halaman ini'
+          },
+          th: {
+            title: ' ได้รับการสมัครของคุณแล้ว',
+            titleDefault: 'รับการสมัครของคุณแล้ว',
+            sub: 'ขอบคุณที่กรอกแบบฟอร์ม เราจะส่งข้อมูล Zoom และรายละเอียดอื่น ๆ ทางอีเมล',
+            emailHead: 'อีเมลยืนยัน',
+            emailBody: 'เราได้ส่งอีเมลยืนยันอัตโนมัติไปยังที่อยู่อีเมลของคุณแล้ว หากยังไม่ได้รับ โปรดตรวจสอบในโฟลเดอร์สแปม',
+            contactHead: 'ติดต่อเรา',
+            backBtn: 'กลับไปที่หน้าหลัก'
+          }
+        };
+        var t = tyI18n[lang] || tyI18n['ja'];
+        var newTabTy = document.getElementById('newtab-thankyou');
+        if (!newTabTy) return;
+        var titleText = eventName ? (eventName + t.title) : t.titleDefault;
+        document.getElementById('ty-title').textContent = titleText;
+        document.getElementById('ty-sub').textContent = t.sub;
+        document.getElementById('ty-info').innerHTML =
+          '<p><strong>' + t.emailHead + '</strong><br>' + t.emailBody + '</p>' +
+          '<p style="margin-top:10px"><strong>' + t.contactHead + '</strong><br>' +
+          'WS PARTNERS PTE LTD<br>support@ws-partners.com.sg<br>+65-6978-4066</p>';
+        document.getElementById('ty-back').textContent = t.backBtn;
+        var newTabLink = fallbackBanner.querySelector('a');
+        if (newTabLink) {
+          newTabLink.addEventListener('click', function () {
+            sessionStorage.setItem('lpFormTabOpened', '1');
+          });
+        }
+        function showThankyou() {
+          if (sessionStorage.getItem('lpFormTabOpened')) {
+            sessionStorage.removeItem('lpFormTabOpened');
+            formLoading.style.display = 'none';
+            googleWrap.style.display  = 'none';
+            hubspotWrap.style.display = 'none';
+            newTabTy.style.display    = 'block';
+            var applySection = document.getElementById('apply');
+            if (applySection) applySection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+        document.addEventListener('visibilitychange', function () {
+          if (!document.hidden) showThankyou();
+        });
+        window.addEventListener('focus', showThankyou);
+      })();
+      /* ---- end: new-tab detection ---- */
 
       googleIframe.src = forms.google_url;
 
