@@ -1685,7 +1685,7 @@
             var container = document.getElementById('form-container');
 
             if (GOOGLE_FORM_URL && GOOGLE_FORM_URL.indexOf('※') === -1) {
-                var directUrl = GOOGLE_FORM_URL.replace('?embedded=true', '');
+                var directUrl = GOOGLE_FORM_URL.replace('?embedded=true&', '?').replace('?embedded=true', '');
 
                 // フォールバックバナー（常に最上部に表示）
                 var fallback = document.createElement('div');

@@ -1932,7 +1932,7 @@
             var container = document.getElementById('form-container');
 
             if (GOOGLE_FORM_URL && GOOGLE_FORM_URL.indexOf('※') === -1) {
-                var directUrl = GOOGLE_FORM_URL.replace('?embedded=true', '');
+                var directUrl = GOOGLE_FORM_URL.replace('?embedded=true&', '?').replace('?embedded=true', '');
 
                 var fallback = document.createElement('div');
                 fallback.style.cssText = 'text-align:center; margin-bottom:16px; padding:14px 20px; background:#fff8ec; border-radius:10px; border:1px solid #f5c97a; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;';
