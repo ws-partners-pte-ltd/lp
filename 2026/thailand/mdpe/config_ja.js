@@ -29,10 +29,10 @@ window.LP_CONFIG = {
   ],
 
   hero: {
-    bg_image: 'images/hero_bg.jpg',
-    img_main: 'images/photo_meeting.jpg',
-    img_sub1: 'images/photo_instructor_collage.jpg',
-    img_sub2: 'images/photo_trainer_yaninee.jpg',
+    bg_image: '../images/hero_bg.jpg',
+    img_main: '../images/workshop_scene.jpg',
+    img_sub1: '../images/lecture_scene.jpg',
+    img_sub2: '../images/instructor_yaninee.jpg',
     subtitle: 'タイ人マネジャーを育てる、マネジメント力 育成プログラム',
     title: 'Management Development Program（Essential版）',
     date_label: '開催日時',
@@ -65,7 +65,7 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
   issues: {
     en: 'CHALLENGES',
     title: 'このようなお悩みはありませんか？',
-    img: 'images/photo_issues_sad.jpg',
+    img: '../images/thinking_scene.jpg',
     items: [
       '社歴のあるタイ人を管理職に昇格させたが、視点がプレイヤー時代と変わらない。',
       'そもそもマネジャーの役割や心構えが根本的にわかっていない。ゼロから指導する時間もなかなか確保できない。',
@@ -79,7 +79,7 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
   voices: {
     en: 'TESTIMONIALS',
     title: '前回受講者の声（一部）',
-    img: 'images/photo_team_communication.jpg',
+    img: '../images/workshop_small.jpg',
     items: [
       { name: '受講者の声①', quote: '現場の実情をふまえた研修だった。わかりやすく、実践しやすかった。' },
       { name: '受講者の声②', quote: '部下と信頼関係を築き意欲を高めることが成果につながると、実践を通じて理解できた。' },
@@ -95,22 +95,22 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
     title: '本プログラムの特徴',
     items: [
       {
-        img: 'images/photo_feature_instructor.jpg',
+        img: '../images/instructor_yaninee.jpg',
         title: '日系企業の組織文化を熟知した現地のプロ講師が、直接指導',
         body: '博学な講師が受講者の前で話すだけでは、理解は進みません。当コースでは、自身が日系企業のマネジャーとして評価され成功してきた講師が直接指導します。日系で期待されるマネジャーの役割や、日系で重視される概念を「腑に落ちる」よう伝えます。'
       },
       {
-        img: 'images/photo_feature_practice.jpg',
+        img: '../images/homework_scene.jpg',
         title: '学習したことを、必ず実践させる仕組みがある',
         body: '研修を受講しても、わかった気になるだけで実践しないことが、従来の研修の問題点です。このコースでは、次回までの課題として「いつ・誰に対して・何をするか」を具体的に書いて実行を求めます。次週には皆で振り返るため、過去にほとんどの受講者が実践しています。'
       },
       {
-        img: 'images/photo_feature_retention.jpg',
+        img: '../images/continuous_learning.jpg',
         title: '繰り返すから、定着できる・習慣化できる',
         body: '人間は１日経過するだけで、学習内容の67%*を忘れてしまいます。繰り返して復習をすれば、長期記憶に変わります。当コースでは継続型を採用し、各セッション冒頭では振り返りを行い、習慣化を促します。（*Hermann Ebbinghaus 1885。厳密には再学習にかかる時間をもとに導出）'
       },
       {
-        img: 'images/photo_feature_online.jpg',
+        img: '../images/online_training.jpg',
         title: '継続型 １回のセッションを２時間におさえて、毎週実施',
         body: 'この方式には、私たちがマネジャー養成に成功してきたノウハウが凝縮されています。受講者は次回までに、学習したことの実践が求められます。「継続型」を採用する私たちのコースでは、まだコース受講の途中でも、実践の結果があらわれてきます。'
       }
@@ -120,7 +120,7 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
   target: {
     en: 'TARGET',
     title: '本プログラムの対象者',
-    img: 'images/photo_target_leader.jpg',
+    img: '../images/challenge_scene.jpg',
     items: [
       '<strong>【対象者】現在管理職、もしくは管理職候補のタイ人</strong><br>役職について現在マネジャー以上の方、あるいは将来のマネジャー候補者など、「部下や後輩を持つ立場の方」であればどなたにも適しています。',
       '<strong>経験について</strong><br>他の参加者との経験の差を考慮し、ディスカッションのグループを分けるなどの配慮を行います。過去には、製造のスーパーバイザーから販社のゼネラルマネジャーまで、幅広い層の参加をいただいております。',
@@ -157,7 +157,7 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
     title: '講師の紹介',
     items: [
       {
-        img: 'images/photo_trainer_yaninee.jpg',
+        img: '../images/instructor_yaninee.jpg',
         name: 'Dr. Yaninee Songkajorn',
         role: 'WS PARTNERS認定ファシリテーター',
         profile: '（プロフィールは準備中です。後日更新いたします。）'
@@ -187,7 +187,7 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
   company: {
     en: 'ABOUT US',
     title: '弊社について',
-    img: 'images/photo_company.jpg',
+    img: '../images/ws-partners.jpeg',
     name: 'WS PARTNERS PTE LTD',
     items: [
       { label: '【WS PARTNERSのミッション】', value: '私たちWS PARTNERSは、ASEANの日系現地法人を対象に、現地人材の育成・駐在員の現地適応・組織や人材上の問題解決を通じて、日本企業のグローバルビジネスに貢献します。' },

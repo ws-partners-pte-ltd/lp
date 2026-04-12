@@ -32,7 +32,7 @@ window.LP_CONFIG = {
     bg_image: '../images/hero_bg.jpg',
     img_main: '../images/instructor_yaninee.jpg',
     img_sub1: '../images/online_training.jpg',
-    img_sub2: '../images/photo_trainer_yaninee.jpg',
+    img_sub2: '../images/instructor_yaninee.jpg',
     subtitle: 'โปรแกรมพัฒนาทักษะการบริหารสำหรับผู้จัดการชาวไทย',
     title: 'Management Development Program（Essential Edition）',
     date_label: 'วันที่จัดอบรม',
@@ -62,7 +62,7 @@ window.LP_CONFIG = {
   issues: {
     en: 'CHALLENGES',
     title: 'คุณมีปัญหาเหล่านี้อยู่ไหม?',
-    img: '../images/photo_team_issues.jpg',
+    img: '../images/thinking_scene.jpg',
     items: [
       'กำลังมองหาโปรแกรมฝึกอบรมการบริหาร แต่ยังหาไม่พบโปรแกรมที่มีประสิทธิภาพจริงๆ',
       'ต้องการวิทยากรชาวไทยที่เข้าใจบริบทองค์กรและสามารถสอนได้อย่างเข้าถึงจิตใจผู้เรียน',
@@ -107,7 +107,7 @@ window.LP_CONFIG = {
         body: 'มนุษย์ลืม 67%* ของสิ่งที่เรียนภายในเพียงหนึ่งวัน แต่การทบทวนซ้ำจะเปลี่ยนเป็นความจำระยะยาว โปรแกรมนี้ใช้รูปแบบต่อเนื่อง โดยทบทวนในช่วงต้นของแต่ละครั้ง เพื่อส่งเสริมให้เกิดนิสัยที่ดี (*Hermann Ebbinghaus 1885)'
       },
       {
-        img: '../images/photo_feature_online.jpg',
+        img: '../images/online_training.jpg',
         title: 'รูปแบบต่อเนื่อง จำกัดครั้งละ 2 ชั่วโมง เรียนทุกสัปดาห์',
         body: 'รูปแบบนี้รวบรวมประสบการณ์ที่เราสั่งสมมาในการพัฒนาผู้จัดการ ผู้เรียนต้องนำความรู้ไปปฏิบัติก่อนครั้งถัดไป ในโปรแกรมต่อเนื่องของเรา ผลลัพธ์เริ่มปรากฏให้เห็นตั้งแต่กลางหลักสูตร'
       }
@@ -154,7 +154,7 @@ window.LP_CONFIG = {
     title: 'วิทยากร',
     items: [
       {
-        img: '../images/photo_trainer_yaninee.jpg',
+        img: '../images/instructor_yaninee.jpg',
         name: 'Dr. Yaninee Songkajorn',
         role: 'Certified Facilitator, WS PARTNERS',
         profile: '(กำลังเตรียมข้อมูล จะอัปเดตเร็วๆ นี้)'
@@ -184,7 +184,7 @@ window.LP_CONFIG = {
   company: {
     en: 'ABOUT US',
     title: 'เกี่ยวกับเรา',
-    img: '../images/photo_company.jpg',
+    img: '../images/ws-partners.jpeg',
     name: 'WS PARTNERS PTE LTD',
     items: [
       { label: 'พันธกิจของ WS PARTNERS', value: 'WS PARTNERS ให้บริการด้านการพัฒนาบุคลากรท้องถิ่น การปรับตัวของพนักงานต่างชาติ และการแก้ปัญหาด้านองค์กรแก่บริษัทญี่ปุ่นใน ASEAN' },
