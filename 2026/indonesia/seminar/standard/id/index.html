@@ -1676,7 +1676,7 @@
     /* -- Try Google Form first -- */
     if (forms.google_url) {
       /* 別タブバナー */
-      var directUrl = forms.google_url.replace('?embedded=true', '');
+      var directUrl = forms.google_url.replace('?embedded=true&', '?').replace('?embedded=true', '');
       var fallbackBanner = document.createElement('div');
       fallbackBanner.style.cssText = 'text-align:center; margin-bottom:16px; padding:14px 20px; background:#fff8ec; border-radius:10px; border:1px solid #f5c97a; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;';
       fallbackBanner.innerHTML =
