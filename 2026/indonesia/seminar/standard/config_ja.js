@@ -33,7 +33,7 @@ window.LP_CONFIG = {
     img_sub1: '../images/online_training.jpg',
     img_sub2: '',
     subtitle: 'なぜ、言われた通りにやったのに怒られるのか？',
-    title: 'インドネシア人のための日本人上司との基準理解と実践',
+    title: '日本人上司との基準理解と実践―インドネシア人向け',
     date_label: '開催日時',
     date: '<strong>2026年5月5日（火）　15:00〜16:30</strong>（インドネシア時間）',
     deadline_label: '参加費',
