@@ -282,7 +282,7 @@ support@ws-partners.com.sg
     hubspot_portal_id:  '※HubSpotのポータルIDをここに記入',
     hubspot_form_id:    '※タイ用HubSpotフォームIDをここに記入',
     hubspot_region:     'na1',
-    thank_you_url:      '../../../../_template/_thank-you.html?prog=タイMDPEプログラム'
+    thank_you_url:      '../../../../../_template/_thank-you.html?prog=タイMDPEプログラム'
   }
 
 };
