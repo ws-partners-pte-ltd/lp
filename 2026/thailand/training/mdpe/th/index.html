@@ -6,7 +6,7 @@
 <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>โปรแกรมพัฒนาผู้จัดการชาวไทย MDP-Essentials พ.ค.–ก.ค. 2026 | WS PARTNERS</title>
+    <title>WS PARTNERS</title>
     <meta name="description" content="โปรแกรมพัฒนาทักษะการบริหารสำหรับบริษัทญี่ปุ่นในไทย สอนเป็นภาษาไทย ออนไลน์ 8 ครั้ง เริ่ม 28 พฤษภาคม 2026">
     <link rel="icon" href="../images/favicon_wsp_logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -2001,6 +2001,10 @@
             (function applyLPConfig() {
                 var C = window.LP_CONFIG;
                 if (!C) return;
+
+                // --- タブタイトル ---
+                if (C.meta && C.meta.title) document.title = C.meta.title;
+
                 var qs = function(sel) { return document.querySelector(sel); };
 
                 // --- 言語切替ボタン ---

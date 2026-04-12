@@ -6,7 +6,7 @@
 <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>タイ人マネジャー育成プログラム MDP-Essentials 2026年5月-7月 | WS PARTNERS</title>
+    <title>WS PARTNERS</title>
     <meta name="description" content="タイの日系企業向けマネジメント力育成プログラム。全8回オンライン・タイ語実施。2026年5月28日開講。">
     <!-- [1] Favicon -->
     <link rel="icon" href="../images/favicon_wsp_logo.png" type="image/png">
@@ -1766,6 +1766,9 @@
             (function applyLPConfig() {
                 var C = window.LP_CONFIG;
                 if (!C) return;
+
+                // --- タブタイトル ---
+                if (C.meta && C.meta.title) document.title = C.meta.title;
 
                 var qs = function(sel) { return document.querySelector(sel); };
 
