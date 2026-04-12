@@ -10,6 +10,8 @@
     <meta name="description" content="โปรแกรมพัฒนาทักษะการบริหารสำหรับบริษัทญี่ปุ่นในไทย สอนเป็นภาษาไทย ออนไลน์ 8 ครั้ง เริ่ม 28 พฤษภาคม 2026">
     <link rel="icon" href="../images/favicon_wsp_logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- LP Config: 日程・料金・フォームURL等の変更はこのファイルを編集してください -->
+    <script src="../config_th.js"></script>
     <style>
         /* =========================================
            Variables & Theme Settings
@@ -1923,7 +1925,10 @@
             }
 
             // フォーム
-            var GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdmThnPvjKB_SN5_Vy0ixW2ssTLpD4j9_R7_oHkMMjGnJK2dA/viewform?embedded=true&entry.599252256=th';
+            var _cfgForms = window.LP_CONFIG && window.LP_CONFIG.forms;
+            var GOOGLE_FORM_URL = (_cfgForms && _cfgForms.google_url && _cfgForms.google_url.indexOf('※') === -1)
+                ? _cfgForms.google_url + '&entry.599252256=th'
+                : 'https://docs.google.com/forms/d/e/1FAIpQLSdmThnPvjKB_SN5_Vy0ixW2ssTLpD4j9_R7_oHkMMjGnJK2dA/viewform?embedded=true&entry.599252256=th';
             var container = document.getElementById('form-container');
 
             if (GOOGLE_FORM_URL && GOOGLE_FORM_URL.indexOf('※') === -1) {
@@ -1953,7 +1958,10 @@
                 function showFormConfirmation() {
                     if (formSubmitted) return;
                     formSubmitted = true;
-                    window.location.href = '../../../../_template/_thank-you.html?prog=Thailand+MDP-Essentials+2026&lang=th';
+                    var _tyUrl = (_cfgForms && _cfgForms.thank_you_url)
+                        ? _cfgForms.thank_you_url + '&lang=th'
+                        : '../../../../_template/_thank-you.html?prog=Thailand+MDP-Essentials+2026&lang=th';
+                    window.location.href = _tyUrl;
                 }
 
                 var iframeLoadCount = 0;
@@ -1986,6 +1994,74 @@
                     '<a href="mailto:support@ws-partners.com.sg" class="btn-cta">ติดต่อทางอีเมล</a>' +
                     '</div>';
             }
+
+            // =========================================
+            // LP Config 適用 (config_th.js の値を DOM に注入)
+            // =========================================
+            (function applyLPConfig() {
+                var C = window.LP_CONFIG;
+                if (!C) return;
+                var qs = function(sel) { return document.querySelector(sel); };
+
+                // --- 言語切替ボタン ---
+                if (C.meta) {
+                    document.querySelectorAll('.btn-lang, .btn-bar-lang').forEach(function(el) {
+                        if (C.meta.other_lang_url)   el.href        = C.meta.other_lang_url;
+                        if (C.meta.other_lang_label) el.textContent = C.meta.other_lang_label;
+                    });
+                }
+
+                // --- Hero ---
+                var h = C.hero;
+                if (h) {
+                    var nl = function(s) { return (s || '').replace(/\n/g, '<br>'); };
+                    if (h.bg_image)       { var heroEl = qs('.hero'); if (heroEl) heroEl.style.backgroundImage = 'url(' + h.bg_image + ')'; }
+                    if (h.subtitle)       { var el = qs('.hero-subtitle');          if (el) el.textContent = h.subtitle; }
+                    if (h.title)          { var el = qs('.hero-title');             if (el) el.innerHTML   = nl(h.title); }
+                    if (h.date)           { var el = qs('.hero-info-box .date');    if (el) el.innerHTML   = nl(h.date); }
+                    if (h.deadline)       {
+                        var el = qs('.hero-info-box .deadline');
+                        if (el) el.innerHTML = '\uD83D\uDDD3 ' + (h.deadline_label || '申込期限') + '：' + h.deadline;
+                    }
+                    if (h.note)           { var el = qs('.hero-info-box .note');    if (el) el.innerHTML   = nl(h.note); }
+                    if (h.badge_en)       { var el = qs('.badge-en');               if (el) el.textContent = h.badge_en; }
+                    if (h.badge_ja)       { var el = qs('.badge-ja');               if (el) el.innerHTML   = nl(h.badge_ja); }
+                    if (h.img_online)     { var el = qs('.img-collage.img-online'); if (el) el.src          = h.img_online; }
+                    if (h.img_instructor) { var el = qs('.img-collage.img-instructor'); if (el) el.src      = h.img_instructor; }
+                }
+
+                // --- タイムライン（プログラム8回分） ---
+                if (C.program && C.program.schedule) {
+                    var items = document.querySelectorAll('.timeline-item');
+                    C.program.schedule.forEach(function(s, i) {
+                        if (!items[i]) return;
+                        var partEl  = items[i].querySelector('.part-label');
+                        var dateEl  = items[i].querySelector('.date-label');
+                        var titleEl = items[i].querySelector('h3');
+                        var descEl  = items[i].querySelector('.session-desc');
+                        if (partEl)  partEl.textContent  = '\u3010' + s.part + '\u3011';  // 【第X回】
+                        if (dateEl)  dateEl.textContent  = s.date;
+                        if (titleEl) titleEl.textContent = s.title;
+                        if (descEl && s.desc) descEl.textContent = s.desc;
+                    });
+                }
+
+                // --- 講師 ---
+                if (C.instructor && C.instructor.items && C.instructor.items[0]) {
+                    var inst    = C.instructor.items[0];
+                    var imgEl   = qs('.speaker-img');
+                    var infoEl  = qs('.speaker-info');
+                    if (imgEl  && inst.img)  { imgEl.src = inst.img; imgEl.alt = inst.name || ''; }
+                    if (infoEl) {
+                        var nameEl = infoEl.querySelector('h3');
+                        var ps     = infoEl.querySelectorAll('p');
+                        if (nameEl && inst.name)    nameEl.textContent = inst.name;
+                        if (ps[0]  && inst.role)    ps[0].textContent  = inst.role;
+                        if (ps[1]  && inst.profile) ps[1].innerHTML    = inst.profile.replace(/\n/g, '<br>');
+                    }
+                }
+            })();
+
         });
     </script>
 </body>

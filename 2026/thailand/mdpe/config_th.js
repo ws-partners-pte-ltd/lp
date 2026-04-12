@@ -29,10 +29,9 @@ window.LP_CONFIG = {
   ],
 
   hero: {
-    bg_image: '../images/hero_bg.jpg',
-    img_main: '../images/instructor_yaninee.jpg',
-    img_sub1: '../images/online_training.jpg',
-    img_sub2: '../images/instructor_yaninee.jpg',
+    bg_image:       '../images/hero_bg.jpg',
+    img_online:     '../images/online_training.jpg',     // hero right-top large image
+    img_instructor: '../images/instructor_yaninee.jpg',  // hero right-bottom instructor image
     subtitle: 'โปรแกรมพัฒนาทักษะการบริหารสำหรับผู้จัดการชาวไทย',
     title: 'Management Development Program（Essential Edition）',
     date_label: 'วันที่จัดอบรม',

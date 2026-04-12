@@ -29,20 +29,19 @@ window.LP_CONFIG = {
   ],
 
   hero: {
-    bg_image: '../images/hero_bg.jpg',
-    img_main: '../images/workshop_scene.jpg',
-    img_sub1: '../images/lecture_scene.jpg',
-    img_sub2: '../images/instructor_yaninee.jpg',
-    subtitle: 'タイ人マネジャーを育てる、マネジメント力 育成プログラム',
-    title: 'Management Development Program（Essential版）',
-    date_label: '開催日時',
-    date: '2026年5月28日（木）より 週１回・全８回開催',
+    bg_image:       '../images/hero_bg.jpg',
+    img_online:     '../images/online_training.jpg',     // ヒーロー右上の大きい画像
+    img_instructor: '../images/instructor_yaninee.jpg',  // ヒーロー右下の講師画像
+    subtitle:       'タイ人マネジャーを育てる、マネジメント力 育成プログラム',
+    title:          'Management Development Program（Essential版）',
+    date_label:     '開催日時',
+    date:           '2026年5月28日（木）より\n週1回・全8回開催',
     deadline_label: '申込期限',
-    deadline: '2026年5月14日（木）',
-    note: '※毎週の継続参加が必要です。※プログラム詳細は下記をご覧ください。',
-    cta_text: '受講申し込み',
-    badge_en: 'ONLINE',
-    badge_ja: 'タイ語で実施'
+    deadline:       '2026年5月14日（木）',
+    note:           '※毎週の継続参加が必要です。\n※プログラム詳細は下記をご覧ください。',
+    cta_text:       '受講申し込み',
+    badge_en:       'ONLINE',
+    badge_ja:       'タイ語\nで実施'
   },
 
   consult: {
@@ -157,10 +156,10 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
     title: '講師の紹介',
     items: [
       {
-        img: '../images/instructor_yaninee.jpg',
-        name: 'Dr. Yaninee Songkajorn',
-        role: 'WS PARTNERS認定ファシリテーター',
-        profile: '（プロフィールは準備中です。後日更新いたします。）'
+        img:     '../images/instructor_yaninee.jpg',
+        name:    'Dr. Yaninee Songkajorn（ヤニニー・ソンガジョン博士）',
+        role:    'WS PARTNERS 認定ファシリテーター',
+        profile: '現チュラロンコン大学客員教授（工学部・統合イノベーション学部、国際プログラム）。過去に外交官の父親のもと日本に在住し日本との縁も深い。タイ進出企業向けコンサルティング会社を設立するなど民間でも活躍。\n\n講師歴20年。10社以上の日系企業でゲスト講師としてマネジャー育成を成功させたのち、正式にWS PARTNERSのファシリテーターに就任。WS PARTNERSではタイ人材のマネジメント教育を担当している。'
       }
     ]
   },
