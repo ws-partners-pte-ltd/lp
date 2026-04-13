@@ -1296,6 +1296,12 @@
         if (!googleLoaded) showHubspot();
       }, TIMEOUT_MS);
 
+      /* タブ切り替えによる誤検知防止: ページが再表示された時刻を記録 */
+      var lastPageVisibleAt = 0;
+      document.addEventListener('visibilitychange', function () {
+        if (!document.hidden) lastPageVisibleAt = Date.now();
+      });
+
       googleIframe.addEventListener('load', function () {
         clearTimeout(googleTimer);
 
@@ -1307,6 +1313,8 @@
           hubspotWrap.style.display  = 'none'; /* ensure HubSpot fallback stays hidden */
         } else {
           /* Second load = user submitted the form → redirect to thank-you */
+          /* ただしタブ切り替え後2秒以内のreloadは誤検知のため無視 */
+          if (Date.now() - lastPageVisibleAt < 2000) return;
           window.location.href = thankYouUrl;
         }
       });

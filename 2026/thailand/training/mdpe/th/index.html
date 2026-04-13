@@ -2012,21 +2012,24 @@
                   var newTabLink = fallback.querySelector('a');
                   if (newTabLink) {
                     newTabLink.addEventListener('click', function () {
-                      sessionStorage.setItem('lpFormTabOpened', '1');
+                      /* タブが開いたら確認ボタンを表示（自動検知は誤発火するため使用しない） */
+                      setTimeout(function () {
+                        if (document.getElementById('lp-confirm-bar')) return;
+                        var bar = document.createElement('div');
+                        bar.id = 'lp-confirm-bar';
+                        bar.style.cssText = 'margin-top:12px;padding:14px 18px;background:#e8f5e9;border-radius:8px;border:1px solid #81c784;';
+                        bar.innerHTML =
+                          '<p style="font-size:0.88rem;color:#1b5e20;margin-bottom:10px;">📝 เมื่อกรอกและส่งแบบฟอร์มเสร็จแล้ว กรุณากดปุ่มด้านล่าง</p>' +
+                          '<button id="lp-confirm-btn" style="background:#2e7d32;color:#fff;font-weight:700;padding:10px 24px;border-radius:8px;border:none;cursor:pointer;font-size:0.9rem;">✅ ยืนยันการสมัคร</button>';
+                        fallback.appendChild(bar);
+                        document.getElementById('lp-confirm-btn').addEventListener('click', function () {
+                          container.innerHTML = '';
+                          newTabTy.style.display = 'block';
+                          newTabTy.scrollIntoView({ behavior: 'smooth' });
+                        });
+                      }, 400);
                     });
                   }
-                  function showThankyou() {
-                    if (sessionStorage.getItem('lpFormTabOpened')) {
-                      sessionStorage.removeItem('lpFormTabOpened');
-                      container.innerHTML = '';
-                      newTabTy.style.display = 'block';
-                      newTabTy.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }
-                  document.addEventListener('visibilitychange', function () {
-                    if (!document.hidden) showThankyou();
-                  });
-                  window.addEventListener('focus', showThankyou);
                 })();
                 /* ---- end: new-tab detection ---- */
 
@@ -2052,10 +2055,17 @@
                     window.location.href = _tyUrl;
                 }
 
+                /* タブ切り替えによる誤検知防止 */
+                var lastPageVisibleAt = 0;
+                document.addEventListener('visibilitychange', function () {
+                  if (!document.hidden) lastPageVisibleAt = Date.now();
+                });
+
                 var iframeLoadCount = 0;
                 iframe.addEventListener('load', function() {
                     iframeLoadCount++;
                     if (iframeLoadCount >= 2) {
+                        if (Date.now() - lastPageVisibleAt < 2000) return; /* 誤検知防止 */
                         showFormConfirmation();
                     }
                 });
