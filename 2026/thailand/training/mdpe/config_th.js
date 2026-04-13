@@ -8,7 +8,7 @@ window.LP_CONFIG = {
     lang: 'th',
     title: 'โปรแกรมพัฒนาผู้จัดการชาวไทย MDP-Essentials พ.ค.–ก.ค. 2026 | WS PARTNERS',
     description: 'โปรแกรมพัฒนาทักษะการบริหารสำหรับบริษัทญี่ปุ่นในไทย สอนเป็นภาษาไทย ออนไลน์ 8 ครั้ง เริ่ม 28 พฤษภาคม 2026',
-    other_lang_label: '日本語版はこちら',
+    other_lang_label: '日本語',
     other_lang_url: '../ja/'
   },
 
