@@ -253,7 +253,7 @@ Sebagai langkah pertama, cobalah rasakan sendiri isi pelatihannya.</p>`
   },
 
   forms: {
-    google_url:        'https://docs.google.com/forms/d/e/1FAIpQLSfHQcnvP0v5kHEboKMpAQaZbZXOytSzNEMqc5YWYzk5Tk0JqQ/viewform?embedded=true&entry.1018940502=id',
+    google_url:        'https://docs.google.com/forms/d/e/1FAIpQLSfHQcnvP0v5kHEboKMpAQaZbZXOytSzNEMqc5YWYzk5Tk0JqQ/viewform?embedded=true',
     hubspot_portal_id: '※HubSpotのポータルIDをここに記入',
     hubspot_form_id:   '※HubSpotのインドネシア用フォームIDを登録後にここに追記',
     hubspot_region:    'na1',
