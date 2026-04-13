@@ -1734,24 +1734,26 @@
         var newTabLink = fallbackBanner.querySelector('a');
         if (newTabLink) {
           newTabLink.addEventListener('click', function () {
-            sessionStorage.setItem('lpFormTabOpened', '1');
+            setTimeout(function () {
+              if (document.getElementById('lp-confirm-bar')) return;
+              var bar = document.createElement('div');
+              bar.id = 'lp-confirm-bar';
+              bar.style.cssText = 'margin-top:12px;padding:14px 18px;background:#e8f5e9;border-radius:8px;border:1px solid #81c784;';
+              bar.innerHTML =
+                '<p style="font-size:0.88rem;color:#1b5e20;margin-bottom:10px;">📝 Setelah mengisi dan mengirim formulir, silakan klik tombol di bawah.</p>' +
+                '<button id="lp-confirm-btn" style="background:#2e7d32;color:#fff;font-weight:700;padding:10px 24px;border-radius:8px;border:none;cursor:pointer;font-size:0.9rem;">✅ Konfirmasi Pendaftaran</button>';
+              fallbackBanner.appendChild(bar);
+              document.getElementById('lp-confirm-btn').addEventListener('click', function () {
+                formLoading.style.display = 'none';
+                googleWrap.style.display  = 'none';
+                hubspotWrap.style.display = 'none';
+                newTabTy.style.display    = 'block';
+                var applySection = document.getElementById('apply');
+                if (applySection) applySection.scrollIntoView({ behavior: 'smooth' });
+              });
+            }, 400);
           });
         }
-        function showThankyou() {
-          if (sessionStorage.getItem('lpFormTabOpened')) {
-            sessionStorage.removeItem('lpFormTabOpened');
-            formLoading.style.display = 'none';
-            googleWrap.style.display  = 'none';
-            hubspotWrap.style.display = 'none';
-            newTabTy.style.display    = 'block';
-            var applySection = document.getElementById('apply');
-            if (applySection) applySection.scrollIntoView({ behavior: 'smooth' });
-          }
-        }
-        document.addEventListener('visibilitychange', function () {
-          if (!document.hidden) showThankyou();
-        });
-        window.addEventListener('focus', showThankyou);
       })();
       /* ---- end: new-tab detection ---- */
 
