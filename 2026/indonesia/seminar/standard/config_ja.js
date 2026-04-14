@@ -105,7 +105,7 @@ window.LP_CONFIG = {
 
   issues: {
     en: 'CHALLENGES',
-    title: 'このような課題をお持ちのHRの方へ',
+    title: 'このような課題をお持ちの方へ',
     img: '../images/workshop_scene.jpg',
     items: [
       'インドネシア人マネージャーと日本人上司の間で、同じ衝突が繰り返されている',

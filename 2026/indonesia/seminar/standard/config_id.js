@@ -104,7 +104,7 @@ window.LP_CONFIG = {
 
   issues: {
     en: 'CHALLENGES',
-    title: 'Untuk Para HR yang Menghadapi Tantangan Ini',
+    title: 'Untuk Anda yang Menghadapi Tantangan Ini',
     img: '../images/workshop_scene.jpg',
     items: [
       'Konflik yang sama antara manajer Indonesia dan atasan Jepang terus berulang',
