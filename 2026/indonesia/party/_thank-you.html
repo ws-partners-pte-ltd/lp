@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お申し込み受付完了 | WS PARTNERS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark:       #041434;
+      --accent-orange: #f39c12;
+      --primary:       #0050b3;
+      --secondary:     #00dfd8;
+      --text-main:     #1a202c;
+      --text-muted:    #4a5568;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--bg-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 56px 48px;
+      max-width: 560px;
+      width: 100%;
+      color: var(--text-main);
+      box-shadow: 0 25px 50px rgba(0,0,0,.3);
+      animation: fadeUp .6s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    .icon-check {
+      width: 72px;
+      height: 72px;
+      background: var(--accent-orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+    .icon-check svg { width: 36px; height: 36px; }
+
+    .card h1 {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .card .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+
+    .info-box {
+      background: #f4f7f9;
+      border-radius: 12px;
+      padding: 20px 24px;
+      text-align: left;
+      margin-bottom: 28px;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+    .info-box strong { color: var(--text-main); }
+
+    .btn-return {
+      display: inline-block;
+      background: var(--accent-orange);
+      color: #fff;
+      font-weight: 900;
+      font-size: 1rem;
+      padding: 14px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background .2s, transform .2s;
+      box-shadow: 0 8px 20px rgba(243,156,18,.35);
+    }
+    .btn-return:hover {
+      background: #d35400;
+      transform: translateY(-2px);
+    }
+
+    .logo-wrap {
+      margin-bottom: 28px;
+    }
+    .logo-wrap img { height: 44px; margin: 0 auto; }
+
+    footer {
+      margin-top: 28px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,.45);
+    }
+
+    /* --- GTM / Analytics trigger element --- */
+    #conversion-trigger { display: none; }
+
+    @media (max-width: 480px) {
+      .card { padding: 36px 24px; }
+      .card h1 { font-size: 1.3rem; }
+    }
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TLGVMTDZ');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLGVMTDZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Conversion trigger (hidden – for analytics) -->
+<div id="conversion-trigger" data-event="form_submit_complete"></div>
+
+<div class="logo-wrap">
+  <img src="images/logo.png" alt="WS PARTNERS" onerror="this.style.display='none'">
+</div>
+
+<div class="card">
+  <div class="icon-check">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </svg>
+  </div>
+
+  <h1 id="card-title">お申し込みを受け付けました</h1>
+
+  <p class="subtitle" id="card-subtitle">
+    フォームへのご入力ありがとうございます。<br>
+    当日のZoom URL等、詳細は後日ご連絡いたします。
+  </p>
+
+  <div class="info-box" id="card-info">
+    <p><strong id="info-email-title">確認メール</strong>について</p>
+    <p id="info-email-body">ご登録のメールアドレスに自動返信メールをお送りしています。届いていない場合は迷惑メールフォルダをご確認ください。</p>
+    <br>
+    <p><strong id="info-contact-title">お問い合わせ</strong></p>
+    <p>
+      WS PARTNERS PTE LTD<br>
+      <a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br>
+      +65-6978-4066
+    </p>
+  </div>
+
+  <a href="javascript:history.back()" class="btn-return" id="btn-return">LPページへ戻る</a>
+</div>
+
+<footer>
+  &copy; WS PARTNERS PTE LTD. All rights reserved.
+</footer>
+
+<script>
+  /* -------------------------------------------------------
+     Multi-language support + prog/lang URL params
+  ------------------------------------------------------- */
+  var i18n = {
+    ja: {
+      htmlLang:     'ja',
+      title:        'のお申し込みを受け付けました',
+      titleDefault: 'お申し込みを受け付けました',
+      subtitle:     'フォームへのご入力ありがとうございます。<br>当日のZoom URL等、詳細は後日ご連絡いたします。',
+      emailTitle:   '確認メール',
+      emailAbout:   'について',
+      emailBody:    'ご登録のメールアドレスに自動返信メールをお送りしています。届いていない場合は迷惑メールフォルダをご確認ください。',
+      contactTitle: 'お問い合わせ',
+      btnReturn:    'LPページへ戻る'
+    },
+    id: {
+      htmlLang:     'id',
+      title:        ' Telah Diterima',
+      titleDefault: 'Pendaftaran Anda Telah Diterima',
+      subtitle:     'Terima kasih telah mengisi formulir.<br>Kami akan menghubungi Anda secepatnya.',
+      emailTitle:   'Email Konfirmasi',
+      emailAbout:   '',
+      emailBody:    'Email konfirmasi otomatis telah dikirim ke alamat email yang terdaftar. Jika tidak ditemukan, harap periksa folder spam Anda.',
+      contactTitle: 'Hubungi Kami',
+      btnReturn:    'Kembali ke Halaman LP'
+    },
+    th: {
+      htmlLang:     'th',
+      title:        ' ได้รับการสมัครของคุณแล้ว',
+      titleDefault: 'รับการสมัครของคุณแล้ว',
+      subtitle:     'ขอบคุณที่กรอกแบบฟอร์ม<br>เจ้าหน้าที่จะติดต่อกลับในเร็วๆ นี้',
+      emailTitle:   'อีเมลยืนยัน',
+      emailAbout:   '',
+      emailBody:    'ระบบได้ส่งอีเมลตอบกลับอัตโนมัติไปยังที่อยู่อีเมลที่ลงทะเบียน หากไม่พบ กรุณาตรวจสอบในโฟลเดอร์สแปม',
+      contactTitle: 'ติดต่อเรา',
+      btnReturn:    'กลับสู่หน้า LP'
+    }
+  };
+
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var prog   = params.get('prog') || '';
+    var lang   = params.get('lang') || 'ja';
+    var t      = i18n[lang] || i18n['ja'];
+
+    /* Set html lang attribute */
+    document.documentElement.lang = t.htmlLang;
+
+    /* Title */
+    var titleEl = document.getElementById('card-title');
+    if (titleEl) {
+      titleEl.textContent = prog ? (prog + t.title) : t.titleDefault;
+    }
+
+    /* Subtitle */
+    var subtitleEl = document.getElementById('card-subtitle');
+    if (subtitleEl) subtitleEl.innerHTML = t.subtitle;
+
+    /* Info box */
+    var emailTitleEl   = document.getElementById('info-email-title');
+    var emailAboutEl   = document.getElementById('card-info');
+    var emailBodyEl    = document.getElementById('info-email-body');
+    var contactTitleEl = document.getElementById('info-contact-title');
+
+    if (emailTitleEl)   emailTitleEl.textContent = t.emailTitle;
+    if (emailBodyEl)    emailBodyEl.textContent  = t.emailBody;
+    if (contactTitleEl) contactTitleEl.textContent = t.contactTitle;
+
+    /* Rebuild info box first line for languages without "について" */
+    var infoFirstP = document.querySelector('.info-box p:first-child');
+    if (infoFirstP) {
+      if (t.emailAbout) {
+        infoFirstP.innerHTML = '<strong id="info-email-title">' + t.emailTitle + '</strong>' + t.emailAbout;
+      } else {
+        infoFirstP.innerHTML = '<strong id="info-email-title">' + t.emailTitle + '</strong>';
+      }
+    }
+
+    /* Return button */
+    var btnEl = document.getElementById('btn-return');
+    if (btnEl) btnEl.textContent = t.btnReturn;
+  })();
+</script>
+</body>
+</html>
