@@ -29,8 +29,8 @@ window.LP_CONFIG = {
 
   hero: {
     bg_image: 'images/hero_bg.jpg',
-    img_main: 'images/photo_meeting.jpg',
-    img_sub1: 'images/photo_instructor_collage.jpg',
+    img_main: 'images/workshop_scene.jpg',
+    img_sub1: 'images/photo_trainer_takaoka.jpg',
     img_sub2: '',
     subtitle: 'WILLSEED PARTNERS INDONESIA 拠点設立記念',
     title: 'インドネシアの「当たり前」を<br>変える夜',
@@ -81,7 +81,7 @@ window.LP_CONFIG = {
   issues: {
     en: 'WHO SHOULD ATTEND',
     title: 'このような方にご参加いただきたい',
-    img: 'images/photo_team_issues.jpg',
+    img: 'images/thinking_scene.jpg',
     items: [
       'インドネシア現地法人でマネジャー以上のポジションをお持ちの方（GM以上歓迎）',
       '日系企業とインドネシア人スタッフとの間に「認識のギャップ」を感じている方',
@@ -99,17 +99,17 @@ window.LP_CONFIG = {
     title: '参加することで得られること',
     items: [
       {
-        img: 'images/photo_feature_instructor.jpg',
+        img: 'images/lecture_scene.jpg',
         title: '体験型ワークショップ',
         body: '異文化適応のスペシャリスト・加藤ひろあき氏によるワークショップ。日本人とインドネシア人の「認知のフィルター」の違いを体験的に理解し、現場ですぐに使える気づきを持ち帰っていただけます。'
       },
       {
-        img: 'images/photo_feature_practice.jpg',
+        img: 'images/workshop_scene.jpg',
         title: 'インドネシアのハイパフォーマー分析',
         body: '実際のデータをもとに、インドネシアのハイパフォーマーに共通する「物語の捉え方」を紹介。現地の優秀人材の育て方・評価の視点を新たに得られます。'
       },
       {
-        img: 'images/photo_feature_retention.jpg',
+        img: 'images/continuous_learning.jpg',
         title: '日系企業リーダーとのネットワーキング',
         body: '30社以上の日系企業のマネジャー・GM・役員が一堂に会する懇親会。業種・規模を超えた横のつながりと、インドネシアビジネスの「生の情報」を交換する機会です。'
       }
@@ -119,7 +119,7 @@ window.LP_CONFIG = {
   target: {
     en: 'PARTICIPANTS',
     title: '参加対象',
-    img: 'images/photo_target_leader.jpg',
+    img: 'images/challenge_scene.jpg',
     items: [
       '<strong>対象者：</strong>マネジャー以上（GM以上が望ましい）',
       '<strong>参加枠：</strong>1社につき2名様まで',
@@ -180,7 +180,7 @@ window.LP_CONFIG = {
     title: '登壇者紹介',
     items: [
       {
-        img: 'images/photo_trainer_kato.jpg',
+        img: 'images/workshop_small.jpg',
         name: '加藤 ひろあき 氏',
         role: '異文化適応・組織開発スペシャリスト',
         profile: 'インドネシアと日本を往来しながら、企業の異文化適応・マネジメント変革を支援するファシリテーター。「インドネシア人と日本人が本当に分かり合える組織」をつくるための実践的アプローチを、長年にわたるフィールドワークと研修実績をもとに提供する。響くメッセージを生み出す力と、参加者の気づきを引き出す独自のファシリテーションに定評がある。'
@@ -259,7 +259,7 @@ window.LP_CONFIG = {
   company: {
     en: 'ABOUT US',
     title: '主催会社概要',
-    img: 'images/photo_company.jpg',
+    img: 'images/ws-partners.jpeg',
     name: 'WS PARTNERS PTE LTD / WILLSEED PARTNERS INDONESIA',
     items: [
       { label: '【ミッション】', value: 'ASEANの日系現地法人を対象に、現地人材の育成・駐在員の現地適応・組織や人材上の問題解決を通じて、日本企業のグローバルビジネスに貢献します。' },
