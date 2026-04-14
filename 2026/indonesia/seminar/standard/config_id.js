@@ -7,7 +7,7 @@ window.LP_CONFIG = {
   meta: {
     lang: 'id',
     title: 'Mengapa Sudah Dikerjakan Sesuai Perintah, Tapi Tetap Dimarahi? Seminar untuk Profesional Indonesia | WS PARTNERS',
-    description: 'Seminar gratis untuk manajer Indonesia di perusahaan Jepang. Pahami perbedaan standar kerja antara atasan Jepang dan karyawan Indonesia secara interaktif. 5 Mei 2026, online dalam Bahasa Indonesia.',
+    description: 'Seminar gratis untuk manajer Indonesia di perusahaan Jepang. Pahami perbedaan standar kerja antara atasan Jepang dan karyawan Indonesia secara interaktif. 13 Mei 2026, online dalam Bahasa Indonesia.',
     other_lang_label: '日本語',
     other_lang_url: '../ja/'
   },
@@ -35,7 +35,7 @@ window.LP_CONFIG = {
     subtitle: 'Mengapa Sudah Dikerjakan Sesuai Perintah, Tapi Tetap Dimarahi?',
     title: 'Memahami Standar Atasan Jepang untuk Profesional Indonesia',
     date_label: 'Tanggal & Waktu',
-    date: '<strong>5 Mei 2026 (Selasa) pukul 15:00–16:30</strong>（Waktu Indonesia Barat / WIB）',
+    date: '<strong>13 Mei 2026 (Rabu) pukul 15:00–16:30</strong>（Waktu Indonesia Barat / WIB）',
     deadline_label: 'Biaya Pendaftaran',
     deadline: '<strong style="font-size:1.3em;color:#fff">GRATIS</strong>',
     note: 'Diselenggarakan via <strong>Zoom</strong> (dalam Bahasa Indonesia)<br>Batas pendaftaran: pukul 10:00 WIB pada hari pelaksanaan',
@@ -127,7 +127,7 @@ window.LP_CONFIG = {
     schedule_title: 'Jadwal Acara (Waktu Indonesia Barat / WIB)',
     details: [
       { label: 'Nama Acara',    value: 'Mengapa Sudah Dikerjakan Sesuai Perintah, Tapi Tetap Dimarahi? — Memahami dan Mempraktikkan Standar Atasan Jepang untuk Profesional Indonesia' },
-      { label: 'Tanggal',       value: '5 Mei 2026 (Selasa)' },
+      { label: 'Tanggal',       value: '13 Mei 2026 (Rabu)' },
       { label: 'Waktu',         value: 'Pukul 15:00–16:30 WIB (termasuk sesi tanya jawab)' },
       { label: 'Batas Daftar',  value: 'Pukul 10:00 WIB pada hari pelaksanaan' },
       { label: 'Format',        value: 'Zoom (dalam Bahasa Indonesia)' },
