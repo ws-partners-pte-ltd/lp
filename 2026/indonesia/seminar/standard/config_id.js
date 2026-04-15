@@ -223,7 +223,7 @@ Sebagai langkah pertama, cobalah rasakan sendiri isi pelatihannya.</p>`
   apply: {
     en: 'APPLY',
     title: 'Pendaftaran Seminar',
-    body: `Silakan daftarkan diri Anda melalui formulir di bawah ini. <strong>Pendaftaran gratis</strong>.<br>Setelah mendaftar, informasi koneksi Zoom akan dikirimkan ke email Anda.<br><br><span style="color:#c0392b;font-weight:700;">※Penting: Jika ada kesalahan pada alamat email Anda, email panduan pada hari pelaksanaan tidak akan terkirim. Pastikan untuk memeriksa kembali informasi yang Anda masukkan.</span>`
+    body: `Silakan daftarkan diri Anda melalui formulir di bawah ini. <strong>Pendaftaran gratis</strong>.<br>Setelah mendaftar, informasi koneksi Zoom akan dikirimkan ke email Anda.<br><br><span style="color:#c0392b;font-weight:700;">※Penting: Jika ada kesalahan pada alamat email Anda, email panduan pada hari pelaksanaan tidak akan terkirim. Pastikan untuk memeriksa kembali informasi yang Anda masukkan.</span><br><span style="color:#555;">※Jika formulir tidak dapat dikirim (misalnya karena pembatasan keamanan perusahaan), Anda juga dapat mendaftar melalui tombol "Daftar via Email" di bagian bawah formulir.</span>`
   },
 
   company: {
