@@ -240,7 +240,7 @@ window.LP_CONFIG = {
       { label: 'Web',     value: '<a href="https://www.ws-partners.com.sg/" style="color:var(--primary)" target="_blank">https://www.ws-partners.com.sg/</a>' },
       { label: '株主',    value: '株式会社ウィル・シード / CL HOLDINGS PTE LTD' },
       { label: '代表者',  value: 'Managing Director 加藤 健太' },
-      { label: '事業内容', value: 'ASEAN諸国における日系現地法人・海外グループ企業向けコンサルティングと教育サービス提供＊ 河合塾グループ（株式会社KJホールディングス）の一員です' },
+      { label: '事業内容', value: 'ASEAN諸国における日系現地法人および海外グループ企業向けに、コンサルティングおよび教育サービスを提供<br>※河合塾グループ（株式会社KJホールディングス）の一員です' },
       { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">PT WILLSEED PARTNERS INDONESIA</strong>' },
       { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
       { label: '電話番号', value: '+65 9185 2747' },

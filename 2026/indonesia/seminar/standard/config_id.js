@@ -239,7 +239,7 @@ Sebagai langkah pertama, cobalah rasakan sendiri isi pelatihannya.</p>`
       { label: 'Website',      value: '<a href="https://www.ws-partners.com.sg/" style="color:var(--primary)" target="_blank">https://www.ws-partners.com.sg/</a>' },
       { label: 'Pemegang Saham', value: 'Will Seed Co., Ltd. / CL HOLDINGS PTE LTD' },
       { label: 'Direktur',     value: 'Managing Director: Kenta Kato' },
-      { label: 'Layanan',      value: 'Layanan konsultasi dan pelatihan untuk perusahaan lokal milik Jepang dan grup perusahaan Jepang di negara-negara ASEAN ＊ Bagian dari Kaijuku Group (KJ Holdings Co., Ltd.)' },
+      { label: 'Layanan',      value: 'Menyediakan layanan konsultasi dan pelatihan bagi perusahaan lokal Jepang dan grup perusahaan Jepang di negara-negara ASEAN<br>※ Bagian dari Kaijuku Group (KJ Holdings Co., Ltd.)' },
       { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">PT WILLSEED PARTNERS INDONESIA</strong>' },
       { label: 'Alamat',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
       { label: 'Telepon',  value: '+65 9185 2747' },
