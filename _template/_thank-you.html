@@ -260,7 +260,7 @@
     var ref = document.referrer;
     if (ref && ref !== window.location.href) {
       // referrer (LP ページ) にフレッシュ遷移 → JS 状態がリセットされる
-      window.location.href = ref.split('#')[0] + '#apply';
+      window.location.href = ref.split('#')[0];
     } else {
       // referrer が取れない場合のフォールバック
       history.back();
