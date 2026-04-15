@@ -35,10 +35,10 @@ window.LP_CONFIG = {
     subtitle: 'なぜ、言われた通りにやったのに怒られるのか？',
     title: '日本人上司との基準理解と実践―インドネシア人向け',
     date_label: '開催日時',
-    date: '<strong>2026年5月13日（水）　15:00〜16:30</strong>（インドネシア時間）',
+    date: '<strong>2026年5月13日（水）　15:00〜16:30</strong>（ジャカルタ時間）',
     deadline_label: '参加費',
     deadline: '<strong style="font-size:1.3em;color:#fff">無 料</strong>',
-    note: 'Web会議ツール <strong>Zoom</strong> にて開催（インドネシア語で実施）<br>申込締切：当日午前10時（インドネシア時間）',
+    note: 'Web会議ツール <strong>Zoom</strong> にて開催（インドネシア語で実施）<br>申込締切：当日午前10時（ジャカルタ時間）',
     cta_text: '無料で申し込む',
     badge_en: 'インドネシア<br>人向け',
     badge_ja: 'インドネシア語で実施！'
@@ -125,12 +125,12 @@ window.LP_CONFIG = {
     en: 'EVENT OVERVIEW',
     title: '開催概要',
     detail_title: 'セミナー情報',
-    schedule_title: 'タイムテーブル（インドネシア時間）',
+    schedule_title: 'タイムテーブル（ジャカルタ時間）',
     details: [
       { label: '名称',     value: 'なぜ、言われた通りにやったのに怒られるのか？ インドネシア人のための日本人上司との基準理解と実践' },
       { label: '開催日',   value: '2026年5月13日（水）' },
-      { label: '時間',     value: '15:00〜16:30（インドネシア時間・質疑応答を含む）' },
-      { label: '締切',     value: 'セミナー当日午前10時（インドネシア時間）まで' },
+      { label: '時間',     value: '15:00〜16:30（ジャカルタ時間・質疑応答を含む）' },
+      { label: '締切',     value: 'セミナー当日午前10時（ジャカルタ時間）まで' },
       { label: '開催方式', value: 'Web会議ツール Zoom（インドネシア語で実施）' },
       { label: '主催',     value: 'WS PARTNERS PTE LTD' },
       { label: '参加費',   value: '無料' },
@@ -140,7 +140,7 @@ window.LP_CONFIG = {
       {
         part: '15:00',
         title: 'プログラム開始 / ご挨拶',
-        body: '10分前よりZoomに入室いただけます。'
+        body: '14:50より入室いただけます。'
       },
       {
         part: '15:05〜',
@@ -237,10 +237,14 @@ window.LP_CONFIG = {
       { label: '所在地',   value: '1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989' },
       { label: '電話番号', value: '+65 6978 4066' },
       { label: '設立',    value: '2015年12月1日' },
-      { label: 'Web',     value: 'https://www.ws-partners.com.sg/' },
+      { label: 'Web',     value: '<a href="https://www.ws-partners.com.sg/" style="color:var(--primary)" target="_blank">https://www.ws-partners.com.sg/</a>' },
       { label: '株主',    value: '株式会社ウィル・シード / CL HOLDINGS PTE LTD' },
       { label: '代表者',  value: 'Managing Director 加藤 健太' },
-      { label: '事業内容', value: '日系大手・中堅企業のASEAN諸国の現地法人・海外グループ企業向けコンサルティングと教育サービス提供（※河合塚グループ唯一の海外拠点です）' }
+      { label: '事業内容', value: 'ASEAN諸国における日系現地法人・海外グループ企業向けコンサルティングと教育サービス提供＊ 河合塾グループ（株式会社KJホールディングス）の一員です' },
+      { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">PT WILLSEED PARTNERS INDONESIA</strong>' },
+      { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
+      { label: '電話番号', value: '+65 9185 2747' },
+      { label: '設立',    value: '2026年4月1日' }
     ]
   },
 

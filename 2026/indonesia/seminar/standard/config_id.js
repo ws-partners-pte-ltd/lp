@@ -35,7 +35,7 @@ window.LP_CONFIG = {
     subtitle: 'Mengapa Sudah Dikerjakan Sesuai Perintah, Tapi Tetap Dimarahi?',
     title: 'Memahami Standar Atasan Jepang untuk Profesional Indonesia',
     date_label: 'Tanggal & Waktu',
-    date: '<strong>13 Mei 2026 (Rabu) pukul 15:00–16:30</strong>（Waktu Indonesia Barat / WIB）',
+    date: '<strong>13 Mei 2026 (Rabu) pukul 15:00–16:30</strong>（Waktu Jakarta (WIB)）',
     deadline_label: 'Biaya Pendaftaran',
     deadline: '<strong style="font-size:1.3em;color:#fff">GRATIS</strong>',
     note: 'Diselenggarakan via <strong>Zoom</strong> (dalam Bahasa Indonesia)<br>Batas pendaftaran: pukul 10:00 WIB pada hari pelaksanaan',
@@ -124,7 +124,7 @@ window.LP_CONFIG = {
     en: 'EVENT OVERVIEW',
     title: 'Detail Acara',
     detail_title: 'Informasi Seminar',
-    schedule_title: 'Jadwal Acara (Waktu Indonesia Barat / WIB)',
+    schedule_title: 'Jadwal Acara (Waktu Jakarta (WIB))',
     details: [
       { label: 'Nama Acara',    value: 'Mengapa Sudah Dikerjakan Sesuai Perintah, Tapi Tetap Dimarahi? — Memahami dan Mempraktikkan Standar Atasan Jepang untuk Profesional Indonesia' },
       { label: 'Tanggal',       value: '13 Mei 2026 (Rabu)' },
@@ -139,7 +139,7 @@ window.LP_CONFIG = {
       {
         part: '15:00',
         title: 'Pembukaan / Sambutan',
-        body: 'Anda dapat masuk ke Zoom 10 menit sebelum acara dimulai.'
+        body: 'Anda dapat masuk ke Zoom mulai pukul 14:50.'
       },
       {
         part: '15:05–',
@@ -236,10 +236,14 @@ Sebagai langkah pertama, cobalah rasakan sendiri isi pelatihannya.</p>`
       { label: 'Alamat',       value: '1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989' },
       { label: 'Telepon',      value: '+65 6978 4066' },
       { label: 'Berdiri',      value: '1 Desember 2015' },
-      { label: 'Website',      value: 'https://www.ws-partners.com.sg/' },
+      { label: 'Website',      value: '<a href="https://www.ws-partners.com.sg/" style="color:var(--primary)" target="_blank">https://www.ws-partners.com.sg/</a>' },
       { label: 'Pemegang Saham', value: 'Will Seed Co., Ltd. / CL HOLDINGS PTE LTD' },
       { label: 'Direktur',     value: 'Managing Director: Kenta Kato' },
-      { label: 'Layanan',      value: 'Layanan konsultasi dan pelatihan untuk cabang perusahaan Jepang dan grup perusahaan Jepang di negara-negara ASEAN (※Satu-satunya kantor luar negeri dari Kawai Juku Group)' }
+      { label: 'Layanan',      value: 'Layanan konsultasi dan pelatihan untuk perusahaan lokal milik Jepang dan grup perusahaan Jepang di negara-negara ASEAN ＊ Bagian dari Kaijuku Group (KJ Holdings Co., Ltd.)' },
+      { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">PT WILLSEED PARTNERS INDONESIA</strong>' },
+      { label: 'Alamat',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
+      { label: 'Telepon',  value: '+65 9185 2747' },
+      { label: 'Berdiri',  value: '1 April 2026' }
     ]
   },
 
