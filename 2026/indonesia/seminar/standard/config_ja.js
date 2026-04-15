@@ -7,7 +7,7 @@ window.LP_CONFIG = {
   meta: {
     lang: 'ja',
     title: 'なぜ、言われた通りにやったのに怒られるのか？ インドネシア人向けセミナー 2026年5月13日 | WS PARTNERS',
-    description: '日系企業のインドネシア人マネージャーと日本人上司の間の「基準の違い」を体験型で学ぶ無料セミナー。2026年5月13日（水）オンライン開催・インドネシア語実施。',
+    description: '日系企業のインドネシア人マネジャーと日本人上司の間の「基準の違い」を体験型で学ぶ無料セミナー。2026年5月13日（水）オンライン開催・インドネシア語実施。',
     other_lang_label: 'Bahasa Indonesia',
     other_lang_url: '../id/'
   },
@@ -48,14 +48,14 @@ window.LP_CONFIG = {
     en: 'ABOUT THIS SEMINAR',
     title: 'なぜ、言われた通りにやったのに怒られるのか？',
     body: `<div class="voice-box">
-<p>日系企業で働くインドネシア人マネージャーから、こんな声を聞いたことはありませんか。</p>
+<p>日系企業で働くインドネシア人マネジャーから、こんな声を聞いたことはありませんか。</p>
 <p>
 「<strong>指示通りにやったのに怒られた</strong>」<br>
 「<strong>どこが問題だったのか分からない</strong>」<br>
 「<strong>納期が少し遅れただけで、なぜそこまで厳しく言われるのか</strong>」
 </p>
 </div>
-<p>日本人上司とインドネシア人マネージャーのあいだで起きるこうした衝突の背景には、<br>
+<p>日本人上司とインドネシア人マネジャーのあいだで起きるこうした衝突の背景には、<br>
 能力の問題ではなく、<strong>「仕事に対する基準の違い」</strong>があります。</p>
 <div style="background:#fff7ed;border:3px solid #f39c12;border-radius:12px;padding:20px 24px;margin:16px 0 20px 0">
   <p style="font-size:0.8rem;font-weight:700;color:#f39c12;letter-spacing:0.1em;margin:0 0 12px 0;text-transform:uppercase">── 基準の違いとは、具体的にはこういうことです ──</p>
@@ -80,7 +80,7 @@ window.LP_CONFIG = {
 </div>
 <p>これらが言語化されないままでは、同じ誤解や衝突が繰り返されてしまいます。</p>
 <div class="seminar-detail-box">
-<p><strong>本セミナーでは</strong>、実際に弊社がインドネシア人マネージャー向けに実施している<br>異文化理解研修の一部をご紹介します。</p>
+<p><strong>本セミナーでは</strong>、実際に弊社がインドネシア人マネジャー向けに実施している<br>異文化理解研修の一部をご紹介します。</p>
 <div style="background:#e8f0fb;border:2px solid #0050b3;border-radius:10px;padding:18px 22px;margin-top:14px">
   <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px">
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
@@ -108,9 +108,9 @@ window.LP_CONFIG = {
     title: 'このような課題をお持ちの方へ',
     img: '../images/workshop_scene.jpg',
     items: [
-      'インドネシア人マネージャーと日本人上司の間で、同じ衝突が繰り返されている',
+      'インドネシア人マネジャーと日本人上司の間で、同じ衝突が繰り返されている',
       '「なぜ怒られたのか分からない」という声が現場から上がっている',
-      '会議での発言が減り、マネージャー層が慎重になっている',
+      '会議での発言が減り、マネジャー層が慎重になっている',
       '上司が変わるたびに"求められる基準"が変わっている',
       'インドネシア人向けにどのように日本人の基準を伝えるべきか悩んでいる',
       '研修会社を選定するにあたり、実際の研修内容を体験してみたい'
