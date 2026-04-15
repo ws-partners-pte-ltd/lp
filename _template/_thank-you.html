@@ -160,7 +160,7 @@
     </p>
   </div>
 
-  <a href="javascript:history.back()" class="btn-return" id="btn-return">LPページへ戻る</a>
+  <a href="javascript:void(0)" onclick="goBackToLP()" class="btn-return" id="btn-return">LPページへ戻る</a>
 </div>
 
 <footer>
@@ -250,6 +250,22 @@
     var btnEl = document.getElementById('btn-return');
     if (btnEl) btnEl.textContent = t.btnReturn;
   })();
+
+  /* -------------------------------------------------------
+     LPへ戻る: history.back() ではなく fresh navigation を使用
+     理由: bfcache 復元を避け、googleLoaded フラグをリセットして
+           「別の申込をする」誤検知を防止する
+  ------------------------------------------------------- */
+  function goBackToLP() {
+    var ref = document.referrer;
+    if (ref && ref !== window.location.href) {
+      // referrer (LP ページ) にフレッシュ遷移 → JS 状態がリセットされる
+      window.location.href = ref.split('#')[0] + '#apply';
+    } else {
+      // referrer が取れない場合のフォールバック
+      history.back();
+    }
+  }
 </script>
 </body>
 </html>
