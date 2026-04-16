@@ -3,1405 +3,1594 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">研修LP | WS PARTNERS</title>
-  <meta id="meta-description" name="description" content="">
-  <meta property="og:title" id="og-title" content="">
-  <meta property="og:description" id="og-description" content="">
-  <meta property="og:image" id="og-image" content="">
+  <title>拠点設立記念パーティー 2026.05.22 ─ WILLSEED PARTNERS INDONESIA</title>
+  <meta name="description" content="WILLSEED PARTNERS INDONESIAの拠点設立を記念したパーティーを2026年5月22日（金）AYANA MIDPLAZA JARKARTAにて開催。招待制・入場無料。">
+  <meta property="og:title" content="拠点設立記念パーティー | WILLSEED PARTNERS INDONESIA">
+  <meta property="og:description" content="インドネシアの「当たり前」を変える夜へ。招待制パーティーのご案内。">
   <meta property="og:type" content="website">
-  <link id="favicon" rel="icon" type="image/png" href="images/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon_wsp_logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <style>
-    /* ========================================
-       Variables & Theme Settings
-       ======================================== */
+    /* ====================================================
+       WILLSEED PARTNERS INDONESIA — Party LP
+       Gold Luxury Theme  |  2026.05
+       ==================================================== */
     :root {
-      /* Colors */
-      --bg-body:    #f4f7f9;
-      --bg-surface: #ffffff;
-      --bg-dark:    #041434;
-
-      --primary:           #0050b3;
-      --secondary:         #00dfd8;
-      --accent-orange:     #f39c12;
-      --accent-orange-dark:#d35400;
-
-      --text-main:    #1a202c;
-      --text-muted:   #4a5568;
-      --text-light:   #a0aec0;
-      --text-inverse: #ffffff;
-
-      /* Shadows */
-      --shadow-sm: 0 4px 6px -1px rgba(0,0,0,.10), 0 2px 4px -1px rgba(0,0,0,.06);
-      --shadow-md: 0 10px 15px -3px rgba(0,0,0,.10), 0 4px 6px -2px rgba(0,0,0,.05);
-      --shadow-lg: 0 20px 25px -5px rgba(0,0,0,.15), 0 10px 10px -5px rgba(0,0,0,.04);
-      --shadow-orange: 0 10px 20px rgba(243,156,18,.35);
-
-      /* Border */
-      --radius:    12px;
-      --radius-lg: 20px;
-
-      /* Font sizes – WS PARTNERS design standards */
-      --fs-hero:   clamp(2rem, 4vw, 2.5rem);   /* キャッチコピー: 36–40px */
-      --fs-h2:     1.75rem;                      /* 中見出し: 28px */
-      --fs-h3:     1.25rem;                      /* 小見出し: 20px */
-      --fs-body:   1rem;                         /* 本文: 16px */
-      --fs-small:  0.875rem;                     /* 注意書き・FAQ: 14px */
+      --gold:          #c9a84c;
+      --gold-lt:       #f0d080;
+      --gold-dk:       #8b6914;
+      --gold-grad:     linear-gradient(135deg,#f0d080 0%,#c9a84c 50%,#8b6914 100%);
+      --gold-border:   rgba(201,168,76,.28);
+      --dark-bg:       #080d18;
+      --dark-card:     #0f1628;
+      --dark-mid:      #1a2444;
+      --dark-line:     rgba(201,168,76,.15);
+      --text-primary:  #f0e8d4;
+      --text-muted:    #8a7a5a;
+      --text-bright:   #ffffff;
+      --radius:        12px;
+      --radius-lg:     20px;
+      --shadow-gold:   0 8px 32px rgba(201,168,76,.18);
+      --tr:            all .3s ease;
     }
 
-    /* ========================================
-       Reset & Base
-       ======================================== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
+
     body {
       font-family: 'Noto Sans JP', sans-serif;
-      font-size: var(--fs-body);
-      color: var(--text-main);
-      background: var(--bg-body);
-      line-height: 1.75;
+      background: var(--dark-bg);
+      color: var(--text-primary);
+      line-height: 1.85;
+      font-size: 16px;
     }
     img { max-width: 100%; height: auto; display: block; }
     a { color: inherit; text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    /* ========================================
-       Typography
-       ======================================== */
-    .sec-title {
-      font-size: var(--fs-h2);   /* 28px */
-      font-weight: 900;
-      line-height: 1.3;
-      color: var(--text-main);
-    }
-    .sec-title.inverse { color: #fff; }
-    .sec-title .en {
-      display: block;
-      font-size: var(--fs-small);
-      font-weight: 700;
-      color: var(--primary);
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-    }
-    .sec-title.inverse .en { color: var(--secondary); }
-
-    h3, .h3 { font-size: var(--fs-h3); font-weight: 700; } /* 20px */
-    p, li  { font-size: var(--fs-body); }                   /* 16px */
-    small, .note, .faq-note, .cancel-note { font-size: var(--fs-small); } /* 14px */
-
-    /* gradient text */
-    .gradient-text {
-      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    /* ── Utility ── */
+    .gold-text {
+      background: var(--gold-grad);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
+    section { padding: 100px 0; }
+    section.dark-2 { background: var(--dark-card); }
 
-    /* ========================================
-       Scroll Reveal Animation
-       ======================================== */
-    .reveal { opacity: 0; transform: translateY(30px); transition: opacity .6s ease, transform .6s ease; }
-    .reveal-left  { opacity: 0; transform: translateX(-30px); transition: opacity .6s ease, transform .6s ease; }
-    .reveal-right { opacity: 0; transform: translateX(30px);  transition: opacity .6s ease, transform .6s ease; }
-    .is-visible { opacity: 1 !important; transform: none !important; }
-    .delay-100 { transition-delay: .1s; }
-    .delay-200 { transition-delay: .2s; }
-    .delay-300 { transition-delay: .3s; }
-
-    /* ========================================
-       Buttons – ALL CTA & Submit = Orange
-       ======================================== */
-    .btn-cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 16px 36px;
-      background: var(--accent-orange);
-      color: #fff;
+    .sec-label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .sec-title {
+      font-size: clamp(1.65rem, 3vw, 2.3rem);
       font-weight: 900;
-      font-size: var(--fs-body);
+      line-height: 1.25;
+      color: var(--text-bright);
+      margin-bottom: 20px;
+    }
+    .gold-line {
+      width: 48px; height: 2px;
+      background: var(--gold-grad);
+      margin: 0 auto 44px;
+    }
+    .gold-line.left { margin-left: 0; }
+
+    /* ── Scroll Reveal ── */
+    .reveal       { opacity:0; transform:translateY(28px); transition:opacity .7s ease,transform .7s ease; }
+    .reveal-left  { opacity:0; transform:translateX(-28px); transition:opacity .7s ease,transform .7s ease; }
+    .reveal-right { opacity:0; transform:translateX(28px);  transition:opacity .7s ease,transform .7s ease; }
+    .is-visible   { opacity:1!important; transform:none!important; }
+    .d1 { transition-delay:.12s; }
+    .d2 { transition-delay:.24s; }
+    .d3 { transition-delay:.36s; }
+
+    /* ── Buttons ── */
+    .btn-gold {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 15px 38px;
+      background: var(--gold-grad);
+      color: #0a0e1a;
+      font-weight: 900; font-size: 1rem;
+      border-radius: 50px; border: none; cursor: pointer;
+      transition: var(--tr);
+      letter-spacing: .05em;
+      box-shadow: var(--shadow-gold);
+    }
+    .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(201,168,76,.35); }
+    .btn-gold::after { content: '→'; }
+
+    /* ── Image Placeholders ── */
+    .img-ph {
+      position: relative;
+      background: var(--dark-mid);
+      border: 1px dashed var(--gold-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .img-ph img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: .45;
+    }
+    .img-ph-label {
+      position: relative; z-index: 1;
+      background: rgba(8,13,24,.78);
+      border: 1px solid var(--gold-border);
       border-radius: 50px;
-      border: none;
-      cursor: pointer;
-      box-shadow: var(--shadow-orange);
-      transition: background .2s, transform .2s, box-shadow .2s;
-      white-space: nowrap;
-    }
-    .btn-cta:hover {
-      background: var(--accent-orange-dark);
-      transform: translateY(-3px);
-      box-shadow: 0 15px 25px rgba(243,156,18,.45);
-    }
-    .btn-cta::after {
-      content: '→';
-      font-size: 1.1em;
+      padding: 5px 14px;
+      font-size: 11px;
+      color: var(--gold);
+      letter-spacing: .06em;
+      text-align: center;
+      line-height: 1.5;
     }
 
-    /* ========================================
-       Header
-       ======================================== */
-    .site-header { position: sticky; top: 0; z-index: 100; }
-
-    .header-top {
-      background: var(--bg-dark);
-      padding: 8px 0;
+    /* ====================================================
+       HEADER
+       ==================================================== */
+    .site-header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(8,13,24,.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--dark-line);
     }
-    .header-top .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 13px 24px;
+      max-width: 1200px; margin: 0 auto;
+      gap: 16px;
     }
-    .header-logo img { height: 50px; width: auto; }
-    .header-action { display: flex; align-items: center; gap: 12px; }
+    .header-logo img { height: 42px; width: auto; }
 
-    .header-contact-row { display: flex; align-items: center; gap: 6px; color: #fff; }
-    .header-contact-row .phone { font-size: 1.1rem; font-weight: 700; }
-    .header-contact-row .time  { font-size: var(--fs-small); color: var(--text-light); }
-
-    .header-buttons { display: flex; gap: 8px; }
-
-    .btn-lang {
-      display: flex;
-      align-items: center;
-      background: #00b894;
-      color: #fff;
-      padding: 8px 16px;
-      border-radius: 6px;
-      font-size: var(--fs-small);
-      font-weight: 700;
-      transition: background .2s;
+    .header-nav {
+      display: flex; gap: 22px; list-style: none;
     }
-    .btn-lang:hover { background: #00a884; }
-
-    .btn-entry-header {
-      display: flex;
-      align-items: center;
-      background: var(--accent-orange);
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-size: var(--fs-small);
-      font-weight: 700;
-      transition: background .2s;
+    .header-nav li a {
+      font-size: 13px; font-weight: 500;
+      color: var(--text-muted);
+      transition: color .2s; white-space: nowrap;
     }
-    .btn-entry-header:hover { background: var(--accent-orange-dark); }
+    .header-nav li a:hover { color: var(--gold); }
 
-    .header-bottom {
-      background: var(--bg-dark);
-      border-top: 1px solid rgba(255,255,255,.1);
-      padding: 0;
+    .header-cta a {
+      padding: 10px 22px;
+      background: var(--gold-grad);
+      color: #0a0e1a; font-weight: 700; font-size: 13px;
+      border-radius: 50px; transition: var(--tr); white-space: nowrap;
     }
-    .nav-container { display: flex; justify-content: center; }
-    .nav-container a {
-      color: rgba(255,255,255,.8);
-      font-size: var(--fs-small);
-      padding: 12px 16px;
-      display: inline-block;
-      transition: color .2s;
-    }
-    .nav-container a:hover { color: #fff; }
+    .header-cta a:hover { transform: translateY(-2px); box-shadow: var(--shadow-gold); }
 
-    /* ========================================
-       Hero
-       ======================================== */
+    .nav-toggle {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; background: none; border: none; padding: 4px;
+    }
+    .nav-toggle span { display:block; width:24px; height:2px; background:var(--gold); border-radius:2px; }
+
+    @media (max-width: 900px) {
+      .header-nav, .header-cta { display: none; }
+      .nav-toggle { display: flex; }
+      .header-nav.open {
+        display: flex; flex-direction: column;
+        position: absolute; top: 100%; left: 0; right: 0;
+        background: rgba(8,13,24,.98);
+        padding: 16px 24px 24px;
+        border-bottom: 1px solid var(--dark-line);
+        gap: 16px; z-index: 200;
+      }
+    }
+
+    /* ====================================================
+       HERO
+       ==================================================== */
     .hero {
       position: relative;
-      min-height: 85vh;
-      display: flex;
-      align-items: center;
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
       overflow: hidden;
-      background: var(--bg-dark);
-    }
-    .hero-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(135deg, rgba(4,20,52,.85) 0%, rgba(0,80,179,.55) 100%);
     }
     .hero-bg {
       position: absolute; inset: 0;
-      background-image: url('images/hero_bg.jpg');
-      background-size: cover;
-      background-position: center;
-      z-index: 0;
+      /* ↓ placeholder: AYANA MIDPLAZA JAKARTA 会場写真に差し替え予定 */
+      background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1920&q=80');
+      background-size: cover; background-position: center;
     }
-    .hero-container {
-      position: relative; z-index: 1;
-      display: flex;
-      align-items: center;
-      gap: 48px;
-      padding: 80px 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-      width: 100%;
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        160deg,
+        rgba(8,13,24,.90) 0%,
+        rgba(8,13,24,.78) 45%,
+        rgba(8,13,24,.92) 100%
+      );
     }
-    .hero-text-content { flex: 1; color: #fff; }
+    /* Gold frame corners */
+    .hero::before, .hero::after {
+      content: '';
+      position: absolute;
+      width: 100px; height: 100px;
+      border-color: rgba(201,168,76,.4);
+      border-style: solid;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .hero::before { top: 36px; left: 36px; border-width: 2px 0 0 2px; }
+    .hero::after  { bottom: 70px; right: 36px; border-width: 0 2px 2px 0; }
+
+    .hero-content {
+      position: relative; z-index: 3;
+      text-align: center;
+      padding: 60px 24px 120px;
+      max-width: 860px; width: 100%;
+    }
+
+    .hero-logo-group {
+      display: flex; align-items: center; justify-content: center;
+      gap: 16px; margin-bottom: 36px; flex-wrap: wrap;
+    }
+    .hero-logo-group img { height: 30px; opacity: .88; filter: brightness(1.15); }
+    .hero-logo-sep {
+      width: 1px; height: 28px;
+      background: rgba(201,168,76,.35);
+    }
+
+    .hero-inv-label {
+      display: flex; align-items: center; justify-content: center; gap: 14px;
+      font-size: 10px; font-weight: 700;
+      letter-spacing: .45em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 28px;
+    }
+    .hero-inv-label::before, .hero-inv-label::after {
+      content: ''; display: block; width: 36px; height: 1px;
+      background: rgba(201,168,76,.55);
+    }
 
     .hero-subtitle {
-      font-size: clamp(1.1rem, 2vw, 1.3rem);
-      font-weight: 500;
-      color: var(--secondary);
-      margin-bottom: 12px;
+      font-size: clamp(.85rem, 1.4vw, 1rem);
+      font-weight: 300; color: var(--gold-lt);
+      letter-spacing: .1em; margin-bottom: 16px;
     }
     .hero-title {
-      font-size: var(--fs-hero);  /* 36–40px */
-      font-weight: 900;
-      line-height: 1.25;
-      margin-bottom: 20px;
+      font-size: clamp(2.1rem, 5.5vw, 3.6rem);
+      font-weight: 900; line-height: 1.2;
+      color: var(--text-bright); margin-bottom: 10px;
     }
-    .hero-info-box {
-      background: rgba(255,255,255,.12);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255,255,255,.2);
-      border-radius: var(--radius);
-      padding: 16px 20px;
-      margin-bottom: 28px;
-    }
-    .hero-info-box .lead {
-      font-size: clamp(.9rem, 1.5vw, 1.05rem);
-      color: rgba(255,255,255,.9);
-      margin-bottom: 4px;
-    }
-    .hero-info-box .date { font-weight: 700; color: #fff; }
-    .hero-info-box .note { font-size: var(--fs-small); color: var(--secondary); }
+    .hero-title .hl { color: var(--gold-lt); }
 
-    .hero-visual-content {
-      flex: 0 0 380px;
-      position: relative;
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(201,168,76,.1);
+      border: 1px solid var(--gold-border);
+      border-radius: 50px;
+      padding: 7px 20px; margin: 20px 0 32px;
+      font-size: 12px; color: var(--gold-lt);
+      letter-spacing: .08em;
     }
-    .hero-images-wrapper { position: relative; }
-    .img-collage {
-      width: 100%;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow-lg);
-    }
-    .img-collage img { width: 100%; object-fit: cover; max-height: 260px; }
+    .hero-badge::before, .hero-badge::after { content: '✦'; font-size: .75em; color: var(--gold); }
 
-    .img-online, .img-instructor {
-      position: absolute;
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow-md);
-      border: 3px solid #fff;
-      width: 140px;
+    .hero-meta {
+      display: inline-flex; flex-direction: column; gap: 12px;
+      background: rgba(201,168,76,.07);
+      border: 1px solid var(--gold-border);
+      border-radius: 14px;
+      padding: 26px 44px; margin-bottom: 40px;
     }
-    .img-online { bottom: -20px; left: -20px; }
-    .img-instructor { top: -20px; right: -20px; }
-    .img-online img, .img-instructor img { width: 100%; height: 100px; object-fit: cover; }
-
-    .hero-badge-circle {
-      position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
-      background: var(--accent-orange);
-      border-radius: 50%;
-      width: 90px; height: 90px;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      box-shadow: var(--shadow-orange);
+    .hero-meta-row {
+      display: flex; align-items: baseline; gap: 14px;
     }
-    .badge-en { font-size: .55rem; font-weight: 700; color: #fff; text-transform: uppercase; }
-    .badge-ja { font-size: .7rem; font-weight: 900; color: #fff; line-height: 1.2; text-align: center; }
-
-    .scroll-indicator {
-      position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
-      display: flex; flex-direction: column; align-items: center; gap: 4px;
-      color: rgba(255,255,255,.6); font-size: .7rem;
+    .hm-label {
+      font-size: 10px; font-weight: 700;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: var(--gold); min-width: 44px;
     }
-    .scroll-indicator::after {
-      content: '';
-      display: block;
-      width: 1px; height: 40px;
-      background: rgba(255,255,255,.4);
+    .hm-value {
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      font-weight: 700; color: var(--text-bright);
     }
 
-    /* ========================================
-       Sections – General
-       ======================================== */
-    section { padding: 80px 0; }
-    section.bg-alt { background: var(--bg-body); }
-    section.bg-dark { background: var(--bg-dark); }
-
-    .section-image {
-      width: 100%; border-radius: var(--radius-lg);
-      overflow: hidden; box-shadow: var(--shadow-md);
-      margin-bottom: 32px;
+    .scroll-hint {
+      position: absolute; bottom: 30px; left: 50%;
+      transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      color: rgba(201,168,76,.5);
+      font-size: 9px; letter-spacing: .25em; text-transform: uppercase;
+      animation: sb 2.2s ease-in-out infinite;
+      z-index: 3;
     }
-    .section-image img { width: 100%; height: 280px; object-fit: cover; }
-
-    /* ========================================
-       Consult Section
-       ======================================== */
-    #consult { background: linear-gradient(135deg, #0050b3 0%, #0070f3 100%); }
-    .independent-box {
-      background: rgba(255,255,255,.1);
-      border: 1px solid rgba(255,255,255,.25);
-      border-radius: var(--radius-lg);
-      padding: 40px;
-      text-align: center;
-      color: #fff;
+    .scroll-hint::after {
+      content: ''; display: block;
+      width: 1px; height: 36px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
     }
-    .independent-box p { color: rgba(255,255,255,.85); margin: 12px 0 24px; }
-
-    /* ========================================
-       Issues Section
-       ======================================== */
-    .issue-section { background: #fff; }
-    .issue-box {
-      background: var(--bg-body);
-      border-radius: var(--radius);
-      padding: 28px;
-      margin-bottom: 40px;
-    }
-    .issue-checklist { list-style: none; }
-    .issue-checklist li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      padding: 8px 0;
-      border-bottom: 1px solid #e2e8f0;
-      font-size: var(--fs-body);
-    }
-    .issue-checklist li:last-child { border-bottom: none; }
-    .issue-checklist li::before {
-      content: '✓';
-      color: var(--accent-orange);
-      font-weight: 900;
-      flex-shrink: 0;
-      margin-top: 2px;
+    @keyframes sb {
+      0%,100% { opacity:.4; transform:translateX(-50%) translateY(0); }
+      50% { opacity:.9; transform:translateX(-50%) translateY(7px); }
     }
 
-    /* ========================================
-       Voices Section
-       ======================================== */
-    .value-section { background: var(--bg-body); }
-    .value-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
-    }
-    .value-card {
-      background: #fff;
-      border-radius: var(--radius);
-      padding: 28px;
-      box-shadow: var(--shadow-sm);
-      position: relative;
-    }
-    .value-num {
-      font-size: 2.5rem;
-      font-weight: 900;
-      color: var(--accent-orange);
-      opacity: .15;
-      position: absolute;
-      top: 16px; right: 20px;
-      line-height: 1;
-    }
-    .value-card h3 { font-size: var(--fs-h3); margin-bottom: 8px; }
-    .value-card p  { font-size: var(--fs-body); color: var(--text-muted); }
-
-    /* ========================================
-       Features Section
-       ======================================== */
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
-    }
-    .feature-card {
-      background: #fff;
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-      transition: transform .25s, box-shadow .25s;
-    }
-    .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-    .feature-card img { width: 100%; height: 180px; object-fit: cover; }
-    .feature-card-body { padding: 20px; }
-    .feature-card-body h3 { font-size: var(--fs-h3); margin-bottom: 8px; }
-    .feature-card-body p  { font-size: var(--fs-body); color: var(--text-muted); }
-
-    /* ========================================
-       Program Section
-       ======================================== */
-    .program-section { background: #fff; }
-    .timeline { position: relative; padding-left: 32px; }
-    .timeline::before {
-      content: '';
-      position: absolute; left: 8px; top: 0; bottom: 0;
-      width: 2px; background: #e2e8f0;
-    }
-    .timeline-item {
-      position: relative;
-      margin-bottom: 28px;
-    }
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -28px; top: 6px;
-      width: 12px; height: 12px;
-      border-radius: 50%;
-      background: var(--accent-orange);
-      border: 2px solid #fff;
-      box-shadow: 0 0 0 2px var(--accent-orange);
-    }
-    .timeline-content h3 { font-size: var(--fs-h3); margin-bottom: 4px; }
-    .timeline-content p  { font-size: var(--fs-body); color: var(--text-muted); }
-    .part-label {
-      display: inline-block;
-      background: var(--primary);
-      color: #fff;
-      font-size: var(--fs-small);
-      font-weight: 700;
-      padding: 2px 10px;
-      border-radius: 4px;
-      margin-bottom: 6px;
+    @media (max-width: 600px) {
+      .hero-meta { padding: 20px 22px; }
+      .hero-meta-row { flex-direction: column; gap: 2px; }
+      .hero::before, .hero::after { width: 60px; height: 60px; }
     }
 
-    /* ========================================
-       Instructor Section
-       ======================================== */
-    .speakers-section { background: var(--bg-body); }
-    .speaker-card {
-      display: flex;
-      gap: 32px;
-      background: #fff;
-      border-radius: var(--radius-lg);
-      padding: 32px;
-      box-shadow: var(--shadow-sm);
-      align-items: flex-start;
-    }
-    .speaker-img {
-      flex: 0 0 140px;
-    }
-    .speaker-img img {
-      width: 140px; height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid var(--accent-orange);
-    }
-    .speaker-card h3 { font-size: var(--fs-h3); margin-bottom: 4px; }
-    .speaker-card .role { font-size: var(--fs-small); color: var(--primary); font-weight: 700; margin-bottom: 12px; }
-    .speaker-card p   { font-size: var(--fs-body); color: var(--text-muted); }
+    /* ====================================================
+       ABOUT
+       ==================================================== */
+    .about-section { background: var(--dark-card); }
 
-    /* ========================================
-       Pricing Section
-       ======================================== */
-    .pricing-box {
-      background: #fff;
-      border-radius: var(--radius-lg);
-      padding: 36px;
-      box-shadow: var(--shadow-sm);
-      text-align: center;
-      max-width: 600px;
-      margin: 0 auto;
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: center;
     }
-    .price-amount {
-      font-size: 2.5rem;
-      font-weight: 900;
-      color: var(--primary);
-      margin: 12px 0;
-    }
-    .price-amount .currency { font-size: 1.2rem; }
-    .price-note { font-size: var(--fs-small); color: var(--text-muted); }
+    .about-img { aspect-ratio: 4/3; }
 
-    /* ========================================
-       Company Section
-       ======================================== */
-    .company-section { background: #fff; }
-    .company-box {
-      display: flex;
-      gap: 40px;
-      align-items: flex-start;
-    }
-    .company-img { flex: 0 0 280px; border-radius: var(--radius); overflow: hidden; }
-    .company-img img { width: 100%; height: 200px; object-fit: cover; }
-    .company-info h3 { font-size: var(--fs-h3); margin-bottom: 12px; }
-    .company-info p  { font-size: var(--fs-body); color: var(--text-muted); margin-bottom: 8px; }
+    .gold-accent { width: 100%; height: 2px; background: var(--gold-grad); margin-bottom: 26px; }
 
-    /* ========================================
-       FAQ Section
-       ======================================== */
-    .faq-item {
-      border-bottom: 1px solid #e2e8f0;
-      padding: 20px 0;
+    .concept-quote {
+      background: rgba(201,168,76,.07);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      padding: 18px 22px; margin: 22px 0;
+      font-weight: 500; line-height: 1.9;
     }
-    .faq-item summary {
-      font-size: var(--fs-body);
-      font-weight: 700;
-      cursor: pointer;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-    }
-    .faq-item summary::after { content: '+'; font-size: 1.4rem; color: var(--accent-orange); flex-shrink: 0; }
-    .faq-item[open] summary::after { content: '−'; }
-    .faq-item p {
-      margin-top: 12px;
-      font-size: var(--fs-small); /* 14px */
-      color: var(--text-muted);
-      line-height: 1.8;
+    .concept-quote cite {
+      display: block; margin-top: 8px;
+      font-size: 12px; font-style: normal;
+      color: var(--text-muted); letter-spacing: .05em;
     }
 
-    /* ========================================
-       Cancel / Contact Section
-       ======================================== */
-    #cancel { background: var(--bg-body); }
-    .scroll-box {
-      background: #fff;
-      border-radius: var(--radius);
-      padding: 24px;
-      max-height: 220px;
-      overflow-y: auto;
-      font-size: var(--fs-small); /* 14px */
-      color: var(--text-muted);
-      line-height: 1.9;
-      border: 1px solid #e2e8f0;
+    .check-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+    .check-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-weight: 700; font-size: .95rem;
+    }
+    .check-list li::before {
+      content: '✓'; color: var(--gold); flex-shrink: 0;
+      font-size: 1.1em; margin-top: 1px;
     }
 
-    /* ========================================
-       Apply / Form Section
-       ======================================== */
-    .entry-section { background: var(--bg-dark); }
-    .form-wrapper {
-      max-width: 760px;
-      margin: 0 auto;
-    }
-    #google-form-wrap iframe {
-      width: 100%;
-      min-height: 900px;
-      border: none;
-      border-radius: var(--radius);
-      background: #fff;
-    }
-
-    /* HubSpot form override – make submit button orange */
-    .hs-button.primary,
-    .hs-submit input[type="submit"],
-    .hs-form input[type="submit"] {
-      background: var(--accent-orange) !important;
-      color: #fff !important;
-      border: none !important;
-      padding: 14px 40px !important;
-      border-radius: 50px !important;
-      font-weight: 900 !important;
-      font-size: var(--fs-body) !important;
-      cursor: pointer !important;
-      transition: background .2s, transform .2s !important;
-      box-shadow: var(--shadow-orange) !important;
-    }
-    .hs-button.primary:hover,
-    .hs-submit input[type="submit"]:hover {
-      background: var(--accent-orange-dark) !important;
-      transform: translateY(-2px) !important;
-    }
-
-    /* Real-time validation styles for HubSpot */
-    .hs-form .hs-error-msgs { list-style: none; }
-    .hs-form .hs-error-msg {
-      color: #e53e3e;
-      font-size: var(--fs-small);
-      margin-top: 4px;
-    }
-    .hs-form .hs-input:invalid,
-    .hs-form .error .hs-input {
-      border-color: #e53e3e !important;
-    }
-    .hs-form .field { margin-bottom: 16px; }
-    .hs-form label { font-size: var(--fs-body); font-weight: 700; margin-bottom: 4px; display: block; }
-    .hs-form .hs-input {
-      width: 100% !important;
-      padding: 10px 14px;
-      border: 1px solid #cbd5e0;
-      border-radius: 8px;
-      font-size: var(--fs-body);
-      transition: border-color .2s;
-    }
-    .hs-form .hs-input:focus { outline: none; border-color: var(--primary); }
-
-    /* Loading fallback */
-    #form-loading {
-      text-align: center;
-      padding: 40px;
-      color: rgba(255,255,255,.7);
-      font-size: var(--fs-body);
-    }
-    #hubspot-form-wrap { display: none; }
-
-    /* ========================================
-       Footer
-       ======================================== */
-    footer {
-      background: var(--bg-dark);
-      color: rgba(255,255,255,.7);
-      padding: 40px 0 24px;
-      font-size: var(--fs-small);
-      text-align: center;
-    }
-    footer a { color: rgba(255,255,255,.6); transition: color .2s; }
-    footer a:hover { color: #fff; }
-    footer .footer-logo { margin-bottom: 16px; }
-    footer .footer-logo img { height: 40px; margin: 0 auto; }
-    footer .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 16px; flex-wrap: wrap; }
-
-    /* ========================================
-       Responsive – Mobile
-       ======================================== */
     @media (max-width: 768px) {
-      section { padding: 56px 0; }
-
-      /* Hero */
-      .hero { min-height: auto; }
-      .hero-container { flex-direction: column; padding: 48px 20px; gap: 32px; }
-      .hero-visual-content { flex: none; width: 100%; max-width: 400px; }
-      .hero-title  { font-size: clamp(1.6rem, 6vw, 2rem); }
-
-      /* Header */
-      .header-contact-row { display: none; }
-      .header-top .container { justify-content: space-between; }
-      .nav-container a { padding: 10px 10px; font-size: .75rem; }
-
-      /* Sections */
-      .company-box   { flex-direction: column; }
-      .company-img   { flex: none; width: 100%; }
-      .speaker-card  { flex-direction: column; }
-      .speaker-img   { flex: none; }
-      .value-grid, .feature-grid { grid-template-columns: 1fr; }
-
-      /* Buttons */
-      .btn-cta { width: 100%; justify-content: center; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
     }
 
-    @media (max-width: 480px) {
-      .hero-title { font-size: 1.5rem; }
-      .sec-title  { font-size: 1.4rem; }
-      .header-buttons .btn-lang { display: none; }
+    /* ====================================================
+       INVITATION
+       ==================================================== */
+    .invitation-section { background: var(--dark-bg); }
+
+    .inv-intro { text-align: center; max-width: 700px; margin: 0 auto 56px; }
+    .inv-intro p { color: var(--text-primary); line-height: 2.1; font-size: 1.05rem; }
+
+    .inv-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 20px; margin-bottom: 52px;
     }
+    .inv-card {
+      background: var(--dark-card);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      padding: 28px 22px;
+      transition: var(--tr);
+    }
+    .inv-card:hover {
+      border-color: rgba(201,168,76,.5);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-gold);
+    }
+    .inv-icon { font-size: 1.9rem; margin-bottom: 14px; }
+    .inv-card h3 {
+      font-size: 1rem; font-weight: 700;
+      color: var(--gold-lt); margin-bottom: 10px; line-height: 1.5;
+    }
+    .inv-card p { font-size: 13.5px; color: var(--text-muted); line-height: 1.85; }
+
+    .inv-closing {
+      text-align: center;
+      font-size: 1.05rem; font-weight: 700;
+      color: var(--gold-lt); line-height: 2;
+    }
+
+    @media (max-width: 768px) {
+      .inv-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ====================================================
+       HIGHLIGHTS
+       ==================================================== */
+    .highlights-section { background: var(--dark-card); }
+
+    .hl-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 24px;
+    }
+    .hl-card {
+      background: var(--dark-bg);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden; transition: var(--tr);
+    }
+    .hl-card:hover {
+      border-color: rgba(201,168,76,.48);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-gold);
+    }
+    .hl-img {
+      width: 100%; aspect-ratio: 16/9;
+      background: var(--dark-mid);
+      position: relative; overflow: hidden;
+    }
+    .hl-img img { width:100%; height:100%; object-fit:cover; opacity:.48; }
+    .hl-img-over {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hl-img-badge {
+      background: rgba(8,13,24,.75);
+      border: 1px solid var(--gold-border);
+      border-radius: 50px;
+      padding: 5px 14px; font-size: 11px;
+      color: var(--gold); letter-spacing: .07em;
+    }
+    .hl-body { padding: 22px; }
+    .hl-num {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: .22em; color: var(--gold); margin-bottom: 8px;
+    }
+    .hl-card h3 {
+      font-size: 1rem; font-weight: 700;
+      color: var(--text-bright); margin-bottom: 10px; line-height: 1.45;
+    }
+    .hl-card p { font-size: 13.5px; color: var(--text-muted); line-height: 1.9; }
+
+    @media (max-width: 768px) {
+      .hl-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ====================================================
+       SCHEDULE
+       ==================================================== */
+    .schedule-section { background: var(--dark-bg); }
+
+    .sch-info-row {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 16px; margin-bottom: 56px;
+    }
+    .sch-info-card {
+      background: var(--dark-card);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius);
+      padding: 18px 20px; text-align: center;
+    }
+    .sch-info-card .lbl {
+      font-size: 10px; font-weight: 700;
+      letter-spacing: .22em; text-transform: uppercase;
+      color: var(--gold); display: block; margin-bottom: 8px;
+    }
+    .sch-info-card .val {
+      font-size: .95rem; font-weight: 700;
+      color: var(--text-bright); line-height: 1.5;
+    }
+
+    /* Timeline */
+    .tl-part { margin-bottom: 36px; }
+    .tl-part-head {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 18px; padding-bottom: 12px;
+      border-bottom: 1px solid var(--dark-line);
+    }
+    .tl-badge {
+      background: var(--gold-grad);
+      color: #0a0e1a; font-size: 11px; font-weight: 700;
+      padding: 4px 16px; border-radius: 50px; white-space: nowrap;
+    }
+    .tl-part-title { font-size: .95rem; font-weight: 700; color: var(--text-bright); }
+
+    .tl-items { padding-left: 24px; border-left: 1px solid var(--dark-line); }
+    .tl-item { position: relative; margin-bottom: 22px; }
+    .tl-item::before {
+      content: '';
+      position: absolute; left: -29px; top: 7px;
+      width: 9px; height: 9px; border-radius: 50%;
+      background: var(--gold); border: 2px solid var(--dark-bg);
+    }
+    .tl-time {
+      font-size: 12px; font-weight: 700;
+      color: var(--gold); margin-bottom: 3px;
+    }
+    .tl-item h4 {
+      font-size: .95rem; font-weight: 700;
+      color: var(--text-bright); margin-bottom: 5px; line-height: 1.4;
+    }
+    .tl-item p { font-size: 13.5px; color: var(--text-muted); line-height: 1.8; }
+
+    .sch-note {
+      text-align: center; margin-top: 36px;
+      font-size: 12.5px; color: var(--text-muted);
+      padding: 16px 20px;
+      background: var(--dark-card);
+      border: 1px solid var(--dark-line);
+      border-radius: var(--radius);
+      max-width: 680px; margin-left: auto; margin-right: auto;
+    }
+
+    @media (max-width: 768px) {
+      .sch-info-row { grid-template-columns: 1fr; }
+    }
+
+    /* ====================================================
+       SPEAKERS
+       ==================================================== */
+    .speakers-section { background: var(--dark-card); }
+
+    .sp-grid {
+      display: grid; grid-template-columns: repeat(2,1fr);
+      gap: 28px;
+    }
+    .sp-card {
+      background: var(--dark-bg);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: grid; grid-template-columns: 140px 1fr;
+      transition: var(--tr);
+    }
+    .sp-card:hover {
+      border-color: rgba(201,168,76,.48);
+      box-shadow: var(--shadow-gold);
+    }
+    .sp-img {
+      background: var(--dark-mid);
+      aspect-ratio: 1; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .sp-img img { width:100%; height:100%; object-fit:cover; }
+    .sp-img-ph {
+      font-size: 11px; color: var(--text-muted);
+      text-align: center; padding: 12px; line-height: 1.6;
+    }
+    .sp-body { padding: 20px; }
+    .sp-role {
+      font-size: 10.5px; font-weight: 700;
+      color: var(--gold); letter-spacing: .12em;
+      text-transform: uppercase; margin-bottom: 6px; display: block;
+    }
+    .sp-name {
+      font-size: 1.05rem; font-weight: 700;
+      color: var(--text-bright); margin-bottom: 10px; line-height: 1.35;
+    }
+    .sp-bio { font-size: 13px; color: var(--text-muted); line-height: 1.9; }
+
+    @media (max-width: 768px) {
+      .sp-grid { grid-template-columns: 1fr; }
+      .sp-card { grid-template-columns: 100px 1fr; }
+    }
+
+    /* ====================================================
+       DETAILS
+       ==================================================== */
+    .details-section { background: var(--dark-bg); }
+
+    .det-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 56px; align-items: start;
+    }
+    .det-table { width: 100%; border-collapse: collapse; }
+    .det-table tr { border-bottom: 1px solid var(--dark-line); }
+    .det-table tr:last-child { border-bottom: none; }
+    .det-table th {
+      font-size: 11.5px; font-weight: 700;
+      color: var(--gold); letter-spacing: .08em;
+      padding: 14px 16px 14px 0;
+      text-align: left; vertical-align: top;
+      white-space: nowrap; min-width: 78px;
+    }
+    .det-table td {
+      font-size: 14px; color: var(--text-primary);
+      padding: 14px 0; line-height: 1.75;
+    }
+    .venue-note {
+      margin-top: 16px; padding: 14px 18px;
+      background: var(--dark-card);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius);
+      font-size: 13px; color: var(--text-muted); line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .det-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ====================================================
+       FAQ
+       ==================================================== */
+    .faq-section { background: var(--dark-card); }
+
+    .faq-list { max-width: 760px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--dark-line); }
+    .faq-item:first-child { border-top: 1px solid var(--dark-line); }
+    .faq-q {
+      display: flex; align-items: center; gap: 14px;
+      padding: 20px 0; cursor: pointer;
+      font-size: 14.5px; font-weight: 700;
+      color: var(--text-bright); transition: color .2s;
+      user-select: none;
+    }
+    .faq-q:hover { color: var(--gold-lt); }
+    .faq-q-badge {
+      font-size: 11px; font-weight: 900;
+      color: var(--gold);
+      background: rgba(201,168,76,.12);
+      border: 1px solid var(--gold-border);
+      border-radius: 4px; padding: 2px 8px; flex-shrink: 0;
+    }
+    .faq-q-text { flex: 1; }
+    .faq-icon {
+      flex-shrink: 0; width: 20px; height: 20px;
+      border: 1px solid var(--gold-border); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold); font-size: 14px; transition: var(--tr);
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a {
+      display: none;
+      padding: 0 0 20px 48px;
+      font-size: 13.5px; color: var(--text-muted); line-height: 1.95;
+    }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ====================================================
+       APPLY
+       ==================================================== */
+    .apply-section {
+      background: var(--dark-bg);
+      position: relative; overflow: hidden;
+    }
+    .apply-section::before {
+      content: '';
+      position: absolute; top: -80px; left: 50%;
+      transform: translateX(-50%);
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(201,168,76,.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .apply-header { text-align: center; margin-bottom: 52px; }
+    .apply-header p { color: var(--text-muted); margin-top: 12px; line-height: 1.9; }
+
+    .apply-cols {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 28px; max-width: 920px; margin: 0 auto;
+    }
+    .apply-card {
+      background: var(--dark-card);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg); overflow: hidden;
+    }
+    .apply-card-head {
+      padding: 16px 24px;
+      background: var(--gold-grad);
+    }
+    .apply-card-head h3 { font-size: 1rem; font-weight: 700; color: #0a0e1a; }
+    .apply-card-head p { font-size: 12px; color: rgba(10,14,26,.65); margin-top: 2px; }
+    .apply-card-body { padding: 26px; }
+
+    /* Google Form */
+    .gform-wrap {
+      background: #fff;
+      border-radius: var(--radius);
+      overflow: hidden; min-height: 560px;
+    }
+    .gform-wrap iframe {
+      width: 100%; min-height: 560px; border: none; display: block;
+    }
+    .gform-ph {
+      min-height: 480px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 14px;
+      background: rgba(201,168,76,.04);
+      border: 1px dashed var(--gold-border);
+      border-radius: var(--radius);
+      padding: 40px; text-align: center;
+    }
+    .gform-ph .ph-icon { font-size: 2.2rem; }
+    .gform-ph .ph-title { font-size: .95rem; font-weight: 700; color: var(--gold); }
+    .gform-ph p { font-size: 13px; color: var(--text-muted); line-height: 1.8; }
+
+    /* Email Apply */
+    .email-steps { display: flex; flex-direction: column; gap: 18px; }
+    .email-step { display: grid; grid-template-columns: 30px 1fr; gap: 12px; align-items: start; }
+    .step-num {
+      width: 30px; height: 30px;
+      background: var(--gold-grad);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700; color: #0a0e1a; flex-shrink: 0;
+    }
+    .step-body { padding-top: 5px; }
+    .step-body strong { display: block; font-size: 14px; color: var(--text-bright); margin-bottom: 4px; }
+    .step-body p { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
+
+    .items-box {
+      background: rgba(201,168,76,.05);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      list-style: none;
+    }
+    .items-box li { font-size: 13px; color: var(--text-primary); padding: 4px 0; }
+    .items-box li::before { content: '✦ '; color: var(--gold); font-size: .72em; }
+
+    .btn-email {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 14px 24px;
+      background: transparent;
+      border: 1.5px solid var(--gold);
+      border-radius: 50px;
+      color: var(--gold-lt); font-weight: 700; font-size: 14px;
+      transition: var(--tr); text-align: center;
+    }
+    .btn-email:hover { background: rgba(201,168,76,.1); transform: translateY(-2px); }
+
+    .apply-note {
+      text-align: center; margin-top: 32px;
+      font-size: 13px; color: var(--text-muted);
+      padding-top: 24px; border-top: 1px solid var(--dark-line);
+    }
+
+    @media (max-width: 768px) {
+      .apply-cols { grid-template-columns: 1fr; }
+    }
+
+    /* ====================================================
+       COMPANY
+       ==================================================== */
+    .company-section { background: var(--dark-card); }
+
+    .co-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 48px; align-items: start;
+    }
+    .co-logos {
+      display: flex; align-items: center; gap: 18px;
+      flex-wrap: wrap; margin-bottom: 28px;
+    }
+    .co-logos img { height: 34px; width: auto; opacity: .82; filter: brightness(1.2); }
+    .co-logos-sep { width: 1px; height: 28px; background: var(--dark-line); }
+
+    .co-table { width: 100%; border-collapse: collapse; }
+    .co-table tr { border-bottom: 1px solid var(--dark-line); }
+    .co-table th {
+      font-size: 11.5px; font-weight: 700;
+      color: var(--gold); padding: 12px 14px 12px 0;
+      text-align: left; vertical-align: top;
+      white-space: nowrap; min-width: 90px;
+    }
+    .co-table td {
+      font-size: 13px; color: var(--text-primary);
+      padding: 12px 0; line-height: 1.75;
+    }
+
+    .co-sub-head {
+      font-size: 10.5px; font-weight: 700;
+      color: var(--gold); letter-spacing: .18em;
+      text-transform: uppercase;
+      margin: 32px 0 16px;
+      padding-top: 28px;
+      border-top: 1px solid var(--dark-line);
+    }
+
+    .co-side-note {
+      padding: 20px 22px;
+      background: rgba(201,168,76,.06);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius);
+      font-size: 13px; color: var(--text-muted); line-height: 1.9;
+    }
+
+    @media (max-width: 768px) {
+      .co-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ====================================================
+       FOOTER
+       ==================================================== */
+    footer {
+      background: var(--dark-bg);
+      border-top: 1px solid var(--dark-line);
+      padding: 52px 0 32px;
+    }
+    .footer-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      display: flex; flex-direction: column;
+      align-items: center; gap: 20px; text-align: center;
+    }
+    .footer-logo img { height: 38px; opacity: .75; }
+    .footer-links { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; justify-content: center; }
+    .footer-links a { font-size: 13px; color: var(--text-muted); transition: color .2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { font-size: 12px; color: var(--text-muted); letter-spacing: .04em; }
   </style>
 </head>
 <body>
 
-<!-- ========================================
+<!-- ====================================================
      HEADER
-     ======================================== -->
+     ==================================================== -->
 <header class="site-header">
-  <div class="header-top">
-    <div class="container">
-      <div class="header-logo">
-        <a href="#"><img id="header-logo" src="images/logo.png" alt="WS PARTNERS"></a>
-      </div>
-      <div class="header-action">
-        <div class="header-contact-row">
-          <span class="phone" id="header-phone"></span>
-          <span class="time"  id="header-hours"></span>
-        </div>
-        <div class="header-buttons">
-          <a id="btn-lang" href="#" class="btn-lang"></a>
-          <a href="#apply" class="btn-entry-header" id="header-cta-text">今すぐ申し込む</a>
-        </div>
-      </div>
+  <div class="header-inner">
+    <div class="header-logo">
+      <a href="#"><img src="images/logo.png" alt="WS PARTNERS"></a>
     </div>
+    <nav aria-label="メインナビゲーション">
+      <ul class="header-nav" id="headerNav">
+        <li><a href="#about">パーティーについて</a></li>
+        <li><a href="#invitation">ご招待の方々へ</a></li>
+        <li><a href="#schedule">当日スケジュール</a></li>
+        <li><a href="#speakers">登壇者</a></li>
+        <li><a href="#details">開催概要</a></li>
+        <li><a href="#apply">お申し込み</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <a href="#apply">参加申込をする</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  <nav class="header-bottom">
-    <div class="nav-container" id="nav-links"></div>
-  </nav>
 </header>
 
-<!-- ========================================
+<!-- ====================================================
      HERO
-     ======================================== -->
+     ==================================================== -->
 <section class="hero">
-  <div class="hero-bg" id="hero-bg"></div>
+  <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
-  <div class="hero-container">
-    <div class="hero-text-content reveal">
-      <p class="hero-subtitle" id="hero-subtitle"></p>
-      <h1 class="hero-title" id="hero-title"></h1>
-      <div class="hero-info-box">
-        <p class="lead" id="hero-date-label"></p>
-        <p class="date" id="hero-date"></p>
-        <p class="lead" id="hero-deadline-label"></p>
-        <p class="date" id="hero-deadline"></p>
-        <p class="note"  id="hero-note"></p>
-      </div>
-      <a href="#apply" class="btn-cta reveal delay-100" id="hero-cta-text">お申し込みはこちら</a>
+
+  <div class="hero-content reveal">
+    <div class="hero-logo-group">
+      <img src="images/logo_willseed.png" alt="Willseed Partners">
+      <div class="hero-logo-sep"></div>
+      <img src="images/logo_wsp.png" alt="WS PARTNERS">
     </div>
-    <div class="hero-visual-content reveal-right">
-      <div class="hero-badge-circle">
-        <span class="badge-en" id="badge-en"></span>
-        <span class="badge-ja" id="badge-ja"></span>
+
+    <p class="hero-inv-label">Invitation</p>
+
+    <p class="hero-subtitle">WILLSEED PARTNERS INDONESIA 拠点設立記念</p>
+
+    <h1 class="hero-title">
+      インドネシアの<span class="hl">「当たり前」</span>を<br>変える夜へ
+    </h1>
+
+    <div class="hero-badge">招待制パーティー &nbsp;｜&nbsp; ワークショップ &amp; 懇親会</div>
+
+    <div class="hero-meta">
+      <div class="hero-meta-row">
+        <span class="hm-label">日時</span>
+        <span class="hm-value">2026年5月22日（金）&ensp;17:00 – 20:00</span>
       </div>
-      <div class="hero-images-wrapper">
-        <div class="img-collage">
-          <img id="hero-img-main" src="images/photo_meeting.jpg" alt="">
+      <div class="hero-meta-row">
+        <span class="hm-label">会場</span>
+        <span class="hm-value">AYANA MIDPLAZA JAKARTA&ensp;B1 ジャスミンの間</span>
+      </div>
+      <div class="hero-meta-row">
+        <span class="hm-label">参加費</span>
+        <span class="hm-value">無料（ご招待制）</span>
+      </div>
+    </div>
+
+    <a href="#apply" class="btn-gold">参加申込をする</a>
+  </div>
+
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- ====================================================
+     ABOUT
+     ==================================================== -->
+<section class="about-section dark-2" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="reveal-left">
+        <div class="img-ph about-img">
+          <!-- placeholder: パーティー会場・拠点設立イメージ写真に差し替え予定 -->
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=75" alt="イベント会場イメージ">
+          <span class="img-ph-label">📷 会場・イベントイメージ（差し替え予定）</span>
         </div>
-        <div class="img-online">
-          <img id="hero-img-sub1" src="images/photo_feature_retention.jpg" alt="">
+      </div>
+
+      <div class="reveal-right">
+        <div class="gold-accent"></div>
+        <span class="sec-label">About This Party</span>
+        <h2 class="sec-title">「当たり前」を変え、<br>成果の次元を変える夜</h2>
+        <div class="gold-line left"></div>
+
+        <p style="margin-bottom:16px">
+          この度、<strong style="color:var(--text-bright)">WILLSEED PARTNERS INDONESIA（WSP）</strong>は、
+          インドネシアへの拠点設立を記念し、日頃よりお世話になっている皆さまを
+          特別なパーティーへご招待いたします。
+        </p>
+
+        <div class="concept-quote">
+          日本人の「当たり前」と、インドネシア人の「当たり前」。<br>
+          この認識のGAPこそが、組織課題の根源にある。
+          <cite>── WS PARTNERS が大切にしてきた問い</cite>
         </div>
-        <div class="img-instructor">
-          <img id="hero-img-sub2" src="images/photo_instructor_collage.jpg" alt="">
+
+        <p style="margin-bottom:20px">
+          異文化の中で働く私たちが直面する課題の多くは、能力の問題ではありません。
+          <strong style="color:var(--text-bright)">「認知・認識レベル」での違い</strong>から生じています。<br><br>
+          本パーティーでは、WSPが実践してきたアプローチをもとに、
+          インドネシアにおいて変えるべき「当たり前」をテーマにした体験型ワークショップを実施します。
+          また、この夜を、インドネシアで挑戦するビジネスリーダーたちの
+          新たなコミュニティの礎にしたいと考えています。
+        </p>
+
+        <ul class="check-list">
+          <li>実践的なワークショップで「気づき」を得る</li>
+          <li>インドネシア×日本のビジネスリーダーと交流する</li>
+          <li>コミュニティの一員として、挑戦を共に語り合う</li>
+        </ul>
+
+        <a href="#apply" class="btn-gold" style="margin-top:24px">参加申込をする</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     INVITATION
+     ==================================================== -->
+<section class="invitation-section" id="invitation">
+  <div class="container">
+
+    <div class="inv-intro reveal">
+      <span class="sec-label" style="text-align:center">For Our Guests</span>
+      <h2 class="sec-title" style="text-align:center">ぜひ、ご一緒いただきたい方々へ</h2>
+      <div class="gold-line"></div>
+      <p>
+        今回のパーティーは、インドネシアのビジネス現場で<br>
+        本気で向き合っている方々のためにご用意した、特別な夜です。<br>
+        以下に心当たりのある方は、ぜひお声がけください。
+      </p>
+    </div>
+
+    <div class="inv-grid">
+      <div class="inv-card reveal d1">
+        <div class="inv-icon">🏢</div>
+        <h3>インドネシア現地法人をお持ちの<br>日系企業の方</h3>
+        <p>マネジャー以上（GM以上歓迎）。現地スタッフとのマネジメントに課題感をお持ちの意思決定者・キーパーソン。</p>
+      </div>
+      <div class="inv-card reveal d2">
+        <div class="inv-icon">🌏</div>
+        <h3>組織開発・人材育成に<br>本気で取り組む方</h3>
+        <p>現地化の推進や異文化マネジメントに具体的に動いている経営者・人事担当者。現地人材の育て方に悩んでいる方。</p>
+      </div>
+      <div class="inv-card reveal d3">
+        <div class="inv-icon">🤝</div>
+        <h3>インドネシアで信頼できる<br>仲間を探している方</h3>
+        <p>業種・規模を超えた横のつながりを築き、インドネシアビジネスの生の情報を交換したい方。</p>
+      </div>
+    </div>
+
+    <p class="inv-closing reveal">
+      心当たりのある方は、ぜひこの機会にご参加ください。<br>
+      皆さまのご来場を心よりお待ちしています。
+    </p>
+
+  </div>
+</section>
+
+<!-- ====================================================
+     HIGHLIGHTS
+     ==================================================== -->
+<section class="highlights-section dark-2" id="highlights">
+  <div class="container">
+
+    <div class="reveal" style="text-align:center;margin-bottom:52px">
+      <span class="sec-label">Highlights</span>
+      <h2 class="sec-title">このような場としてもご活用ください</h2>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="hl-grid">
+
+      <div class="hl-card reveal d1">
+        <div class="hl-img">
+          <!-- placeholder: ワークショップ風景 -->
+          <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?w=800&q=70" alt="ワークショップイメージ">
+          <div class="hl-img-over"><span class="hl-img-badge">📷 差し替え予定</span></div>
+        </div>
+        <div class="hl-body">
+          <p class="hl-num">01</p>
+          <h3>体験型ワークショップで<br>「気づき」を持ち帰る場として</h3>
+          <p>異文化適応のスペシャリスト・加藤ひろあき氏によるワークショップ。日本人とインドネシア人の「認知のフィルター」の違いを体験的に理解し、現場ですぐに使えるインサイトを持ち帰っていただけます。</p>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="scroll-indicator">SCROLL</div>
-</section>
 
-<!-- ========================================
-     CONSULT (無料個別相談会)
-     ======================================== -->
-<section id="consult">
-  <div class="container">
-    <div class="independent-box reveal">
-      <h2 class="sec-title inverse" style="margin-bottom:12px">
-        <span class="en" id="consult-en"></span>
-        <span id="consult-title"></span>
-      </h2>
-      <p id="consult-body"></p>
-      <a id="consult-btn" href="#" target="_blank" class="btn-cta" style="display:none">
-        <span id="consult-btn-text">無料相談を予約する</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ========================================
-     ISSUES (お悩みチェック)
-     ======================================== -->
-<section class="issue-section bg-alt">
-  <div class="container">
-    <div class="section-image reveal">
-      <img id="issues-img" src="images/photo_team_issues.jpg" alt="">
-    </div>
-    <h2 class="sec-title reveal" style="margin-bottom:24px">
-      <span class="en" id="issues-en"></span>
-      <span id="issues-title"></span>
-    </h2>
-    <div class="issue-box reveal">
-      <ul class="issue-checklist" id="issues-list"></ul>
-    </div>
-    <div style="text-align:center">
-      <a href="#apply" class="btn-cta reveal">お申し込みはこちら</a>
-    </div>
-  </div>
-</section>
-
-<!-- ========================================
-     VOICES (受講者・マネジメントの声)
-     ======================================== -->
-<section class="value-section" id="voices">
-  <div class="container">
-    <div class="section-image reveal">
-      <img id="voices-img" src="images/photo_team_communication.jpg" alt="">
-    </div>
-    <h2 class="sec-title reveal" style="margin-bottom:32px">
-      <span class="en" id="voices-en"></span>
-      <span id="voices-title"></span>
-    </h2>
-    <div class="value-grid" id="voices-grid"></div>
-  </div>
-</section>
-
-<!-- ========================================
-     FEATURES (本プログラムの特徴)
-     ======================================== -->
-<section id="features" style="background:#fff">
-  <div class="container">
-    <h2 class="sec-title reveal" style="margin-bottom:32px">
-      <span class="en" id="features-en"></span>
-      <span id="features-title"></span>
-    </h2>
-    <div class="feature-grid" id="features-grid"></div>
-  </div>
-</section>
-
-<!-- ========================================
-     TARGET (対象者・基礎力)
-     ======================================== -->
-<section id="target" class="bg-alt">
-  <div class="container">
-    <div class="section-image reveal">
-      <img id="target-img" src="images/photo_target_leader.jpg" alt="">
-    </div>
-    <h2 class="sec-title reveal" style="margin-bottom:24px">
-      <span class="en" id="target-en"></span>
-      <span id="target-title"></span>
-    </h2>
-    <ul class="issue-checklist reveal" id="target-list"></ul>
-  </div>
-</section>
-
-<!-- ========================================
-     PROGRAM (プログラム詳細・日程)
-     ======================================== -->
-<section class="program-section" id="program">
-  <div class="container">
-    <h2 class="sec-title reveal" style="margin-bottom:32px">
-      <span class="en" id="program-en"></span>
-      <span id="program-title"></span>
-    </h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start" class="program-grid">
-      <div class="reveal">
-        <h3 style="font-size:var(--fs-h3);margin-bottom:16px" id="program-detail-title"></h3>
-        <ul style="list-style:none" id="program-details"></ul>
+      <div class="hl-card reveal d2">
+        <div class="hl-img">
+          <!-- placeholder: 懇親会・ネットワーキング -->
+          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=70" alt="懇親会イメージ">
+          <div class="hl-img-over"><span class="hl-img-badge">📷 差し替え予定</span></div>
+        </div>
+        <div class="hl-body">
+          <p class="hl-num">02</p>
+          <h3>日系企業リーダーと<br>繋がる場として</h3>
+          <p>多業種の日系企業のマネジャー・GM・役員が一堂に会する懇親会。業種・規模を超えた横のつながりと、インドネシアビジネスの「生の情報」を交換する機会です。</p>
+        </div>
       </div>
-      <div class="reveal delay-100">
-        <h3 style="font-size:var(--fs-h3);margin-bottom:16px" id="program-schedule-title"></h3>
-        <div class="timeline" id="program-timeline"></div>
+
+      <div class="hl-card reveal d3">
+        <div class="hl-img">
+          <!-- placeholder: データ・ハイパフォーマー分析 -->
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=70" alt="データ分析イメージ">
+          <div class="hl-img-over"><span class="hl-img-badge">📷 差し替え予定</span></div>
+        </div>
+        <div class="hl-body">
+          <p class="hl-num">03</p>
+          <h3>ハイパフォーマー分析の<br>データに触れる場として</h3>
+          <p>実際のデータをもとに、インドネシアのハイパフォーマーに共通する「物語の捉え方」をご紹介。現地の優秀人材の育て方・評価の新たな視点を得られます。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     SCHEDULE
+     ==================================================== -->
+<section class="schedule-section" id="schedule">
+  <div class="container">
+
+    <div class="reveal" style="text-align:center;margin-bottom:52px">
+      <span class="sec-label">Schedule</span>
+      <h2 class="sec-title">当日スケジュール</h2>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="sch-info-row reveal">
+      <div class="sch-info-card">
+        <span class="lbl">Date</span>
+        <span class="val">2026年5月22日（金）</span>
+      </div>
+      <div class="sch-info-card">
+        <span class="lbl">Time</span>
+        <span class="val">17:00 – 20:00</span>
+      </div>
+      <div class="sch-info-card">
+        <span class="lbl">Venue</span>
+        <span class="val">AYANA MIDPLAZA JAKARTA<br>B1 ジャスミンの間</span>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ========================================
-     INSTRUCTOR (講師紹介)
-     ======================================== -->
-<section class="speakers-section" id="instructor">
-  <div class="container">
-    <h2 class="sec-title reveal" style="margin-bottom:32px">
-      <span class="en" id="instructor-en"></span>
-      <span id="instructor-title"></span>
-    </h2>
-    <div id="instructors-list"></div>
-  </div>
-</section>
+    <div class="reveal">
 
-<!-- ========================================
-     PRICING (受講料・申込フロー)
-     ======================================== -->
-<section id="pricing" style="background:#fff">
-  <div class="container" style="text-align:center">
-    <h2 class="sec-title reveal" style="margin-bottom:32px">
-      <span class="en" id="pricing-en"></span>
-      <span id="pricing-title"></span>
-    </h2>
-    <div class="pricing-box reveal">
-      <p id="pricing-subtitle" style="color:var(--text-muted);margin-bottom:8px"></p>
-      <div class="price-amount"><span class="currency" id="pricing-currency">SGD </span><span id="pricing-amount"></span></div>
-      <p class="price-note" id="pricing-note"></p>
-      <div style="margin-top:24px">
-        <a href="#apply" class="btn-cta">お申し込みはこちら</a>
+      <!-- 受付 -->
+      <div class="tl-part">
+        <div class="tl-part-head">
+          <span class="tl-badge">17:00</span>
+          <span class="tl-part-title">受付・開場・歓談</span>
+        </div>
+        <div class="tl-items">
+          <div class="tl-item">
+            <p class="tl-time">17:00 –</p>
+            <h4>受付・会場入り</h4>
+            <p>ご来場の方から順次、会場にてご歓談いただけます。軽食・ドリンクをご用意しております。</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div id="pricing-flow" style="margin-top:40px"></div>
-  </div>
-</section>
 
-<!-- ========================================
-     COMPANY (会社概要)
-     ======================================== -->
-<section class="company-section" id="company">
-  <div class="container">
-    <h2 class="sec-title reveal" style="margin-bottom:32px">
-      <span class="en" id="company-en"></span>
-      <span id="company-title"></span>
-    </h2>
-    <div class="company-box reveal">
-      <div class="company-img">
-        <img id="company-img" src="images/photo_company.jpg" alt="">
+      <!-- 第一部 -->
+      <div class="tl-part">
+        <div class="tl-part-head">
+          <span class="tl-badge">第一部</span>
+          <span class="tl-part-title">17:30 – 18:45 &ensp;基調講演・ワークショップ</span>
+        </div>
+        <div class="tl-items">
+          <div class="tl-item">
+            <p class="tl-time">17:30 –</p>
+            <h4>開会挨拶・本日のご案内</h4>
+            <p>WILLSEED PARTNERS INDONESIA 代表より、拠点設立への思いと本日の趣旨をご説明いたします。</p>
+          </div>
+          <div class="tl-item">
+            <p class="tl-time">17:50 –</p>
+            <h4>ワークショップ（55分）&ensp;加藤 ひろあき 氏</h4>
+            <p>
+              「異文化適応理論 ─ インドネシアと日本を行き来できる人材を育てる」<br>
+              ・異文化適応理論と日×インドネシアの認知フィルター（20分）<br>
+              ・自社に取り入れられること・気づき（10分）<br>
+              ・全体シェア（10分）　・Q&amp;A（15分）
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="company-info" id="company-info"></div>
+
+      <!-- 第二部 -->
+      <div class="tl-part">
+        <div class="tl-part-head">
+          <span class="tl-badge">第二部</span>
+          <span class="tl-part-title">18:45 – 20:00 &ensp;懇親会（立食）</span>
+        </div>
+        <div class="tl-items">
+          <div class="tl-item">
+            <p class="tl-time">18:45 –</p>
+            <h4>立食パーティー・乾杯</h4>
+            <p>来賓よりご挨拶・乾杯のあと、歓談スタート。軽食・ドリンクをご用意いたします。</p>
+          </div>
+          <div class="tl-item">
+            <p class="tl-time">19:10 –</p>
+            <h4>インドネシアのハイパフォーマー分析（15分）</h4>
+            <p>実際のデータをもとに、インドネシアの優秀人材に共通する「物語の捉え方」をご紹介。歓談しながらご聴講いただけます。</p>
+          </div>
+          <div class="tl-item">
+            <p class="tl-time">19:45 –</p>
+            <h4>締めのご挨拶・記念撮影</h4>
+            <p>20:00 閉会。残れる方はそのままご歓談いただけます。</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /reveal -->
+
+    <p class="sch-note reveal">
+      ※当日の模様は後日記事として公開を予定しています。社名を掲載させていただく場合がございますので、ご不都合の際はお申し込み時にお知らせください。
+    </p>
+
+  </div>
+</section>
+
+<!-- ====================================================
+     SPEAKERS
+     ==================================================== -->
+<section class="speakers-section dark-2" id="speakers">
+  <div class="container">
+
+    <div class="reveal" style="text-align:center;margin-bottom:52px">
+      <span class="sec-label">Speakers</span>
+      <h2 class="sec-title">登壇者紹介</h2>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="sp-grid">
+
+      <!-- 加藤ひろあき -->
+      <div class="sp-card reveal d1">
+        <div class="sp-img">
+          <!-- placeholder: 加藤ひろあき氏の写真に差し替え予定 -->
+          <div class="sp-img-ph">📷<br>写真<br>差し替え予定</div>
+        </div>
+        <div class="sp-body">
+          <span class="sp-role">Workshop Facilitator</span>
+          <p class="sp-name">加藤 ひろあき 氏</p>
+          <p class="sp-bio">
+            インドネシアと日本を往来しながら、企業の異文化適応・マネジメント変革を支援するファシリテーター。「インドネシア人と日本人が本当に分かり合える組織」をつくるための実践的アプローチを、長年のフィールドワークと研修実績をもとに提供。響くメッセージを生み出す力と、参加者の気づきを引き出す独自のファシリテーションに定評がある。
+          </p>
+        </div>
+      </div>
+
+      <!-- 高岡結貴 -->
+      <div class="sp-card reveal d2">
+        <div class="sp-img">
+          <img src="images/photo_trainer_takaoka.jpg" alt="高岡 結貴 博士">
+        </div>
+        <div class="sp-body">
+          <span class="sp-role">Senior Facilitator / WS PARTNERS</span>
+          <p class="sp-name">
+            高岡 結貴 博士<br>
+            <small style="font-weight:400;font-size:.82em;color:var(--text-muted)">Dr. Yuki Takaoka</small>
+          </p>
+          <p class="sp-bio">
+            大阪大学大学院文学研究科博士課程修了後、1994年にジャカルタへ移住。日系大手3社において約24年間、人事・労務分野を部長職として指揮。在住30年以上、インドネシア語は法律文書にも対応できるネイティブレベル。インドネシアのビジネス現場を知り尽くしたファシリテーターとして、日本人とインドネシア人の架け橋となる研修を提供。
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ========================================
+<!-- ====================================================
+     DETAILS
+     ==================================================== -->
+<section class="details-section" id="details">
+  <div class="container">
+
+    <div class="reveal" style="text-align:center;margin-bottom:52px">
+      <span class="sec-label">Event Details</span>
+      <h2 class="sec-title">開催概要</h2>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="det-grid">
+
+      <div class="reveal-left">
+        <table class="det-table">
+          <tr>
+            <th>名称</th>
+            <td>WILLSEED PARTNERS INDONESIA<br>拠点設立記念パーティー</td>
+          </tr>
+          <tr>
+            <th>日程</th>
+            <td>2026年5月22日（金）</td>
+          </tr>
+          <tr>
+            <th>時間</th>
+            <td>17:00 – 20:00（受付開始：17:00）</td>
+          </tr>
+          <tr>
+            <th>会場</th>
+            <td>
+              AYANA MIDPLAZA JAKARTA<br>
+              B1 ジャスミンの間<br>
+              <small style="color:var(--text-muted)">Jl. Jend. Sudirman Kav. 10-11, Jakarta Pusat</small>
+            </td>
+          </tr>
+          <tr>
+            <th>参加費</th>
+            <td>無料（招待制）</td>
+          </tr>
+          <tr>
+            <th>主催</th>
+            <td>WILLSEED PARTNERS INDONESIA<br>/ WS PARTNERS PTE LTD</td>
+          </tr>
+          <tr>
+            <th>お問合せ</th>
+            <td>
+              担当：櫻井<br>
+              <a href="mailto:support@ws-partners.com.sg" style="color:var(--gold)">support@ws-partners.com.sg</a><br>
+              <a href="tel:+6569784066" style="color:var(--gold)">+65-6978-4066</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="reveal-right">
+        <div class="img-ph" style="aspect-ratio:4/3;margin-bottom:18px">
+          <!-- placeholder: AYANA MIDPLAZA JAKARTA 会場外観・バンケットホール写真に差し替え予定 -->
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=900&q=75" alt="AYANA MIDPLAZA JAKARTA イメージ">
+          <span class="img-ph-label">📷 AYANA MIDPLAZA JAKARTA<br>会場写真（差し替え予定）</span>
+        </div>
+        <div class="venue-note">
+          🏨 <strong style="color:var(--text-bright)">AYANA MIDPLAZA JAKARTA</strong><br>
+          MidPlaza 1, Jl. Jend. Sudirman Kav. 10-11<br>
+          Karet Tengsin, Tanah Abang, Jakarta Pusat 10220<br>
+          <span style="color:var(--gold);font-size:12px">会場：B1 ジャスミンの間</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
      FAQ
-     ======================================== -->
-<section class="bg-alt" id="faq">
+     ==================================================== -->
+<section class="faq-section dark-2" id="faq">
   <div class="container">
-    <h2 class="sec-title reveal" style="margin-bottom:32px">
-      <span class="en" id="faq-en"></span>
-      <span id="faq-title"></span>
-    </h2>
-    <div id="faq-list"></div>
-  </div>
-</section>
 
-<!-- ========================================
-     CANCEL / CONTACT
-     ======================================== -->
-<section id="cancel">
-  <div class="container">
-    <h2 class="sec-title reveal" style="margin-bottom:24px">
-      <span class="en" id="cancel-en"></span>
-      <span id="cancel-title"></span>
-    </h2>
-    <div class="scroll-box reveal" id="cancel-body"></div>
-    <div style="margin-top:32px;padding:24px;background:#fff;border-radius:var(--radius)" class="reveal">
-      <h3 style="font-size:var(--fs-h3);margin-bottom:12px" id="contact-title"></h3>
-      <p style="font-size:var(--fs-body);color:var(--text-muted)" id="contact-body"></p>
+    <div class="reveal" style="text-align:center;margin-bottom:52px">
+      <span class="sec-label">FAQ</span>
+      <h2 class="sec-title">よくあるご質問</h2>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-badge">Q</span>
+          <span class="faq-q-text">参加費はかかりますか？</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">招待制につき、参加費は無料です。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-badge">Q</span>
+          <span class="faq-q-text">1社から何名まで参加できますか？</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">1社につき2名様までご参加いただけます。お申し込みフォームまたはメールに2名様分の情報をご記入ください。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-badge">Q</span>
+          <span class="faq-q-text">当日の撮影・記事掲載について教えてください。</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">当日の模様は後日記事として公開を予定しています。社名を掲載させていただく場合がございますので、ご不都合の際はお申し込み時にその旨お知らせください。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-badge">Q</span>
+          <span class="faq-q-text">服装に指定はありますか？</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">スマートカジュアルを推奨しております。ビジネスカジュアルでのご参加も歓迎です。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-badge">Q</span>
+          <span class="faq-q-text">キャンセル・欠席の場合はどうすればよいですか？</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">ご都合が悪くなった場合は、お早めに担当（support@ws-partners.com.sg）までご連絡ください。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-badge">Q</span>
+          <span class="faq-q-text">会場へのアクセスを教えてください。</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">AYANA MIDPLAZA JARKARTAはジャカルタ中心部のMidPlaza 1（Jl. Jend. Sudirman Kav. 10-11）に位置しています。会場は地下1階のジャスミンの間です。タクシー・Grabなどのご利用が便利です。</div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ========================================
-     APPLY / FORM
-     ======================================== -->
-<section class="entry-section" id="apply">
+<!-- ====================================================
+     APPLY
+     ==================================================== -->
+<section class="apply-section" id="apply">
   <div class="container">
-    <h2 class="sec-title inverse reveal" style="margin-bottom:8px;text-align:center">
-      <span class="en" id="apply-en"></span>
-      <span id="apply-title"></span>
-    </h2>
-    <p style="text-align:center;color:rgba(255,255,255,.7);margin-bottom:32px;font-size:var(--fs-body)" id="apply-body"></p>
 
-    <div class="form-wrapper">
-      <!-- Loading state -->
-      <div id="form-loading">フォームを読み込み中...</div>
+    <div class="apply-header reveal">
+      <span class="sec-label">Apply</span>
+      <h2 class="sec-title">参加のお申し込み</h2>
+      <div class="gold-line"></div>
+      <p>
+        下記フォームまたはメールにてお申し込みください。<br>
+        追って担当より確認のご連絡をいたします。
+      </p>
+    </div>
 
-      <!-- Google Form (primary) -->
-      <div id="google-form-wrap" style="display:none">
-        <iframe
-          id="google-form-iframe"
-          src="""
-          width="100%"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          title="申込フォーム"
-        >読み込んでいます…</iframe>
+    <div class="apply-cols">
+
+      <!-- Google Form -->
+      <div class="apply-card reveal d1">
+        <div class="apply-card-head">
+          <h3>📋 オンラインフォームから申し込む</h3>
+          <p>推奨 ─ 最短でお手続き完了</p>
+        </div>
+        <div class="apply-card-body">
+          <div class="gform-wrap" id="googleFormWrap">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe2U_O9y_cYCOjaqOdxCQCPB0Yc8ALd4tPaj6kXz0cSVs5Z5g/viewform?embedded=true"
+              width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0"
+              style="border:none; border-radius:8px; background:#fff;">
+              読み込んでいます…
+            </iframe>
+          </div>
+        </div>
       </div>
 
-      <!-- HubSpot Form (fallback) -->
-      <div id="hubspot-form-wrap"
-           style="background:#fff;border-radius:var(--radius);padding:32px;display:none">
+      <!-- Email Apply -->
+      <div class="apply-card reveal d2">
+        <div class="apply-card-head">
+          <h3>✉️ メールでお申し込み</h3>
+          <p>メールクライアントが開きます</p>
+        </div>
+        <div class="apply-card-body">
+          <div class="email-steps">
+
+            <div class="email-step">
+              <div class="step-num">1</div>
+              <div class="step-body">
+                <strong>下記ボタンをクリック</strong>
+                <p>メールクライアントが開きます。件名はあらかじめ入力されています。</p>
+              </div>
+            </div>
+
+            <div class="email-step">
+              <div class="step-num">2</div>
+              <div class="step-body">
+                <strong>本文にご参加者情報をご記入</strong>
+                <p>以下の情報をご記載いただき、送信してください。</p>
+              </div>
+            </div>
+
+            <ul class="items-box">
+              <li>お名前（参加者全員分）</li>
+              <li>会社名</li>
+              <li>部署・役職</li>
+              <li>メールアドレス</li>
+              <li>電話番号</li>
+              <li>参加人数（1名 / 2名）</li>
+              <li>記事掲載の可否（可 / 不可）</li>
+              <li>ご質問・ご要望があれば</li>
+            </ul>
+
+            <a class="btn-email"
+               href="mailto:support@ws-partners.com.sg?subject=%E3%81%8A%E7%94%B3%E3%81%97%E8%BE%BC%E3%81%BF%20-%20%E3%80%90%E3%80%8EWILLSEED%20PARTNERS%20INDONESIA%20%E6%8B%A0%E7%82%B9%E8%A8%AD%E7%AB%8B%E8%A8%98%E5%BF%B5%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%8F%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%EF%BC%8F%E7%A0%94%E4%BF%AE%20%EF%BC%88Indonesia%EF%BC%89%282026.05%29%E3%80%91">
+              ✉️ メールで申し込む
+            </a>
+
+            <p style="font-size:12px;color:var(--text-muted);text-align:center;line-height:1.8">
+              送信先：<strong style="color:var(--text-primary)">support@ws-partners.com.sg</strong><br>
+              担当：櫻井 &ensp;｜&ensp; TEL: +65-6978-4066
+            </p>
+
+          </div>
+        </div>
       </div>
+
+    </div><!-- /apply-cols -->
+
+    <div class="apply-note reveal">
+      お申し込み後、担当者より確認のご連絡をさしあげます。<br>
+      ご不明な点はお気軽に
+      <a href="mailto:support@ws-partners.com.sg" style="color:var(--gold)">support@ws-partners.com.sg</a>
+      までご連絡ください。
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================
+     COMPANY
+     ==================================================== -->
+<section class="company-section dark-2" id="company">
+  <div class="container">
+
+    <div class="reveal" style="text-align:center;margin-bottom:52px">
+      <span class="sec-label">About Us</span>
+      <h2 class="sec-title">主催会社概要</h2>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="co-grid">
+
+      <div class="reveal-left">
+        <div class="co-logos">
+          <img src="images/logo_wsp.png" alt="WS PARTNERS">
+          <div class="co-logos-sep"></div>
+          <img src="images/logo_willseed.png" alt="Willseed">
+          <div class="co-logos-sep"></div>
+          <img src="images/logo_kawaijuku.png" alt="河合塾グループ">
+        </div>
+
+        <table class="co-table">
+          <tr>
+            <th>ミッション</th>
+            <td>ASEANの日系現地法人を対象に、現地人材の育成・駐在員の現地適応・組織問題解決を通じて、日本企業のグローバルビジネスに貢献します。</td>
+          </tr>
+          <tr>
+            <th>所在地<br><small style="color:var(--text-muted)">シンガポール</small></th>
+            <td>1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989</td>
+          </tr>
+          <tr>
+            <th>電話</th>
+            <td>+65 6978 4066</td>
+          </tr>
+          <tr>
+            <th>設立</th>
+            <td>2015年12月1日</td>
+          </tr>
+          <tr>
+            <th>代表者</th>
+            <td>Managing Director&ensp;加藤 健太</td>
+          </tr>
+          <tr>
+            <th>株主</th>
+            <td>株式会社ウィル・シード / CL HOLDINGS PTE LTD</td>
+          </tr>
+          <tr>
+            <th>事業内容</th>
+            <td>日系大手・中堅企業のASEAN諸国の現地法人・海外グループ企業向けコンサルティングと教育サービス（河合塾グループ唯一の海外拠点）</td>
+          </tr>
+        </table>
+
+        <p class="co-sub-head">インドネシア現地法人</p>
+        <table class="co-table">
+          <tr>
+            <th>法人名</th>
+            <td>PT WILLSEED PARTNERS INDONESIA</td>
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td>Flow Office Space, MidPlaza 1<br>Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin<br>Tanah Abang, Jakarta Pusat 10220</td>
+          </tr>
+          <tr>
+            <th>設立</th>
+            <td>2026年4月1日</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="reveal-right">
+        <div class="img-ph" style="aspect-ratio:3/2;margin-bottom:24px">
+          <!-- placeholder: WS PARTNERSのオフィス・チーム写真に差し替え予定 -->
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=70" alt="WS PARTNERS オフィスイメージ">
+          <span class="img-ph-label">📷 オフィス・チーム写真（差し替え予定）</span>
+        </div>
+        <div class="co-side-note">
+          WS PARTNERSは、<strong style="color:var(--text-primary)">河合塾グループ唯一の海外拠点</strong>として、
+          シンガポールを本拠地にASEAN全域で人材育成・組織開発を支援しています。<br><br>
+          2026年4月、インドネシア現地法人
+          <strong style="color:var(--gold-lt)">PT WILLSEED PARTNERS INDONESIA</strong> を設立。
+          より深く、より長く、インドネシアの組織変革に伴走してまいります。
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ========================================
+<!-- ====================================================
      FOOTER
-     ======================================== -->
+     ==================================================== -->
 <footer>
-  <div class="container">
+  <div class="footer-inner">
     <div class="footer-logo">
-      <img id="footer-logo" src="images/logo.png" alt="WS PARTNERS">
+      <img src="images/logo.png" alt="WS PARTNERS">
     </div>
-    <div class="footer-links" id="footer-links"></div>
-    <p id="footer-address" style="margin-bottom:8px"></p>
-    <p id="footer-copy"></p>
+    <ul class="footer-links">
+      <li><a href="https://www.ws-partners.com.sg/" target="_blank" rel="noopener">会社サイト</a></li>
+      <li><a href="mailto:support@ws-partners.com.sg">お問い合わせ</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 WS PARTNERS PTE LTD / PT WILLSEED PARTNERS INDONESIA. All Rights Reserved.</p>
   </div>
 </footer>
 
-<!-- ========================================
+<!-- ====================================================
      SCRIPTS
-     ======================================== -->
+     ==================================================== -->
 <script>
 (function () {
   'use strict';
 
-  /* --------------------------------------------------
-     1. Load correct config based on ?lang= URL param
-     -------------------------------------------------- */
-  var lang = (new URLSearchParams(window.location.search).get('lang') || 'ja').replace(/[^a-z]/g,'');
-  var configFile = 'config_' + lang + '.js';
-
-  function loadScript(src, cb, fallbackSrc) {
-    var s = document.createElement('script');
-    s.src = src;
-    s.onload  = cb;
-    s.onerror = function () {
-      if (fallbackSrc) {
-        loadScript(fallbackSrc, cb);
-      }
-    };
-    document.head.appendChild(s);
-  }
-
-  loadScript(configFile, onConfigLoaded, 'config_ja.js');
-
-  /* --------------------------------------------------
-     2. Init after config is loaded
-     -------------------------------------------------- */
-  function onConfigLoaded() {
-    if (typeof LP_CONFIG === 'undefined') return;
-    var c = LP_CONFIG;
-
-    /* Meta */
-    setEl('page-title', c.meta && c.meta.title ? c.meta.title : '');
-    if (c.meta) {
-      setAttr('meta-description','content', c.meta.description || '');
-      setAttr('og-title','content', c.meta.title || '');
-      setAttr('og-description','content', c.meta.description || '');
-      setAttr('og-image','content', 'images/ogp.jpg');
-      if (c.meta.lang) document.documentElement.lang = c.meta.lang;
-    }
-
-    /* Language switch button */
-    if (c.meta && c.meta.other_lang_label) {
-      var btnLang = document.getElementById('btn-lang');
-      btnLang.textContent = c.meta.other_lang_label;
-      btnLang.href = c.meta.other_lang_url || '#';
-    }
-
-    /* Header */
-    if (c.header) {
-      setEl('header-phone', c.header.phone || '');
-      setEl('header-hours', c.header.hours || '');
-      setEl('header-cta-text', c.header.cta_text || '今すぐ申し込む');
-    }
-
-    /* Nav */
-    if (c.nav) {
-      var nav = document.getElementById('nav-links');
-      nav.innerHTML = c.nav.map(function(n){
-        return '<a href="' + n.href + '">' + n.label + '</a>';
-      }).join('');
-    }
-
-    /* Hero */
-    if (c.hero) {
-      setEl('hero-subtitle', c.hero.subtitle || '');
-      setEl('hero-title',    c.hero.title    || '');
-      setEl('hero-date-label',     c.hero.date_label || '開催日時');
-      setEl('hero-date',           c.hero.date       || '');
-      setEl('hero-deadline-label', c.hero.deadline_label || '申込期限');
-      setEl('hero-deadline',       c.hero.deadline   || '');
-      setEl('hero-note',           c.hero.note       || '');
-      setEl('hero-cta-text',       c.hero.cta_text   || 'お申し込みはこちら');
-      setEl('badge-en', c.hero.badge_en || '');
-      setEl('badge-ja', c.hero.badge_ja || '');
-      if (c.hero.bg_image)   setStyle('hero-bg', 'backgroundImage', 'url(' + c.hero.bg_image + ')');
-      if (c.hero.img_main)   setAttr('hero-img-main','src', c.hero.img_main);
-      if (c.hero.img_sub1)   setAttr('hero-img-sub1','src', c.hero.img_sub1);
-      if (c.hero.img_sub2)   setAttr('hero-img-sub2','src', c.hero.img_sub2);
-    }
-
-    /* Consult */
-    renderSection('consult', c.consult, function(d){
-      setEl('consult-en',    d.en    || '');
-      setEl('consult-title', d.title || '');
-      setEl('consult-body',  d.body  || '');
-      if (d.btn_url) {
-        var btn = document.getElementById('consult-btn');
-        btn.href = d.btn_url;
-        btn.style.display = 'inline-flex';
-        setEl('consult-btn-text', d.btn_text || '無料相談を予約する');
-      }
-    });
-
-    /* Issues */
-    renderSection('issues', c.issues, function(d){
-      setEl('issues-en',    d.en    || '');
-      setEl('issues-title', d.title || '');
-      if (d.img) setAttr('issues-img','src', d.img);
-      var ul = document.getElementById('issues-list');
-      if (ul && d.items) {
-        ul.innerHTML = d.items.map(function(item){
-          return '<li>' + item + '</li>';
-        }).join('');
-      }
-    });
-
-    /* Voices */
-    renderSection('voices', c.voices, function(d){
-      setEl('voices-en',    d.en    || '');
-      setEl('voices-title', d.title || '');
-      if (d.img) setAttr('voices-img','src', d.img);
-      var grid = document.getElementById('voices-grid');
-      if (grid && d.items) {
-        grid.innerHTML = d.items.map(function(v, i){
-          return '<div class="value-card reveal delay-' + (i*100) + '">'
-               + '<span class="value-num">' + (i+1) + '</span>'
-               + '<h3>' + (v.name || '') + '</h3>'
-               + '<p>' + (v.quote || v.text || '') + '</p>'
-               + '</div>';
-        }).join('');
-      }
-    });
-
-    /* Features */
-    renderSection('features', c.features, function(d){
-      setEl('features-en',    d.en    || '');
-      setEl('features-title', d.title || '');
-      var grid = document.getElementById('features-grid');
-      if (grid && d.items) {
-        grid.innerHTML = d.items.map(function(f){
-          return '<div class="feature-card reveal">'
-               + '<img src="' + (f.img || '') + '" alt="' + (f.title || '') + '" loading="lazy">'
-               + '<div class="feature-card-body">'
-               + '<h3>' + (f.title || '') + '</h3>'
-               + '<p>'  + (f.body  || '') + '</p>'
-               + '</div></div>';
-        }).join('');
-      }
-    });
-
-    /* Target */
-    renderSection('target', c.target, function(d){
-      setEl('target-en',    d.en    || '');
-      setEl('target-title', d.title || '');
-      if (d.img) setAttr('target-img','src', d.img);
-      var ul = document.getElementById('target-list');
-      if (ul && d.items) {
-        ul.innerHTML = d.items.map(function(item){
-          return '<li>' + item + '</li>';
-        }).join('');
-      }
-    });
-
-    /* Program */
-    renderSection('program', c.program, function(d){
-      setEl('program-en',    d.en    || '');
-      setEl('program-title', d.title || '');
-      setEl('program-detail-title',   d.detail_title   || 'プログラム概要');
-      setEl('program-schedule-title', d.schedule_title || '開催スケジュール');
-      var ul = document.getElementById('program-details');
-      if (ul && d.details) {
-        ul.innerHTML = d.details.map(function(item){
-          return '<li style="padding:6px 0;border-bottom:1px solid #e2e8f0;font-size:var(--fs-body)">'
-               + '<strong>' + (item.label || '') + '</strong>　' + (item.value || '')
-               + '</li>';
-        }).join('');
-      }
-      var tl = document.getElementById('program-timeline');
-      if (tl && d.schedule) {
-        tl.innerHTML = d.schedule.map(function(s){
-          return '<div class="timeline-item">'
-               + '<div class="timeline-content">'
-               + (s.part ? '<span class="part-label">' + s.part + '</span>' : '')
-               + '<h3>' + (s.title || '') + '</h3>'
-               + '<p>' + (s.date || s.body || '') + '</p>'
-               + '</div></div>';
-        }).join('');
-      }
-    });
-
-    /* Instructor */
-    renderSection('instructor', c.instructor, function(d){
-      setEl('instructor-en',    d.en    || '');
-      setEl('instructor-title', d.title || '');
-      var list = document.getElementById('instructors-list');
-      if (list && d.items) {
-        list.innerHTML = d.items.map(function(inst){
-          return '<div class="speaker-card reveal" style="margin-bottom:24px">'
-               + '<div class="speaker-img"><img src="' + (inst.img || 'images/photo_trainer.jpg') + '" alt="' + (inst.name || '') + '" loading="lazy"></div>'
-               + '<div>'
-               + '<h3>' + (inst.name || '') + '</h3>'
-               + '<p class="role">' + (inst.role || inst.title || '') + '</p>'
-               + '<p>' + (inst.profile || inst.bio || '') + '</p>'
-               + '</div></div>';
-        }).join('');
-      }
-    });
-
-    /* Pricing */
-    renderSection('pricing', c.pricing, function(d){
-      setEl('pricing-en',       d.en       || '');
-      setEl('pricing-title',    d.title    || '');
-      setEl('pricing-subtitle', d.subtitle || '');
-      setEl('pricing-currency', d.currency || 'SGD ');
-      setEl('pricing-amount',   d.amount   || '');
-      setEl('pricing-note',     d.note     || '');
-      var flow = document.getElementById('pricing-flow');
-      if (flow && d.flow) {
-        flow.innerHTML = '<h3 style="font-size:var(--fs-h3);margin-bottom:16px">' + (d.flow_title || '申込の流れ') + '</h3>'
-          + '<ol style="list-style:decimal inside;display:flex;flex-direction:column;gap:10px">'
-          + d.flow.map(function(step){ return '<li style="font-size:var(--fs-body)">' + step + '</li>'; }).join('')
-          + '</ol>';
-      }
-    });
-
-    /* Company */
-    renderSection('company', c.company, function(d){
-      setEl('company-en',    d.en    || '');
-      setEl('company-title', d.title || '');
-      if (d.img) setAttr('company-img','src', d.img);
-      var info = document.getElementById('company-info');
-      if (info) {
-        info.innerHTML = '<h3 style="font-size:var(--fs-h3);margin-bottom:12px">' + (d.name || '') + '</h3>'
-          + (d.items || []).map(function(item){
-              return '<p style="font-size:var(--fs-body);color:var(--text-muted);margin-bottom:6px">'
-                   + '<strong>' + (item.label || '') + '</strong>　' + (item.value || '') + '</p>';
-            }).join('');
-      }
-    });
-
-    /* FAQ */
-    renderSection('faq', c.faq, function(d){
-      setEl('faq-en',    d.en    || '');
-      setEl('faq-title', d.title || '');
-      var list = document.getElementById('faq-list');
-      if (list && d.items) {
-        list.innerHTML = d.items.map(function(f){
-          return '<details class="faq-item">'
-               + '<summary>' + (f.q || '') + '</summary>'
-               + '<p>' + (f.a || '') + '</p>'
-               + '</details>';
-        }).join('');
-      }
-    });
-
-    /* Cancel / Contact */
-    renderSection('cancel', c.cancel, function(d){
-      setEl('cancel-en',    d.en    || '');
-      setEl('cancel-title', d.title || '');
-      setEl('cancel-body',  d.body  || '');
-      setEl('contact-title', (c.contact && c.contact.title) || 'お問い合わせ');
-      setEl('contact-body',  (c.contact && c.contact.body)  || '');
-    });
-
-    /* Apply */
-    if (c.apply) {
-      setEl('apply-en',    c.apply.en    || '');
-      setEl('apply-title', c.apply.title || 'お申し込みフォーム');
-      setEl('apply-body',  c.apply.body  || '');
-    }
-
-    /* Footer */
-    if (c.footer) {
-      if (c.footer.links) {
-        document.getElementById('footer-links').innerHTML = c.footer.links.map(function(l){
-          return '<a href="' + l.href + '">' + l.label + '</a>';
-        }).join('');
-      }
-      setEl('footer-address', c.footer.address || '');
-      setEl('footer-copy',    c.footer.copyright || '© WS PARTNERS PTE LTD');
-    }
-
-    /* Re-init scroll animations after DOM updates */
-    initScrollReveal();
-
-    /* Init form */
-    initForm(c.forms);
-  }
-
-  /* --------------------------------------------------
-     3. Form: Google iframe + HubSpot fallback
-        + Thank-you redirect after submission
-     -------------------------------------------------- */
-  function initForm(forms) {
-    if (!forms) return;
-
-    var TIMEOUT_MS    = 5000;
-    var googleWrap    = document.getElementById('google-form-wrap');
-    var hubspotWrap   = document.getElementById('hubspot-form-wrap');
-    var formLoading   = document.getElementById('form-loading');
-    var googleIframe  = document.getElementById('google-form-iframe');
-    var thankYouUrl   = forms.thank_you_url || '_thank-you.html';
-
-    /* -- Try Google Form first -- */
-    if (forms.google_url) {
-      googleIframe.src = forms.google_url;
-
-      var googleLoaded = false;
-      var googleTimer  = setTimeout(function () {
-        if (!googleLoaded) showHubspot();
-      }, TIMEOUT_MS);
-
-      /* タブ切り替えによる誤検知防止: ページが再表示された時刻を記録 */
-      var lastPageVisibleAt = 0;
-      document.addEventListener('visibilitychange', function () {
-        if (!document.hidden) lastPageVisibleAt = Date.now();
-      });
-
-      googleIframe.addEventListener('load', function () {
-        clearTimeout(googleTimer);
-
-        if (!googleLoaded) {
-          /* First load = form is ready */
-          googleLoaded = true;
-          formLoading.style.display  = 'none';
-          googleWrap.style.display   = 'block';
-          hubspotWrap.style.display  = 'none'; /* ensure HubSpot fallback stays hidden */
-        } else {
-          /* Second load = user submitted the form → redirect to thank-you */
-          /* ただしタブ切り替え後2秒以内のreloadは誤検知のため無視 */
-          if (Date.now() - lastPageVisibleAt < 2000) return;
-          window.location.href = thankYouUrl;
+  /* ── Scroll Reveal ── */
+  var reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  if (!('IntersectionObserver' in window)) {
+    reveals.forEach(function (el) { el.classList.add('is-visible'); });
+  } else {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          obs.unobserve(e.target);
         }
       });
+    }, { threshold: 0.07 });
+    reveals.forEach(function (el) { obs.observe(el); });
+  }
 
-      googleIframe.addEventListener('error', function () {
-        clearTimeout(googleTimer);
-        showHubspot();
+  /* ── FAQ Accordion ── */
+  document.querySelectorAll('.faq-q').forEach(function (q) {
+    q.addEventListener('click', function () {
+      var item = this.closest('.faq-item');
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function (i) {
+        i.classList.remove('open');
       });
-    } else {
-      showHubspot();
-    }
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
 
-    /* -- HubSpot fallback -- */
-    function showHubspot() {
-      formLoading.style.display  = 'none';
-      googleWrap.style.display   = 'none';
-
-      if (!forms.hubspot_portal_id || !forms.hubspot_form_id) return;
-      if (forms.hubspot_portal_id.indexOf('※') !== -1) return; /* not configured yet */
-
-      hubspotWrap.style.display  = 'block';
-
-      /* Load HubSpot embed script */
-      var hs = document.createElement('script');
-      hs.src  = '//js.hsforms.net/forms/embed/v2.js';
-      hs.charset = 'utf-8';
-      hs.type = 'text/javascript';
-      hs.onload = function () {
-        if (typeof hbspt === 'undefined') return;
-        hbspt.forms.create({
-          region:   forms.hubspot_region   || 'na1',
-          portalId: forms.hubspot_portal_id,
-          formId:   forms.hubspot_form_id,
-          target:   '#hubspot-form-wrap',
-          onFormSubmit: function () {
-            /* Redirect to thank-you page after submission */
-            setTimeout(function () {
-              window.location.href = thankYouUrl;
-            }, 500);
-          }
-        });
-      };
-      document.head.appendChild(hs);
-    }
-  }
-
-  /* --------------------------------------------------
-     4. Scroll Reveal Animation
-     -------------------------------------------------- */
-  function initScrollReveal() {
-    var els = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-    if ('IntersectionObserver' in window) {
-      var obs = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) {
-            e.target.classList.add('is-visible');
-            obs.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.15 });
-      els.forEach(function (el) { obs.observe(el); });
-    } else {
-      els.forEach(function (el) { el.classList.add('is-visible'); });
-    }
-  }
-
-  /* --------------------------------------------------
-     5. Helpers
-     -------------------------------------------------- */
-  function renderSection(id, data, fn) {
-    var el = document.getElementById(id);
-    if (!data) { if (el) el.style.display = 'none'; return; }
-    if (data.show === false) { if (el) el.style.display = 'none'; return; }
-    fn(data);
-  }
-
-  function setEl(id, html) {
-    var el = document.getElementById(id);
-    if (el) el.innerHTML = html;
-  }
-  function setAttr(id, attr, val) {
-    var el = document.getElementById(id);
-    if (el) el.setAttribute(attr, val);
-  }
-  function setStyle(id, prop, val) {
-    var el = document.getElementById(id);
-    if (el) el.style[prop] = val;
+  /* ── Mobile Nav Toggle ── */
+  var toggle = document.getElementById('navToggle');
+  var nav    = document.getElementById('headerNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () { nav.classList.toggle('open'); });
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { nav.classList.remove('open'); });
+    });
   }
 
 })();
