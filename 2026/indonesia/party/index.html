@@ -228,21 +228,21 @@
     .hero-content {
       position: relative; z-index: 3;
       text-align: center;
-      padding: 0 24px 96px;
-      max-width: 860px; width: 100%;
+      padding: 0 24px 80px;
+      max-width: 900px; width: 100%;
     }
 
     .hero-logo-group {
       display: flex; align-items: center; justify-content: center;
-      gap: 16px; margin-bottom: 10px; flex-wrap: wrap;
+      gap: 16px; margin-bottom: 6px; flex-wrap: wrap;
     }
-    .hero-logo-group img { height: 90px; opacity: .95; filter: brightness(1.1); }
+    .hero-logo-group img { height: 72px; opacity: .95; filter: brightness(1.1); }
 
     .hero-inv-label {
       display: flex; align-items: center; justify-content: center; gap: 12px;
       font-size: 9px; font-weight: 700;
       letter-spacing: .4em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 8px;
+      color: var(--gold); margin-bottom: 5px;
     }
     .hero-inv-label::before, .hero-inv-label::after {
       content: ''; display: block; width: 28px; height: 1px;
@@ -250,34 +250,35 @@
     }
 
     .hero-subtitle {
-      font-size: clamp(.72rem, 1.1vw, .85rem);
+      font-size: clamp(.68rem, 1vw, .8rem);
       font-weight: 300; color: var(--gold-lt);
-      letter-spacing: .1em; margin-bottom: 6px;
+      letter-spacing: .1em; margin-bottom: 4px;
     }
     .hero-title {
-      font-size: clamp(1.5rem, 3.8vw, 2.6rem);
+      font-size: clamp(1.1rem, 2.6vw, 1.9rem);
       font-weight: 900; line-height: 1.2;
+      white-space: nowrap;
       color: var(--text-bright); margin-bottom: 4px;
     }
     .hero-title .hl { color: var(--gold-lt); }
 
     .hero-badge {
-      display: inline-flex; align-items: center; gap: 8px;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
       background: rgba(201,168,76,.1);
       border: 1px solid var(--gold-border);
       border-radius: 50px;
-      padding: 4px 14px; margin: 6px 0 10px;
+      padding: 4px 14px; margin: 4px 0 8px;
       font-size: 11px; color: var(--gold-lt);
       letter-spacing: .07em;
     }
     .hero-badge::before, .hero-badge::after { content: '✦'; font-size: .7em; color: var(--gold); }
 
     .hero-meta {
-      display: inline-flex; flex-direction: column; gap: 7px;
+      display: flex; flex-direction: column; gap: 5px;
       background: rgba(201,168,76,.07);
       border: 1px solid var(--gold-border);
       border-radius: 14px;
-      padding: 14px 32px 18px;
+      padding: 10px 28px 14px;
       align-items: center;
     }
     .hero-meta-row {
@@ -289,7 +290,7 @@
       color: var(--gold); min-width: 40px;
     }
     .hm-value {
-      font-size: clamp(.85rem, 1.5vw, 1rem);
+      font-size: clamp(.8rem, 1.3vw, .95rem);
       font-weight: 700; color: var(--text-bright);
     }
 
@@ -883,9 +884,7 @@
 
     <p class="hero-subtitle">WILLSEED PARTNERS INDONESIA 拠点設立記念</p>
 
-    <h1 class="hero-title">
-      インドネシアの<span class="hl">「当たり前」</span>を<br>変える夜へ
-    </h1>
+    <h1 class="hero-title">インドネシアの<span class="hl">「当たり前」</span>を変える夜へ</h1>
 
     <div class="hero-badge">招待制パーティー &nbsp;｜&nbsp; ワークショップ &amp; 懇親会</div>
 
