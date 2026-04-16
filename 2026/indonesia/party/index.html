@@ -194,7 +194,7 @@
       position: relative;
       height: 100vh;
       min-height: 600px;
-      display: flex; align-items: center; justify-content: center;
+      display: flex; align-items: flex-start; justify-content: center;
       overflow: hidden;
     }
     .hero-bg {
@@ -228,13 +228,13 @@
     .hero-content {
       position: relative; z-index: 3;
       text-align: center;
-      padding: 0 24px 80px;
+      padding: 72px 24px 0;
       max-width: 900px; width: 100%;
     }
 
     .hero-logo-group {
       display: flex; align-items: center; justify-content: center;
-      gap: 16px; margin-bottom: 6px; flex-wrap: wrap;
+      gap: 16px; margin-bottom: 18px; flex-wrap: wrap;
     }
     .hero-logo-group img { height: 72px; opacity: .95; filter: brightness(1.1); }
 
@@ -242,7 +242,7 @@
       display: flex; align-items: center; justify-content: center; gap: 12px;
       font-size: 9px; font-weight: 700;
       letter-spacing: .4em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 5px;
+      color: var(--gold); margin-bottom: 14px;
     }
     .hero-inv-label::before, .hero-inv-label::after {
       content: ''; display: block; width: 28px; height: 1px;
@@ -252,33 +252,33 @@
     .hero-subtitle {
       font-size: clamp(.68rem, 1vw, .8rem);
       font-weight: 300; color: var(--gold-lt);
-      letter-spacing: .1em; margin-bottom: 4px;
+      letter-spacing: .1em; margin-bottom: 12px;
     }
     .hero-title {
       font-size: clamp(1.1rem, 2.6vw, 1.9rem);
       font-weight: 900; line-height: 1.2;
       white-space: nowrap;
-      color: var(--text-bright); margin-bottom: 4px;
+      color: var(--text-bright); margin-bottom: 14px;
     }
     .hero-title .hl { color: var(--gold-lt); }
 
     .hero-badge {
-      display: flex; align-items: center; justify-content: center; gap: 8px;
+      display: inline-flex; align-items: center; gap: 8px;
       background: rgba(201,168,76,.1);
       border: 1px solid var(--gold-border);
       border-radius: 50px;
-      padding: 4px 14px; margin: 4px 0 8px;
+      padding: 5px 18px; margin: 0 0 16px;
       font-size: 11px; color: var(--gold-lt);
       letter-spacing: .07em;
     }
     .hero-badge::before, .hero-badge::after { content: '✦'; font-size: .7em; color: var(--gold); }
 
     .hero-meta {
-      display: flex; flex-direction: column; gap: 5px;
+      display: inline-flex; flex-direction: column; gap: 8px;
       background: rgba(201,168,76,.07);
       border: 1px solid var(--gold-border);
       border-radius: 14px;
-      padding: 10px 28px 14px;
+      padding: 16px 40px 20px;
       align-items: center;
     }
     .hero-meta-row {
@@ -290,12 +290,12 @@
       color: var(--gold); min-width: 40px;
     }
     .hm-value {
-      font-size: clamp(.8rem, 1.3vw, .95rem);
+      font-size: clamp(.82rem, 1.3vw, .97rem);
       font-weight: 700; color: var(--text-bright);
     }
 
     .scroll-hint {
-      position: absolute; bottom: 24px; left: 50%;
+      position: absolute; bottom: 52px; left: 50%;
       transform: translateX(-50%);
       display: flex; flex-direction: column; align-items: center; gap: 5px;
       color: rgba(201,168,76,.5);
