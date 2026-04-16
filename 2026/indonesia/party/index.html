@@ -192,7 +192,8 @@
        ==================================================== */
     .hero {
       position: relative;
-      min-height: 100vh;
+      height: 100vh;
+      min-height: 600px;
       display: flex; align-items: center; justify-content: center;
       overflow: hidden;
     }
@@ -227,25 +228,21 @@
     .hero-content {
       position: relative; z-index: 3;
       text-align: center;
-      padding: 60px 24px 120px;
+      padding: 16px 24px 72px;
       max-width: 860px; width: 100%;
     }
 
     .hero-logo-group {
       display: flex; align-items: center; justify-content: center;
-      gap: 16px; margin-bottom: 36px; flex-wrap: wrap;
+      gap: 16px; margin-bottom: 18px; flex-wrap: wrap;
     }
-    .hero-logo-group img { height: 30px; opacity: .88; filter: brightness(1.15); }
-    .hero-logo-sep {
-      width: 1px; height: 28px;
-      background: rgba(201,168,76,.35);
-    }
+    .hero-logo-group img { height: 48px; opacity: .92; filter: brightness(1.1); }
 
     .hero-inv-label {
       display: flex; align-items: center; justify-content: center; gap: 14px;
       font-size: 10px; font-weight: 700;
       letter-spacing: .45em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 28px;
+      color: var(--gold); margin-bottom: 14px;
     }
     .hero-inv-label::before, .hero-inv-label::after {
       content: ''; display: block; width: 36px; height: 1px;
@@ -253,14 +250,14 @@
     }
 
     .hero-subtitle {
-      font-size: clamp(.85rem, 1.4vw, 1rem);
+      font-size: clamp(.8rem, 1.2vw, .95rem);
       font-weight: 300; color: var(--gold-lt);
-      letter-spacing: .1em; margin-bottom: 16px;
+      letter-spacing: .1em; margin-bottom: 10px;
     }
     .hero-title {
-      font-size: clamp(2.1rem, 5.5vw, 3.6rem);
+      font-size: clamp(1.8rem, 4.5vw, 3rem);
       font-weight: 900; line-height: 1.2;
-      color: var(--text-bright); margin-bottom: 10px;
+      color: var(--text-bright); margin-bottom: 8px;
     }
     .hero-title .hl { color: var(--gold-lt); }
 
@@ -269,18 +266,19 @@
       background: rgba(201,168,76,.1);
       border: 1px solid var(--gold-border);
       border-radius: 50px;
-      padding: 7px 20px; margin: 20px 0 32px;
+      padding: 6px 18px; margin: 10px 0 16px;
       font-size: 12px; color: var(--gold-lt);
       letter-spacing: .08em;
     }
     .hero-badge::before, .hero-badge::after { content: '✦'; font-size: .75em; color: var(--gold); }
 
     .hero-meta {
-      display: inline-flex; flex-direction: column; gap: 12px;
+      display: inline-flex; flex-direction: column; gap: 10px;
       background: rgba(201,168,76,.07);
       border: 1px solid var(--gold-border);
       border-radius: 14px;
-      padding: 26px 44px; margin-bottom: 40px;
+      padding: 18px 36px 22px;
+      align-items: center;
     }
     .hero-meta-row {
       display: flex; align-items: baseline; gap: 14px;
@@ -801,20 +799,43 @@
        FOOTER
        ==================================================== */
     footer {
-      background: var(--dark-bg);
-      border-top: 1px solid var(--dark-line);
+      background: #ffffff;
+      border-top: 1px solid #e0ddd6;
       padding: 52px 0 32px;
     }
     .footer-inner {
       max-width: 1100px; margin: 0 auto; padding: 0 24px;
       display: flex; flex-direction: column;
-      align-items: center; gap: 20px; text-align: center;
+      align-items: center; gap: 24px; text-align: center;
     }
-    .footer-logo img { height: 38px; opacity: .75; }
+    .footer-logos {
+      display: flex; align-items: center; justify-content: center;
+      gap: 36px; flex-wrap: wrap;
+    }
+    .footer-logos img { height: 36px; width: auto; opacity: .88; }
     .footer-links { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; justify-content: center; }
-    .footer-links a { font-size: 13px; color: var(--text-muted); transition: color .2s; }
-    .footer-links a:hover { color: var(--gold); }
-    .footer-copy { font-size: 12px; color: var(--text-muted); letter-spacing: .04em; }
+    .footer-links a { font-size: 13px; color: #888; transition: color .2s; }
+    .footer-links a:hover { color: var(--gold-dk); }
+    .footer-copy { font-size: 12px; color: #aaa; letter-spacing: .04em; }
+
+    /* ====================================================
+       BACK TO TOP
+       ==================================================== */
+    .back-top {
+      position: fixed; bottom: 32px; right: 32px; z-index: 300;
+      width: 48px; height: 48px;
+      background: var(--gold-grad);
+      color: #0a0e1a;
+      border: none; border-radius: 50%;
+      font-size: 1.2rem; font-weight: 900;
+      cursor: pointer; line-height: 1;
+      box-shadow: 0 4px 20px rgba(201,168,76,.45);
+      opacity: 0; visibility: hidden;
+      transition: opacity .3s, visibility .3s, transform .2s;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .back-top.show { opacity: 1; visibility: visible; }
+    .back-top:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(201,168,76,.55); }
   </style>
 </head>
 <body>
@@ -855,9 +876,7 @@
 
   <div class="hero-content reveal">
     <div class="hero-logo-group">
-      <img src="images/logo_willseed.png" alt="Willseed Partners">
-      <div class="hero-logo-sep"></div>
-      <img src="/assets/logos/logo-nega.svg" alt="WS PARTNERS">
+      <img src="/assets/logos/indonesia/logoMulti-nega.svg" alt="WS PARTNERS INDONESIA">
     </div>
 
     <p class="hero-inv-label">Invitation</p>
@@ -883,9 +902,8 @@
         <span class="hm-label">参加費</span>
         <span class="hm-value">無料（ご招待制）</span>
       </div>
+      <a href="#apply" class="btn-gold" style="margin-top:8px">参加申込をする</a>
     </div>
-
-    <a href="#apply" class="btn-gold">参加申込をする</a>
   </div>
 
   <div class="scroll-hint">Scroll</div>
@@ -913,7 +931,7 @@
         <div class="gold-line left"></div>
 
         <p style="margin-bottom:16px">
-          この度、<strong style="color:var(--text-bright)">WILLSEED PARTNERS INDONESIA（WSP）</strong>は、
+          この度、<strong style="color:var(--text-bright)">WS PARTNERS（WSP）</strong>は、
           インドネシアへの拠点設立を記念し、日頃よりお世話になっている皆さまを
           特別なパーティーへご招待いたします。
         </p>
@@ -1417,7 +1435,7 @@
             </ul>
 
             <a class="btn-email"
-               href="mailto:support@ws-partners.com.sg?subject=%E3%81%8A%E7%94%B3%E3%81%97%E8%BE%BC%E3%81%BF%20-%20%E3%80%90%E3%80%8EWILLSEED%20PARTNERS%20INDONESIA%20%E6%8B%A0%E7%82%B9%E8%A8%AD%E7%AB%8B%E8%A8%98%E5%BF%B5%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%8F%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%EF%BC%8F%E7%A0%94%E4%BF%AE%20%EF%BC%88Indonesia%EF%BC%89%282026.05%29%E3%80%91">
+               href="mailto:support@ws-partners.com.sg?subject=%E3%81%8A%E7%94%B3%E3%81%97%E8%BE%BC%E3%81%BF%20-%20%E3%80%90%E3%80%8EWILLSEED%20PARTNERS%20INDONESIA%20%E6%8B%A0%E7%82%B9%E8%A8%AD%E7%AB%8B%E8%A8%98%E5%BF%B5%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%8F%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%EF%BC%8F%E7%A0%94%E4%BF%AE%20%EF%BC%88Indonesia%EF%BC%89%282026.05%29%E3%80%91&body=%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0AWILLSEED%20PARTNERS%20INDONESIA%20%E6%8B%A0%E7%82%B9%E8%A8%AD%E7%AB%8B%E8%A8%98%E5%BF%B5%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%20%E5%8F%82%E5%8A%A0%E7%94%B3%E8%BE%BC%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0A%0A%E3%81%94%E5%8F%82%E5%8A%A0%E8%80%85%E3%81%AE%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%881%E4%BA%BA%E7%9B%AE%EF%BC%89%EF%BC%9A%0A%E4%BC%9A%E7%A4%BE%E5%90%8D%EF%BC%9A%0A%E9%83%A8%E7%BD%B2%E3%83%BB%E5%BD%B9%E8%81%B7%EF%BC%881%E4%BA%BA%E7%9B%AE%EF%BC%89%EF%BC%9A%0A%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%EF%BC%9A%0A%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7%EF%BC%9A%0A%E5%8F%82%E5%8A%A0%E4%BA%BA%E6%95%B0%EF%BC%9A%20%EF%BC%881%E5%90%8D%20%2F%202%E5%90%8D%EF%BC%89%0A%0A%E2%80%94%20%EF%BC%882%E5%90%8D%E3%81%AE%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%E3%81%94%E8%A8%98%E5%85%A5%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%EF%BC%89%E2%80%94%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%882%E4%BA%BA%E7%9B%AE%EF%BC%89%EF%BC%9A%0A%E9%83%A8%E7%BD%B2%E3%83%BB%E5%BD%B9%E8%81%B7%EF%BC%882%E4%BA%BA%E7%9B%AE%EF%BC%89%EF%BC%9A%0A%0A%E5%BD%93%E6%97%A5%E3%81%AE%E8%A8%98%E4%BA%8B%E3%83%BB%E7%A4%BE%E5%90%8D%E6%8E%B2%E8%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9A%20%EF%BC%88%E6%8E%B2%E8%BC%89%E5%8F%AF%20%2F%20%E6%8E%B2%E8%BC%89%E4%B8%8D%E5%8F%AF%EF%BC%89%0A%E3%81%94%E8%B3%AA%E5%95%8F%E3%83%BB%E3%81%94%E8%A6%81%E6%9C%9B%EF%BC%88%E4%BB%BB%E6%84%8F%EF%BC%89%EF%BC%9A%0A%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95">
               ✉️ メールで申し込む
             </a>
 
@@ -1457,12 +1475,8 @@
     <div class="co-grid">
 
       <div class="reveal-left">
-        <div class="co-logos">
-          <img src="/assets/logos/logo-nega.svg" alt="WS PARTNERS">
-          <div class="co-logos-sep"></div>
-          <img src="images/logo_willseed.png" alt="Willseed">
-          <div class="co-logos-sep"></div>
-          <img src="images/logo_kawaijuku.png" alt="河合塾グループ">
+        <div class="co-logos" style="margin-bottom:16px">
+          <img src="/assets/logos/logo-nega.svg" alt="WS PARTNERS" style="height:32px">
         </div>
 
         <table class="co-table">
@@ -1496,7 +1510,10 @@
           </tr>
         </table>
 
-        <p class="co-sub-head">インドネシア現地法人</p>
+        <div class="co-logos" style="margin-top:32px;margin-bottom:16px">
+          <img src="/assets/logos/indonesia/logo-nega.svg" alt="WS PARTNERS INDONESIA" style="height:32px">
+        </div>
+        <p class="co-sub-head" style="margin-top:0">インドネシア現地法人</p>
         <table class="co-table">
           <tr>
             <th>法人名</th>
@@ -1535,10 +1552,14 @@
 <!-- ====================================================
      FOOTER
      ==================================================== -->
+<button class="back-top" id="backTop" aria-label="ページトップへ戻る">↑</button>
+
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">
-      <img src="/assets/logos/logo-nega.svg" alt="WS PARTNERS">
+    <div class="footer-logos">
+      <img src="/assets/logos/logo.svg" alt="WS PARTNERS">
+      <img src="images/logo_willseed.png" alt="WillSeed">
+      <img src="images/logo_kawaijuku.png" alt="河合塾グループ">
     </div>
     <ul class="footer-links">
       <li><a href="https://www.ws-partners.com.sg/" target="_blank" rel="noopener">会社サイト</a></li>
@@ -1590,6 +1611,18 @@
     toggle.addEventListener('click', function () { nav.classList.toggle('open'); });
     nav.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', function () { nav.classList.remove('open'); });
+    });
+  }
+
+  /* ── Back to Top ── */
+  var backTop = document.getElementById('backTop');
+  if (backTop) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 400) backTop.classList.add('show');
+      else backTop.classList.remove('show');
+    });
+    backTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 
