@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="logomark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.03 68.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #466eb3;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="1.27 16.37 17.01 47.62 32.31 17.01 32.31 0 0 0 0 13.83 1.27 16.37 1.27 16.37"/>
+  <polygon class="cls-1" points="35.72 0 35.72 17.01 51.02 47.62 66.76 16.37 66.76 16.37 68.03 13.83 68.03 0 35.72 0"/>
+  <polygon class="cls-1" points="68.03 67.91 68.03 20.17 44.11 68.03 68.03 67.91"/>
+  <polygon class="cls-1" points="34.02 20.29 17.01 54.3 7.24 34.53 7.24 34.53 0 20.05 0 67.91 40.71 67.91 49.44 50.9 34.02 20.29"/>
+</svg>
