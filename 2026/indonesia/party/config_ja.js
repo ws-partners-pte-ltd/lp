@@ -283,7 +283,7 @@ window.LP_CONFIG = {
   },
 
   forms: {
-    google_url:        '※GoogleフォームのURLを差し込んでください',
+    google_url:        'https://docs.google.com/forms/d/e/1FAIpQLSdt-LqLDSU8LFOSZ8RegppPbPt7hP-UtUERWOWzV9n9pIgzGQ/viewform',
     hubspot_portal_id: '※HubSpotのポータルIDをここに記入',
     hubspot_form_id:   '※シンガポール用HubSpotフォームIDをここに記入',
     hubspot_region:    'na1',
