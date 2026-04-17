@@ -298,9 +298,9 @@
     }
 
     .scroll-hint {
-      position: absolute; bottom: 52px; left: 50%;
-      transform: translateX(-50%);
       display: flex; flex-direction: column; align-items: center; gap: 5px;
+      align-self: center;
+      margin-top: 20px;
       color: rgba(201,168,76,.5);
       font-size: 8px; letter-spacing: .25em; text-transform: uppercase;
       animation: sb 2.2s ease-in-out infinite;
@@ -312,8 +312,8 @@
       background: linear-gradient(to bottom, var(--gold), transparent);
     }
     @keyframes sb {
-      0%,100% { opacity:.4; transform:translateX(-50%) translateY(0); }
-      50% { opacity:.9; transform:translateX(-50%) translateY(7px); }
+      0%,100% { opacity:.4; transform:translateY(0); }
+      50% { opacity:.9; transform:translateY(7px); }
     }
 
     @media (max-width: 600px) {
@@ -900,11 +900,11 @@
         <span class="hm-label">参加費</span>
         <span class="hm-value">無料</span>
       </div>
-      <a href="#apply" class="btn-gold" style="margin-top:8px; display:block; text-align:center">参加申込をする</a>
+      <a href="#apply" class="btn-gold" style="margin-top:16px; display:block; width:fit-content; margin-left:auto; margin-right:auto; text-align:center">参加申込をする</a>
     </div>
-  </div>
 
-  <div class="scroll-hint">Scroll</div>
+    <div class="scroll-hint">Scroll</div>
+  </div>
 </section>
 
 <!-- ====================================================
@@ -925,14 +925,8 @@
       <div class="reveal-right">
         <div class="gold-accent"></div>
         <span class="sec-label">About This Party</span>
-        <h2 class="sec-title">当たり前と向き合い、<br>変化のきっかけを見つける場</h2>
+        <h2 class="sec-title">「当たり前」を捉え直し、<br>変化のきっかけを見つける場</h2>
         <div class="gold-line left"></div>
-
-        <p style="margin-bottom:16px">
-          この度、<strong style="color:var(--text-bright)">PT WILLSEED PARTNERS INDONESIA</strong>は、
-          インドネシアへの拠点設立を記念し、日頃よりお世話になっている皆さまを
-          特別なウェルカムパーティーへご招待いたします。
-        </p>
 
         <div class="concept-quote">
           日本人の「当たり前」と、インドネシア人の「当たり前」。<br>
@@ -940,9 +934,15 @@
           <cite>── WS PARTNERS が大切にしてきた問い</cite>
         </div>
 
+        <p style="margin-bottom:16px">
+          この問いを胸に、<strong style="color:var(--text-bright)">PT WILLSEED PARTNERS INDONESIA</strong>はインドネシアへの拠点設立を決意しました。
+          その記念として、日頃よりお世話になっている皆さまを
+          特別なウェルカムパーティーへご招待いたします。
+        </p>
+
         <p style="margin-bottom:20px">
           この夜は、スペシャルゲストによるコンテンツをお楽しみいただきながら、
-          インドネシアでご活躍の皆さまと和やかに交流できる時間を予定しています。<br><br>
+          インドネシアでご活躍の皆さまと和やかに交流できる時間を予定しています。
           拠点設立という新たな一歩を、ぜひ皆さまと共に祝いたいと思っています。
         </p>
 
@@ -970,8 +970,8 @@
       <h2 class="sec-title" style="text-align:center">ぜひ、ご一緒いただきたい方々へ</h2>
       <div class="gold-line"></div>
       <p>
-        今回のパーティーは、インドネシアにゆかりのある方々と<br>
-        ともに祝いたいと考えてご用意しました。<br>
+        今回のパーティーは、インドネシアでの経営・マネジメントに<br>
+        取り組まれている皆様とともに祝いたいと考えてご用意しました。<br>
         以下に心当たりのある方は、ぜひご参加ください。
       </p>
     </div>
@@ -980,7 +980,7 @@
       <div class="inv-card reveal d1">
         <div class="inv-icon">🏢</div>
         <h3>インドネシア現地法人をお持ちの<br>日系企業の方</h3>
-        <p>マネジャー以上（GM以上歓迎）。現地スタッフとのマネジメントに課題感をお持ちの意思決定者・キーパーソン。</p>
+        <p>マネジャー以上（GM以上歓迎）。現地スタッフとのマネジメントに課題感をお持ちの方。</p>
       </div>
       <div class="inv-card reveal d2">
         <div class="inv-icon">🌏</div>
