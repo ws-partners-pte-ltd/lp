@@ -1265,20 +1265,12 @@
         <div class="apply-card-body">
           <div class="gform-wrap" id="googleFormWrap">
             <iframe
+              id="partyFormIframe"
               src="https://docs.google.com/forms/d/e/1FAIpQLSdt-LqLDSU8LFOSZ8RegppPbPt7hP-UtUERWOWzV9n9pIgzGQ/viewform?embedded=true"
               width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0"
               style="border:none; border-radius:8px; background:#fff;">
               読み込んでいます…
             </iframe>
-          </div>
-          <!-- 申込完了後にクリック → thank-you ページへ -->
-          <div style="text-align:center; margin-top:24px;">
-            <p style="font-size:0.875rem; color:var(--text-muted); margin-bottom:14px; line-height:1.7;">
-              フォームの送信が完了しましたら、下のボタンを押してください。
-            </p>
-            <a href="thank-you.html" class="btn-gold" style="display:inline-block; padding:14px 40px; font-size:1rem;">
-              ✅ 申込完了 ─ 受付確認ページへ
-            </a>
           </div>
         </div>
       </div>
@@ -1509,6 +1501,28 @@
     });
   }
 
+})();
+</script>
+
+<!-- ================================================
+     Google Form 送信完了 → thank-you.html へ自動遷移
+     仕組み: 埋め込みフォームは送信後に iframe が再読み込みされる。
+             最初の onload（フォーム表示）は無視し、
+             2回目の onload（送信完了画面）を検知して遷移する。
+================================================ -->
+<script>
+(function () {
+  var iframe = document.getElementById('partyFormIframe');
+  if (!iframe) return;
+  var loaded = false;
+  iframe.addEventListener('load', function () {
+    if (!loaded) {
+      loaded = true; // 初回読み込みはスキップ
+    } else {
+      // 2回目 = フォーム送信完了
+      window.location.href = 'thank-you.html';
+    }
+  });
 })();
 </script>
 </body>
