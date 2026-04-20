@@ -29,9 +29,9 @@ window.LP_CONFIG = {
   ],
 
   hero: {
-    bg_image:       '../images/hero_bg.jpg',
+    bg_image:       '../images/thailand_night3.jpg',
     img_online:     '../images/online_training.jpg',
-    img_instructor: '../images/instructor_placeholder.jpg',
+    img_instructor: '../images/instructor_alia.jpg',
     subtitle:       '将来の貴社を支える、タイ人リーダーを育てます',
     title:          '主体性開発プログラム\n報連相・コミュニケーション強化研修',
     date_label:     '開催日時',
@@ -94,7 +94,7 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
     title: '本プログラムの特徴',
     items: [
       {
-        img: '../images/instructor_placeholder.jpg',
+        img: '../images/instructor_alia.jpg',
         title: '日系企業の指導に精通した現地プロ講師が、直接指導',
         body: '博学な講師が受講者の前で話すだけでは、理解は進みません。当コースでは、日系企業での豊富な指導経験を持つ現地プロ講師が直接指導します。日系企業で求められる報連相の重要性や、「腑に落ちる」伝え方・相談の仕方を、現場の視点から丁寧に教えます。'
       },
@@ -178,7 +178,7 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
     title: '講師の紹介',
     items: [
       {
-        img:     '../images/instructor_placeholder.jpg',
+        img:     '../images/instructor_alia.jpg',
         name:    '（講師情報 調整中）',
         role:    'WS PARTNERS 認定ファシリテーター',
         profile: '詳細は近日公開予定です。'

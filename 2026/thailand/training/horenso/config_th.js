@@ -29,9 +29,9 @@ window.LP_CONFIG = {
   ],
 
   hero: {
-    bg_image:       '../images/hero_bg.jpg',
+    bg_image:       '../images/thailand_night3.jpg',
     img_online:     '../images/online_training.jpg',
-    img_instructor: '../images/instructor_placeholder.jpg',
+    img_instructor: '../images/instructor_alia.jpg',
     subtitle:       'พัฒนาพนักงานไทยให้เป็นผู้นำที่องค์กรต้องการ',
     title:          'โปรแกรมพัฒนาความริเริ่มและความเป็นผู้นำ\nหลักสูตรเสริมสร้างโฮเรนโซและการสื่อสาร',
     date_label:     'วันที่จัดอบรม',
@@ -91,7 +91,7 @@ window.LP_CONFIG = {
     title: 'คุณสมบัติของโปรแกรมนี้',
     items: [
       {
-        img: '../images/instructor_placeholder.jpg',
+        img: '../images/instructor_alia.jpg',
         title: 'วิทยากรมืออาชีพชาวไทยที่เชี่ยวชาญด้านการทำงานกับบริษัทญี่ปุ่น',
         body: 'ไม่ใช่แค่วิทยากรที่รู้มาก แต่คือผู้ที่มีประสบการณ์จริงในการทำงานกับองค์กรญี่ปุ่นและถ่ายทอดเรื่องโฮเรนโซได้อย่างเป็นรูปธรรม ช่วยให้ผู้เรียน "ซึมซับ" ความสำคัญของการรายงาน-ประสานงาน-ปรึกษาที่บริษัทญี่ปุ่นต้องการได้อย่างแท้จริง'
       },
@@ -175,7 +175,7 @@ window.LP_CONFIG = {
     title: 'วิทยากร',
     items: [
       {
-        img: '../images/instructor_placeholder.jpg',
+        img: '../images/instructor_alia.jpg',
         name: '(กำลังเตรียมข้อมูล)',
         role: 'Certified Facilitator, WS PARTNERS',
         profile: 'รายละเอียดวิทยากรจะอัปเดตเร็วๆ นี้'
