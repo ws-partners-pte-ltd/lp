@@ -29,7 +29,7 @@ window.LP_CONFIG = {
   ],
 
   hero: {
-    bg_image:       '../images/thailand_night3.jpg',
+    bg_image:       '../images/thailand_night3_gemini.png',
     img_online:     '../images/online_training.jpg',
     img_instructor: '../images/instructor_alia.jpg',
     subtitle:       '将来の貴社を支える、タイ人リーダーを育てます',
