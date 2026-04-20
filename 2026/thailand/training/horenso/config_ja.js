@@ -305,7 +305,7 @@ support@ws-partners.com.sg
     hubspot_form_id:    '※タイ用HubSpotフォームIDをここに記入',
     hubspot_region:     'na1',
     mailto_email:       'support@ws-partners.com.sg',
-    mailto_subject:     "お申し込み - 【『タイ報連相研修』セミナー／研修 （Thailand）(2026.07)】",
+    mailto_subject:     "お申し込み - 【『報連相・コミュニケーション強化研修』セミナー／研修 （Thailand）(2026.7)】",
     thank_you_url:      '../../../../../_template/_thank-you.html?prog=タイ報連相研修'
   }
 
