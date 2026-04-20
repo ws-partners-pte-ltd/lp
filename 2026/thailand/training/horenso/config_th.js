@@ -301,7 +301,7 @@ support@ws-partners.com.sg
   },
 
   forms: {
-    google_url:         '※แบบฟอร์ม Google สำหรับหลักสูตรโฮเรนโซไทย (กรุณากรอก URL)',
+    google_url:         'https://docs.google.com/forms/d/e/1FAIpQLSdyhKPxognCiCi2ti0XfFivo_HYNEyb-HgU_KQGLf4S-csksw/viewform?embedded=true',
     hubspot_portal_id:  '※HubSpotのポータルIDをここに記入',
     hubspot_form_id:    '※タイ用HubSpotフォームIDをここに記入',
     hubspot_region:     'na1',
