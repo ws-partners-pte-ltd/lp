@@ -32,8 +32,8 @@ window.LP_CONFIG = {
     bg_image:       '../images/thailand_night3_gemini.png',
     img_online:     '../images/online_training.jpg',
     img_instructor: '../images/instructor_alia.jpg',
-    subtitle:       '将来の貴社を支える、タイ人リーダーを育てます',
-    title:          '主体性開発プログラム\n報連相・コミュニケーション強化研修',
+    subtitle:       '主体性開発プログラム',
+    title:          '報連相・コミュニケーション強化研修',
     date_label:     '開催日時',
     date:           '2026年7月2日（木）より\n週1回・全8回開催',
     deadline_label: '申込期限',
@@ -77,15 +77,12 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
 
   voices: {
     en: 'TESTIMONIALS',
-    title: '前回受講者の声（一部）',
+    title: 'トップマネジメントの声（一部）',
     img: '../images/workshop_small.jpg',
     items: [
-      { name: 'トップマネジメントの声①', quote: '「どうすればいいですか？」から「私はこうしたいです」という相談に変わった。' },
-      { name: 'トップマネジメントの声②', quote: '悪い情報ほど、自分から早く報告してくれるようになり驚いた。' },
-      { name: 'トップマネジメントの声③', quote: '一方的な指示待ちから抜け出し、チームをまとめる頼もしい存在になった。' },
-      { name: '受講者の声①', quote: '現場の実情をふまえた研修だった。わかりやすく、実践しやすかった。' },
-      { name: '受講者の声②', quote: '部下と信頼関係を築き意欲を高めることが成果につながると、実践を通じて理解できた。' },
-      { name: '受講者の声③', quote: '上司からの期待を感じ、自らの意欲も増した。今後もアクションプランを実践したい。' }
+      { name: 'トップマネジメントの声①', quote: '最近、自分から打合せをセットして動くようになった。だいぶ主体的になったと思う。' },
+      { name: 'トップマネジメントの声②', quote: '研修後、部下の面倒を見るようになった。つい昨日も教えていたのを見た。' },
+      { name: 'トップマネジメントの声③', quote: '急に会議で意見や数字を出してくれるようになり「おっ」と思った。' }
     ]
   },
 
@@ -119,7 +116,7 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
   target: {
     en: 'TARGET',
     title: '本プログラムの対象者',
-    img: '../images/challenge_scene.jpg',
+    img: '../images/thailand_landscape.jpg',
     items: [
       '<strong>【対象者】現在中堅社員、もしくはリーダー候補のタイ人スタッフ</strong><br>現在リーダー以上の方、スーパーバイザー、アシスタントマネジャー、あるいは将来の管理職候補者など、「今後会社の中核を担う方」であればどなたにも適しています（一部の企業様からはマネージャーの方もご参加いただいております）。',
       '<strong>役職について</strong><br>他の参加者との経験の差を考慮し、ディスカッションのグループを分けるなどの配慮を行います。',
@@ -197,9 +194,9 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
     items: [
       {
         img:     '../images/instructor_alia.jpg',
-        name:    '（講師情報 調整中）',
-        role:    'WS PARTNERS 認定ファシリテーター',
-        profile: '詳細は近日公開予定です。'
+        name:    'Alia Ratanavirakul（アリア・ラタナヴィラクン）',
+        role:    'WS PARTNERS PTE LTD　Facilitator',
+        profile: '日本の４年制大学を卒業後、東京にて勤務。タイ帰国後は日系企業で勤務。\nロームの社内教育担当、NEC系企業の翻訳課など、いずれの企業でも頭角を現し、マネジャー職を経験。部下の意欲や力を引き出すマネジメントに優れ、年長社員からも支持されるマネジャーとして活躍した。\n日系文化に精通しているほか、語学の面でもチュラロンコン大学・東北大学で日本語学を修めた。\nファシリテーションの評価も高く、泰日経済技術振興協会でも継続的に教鞭をとるなどプロ講師として活躍。独立経験もあり、経営視点も備える。\n現在は、マネジメントの知識・経験と日本企業への深い理解を活かし、WS PARTNERSにてタイ人材のマネジメント教育を担当。'
       }
     ]
   },
