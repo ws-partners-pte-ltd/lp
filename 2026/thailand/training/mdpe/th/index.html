@@ -2102,20 +2102,7 @@
                     });
                 }
 
-                // --- 講師 ---
-                if (C.instructor && C.instructor.items && C.instructor.items[0]) {
-                    var inst    = C.instructor.items[0];
-                    var imgEl   = qs('.speaker-img');
-                    var infoEl  = qs('.speaker-info');
-                    if (imgEl  && inst.img)  { imgEl.src = inst.img; imgEl.alt = inst.name || ''; }
-                    if (infoEl) {
-                        var nameEl = infoEl.querySelector('h3');
-                        var ps     = infoEl.querySelectorAll('p');
-                        if (nameEl && inst.name)    nameEl.textContent = inst.name;
-                        if (ps[0]  && inst.role)    ps[0].textContent  = inst.role;
-                        if (ps[1]  && inst.profile) ps[1].innerHTML    = inst.profile.replace(/\n/g, '<br>');
-                    }
-                }
+                // --- 講師 --- (HTMLに直接記載済みのため注入スキップ)
             })();
 
         });
