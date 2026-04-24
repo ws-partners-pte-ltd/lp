@@ -263,7 +263,7 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
   },
 
   forms: {
-    google_url:        'https://docs.google.com/forms/d/e/1FAIpQLSccVrh_wM2JOuelkZvTaT0iS-dDOVkQcFdx7vpk3k4uj4Yj6Q/viewform?embedded=true',
+    google_url:        'https://docs.google.com/forms/d/e/1FAIpQLScfi1dWmHBvTdaZtXWAaSqigdFPLHjEprJiURaRa4idSmWCrg/viewform?embedded=true',
     hubspot_portal_id: '※HubSpotのポータルIDをここに記入',
     hubspot_form_id:   '※HubSpotのインドネシア用フォームIDを登録後にここに記入',
     hubspot_region:    'na1',
