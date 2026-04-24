@@ -307,7 +307,7 @@ support@ws-partners.com.sg
     hubspot_region:     'na1',
     mailto_email:       'support@ws-partners.com.sg',
     mailto_subject:     "สมัครเรียน - 【『報連相・コミュニケーション強化研修』セミナー／研修 （Thailand）(2026.7)】",
-    thank_you_url:      '../../../../../_template/_thank-you.html?prog=タイ報連相研修'
+    thank_you_url:      '../../../../../_template/_thank-you.html?prog=タイ報連相研修&lang=th'
   }
 
 };
