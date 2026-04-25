@@ -183,10 +183,10 @@
     id: {
       htmlLang:    'id',
       title:       'Terima kasih atas pendaftaran Anda.',
-      subtitle:    'Email konfirmasi pendaftaran telah dikirimkan ke alamat email peserta yang terdaftar.',
+      subtitle:    'Email konfirmasi telah dikirimkan ke alamat email peserta yang terdaftar.<br><span style="font-size:0.85em;color:#aaa;">(Email ini tidak dikirimkan ke alamat email atasan / staf Jepang.)</span>',
       zoomHeading: 'Pendaftaran Zoom',
-      zoomBody:    'Untuk mengikuti seminar pada hari pelaksanaan, Anda perlu mendaftar terlebih dahulu melalui Zoom menggunakan URL berikut.\nSilakan lakukan pendaftaran melalui tautan di bawah ini.',
-      zoomNotes:   '※ Jika email tidak diterima, silakan periksa folder spam Anda.\n※ Email ini tidak dikirimkan ke alamat email atasan (staf Jepang).',
+      zoomBody:    'Untuk menonton pada hari acara, Anda perlu mendaftar terlebih dahulu melalui Zoom pada tautan berikut.\nSilakan segera lakukan pendaftaran melalui tautan di bawah ini.',
+      zoomNotes:   '※ Jika Anda tidak menerima email, silakan periksa folder spam Anda.',
       contactTitle: 'Hubungi Kami',
       btnReturn:   'Kembali ke Halaman LP'
     }
@@ -199,7 +199,7 @@
     document.documentElement.lang = t.htmlLang;
 
     document.getElementById('card-title').textContent    = t.title;
-    document.getElementById('card-subtitle').textContent = t.subtitle;
+    document.getElementById('card-subtitle').innerHTML = t.subtitle;
     document.getElementById('zoom-heading').textContent  = t.zoomHeading;
     document.getElementById('zoom-body').textContent     = t.zoomBody;
     document.getElementById('zoom-notes').textContent    = t.zoomNotes;
