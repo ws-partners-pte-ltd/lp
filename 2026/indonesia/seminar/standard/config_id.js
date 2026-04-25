@@ -261,7 +261,7 @@ Sebagai langkah pertama, cobalah rasakan sendiri isi pelatihannya.</p>`
     hubspot_portal_id: '※HubSpotのポータルIDをここに記入',
     hubspot_form_id:   '※HubSpotのインドネシア用フォームIDを登録後にここに追記',
     hubspot_region:    'na1',
-    thank_you_url:     '../../../../../_template/_thank-you.html?prog=Indonesia+Seminar+2026+May&lang=id'
+    thank_you_url:     '../_thank-you.html?lang=id'
   }
 
 };
