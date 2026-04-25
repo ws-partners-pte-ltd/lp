@@ -1697,19 +1697,15 @@
           ja: {
             title: 'のお申し込みを受け付けました',
             titleDefault: 'お申し込みを受け付けました',
-            sub: 'フォームへのご入力ありがとうございます。当日のZoom URL等、詳細は後日ご連絡いたします。',
-            emailHead: '確認メールについて',
-            emailBody: 'ご登録のメールアドレスに自動返信メールをお送りしています。届いていない場合は迷惑メールフォルダをご確認ください。',
-            contactHead: 'お問い合わせ',
+            sub: 'ご登録いただいたインドネシア人受講者様のメールアドレスへ、受付完了メールを送信いたしました。',
+            infoHtml: '<p>当日の視聴には、以下のURLからZoomへの事前登録が必要です。<br>このまま続けてリンク先でご登録ください。</p>' + '<p style="margin:14px 0;text-align:center"><a href="https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg" target="_blank" rel="noopener" style="display:inline-block;background:#0050b3;color:#fff;font-weight:700;padding:12px 28px;border-radius:8px;text-decoration:none;font-size:0.95rem;">Zoom 事前登録はこちら →</a></p>' + '<p style="font-size:0.82rem;color:#888;margin-top:8px;">※メールが届かない場合は、迷惑メールフォルダをご確認ください。<br>※本案内は、日本人上司の方のメールアドレスには配信されません。</p>',
             backBtn: 'LPページへ戻る'
           },
           id: {
             title: ' Telah Diterima',
             titleDefault: 'Pendaftaran Anda Telah Diterima',
-            sub: 'Terima kasih telah mengisi formulir. Kami akan mengirimkan informasi Zoom dan detail lainnya melalui email.',
-            emailHead: 'Email Konfirmasi',
-            emailBody: 'Email konfirmasi otomatis telah dikirim ke alamat email Anda. Jika belum menerima, silakan periksa folder spam.',
-            contactHead: 'Hubungi Kami',
+            sub: 'Email konfirmasi penerimaan telah dikirimkan ke alamat email peserta Indonesia yang terdaftar.',
+            infoHtml: '<p>Untuk menonton di hari acara, diperlukan pendaftaran awal melalui Zoom dari URL berikut.<br>Silakan lanjutkan mendaftar di halaman yang dituju.</p>' + '<p style="margin:14px 0;text-align:center"><a href="https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg" target="_blank" rel="noopener" style="display:inline-block;background:#0050b3;color:#fff;font-weight:700;padding:12px 28px;border-radius:8px;text-decoration:none;font-size:0.95rem;">Daftar Zoom di sini →</a></p>' + '<p style="font-size:0.82rem;color:#888;margin-top:8px;">※ Jika email tidak diterima, silakan periksa folder spam.<br>※ Informasi ini tidak dikirimkan ke alamat email atasan Jepang.</p>',
             backBtn: 'Kembali ke halaman ini'
           },
           th: {
@@ -1728,10 +1724,7 @@
         var titleText = eventName ? (eventName + t.title) : t.titleDefault;
         document.getElementById('ty-title').textContent = titleText;
         document.getElementById('ty-sub').textContent = t.sub;
-        document.getElementById('ty-info').innerHTML =
-          '<p><strong>' + t.emailHead + '</strong><br>' + t.emailBody + '</p>' +
-          '<p style="margin-top:10px"><strong>' + t.contactHead + '</strong><br>' +
-          'WS PARTNERS PTE LTD<br>support@ws-partners.com.sg<br>+65-6978-4066</p>';
+        document.getElementById('ty-info').innerHTML = t.infoHtml || '';
         document.getElementById('ty-back').textContent = t.backBtn;
         var newTabLink = fallbackBanner.querySelector('a');
         if (newTabLink) {
