@@ -35,9 +35,9 @@ window.LP_CONFIG = {
     subtitle:       '文化の壁を越え、組織を動かす、マネジメント力 育成プログラム',
     title:          'Management Development Program（Essential版）',
     date_label:     '開催日時',
-    date:           '2026年7月15日（火）より\n週1回・全8回開催',
+    date:           '2026年7月15日（水）より\n週1回・全8回開催',
     deadline_label: '申込期限',
-    deadline:       '2026年7月1日（火）',
+    deadline:       '2026年7月1日（水）',
     note:           '※毎週の継続参加が必要です。\n※プログラム詳細は下記をご覧ください。',
     cta_text:       '受講申し込み',
     badge_en:       'ONLINE',
@@ -140,14 +140,14 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
       { label: '修了証',  value: '全課題の提出・事後アンケート回答を条件に発行' }
     ],
     schedule: [
-      { part: '第１回', title: 'マネジャーとしての自己再定義',               date: '7月15日（火） | 14:00 - 16:00（ジャカルタ時間）' },
-      { part: '第２回', title: '業務マネジメントと情報循環のデザイン（前編）', date: '7月22日（火） | 14:00 - 16:00（ジャカルタ時間）' },
-      { part: '第３回', title: '業務マネジメントと情報循環のデザイン（後編）', date: '7月29日（火） | 14:00 - 16:00（ジャカルタ時間）' },
-      { part: '第４回', title: '信頼関係と心理的安全性のマネジメント',         date: '8月5日（火） | 14:00 - 16:00（ジャカルタ時間）' },
-      { part: '第５回', title: '人材育成と権限委譲のマネジメント（前編）',     date: '8月12日（火） | 14:00 - 16:00（ジャカルタ時間）' },
-      { part: '第６回', title: '人材育成と権限委譲のマネジメント（中編）',     date: '8月19日（火） | 14:00 - 16:00（ジャカルタ時間）' },
-      { part: '第７回', title: '人材育成と権限委譲のマネジメント（後編）',     date: '8月26日（火） | 14:00 - 16:00（ジャカルタ時間）' },
-      { part: '第８回', title: 'リフレクションとケーススタディによる統合',     date: '9月2日（火） | 14:00 - 16:00（ジャカルタ時間）' }
+      { part: '第１回', title: 'マネジャーとしての自己再定義',               date: '7月15日（水） | 14:00 - 16:00（ジャカルタ時間）' },
+      { part: '第２回', title: '業務マネジメントと情報循環のデザイン（前編）', date: '7月22日（水） | 14:00 - 16:00（ジャカルタ時間）' },
+      { part: '第３回', title: '業務マネジメントと情報循環のデザイン（後編）', date: '7月29日（水） | 14:00 - 16:00（ジャカルタ時間）' },
+      { part: '第４回', title: '信頼関係と心理的安全性のマネジメント',         date: '8月5日（水） | 14:00 - 16:00（ジャカルタ時間）' },
+      { part: '第５回', title: '人材育成と権限委譲のマネジメント（前編）',     date: '8月12日（水） | 14:00 - 16:00（ジャカルタ時間）' },
+      { part: '第６回', title: '人材育成と権限委譲のマネジメント（中編）',     date: '8月19日（水） | 14:00 - 16:00（ジャカルタ時間）' },
+      { part: '第７回', title: '人材育成と権限委譲のマネジメント（後編）',     date: '8月26日（水） | 14:00 - 16:00（ジャカルタ時間）' },
+      { part: '第８回', title: 'リフレクションとケーススタディによる統合',     date: '9月2日（水） | 14:00 - 16:00（ジャカルタ時間）' }
     ]
   },
 
@@ -198,7 +198,7 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
       { label: 'Web',     value: 'https://www.ws-partners.com.sg/' },
       { label: '株主',    value: '株式会社ウィル・シード / CL HOLDINGS PTE LTD' },
       { label: '代表者',  value: 'Managing Director 加藤 健太' },
-      { label: '事業内容', value: '日系大手・中堅企業のASEAN諸国の現地法人・海外グループ企業向けコンサルティングと教育サービス提供（河合塾グループ唯一の海外拠点です）' },
+      { label: '事業内容', value: '日系大手・中堅企業のASEAN諸国の現地法人・海外グループ企業向けコンサルティングと教育サービス提供' },
       { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">PT WILLSEED PARTNERS INDONESIA</strong>' },
       { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
       { label: '電話番号', value: '+65 9185 2747' },
