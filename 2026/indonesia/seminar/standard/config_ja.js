@@ -92,9 +92,6 @@ window.LP_CONFIG = {
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
       <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>基準の違いをどう整理し、組織の中で共通言語にしていくのか
     </li>
-    <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>経営戦略と人材育成をどう接続するか
-    </li>
   </ul>
 </div>
 <p style="margin-top:12px;font-weight:700;color:var(--primary)">具体的な事例をもとにご体験いただけます。</p>
@@ -112,8 +109,7 @@ window.LP_CONFIG = {
       '「なぜ怒られたのか分からない」という声が現場から上がっている',
       '会議での発言が減り、マネジャー層が慎重になっている',
       '上司が変わるたびに"求められる基準"が変わっている',
-      'インドネシア人向けにどのように日本人の基準を伝えるべきか悩んでいる',
-      '研修会社を選定するにあたり、実際の研修内容を体験してみたい'
+      'インドネシア人向けにどのように日本人の基準を伝えるべきか悩んでいる'
     ]
   },
 
@@ -150,13 +146,6 @@ window.LP_CONFIG = {
 ・納期・報告・主体性に対する日本人特有の重みづけとその背景<br>
 ・"ローコンテクストな指示"とは何か ─ 誤解が生まれない伝え方の具体例<br>
 ・日本人とインドネシア人のあいだに「共通言語」をつくるための実践フレーム`
-      },
-      {
-        part: '15:35〜',
-        title: '経営が本当に求めている役割とは何か？ ─ 戦略と人材育成をつなぐ視点',
-        body: `・経営陣はなぜ「人が育たない」と感じるのか<br>
-・評価制度と現場のマネジメント基準を一本化するフレーム<br>
-・上司が変わっても揺れない「戦略一貫型の人材育成設計」`
       },
       {
         part: '〜16:30',

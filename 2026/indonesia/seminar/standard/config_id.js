@@ -91,9 +91,6 @@ window.LP_CONFIG = {
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
       <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>Bagaimana menyusun perbedaan standar agar menjadi bahasa bersama dalam organisasi?
     </li>
-    <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>Bagaimana menghubungkan strategi bisnis dengan pengembangan SDM?
-    </li>
   </ul>
 </div>
 <p style="margin-top:12px;font-weight:700;color:var(--primary)">Semua ini akan Anda pelajari melalui contoh kasus nyata.</p>
@@ -111,8 +108,7 @@ window.LP_CONFIG = {
       'Ada keluhan dari lapangan: "Tidak tahu kenapa dimarahi"',
       'Partisipasi dalam rapat menurun, manajer menjadi lebih pasif',
       'Setiap kali atasan berganti, "standar yang dituntut" pun berubah',
-      'Bingung bagaimana cara menyampaikan standar kerja Jepang kepada karyawan Indonesia',
-      'Ingin merasakan langsung isi pelatihan sebelum memilih vendor pelatihan'
+      'Bingung bagaimana cara menyampaikan standar kerja Jepang kepada karyawan Indonesia'
     ]
   },
 
@@ -149,13 +145,6 @@ window.LP_CONFIG = {
 ・Cara pandang khas Jepang tentang deadline, pelaporan, dan inisiatif, serta latar belakangnya<br>
 ・Apa itu "instruksi low-context"? — Contoh nyata cara berkomunikasi yang tidak menimbulkan kesalahpahaman<br>
 ・Kerangka praktis untuk menciptakan "bahasa bersama" antara orang Jepang dan Indonesia`
-      },
-      {
-        part: '15:35–',
-        title: 'Peran Apa yang Sesungguhnya Dituntut oleh Manajemen? — Perspektif Menghubungkan Strategi dan Pengembangan SDM',
-        body: `・Mengapa jajaran eksekutif merasa "SDM tidak berkembang"?<br>
-・Kerangka untuk menyatukan sistem evaluasi dan standar manajemen di lapangan<br>
-・Desain pengembangan SDM yang konsisten dengan strategi, tidak goyah meskipun atasan berganti`
       },
       {
         part: '–16:30',
