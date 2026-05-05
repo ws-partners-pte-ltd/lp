@@ -286,48 +286,58 @@
       margin-bottom: 12px;
     }
     .hero-title {
-      font-size: clamp(1.3rem, 2.6vw, 1.75rem);  /* 36–40px */
+      font-size: clamp(1.55rem, 3.2vw, 2.2rem);  /* 参考LP合わせ */
       font-weight: 900;
       line-height: 1.25;
       margin-bottom: 20px;
     }
-    .hero-tagline { font-size: clamp(.72rem, 1.3vw, .82rem); color: rgba(255,255,255,.85); margin: 6px 0 12px; font-weight: 500; line-height: 1.6; }
+    .hero-tagline { font-size: clamp(.78rem, 1.4vw, .88rem); color: rgba(255,255,255,.85); margin: 6px 0 10px; font-weight: 500; line-height: 1.6; }
     .hero-target-inline { background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.35); border-radius:8px; padding:8px 14px; margin:4px 0 8px; font-size:clamp(.78rem,1.4vw,.88rem); color:#fff; line-height:1.8; }
     .hero-target-box { background: rgba(255,255,255,.13); border: 1px solid rgba(255,255,255,.4); border-radius: 10px; padding: 10px 16px; margin-bottom: 14px; font-size: clamp(.8rem, 1.5vw, .9rem); color: #fff; line-height: 1.8; }
     .hero-info-box {
       background: rgba(36,107,185,0.85);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      padding: 16px 18px;
+      padding: 12px 16px;
       border-left: 4px solid var(--secondary);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       color: #ffffff;
       box-shadow: 0 20px 40px rgba(0,0,0,.3);
     }
-    .hero-info-box .lead {
-      font-size: 0.78rem;
+    .info-lbl {
+      font-size: 0.72rem;
       font-weight: 700;
-      margin-bottom: .3vh;
-      letter-spacing: .1em;
       color: #ffc800;
-      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-right: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
-    .hero-info-box .date {
-      font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+    .info-date-row { margin-bottom: 8px; }
+    .info-date-val {
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
       font-weight: 900;
-      margin-bottom: 8px;
-      color: #ffffff;
-      line-height: 1.3;
+      color: #fff;
+      line-height: 1.35;
       letter-spacing: .03em;
+      margin-top: 2px;
     }
-    .hero-info-box .note {
-      font-size: clamp(.75rem, 1vw, .9rem);
-      line-height: 1.6;
-      color: rgba(255,255,255,.9);
-      border-top: 1px solid rgba(255,255,255,.25);
-      padding-top: 1vh;
-      margin-top: .5vh;
+    .info-sub-rows {
+      border-top: 1px solid rgba(255,255,255,.22);
+      padding-top: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
     }
+    .info-sub-row {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      font-size: clamp(.78rem, 1.4vw, .88rem);
+      color: rgba(255,255,255,.92);
+      line-height: 1.55;
+    }
+    .info-sub-val { flex: 1; }
 
     .hero-visual-content {
       flex: 1;
@@ -829,10 +839,9 @@
       .hero-container { flex-direction: column; padding: 20px 16px 32px; gap: 20px; }
       .hero-subtitle { margin-top: 0.5rem; font-size: 0.82rem; }
       .hero-title { font-size: clamp(1.15rem, 4.5vw, 1.45rem); }
-      .hero-info-box { padding: 14px 16px; margin-bottom: 2vh; }
-      .hero-info-box .lead { font-size: 0.72rem; margin-bottom: 2px; color: #ffc800; }
-      .hero-info-box .date { font-size: 0.95rem; margin-bottom: 6px; }
-      .hero-info-box .note { font-size: 0.72rem; border-top: 1px solid rgba(255,255,255,.25); padding-top: 6px; margin-top: 2px; }
+      .hero-info-box { padding: 10px 14px; margin-bottom: 1.5vh; }
+      .info-date-val { font-size: 0.98rem; }
+      .info-sub-row { font-size: 0.75rem; }
       /* ── Hero visual: aspect-ratio に合わせた高さ設定 ── */
       .hero-visual-content {
         flex: none; width: 100%;
@@ -979,16 +988,28 @@
       <p class="hero-subtitle hero-tagline" id="hero-subtitle"></p>
       <div class="hero-target-box" id="hero-target-box" style="display:none"></div>
       <div class="hero-info-box">
-        <p class="lead" id="hero-date-label"></p>
-        <p class="date" id="hero-date"></p>
-        <p class="lead" id="hero-target-label" style="display:none"></p>
-        <p class="date" id="hero-target" style="display:none;font-size:clamp(.88rem,1.6vw,1rem)"></p>
-        <p class="lead" id="hero-deadline-label"></p>
-        <p class="date" id="hero-deadline"></p>
-        <p class="lead" id="hero-format-label" style="display:none"></p>
-        <p class="date" id="hero-format" style="display:none;font-size:clamp(.85rem,1.5vw,.98rem)"></p>
-        <p class="lead" id="hero-close-label" style="display:none"></p>
-        <p class="note" id="hero-close" style="display:none"></p>
+        <div class="info-date-row">
+          <span class="info-lbl" id="hero-date-label"></span>
+          <div class="info-date-val" id="hero-date"></div>
+        </div>
+        <div class="info-sub-rows">
+          <div class="info-sub-row" id="hero-target-row" style="display:none">
+            <span class="info-lbl" id="hero-target-label"></span>
+            <span class="info-sub-val" id="hero-target"></span>
+          </div>
+          <div class="info-sub-row" id="hero-format-row" style="display:none">
+            <span class="info-lbl" id="hero-format-label"></span>
+            <span class="info-sub-val" id="hero-format"></span>
+          </div>
+          <div class="info-sub-row">
+            <span class="info-lbl" id="hero-deadline-label"></span>
+            <span class="info-sub-val" id="hero-deadline"></span>
+          </div>
+          <div class="info-sub-row" id="hero-close-row" style="display:none">
+            <span class="info-lbl" id="hero-close-label"></span>
+            <span class="info-sub-val" id="hero-close"></span>
+          </div>
+        </div>
       </div>
       <a href="#apply" class="btn-cta pulse reveal delay-100" id="hero-cta-text">お申し込みはこちら</a>
     </div>
@@ -1266,19 +1287,16 @@
     if (c.hero) {
       setEl('hero-subtitle', c.hero.subtitle || '');
       setEl('hero-title',    c.hero.title    || '');
-      setEl('hero-date-label',     c.hero.date_label || '開催日時');
-      setEl('hero-date',           c.hero.date       || '');
-      setEl('hero-deadline-label', c.hero.deadline_label || '申込期限');
-      setEl('hero-deadline',       c.hero.deadline   || '');
-      var tgtLabel = document.getElementById('hero-target-label');
-      var tgtVal   = document.getElementById('hero-target');
-      if (c.hero.target_label && tgtLabel) { tgtLabel.textContent = c.hero.target_label; tgtLabel.style.display=''; tgtVal.innerHTML = c.hero.target || ''; tgtVal.style.display=''; }
-      var fmtLabel = document.getElementById('hero-format-label');
-      var fmtVal   = document.getElementById('hero-format');
-      if (c.hero.format_label && fmtLabel) { fmtLabel.textContent = c.hero.format_label; fmtLabel.style.display=''; fmtVal.innerHTML = c.hero.format || ''; fmtVal.style.display=''; }
-      var clsLabel = document.getElementById('hero-close-label');
-      var clsVal   = document.getElementById('hero-close');
-      if (c.hero.close_label && clsLabel) { clsLabel.textContent = c.hero.close_label; clsLabel.style.display=''; clsVal.textContent = c.hero.close || ''; clsVal.style.display=''; }
+      setEl('hero-date-label', c.hero.date_label || '【日時】');
+      document.getElementById('hero-date').innerHTML = c.hero.date || '';
+      setEl('hero-deadline-label', c.hero.deadline_label || '【参加費】');
+      document.getElementById('hero-deadline').innerHTML = c.hero.deadline || '';
+      var tgtRow = document.getElementById('hero-target-row');
+      if (c.hero.target_label && tgtRow) { tgtRow.style.display=''; setEl('hero-target-label', c.hero.target_label); document.getElementById('hero-target').innerHTML = c.hero.target || ''; }
+      var fmtRow = document.getElementById('hero-format-row');
+      if (c.hero.format_label && fmtRow) { fmtRow.style.display=''; setEl('hero-format-label', c.hero.format_label); document.getElementById('hero-format').innerHTML = c.hero.format || ''; }
+      var clsRow = document.getElementById('hero-close-row');
+      if (c.hero.close_label && clsRow) { clsRow.style.display=''; setEl('hero-close-label', c.hero.close_label); document.getElementById('hero-close').innerHTML = c.hero.close || ''; }
       setEl('hero-note',           c.hero.note       || '');
       setEl('hero-cta-text',       c.hero.cta_text   || 'お申し込みはこちら');
       setEl('badge-en', c.hero.badge_en || '');
