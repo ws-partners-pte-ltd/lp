@@ -39,7 +39,7 @@ window.LP_CONFIG = {
     date_label: '開催日時',
     date: '<strong>2026年6月4日（木）　15:00〜16:30</strong>（マレーシア時間）',
     deadline_label: '参加費',
-    deadline: '<strong style="font-size:1.3em;color:#fff">無 料</strong>',
+    deadline: '<strong>無料</strong>',
     close_label: '申込締切',
     close: '当日午前10時（マレーシア時間）',
     cta_text: '無料で申し込む',
