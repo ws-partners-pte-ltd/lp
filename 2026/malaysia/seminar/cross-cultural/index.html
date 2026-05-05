@@ -286,7 +286,7 @@
       margin-bottom: 12px;
     }
     .hero-title {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);  /* 36–40px */
+      font-size: clamp(1.5rem, 3.2vw, 2.1rem);  /* 36–40px */
       font-weight: 900;
       line-height: 1.25;
       margin-bottom: 20px;
@@ -828,7 +828,7 @@
       .hero { height: auto; min-height: 100vh; padding-bottom: 60px; }
       .hero-container { flex-direction: column; padding: 20px 16px 32px; gap: 20px; }
       .hero-subtitle { margin-top: 0.5rem; font-size: 0.82rem; }
-      .hero-title { font-size: clamp(1.45rem, 5.8vw, 1.9rem); }
+      .hero-title { font-size: clamp(1.25rem, 5vw, 1.6rem); }
       .hero-info-box { padding: 14px 16px; margin-bottom: 2vh; }
       .hero-info-box .lead { font-size: 0.85rem; margin-bottom: 4px; color: #ffc800; }
       .hero-info-box .date { font-size: 1.05rem; margin-bottom: 10px; }
@@ -981,12 +981,14 @@
       <div class="hero-info-box">
         <p class="lead" id="hero-date-label"></p>
         <p class="date" id="hero-date"></p>
-        <p class="lead" id="hero-format-label" style="display:none"></p>
-        <div id="hero-format" style="display:none;font-size:clamp(.82rem,1.5vw,.95rem);color:#fff;line-height:1.8;margin-bottom:8px"></div>
-        <div class="hero-target-inline" id="hero-target-inline" style="display:none"></div>
+        <p class="lead" id="hero-target-label" style="display:none"></p>
+        <p class="date" id="hero-target" style="display:none;font-size:clamp(.88rem,1.6vw,1rem)"></p>
         <p class="lead" id="hero-deadline-label"></p>
         <p class="date" id="hero-deadline"></p>
-        <p class="note"  id="hero-note"></p>
+        <p class="lead" id="hero-format-label" style="display:none"></p>
+        <p class="date" id="hero-format" style="display:none;font-size:clamp(.85rem,1.5vw,.98rem)"></p>
+        <p class="lead" id="hero-close-label" style="display:none"></p>
+        <p class="note" id="hero-close" style="display:none"></p>
       </div>
       <a href="#apply" class="btn-cta pulse reveal delay-100" id="hero-cta-text">お申し込みはこちら</a>
     </div>
@@ -1263,13 +1265,20 @@
     /* Hero */
     if (c.hero) {
       setEl('hero-subtitle', c.hero.subtitle || '');
-      var tbox = document.getElementById('hero-target-inline');
-      if (tbox && c.hero.target_html) { tbox.innerHTML = c.hero.target_html; tbox.style.display = ''; }
       setEl('hero-title',    c.hero.title    || '');
       setEl('hero-date-label',     c.hero.date_label || '開催日時');
       setEl('hero-date',           c.hero.date       || '');
       setEl('hero-deadline-label', c.hero.deadline_label || '申込期限');
       setEl('hero-deadline',       c.hero.deadline   || '');
+      var tgtLabel = document.getElementById('hero-target-label');
+      var tgtVal   = document.getElementById('hero-target');
+      if (c.hero.target_label && tgtLabel) { tgtLabel.textContent = c.hero.target_label; tgtLabel.style.display=''; tgtVal.innerHTML = c.hero.target || ''; tgtVal.style.display=''; }
+      var fmtLabel = document.getElementById('hero-format-label');
+      var fmtVal   = document.getElementById('hero-format');
+      if (c.hero.format_label && fmtLabel) { fmtLabel.textContent = c.hero.format_label; fmtLabel.style.display=''; fmtVal.innerHTML = c.hero.format || ''; fmtVal.style.display=''; }
+      var clsLabel = document.getElementById('hero-close-label');
+      var clsVal   = document.getElementById('hero-close');
+      if (c.hero.close_label && clsLabel) { clsLabel.textContent = c.hero.close_label; clsLabel.style.display=''; clsVal.textContent = c.hero.close || ''; clsVal.style.display=''; }
       setEl('hero-note',           c.hero.note       || '');
       setEl('hero-cta-text',       c.hero.cta_text   || 'お申し込みはこちら');
       setEl('badge-en', c.hero.badge_en || '');
