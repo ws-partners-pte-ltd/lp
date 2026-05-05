@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TLGVMTDZ');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">研修LP | WS PARTNERS</title>
+  <meta id="meta-description" name="description" content="">
+  <meta property="og:title" id="og-title" content="">
+  <meta property="og:description" id="og-description" content="">
+  <meta property="og:image" id="og-image" content="">
+  <meta property="og:type" content="website">
+  <link id="favicon" rel="icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ========================================
+       Variables & Theme Settings
+       ======================================== */
+    :root {
+      /* Colors */
+      --bg-body:    #f4f7f9;
+      --bg-surface: #ffffff;
+      --bg-dark:    #041434;
+
+      --primary:           #0050b3;
+      --secondary:         #00dfd8;
+      --accent-orange:     #f39c12;
+      --accent-orange-dark:#d35400;
+
+      --text-main:    #1a202c;
+      --text-muted:   #4a5568;
+      --text-light:   #a0aec0;
+      --text-inverse: #ffffff;
+
+      /* Shadows */
+      --shadow-sm: 0 4px 6px -1px rgba(0,0,0,.10), 0 2px 4px -1px rgba(0,0,0,.06);
+      --shadow-md: 0 10px 15px -3px rgba(0,0,0,.10), 0 4px 6px -2px rgba(0,0,0,.05);
+      --shadow-lg: 0 20px 25px -5px rgba(0,0,0,.15), 0 10px 10px -5px rgba(0,0,0,.04);
+      --shadow-orange: 0 10px 20px rgba(243,156,18,.35);
+
+      /* Border */
+      --radius:    12px;
+      --radius-lg: 20px;
+
+      /* Font sizes – WS PARTNERS design standards */
+      --fs-hero:   clamp(2rem, 4vw, 2.5rem);   /* キャッチコピー: 36–40px */
+      --fs-h2:     1.75rem;                      /* 中見出し: 28px */
+      --fs-h3:     1.25rem;                      /* 小見出し: 20px */
+      --fs-body:   1rem;                         /* 本文: 16px */
+      --fs-small:  0.875rem;                     /* 注意書き・FAQ: 14px */
+    }
+
+    /* ========================================
+       Reset & Base
+       ======================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: var(--fs-body);
+      color: var(--text-main);
+      background: var(--bg-body);
+      line-height: 1.75;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ========================================
+       Typography
+       ======================================== */
+    .sec-title {
+      font-size: var(--fs-h2);   /* 28px */
+      font-weight: 900;
+      line-height: 1.3;
+      color: var(--text-main);
+    }
+    .sec-title.inverse { color: #fff; }
+    .sec-title .en {
+      display: block;
+      font-size: var(--fs-small);
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .sec-title.inverse .en { color: var(--secondary); }
+
+    h3, .h3 { font-size: var(--fs-h3); font-weight: 700; } /* 20px */
+    p, li  { font-size: var(--fs-body); }                   /* 16px */
+    small, .note, .faq-note, .cancel-note { font-size: var(--fs-small); } /* 14px */
+
+    /* gradient text */
+    .gradient-text {
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ========================================
+       Scroll Reveal Animation
+       ======================================== */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal-left  { opacity: 0; transform: translateX(-30px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal-right { opacity: 0; transform: translateX(30px);  transition: opacity .6s ease, transform .6s ease; }
+    .is-visible { opacity: 1 !important; transform: none !important; }
+    .delay-100 { transition-delay: .1s; }
+    .delay-200 { transition-delay: .2s; }
+    .delay-300 { transition-delay: .3s; }
+
+    /* ========================================
+       Buttons – ALL CTA & Submit = Orange
+       ======================================== */
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 36px;
+      background: var(--accent-orange);
+      color: #fff;
+      font-weight: 900;
+      font-size: var(--fs-body);
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      box-shadow: var(--shadow-orange);
+      transition: background .2s, transform .2s, box-shadow .2s;
+      white-space: nowrap;
+    }
+    .btn-cta:hover {
+      background: var(--accent-orange-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 15px 25px rgba(243,156,18,.45);
+    }
+    .btn-cta::after {
+      content: '→';
+      font-size: 1.1em;
+    }
+
+    /* ========================================
+       Header
+       ======================================== */
+    .site-header { position: sticky; top: 0; z-index: 100; }
+
+    .header-top {
+      background: var(--bg-dark);
+      padding: 8px 0;
+    }
+    .header-top .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .header-logo img { height: 50px; width: auto; }
+    .header-action { display: flex; align-items: center; gap: 12px; }
+
+    .header-contact-row { display: flex; align-items: center; gap: 6px; color: #fff; }
+    .header-contact-row .phone { font-size: 1.1rem; font-weight: 700; }
+    .header-contact-row .time  { font-size: var(--fs-small); color: var(--text-light); }
+
+    .header-buttons { display: flex; gap: 8px; }
+
+    .btn-lang {
+      display: flex;
+      align-items: center;
+      background: #00b894;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: var(--fs-small);
+      font-weight: 700;
+      transition: background .2s;
+    }
+    .btn-lang:hover { background: #00a884; }
+
+    .btn-entry-header {
+      display: flex;
+      align-items: center;
+      background: var(--accent-orange);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: var(--fs-small);
+      font-weight: 700;
+      transition: background .2s;
+    }
+    .btn-entry-header:hover { background: var(--accent-orange-dark); }
+
+    .header-bottom {
+      background: var(--bg-dark);
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding: 0;
+    }
+    .nav-container { display: flex; justify-content: center; }
+    .nav-container a {
+      color: rgba(255,255,255,.8);
+      font-size: var(--fs-small);
+      padding: 12px 16px;
+      display: inline-block;
+      transition: color .2s;
+    }
+    .nav-container a:hover { color: #fff; }
+
+    /* ========================================
+       Hero
+       ======================================== */
+    .hero {
+      position: relative;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--bg-dark);
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(4,20,52,.85) 0%, rgba(0,80,179,.55) 100%);
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('images/hero_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+    }
+    .hero-container {
+      position: relative; z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .hero-text-content { flex: 1; color: #fff; }
+
+    .hero-subtitle {
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      font-weight: 500;
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+    .hero-title {
+      font-size: var(--fs-hero);  /* 36–40px */
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+    .hero-info-box {
+      background: rgba(255,255,255,.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 28px;
+    }
+    .hero-info-box .lead {
+      font-size: clamp(.9rem, 1.5vw, 1.05rem);
+      color: rgba(255,255,255,.9);
+      margin-bottom: 4px;
+    }
+    .hero-info-box .date { font-weight: 700; color: #fff; }
+    .hero-info-box .note { font-size: var(--fs-small); color: var(--secondary); }
+
+    .hero-visual-content {
+      flex: 0 0 380px;
+      position: relative;
+    }
+    .hero-images-wrapper { position: relative; }
+    .img-collage {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .img-collage img { width: 100%; object-fit: cover; max-height: 260px; }
+
+    .img-online, .img-instructor {
+      position: absolute;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 3px solid #fff;
+      width: 140px;
+    }
+    .img-online { bottom: -20px; left: -20px; }
+    .img-instructor { top: -20px; right: -20px; }
+    .img-online img, .img-instructor img { width: 100%; height: 100px; object-fit: cover; }
+
+    .hero-badge-circle {
+      position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
+      background: var(--accent-orange);
+      border-radius: 50%;
+      width: 90px; height: 90px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      box-shadow: var(--shadow-orange);
+    }
+    .badge-en { font-size: .55rem; font-weight: 700; color: #fff; text-transform: uppercase; }
+    .badge-ja { font-size: .7rem; font-weight: 900; color: #fff; line-height: 1.2; text-align: center; }
+
+    .scroll-indicator {
+      position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
+      color: rgba(255,255,255,.6); font-size: .7rem;
+    }
+    .scroll-indicator::after {
+      content: '';
+      display: block;
+      width: 1px; height: 40px;
+      background: rgba(255,255,255,.4);
+    }
+
+    /* ========================================
+       Sections – General
+       ======================================== */
+    section { padding: 80px 0; }
+    section.bg-alt { background: var(--bg-body); }
+    section.bg-dark { background: var(--bg-dark); }
+
+    .section-image {
+      width: 100%; border-radius: var(--radius-lg);
+      overflow: hidden; box-shadow: var(--shadow-md);
+      margin-bottom: 32px;
+    }
+    .section-image img { width: 100%; height: 280px; object-fit: cover; }
+
+    /* ========================================
+       Consult Section
+       ======================================== */
+    #consult { background: linear-gradient(135deg, #0050b3 0%, #0070f3 100%); }
+    .independent-box {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      text-align: center;
+      color: #fff;
+    }
+    .independent-box p { color: rgba(255,255,255,.85); margin: 12px 0 24px; }
+
+    /* ========================================
+       Issues Section
+       ======================================== */
+    .issue-section { background: #fff; }
+    .issue-box {
+      background: var(--bg-body);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 40px;
+    }
+    .issue-checklist { list-style: none; }
+    .issue-checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: var(--fs-body);
+    }
+    .issue-checklist li:last-child { border-bottom: none; }
+    .issue-checklist li::before {
+      content: '✓';
+      color: var(--accent-orange);
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ========================================
+       Voices Section
+       ======================================== */
+    .value-section { background: var(--bg-body); }
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .value-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+    .value-num {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--accent-orange);
+      opacity: .15;
+      position: absolute;
+      top: 16px; right: 20px;
+      line-height: 1;
+    }
+    .value-card h3 { font-size: var(--fs-h3); margin-bottom: 8px; }
+    .value-card p  { font-size: var(--fs-body); color: var(--text-muted); }
+
+    /* ========================================
+       Features Section
+       ======================================== */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform .25s, box-shadow .25s;
+    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .feature-card img { width: 100%; height: 180px; object-fit: cover; }
+    .feature-card-body { padding: 20px; }
+    .feature-card-body h3 { font-size: var(--fs-h3); margin-bottom: 8px; }
+    .feature-card-body p  { font-size: var(--fs-body); color: var(--text-muted); }
+
+    /* ========================================
+       Program Section
+       ======================================== */
+    .program-section { background: #fff; }
+    .timeline { position: relative; padding-left: 32px; }
+    .timeline::before {
+      content: '';
+      position: absolute; left: 8px; top: 0; bottom: 0;
+      width: 2px; background: #e2e8f0;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 28px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -28px; top: 6px;
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--accent-orange);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px var(--accent-orange);
+    }
+    .timeline-content h3 { font-size: var(--fs-h3); margin-bottom: 4px; }
+    .timeline-content p  { font-size: var(--fs-body); color: var(--text-muted); }
+    .part-label {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-size: var(--fs-small);
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    /* ========================================
+       Instructor Section
+       ======================================== */
+    .speakers-section { background: var(--bg-body); }
+    .speaker-card {
+      display: flex;
+      gap: 32px;
+      background: #fff;
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      align-items: flex-start;
+    }
+    .speaker-img {
+      flex: 0 0 140px;
+    }
+    .speaker-img img {
+      width: 140px; height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent-orange);
+    }
+    .speaker-card h3 { font-size: var(--fs-h3); margin-bottom: 4px; }
+    .speaker-card .role { font-size: var(--fs-small); color: var(--primary); font-weight: 700; margin-bottom: 12px; }
+    .speaker-card p   { font-size: var(--fs-body); color: var(--text-muted); }
+
+    /* ========================================
+       Pricing Section
+       ======================================== */
+    .pricing-box {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .price-amount {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--primary);
+      margin: 12px 0;
+    }
+    .price-amount .currency { font-size: 1.2rem; }
+    .price-note { font-size: var(--fs-small); color: var(--text-muted); }
+
+    /* ========================================
+       Company Section
+       ======================================== */
+    .company-section { background: #fff; }
+    .company-box {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .company-img { flex: 0 0 280px; border-radius: var(--radius); overflow: hidden; }
+    .company-img img { width: 100%; height: 200px; object-fit: cover; }
+    .company-info h3 { font-size: var(--fs-h3); margin-bottom: 12px; }
+    .company-info p  { font-size: var(--fs-body); color: var(--text-muted); margin-bottom: 8px; }
+
+    /* ========================================
+       FAQ Section
+       ======================================== */
+    .faq-item {
+      border-bottom: 1px solid #e2e8f0;
+      padding: 20px 0;
+    }
+    .faq-item summary {
+      font-size: var(--fs-body);
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .faq-item summary::after { content: '+'; font-size: 1.4rem; color: var(--accent-orange); flex-shrink: 0; }
+    .faq-item[open] summary::after { content: '−'; }
+    .faq-item p {
+      margin-top: 12px;
+      font-size: var(--fs-small); /* 14px */
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    /* ========================================
+       Cancel / Contact Section
+       ======================================== */
+    #cancel { background: var(--bg-body); }
+    .scroll-box {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 24px;
+      max-height: 220px;
+      overflow-y: auto;
+      font-size: var(--fs-small); /* 14px */
+      color: var(--text-muted);
+      line-height: 1.9;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* ========================================
+       Apply / Form Section
+       ======================================== */
+    .entry-section { background: var(--bg-dark); }
+    .form-wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    #google-form-wrap iframe {
+      width: 100%;
+      min-height: 900px;
+      border: none;
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    /* HubSpot form override – make submit button orange */
+    .hs-button.primary,
+    .hs-submit input[type="submit"],
+    .hs-form input[type="submit"] {
+      background: var(--accent-orange) !important;
+      color: #fff !important;
+      border: none !important;
+      padding: 14px 40px !important;
+      border-radius: 50px !important;
+      font-weight: 900 !important;
+      font-size: var(--fs-body) !important;
+      cursor: pointer !important;
+      transition: background .2s, transform .2s !important;
+      box-shadow: var(--shadow-orange) !important;
+    }
+    .hs-button.primary:hover,
+    .hs-submit input[type="submit"]:hover {
+      background: var(--accent-orange-dark) !important;
+      transform: translateY(-2px) !important;
+    }
+
+    /* Real-time validation styles for HubSpot */
+    .hs-form .hs-error-msgs { list-style: none; }
+    .hs-form .hs-error-msg {
+      color: #e53e3e;
+      font-size: var(--fs-small);
+      margin-top: 4px;
+    }
+    .hs-form .hs-input:invalid,
+    .hs-form .error .hs-input {
+      border-color: #e53e3e !important;
+    }
+    .hs-form .field { margin-bottom: 16px; }
+    .hs-form label { font-size: var(--fs-body); font-weight: 700; margin-bottom: 4px; display: block; }
+    .hs-form .hs-input {
+      width: 100% !important;
+      padding: 10px 14px;
+      border: 1px solid #cbd5e0;
+      border-radius: 8px;
+      font-size: var(--fs-body);
+      transition: border-color .2s;
+    }
+    .hs-form .hs-input:focus { outline: none; border-color: var(--primary); }
+
+    /* Loading fallback */
+    #form-loading {
+      text-align: center;
+      padding: 40px;
+      color: rgba(255,255,255,.7);
+      font-size: var(--fs-body);
+    }
+    #hubspot-form-wrap { display: none; }
+
+    /* ========================================
+       Footer
+       ======================================== */
+    footer {
+      background: var(--bg-dark);
+      color: rgba(255,255,255,.7);
+      padding: 40px 0 24px;
+      font-size: var(--fs-small);
+      text-align: center;
+    }
+    footer a { color: rgba(255,255,255,.6); transition: color .2s; }
+    footer a:hover { color: #fff; }
+    footer .footer-logo { margin-bottom: 16px; }
+    footer .footer-logo img { height: 40px; margin: 0 auto; }
+    footer .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 16px; flex-wrap: wrap; }
+
+    /* ========================================
+       Responsive – Mobile
+       ======================================== */
+    @media (max-width: 768px) {
+      section { padding: 56px 0; }
+
+      /* Hero */
+      .hero { min-height: auto; }
+      .hero-container { flex-direction: column; padding: 48px 20px; gap: 32px; }
+      .hero-visual-content { flex: none; width: 100%; max-width: 400px; }
+      .hero-title  { font-size: clamp(1.6rem, 6vw, 2rem); }
+
+      /* Header */
+      .header-contact-row { display: none; }
+      .header-top .container { justify-content: space-between; }
+      .nav-container a { padding: 10px 10px; font-size: .75rem; }
+
+      /* Sections */
+      .company-box   { flex-direction: column; }
+      .company-img   { flex: none; width: 100%; }
+      .speaker-card  { flex-direction: column; }
+      .speaker-img   { flex: none; }
+      .value-grid, .feature-grid { grid-template-columns: 1fr; }
+
+      /* Buttons */
+      .btn-cta { width: 100%; justify-content: center; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title { font-size: 1.5rem; }
+      .sec-title  { font-size: 1.4rem; }
+      .header-buttons .btn-lang { display: none; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLGVMTDZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ========================================
+     HEADER
+     ======================================== -->
+<header class="site-header">
+  <div class="header-top">
+    <div class="container">
+      <div class="header-logo">
+        <a href="#"><img id="header-logo" src="images/logo.png" alt="WS PARTNERS"></a>
+      </div>
+      <div class="header-action">
+        <div class="header-contact-row">
+          <span class="phone" id="header-phone"></span>
+          <span class="time"  id="header-hours"></span>
+        </div>
+        <div class="header-buttons">
+          <a id="btn-lang" href="#" class="btn-lang"></a>
+          <a href="#apply" class="btn-entry-header" id="header-cta-text">今すぐ申し込む</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="header-bottom">
+    <div class="nav-container" id="nav-links"></div>
+  </nav>
+</header>
+
+<!-- ========================================
+     HERO
+     ======================================== -->
+<section class="hero">
+  <div class="hero-bg" id="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-container">
+    <div class="hero-text-content reveal">
+      <p class="hero-subtitle" id="hero-subtitle"></p>
+      <h1 class="hero-title" id="hero-title"></h1>
+      <div class="hero-info-box">
+        <p class="lead" id="hero-date-label"></p>
+        <p class="date" id="hero-date"></p>
+        <p class="lead" id="hero-deadline-label"></p>
+        <p class="date" id="hero-deadline"></p>
+        <p class="note"  id="hero-note"></p>
+      </div>
+      <a href="#apply" class="btn-cta reveal delay-100" id="hero-cta-text">お申し込みはこちら</a>
+    </div>
+    <div class="hero-visual-content reveal-right">
+      <div class="hero-badge-circle">
+        <span class="badge-en" id="badge-en"></span>
+        <span class="badge-ja" id="badge-ja"></span>
+      </div>
+      <div class="hero-images-wrapper">
+        <div class="img-collage">
+          <img id="hero-img-main" src="images/photo_meeting.jpg" alt="">
+        </div>
+        <div class="img-online">
+          <img id="hero-img-sub1" src="images/photo_feature_retention.jpg" alt="">
+        </div>
+        <div class="img-instructor">
+          <img id="hero-img-sub2" src="images/photo_instructor_collage.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">SCROLL</div>
+</section>
+
+<!-- ========================================
+     CONSULT (無料個別相談会)
+     ======================================== -->
+<section id="consult">
+  <div class="container">
+    <div class="independent-box reveal">
+      <h2 class="sec-title inverse" style="margin-bottom:12px">
+        <span class="en" id="consult-en"></span>
+        <span id="consult-title"></span>
+      </h2>
+      <p id="consult-body"></p>
+      <a id="consult-btn" href="#" target="_blank" class="btn-cta" style="display:none">
+        <span id="consult-btn-text">無料相談を予約する</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     ISSUES (お悩みチェック)
+     ======================================== -->
+<section class="issue-section bg-alt">
+  <div class="container">
+    <div class="section-image reveal">
+      <img id="issues-img" src="images/photo_team_issues.jpg" alt="">
+    </div>
+    <h2 class="sec-title reveal" style="margin-bottom:24px">
+      <span class="en" id="issues-en"></span>
+      <span id="issues-title"></span>
+    </h2>
+    <div class="issue-box reveal">
+      <ul class="issue-checklist" id="issues-list"></ul>
+    </div>
+    <div style="text-align:center">
+      <a href="#apply" class="btn-cta reveal">お申し込みはこちら</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     VOICES (受講者・マネジメントの声)
+     ======================================== -->
+<section class="value-section" id="voices">
+  <div class="container">
+    <div class="section-image reveal">
+      <img id="voices-img" src="images/photo_team_communication.jpg" alt="">
+    </div>
+    <h2 class="sec-title reveal" style="margin-bottom:32px">
+      <span class="en" id="voices-en"></span>
+      <span id="voices-title"></span>
+    </h2>
+    <div class="value-grid" id="voices-grid"></div>
+  </div>
+</section>
+
+<!-- ========================================
+     FEATURES (本プログラムの特徴)
+     ======================================== -->
+<section id="features" style="background:#fff">
+  <div class="container">
+    <h2 class="sec-title reveal" style="margin-bottom:32px">
+      <span class="en" id="features-en"></span>
+      <span id="features-title"></span>
+    </h2>
+    <div class="feature-grid" id="features-grid"></div>
+  </div>
+</section>
+
+<!-- ========================================
+     TARGET (対象者・基礎力)
+     ======================================== -->
+<section id="target" class="bg-alt">
+  <div class="container">
+    <div class="section-image reveal">
+      <img id="target-img" src="images/photo_target_leader.jpg" alt="">
+    </div>
+    <h2 class="sec-title reveal" style="margin-bottom:24px">
+      <span class="en" id="target-en"></span>
+      <span id="target-title"></span>
+    </h2>
+    <ul class="issue-checklist reveal" id="target-list"></ul>
+  </div>
+</section>
+
+<!-- ========================================
+     PROGRAM (プログラム詳細・日程)
+     ======================================== -->
+<section class="program-section" id="program">
+  <div class="container">
+    <h2 class="sec-title reveal" style="margin-bottom:32px">
+      <span class="en" id="program-en"></span>
+      <span id="program-title"></span>
+    </h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start" class="program-grid">
+      <div class="reveal">
+        <h3 style="font-size:var(--fs-h3);margin-bottom:16px" id="program-detail-title"></h3>
+        <ul style="list-style:none" id="program-details"></ul>
+      </div>
+      <div class="reveal delay-100">
+        <h3 style="font-size:var(--fs-h3);margin-bottom:16px" id="program-schedule-title"></h3>
+        <div class="timeline" id="program-timeline"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     INSTRUCTOR (講師紹介)
+     ======================================== -->
+<section class="speakers-section" id="instructor">
+  <div class="container">
+    <h2 class="sec-title reveal" style="margin-bottom:32px">
+      <span class="en" id="instructor-en"></span>
+      <span id="instructor-title"></span>
+    </h2>
+    <div id="instructors-list"></div>
+  </div>
+</section>
+
+<!-- ========================================
+     PRICING (受講料・申込フロー)
+     ======================================== -->
+<section id="pricing" style="background:#fff">
+  <div class="container" style="text-align:center">
+    <h2 class="sec-title reveal" style="margin-bottom:32px">
+      <span class="en" id="pricing-en"></span>
+      <span id="pricing-title"></span>
+    </h2>
+    <div class="pricing-box reveal">
+      <p id="pricing-subtitle" style="color:var(--text-muted);margin-bottom:8px"></p>
+      <div class="price-amount"><span class="currency" id="pricing-currency">SGD </span><span id="pricing-amount"></span></div>
+      <p class="price-note" id="pricing-note"></p>
+      <div style="margin-top:24px">
+        <a href="#apply" class="btn-cta">お申し込みはこちら</a>
+      </div>
+    </div>
+    <div id="pricing-flow" style="margin-top:40px"></div>
+  </div>
+</section>
+
+<!-- ========================================
+     COMPANY (会社概要)
+     ======================================== -->
+<section class="company-section" id="company">
+  <div class="container">
+    <h2 class="sec-title reveal" style="margin-bottom:32px">
+      <span class="en" id="company-en"></span>
+      <span id="company-title"></span>
+    </h2>
+    <div class="company-box reveal">
+      <div class="company-img">
+        <img id="company-img" src="images/photo_company.jpg" alt="">
+      </div>
+      <div class="company-info" id="company-info"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     FAQ
+     ======================================== -->
+<section class="bg-alt" id="faq">
+  <div class="container">
+    <h2 class="sec-title reveal" style="margin-bottom:32px">
+      <span class="en" id="faq-en"></span>
+      <span id="faq-title"></span>
+    </h2>
+    <div id="faq-list"></div>
+  </div>
+</section>
+
+<!-- ========================================
+     CANCEL / CONTACT
+     ======================================== -->
+<section id="cancel">
+  <div class="container">
+    <h2 class="sec-title reveal" style="margin-bottom:24px">
+      <span class="en" id="cancel-en"></span>
+      <span id="cancel-title"></span>
+    </h2>
+    <div class="scroll-box reveal" id="cancel-body"></div>
+    <div style="margin-top:32px;padding:24px;background:#fff;border-radius:var(--radius)" class="reveal">
+      <h3 style="font-size:var(--fs-h3);margin-bottom:12px" id="contact-title"></h3>
+      <p style="font-size:var(--fs-body);color:var(--text-muted)" id="contact-body"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     APPLY / FORM
+     ======================================== -->
+<section class="entry-section" id="apply">
+  <div class="container">
+    <h2 class="sec-title inverse reveal" style="margin-bottom:8px;text-align:center">
+      <span class="en" id="apply-en"></span>
+      <span id="apply-title"></span>
+    </h2>
+    <p style="text-align:center;color:rgba(255,255,255,.7);margin-bottom:32px;font-size:var(--fs-body)" id="apply-body"></p>
+
+    <div class="form-wrapper">
+      <!-- Loading state -->
+      <div id="form-loading">フォームを読み込み中...</div>
+
+      <!-- Google Form (primary) -->
+      <div id="google-form-wrap" style="display:none">
+        <iframe
+          id="google-form-iframe"
+          src="""
+          width="100%"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="申込フォーム"
+        >読み込んでいます…</iframe>
+      </div>
+
+      <!-- HubSpot Form (fallback) -->
+      <div id="hubspot-form-wrap"
+           style="background:#fff;border-radius:var(--radius);padding:32px;display:none">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     FOOTER
+     ======================================== -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">
+      <img id="footer-logo" src="images/logo.png" alt="WS PARTNERS">
+    </div>
+    <div class="footer-links" id="footer-links"></div>
+    <p id="footer-address" style="margin-bottom:8px"></p>
+    <p id="footer-copy"></p>
+  </div>
+</footer>
+
+<!-- ========================================
+     SCRIPTS
+     ======================================== -->
+<script>
+(function () {
+  'use strict';
+
+  /* --------------------------------------------------
+     1. Load correct config based on ?lang= URL param
+     -------------------------------------------------- */
+  var lang = (new URLSearchParams(window.location.search).get('lang') || 'ja').replace(/[^a-z]/g,'');
+  var configFile = 'config_' + lang + '.js';
+
+  function loadScript(src, cb, fallbackSrc) {
+    var s = document.createElement('script');
+    s.src = src;
+    s.onload  = cb;
+    s.onerror = function () {
+      if (fallbackSrc) {
+        loadScript(fallbackSrc, cb);
+      }
+    };
+    document.head.appendChild(s);
+  }
+
+  loadScript(configFile, onConfigLoaded, 'config_ja.js');
+
+  /* --------------------------------------------------
+     2. Init after config is loaded
+     -------------------------------------------------- */
+  function onConfigLoaded() {
+    if (typeof LP_CONFIG === 'undefined') return;
+    var c = LP_CONFIG;
+
+    /* Meta */
+    setEl('page-title', c.meta && c.meta.title ? c.meta.title : '');
+    if (c.meta) {
+      setAttr('meta-description','content', c.meta.description || '');
+      setAttr('og-title','content', c.meta.title || '');
+      setAttr('og-description','content', c.meta.description || '');
+      setAttr('og-image','content', 'images/ogp.jpg');
+      if (c.meta.lang) document.documentElement.lang = c.meta.lang;
+    }
+
+    /* Language switch button */
+    if (c.meta && c.meta.other_lang_label) {
+      var btnLang = document.getElementById('btn-lang');
+      btnLang.textContent = c.meta.other_lang_label;
+      btnLang.href = c.meta.other_lang_url || '#';
+    }
+
+    /* Header */
+    if (c.header) {
+      setEl('header-phone', c.header.phone || '');
+      setEl('header-hours', c.header.hours || '');
+      setEl('header-cta-text', c.header.cta_text || '今すぐ申し込む');
+    }
+
+    /* Nav */
+    if (c.nav) {
+      var nav = document.getElementById('nav-links');
+      nav.innerHTML = c.nav.map(function(n){
+        return '<a href="' + n.href + '">' + n.label + '</a>';
+      }).join('');
+    }
+
+    /* Hero */
+    if (c.hero) {
+      setEl('hero-subtitle', c.hero.subtitle || '');
+      setEl('hero-title',    c.hero.title    || '');
+      setEl('hero-date-label',     c.hero.date_label || '開催日時');
+      setEl('hero-date',           c.hero.date       || '');
+      setEl('hero-deadline-label', c.hero.deadline_label || '申込期限');
+      setEl('hero-deadline',       c.hero.deadline   || '');
+      setEl('hero-note',           c.hero.note       || '');
+      setEl('hero-cta-text',       c.hero.cta_text   || 'お申し込みはこちら');
+      setEl('badge-en', c.hero.badge_en || '');
+      setEl('badge-ja', c.hero.badge_ja || '');
+      if (c.hero.bg_image)   setStyle('hero-bg', 'backgroundImage', 'url(' + c.hero.bg_image + ')');
+      if (c.hero.img_main)   setAttr('hero-img-main','src', c.hero.img_main);
+      if (c.hero.img_sub1)   setAttr('hero-img-sub1','src', c.hero.img_sub1);
+      if (c.hero.img_sub2)   setAttr('hero-img-sub2','src', c.hero.img_sub2);
+    }
+
+    /* Consult */
+    renderSection('consult', c.consult, function(d){
+      setEl('consult-en',    d.en    || '');
+      setEl('consult-title', d.title || '');
+      setEl('consult-body',  d.body  || '');
+      if (d.btn_url) {
+        var btn = document.getElementById('consult-btn');
+        btn.href = d.btn_url;
+        btn.style.display = 'inline-flex';
+        setEl('consult-btn-text', d.btn_text || '無料相談を予約する');
+      }
+    });
+
+    /* Issues */
+    renderSection('issues', c.issues, function(d){
+      setEl('issues-en',    d.en    || '');
+      setEl('issues-title', d.title || '');
+      if (d.img) setAttr('issues-img','src', d.img);
+      var ul = document.getElementById('issues-list');
+      if (ul && d.items) {
+        ul.innerHTML = d.items.map(function(item){
+          return '<li>' + item + '</li>';
+        }).join('');
+      }
+    });
+
+    /* Voices */
+    renderSection('voices', c.voices, function(d){
+      setEl('voices-en',    d.en    || '');
+      setEl('voices-title', d.title || '');
+      if (d.img) setAttr('voices-img','src', d.img);
+      var grid = document.getElementById('voices-grid');
+      if (grid && d.items) {
+        grid.innerHTML = d.items.map(function(v, i){
+          return '<div class="value-card reveal delay-' + (i*100) + '">'
+               + '<span class="value-num">' + (i+1) + '</span>'
+               + '<h3>' + (v.name || '') + '</h3>'
+               + '<p>' + (v.quote || v.text || '') + '</p>'
+               + '</div>';
+        }).join('');
+      }
+    });
+
+    /* Features */
+    renderSection('features', c.features, function(d){
+      setEl('features-en',    d.en    || '');
+      setEl('features-title', d.title || '');
+      var grid = document.getElementById('features-grid');
+      if (grid && d.items) {
+        grid.innerHTML = d.items.map(function(f){
+          return '<div class="feature-card reveal">'
+               + '<img src="' + (f.img || '') + '" alt="' + (f.title || '') + '" loading="lazy">'
+               + '<div class="feature-card-body">'
+               + '<h3>' + (f.title || '') + '</h3>'
+               + '<p>'  + (f.body  || '') + '</p>'
+               + '</div></div>';
+        }).join('');
+      }
+    });
+
+    /* Target */
+    renderSection('target', c.target, function(d){
+      setEl('target-en',    d.en    || '');
+      setEl('target-title', d.title || '');
+      if (d.img) setAttr('target-img','src', d.img);
+      var ul = document.getElementById('target-list');
+      if (ul && d.items) {
+        ul.innerHTML = d.items.map(function(item){
+          return '<li>' + item + '</li>';
+        }).join('');
+      }
+    });
+
+    /* Program */
+    renderSection('program', c.program, function(d){
+      setEl('program-en',    d.en    || '');
+      setEl('program-title', d.title || '');
+      setEl('program-detail-title',   d.detail_title   || 'プログラム概要');
+      setEl('program-schedule-title', d.schedule_title || '開催スケジュール');
+      var ul = document.getElementById('program-details');
+      if (ul && d.details) {
+        ul.innerHTML = d.details.map(function(item){
+          return '<li style="padding:6px 0;border-bottom:1px solid #e2e8f0;font-size:var(--fs-body)">'
+               + '<strong>' + (item.label || '') + '</strong>　' + (item.value || '')
+               + '</li>';
+        }).join('');
+      }
+      var tl = document.getElementById('program-timeline');
+      if (tl && d.schedule) {
+        tl.innerHTML = d.schedule.map(function(s){
+          return '<div class="timeline-item">'
+               + '<div class="timeline-content">'
+               + (s.part ? '<span class="part-label">' + s.part + '</span>' : '')
+               + '<h3>' + (s.title || '') + '</h3>'
+               + '<p>' + (s.date || s.body || '') + '</p>'
+               + '</div></div>';
+        }).join('');
+      }
+    });
+
+    /* Instructor */
+    renderSection('instructor', c.instructor, function(d){
+      setEl('instructor-en',    d.en    || '');
+      setEl('instructor-title', d.title || '');
+      var list = document.getElementById('instructors-list');
+      if (list && d.items) {
+        list.innerHTML = d.items.map(function(inst){
+          return '<div class="speaker-card reveal" style="margin-bottom:24px">'
+               + '<div class="speaker-img"><img src="' + (inst.img || 'images/photo_trainer.jpg') + '" alt="' + (inst.name || '') + '" loading="lazy"></div>'
+               + '<div>'
+               + '<h3>' + (inst.name || '') + '</h3>'
+               + '<p class="role">' + (inst.role || inst.title || '') + '</p>'
+               + '<p>' + (inst.profile || inst.bio || '') + '</p>'
+               + '</div></div>';
+        }).join('');
+      }
+    });
+
+    /* Pricing */
+    renderSection('pricing', c.pricing, function(d){
+      setEl('pricing-en',       d.en       || '');
+      setEl('pricing-title',    d.title    || '');
+      setEl('pricing-subtitle', d.subtitle || '');
+      setEl('pricing-currency', d.currency || 'SGD ');
+      setEl('pricing-amount',   d.amount   || '');
+      setEl('pricing-note',     d.note     || '');
+      var flow = document.getElementById('pricing-flow');
+      if (flow && d.flow) {
+        flow.innerHTML = '<h3 style="font-size:var(--fs-h3);margin-bottom:16px">' + (d.flow_title || '申込の流れ') + '</h3>'
+          + '<ol style="list-style:decimal inside;display:flex;flex-direction:column;gap:10px">'
+          + d.flow.map(function(step){ return '<li style="font-size:var(--fs-body)">' + step + '</li>'; }).join('')
+          + '</ol>';
+      }
+    });
+
+    /* Company */
+    renderSection('company', c.company, function(d){
+      setEl('company-en',    d.en    || '');
+      setEl('company-title', d.title || '');
+      if (d.img) setAttr('company-img','src', d.img);
+      var info = document.getElementById('company-info');
+      if (info) {
+        info.innerHTML = '<h3 style="font-size:var(--fs-h3);margin-bottom:12px">' + (d.name || '') + '</h3>'
+          + (d.items || []).map(function(item){
+              return '<p style="font-size:var(--fs-body);color:var(--text-muted);margin-bottom:6px">'
+                   + '<strong>' + (item.label || '') + '</strong>　' + (item.value || '') + '</p>';
+            }).join('');
+      }
+    });
+
+    /* FAQ */
+    renderSection('faq', c.faq, function(d){
+      setEl('faq-en',    d.en    || '');
+      setEl('faq-title', d.title || '');
+      var list = document.getElementById('faq-list');
+      if (list && d.items) {
+        list.innerHTML = d.items.map(function(f){
+          return '<details class="faq-item">'
+               + '<summary>' + (f.q || '') + '</summary>'
+               + '<p>' + (f.a || '') + '</p>'
+               + '</details>';
+        }).join('');
+      }
+    });
+
+    /* Cancel / Contact */
+    renderSection('cancel', c.cancel, function(d){
+      setEl('cancel-en',    d.en    || '');
+      setEl('cancel-title', d.title || '');
+      setEl('cancel-body',  d.body  || '');
+      setEl('contact-title', (c.contact && c.contact.title) || 'お問い合わせ');
+      setEl('contact-body',  (c.contact && c.contact.body)  || '');
+    });
+
+    /* Apply */
+    if (c.apply) {
+      setEl('apply-en',    c.apply.en    || '');
+      setEl('apply-title', c.apply.title || 'お申し込みフォーム');
+      setEl('apply-body',  c.apply.body  || '');
+    }
+
+    /* Footer */
+    if (c.footer) {
+      if (c.footer.links) {
+        document.getElementById('footer-links').innerHTML = c.footer.links.map(function(l){
+          return '<a href="' + l.href + '">' + l.label + '</a>';
+        }).join('');
+      }
+      setEl('footer-address', c.footer.address || '');
+      setEl('footer-copy',    c.footer.copyright || '© WS PARTNERS PTE LTD');
+    }
+
+    /* Re-init scroll animations after DOM updates */
+    initScrollReveal();
+
+    /* Init form */
+    initForm(c.forms);
+  }
+
+  /* --------------------------------------------------
+     3. Form: Google iframe + HubSpot fallback
+        + Thank-you redirect after submission
+     -------------------------------------------------- */
+  function initForm(forms) {
+    if (!forms) return;
+
+    var TIMEOUT_MS    = 5000;
+    var googleWrap    = document.getElementById('google-form-wrap');
+    var hubspotWrap   = document.getElementById('hubspot-form-wrap');
+    var formLoading   = document.getElementById('form-loading');
+    var googleIframe  = document.getElementById('google-form-iframe');
+    var thankYouUrl   = forms.thank_you_url || '_thank-you.html';
+
+    /* -- Try Google Form first -- */
+    if (forms.google_url) {
+      googleIframe.src = forms.google_url;
+
+      var googleLoaded = false;
+      var googleTimer  = setTimeout(function () {
+        if (!googleLoaded) showHubspot();
+      }, TIMEOUT_MS);
+
+      /* タブ切り替えによる誤検知防止: ページが再表示された時刻を記録 */
+      var lastPageVisibleAt = 0;
+      document.addEventListener('visibilitychange', function () {
+        if (!document.hidden) lastPageVisibleAt = Date.now();
+      });
+
+      googleIframe.addEventListener('load', function () {
+        clearTimeout(googleTimer);
+
+        if (!googleLoaded) {
+          /* First load = form is ready */
+          googleLoaded = true;
+          formLoading.style.display  = 'none';
+          googleWrap.style.display   = 'block';
+          hubspotWrap.style.display  = 'none'; /* ensure HubSpot fallback stays hidden */
+        } else {
+          /* Second load = user submitted the form → redirect to thank-you */
+          /* ただしタブ切り替え後2秒以内のreloadは誤検知のため無視 */
+          if (Date.now() - lastPageVisibleAt < 2000) return;
+          window.location.href = thankYouUrl;
+        }
+      });
+
+      googleIframe.addEventListener('error', function () {
+        clearTimeout(googleTimer);
+        showHubspot();
+      });
+    } else {
+      showHubspot();
+    }
+
+    /* -- HubSpot fallback -- */
+    function showHubspot() {
+      formLoading.style.display  = 'none';
+      googleWrap.style.display   = 'none';
+
+      if (!forms.hubspot_portal_id || !forms.hubspot_form_id) return;
+      if (forms.hubspot_portal_id.indexOf('※') !== -1) return; /* not configured yet */
+
+      hubspotWrap.style.display  = 'block';
+
+      /* Load HubSpot embed script */
+      var hs = document.createElement('script');
+      hs.src  = '//js.hsforms.net/forms/embed/v2.js';
+      hs.charset = 'utf-8';
+      hs.type = 'text/javascript';
+      hs.onload = function () {
+        if (typeof hbspt === 'undefined') return;
+        hbspt.forms.create({
+          region:   forms.hubspot_region   || 'na1',
+          portalId: forms.hubspot_portal_id,
+          formId:   forms.hubspot_form_id,
+          target:   '#hubspot-form-wrap',
+          onFormSubmit: function () {
+            /* Redirect to thank-you page after submission */
+            setTimeout(function () {
+              window.location.href = thankYouUrl;
+            }, 500);
+          }
+        });
+      };
+      document.head.appendChild(hs);
+    }
+  }
+
+  /* --------------------------------------------------
+     4. Scroll Reveal Animation
+     -------------------------------------------------- */
+  function initScrollReveal() {
+    var els = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    if ('IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (el) { obs.observe(el); });
+    } else {
+      els.forEach(function (el) { el.classList.add('is-visible'); });
+    }
+  }
+
+  /* --------------------------------------------------
+     5. Helpers
+     -------------------------------------------------- */
+  function renderSection(id, data, fn) {
+    var el = document.getElementById(id);
+    if (!data) { if (el) el.style.display = 'none'; return; }
+    if (data.show === false) { if (el) el.style.display = 'none'; return; }
+    fn(data);
+  }
+
+  function setEl(id, html) {
+    var el = document.getElementById(id);
+    if (el) el.innerHTML = html;
+  }
+  function setAttr(id, attr, val) {
+    var el = document.getElementById(id);
+    if (el) el.setAttribute(attr, val);
+  }
+  function setStyle(id, prop, val) {
+    var el = document.getElementById(id);
+    if (el) el.style[prop] = val;
+  }
+
+})();
+</script>
+</body>
+</html>
