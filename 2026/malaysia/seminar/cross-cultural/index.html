@@ -12,7 +12,7 @@
   <meta property="og:description" id="og-description" content="">
   <meta property="og:image" id="og-image" content="">
   <meta property="og:type" content="website">
-  <link id="favicon" rel="icon" type="image/svg+xml" href="images/favicon.png">
+  <link id="favicon" rel="icon" type="image/svg+xml" href="/assets/logos/symbol.svg">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
     /* ========================================
@@ -207,18 +207,6 @@
 
     .header-buttons { display: flex; height: 100%; }
 
-    .btn-lang {
-      display: flex;
-      align-items: center;
-      background: #e74c3c;
-      color: #fff;
-      font-size: 0.85rem;
-      font-weight: 700;
-      padding: 0 20px;
-      height: 45px;
-      transition: all 0.3s;
-    }
-    .btn-lang:hover { background: #c0392b; }
 
     .btn-entry-header {
       display: flex;
@@ -303,6 +291,8 @@
       line-height: 1.25;
       margin-bottom: 20px;
     }
+    .hero-tagline { font-size: clamp(.85rem, 1.7vw, 1.0rem); color: rgba(255,255,255,.85); margin: 6px 0 12px; font-weight: 500; line-height: 1.6; }
+    .hero-target-box { background: rgba(255,255,255,.13); border: 1px solid rgba(255,255,255,.4); border-radius: 10px; padding: 10px 16px; margin-bottom: 14px; font-size: clamp(.8rem, 1.5vw, .9rem); color: #fff; line-height: 1.8; }
     .hero-info-box {
       background: rgba(36,107,185,0.85);
       backdrop-filter: blur(8px);
@@ -389,8 +379,8 @@
       padding: 8px;
       animation: floatBadge 4s ease-in-out infinite;
     }
-    .badge-en { font-size: clamp(.85rem, 1.7vh, 1.2rem); font-weight: 900; line-height: 1.25; margin-bottom: 3px; text-shadow: 1px 1px 3px rgba(0,0,0,.2); }
-    .badge-ja { font-size: clamp(.8rem, 1.6vh, 1.1rem); font-weight: 900; line-height: 1.3; text-shadow: 1px 1px 3px rgba(0,0,0,.2); }
+    .badge-en { font-size: clamp(1.27rem, 2.55vh, 1.8rem); font-weight: 900; line-height: 1.25; margin-bottom: 3px; text-shadow: 1px 1px 3px rgba(0,0,0,.2); }
+    .badge-ja { font-size: clamp(1.2rem, 2.4vh, 1.65rem); font-weight: 900; line-height: 1.3; text-shadow: 1px 1px 3px rgba(0,0,0,.2); }
 
     .scroll-indicator {
       position: absolute;
@@ -562,7 +552,6 @@
       border-radius: 50%;
       object-fit: cover;
       object-position: center 10%;
-      border: 4px solid var(--accent-orange);
     }
     .speaker-card h3 { font-size: var(--fs-h3); margin-bottom: 4px; }
     .speaker-card .role { font-size: var(--fs-small); color: var(--primary); font-weight: 700; margin-bottom: 12px; }
@@ -799,11 +788,6 @@
         text-decoration: none;
         border-radius: 0;
       }
-      .header-btn-bar .btn-bar-lang {
-        background-color: #e74c3c;
-        color: #fff;
-        border-right: 1px solid rgba(255,255,255,.3);
-      }
       .header-btn-bar .btn-bar-entry {
         background: var(--accent-orange);
         color: #fff;
@@ -954,7 +938,6 @@
           <span class="time"  id="header-hours"></span>
         </div>
         <div class="header-buttons">
-          <a id="btn-lang" href="#" class="btn-lang"></a>
           <a href="#apply" class="btn-entry-header" id="header-cta-text">無料で申し込む</a>
         </div>
         <button class="hamburger-btn" id="hamburger-btn" aria-label="メニューを開く">
@@ -976,7 +959,6 @@
   </div>
   <!-- モバイル専用ボタンバー（ヘッダー直下・横100%） -->
   <div class="header-btn-bar">
-    <a id="btn-bar-lang" href="#" class="btn-bar-lang">Indonesian Language</a>
     <a href="#apply" class="btn-bar-entry" id="btn-bar-entry">無料で申し込む</a>
   </div>
   <nav class="header-bottom" id="mobile-nav">
@@ -992,8 +974,9 @@
   <div class="hero-overlay"></div>
   <div class="hero-container">
     <div class="hero-text-content reveal">
-      <p class="hero-subtitle" id="hero-subtitle"></p>
       <h1 class="hero-title" id="hero-title"></h1>
+      <p class="hero-subtitle hero-tagline" id="hero-subtitle"></p>
+      <div class="hero-target-box" id="hero-target-box" style="display:none"></div>
       <div class="hero-info-box">
         <p class="lead" id="hero-date-label"></p>
         <p class="date" id="hero-date"></p>
@@ -1107,7 +1090,7 @@
     </h2>
     <div class="company-box reveal">
       <div class="company-img">
-        <img id="company-img" src="" alt="" style="display:none">
+        <img id="company-img" src="/assets/images/ws-partners.jpeg" alt="WS PARTNERS">
       </div>
       <div class="company-info" id="company-info"></div>
     </div>
@@ -1254,7 +1237,6 @@
 
     /* Language switch button */
     if (c.meta && c.meta.other_lang_label) {
-      var btnLang = document.getElementById('btn-lang');
       btnLang.textContent = c.meta.other_lang_label;
       btnLang.href = c.meta.other_lang_url || '#';
     }
@@ -1277,6 +1259,8 @@
     /* Hero */
     if (c.hero) {
       setEl('hero-subtitle', c.hero.subtitle || '');
+      var tbox = document.getElementById('hero-target-box');
+      if (tbox && c.hero.target_html) { tbox.innerHTML = c.hero.target_html; tbox.style.display = ''; }
       setEl('hero-title',    c.hero.title    || '');
       setEl('hero-date-label',     c.hero.date_label || '開催日時');
       setEl('hero-date',           c.hero.date       || '');
@@ -1645,7 +1629,6 @@
 
   // ボタンバーの言語スイッチを config と同期
   var cfg = window.LP_CONFIG || {};
-  var barLang  = document.getElementById('btn-bar-lang');
   var barEntry = document.getElementById('btn-bar-entry');
   if (barLang && cfg.header && cfg.header.langSwitchUrl) {
     barLang.href = cfg.header.langSwitchUrl;

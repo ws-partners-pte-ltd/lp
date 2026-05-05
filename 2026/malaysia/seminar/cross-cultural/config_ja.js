@@ -32,14 +32,15 @@ window.LP_CONFIG = {
     img_main: 'images/photo_trainer_kato.jpg',
     img_sub1: '',
     img_sub2: '',
-    subtitle: 'マレーシア人部下が変わる！',
-    title: 'マネジメント３つの秘訣',
+    subtitle: '〜ASEAN地域トップの日系マネジャー教育のプロが教える　明日から使えるコミュニケーションのツボ〜',
+    title: 'マレーシア人部下が変わる！<br>マネジメント３つの秘訣',
     date_label: '開催日時',
     date: '<strong>2026年6月4日（木）　15:00〜16:30</strong>（マレーシア時間）',
     deadline_label: '参加費',
     deadline: '<strong style="font-size:1.3em;color:#fff">無 料</strong>',
     note: '現地参加（JACTIM会場）または <strong>Zoom</strong> オンライン参加<br>申込締切：当日午前10時（マレーシア時間）',
     cta_text: '無料で申し込む',
+    target_html: '【対象】マレーシアの日系企業にお勤めの経営層および管理職層の日本人の方<br><span style="font-size:0.9em">＊新任駐在員の方にもおすすめです！</span>',
     badge_en: '現地・オンライン',
     badge_ja: '日本語で実施！'
   },
@@ -105,7 +106,7 @@ window.LP_CONFIG = {
       { label: '開催日',   value: '2026年6月4日（木）' },
       { label: '時間',     value: '15:00〜16:30（マレーシア時間・質疑応答を含む）' },
       { label: '締切',     value: '2026年6月4日（木）午前10時（マレーシア時間）まで' },
-      { label: '参加形式', value: '<strong>現地参加</strong>：マレーシア日本人商工会議所（JACTIM）<br><span style="font-size:0.9em;color:#4a5568">〒 21-03, Menara Eco World, Bukit Bintang City Centre, 2, Jln Hang Tuah, Pudu, 55100 Kuala Lumpur</span><br><br><strong>オンライン参加</strong>：Web会議ツール Zoom<br><span style="font-size:0.9em;color:#4a5568">＊Zoom接続情報はお申し込み後、Eメールにて別途ご連絡いたします。</span>' },
+      { label: '参加形式', value: '<br><strong>現地参加</strong>：マレーシア日本人商工会議所（JACTIM）<br><span style="font-size:0.9em;color:#4a5568">〒 21-03, Menara Eco World, Bukit Bintang City Centre, 2, Jln Hang Tuah, Pudu, 55100 Kuala Lumpur</span><br><br><strong>オンライン参加</strong>：Web会議ツール Zoom<br><span style="font-size:0.9em;color:#4a5568">＊Zoom接続情報はお申し込み後、Eメールにて別途ご連絡いたします。</span>' },
       { label: '主催',     value: 'WS PARTNERS PTE LTD' },
       { label: '参加費',   value: '無料' },
       { label: 'お問合せ', value: '<span style="display:block;line-height:2">オンラインセミナー担当：松下・友澤<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6569784066" style="color:var(--primary)">+65-6978-4066</a></span>' }
@@ -142,7 +143,7 @@ window.LP_CONFIG = {
         img: 'images/photo_trainer_kato.jpg',
         name: '加藤 健太　Kenta Kato',
         role: 'WS PARTNERS PTE LTD　代表（Managing Director）',
-        profile: 'キャリアを通じて一貫して「人と組織の可能性の最大化」をミッションとして従事。リクルートグループにて入社3年目に年間MVP（約2,000名中1位）を受賞し、新規事業開発コンテスト「NEW RING」では準グランプリを獲得。精神障がい者の社会復帰支援事業の立ち上げを推進した。その後、株式会社ウィルシードにて大手商社・自動車関連メーカー向けの人材教育コンサルタントとして育成体系構築やマネジメント研修を担当。2017年にWS Partnersの立ち上げに参画し、2018年より弊社代表としてASEAN（特にインドネシア・タイ）の日系企業の人材育成・組織開発を推進している。現地文化と企業の構造的課題を踏まえ、「ReactiveからProactiveへの転換」を軸としたGM育成施策や組織変革プロジェクトを多数推進。人の思考発達や組織知のメカニズム探究を仕事の中心とし、スポーツマネジメントとの橋渡しにも関心を持つ。'
+        profile: 'キャリアを通じて一貫して「人と組織の可能性の最大化」をミッションとして従事。リクルートグループにて入社3年目に年間MVP（約2,000名中1位）を受賞し、新規事業開発コンテスト「NEW RING」では準グランプリを獲得。精神障がい者の社会復帰支援事業の立ち上げを推進した。その後、株式会社ウィルシードにて大手商社・自動車関連メーカー向けの人材教育コンサルタントとして育成体系構築やマネジメント研修を担当。<br><br>2017年にWS Partnersの立ち上げに参画し、2018年より弊社代表としてASEAN（特にインドネシア・タイ）の日系企業の人材育成・組織開発を推進している。現地文化と企業の構造的課題を踏まえ、「ReactiveからProactiveへの転換」を軸としたGM育成施策や組織変革プロジェクトを多数推進。人の思考発達や組織知のメカニズム探究を仕事の中心とし、スポーツマネジメントとの橋渡しにも関心を持つ。'
       }
     ]
   },
@@ -194,7 +195,7 @@ window.LP_CONFIG = {
   company: {
     en: 'ABOUT US',
     title: '弊社について',
-    img: '',
+    img: '/assets/images/ws-partners.jpeg',
     name: 'WS PARTNERS PTE LTD',
     items: [
       { label: '【WS PARTNERSのミッション】', value: '私たちWS PARTNERSは、ASEANの日系現地法人を対象に、現地人材の育成・駐在員の現地適応・組織や人材上の問題解決を通じて、日本企業のグローバルビジネスに貢献します。' },
