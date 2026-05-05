@@ -35,7 +35,7 @@ window.LP_CONFIG = {
     subtitle: '〜ASEAN地域トップの日系マネジャー教育のプロが教える　明日から使えるコミュニケーションのツボ〜',
     title: 'マレーシア人部下が変わる！<br>マネジメント３つの秘訣',
     format_label: '【参加形式】',
-    format: '①現地参加：マレーシア日本人商工会議所（JACTIM）<br>②オンライン参加：Zoom（申込後にリンクをお送りします）',
+    format: '①現地参加：マレーシア日本人商工会議所（JACTIM）<br>〒 21-03, Menara Eco World, Bukit Bintang City Centre, 2, Jln Hang Tuah, Pudu, 55100 Kuala Lumpur<br>②オンライン参加：Web会議ツール Zoom<br>＊Zoom接続情報はお申し込み後、Eメールにて別途ご連絡いたします。',
     date_label: '【日時】',
     date: '<strong>2026年6月4日（木）　15:00〜16:30</strong><br><span style="font-size:0.82em;font-weight:400">（マレーシア時間）</span>',
     deadline_label: '【参加費】',
@@ -84,7 +84,7 @@ window.LP_CONFIG = {
   issues: {
     en: 'CHALLENGES',
     title: 'このようなお悩みはありませんか？',
-    img: '/assets/images/malaysia_02.jpg',
+    img: '/assets/images/malaysia_02.jpg?v=2',
     items: [
       'マレーシア人を育てたいけど、どうしたら良いのかわからない。',
       'マレーシア人マネジャーの力量に課題を感じている。',
