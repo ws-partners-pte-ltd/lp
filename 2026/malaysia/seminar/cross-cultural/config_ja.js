@@ -82,7 +82,7 @@ window.LP_CONFIG = {
   issues: {
     en: 'CHALLENGES',
     title: 'このようなお悩みはありませんか？',
-    img: 'images/photo_trainer_kato.jpg',
+    img: '/assets/images/malaysia_02.jpg',
     items: [
       'マレーシア人を育てたいけど、どうしたら良いのかわからない。',
       'マレーシア人マネジャーの力量に課題を感じている。',
