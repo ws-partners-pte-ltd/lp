@@ -218,7 +218,7 @@ window.LP_CONFIG = {
   },
 
   forms: {
-    google_url:        '※作成後に反映',
+    google_url:        'https://docs.google.com/forms/d/e/1FAIpQLSc_eGpO1qubwaMu73e1iGjDmr4paAZ3mLOkor7HFyl2YkMQNw/viewform?embedded=true',
     hubspot_portal_id: '※HubSpotのポータルIDをここに記入',
     hubspot_form_id:   '※マレーシア用HubSpotフォームIDをここに記入',
     hubspot_region:    'na1',
