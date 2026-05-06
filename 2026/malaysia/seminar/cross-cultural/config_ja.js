@@ -32,10 +32,10 @@ window.LP_CONFIG = {
     img_main: 'images/photo_trainer_kato.jpg',
     img_sub1: '',
     img_sub2: '',
-    subtitle: 'マレーシア人メンバーの自律に向けたマネジメントの3つのツボ',
+    subtitle: '無料セミナー：マレーシア人メンバーの自律に向けたマネジメントの3つのツボ',
     title: 'マレーシア人部下が変わる！<br>マネジメント３つの秘訣',
-    format_label: '【参加形式】',
-    format: '①現地参加：マレーシア日本人商工会議所（JACTIM）',
+    format_label: '【会場】',
+    format: 'マレーシア日本人商工会議所（JACTIM）',
     date_label: '【日時】',
     date: '<strong>2026年6月4日（木）　15:00〜16:30</strong><br><span style="font-size:0.82em;font-weight:400">（マレーシア時間）</span>',
     deadline_label: '【参加費】',
@@ -45,7 +45,7 @@ window.LP_CONFIG = {
     cta_text: '無料で申し込む',
     target_label: '【対象】',
     target: 'マレーシアの日系企業にお勤めの経営層および管理職層の日本人の方　＊新任駐在員の方にもおすすめです！',
-    badge_en: '現地参加',
+    badge_en: '無料セミナー',
     badge_ja: '日本語で実施！'
   },
 
