@@ -110,7 +110,7 @@ window.LP_CONFIG = {
       { label: '開催日',   value: '2026年6月4日（木）' },
       { label: '時間',     value: '15:00〜16:30（マレーシア時間・質疑応答を含む）' },
       { label: '締切',     value: '2026年6月4日（木）午前10時（マレーシア時間）まで' },
-      { label: '参加形式', value: '<br>①<strong>現地参加</strong>：マレーシア日本人商工会議所（JACTIM）<br><span style="font-size:0.9em;color:#4a5568">〒 21-03, Menara Eco World, Bukit Bintang City Centre, 2, Jln Hang Tuah, Pudu, 55100 Kuala Lumpur</span>' },
+      { label: '会場',     value: 'マレーシア日本人商工会議所（JACTIM）<br><span style="font-size:0.9em;color:#4a5568">〒 21-03, Menara Eco World, Bukit Bintang City Centre, 2, Jln Hang Tuah, Pudu, 55100 Kuala Lumpur</span>' },
       { label: '主催',     value: 'WS PARTNERS PTE LTD' },
       { label: '参加費',   value: '無料' },
       { label: 'お問合せ', value: '<span style="display:block;line-height:2">セミナー担当：松下・友澤<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6569784066" style="color:var(--primary)">+65-6978-4066</a></span>' }
