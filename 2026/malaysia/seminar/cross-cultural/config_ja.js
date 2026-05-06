@@ -59,19 +59,19 @@ window.LP_CONFIG = {
   <p style="font-size:0.85rem;font-weight:700;color:#0050b3;letter-spacing:0.1em;margin:0 0 12px 0;text-transform:uppercase">── 本セミナーで得られること ──</p>
   <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0">✓</span>マレーシア人を動かすために押さえておきたい<strong>３つのツボ</strong>
+      <span style="color:#0050b3;flex-shrink:0">✓</span><span>マレーシア人を動かすために押さえておきたい<strong>３つのツボ</strong></span>
     </li>
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
       <span style="color:#0050b3;flex-shrink:0">✓</span>信頼される駐在員であるためにやってはいけないこと、やるべきこと
     </li>
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0">✓</span>伝わらないイライラから解放！<strong>指示の出し方</strong>
+      <span style="color:#0050b3;flex-shrink:0">✓</span><span>伝わらないイライラから解放！<strong>指示の出し方</strong></span>
     </li>
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
       <span style="color:#0050b3;flex-shrink:0">✓</span>日本に帰った後も使える、人の行動原理を活かしたマネジメントのコツ
     </li>
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0">✓</span>日本人駐在員に対するマレーシア人の<strong>本音</strong>
+      <span style="color:#0050b3;flex-shrink:0">✓</span><span>日本人駐在員に対するマレーシア人の<strong>本音</strong></span>
     </li>
   </ul>
 </div>
