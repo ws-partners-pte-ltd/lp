@@ -7,7 +7,7 @@ window.LP_CONFIG = {
   meta: {
     lang: 'ja',
     title: 'マレーシア人部下が変わる！マネジメント３つの秘訣 2026年6月4日 | WS PARTNERS',
-    description: 'マレーシアの日系企業にお勤めの経営層・管理職層の日本人向け無料セミナー。2026年6月4日（木）JACTIM会場＋オンライン（Zoom）ハイブリッド開催。',
+    description: 'マレーシアの日系企業にお勤めの経営層・管理職層の日本人向け無料セミナー。2026年6月4日（木）JACTIM会場にてリアル開催。',
     other_lang_label: null,
     other_lang_url:   null
   },
@@ -32,10 +32,10 @@ window.LP_CONFIG = {
     img_main: 'images/photo_trainer_kato.jpg',
     img_sub1: '',
     img_sub2: '',
-    subtitle: '〜ASEAN地域トップの日系マネジャー教育のプロが教える　明日から使えるコミュニケーションのツボ〜',
+    subtitle: 'マレーシア人メンバーの自律に向けたマネジメントの3つのツボ',
     title: 'マレーシア人部下が変わる！<br>マネジメント３つの秘訣',
     format_label: '【参加形式】',
-    format: '①現地参加：マレーシア日本人商工会議所（JACTIM）<br>②オンライン参加：Web会議ツール Zoom',
+    format: '①現地参加：マレーシア日本人商工会議所（JACTIM）',
     date_label: '【日時】',
     date: '<strong>2026年6月4日（木）　15:00〜16:30</strong><br><span style="font-size:0.82em;font-weight:400">（マレーシア時間）</span>',
     deadline_label: '【参加費】',
@@ -45,7 +45,7 @@ window.LP_CONFIG = {
     cta_text: '無料で申し込む',
     target_label: '【対象】',
     target: 'マレーシアの日系企業にお勤めの経営層および管理職層の日本人の方　＊新任駐在員の方にもおすすめです！',
-    badge_en: '現地・オンライン',
+    badge_en: '現地参加',
     badge_ja: '日本語で実施！'
   },
 
@@ -106,20 +106,20 @@ window.LP_CONFIG = {
     detail_title: 'セミナー情報',
     schedule_title: 'タイムテーブル（マレーシア時間）',
     details: [
-      { label: '名称',     value: 'マレーシア人部下が変わる！マネジメント３つの秘訣 〜ASEAN地域トップの日系マネジャー教育のプロが教える、明日から使えるコミュニケーションのツボ〜' },
+      { label: '名称',     value: 'マレーシア人部下が変わる！マネジメント３つの秘訣' },
       { label: '開催日',   value: '2026年6月4日（木）' },
       { label: '時間',     value: '15:00〜16:30（マレーシア時間・質疑応答を含む）' },
       { label: '締切',     value: '2026年6月4日（木）午前10時（マレーシア時間）まで' },
-      { label: '参加形式', value: '<br>①<strong>現地参加</strong>：マレーシア日本人商工会議所（JACTIM）<br><span style="font-size:0.9em;color:#4a5568">〒 21-03, Menara Eco World, Bukit Bintang City Centre, 2, Jln Hang Tuah, Pudu, 55100 Kuala Lumpur</span><br><br>②<strong>オンライン参加</strong>：Web会議ツール Zoom<br><span style="font-size:0.9em;color:#4a5568">＊Zoom接続情報はお申し込み後、Eメールにて別途ご連絡いたします。</span>' },
+      { label: '参加形式', value: '<br>①<strong>現地参加</strong>：マレーシア日本人商工会議所（JACTIM）<br><span style="font-size:0.9em;color:#4a5568">〒 21-03, Menara Eco World, Bukit Bintang City Centre, 2, Jln Hang Tuah, Pudu, 55100 Kuala Lumpur</span>' },
       { label: '主催',     value: 'WS PARTNERS PTE LTD' },
       { label: '参加費',   value: '無料' },
-      { label: 'お問合せ', value: '<span style="display:block;line-height:2">オンラインセミナー担当：松下・友澤<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6569784066" style="color:var(--primary)">+65-6978-4066</a></span>' }
+      { label: 'お問合せ', value: '<span style="display:block;line-height:2">セミナー担当：松下・友澤<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6569784066" style="color:var(--primary)">+65-6978-4066</a></span>' }
     ],
     schedule: [
       {
         part: '15:00',
         title: 'プログラム開始',
-        body: '14:50より会場（またはZoom）にご入室いただけます。'
+        body: '14:50より会場にお入りいただけます。'
       },
       {
         part: '15:05〜',
@@ -147,7 +147,7 @@ window.LP_CONFIG = {
         img: 'images/photo_trainer_kato.jpg',
         name: '加藤 健太　Kenta Kato',
         role: 'WS PARTNERS PTE LTD　代表（Managing Director）',
-        profile: 'キャリアを通じて一貫して「人と組織の可能性の最大化」をミッションとして従事。リクルートグループにて入社3年目に年間MVP（約2,000名中1位）を受賞し、新規事業開発コンテスト「NEW RING」では準グランプリを獲得。精神障がい者の社会復帰支援事業の立ち上げを推進した。その後、株式会社ウィルシードにて大手商社・自動車関連メーカー向けの人材教育コンサルタントとして育成体系構築やマネジメント研修を担当。<br><br>2017年にWS Partnersの立ち上げに参画し、2018年より弊社代表としてASEAN（特にインドネシア・タイ）の日系企業の人材育成・組織開発を推進している。現地文化と企業の構造的課題を踏まえ、「ReactiveからProactiveへの転換」を軸としたGM育成施策や組織変革プロジェクトを多数推進。人の思考発達や組織知のメカニズム探究を仕事の中心とし、スポーツマネジメントとの橋渡しにも関心を持つ。'
+        profile: 'キャリアを通じて一貫して「人と組織の可能性の最大化」をミッションとして従事。リクルートグループにて入社3年目に年間MVP（約2,000名中1位）を受賞し、新規事業開発コンテスト「NEW RING」では準グランプリを獲得。精神障がい者の社会復帰支援事業の立ち上げを推進した。その後、株式会社ウィルシードにて大手商社・自動車関連メーカー向けの人材教育コンサルタントとして育成体系構築やマネジメント研修を担当。<br><br>2017年にWS Partnersの立ち上げに参画し、2018年より弊社代表としてASEAN（マレーシア、シンガポール、インドネシア、タイ、ベトナム）の日系企業の人材育成・組織開発を推進している。現地文化と企業の構造的課題を踏まえ、「ReactiveからProactiveへの転換」を軸としたGM育成施策や組織変革プロジェクトを多数推進。人の思考発達や組織知のメカニズム探究を仕事の中心とし、スポーツマネジメントとの橋渡しにも関心を持つ。'
       }
     ]
   },
@@ -182,7 +182,7 @@ window.LP_CONFIG = {
     title: 'お問い合わせ先',
     body: `セミナーに関するご質問はお気軽にご連絡ください。<br><br>
 <span style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
-  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>オンラインセミナー担当：<strong>松下・友澤</strong></span></span>
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>セミナー担当：<strong>松下・友澤</strong></span></span>
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">✉</span><span><a href="mailto:support@ws-partners.com.sg" style="color:rgba(255,255,255,.85);text-decoration:underline">support@ws-partners.com.sg</a></span></span>
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6569784066" style="color:rgba(255,255,255,.85);text-decoration:underline">+65-6978-4066</a></span></span>
 </span>`
@@ -191,9 +191,9 @@ window.LP_CONFIG = {
   apply: {
     en: 'APPLY',
     title: 'セミナーへのお申し込み',
-    body: `下記フォームよりお申し込みください。<strong>参加費は無料</strong>です。<br>参加形式（現地参加 / オンライン参加）をフォームにてご選択ください。<br><strong style="color:#00dfd8;">オンラインでご参加の方には、後日Zoom接続情報をEメールにてお送りします。</strong><br><br><span style="color:#c0392b;font-weight:700;">※重要：メールアドレスに誤りがあると、当日のご案内メールが届きません。ご入力内容を必ずご確認ください。</span><br><span style="color:#555;">※フォーム送信ができない場合（企業のセキュリティ設定などにより制限されている場合）は、フォーム下部の「メールで申し込む」ボタンからもお申し込みいただけます。</span>`,
+    body: `下記フォームよりお申し込みください。<strong>参加費は無料</strong>です。<br>お申し込み後、改めてメールにて当日のご案内をいたします。<br><br><span style="color:#c0392b;font-weight:700;">※重要：メールアドレスに誤りがあると、当日のご案内メールが届きません。ご入力内容を必ずご確認ください。</span><br><span style="color:#555;">※フォーム送信ができない場合（企業のセキュリティ設定などにより制限されている場合）は、フォーム下部の「メールで申し込む」ボタンからもお申し込みいただけます。</span>`,
     mailto_subject: 'お申し込み - 【『マレーシア人部下が変わる！マネジメント３つの秘訣』セミナー／研修 （マレーシア）(2026.6)】',
-    mailto_href: 'mailto:support@ws-partners.com.sg?cc=wsp-sales@ws-partners.com.sg%3Bytomozawa@ws-partners.com.sg%3Bkyokoyama@ws-partners.com.sg&subject=%E3%81%8A%E7%94%B3%E3%81%97%E8%BE%BC%E3%81%BF%20-%20%E3%80%90%E3%80%8E%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2%E4%BA%BA%E9%83%A8%E4%B8%8B%E3%81%8C%E5%A4%89%E3%82%8F%E3%82%8B%EF%BC%81%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%EF%BC%93%E3%81%A4%E3%81%AE%E7%A7%98%E8%A8%A3%E3%80%8F%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%EF%BC%8F%E7%A0%94%E4%BF%AE%20%EF%BC%88%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2%EF%BC%89%282026.6%29%E3%80%91&body=%E2%96%BC%E4%BB%A5%E4%B8%8B%E3%81%AE%E9%A0%85%E7%9B%AE%E3%82%92%E3%81%94%E8%A8%98%E5%85%A5%E3%81%AE%E4%B8%8A%E3%80%81%E3%81%93%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E9%80%81%E4%BF%A1%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%0A%E2%80%BB%E3%81%AF%E5%BF%85%E9%A0%88%E9%A0%85%E7%9B%AE%E3%81%A7%E3%81%99%E3%80%82%0A--------------------%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%88%E5%A7%93%EF%BC%89%E2%80%BB%EF%BC%9A%0A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%88%E5%90%8D%EF%BC%89%E2%80%BB%EF%BC%9A%0A%0A%E4%BC%9A%E7%A4%BE%E5%90%8D%20%E2%80%BB%EF%BC%9A%0A%0A%E5%BD%B9%E8%81%B7%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%20Managing%20Director%EF%BC%88MD%E3%83%BB%E7%8F%BE%E6%B3%95%E7%A4%BE%E9%95%B7%EF%BC%89%0A%E3%80%80%E2%96%A1%20Director%EF%BC%88%E5%8F%96%E7%B7%A0%E5%BD%B9%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20General%20Manager%EF%BC%88GM%E3%83%BB%E9%83%A8%E9%95%B7%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20Senior%20Manager%EF%BC%88%E6%AC%A1%E9%95%B7%E3%83%BB%E9%83%A8%E9%96%80%E8%B2%AC%E4%BB%BB%E8%80%85%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20Manager%EF%BC%88%E8%AA%B2%E9%95%B7%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20Assistant%20Manager%EF%BC%88%E4%BF%82%E9%95%B7%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20Staff%20/%20Engineer%EF%BC%88%E4%B8%80%E8%88%AC%E8%81%B7%E3%83%BB%E6%8A%80%E8%A1%93%E8%81%B7%EF%BC%89%0A%E3%80%80%E2%96%A1%20Others%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89%0A%0A%E7%8F%BE%E5%9C%B0%E6%B3%95%E4%BA%BA%E3%81%AE%E5%BE%93%E6%A5%AD%E5%93%A1%E6%95%B0%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%201%EF%BD%9E10%E5%90%8D%0A%E3%80%80%E2%96%A1%2011%EF%BD%9E30%E5%90%8D%0A%E3%80%80%E2%96%A1%2031%EF%BD%9E100%E5%90%8D%0A%E3%80%80%E2%96%A1%20101%EF%BD%9E200%E5%90%8D%0A%E3%80%80%E2%96%A1%20201%EF%BD%9E500%E5%90%8D%0A%E3%80%80%E2%96%A1%20501%EF%BD%9E1000%E5%90%8D%0A%E3%80%80%E2%96%A1%201001%E5%90%8D%E4%BB%A5%E4%B8%8A%0A%0A%E7%8F%BE%E5%9C%B0%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BA%BA%E6%95%B0%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%200%E5%90%8D%0A%E3%80%80%E2%96%A1%201%EF%BD%9E2%E5%90%8D%0A%E3%80%80%E2%96%A1%203%EF%BD%9E5%E5%90%8D%0A%E3%80%80%E2%96%A1%206%EF%BD%9E10%E5%90%8D%0A%E3%80%80%E2%96%A1%2011%E5%90%8D%E4%BB%A5%E4%B8%8A%0A%0A%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%20%E2%80%BB%EF%BC%9A%0A%0A%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7%20%E2%80%BB%EF%BC%9A%0A%0A%E5%8F%82%E5%8A%A0%E5%BD%A2%E5%BC%8F%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%20%E7%8F%BE%E5%9C%B0%E5%8F%82%E5%8A%A0%EF%BC%88JACTIM%E4%BC%9A%E5%A0%B4%EF%BC%89%0A%E3%80%80%E2%96%A1%20%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E5%8F%82%E5%8A%A0%EF%BC%88Zoom%EF%BC%89%0A%0A%E6%9C%AC%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E7%9F%A5%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F%E3%81%8B%EF%BC%9F%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%20WS%20PARTNERS%E3%81%8B%E3%82%89%E3%81%AEE%E3%83%A1%E3%83%BC%E3%83%AB%0A%E3%80%80%E2%96%A1%20NNA%E3%81%8B%E3%82%89%E3%81%AEE%E3%83%A1%E3%83%BC%E3%83%AB%0A%E3%80%80%E2%96%A1%20MTown%20%E3%81%AEE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%84%E8%A8%98%E4%BA%8B%E3%82%92%E8%A6%8B%E3%81%9F%0A%E3%80%80%E2%96%A1%20Google%E3%81%AA%E3%81%A9%E3%81%AE%E6%A4%9C%E7%B4%A2%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%0A%E3%80%80%E2%96%A1%20WS%20PARTNERS%E3%81%AEWeb%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E8%A6%8B%E3%81%9F%0A%E3%80%80%E2%96%A1%20%E7%A4%BE%E5%86%85%E3%81%AE%E5%88%A5%E3%81%AE%E6%96%B9%E3%81%8B%E3%82%89%E3%81%AE%E6%A1%88%E5%86%85%E3%83%BB%E7%B4%B9%E4%BB%8B%0A%E3%80%80%E2%96%A1%20%E3%81%9D%E3%81%AE%E4%BB%96%0A%0A--------------------%0A'
+    mailto_href: 'mailto:support@ws-partners.com.sg?cc=wsp-sales@ws-partners.com.sg%3Bytomozawa@ws-partners.com.sg%3Bkyokoyama@ws-partners.com.sg&subject=%E3%81%8A%E7%94%B3%E3%81%97%E8%BE%BC%E3%81%BF%20-%20%E3%80%90%E3%80%8E%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2%E4%BA%BA%E9%83%A8%E4%B8%8B%E3%81%8C%E5%A4%89%E3%82%8F%E3%82%8B%EF%BC%81%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%EF%BC%93%E3%81%A4%E3%81%AE%E7%A7%98%E8%A8%A3%E3%80%8F%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%EF%BC%8F%E7%A0%94%E4%BF%AE%20%EF%BC%88%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2%EF%BC%89%282026.6%29%E3%80%91&body=%E2%96%BC%E4%BB%A5%E4%B8%8B%E3%81%AE%E9%A0%85%E7%9B%AE%E3%82%92%E3%81%94%E8%A8%98%E5%85%A5%E3%81%AE%E4%B8%8A%E3%80%81%E3%81%93%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E9%80%81%E4%BF%A1%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%0A%E2%80%BB%E3%81%AF%E5%BF%85%E9%A0%88%E9%A0%85%E7%9B%AE%E3%81%A7%E3%81%99%E3%80%82%0A--------------------%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%88%E5%A7%93%EF%BC%89%E2%80%BB%EF%BC%9A%0A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%88%E5%90%8D%EF%BC%89%E2%80%BB%EF%BC%9A%0A%0A%E4%BC%9A%E7%A4%BE%E5%90%8D%20%E2%80%BB%EF%BC%9A%0A%0A%E5%BD%B9%E8%81%B7%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%20Managing%20Director%EF%BC%88MD%E3%83%BB%E7%8F%BE%E6%B3%95%E7%A4%BE%E9%95%B7%EF%BC%89%0A%E3%80%80%E2%96%A1%20Director%EF%BC%88%E5%8F%96%E7%B7%A0%E5%BD%B9%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20General%20Manager%EF%BC%88GM%E3%83%BB%E9%83%A8%E9%95%B7%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20Senior%20Manager%EF%BC%88%E6%AC%A1%E9%95%B7%E3%83%BB%E9%83%A8%E9%96%80%E8%B2%AC%E4%BB%BB%E8%80%85%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20Manager%EF%BC%88%E8%AA%B2%E9%95%B7%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20Assistant%20Manager%EF%BC%88%E4%BF%82%E9%95%B7%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20Staff%20%2F%20Engineer%EF%BC%88%E4%B8%80%E8%88%AC%E8%81%B7%E3%83%BB%E6%8A%80%E8%A1%93%E8%81%B7%EF%BC%89%0A%E3%80%80%E2%96%A1%20Others%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89%0A%0A%E7%8F%BE%E5%9C%B0%E6%B3%95%E4%BA%BA%E3%81%AE%E5%BE%93%E6%A5%AD%E5%93%A1%E6%95%B0%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%201%EF%BD%9E10%E5%90%8D%0A%E3%80%80%E2%96%A1%2011%EF%BD%9E30%E5%90%8D%0A%E3%80%80%E2%96%A1%2031%EF%BD%9E100%E5%90%8D%0A%E3%80%80%E2%96%A1%20101%EF%BD%9E200%E5%90%8D%0A%E3%80%80%E2%96%A1%20201%EF%BD%9E500%E5%90%8D%0A%E3%80%80%E2%96%A1%20501%EF%BD%9E1000%E5%90%8D%0A%E3%80%80%E2%96%A1%201001%E5%90%8D%E4%BB%A5%E4%B8%8A%0A%0A%E7%8F%BE%E5%9C%B0%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BA%BA%E6%95%B0%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%200%E5%90%8D%0A%E3%80%80%E2%96%A1%201%EF%BD%9E2%E5%90%8D%0A%E3%80%80%E2%96%A1%203%EF%BD%9E5%E5%90%8D%0A%E3%80%80%E2%96%A1%206%EF%BD%9E10%E5%90%8D%0A%E3%80%80%E2%96%A1%2011%E5%90%8D%E4%BB%A5%E4%B8%8A%0A%0A%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%20%E2%80%BB%EF%BC%9A%0A%0A%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7%20%E2%80%BB%EF%BC%9A%0A%0A%E6%9C%AC%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E7%9F%A5%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F%E3%81%8B%EF%BC%9F%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%20WS%20PARTNERS%E3%81%8B%E3%82%89%E3%81%AEE%E3%83%A1%E3%83%BC%E3%83%AB%0A%E3%80%80%E2%96%A1%20NNA%E3%81%8B%E3%82%89%E3%81%AEE%E3%83%A1%E3%83%BC%E3%83%AB%0A%E3%80%80%E2%96%A1%20MTown%20%E3%81%AEE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%84%E8%A8%98%E4%BA%8B%E3%82%92%E8%A6%8B%E3%81%9F%0A%E3%80%80%E2%96%A1%20Google%E3%81%AA%E3%81%A9%E3%81%AE%E6%A4%9C%E7%B4%A2%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%0A%E3%80%80%E2%96%A1%20WS%20PARTNERS%E3%81%AEWeb%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E8%A6%8B%E3%81%9F%0A%E3%80%80%E2%96%A1%20%E7%A4%BE%E5%86%85%E3%81%AE%E5%88%A5%E3%81%AE%E6%96%B9%E3%81%8B%E3%82%89%E3%81%AE%E6%A1%88%E5%86%85%E3%83%BB%E7%B4%B9%E4%BB%8B%0A%E3%80%80%E2%96%A1%20%E3%81%9D%E3%81%AE%E4%BB%96%0A%0A--------------------%0A'
   },
 
   company: {
