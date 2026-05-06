@@ -33,7 +33,7 @@ window.LP_CONFIG = {
     img_main: 'images/photo_trainer_kato.jpg',
     img_sub1: '',
     img_sub2: '',
-    subtitle: '無料セミナー：マレーシア人メンバーの自律に向けたマネジメントの3つのツボ',
+    subtitle: '無料セミナー：マレーシア人メンバーの自律に向けたマネジメントのコツ',
     title: 'マレーシア人部下が変わる！<br>マネジメント３つの秘訣',
     format_label: '【会場】',
     format: 'マレーシア日本人商工会議所（JACTIM）21階',
@@ -111,7 +111,7 @@ window.LP_CONFIG = {
       { label: '開催日',   value: '2026年6月4日（木）' },
       { label: '時間',     value: '15:00〜16:30（マレーシア時間・質疑応答を含む）' },
       { label: '締切',     value: '2026年6月4日（木）午前10時（マレーシア時間）まで' },
-      { label: '会場',     value: '<a href="https://www.jactim.org.my/" target="_blank" rel="noopener" style="color:var(--primary)">The Japanese Chamber of Trade &amp; Industry, Malaysia（JACTIM）</a><br><span style="font-size:0.9em;color:#4a5568">21-03, Menara EcoWorld, Bukit Bintang City Centre, No. 2 Jalan Hang Tuah, 55100 Kuala Lumpur</span>' },
+      { label: '会場',     value: 'マレーシア日本人商工会議所（JACTIM）21階<br><span style="font-size:0.9em;color:#4a5568">21-03, Menara EcoWorld, Bukit Bintang City Centre, No. 2 Jalan Hang Tuah, 55100 Kuala Lumpur</span>' },
       { label: '主催',     value: 'WS PARTNERS PTE LTD' },
       { label: '参加費',   value: '無料' },
       { label: 'お問合せ', value: '<span style="display:block;line-height:2">セミナー担当：松下・友澤<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6569784066" style="color:var(--primary)">+65-6978-4066</a></span>' }
