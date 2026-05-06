@@ -36,7 +36,7 @@ window.LP_CONFIG = {
     subtitle: '無料セミナー：マレーシア人メンバーの自律に向けたマネジメントの3つのツボ',
     title: 'マレーシア人部下が変わる！<br>マネジメント３つの秘訣',
     format_label: '【会場】',
-    format: 'マレーシア日本人商工会議所（JACTIM）',
+    format: 'マレーシア日本人商工会議所（JACTIM）21階',
     date_label: '【日時】',
     date: '<strong>2026年6月4日（木）　15:00〜16:30</strong><br><span style="font-size:0.82em;font-weight:400">（マレーシア時間）</span>',
     deadline_label: '【参加費】',
