@@ -346,14 +346,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: none;
+      transform: translateY(12vh);
     }
     .hero-images-wrapper {
       position: relative;
       width: 100%;
       height: 100%;
-      max-width: 52vh;
-      aspect-ratio: 4 / 5;
+      max-width: 78vh;
+      aspect-ratio: 3 / 4;
     }
     .img-collage {
       position: absolute;
@@ -365,9 +365,9 @@
     }
     .img-collage:hover { transform: scale(1.05) !important; z-index: 10; }
     /* online image: top-right, slight positive rotation */
-    .img-online  { width: 46%; top: 5%; right: 4%; transform: rotate(3deg);  z-index: 1; }
+    .img-online  { width: 58%; top: 3%; right: 2%; transform: rotate(3deg);  z-index: 2; }
     /* instructor photo: bottom-left, slight negative rotation */
-    .img-instructor { width: 46%; top: 5%; left: 4%; transform: rotate(-3deg); z-index: 2; object-position: center top; }
+    .img-instructor { width: 58%; top: 3%; left: 2%; transform: rotate(-3deg); z-index: 2; object-position: center top; }
 
     @keyframes floatBadge {
       0%   { transform: rotate(-5deg) translateY(0px); }
@@ -376,10 +376,11 @@
     }
     .hero-badge-circle {
       position: absolute;
-      bottom: 2%; left: 0; right: 0; margin: 0 auto;
+      top: 42%; left: 0; right: 0; margin: 0 auto;
       transform: rotate(-5deg);
-      width: clamp(130px, 24vh, 210px);
-      height: clamp(130px, 24vh, 210px);
+      z-index: 10;
+      width: clamp(160px, 30vh, 260px);
+      height: clamp(160px, 30vh, 260px);
       background: linear-gradient(135deg, #f1c40f 0%, #e67e22 100%);
       border-radius: 50%;
       display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -854,8 +855,8 @@
         margin: 0 auto;
       }
       /* モバイルでは画像を少し小さく・位置を調整してカブリを軽減 */
-      .img-online     { width: 44%; top: 3%; right: 3%; }
-      .img-instructor { width: 44%; top: 3%; left: 3%; }
+      .img-online     { width: 55%; top: 2%; right: 2%; }
+      .img-instructor { width: 55%; top: 2%; left: 2%; }
       .scroll-indicator { display: none; }
 
       /* ── Content boxes ── */
