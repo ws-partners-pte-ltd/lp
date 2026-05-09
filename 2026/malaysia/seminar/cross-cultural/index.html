@@ -346,7 +346,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: translateY(24vh);
+      transform: none;
     }
     .hero-images-wrapper {
       position: relative;
@@ -354,6 +354,7 @@
       height: 100%;
       max-width: 78vh;
       aspect-ratio: 3 / 4;
+      margin-top: 10%;
     }
     .img-collage {
       position: absolute;
@@ -365,9 +366,9 @@
     }
     .img-collage:hover { transform: scale(1.05) !important; z-index: 10; }
     /* online image: top-right, slight positive rotation */
-    .img-online  { width: 58%; top: 3%; right: 2%; transform: rotate(3deg);  z-index: 2; }
+    .img-online  { width: 58%; top: 5%; right: -3%; transform: rotate(3deg);  z-index: 2; }
     /* instructor photo: bottom-left, slight negative rotation */
-    .img-instructor { width: 58%; top: 3%; left: 2%; transform: rotate(-3deg); z-index: 2; object-position: center top; }
+    .img-instructor { width: 58%; top: 5%; left: -3%; transform: rotate(-3deg); z-index: 2; object-position: center top; }
 
     @keyframes floatBadge {
       0%   { transform: rotate(-5deg) translateY(0px); }
