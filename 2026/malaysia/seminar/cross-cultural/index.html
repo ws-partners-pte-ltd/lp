@@ -6,7 +6,7 @@
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TLGVMTDZ');</script>
   <!-- End Google Tag Manager -->
-  <title id="page-title">研修LP | WS PARTNERS</title>
+  <title id="page-title">ç ä¿®LP | WS PARTNERS</title>
   <meta id="meta-description" name="description" content="">
   <meta property="og:title" id="og-title" content="">
   <meta property="og:description" id="og-description" content="">
@@ -49,12 +49,12 @@
       --header-bottom-height: 44px;
       --header-total-height:  calc(var(--header-top-height) + var(--header-bottom-height));
 
-      /* Font sizes – WS PARTNERS design standards */
-      --fs-hero:   clamp(1.6rem, 3.2vw, 2rem);  /* キャッチコピー: 26–32px */
-      --fs-h2:     1.75rem;                      /* 中見出し: 28px */
-      --fs-h3:     1.25rem;                      /* 小見出し: 20px */
-      --fs-body:   1rem;                         /* 本文: 16px */
-      --fs-small:  0.875rem;                     /* 注意書き・FAQ: 14px */
+      /* Font sizes â WS PARTNERS design standards */
+      --fs-hero:   clamp(1.6rem, 3.2vw, 2rem);  /* ã­ã£ããã³ãã¼: 26â32px */
+      --fs-h2:     1.75rem;                      /* ä¸­è¦åºã: 28px */
+      --fs-h3:     1.25rem;                      /* å°è¦åºã: 20px */
+      --fs-body:   1rem;                         /* æ¬æ: 16px */
+      --fs-small:  0.875rem;                     /* æ³¨ææ¸ãã»FAQ: 14px */
     }
 
     /* ========================================
@@ -123,7 +123,7 @@
     .delay-300 { transition-delay: .3s; }
 
     /* ========================================
-       Buttons – ALL CTA & Submit = Orange (MDPE Style)
+       Buttons â ALL CTA & Submit = Orange (MDPE Style)
        ======================================== */
     .btn-cta {
       display: inline-flex;
@@ -286,7 +286,7 @@
       margin-bottom: 10px;
     }
     .hero-title {
-      font-size: clamp(1.55rem, 3.2vw, 2.2rem);  /* 参考LP合わせ */
+      font-size: clamp(1.55rem, 3.2vw, 2.2rem);  /* åèLPåãã */
       font-weight: 900;
       line-height: 1.25;
       margin-bottom: 20px;
@@ -424,7 +424,7 @@
     }
 
     /* ========================================
-       Sections – General
+       Sections â General
        ======================================== */
     section { padding: 80px 0; }
     section[id] { scroll-margin-top: var(--header-total-height); }
@@ -496,7 +496,7 @@
     }
     .issue-checklist li:last-child { border-bottom: none; }
     .issue-checklist li::before {
-      content: '✓';
+      content: 'â';
       color: var(--accent-orange);
       font-weight: 900;
       flex-shrink: 0;
@@ -585,7 +585,7 @@
 
 
     /* ========================================
-       Cancel / Contact Section  (クローズ文に転用)
+       Cancel / Contact Section  (ã¯ã­ã¼ãºæã«è»¢ç¨)
        ======================================== */
     #cancel { background: var(--bg-dark); }
     #cancel .sec-title { color: #fff; text-align: center; }
@@ -630,7 +630,7 @@
       background: #fff;
     }
 
-    /* HubSpot form override – make submit button orange */
+    /* HubSpot form override â make submit button orange */
     .hs-button.primary,
     .hs-submit input[type="submit"],
     .hs-form input[type="submit"] {
@@ -751,14 +751,14 @@
     .hamburger-btn.active span:nth-child(2) { opacity: 0; }
     .hamburger-btn.active span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
 
-    /* ボタンバー（モバイル専用）: PC では非表示 */
+    /* ãã¿ã³ãã¼ï¼ã¢ãã¤ã«å°ç¨ï¼: PC ã§ã¯éè¡¨ç¤º */
     .header-btn-bar { display: none; }
 
     /* ========================================
-       Responsive – Mobile
+       Responsive â Mobile
        ======================================== */
     @media (max-width: 768px) {
-      /* ── Variables: top=60px, btn-bar=44px ── */
+      /* ââ Variables: top=60px, btn-bar=44px ââ */
       :root {
         --header-top-height:    60px;
         --header-bottom-height: 44px;
@@ -767,19 +767,19 @@
       section { padding: 48px 0; }
       .container { padding: 0 16px; }
 
-      /* ── Header Top ── */
+      /* ââ Header Top ââ */
       .header-top { height: 60px; padding: 0 0 0 14px; }
       .header-logo { gap: 10px; }
-      /* 河合塾ロゴはモバイルで非表示 */
+      /* æ²³åå¡¾ã­ã´ã¯ã¢ãã¤ã«ã§éè¡¨ç¤º */
       .header-logo .logo-divider { display: none; }
       .header-logo img { height: 34px; }
       .header-contact-row { display: none; }
       .header-action { align-self: stretch; gap: 0; }
-      /* PC用ボタン非表示 → ハンバーガー表示 */
+      /* PCç¨ãã¿ã³éè¡¨ç¤º â ãã³ãã¼ã¬ã¼è¡¨ç¤º */
       .header-buttons { display: none; }
       .hamburger-btn  { display: flex; margin-right: 14px; }
 
-      /* ── ボタンバー（ヘッダー直下、横100%） ── */
+      /* ââ ãã¿ã³ãã¼ï¼ãããã¼ç´ä¸ãæ¨ª100%ï¼ ââ */
       .header-btn-bar {
         display: flex;
         width: 100%;
@@ -803,7 +803,7 @@
         color: #fff;
       }
 
-      /* ── Nav: dropdown (ボタンバーの下) ── */
+      /* ââ Nav: dropdown (ãã¿ã³ãã¼ã®ä¸) ââ */
       .header-bottom {
         display: none;
         position: absolute;
@@ -833,7 +833,7 @@
         white-space: normal;
       }
 
-      /* ── Hero ── */
+      /* ââ Hero ââ */
       .hero { height: auto; min-height: 100vh; padding-bottom: 60px; }
       .hero-container { flex-direction: column; padding: clamp(72px,9vh,100px) 16px 32px; gap: 20px; }
       .hero-subtitle { margin-top: 0.5rem; font-size: 0.92rem; }
@@ -841,52 +841,52 @@
       .hero-info-box { padding: 10px 14px; margin-bottom: 1.5vh; }
       .info-date-val { font-size: 0.98rem; }
       .info-sub-row { font-size: 0.75rem; }
-      /* ── Hero visual: aspect-ratio に合わせた高さ設定 ── */
+      /* ââ Hero visual: aspect-ratio ã«åãããé«ãè¨­å® ââ */
       .hero-visual-content {
         flex: none; width: 100%;
         height: clamp(280px, 78vw, 400px);
         transform: none;
       }
-      /* wrapper を 78vw の正方形に固定（aspect-ratio: 1/1 を維持） */
+      /* wrapper ã 78vw ã®æ­£æ¹å½¢ã«åºå®ï¼aspect-ratio: 1/1 ãç¶­æï¼ */
       .hero-images-wrapper {
         width: min(78vw, 360px);
         max-width: 100%;
         margin: 0 auto;
       }
-      /* モバイルでは画像を少し小さく・位置を調整してカブリを軽減 */
+      /* ã¢ãã¤ã«ã§ã¯ç»åãå°ãå°ããã»ä½ç½®ãèª¿æ´ãã¦ã«ããªãè»½æ¸ */
       .img-online     { width: 62%; top: 2%; right: 1%; }
       .img-instructor { width: 56%; bottom: 2%; left: 2%; }
       .scroll-indicator { display: none; }
 
-      /* ── Content boxes ── */
+      /* ââ Content boxes ââ */
       .independent-box { padding: 24px 16px; border-radius: var(--radius); }
       .voice-box { padding: 16px; }
       .seminar-detail-box { padding: 16px 18px; }
       .scroll-box { padding: 22px 18px; }
       #cancel-contact-box { padding: 18px 16px; }
 
-      /* ── Program: 2col → 1col、十分な余白 ── */
+      /* ââ Program: 2col â 1colãååãªä½ç½ ââ */
       .program-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
 
-      /* ── Speaker / Company ── */
+      /* ââ Speaker / Company ââ */
       .speaker-card { flex-direction: column; align-items: center; text-align: center; padding: 20px 16px; gap: 16px; }
       .speaker-img  { flex: none; }
       .speaker-img img { width: 100px; height: 100px; }
       .company-box  { flex-direction: column; gap: 24px; }
       .company-img  { flex: none; width: 100%; }
-      /* 会社概要の各項目に余白を追加 */
+      /* ä¼ç¤¾æ¦è¦ã®åé ç®ã«ä½ç½ãè¿½å  */
       .company-info p { margin-bottom: 14px !important; line-height: 1.7; }
 
-      /* ── Grids ── */
+      /* ââ Grids ââ */
 
-      /* ── Section images ── */
+      /* ââ Section images ââ */
       .section-image img { height: 180px; }
 
-      /* ── Buttons ── */
+      /* ââ Buttons ââ */
       .btn-cta { width: 100%; justify-content: center; }
       .back-to-top { bottom: 20px; right: 14px; width: 44px; height: 44px; font-size: 1.2rem; }
 
-      /* ── Typography ── */
+      /* ââ Typography ââ */
       .sec-title { font-size: 1.45rem; }
     }
 
@@ -894,13 +894,13 @@
       .hero-title { font-size: 1.35rem; }
       .sec-title  { font-size: 1.3rem; }
 
-      /* consult内 2カラムグリッドを1カラムに */
+      /* consultå 2ã«ã©ã ã°ãªããã1ã«ã©ã ã« */
       #consult-body [style*="grid-template-columns"] {
         grid-template-columns: 1fr !important;
       }
     }
 
-    /* ── New-tab form submission: thank-you card ── */
+    /* ââ New-tab form submission: thank-you card ââ */
     #newtab-thankyou {
       display: none;
       background: #fff;
@@ -947,9 +947,9 @@
           <span class="time"  id="header-hours"></span>
         </div>
         <div class="header-buttons">
-          <a href="#apply" class="btn-entry-header" id="header-cta-text">無料で申し込む</a>
+          <a href="#apply" class="btn-entry-header" id="header-cta-text">ç¡æã§ç³ãè¾¼ã</a>
         </div>
-        <button class="hamburger-btn" id="hamburger-btn" aria-label="メニューを開く">
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="ã¡ãã¥ã¼ãéã">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -962,13 +962,13 @@
         <h2 id="ty-title"></h2>
         <p class="ty-sub" id="ty-sub"></p>
         <div class="ty-info" id="ty-info"></div>
-        <a href="./#apply" class="ty-back" id="ty-back">LPページへ戻る</a>
+        <a href="./#apply" class="ty-back" id="ty-back">LPãã¼ã¸ã¸æ»ã</a>
       </div>
     </div>
   </div>
-  <!-- モバイル専用ボタンバー（ヘッダー直下・横100%） -->
+  <!-- ã¢ãã¤ã«å°ç¨ãã¿ã³ãã¼ï¼ãããã¼ç´ä¸ã»æ¨ª100%ï¼ -->
   <div class="header-btn-bar">
-    <a href="#apply" class="btn-bar-entry" id="btn-bar-entry">無料で申し込む</a>
+    <a href="#apply" class="btn-bar-entry" id="btn-bar-entry">ç¡æã§ç³ãè¾¼ã</a>
   </div>
   <nav class="header-bottom" id="mobile-nav">
     <div class="nav-container" id="nav-links"></div>
@@ -1010,7 +1010,7 @@
           </div>
         </div>
       </div>
-      <a href="#apply" class="btn-cta pulse reveal delay-100" id="hero-cta-text">お申し込みはこちら</a>
+      <a href="#apply" class="btn-cta pulse reveal delay-100" id="hero-cta-text">ãç³ãè¾¼ã¿ã¯ãã¡ã</a>
     </div>
     <div class="hero-visual-content reveal-right">
       <div class="hero-images-wrapper">
@@ -1027,7 +1027,7 @@
 </section>
 
 <!-- ========================================
-     CONSULT (無料個別相談会)
+     CONSULT (ç¡æåå¥ç¸è«ä¼)
      ======================================== -->
 <section id="consult">
   <div class="container">
@@ -1039,7 +1039,7 @@
       <div id="consult-body"></div>
       <div style="text-align:center;margin-top:28px">
         <a id="consult-btn" href="#apply" class="btn-cta pulse" style="display:none">
-          <span id="consult-btn-text">無料で申し込む</span>
+          <span id="consult-btn-text">ç¡æã§ç³ãè¾¼ã</span>
         </a>
       </div>
     </div>
@@ -1047,7 +1047,7 @@
 </section>
 
 <!-- ========================================
-     ISSUES (お悩みチェック)
+     ISSUES (ãæ©ã¿ãã§ãã¯)
      ======================================== -->
 <section class="issue-section bg-alt" id="issues">
   <div class="container">
@@ -1062,7 +1062,7 @@
       <ul class="issue-checklist" id="issues-list"></ul>
     </div>
     <div style="text-align:center">
-      <a href="#apply" class="btn-cta reveal">無料で申し込む</a>
+      <a href="#apply" class="btn-cta reveal">ç¡æã§ç³ãè¾¼ã</a>
     </div>
   </div>
 </section>
@@ -1070,7 +1070,7 @@
 
 
 <!-- ========================================
-     PROGRAM (プログラム詳細・日程)
+     PROGRAM (ãã­ã°ã©ã è©³ç´°ã»æ¥ç¨)
      ======================================== -->
 <section class="program-section" id="program">
   <div class="container">
@@ -1092,7 +1092,7 @@
 </section>
 
 <!-- ========================================
-     INSTRUCTOR (講師紹介)
+     INSTRUCTOR (è¬å¸«ç´¹ä»)
      ======================================== -->
 <section class="speakers-section" id="instructor">
   <div class="container">
@@ -1106,7 +1106,7 @@
 
 
 <!-- ========================================
-     COMPANY (会社概要)
+     COMPANY (ä¼ç¤¾æ¦è¦)
      ======================================== -->
 <section class="company-section" id="company">
   <div class="container">
@@ -1135,7 +1135,7 @@
     </h2>
     <div class="scroll-box reveal" id="cancel-body"></div>
     <div class="btn-cta-wrap reveal">
-      <a href="#apply" class="btn-cta pulse">無料で申し込む</a>
+      <a href="#apply" class="btn-cta pulse">ç¡æã§ç³ãè¾¼ã</a>
     </div>
     <div id="cancel-contact-box" style="margin-top:32px" class="reveal">
       <h3 style="font-size:var(--fs-h3);margin-bottom:12px" id="contact-title"></h3>
@@ -1157,12 +1157,12 @@
 
     <p style="text-align:center; font-size:0.88rem; color:rgba(255,255,255,.8); margin-bottom:18px;">
       <a href="https://ws-partners.com.sg/privacy/" target="_blank" rel="noopener"
-         style="color:#7ecfff; text-decoration:underline;">利用規約・プライバシーポリシー</a>をお読みの上、同意して送信してください。
+         style="color:#7ecfff; text-decoration:underline;">å©ç¨è¦ç´ã»ãã©ã¤ãã·ã¼ããªã·ã¼</a>ããèª­ã¿ã®ä¸ãåæãã¦éä¿¡ãã¦ãã ããã
     </p>
 
     <div class="form-wrapper">
       <!-- Loading state -->
-      <div id="form-loading">フォームを読み込み中...</div>
+      <div id="form-loading">ãã©ã¼ã ãèª­ã¿è¾¼ã¿ä¸­...</div>
 
       <!-- Google Form (primary) -->
       <div id="google-form-wrap" style="display:none">
@@ -1173,8 +1173,8 @@
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          title="申込フォーム"
-        >読み込んでいます…</iframe>
+          title="ç³è¾¼ãã©ã¼ã "
+        >èª­ã¿è¾¼ãã§ãã¾ãâ¦</iframe>
       </div>
 
       <!-- HubSpot Form (fallback) -->
@@ -1183,15 +1183,15 @@
       </div>
     </div>
 
-      <!-- メール申込み案内（セキュリティ上Googleフォームが表示されない方向け） -->
+      <!-- ã¡ã¼ã«ç³è¾¼ã¿æ¡åï¼ã»ã­ã¥ãªãã£ä¸Googleãã©ã¼ã ãè¡¨ç¤ºãããªãæ¹åãï¼ -->
       <div style="margin-top:32px; padding:20px 24px; background:#f0f4ff; border-radius:12px; border-left:4px solid #0050b3; max-width:680px; margin-left:auto; margin-right:auto;">
-        <p style="font-size:0.9rem; color:#1a365d; font-weight:700; margin-bottom:8px;">🔒 フォームが表示されない方へ（企業のセキュリティ設定等）</p>
+        <p style="font-size:0.9rem; color:#1a365d; font-weight:700; margin-bottom:8px;">ð ãã©ã¼ã ãè¡¨ç¤ºãããªãæ¹ã¸ï¼ä¼æ¥­ã®ã»ã­ã¥ãªãã£è¨­å®ç­ï¼</p>
         <p style="font-size:0.88rem; color:#2d3748; margin-bottom:12px;">
-          下の「メールで申し込む」ボタンをクリックすると、メール本文にフォームと同じ質問項目が自動で挿入されます。各項目にご回答の上、送信してください。折り返しご連絡いたします。
+          ä¸ã®ãã¡ã¼ã«ã§ç³ãè¾¼ãããã¿ã³ãã¯ãªãã¯ããã¨ãã¡ã¼ã«æ¬æã«ãã©ã¼ã ã¨åãè³ªåé ç®ãèªåã§æ¿å¥ããã¾ããåé ç®ã«ãåç­ã®ä¸ãéä¿¡ãã¦ãã ãããæãè¿ããé£çµ¡ãããã¾ãã
         </p>
         <a href="mailto:support@ws-partners.com.sg?cc=wsp-sales@ws-partners.com.sg%3Bytomozawa@ws-partners.com.sg%3Bkyokoyama@ws-partners.com.sg&subject=%E3%81%8A%E7%94%B3%E3%81%97%E8%BE%BC%E3%81%BF%20-%20%E3%80%90%E3%80%8E%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2%E4%BA%BA%E9%83%A8%E4%B8%8B%E3%81%8C%E5%A4%89%E3%82%8F%E3%82%8B%EF%BC%81%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%EF%BC%93%E3%81%A4%E3%81%AE%E7%A7%98%E8%A8%A3%E3%80%8F%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%EF%BC%8F%E7%A0%94%E4%BF%AE%20%EF%BC%88%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2%EF%BC%89%282026.6%29%E3%80%91&body=%E2%96%BC%E4%BB%A5%E4%B8%8B%E3%81%AE%E9%A0%85%E7%9B%AE%E3%82%92%E3%81%94%E8%A8%98%E5%85%A5%E3%81%AE%E4%B8%8A%E3%80%81%E3%81%93%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E9%80%81%E4%BF%A1%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%0A%E2%80%BB%E3%81%AF%E5%BF%85%E9%A0%88%E9%A0%85%E7%9B%AE%E3%81%A7%E3%81%99%E3%80%82%0A--------------------%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%88%E5%A7%93%EF%BC%89%E2%80%BB%EF%BC%9A%0A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%88%E5%90%8D%EF%BC%89%E2%80%BB%EF%BC%9A%0A%0A%E4%BC%9A%E7%A4%BE%E5%90%8D%20%E2%80%BB%EF%BC%9A%0A%0A%E5%BD%B9%E8%81%B7%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%20Managing%20Director%EF%BC%88MD%E3%83%BB%E7%8F%BE%E6%B3%95%E7%A4%BE%E9%95%B7%EF%BC%89%0A%E3%80%80%E2%96%A1%20Director%EF%BC%88%E5%8F%96%E7%B7%A0%E5%BD%B9%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20General%20Manager%EF%BC%88GM%E3%83%BB%E9%83%A8%E9%95%B7%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20Senior%20Manager%EF%BC%88%E6%AC%A1%E9%95%B7%E3%83%BB%E9%83%A8%E9%96%80%E8%B2%AC%E4%BB%BB%E8%80%85%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20Manager%EF%BC%88%E8%AA%B2%E9%95%B7%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20Assistant%20Manager%EF%BC%88%E4%BF%82%E9%95%B7%E3%82%AF%E3%83%A9%E3%82%B9%EF%BC%89%0A%E3%80%80%E2%96%A1%20Staff%20/%20Engineer%EF%BC%88%E4%B8%80%E8%88%AC%E8%81%B7%E3%83%BB%E6%8A%80%E8%A1%93%E8%81%B7%EF%BC%89%0A%E3%80%80%E2%96%A1%20Others%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89%0A%0A%E7%8F%BE%E5%9C%B0%E6%B3%95%E4%BA%BA%E3%81%AE%E5%BE%93%E6%A5%AD%E5%93%A1%E6%95%B0%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%201%E3%80%9C10%E5%90%8D%0A%E3%80%80%E2%96%A1%2011%E3%80%9C30%E5%90%8D%0A%E3%80%80%E2%96%A1%2031%E3%80%9C100%E5%90%8D%0A%E3%80%80%E2%96%A1%20101%E3%80%9C200%E5%90%8D%0A%E3%80%80%E2%96%A1%20201%E3%80%9C500%E5%90%8D%0A%E3%80%80%E2%96%A1%20501%E3%80%9C1000%E5%90%8D%0A%E3%80%80%E2%96%A1%201001%E5%90%8D%E4%BB%A5%E4%B8%8A%0A%0A%E7%8F%BE%E5%9C%B0%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BA%BA%E6%95%B0%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%200%E5%90%8D%0A%E3%80%80%E2%96%A1%201%E3%80%9C2%E5%90%8D%0A%E3%80%80%E2%96%A1%203%E3%80%9C5%E5%90%8D%0A%E3%80%80%E2%96%A1%206%E3%80%9C10%E5%90%8D%0A%E3%80%80%E2%96%A1%2011%E5%90%8D%E4%BB%A5%E4%B8%8A%0A%0A%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%20%E2%80%BB%EF%BC%9A%0A%0A%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7%20%E2%80%BB%EF%BC%9A%0A%0A%E6%9C%AC%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E7%9F%A5%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F%E3%81%8B%EF%BC%9F%20%E2%80%BB%EF%BC%9A%0A%E3%80%80%E2%96%A1%20WS%20PARTNERS%E3%81%8B%E3%82%89%E3%81%AEE%E3%83%A1%E3%83%BC%E3%83%AB%0A%E3%80%80%E2%96%A1%20NNA%E3%81%8B%E3%82%89%E3%81%AEE%E3%83%A1%E3%83%BC%E3%83%AB%0A%E3%80%80%E2%96%A1%20JACTIM%E3%81%8B%E3%82%89%E3%81%AEE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%84%E6%A1%88%E5%86%85%0A%E3%80%80%E2%96%A1%20MTown%20%E3%81%AEE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%84%E8%A8%98%E4%BA%8B%E3%82%92%E8%A6%8B%E3%81%9F%0A%E3%80%80%E2%96%A1%20Google%E3%81%AA%E3%81%A9%E3%81%AE%E6%A4%9C%E7%B4%A2%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%0A%E3%80%80%E2%96%A1%20WS%20PARTNERS%E3%81%AEWeb%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E8%A6%8B%E3%81%9F%0A%E3%80%80%E2%96%A1%20%E7%A4%BE%E5%86%85%E3%81%AE%E5%88%A5%E3%81%AE%E6%96%B9%E3%81%8B%E3%82%89%E3%81%AE%E6%A1%88%E5%86%85%E3%83%BB%E7%B4%B9%E4%BB%8B%0A%E3%80%80%E2%96%A1%20%E3%81%9D%E3%81%AE%E4%BB%96%0A%0A--------------------%0A%E3%80%90%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E9%85%8D%E4%BF%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%91%EF%BC%88%E4%BB%BB%E6%84%8F%EF%BC%89%0A%E9%85%8D%E4%BF%A1%E3%82%92%E5%B8%8C%E6%9C%9B%E3%81%97%E3%81%AA%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AF%E3%80%8C%E9%85%8D%E4%BF%A1%E4%B8%8D%E8%A6%81%E3%80%8D%E3%81%A8%E3%81%94%E8%A8%98%E5%85%A5%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%0A%E3%81%94%E5%9B%9E%E7%AD%94%EF%BC%9A%0A%0A--------------------%0A"
            style="display:inline-block; background:#0050b3; color:#fff; font-weight:700; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:0.9rem;">
-          ✉️ メールで申し込む
+          âï¸ ã¡ã¼ã«ã§ç³ãè¾¼ã
         </a>
       </div>
 
@@ -1205,8 +1205,9 @@
   <div class="container">
     <div style="display:flex;justify-content:center;align-items:center;gap:30px;margin-bottom:25px;flex-wrap:wrap">
       <img src="/assets/logos/logo.svg" alt="WS PARTNERS" style="height:40px;object-fit:contain">
-      <img src="/assets/logos/logo_willseed.png" alt="株式会社ウィル・シード" style="height:40px;object-fit:contain">
-      <img src="/assets/logos/logo_kawaijuku.png" alt="河合塾グループ" style="height:40px;object-fit:contain">
+      <img src="/assets/logos/indonesia/logo.svg" alt="WS PARTNERS Indonesia" style="height:40px;object-fit:contain">
+      <img src="/assets/logos/logo_willseed.png" alt="æ ªå¼ä¼ç¤¾ã¦ã£ã«ã»ã·ã¼ã" style="height:40px;object-fit:contain">
+      <img src="/assets/logos/logo_kawaijuku.png" alt="æ²³åå¡¾ã°ã«ã¼ã" style="height:40px;object-fit:contain">
     </div>
     <div class="footer-links" id="footer-links"></div>
     <p id="footer-copy" style="color:#333"></p>
@@ -1215,7 +1216,7 @@
 </footer>
 
 <!-- Back-to-top button -->
-<button class="back-to-top" aria-label="トップに戻る">↑</button>
+<button class="back-to-top" aria-label="ãããã«æ»ã">â</button>
 
 <!-- ========================================
      SCRIPTS
@@ -1271,7 +1272,7 @@
     if (c.header) {
       setEl('header-phone', c.header.phone || '');
       setEl('header-hours', c.header.hours || '');
-      setEl('header-cta-text', c.header.cta_text || '無料で申し込む');
+      setEl('header-cta-text', c.header.cta_text || 'ç¡æã§ç³ãè¾¼ã');
     }
 
     /* Nav */
@@ -1286,9 +1287,9 @@
     if (c.hero) {
       setEl('hero-subtitle', c.hero.subtitle || '');
       setEl('hero-title',    c.hero.title    || '');
-      setEl('hero-date-label', c.hero.date_label || '【日時】');
+      setEl('hero-date-label', c.hero.date_label || 'ãæ¥æã');
       document.getElementById('hero-date').innerHTML = c.hero.date || '';
-      setEl('hero-deadline-label', c.hero.deadline_label || '【参加費】');
+      setEl('hero-deadline-label', c.hero.deadline_label || 'ãåå è²»ã');
       document.getElementById('hero-deadline').innerHTML = c.hero.deadline || '';
       var tgtRow = document.getElementById('hero-target-row');
       if (c.hero.target_label && tgtRow) { tgtRow.style.display=''; setEl('hero-target-label', c.hero.target_label); document.getElementById('hero-target').innerHTML = c.hero.target || ''; }
@@ -1297,7 +1298,7 @@
       var clsRow = document.getElementById('hero-close-row');
       if (c.hero.close_label && clsRow) { clsRow.style.display=''; setEl('hero-close-label', c.hero.close_label); document.getElementById('hero-close').innerHTML = c.hero.close || ''; }
       setEl('hero-note',           c.hero.note       || '');
-      setEl('hero-cta-text',       c.hero.cta_text   || '無料で申し込む');
+      setEl('hero-cta-text',       c.hero.cta_text   || 'ç¡æã§ç³ãè¾¼ã');
       setEl('badge-en', c.hero.badge_en || '');
       setEl('badge-ja', c.hero.badge_ja || '');
       if (c.hero.bg_image)   setStyle('hero-bg', 'backgroundImage', 'url(' + c.hero.bg_image + ')');
@@ -1315,7 +1316,7 @@
         var btn = document.getElementById('consult-btn');
         btn.href = d.btn_url;
         btn.style.display = 'inline-flex';
-        setEl('consult-btn-text', d.btn_text || '無料相談を予約する');
+        setEl('consult-btn-text', d.btn_text || 'ç¡æç¸è«ãäºç´ãã');
       }
     });
 
@@ -1339,13 +1340,13 @@
     renderSection('program', c.program, function(d){
       setEl('program-en',    d.en    || '');
       setEl('program-title', d.title || '');
-      setEl('program-detail-title',   d.detail_title   || 'プログラム概要');
-      setEl('program-schedule-title', d.schedule_title || '開催スケジュール');
+      setEl('program-detail-title',   d.detail_title   || 'ãã­ã°ã©ã æ¦è¦');
+      setEl('program-schedule-title', d.schedule_title || 'éå¬ã¹ã±ã¸ã¥ã¼ã«');
       var ul = document.getElementById('program-details');
       if (ul && d.details) {
         ul.innerHTML = d.details.map(function(item){
           return '<li style="padding:6px 0;border-bottom:1px solid #e2e8f0;font-size:var(--fs-body)">'
-               + '<strong>' + (item.label || '') + '</strong>　' + (item.value || '')
+               + '<strong>' + (item.label || '') + '</strong>ã' + (item.value || '')
                + '</li>';
         }).join('');
       }
@@ -1391,7 +1392,7 @@
         info.innerHTML = '<h3 style="font-size:var(--fs-h3);margin-bottom:12px">' + (d.name || '') + '</h3>'
           + (d.items || []).map(function(item){
               return '<p style="font-size:var(--fs-body);color:var(--text-muted);margin-bottom:6px">'
-                   + '<strong>' + (item.label || '') + '</strong>　' + (item.value || '') + '</p>';
+                   + '<strong>' + (item.label || '') + '</strong>ã' + (item.value || '') + '</p>';
             }).join('');
       }
     });
@@ -1402,14 +1403,14 @@
       setEl('cancel-en',    d.en    || '');
       setEl('cancel-title', d.title || '');
       setEl('cancel-body',  d.body  || '');
-      setEl('contact-title', (c.contact && c.contact.title) || 'お問い合わせ');
+      setEl('contact-title', (c.contact && c.contact.title) || 'ãåãåãã');
       setEl('contact-body',  (c.contact && c.contact.body)  || '');
     });
 
     /* Apply */
     if (c.apply) {
       setEl('apply-en',    c.apply.en    || '');
-      setEl('apply-title', c.apply.title || 'お申し込みフォーム');
+      setEl('apply-title', c.apply.title || 'ãç³ãè¾¼ã¿ãã©ã¼ã ');
       setEl('apply-body',  c.apply.body  || '');
     }
 
@@ -1421,7 +1422,7 @@
         }).join('');
       }
       setEl('footer-address', c.footer.address || '');
-      setEl('footer-copy',    c.footer.copyright || '© WS PARTNERS PTE LTD');
+      setEl('footer-copy',    c.footer.copyright || 'Â© WS PARTNERS PTE LTD');
     }
 
     /* Re-init scroll animations after DOM updates */
@@ -1447,14 +1448,14 @@
 
     /* -- Try Google Form first -- */
     if (forms.google_url) {
-      /* 別タブバナー */
+      /* å¥ã¿ãããã¼ */
       var directUrl = forms.google_url.replace('?embedded=true&', '?').replace('?embedded=true', '');
       var fallbackBanner = document.createElement('div');
       fallbackBanner.style.cssText = 'text-align:center; margin-bottom:16px; padding:14px 20px; background:#fff8ec; border-radius:10px; border:1px solid #f5c97a; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;';
       fallbackBanner.innerHTML =
-        '<span style="color:#7a5000; font-size:0.9rem;">&#x26A0;&#xFE0F; フォームが表示されない場合（Edge・Safari等）はこちら</span>' +
+        '<span style="color:#7a5000; font-size:0.9rem;">&#x26A0;&#xFE0F; ãã©ã¼ã ãè¡¨ç¤ºãããªãå ´åï¼Edgeã»Safariç­ï¼ã¯ãã¡ã</span>' +
         '<a href="' + directUrl + '" target="_blank" rel="noopener" ' +
-        'style="display:inline-block; background:#f39c12; color:#fff; font-weight:700; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:0.95rem; white-space:nowrap;">&#x1F4DD; 別タブで申込フォームを開く</a>';
+        'style="display:inline-block; background:#f39c12; color:#fff; font-weight:700; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:0.95rem; white-space:nowrap;">&#x1F4DD; å¥ã¿ãã§ç³è¾¼ãã©ã¼ã ãéã</a>';
       googleWrap.insertBefore(fallbackBanner, googleWrap.firstChild);
 
       /* ---- New-tab submission detection ---- */
@@ -1465,27 +1466,27 @@
         var lang = langMatch ? langMatch[1] : 'ja';
         var tyI18n = {
           ja: {
-            title: 'のお申し込みを受け付けました',
-            titleDefault: 'お申し込みありがとうございます。',
-            sub: 'ご登録いただいたインドネシア人受講者様のメールアドレスへ、受付完了メールを送信いたしました。',
-            infoHtml: '<p style="margin:0 0 10px;">当日の視聴には、以下のURLからZoomへの事前登録が必要です。<br>リンク先よりご登録をお願いいたします。</p>' + '<p style="margin:0 0 10px;"><strong>Zoom事前登録URL：</strong><br><a href="https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg" target="_blank" rel="noopener" style="color:#0050b3;word-break:break-all;">https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg</a></p>' + '<p style="font-size:0.82rem;color:#888;margin:0;">※メールが届かない場合は、迷惑メールフォルダをご確認ください。<br>※本案内は、日本人上司の方のメールアドレスには配信されません。</p>',
-            backBtn: 'LPページへ戻る'
+            title: 'ã®ãç³ãè¾¼ã¿ãåãä»ãã¾ãã',
+            titleDefault: 'ãç³ãè¾¼ã¿ãããã¨ããããã¾ãã',
+            sub: 'ãç»é²ããã ããã¤ã³ããã·ã¢äººåè¬èæ§ã®ã¡ã¼ã«ã¢ãã¬ã¹ã¸ãåä»å®äºã¡ã¼ã«ãéä¿¡ãããã¾ããã',
+            infoHtml: '<p style="margin:0 0 10px;">å½æ¥ã®è¦è´ã«ã¯ãä»¥ä¸ã®URLããZoomã¸ã®äºåç»é²ãå¿è¦ã§ãã<br>ãªã³ã¯åãããç»é²ããé¡ããããã¾ãã</p>' + '<p style="margin:0 0 10px;"><strong>Zoomäºåç»é²URLï¼</strong><br><a href="https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg" target="_blank" rel="noopener" style="color:#0050b3;word-break:break-all;">https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg</a></p>' + '<p style="font-size:0.82rem;color:#888;margin:0;">â»ã¡ã¼ã«ãå±ããªãå ´åã¯ãè¿·æã¡ã¼ã«ãã©ã«ãããç¢ºèªãã ããã<br>â»æ¬æ¡åã¯ãæ¥æ¬äººä¸å¸ã®æ¹ã®ã¡ã¼ã«ã¢ãã¬ã¹ã«ã¯éä¿¡ããã¾ããã</p>',
+            backBtn: 'LPãã¼ã¸ã¸æ»ã'
           },
           id: {
             title: ' Telah Diterima',
             titleDefault: 'Terima kasih atas pendaftaran Anda.',
             sub: 'Email konfirmasi penerimaan telah dikirimkan ke alamat email peserta Indonesia yang terdaftar.',
-            infoHtml: '<p style="margin:0 0 10px;">Untuk menonton pada hari acara, Anda perlu mendaftar terlebih dahulu melalui Zoom dengan menggunakan URL berikut.<br>Silakan melanjutkan pendaftaran melalui tautan di bawah ini.</p>' + '<p style="margin:0 0 10px;"><strong>URL Pendaftaran Zoom:</strong><br><a href="https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg" target="_blank" rel="noopener" style="color:#0050b3;word-break:break-all;">https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg</a></p>' + '<p style="font-size:0.82rem;color:#888;margin:0;">※ Jika email tidak diterima, silakan periksa folder spam Anda.<br>※ Informasi ini tidak dikirimkan ke alamat email atasan (staf Jepang).</p>',
+            infoHtml: '<p style="margin:0 0 10px;">Untuk menonton pada hari acara, Anda perlu mendaftar terlebih dahulu melalui Zoom dengan menggunakan URL berikut.<br>Silakan melanjutkan pendaftaran melalui tautan di bawah ini.</p>' + '<p style="margin:0 0 10px;"><strong>URL Pendaftaran Zoom:</strong><br><a href="https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg" target="_blank" rel="noopener" style="color:#0050b3;word-break:break-all;">https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg</a></p>' + '<p style="font-size:0.82rem;color:#888;margin:0;">â» Jika email tidak diterima, silakan periksa folder spam Anda.<br>â» Informasi ini tidak dikirimkan ke alamat email atasan (staf Jepang).</p>',
             backBtn: 'Kembali ke halaman ini'
           },
           th: {
-            title: ' ได้รับการสมัครของคุณแล้ว',
-            titleDefault: 'รับการสมัครของคุณแล้ว',
-            sub: 'ขอบคุณที่กรอกแบบฟอร์ม เราจะส่งข้อมูล Zoom และรายละเอียดอื่น ๆ ทางอีเมล',
-            emailHead: 'อีเมลยืนยัน',
-            emailBody: 'เราได้ส่งอีเมลยืนยันอัตโนมัติไปยังที่อยู่อีเมลของคุณแล้ว หากยังไม่ได้รับ โปรดตรวจสอบในโฟลเดอร์สแปม',
-            contactHead: 'ติดต่อเรา',
-            backBtn: 'กลับไปที่หน้าหลัก'
+            title: ' à¹à¸à¹à¸£à¸±à¸à¸à¸²à¸£à¸ªà¸¡à¸±à¸à¸£à¸à¸­à¸à¸à¸¸à¸à¹à¸¥à¹à¸§',
+            titleDefault: 'à¸£à¸±à¸à¸à¸²à¸£à¸ªà¸¡à¸±à¸à¸£à¸à¸­à¸à¸à¸¸à¸à¹à¸¥à¹à¸§',
+            sub: 'à¸à¸­à¸à¸à¸¸à¸à¸à¸µà¹à¸à¸£à¸­à¸à¹à¸à¸à¸à¸­à¸£à¹à¸¡ à¹à¸£à¸²à¸à¸°à¸ªà¹à¸à¸à¹à¸­à¸¡à¸¹à¸¥ Zoom à¹à¸¥à¸°à¸£à¸²à¸¢à¸¥à¸°à¹à¸­à¸µà¸¢à¸à¸­à¸·à¹à¸ à¹ à¸à¸²à¸à¸­à¸µà¹à¸¡à¸¥',
+            emailHead: 'à¸­à¸µà¹à¸¡à¸¥à¸¢à¸·à¸à¸¢à¸±à¸',
+            emailBody: 'à¹à¸£à¸²à¹à¸à¹à¸ªà¹à¸à¸­à¸µà¹à¸¡à¸¥à¸¢à¸·à¸à¸¢à¸±à¸à¸­à¸±à¸à¹à¸à¸¡à¸±à¸à¸´à¹à¸à¸¢à¸±à¸à¸à¸µà¹à¸­à¸¢à¸¹à¹à¸­à¸µà¹à¸¡à¸¥à¸à¸­à¸à¸à¸¸à¸à¹à¸¥à¹à¸§ à¸«à¸²à¸à¸¢à¸±à¸à¹à¸¡à¹à¹à¸à¹à¸£à¸±à¸ à¹à¸à¸£à¸à¸à¸£à¸§à¸à¸ªà¸­à¸à¹à¸à¹à¸à¸¥à¹à¸à¸­à¸£à¹à¸ªà¹à¸à¸¡',
+            contactHead: 'à¸à¸´à¸à¸à¹à¸­à¹à¸£à¸²',
+            backBtn: 'à¸à¸¥à¸±à¸à¹à¸à¸à¸µà¹à¸«à¸à¹à¸²à¸«à¸¥à¸±à¸'
           }
         };
         var t = tyI18n[lang] || tyI18n['ja'];
@@ -1511,7 +1512,7 @@
         if (!googleLoaded) showHubspot();
       }, TIMEOUT_MS);
 
-      /* タブ切り替えによる誤検知防止: ページが再表示された時刻を記録 */
+      /* ã¿ãåãæ¿ãã«ããèª¤æ¤ç¥é²æ­¢: ãã¼ã¸ãåè¡¨ç¤ºãããæå»ãè¨é² */
       var lastPageVisibleAt = 0;
       document.addEventListener('visibilitychange', function () {
         if (!document.hidden) lastPageVisibleAt = Date.now();
@@ -1526,8 +1527,8 @@
           formLoading.style.display  = 'none';
           googleWrap.style.display   = 'block';
         } else {
-          /* Second load = user submitted the form → redirect to thank-you */
-          /* ただしタブ切り替え後2秒以内のreloadは誤検知のため無視 */
+          /* Second load = user submitted the form â redirect to thank-you */
+          /* ãã ãã¿ãåãæ¿ãå¾2ç§ä»¥åã®reloadã¯èª¤æ¤ç¥ã®ããç¡è¦ */
           if (Date.now() - lastPageVisibleAt < 2000) return;
           window.location.href = thankYouUrl;
         }
@@ -1548,7 +1549,7 @@
       hubspotWrap.style.display  = 'block';
 
       if (!forms.hubspot_portal_id || !forms.hubspot_form_id) return;
-      if (forms.hubspot_portal_id.indexOf('※') !== -1) return; /* not configured yet */
+      if (forms.hubspot_portal_id.indexOf('â»') !== -1) return; /* not configured yet */
 
       /* Load HubSpot embed script */
       var hs = document.createElement('script');
@@ -1638,7 +1639,7 @@
 })();
 
 // ===================================
-// ハンバーガーメニュー（モバイル用）
+// ãã³ãã¼ã¬ã¼ã¡ãã¥ã¼ï¼ã¢ãã¤ã«ç¨ï¼
 // ===================================
 (function () {
   var hamburgerBtn = document.getElementById('hamburger-btn');
@@ -1649,7 +1650,7 @@
     hamburgerBtn.classList.toggle('active');
     mobileNav.classList.toggle('menu-open');
   });
-  // ナビリンクをタップしたらメニューを閉じる
+  // ãããªã³ã¯ãã¿ãããããã¡ãã¥ã¼ãéãã
   mobileNav.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
       hamburgerBtn.classList.remove('active');
@@ -1657,7 +1658,7 @@
     });
   });
 
-  // ボタンバーの言語スイッチを config と同期
+  // ãã¿ã³ãã¼ã®è¨èªã¹ã¤ããã config ã¨åæ
   var cfg = window.LP_CONFIG || {};
   var barEntry = document.getElementById('btn-bar-entry');
   if (barLang && cfg.header && cfg.header.langSwitchUrl) {
