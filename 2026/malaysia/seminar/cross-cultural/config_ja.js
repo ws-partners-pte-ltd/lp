@@ -33,7 +33,7 @@ window.LP_CONFIG = {
     img_main: 'images/photo_trainer_kato.jpg',
     img_sub1: 'images/photo_trainer_konishi.png',
     img_sub2: '',
-    subtitle: '第一部：マレーシア人部下が変わる！マネジメント３つの秘訣<br>第二部：「日本式」が通じない？ マレーシア健康経営のリアル',
+    subtitle: '第一部：マレーシア人部下が変わる！マネジメントの秘訣<br>第二部：「日本式」が通じない？ マレーシア健康経営のリアル',
     title: '無料合同セミナー：<br>マレーシア人材マネジメント×健康経営の実践知',
     format_label: '【会場】',
     format: 'マレーシア日本人商工会議所（JACTIM）21階',
@@ -53,7 +53,7 @@ window.LP_CONFIG = {
   consult: {
     en: 'ABOUT THIS SEMINAR',
     title: '無料合同セミナー：マレーシア人材マネジメント×健康経営の実践知',
-    body: `<h3 style="font-size:1.1rem;font-weight:700;color:var(--primary);border-left:4px solid var(--primary);padding-left:12px;margin:0 0 16px 0">第一部：マレーシア人部下が変わる！マネジメント３つの秘訣</h3>
+    body: `<h3 style="font-size:1.1rem;font-weight:700;color:var(--primary);border-left:4px solid var(--primary);padding-left:12px;margin:0 0 16px 0">第一部：マレーシア人部下が変わる！マネジメントの秘訣</h3>
 <p style="font-size:1.05rem;line-height:1.8">あなたのマレーシア人部下のパフォーマンスに、100%満足していますか。<br>マレーシア人部下の指導に、悩みや課題はありませんか。</p>
 <p>現地でマネジメントをする日本人駐在員にとって、気を付けたいポイントがあります。</p>
 <p>本セミナーは、マレーシアをはじめとするASEAN地域で<strong>1,200名を超えるローカルマネジャーを育成</strong>してきた人材教育のエキスパート・WS PARTNERSが、マレーシア人をマネジメントする立場の方に贈る、異文化環境下でのマネジメントセミナーです。</p>
@@ -142,11 +142,10 @@ window.LP_CONFIG = {
     schedule: [
       {
         part: '15:00~16:00',
-        title: '第一部：マレーシア人部下が変わる！マネジメント３つの秘訣',
+        title: '第一部：マレーシア人部下が変わる！マネジメントの秘訣',
         body: `マレーシア人スタッフやマネジャーのよくある課題をもとに、<br><br>
 ・伝わらないのには理由があった！データで見る日本人とマレーシア人の文化的違い<br>
 ・マレーシア人を動かす指示の出し方の秘訣とは？<br>
-・マレーシア人が言われなくても動くようになる秘訣〜行動分析学の知恵〜<br>
 ・言った通りにやってくれないのは当たり前だった！ありがちな間違いとは？<br><br>
 など、弊社のプログラム実施と受講者の声から得た知見をもとに、皆さまがご活用いただけるツボをご紹介いたします。`
       },
@@ -186,7 +185,7 @@ window.LP_CONFIG = {
     title: 'マネジメントは、自然と身に付くスキルではありません',
     body: `<p>海外駐在員の支援と、現地人スタッフの育成を手掛けてきた弊社は、設立からの約10年間で延べ<strong>1,200名以上のASEAN地域のローカルマネジャー</strong>を育てる中で、日本人側に求められるマネジメントも追求してまいりました。</p>
 <p>今回のセミナーでは、根拠となるデータも示しながら、拠点の現地化を進めるうえでも欠かせない効果的な「マレーシア人材のマネジメントと育成」のヒントや事例をお伝えします。</p>
-<p>そして「明日から使えるコツ」として「マレーシア人が信頼する日本人駐在員」が実践している<strong>「指示の出し方〜３つのポイント〜」</strong>についても解説します。</p>
+<p>そして「明日から使えるコツ」として「マレーシア人が信頼する日本人駐在員」が実践している<strong>指示の出し方</strong>についても解説します。</p>
 <div style="background:rgba(243,156,18,.15);border:2px solid #f39c12;border-radius:10px;padding:20px 24px;margin:14px 0 18px 0">
   <p style="font-size:0.85rem;font-weight:700;color:#f39c12;letter-spacing:0.05em;margin:0 0 12px 0">── こんな方にぜひご参加ください ──</p>
   <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
