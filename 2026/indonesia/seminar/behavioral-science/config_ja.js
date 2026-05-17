@@ -273,7 +273,7 @@ window.LP_CONFIG = {
   },
 
   forms: {
-    google_url:        'PLACEHOLDER_GOOGLE_FORM_URL',
+    google_url:        'https://docs.google.com/forms/d/e/1FAIpQLSeaeGyIotlcsWFoweHhDfy-I_vq4oBnhc0kfcDyB5kyDM6Jsg/viewform?embedded=true',
     hubspot_portal_id: '※HubSpotのポータルIDをここに記入',
     hubspot_form_id:   '※HubSpotのインドネシア用フォームIDを登録後にここに追記',
     hubspot_region:    'na1',
