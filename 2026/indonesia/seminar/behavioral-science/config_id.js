@@ -6,8 +6,8 @@ window.LP_CONFIG = {
 
   meta: {
     lang: 'id',
-    title: 'Mengapa Sudah Bekerja Keras tapi Dianggap Tidak Berinisiatif? Memahami Mekanisme Tempat Kerja Perusahaan Jepang dengan Ilmu Perilaku ─ Seminar untuk Profesional Indonesia Sesi ke-2 | WS PARTNERS',
-    description: 'Seminar gratis sesi ke-2 setelah Sesi 1 dihadiri 222 peserta dengan tingkat kepuasan 8,80/10. Pahami mengapa perilaku yang benar justru tidak dihargai di tempat kerja Jepang, dan temukan cara mengubah situasi tersebut. 10 Juni 2026, online dalam Bahasa Indonesia.',
+    title: 'Mengapa Staf yang Bekerja Keras justru Tidak Berinisiatif? Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku ─ Sesi ke-2 | WS PARTNERS',
+    description: 'Seminar gratis sesi ke-2 setelah Sesi 1 dihadiri 222 peserta dengan tingkat kepuasan 8,80/10. Pelajari mengapa staf yang bekerja keras justru berhenti berinisiatif, dan temukan pendekatan praktis yang bisa langsung diterapkan sebagai manajer atau pemimpin. 10 Juni 2026, online dalam Bahasa Indonesia.',
     other_lang_label: '日本語',
     other_lang_url: '../ja/'
   },
@@ -32,23 +32,22 @@ window.LP_CONFIG = {
     img_main: '../images/photo_trainer_takaoka.jpg',
     img_sub1: '../images/online_training.jpg',
     img_sub2: '',
-    subtitle: 'Mengapa Sudah Bekerja Keras tapi Dianggap Tidak Berinisiatif?',
-    title: 'Memahami Mekanisme Tempat Kerja Perusahaan Jepang dengan Ilmu Perilaku ─ Sesi ke-2',
+    subtitle: 'Mengapa Staf yang Bekerja Keras justru Tidak Berinisiatif?',
+    title: 'Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku ─ Sesi ke-2',
     date_label: 'Tanggal & Waktu',
     date: '<strong>10 Juni 2026 (Rabu) pukul 15:00–16:30</strong>（Waktu Jakarta (WIB)）',
     deadline_label: 'Biaya Pendaftaran',
     deadline: '<strong style="font-size:1.3em;color:#fff">GRATIS</strong>',
     note: 'Diselenggarakan via <strong>Zoom</strong> (dalam Bahasa Indonesia)<br>Batas pendaftaran: pukul 10:00 WIB pada hari pelaksanaan',
     cta_text: 'Daftar Gratis',
-    badge_en: 'Sesi ke-2<br>Hadir Lagi!',
+    badge_en: '<strong style="font-size:1.15em;display:block">Sangat Diminati!</strong><strong style="font-size:1.3em;display:block">Sesi ke-2</strong><span style="font-size:0.82em;display:block;margin-top:2px">dalam Bahasa Indonesia</span>',
     badge_ja: 'Sesi 1:<br>91,5% hadir'
   },
 
   consult: {
     en: 'ABOUT THIS SEMINAR',
-    title: 'Sesi 1 mendapat respons yang jauh melampaui ekspektasi',
+    title: 'Sesi 1 yang diselenggarakan 13 Mei 2026<br>mendapat respons yang jauh melampaui ekspektasi',
     body: `<div style="background:linear-gradient(135deg,#0050b3 0%,#041434 100%);border-radius:16px;padding:24px 28px;margin-bottom:28px;text-align:center">
-  <p style="color:#00dfd8;font-size:0.85rem;font-weight:700;letter-spacing:.08em;margin:0 0 16px 0;text-transform:uppercase">🎉 Hasil Sesi 1 — 13 Mei 2026: "Memahami Standar Atasan Jepang"</p>
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
     <div style="background:rgba(255,255,255,.12);border-radius:10px;padding:14px 8px">
       <p style="color:#fff;font-size:clamp(1.5rem,3vw,2rem);font-weight:900;margin:0;line-height:1">243</p>
@@ -73,16 +72,17 @@ window.LP_CONFIG = {
 </div>
 <p>Mendapat sambutan yang luar biasa dari peserta Sesi 1, kami dengan bangga menghadirkan <strong>Sesi ke-2 di bulan Juni</strong>.</p>
 <div class="voice-box">
-<p>Pernahkah Anda merasakan hal-hal seperti ini saat bekerja di perusahaan Jepang?</p>
+<p>Sebagai manajer atau pemimpin, pernahkah Anda merasakan hal seperti ini?</p>
 <p>
-"<strong>Sudah melapor ke atasan, tapi malah dimarahi</strong>"<br>
-"<strong>Saat bertanya, atasan terlihat tidak suka</strong>"<br>
-"<strong>Sudah bekerja keras, tapi dibilang tidak berinisiatif</strong>"
+"<strong>Sudah membimbing dengan sepenuh hati, tapi staf tetap tidak bergerak sendiri</strong>"<br>
+"<strong>Sudah mendorong untuk melapor dan berkonsultasi, tapi tetap jarang ada yang datang</strong>"<br>
+"<strong>Meminta pendapat dalam rapat, tapi tidak ada yang mau bicara</strong>"
 </p>
 </div>
-<p>Ini bukan masalah sikap atau kemampuan Anda. Dari sudut pandang <strong>"ilmu perilaku"</strong>, ini adalah masalah mekanisme lingkungan kerja itu sendiri.</p>
+<p>Ini bukan masalah karakter atau semangat kerja staf. Dari sudut pandang <strong>"ilmu perilaku"</strong>, ini adalah masalah mekanisme lingkungan kerja itu sendiri.<br>
+Dan mekanisme itu — bisa Anda ubah, sebagai <strong>manajer dan pemimpin</strong>.</p>
 <div style="background:#fff7ed;border:3px solid #f39c12;border-radius:12px;padding:20px 24px;margin:16px 0 20px 0">
-  <p style="font-size:0.8rem;font-weight:700;color:#f39c12;letter-spacing:.08em;margin:0 0 12px 0;text-transform:uppercase">── Alasan mengapa inisiatif tidak berkembang menurut ilmu perilaku ──</p>
+  <p style="font-size:0.8rem;font-weight:700;color:#f39c12;letter-spacing:.08em;margin:0 0 12px 0;text-transform:uppercase">── Alasan mengapa inisiatif staf tidak berkembang menurut ilmu perilaku ──</p>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
     <div style="background:#fff;border-left:4px solid #f39c12;border-radius:6px;padding:14px 16px;display:flex;align-items:flex-start;gap:8px">
       <span style="color:#f39c12;font-size:1.2em;line-height:1;flex-shrink:0;font-weight:900">▶</span>
@@ -102,19 +102,19 @@ window.LP_CONFIG = {
     </div>
   </div>
 </div>
-<p>Dengan memahami hal-hal ini, Anda akan lebih jelas melihat "apa yang sebaiknya dilakukan" dalam situasi yang sama.</p>
+<p>Dengan memahami hal-hal ini, <strong>cara Anda berinteraksi dan berkomunikasi dengan staf</strong> akan berubah — bahkan dalam situasi yang sama.</p>
 <div class="seminar-detail-box">
 <p><strong>Dalam seminar ini</strong>, kami akan memperkenalkan sebagian dari pelatihan manajemen berbasis ilmu perilaku yang kami berikan kepada manajer Indonesia.</p>
 <div style="background:#e8f0fb;border:2px solid #0050b3;border-radius:10px;padding:18px 22px;margin-top:14px">
   <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px">
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>Mengapa "sudah bekerja keras tapi dianggap tidak berinisiatif" — dijelaskan melalui ilmu perilaku
+      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>Mengapa "sudah dibimbing tapi staf tetap tidak berinisiatif" — dijelaskan melalui ilmu perilaku
     </li>
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
       <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>"Hukuman tersembunyi" yang membuat laporan, konsultasi, dan pendapat semakin berkurang
     </li>
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>Kerangka praktis untuk menciptakan tempat kerja di mana perilaku yang benar mendapat penghargaan
+      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>Kerangka praktis untuk membangun tim yang bergerak dengan inisiatif sendiri
     </li>
   </ul>
 </div>
@@ -129,11 +129,11 @@ window.LP_CONFIG = {
     title: 'Apakah Anda Pernah Mengalami Ini?',
     img: '../images/workshop_scene.jpg',
     items: [
-      'Pernah melapor ke atasan lalu dimarahi — sejak saat itu, kalau ada masalah lebih baik diselesaikan sendiri dulu',
-      'Pernah menyampaikan pendapat dalam rapat tapi tidak ada respons — lalu berpikir, "sebaiknya diam saja"',
-      'Pernah bertanya ke atasan tapi ekspresinya tampak tidak suka — sekarang lebih memilih mengambil keputusan sendiri',
-      'Sudah bekerja keras setiap hari, tapi atasan Jepang berkata "tolong lebih berinisiatif"',
-      'Tidak benar-benar yakin apa yang disebut perilaku "baik" dan "buruk" di tempat kerja ini'
+      'Sudah memberikan arahan atau feedback dengan niat baik, tapi sejak itu staf jadi tidak mau bicara sama sekali',
+      'Menunggu laporan dari staf, tapi tidak ada yang masuk — baru tahu belakangan bahwa ternyata ada masalah',
+      'Meminta pendapat dalam rapat, tapi tidak ada yang angkat bicara — akhirnya hanya Anda yang berbicara terus',
+      'Staf yang sebenarnya bekerja keras justru semakin pasif dan menunggu perintah',
+      'Tidak yakin apakah cara Anda mendekati dan berkomunikasi dengan staf sudah tepat'
     ]
   },
 
@@ -147,7 +147,7 @@ window.LP_CONFIG = {
     detail_title: 'Informasi Seminar',
     schedule_title: 'Jadwal Acara (Waktu Jakarta / WIB)',
     details: [
-      { label: 'Judul',      value: 'Mengapa Sudah Bekerja Keras tapi Dianggap Tidak Berinisiatif? Memahami Mekanisme Tempat Kerja Perusahaan Jepang dengan Ilmu Perilaku ─ Sesi ke-2' },
+      { label: 'Judul',      value: 'Bagaimana Cara Menumbuhkan Inisiatif Bawahan & Junior? Rahasia Manajemen dengan Ilmu Perilaku ─ Sesi ke-2' },
       { label: 'Tanggal',    value: '10 Juni 2026 (Rabu)' },
       { label: 'Waktu',      value: 'Pukul 15:00–16:30 WIB (termasuk sesi tanya jawab)' },
       { label: 'Batas Daftar', value: 'Pukul 10:00 WIB pada hari pelaksanaan' },
@@ -164,9 +164,9 @@ window.LP_CONFIG = {
       },
       {
         part: '15:05–',
-        title: 'Mengapa Sudah Bekerja Keras tapi Dianggap Tidak Berinisiatif? ─ Memahami Mekanisme Tempat Kerja Perusahaan Jepang dengan Ilmu Perilaku',
+        title: 'Mengapa Staf yang Bekerja Keras justru Tidak Berinisiatif? ─ Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku',
         body: `・Mengapa "perilaku yang benar" justru perlahan menghilang dari diri staf — memahami struktur pengkondisian operan<br>
-・Bagaimana respons atasan Jepang mengubah perilaku staf — mekanisme penguatan dan pelemahan perilaku<br>
+・Bagaimana cara manajer berinteraksi mengubah perilaku staf — mekanisme penguatan dan pelemahan perilaku<br>
 ・Apa itu "hukuman tersembunyi" yang membuat laporan, konsultasi, dan pendapat berkurang?<br>
 ・Keamanan psikologis dan ilmu perilaku — penyebab sebenarnya penurunan performa<br>
 ・Kerangka praktis untuk membangun lingkungan kerja yang menumbuhkan inisiatif staf`
@@ -201,7 +201,8 @@ window.LP_CONFIG = {
     body: `<p>Setelah membaca sampai di sini, Anda mungkin sudah menyadarinya.</p>
 <p>"Tidak berinisiatif", "tidak melapor", "tidak berpendapat" —<br>
 ini bukan masalah karakter atau semangat kerja staf.</p>
-<p>Dari sudut pandang ilmu perilaku, ini adalah masalah <strong>"apa yang terjadi ketika staf melakukan perilaku yang benar"</strong>.</p>
+<p>Dari sudut pandang ilmu perilaku, ini adalah masalah <strong>"apa yang terjadi ketika staf melakukan perilaku yang benar"</strong>.<br>
+Dan "apa yang terjadi" itu — sangat dipengaruhi oleh <strong>cara Anda sebagai manajer atau pemimpin berinteraksi dengan mereka</strong>.</p>
 <p>Materi seminar ini bukan sekadar pengenalan teori.<br>
 Ini adalah bagian dari "pelatihan manajemen berbasis ilmu perilaku" yang sesungguhnya kami berikan kepada manajer Indonesia.</p>
 <p>Jika di tempat kerja Anda:</p>

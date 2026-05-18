@@ -6,8 +6,8 @@ window.LP_CONFIG = {
 
   meta: {
     lang: 'ja',
-    title: 'なぜ、頑張っているのに主体的じゃないと言われるのか？行動科学が明かす日系職場のしくみ ─インドネシア人向けセミナー第２弾 2026年6月10日 | WS PARTNERS',
-    description: '第１弾243名申込・参加率91.5%・満足度8.80/10の大好評を受け、第２弾開催決定。行動科学の視点から「なぜスタッフが主体的に動けなくなるのか」を解明。2026年6月10日（水）オンライン開催・インドネシア語実施。',
+    title: 'なぜ、頑張っているスタッフほど主体的に動かなくなるのか？行動科学が明かす部下・後輩マネジメントの秘訣 ─セミナー第２弾 2026年6月10日 | WS PARTNERS',
+    description: '第１弾243名申込・参加率91.5%・満足度8.80/10の大好評を受け、第２弾開催決定。行動科学の視点から「なぜスタッフが主体的に動けなくなるのか」を解明し、マネジャー・リーダーが実践できるアプローチをご紹介。2026年6月10日（水）オンライン開催・インドネシア語実施。',
     other_lang_label: 'Bahasa Indonesia',
     other_lang_url: '../id/'
   },
@@ -32,23 +32,22 @@ window.LP_CONFIG = {
     img_main: '../images/photo_trainer_takaoka.jpg',
     img_sub1: '../images/online_training.jpg',
     img_sub2: '',
-    subtitle: 'なぜ、頑張っているのに主体的じゃないと言われるのか？',
-    title: '行動科学が明かす日系職場のしくみ ─インドネシア人向けセミナー第２弾',
+    subtitle: 'なぜ、頑張っているスタッフほど主体的に動かなくなるのか？',
+    title: '行動科学が明かす部下・後輩マネジメントの秘訣 ─セミナー第２弾',
     date_label: '開催日時',
     date: '<strong>2026年6月10日（水）　15:00〜16:30</strong>（ジャカルタ時間）',
     deadline_label: '参加費',
     deadline: '<strong style="font-size:1.3em;color:#fff">無 料</strong>',
     note: 'Web会議ツール <strong>Zoom</strong> にて開催（インドネシア語で実施）<br>申込締切：当日午前10時（ジャカルタ時間）',
     cta_text: '無料で申し込む',
-    badge_en: '大好評<br>第２弾！',
+    badge_en: '<strong style="font-size:1.15em;display:block">大好評につき</strong><strong style="font-size:1.3em;display:block">第２弾！</strong><span style="font-size:0.82em;display:block;margin-top:2px">インドネシア語で実施</span>',
     badge_ja: '第1弾：<br>参加率91.5%'
   },
 
   consult: {
     en: 'ABOUT THIS SEMINAR',
-    title: '第１弾、想定を大きく超える反響をいただきました',
+    title: '2026年5月13日に開催した<br>第1弾「日本人上司との基準理解と実践」<br>想定を大きく超える反響をいただきました',
     body: `<div style="background:linear-gradient(135deg,#0050b3 0%,#041434 100%);border-radius:16px;padding:24px 28px;margin-bottom:28px;text-align:center">
-  <p style="color:#00dfd8;font-size:0.85rem;font-weight:700;letter-spacing:.08em;margin:0 0 16px 0;text-transform:uppercase">🎉 2026年5月13日 第1弾「日本人上司との基準理解と実践」開催実績</p>
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
     <div style="background:rgba(255,255,255,.12);border-radius:10px;padding:14px 8px">
       <p style="color:#fff;font-size:clamp(1.5rem,3vw,2rem);font-weight:900;margin:0;line-height:1">243名</p>
@@ -73,17 +72,18 @@ window.LP_CONFIG = {
 </div>
 <p>第１弾セミナーにご参加いただいた皆さまからの声を受け、<strong>６月に第２弾を開催</strong>します。</p>
 <div class="voice-box">
-<p>日系企業で働くインドネシア人マネジャーから、こんな声を聞いたことはありませんか。</p>
+<p>インドネシア人マネジャー・リーダーから、こんな声をよく耳にします。</p>
 <p>
-「<strong>ちゃんと報告しているのに、なぜか怒られる</strong>」<br>
-「<strong>質問すると、なぜか面倒くさそうにされる</strong>」<br>
-「<strong>一生懸命やっているのに、主体性がないと言われる</strong>」
+「<strong>一生懸命育てているのに、スタッフが自分から動かない</strong>」<br>
+「<strong>報告・相談を促しても、なかなか上がってこない</strong>」<br>
+「<strong>会議で発言を求めても、誰も口を開かない</strong>」
 </p>
 </div>
-<p>これらは、あなたの姿勢や能力の問題ではありません。<br>
-実は<strong>「行動科学」</strong>の視点から説明できる、職場環境のしくみの問題です。</p>
+<p>これらは、スタッフの性格や意欲の問題ではありません。<br>
+実は<strong>「行動科学」</strong>の視点から説明できる、職場環境のしくみの問題です。<br>
+そして、そのしくみを変えられるのは、<strong>マネジャー・リーダーのあなた自身</strong>です。</p>
 <div style="background:#fff7ed;border:3px solid #f39c12;border-radius:12px;padding:20px 24px;margin:16px 0 20px 0">
-  <p style="font-size:0.8rem;font-weight:700;color:#f39c12;letter-spacing:.08em;margin:0 0 12px 0;text-transform:uppercase">── 行動科学が明かす「主体性が育たない本当の理由」 ──</p>
+  <p style="font-size:0.8rem;font-weight:700;color:#f39c12;letter-spacing:.08em;margin:0 0 12px 0;text-transform:uppercase">── 行動科学が明かす「スタッフの主体性が育たない本当の理由」 ──</p>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
     <div style="background:#fff;border-left:4px solid #f39c12;border-radius:6px;padding:14px 16px;display:flex;align-items:flex-start;gap:8px">
       <span style="color:#f39c12;font-size:1.2em;line-height:1;flex-shrink:0;font-weight:900">▶</span>
@@ -103,19 +103,19 @@ window.LP_CONFIG = {
     </div>
   </div>
 </div>
-<p>これらが理解できると、同じ状況でも「どう動けばよいか」が見えてきます。</p>
+<p>これらを理解することで、同じ状況でも<strong>「スタッフへの接し方・声がけのしかた」</strong>が変わります。</p>
 <div class="seminar-detail-box">
 <p><strong>本セミナーでは</strong>、実際に弊社がインドネシア人マネジャー向けに実施している<br>行動科学を活用したマネジメント研修の一部をご紹介します。</p>
 <div style="background:#e8f0fb;border:2px solid #0050b3;border-radius:10px;padding:18px 22px;margin-top:14px">
   <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px">
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>なぜ「頑張っているのに主体的じゃない」と言われるのか ─ 行動科学で解き明かす
+      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>なぜ「頑張って育てているのに主体的に動かない」のか ─ 行動科学で解き明かす
     </li>
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
       <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>報告・相談・意見表明が減っていく「見えない罰」とは何か
     </li>
     <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>正しい行動が評価される職場をつくるための実践フレーム
+      <span style="color:#0050b3;flex-shrink:0;font-size:1.1em">✓</span>主体的に動くスタッフを育てる職場環境をつくるための実践フレーム
     </li>
   </ul>
 </div>
@@ -130,11 +130,11 @@ window.LP_CONFIG = {
     title: 'こんな経験はありませんか？',
     img: '../images/workshop_scene.jpg',
     items: [
-      '報告したら怒られた。それ以来、何か問題が起きても「まず自分で解決しよう」と思うようになった',
-      '会議で意見を言ったら反応がなかった。「次からは黙っていたほうがいい」と感じた',
-      '質問しに行ったら面倒そうな顔をされた。以来、なるべく自分で判断するようにしている',
-      '一生懸命働いているのに、日本人上司から「もっと主体的に動いてほしい」と言われた',
-      '何が良い行動で何が悪い行動なのか、正直よく分からなくなってきた'
+      'よかれと思って指導・フィードバックしたのに、それ以来スタッフが何も言わなくなってしまった',
+      '報告を待っていたら何も上がってこず、後から「実は問題が起きていた」と知った',
+      '会議で意見を求めても誰も発言せず、結局自分一人が話し続けている',
+      '頑張っているスタッフほど、なぜか萎縮して受け身になっていく気がする',
+      'スタッフとの関わり方・声がけの仕方が正しいのかどうか、自信が持てなくなってきた'
     ]
   },
 
@@ -148,7 +148,7 @@ window.LP_CONFIG = {
     detail_title: 'セミナー情報',
     schedule_title: 'タイムテーブル（ジャカルタ時間）',
     details: [
-      { label: '名称',     value: 'なぜ、頑張っているのに主体的じゃないと言われるのか？行動科学が明かすインドネシア人のための日系職場のしくみ ─第２弾' },
+      { label: '名称',     value: '部下・後輩の主体性を引き出すには？行動科学が明かす部下・後輩マネジメントの秘訣 ─第２弾' },
       { label: '開催日',   value: '2026年6月10日（水）' },
       { label: '時間',     value: '15:00〜16:30（ジャカルタ時間・質疑応答を含む）' },
       { label: '締切',     value: 'セミナー当日午前10時（ジャカルタ時間）まで' },
@@ -165,9 +165,9 @@ window.LP_CONFIG = {
       },
       {
         part: '15:05〜',
-        title: 'なぜ、頑張っているのに主体的じゃないと言われるのか？ ─ 行動科学で解き明かす日系職場のしくみ',
+        title: 'なぜ、頑張っているスタッフほど主体的に動かなくなるのか？ ─ 行動科学が明かす部下・後輩マネジメントの秘訣',
         body: `・なぜ「正しい行動」がスタッフからなくなっていくのか ─ オペラント条件付けの構造を分解する<br>
-・日本人上司の反応がスタッフの行動をどう変えるか ─ 強化と弱化のメカニズム<br>
+・マネジャーの反応がスタッフの行動をどう変えるか ─ 強化と弱化のメカニズム<br>
 ・報告・相談・意見表明がなくなっていく「見えない罰」とは何か<br>
 ・心理的安全性と行動科学の関係 ─ パフォーマンス低下の本当の原因<br>
 ・主体的なスタッフを育てる職場環境をつくるための実践フレーム`
@@ -202,7 +202,8 @@ window.LP_CONFIG = {
     body: `<p>ここまでお読みいただき、おそらくお気づきのはずです。</p>
 <p>「主体性がない」「報告が来ない」「意見が出ない」──<br>
 これらは、スタッフの性格や意欲の問題ではありません。</p>
-<p>行動科学の視点から見れば、<strong>「正しい行動をしたときに、何が起きているか」</strong>の問題です。</p>
+<p>行動科学の視点から見れば、<strong>「正しい行動をしたときに、何が起きているか」</strong>の問題です。<br>
+そして、その「何が起きているか」を左右しているのは、<strong>マネジャー・リーダーであるあなたの関わり方</strong>です。</p>
 <p>本セミナーで扱う内容は、単なる理論の紹介ではありません。<br>
 実際に、インドネシア人マネジャー向けに提供している「行動科学を活用したマネジメント研修」の一部です。</p>
 <p>もし御社の現場で、</p>
