@@ -152,7 +152,7 @@ Dan mekanisme itu — bisa Anda ubah, sebagai <strong>manajer dan pemimpin</stro
       { label: 'Waktu',      value: 'Pukul 15:00–16:00 WIB (termasuk sesi tanya jawab)' },
       { label: 'Batas Daftar', value: 'Pukul 10:00 WIB pada hari pelaksanaan' },
       { label: 'Format',     value: 'Online via Zoom (dalam Bahasa Indonesia)' },
-      { label: 'Penyelenggara', value: 'WS PARTNERS PTE LTD' },
+      { label: 'Penyelenggara', value: 'PT WILLSEED PARTNERS INDONESIA' },
       { label: 'Biaya',      value: 'Gratis' },
       { label: 'Kontak',     value: '<span style="display:block;line-height:2">PIC Seminar Online: Matsushita / Tomozawa<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6569784066" style="color:var(--primary)">+65-6978-4066</a></span>' }
     ],

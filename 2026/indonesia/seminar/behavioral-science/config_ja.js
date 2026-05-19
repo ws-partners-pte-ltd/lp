@@ -153,7 +153,7 @@ window.LP_CONFIG = {
       { label: '時間',     value: '15:00〜16:00（ジャカルタ時間・質疑応答を含む）' },
       { label: '締切',     value: 'セミナー当日午前10時（ジャカルタ時間）まで' },
       { label: '開催方式', value: 'Web会議ツール Zoom（インドネシア語で実施）' },
-      { label: '主催',     value: 'WS PARTNERS PTE LTD' },
+      { label: '主催',     value: 'PT WILLSEED PARTNERS INDONESIA' },
       { label: '参加費',   value: '無料' },
       { label: 'お問合せ', value: '<span style="display:block;line-height:2">オンラインセミナー担当：松下・友澤<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6569784066" style="color:var(--primary)">+65-6978-4066</a></span>' }
     ],
