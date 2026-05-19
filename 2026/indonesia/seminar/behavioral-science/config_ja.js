@@ -31,8 +31,7 @@ window.LP_CONFIG = {
     bg_image: '../images/hero_bg_neural.png',
     img_main: '../images/photo_trainer_takaoka.jpg',
     img_sub1: '../images/online_training.jpg',
-    img_sub2: '',
-    subtitle: '理解が変われば、職場が変わる。',
+      subtitle: '理解が変われば、職場が変わる。',
     title: '行動科学が明かす部下・後輩マネジメントの秘訣 ─セミナー第２弾',
     date_label: '開催日時',
     date: '<strong>2026年6月10日（水）　15:00〜16:00</strong><br>（ジャカルタ時間）',
@@ -48,7 +47,7 @@ window.LP_CONFIG = {
     en: 'ABOUT THIS SEMINAR',
     title: '2026年5月13日に開催した<br>セミナー第1弾「日本人上司との基準理解と実践」<br>想定を大きく超える反響をいただきました',
     body: `<div style="background:linear-gradient(135deg,#0050b3 0%,#041434 100%);border-radius:16px;padding:24px 28px;margin-bottom:28px;text-align:center">
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
     <div style="background:rgba(255,255,255,.12);border-radius:10px;padding:14px 8px">
       <p style="color:#fff;font-size:clamp(1.5rem,3vw,2rem);font-weight:900;margin:0;line-height:1">243名</p>
       <p style="color:rgba(255,255,255,.8);font-size:0.75rem;margin:6px 0 0 0">お申込み</p>
