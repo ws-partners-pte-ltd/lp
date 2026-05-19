@@ -37,7 +37,7 @@ window.LP_CONFIG = {
     date_label: 'Tanggal & Waktu',
     date: '<strong>10 Juni 2026 (Rabu) pukul 15:00–16:00</strong>（Waktu Jakarta (WIB)）',
     deadline_label: 'Biaya Pendaftaran',
-    deadline: '<strong style="font-size:1.3em;color:#fff">GRATIS</strong>',
+    deadline: 'GRATIS',
     note: 'Diselenggarakan via <strong>Zoom</strong> (dalam Bahasa Indonesia)<br>Batas pendaftaran: pukul 10:00 WIB pada hari pelaksanaan',
     cta_text: 'Daftar Gratis',
     badge_en: '<strong style="font-size:1.15em;display:block">Sangat Diminati!</strong><strong style="font-size:1.3em;display:block">Sesi ke-2</strong><span style="font-size:0.82em;display:block;margin-top:2px">dalam Bahasa Indonesia</span>',
