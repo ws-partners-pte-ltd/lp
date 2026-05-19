@@ -57,11 +57,7 @@ window.LP_CONFIG = {
       <p style="color:rgba(255,255,255,.8);font-size:0.75rem;margin:6px 0 0 0">ご参加</p>
       <p style="color:#00dfd8;font-size:0.7rem;font-weight:700;margin:2px 0 0 0">参加率 91.5%</p>
     </div>
-    <div style="background:rgba(255,255,255,.12);border-radius:10px;padding:14px 8px">
-      <p style="color:#f39c12;font-size:clamp(1.5rem,3vw,2rem);font-weight:900;margin:0;line-height:1">141名</p>
-      <p style="color:rgba(255,255,255,.8);font-size:0.75rem;margin:6px 0 0 0">アンケート回答</p>
-      <p style="color:#00dfd8;font-size:0.7rem;font-weight:700;margin:2px 0 0 0">回答率 63.5%</p>
-    </div>
+    
     <div style="background:rgba(255,255,255,.12);border-radius:10px;padding:14px 8px">
       <p style="color:#00dfd8;font-size:clamp(1.5rem,3vw,2rem);font-weight:900;margin:0;line-height:1">8.80点</p>
       <p style="color:rgba(255,255,255,.8);font-size:0.75rem;margin:6px 0 0 0">平均満足度</p>
