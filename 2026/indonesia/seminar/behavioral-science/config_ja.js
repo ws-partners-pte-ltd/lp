@@ -128,7 +128,7 @@ window.LP_CONFIG = {
   issues: {
     en: 'CHALLENGES',
     title: 'こんな経験はありませんか？',
-    img: '../images/workshop_scene.jpg',
+    img: '../images/jakarta_road.webp',
     items: [
       'よかれと思って指導・フィードバックしたのに、それ以来スタッフが何も言わなくなってしまった',
       '報告を待っていたら何も上がってこず、後から「実は問題が起きていた」と知った',

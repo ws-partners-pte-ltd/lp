@@ -127,7 +127,7 @@ Dan mekanisme itu — bisa Anda ubah, sebagai <strong>manajer dan pemimpin</stro
   issues: {
     en: 'CHALLENGES',
     title: 'Apakah Anda Pernah Mengalami Ini?',
-    img: '../images/workshop_scene.jpg',
+    img: '../images/jakarta_road.webp',
     items: [
       'Sudah memberikan arahan atau feedback dengan niat baik, tapi sejak itu staf jadi tidak mau bicara sama sekali',
       'Menunggu laporan dari staf, tapi tidak ada yang masuk — baru tahu belakangan bahwa ternyata ada masalah',
