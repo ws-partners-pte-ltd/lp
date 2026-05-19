@@ -48,7 +48,7 @@ window.LP_CONFIG = {
     en: 'ABOUT THIS SEMINAR',
     title: 'Seminar Sesi 1 yang diselenggarakan 13 Mei 2026<br>mendapat respons yang jauh melampaui ekspektasi',
     body: `<div style="background:linear-gradient(135deg,#0050b3 0%,#041434 100%);border-radius:16px;padding:24px 28px;margin-bottom:28px;text-align:center">
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
     <div style="background:rgba(255,255,255,.12);border-radius:10px;padding:14px 8px">
       <p style="color:#fff;font-size:clamp(1.5rem,3vw,2rem);font-weight:900;margin:0;line-height:1">243</p>
       <p style="color:rgba(255,255,255,.8);font-size:0.75rem;margin:6px 0 0 0">Pendaftar</p>
@@ -58,11 +58,7 @@ window.LP_CONFIG = {
       <p style="color:rgba(255,255,255,.8);font-size:0.75rem;margin:6px 0 0 0">Peserta hadir</p>
       <p style="color:#00dfd8;font-size:0.7rem;font-weight:700;margin:2px 0 0 0">Tingkat kehadiran 91,5%</p>
     </div>
-    <div style="background:rgba(255,255,255,.12);border-radius:10px;padding:14px 8px">
-      <p style="color:#f39c12;font-size:clamp(1.5rem,3vw,2rem);font-weight:900;margin:0;line-height:1">141</p>
-      <p style="color:rgba(255,255,255,.8);font-size:0.75rem;margin:6px 0 0 0">Pengisi survei</p>
-      <p style="color:#00dfd8;font-size:0.7rem;font-weight:700;margin:2px 0 0 0">Tingkat respons 63,5%</p>
-    </div>
+    
     <div style="background:rgba(255,255,255,.12);border-radius:10px;padding:14px 8px">
       <p style="color:#00dfd8;font-size:clamp(1.5rem,3vw,2rem);font-weight:900;margin:0;line-height:1">8,80</p>
       <p style="color:rgba(255,255,255,.8);font-size:0.75rem;margin:6px 0 0 0">Rata-rata kepuasan</p>
