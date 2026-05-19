@@ -6,7 +6,7 @@ window.LP_CONFIG = {
 
   meta: {
     lang: 'ja',
-    title: 'なぜ、頑張っているスタッフほど主体的に動かなくなるのか？行動科学が明かす部下・後輩マネジメントの秘訣 ─セミナー第２弾 2026年6月10日 | WS PARTNERS',
+    title: '理解が変われば、職場が変わる。行動科学が明かす部下・後輩マネジメントの秘訣 ─セミナー第２弾 2026年6月10日 | WS PARTNERS',
     description: '第１弾243名申込・参加率91.5%・満足度8.80/10の大好評を受け、第２弾開催決定。行動科学の視点から「なぜスタッフが主体的に動けなくなるのか」を解明し、マネジャー・リーダーが実践できるアプローチをご紹介。2026年6月10日（水）オンライン開催・インドネシア語実施。',
     other_lang_label: 'Bahasa Indonesia',
     other_lang_url: '../id/'
@@ -32,21 +32,21 @@ window.LP_CONFIG = {
     img_main: '../images/photo_trainer_takaoka.jpg',
     img_sub1: '../images/online_training.jpg',
     img_sub2: '',
-    subtitle: 'なぜ、頑張っているスタッフほど主体的に動かなくなるのか？',
+    subtitle: '理解が変われば、職場が変わる。',
     title: '行動科学が明かす部下・後輩マネジメントの秘訣 ─セミナー第２弾',
     date_label: '開催日時',
-    date: '<strong>2026年6月10日（水）　15:00〜16:30</strong>（ジャカルタ時間）',
+    date: '<strong>2026年6月10日（水）　15:00〜16:00</strong>（ジャカルタ時間）',
     deadline_label: '参加費',
     deadline: '<strong style="font-size:1.3em;color:#fff">無 料</strong>',
     note: 'Web会議ツール <strong>Zoom</strong> にて開催（インドネシア語で実施）<br>申込締切：当日午前10時（ジャカルタ時間）',
     cta_text: '無料で申し込む',
     badge_en: '<strong style="font-size:1.15em;display:block">大好評につき</strong><strong style="font-size:1.3em;display:block">第２弾！</strong><span style="font-size:0.82em;display:block;margin-top:2px">インドネシア語で実施</span>',
-    badge_ja: '第1弾：<br>参加率91.5%'
+    badge_ja: '第1弾：222名参加<br>満足度：8.80点／10点満点！'
   },
 
   consult: {
     en: 'ABOUT THIS SEMINAR',
-    title: '2026年5月13日に開催した<br>第1弾「日本人上司との基準理解と実践」<br>想定を大きく超える反響をいただきました',
+    title: '2026年5月13日に開催した<br>セミナー第1弾「日本人上司との基準理解と実践」<br>想定を大きく超える反響をいただきました',
     body: `<div style="background:linear-gradient(135deg,#0050b3 0%,#041434 100%);border-radius:16px;padding:24px 28px;margin-bottom:28px;text-align:center">
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
     <div style="background:rgba(255,255,255,.12);border-radius:10px;padding:14px 8px">
@@ -81,7 +81,7 @@ window.LP_CONFIG = {
 </div>
 <p>これらは、スタッフの性格や意欲の問題ではありません。<br>
 実は<strong>「行動科学」</strong>の視点から説明できる、職場環境のしくみの問題です。<br>
-そして、そのしくみを変えられるのは、<strong>マネジャー・リーダーのあなた自身</strong>です。</p>
+そして、そのしくみを変えられるのは、<strong>マネジャー・リーダー</strong>です。</p>
 <div style="background:#fff7ed;border:3px solid #f39c12;border-radius:12px;padding:20px 24px;margin:16px 0 20px 0">
   <p style="font-size:0.8rem;font-weight:700;color:#f39c12;letter-spacing:.08em;margin:0 0 12px 0;text-transform:uppercase">── 行動科学が明かす「スタッフの主体性が育たない本当の理由」 ──</p>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
@@ -150,7 +150,7 @@ window.LP_CONFIG = {
     details: [
       { label: '名称',     value: '部下・後輩の主体性を引き出すには？行動科学が明かす部下・後輩マネジメントの秘訣 ─第２弾' },
       { label: '開催日',   value: '2026年6月10日（水）' },
-      { label: '時間',     value: '15:00〜16:30（ジャカルタ時間・質疑応答を含む）' },
+      { label: '時間',     value: '15:00〜16:00（ジャカルタ時間・質疑応答を含む）' },
       { label: '締切',     value: 'セミナー当日午前10時（ジャカルタ時間）まで' },
       { label: '開催方式', value: 'Web会議ツール Zoom（インドネシア語で実施）' },
       { label: '主催',     value: 'WS PARTNERS PTE LTD' },
@@ -173,7 +173,7 @@ window.LP_CONFIG = {
 ・主体的なスタッフを育てる職場環境をつくるための実践フレーム`
       },
       {
-        part: '〜16:30',
+        part: '〜16:00',
         title: '質疑応答',
         body: '※弊社の研修サービスにご興味のある方は、別途お気軽にスタッフにご連絡ください。'
       }
@@ -203,7 +203,7 @@ window.LP_CONFIG = {
 <p>「主体性がない」「報告が来ない」「意見が出ない」──<br>
 これらは、スタッフの性格や意欲の問題ではありません。</p>
 <p>行動科学の視点から見れば、<strong>「正しい行動をしたときに、何が起きているか」</strong>の問題です。<br>
-そして、その「何が起きているか」を左右しているのは、<strong>マネジャー・リーダーであるあなたの関わり方</strong>です。</p>
+そして、その「何が起きているか」を左右しているのは、<strong>マネジャー・リーダーの関わり方</strong>です。</p>
 <p>本セミナーで扱う内容は、単なる理論の紹介ではありません。<br>
 実際に、インドネシア人マネジャー向けに提供している「行動科学を活用したマネジメント研修」の一部です。</p>
 <p>もし御社の現場で、</p>
@@ -220,9 +220,7 @@ window.LP_CONFIG = {
     </li>
   </ul>
 </div>
-<p>という状況があるなら、ぜひ一度覗いてみてください。</p>
-<p>本セミナーは、御社への導入をご検討いただくための<strong>体験型プレビュー</strong>です。<br>
-実際の内容、進め方、参加者の反応の引き出し方をそのままご覧いただけます。</p>
+<p>という状況があるなら、ぜひインドネシア人スタッフの皆様に参加を促してみてください（本ページ右上に、インドネシア語ページがございます）。</p>
 <p><strong>理解が変われば、職場が変わる。</strong><br>
 その第一歩として、まずは研修内容をご体験ください。</p>`
   },

@@ -6,7 +6,7 @@ window.LP_CONFIG = {
 
   meta: {
     lang: 'id',
-    title: 'Mengapa Staf yang Bekerja Keras justru Tidak Berinisiatif? Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku ─ Sesi ke-2 | WS PARTNERS',
+    title: 'Ketika Pemahaman Berubah, Tempat Kerja Pun Berubah ─ Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku ─ Sesi ke-2 | WS PARTNERS',
     description: 'Seminar gratis sesi ke-2 setelah Sesi 1 dihadiri 222 peserta dengan tingkat kepuasan 8,80/10. Pelajari mengapa staf yang bekerja keras justru berhenti berinisiatif, dan temukan pendekatan praktis yang bisa langsung diterapkan sebagai manajer atau pemimpin. 10 Juni 2026, online dalam Bahasa Indonesia.',
     other_lang_label: '日本語',
     other_lang_url: '../ja/'
@@ -32,21 +32,21 @@ window.LP_CONFIG = {
     img_main: '../images/photo_trainer_takaoka.jpg',
     img_sub1: '../images/online_training.jpg',
     img_sub2: '',
-    subtitle: 'Mengapa Staf yang Bekerja Keras justru Tidak Berinisiatif?',
+    subtitle: 'Ketika Pemahaman Berubah, Tempat Kerja Pun Berubah.',
     title: 'Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku ─ Sesi ke-2',
     date_label: 'Tanggal & Waktu',
-    date: '<strong>10 Juni 2026 (Rabu) pukul 15:00–16:30</strong>（Waktu Jakarta (WIB)）',
+    date: '<strong>10 Juni 2026 (Rabu) pukul 15:00–16:00</strong>（Waktu Jakarta (WIB)）',
     deadline_label: 'Biaya Pendaftaran',
     deadline: '<strong style="font-size:1.3em;color:#fff">GRATIS</strong>',
     note: 'Diselenggarakan via <strong>Zoom</strong> (dalam Bahasa Indonesia)<br>Batas pendaftaran: pukul 10:00 WIB pada hari pelaksanaan',
     cta_text: 'Daftar Gratis',
     badge_en: '<strong style="font-size:1.15em;display:block">Sangat Diminati!</strong><strong style="font-size:1.3em;display:block">Sesi ke-2</strong><span style="font-size:0.82em;display:block;margin-top:2px">dalam Bahasa Indonesia</span>',
-    badge_ja: 'Sesi 1:<br>91,5% hadir'
+    badge_ja: 'Sesi 1: 222 peserta<br>Kepuasan: 8,80/10!'
   },
 
   consult: {
     en: 'ABOUT THIS SEMINAR',
-    title: 'Sesi 1 yang diselenggarakan 13 Mei 2026<br>mendapat respons yang jauh melampaui ekspektasi',
+    title: 'Seminar Sesi 1 yang diselenggarakan 13 Mei 2026<br>mendapat respons yang jauh melampaui ekspektasi',
     body: `<div style="background:linear-gradient(135deg,#0050b3 0%,#041434 100%);border-radius:16px;padding:24px 28px;margin-bottom:28px;text-align:center">
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
     <div style="background:rgba(255,255,255,.12);border-radius:10px;padding:14px 8px">
@@ -149,7 +149,7 @@ Dan mekanisme itu — bisa Anda ubah, sebagai <strong>manajer dan pemimpin</stro
     details: [
       { label: 'Judul',      value: 'Bagaimana Cara Menumbuhkan Inisiatif Bawahan & Junior? Rahasia Manajemen dengan Ilmu Perilaku ─ Sesi ke-2' },
       { label: 'Tanggal',    value: '10 Juni 2026 (Rabu)' },
-      { label: 'Waktu',      value: 'Pukul 15:00–16:30 WIB (termasuk sesi tanya jawab)' },
+      { label: 'Waktu',      value: 'Pukul 15:00–16:00 WIB (termasuk sesi tanya jawab)' },
       { label: 'Batas Daftar', value: 'Pukul 10:00 WIB pada hari pelaksanaan' },
       { label: 'Format',     value: 'Online via Zoom (dalam Bahasa Indonesia)' },
       { label: 'Penyelenggara', value: 'WS PARTNERS PTE LTD' },
@@ -164,7 +164,7 @@ Dan mekanisme itu — bisa Anda ubah, sebagai <strong>manajer dan pemimpin</stro
       },
       {
         part: '15:05–',
-        title: 'Mengapa Staf yang Bekerja Keras justru Tidak Berinisiatif? ─ Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku',
+        title: 'Ketika Pemahaman Berubah, Tempat Kerja Pun Berubah ─ Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku',
         body: `・Mengapa "perilaku yang benar" justru perlahan menghilang dari diri staf — memahami struktur pengkondisian operan<br>
 ・Bagaimana cara manajer berinteraksi mengubah perilaku staf — mekanisme penguatan dan pelemahan perilaku<br>
 ・Apa itu "hukuman tersembunyi" yang membuat laporan, konsultasi, dan pendapat berkurang?<br>
@@ -172,7 +172,7 @@ Dan mekanisme itu — bisa Anda ubah, sebagai <strong>manajer dan pemimpin</stro
 ・Kerangka praktis untuk membangun lingkungan kerja yang menumbuhkan inisiatif staf`
       },
       {
-        part: '–16:30',
+        part: '–16:00',
         title: 'Sesi Tanya Jawab',
         body: '※ Bagi Anda yang tertarik dengan program pelatihan kami, jangan ragu untuk menghubungi tim kami.'
       }
