@@ -140,7 +140,7 @@ window.LP_CONFIG = {
 
   voices:   null,
   features: null,
-  target:   null,
+  target:   '日系企業で働くインドネシア人マネジャー・次世代マネジャー・リーダー・および本テーマに関心のあるスタッフの方々',
 
   program: {
     en: 'EVENT OVERVIEW',

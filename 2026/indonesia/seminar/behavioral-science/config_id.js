@@ -139,7 +139,7 @@ Dan mekanisme itu — bisa Anda ubah, sebagai <strong>manajer dan pemimpin</stro
 
   voices:   null,
   features: null,
-  target:   null,
+  target:   'Manajer, calon manajer, pemimpin WNI di perusahaan Jepang, serta staf yang tertarik dengan tema ini',
 
   program: {
     en: 'EVENT OVERVIEW',
