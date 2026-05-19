@@ -28,7 +28,7 @@ window.LP_CONFIG = {
   ],
 
   hero: {
-    bg_image: '../images/hero_bg_neuro.png',
+    bg_image: '../images/hero_bg_neural.png',
     img_main: '../images/photo_trainer_takaoka.jpg',
     img_sub1: '../images/online_training.jpg',
     img_sub2: '',
