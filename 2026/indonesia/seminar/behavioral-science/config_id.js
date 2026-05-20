@@ -6,7 +6,7 @@ window.LP_CONFIG = {
 
   meta: {
     lang: 'id',
-    title: 'Ketika Pemahaman Berubah, Tempat Kerja Pun Berubah ─ Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku ─ Sesi ke-2 | WS PARTNERS',
+    title: 'Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku ─ Sesi ke-2 | WS PARTNERS',
     description: 'Seminar gratis sesi ke-2 setelah Sesi 1 dihadiri 222 peserta dengan tingkat kepuasan 8,80/10. Pelajari mengapa staf yang bekerja keras justru berhenti berinisiatif, dan temukan pendekatan praktis yang bisa langsung diterapkan sebagai manajer atau pemimpin. 10 Juni 2026, online dalam Bahasa Indonesia.',
     other_lang_label: '日本語',
     other_lang_url: '../ja/'
@@ -143,7 +143,7 @@ Dan mekanisme itu — bisa Anda ubah, sebagai <strong>manajer dan pemimpin</stro
     detail_title: 'Informasi Seminar',
     schedule_title: 'Jadwal Acara (Waktu Jakarta / WIB)',
     details: [
-      { label: 'Judul',      value: 'Bagaimana Cara Menumbuhkan Inisiatif Bawahan & Junior? Rahasia Manajemen dengan Ilmu Perilaku ─ Sesi ke-2' },
+      { label: 'Judul',      value: 'Memahami Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku ─ Sesi ke-2' },
       { label: 'Tanggal',    value: '10 Juni 2026 (Rabu)' },
       { label: 'Waktu',      value: 'Pukul 15:00–16:00 WIB (termasuk sesi tanya jawab)' },
       { label: 'Batas Daftar', value: 'Pukul 10:00 WIB pada hari pelaksanaan' },
@@ -160,7 +160,7 @@ Dan mekanisme itu — bisa Anda ubah, sebagai <strong>manajer dan pemimpin</stro
       },
       {
         part: '15:05–',
-        title: 'Ketika Pemahaman Berubah, Tempat Kerja Pun Berubah ─ Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku',
+        title: 'Rahasia Manajemen Bawahan & Junior dengan Ilmu Perilaku',
         body: `・Mengapa "perilaku yang benar" justru perlahan menghilang dari diri staf — memahami struktur pengkondisian operan<br>
 ・Bagaimana cara manajer berinteraksi mengubah perilaku staf — mekanisme penguatan dan pelemahan perilaku<br>
 ・Apa itu "hukuman tersembunyi" yang membuat laporan, konsultasi, dan pendapat berkurang?<br>
