@@ -6,7 +6,7 @@ window.LP_CONFIG = {
 
   meta: {
     lang: 'ja',
-    title: '理解が変われば、職場が変わる。部下・後輩の主体性を引き出すには？行動科学が明かす部下・後輩マネジメントの秘訣 ─第２弾 2026年6月10日 | WS PARTNERS',
+    title: '行動科学が明かす部下・後輩マネジメントの秘訣 ─セミナー第２弾 2026年6月10日 | WS PARTNERS',
     description: '第１弾243名申込・参加率91.5%・満足度8.80/10の大好評を受け、第２弾開催決定。行動科学の視点から「なぜスタッフが主体的に動けなくなるのか」を解明し、マネジャー・リーダーが実践できるアプローチをご紹介。2026年6月10日（水）オンライン開催・インドネシア語実施。',
     other_lang_label: 'Bahasa Indonesia',
     other_lang_url: '../id/'
@@ -31,7 +31,7 @@ window.LP_CONFIG = {
     bg_image: '../images/hero_bg_neural.png',
     img_main: '../images/photo_trainer_takaoka.jpg',
     img_sub1: '../images/online_training.jpg',
-      subtitle: '理解が変われば、職場が変わる。',
+      subtitle: '',
     title: '行動科学が明かす部下・後輩マネジメントの秘訣 ─セミナー第２弾',
     date_label: '開催日時',
     date: '<strong>2026年6月10日（水）　15:00〜16:00</strong><br>（ジャカルタ時間）',
@@ -143,7 +143,7 @@ window.LP_CONFIG = {
     detail_title: 'セミナー情報',
     schedule_title: 'タイムテーブル（ジャカルタ時間）',
     details: [
-      { label: '名称',     value: '部下・後輩の主体性を引き出すには？行動科学が明かす部下・後輩マネジメントの秘訣 ─第２弾' },
+      { label: '名称',     value: '行動科学が明かす部下・後輩マネジメントの秘訣 ─セミナー第２弾' },
       { label: '開催日',   value: '2026年6月10日（水）' },
       { label: '時間',     value: '15:00〜16:00（ジャカルタ時間・質疑応答を含む）' },
       { label: '締切',     value: 'セミナー当日午前10時（ジャカルタ時間）まで' },
@@ -216,7 +216,7 @@ window.LP_CONFIG = {
   </ul>
 </div>
 <p>という状況があるなら、ぜひインドネシア人スタッフの皆様に参加を促してみてください（本ページ右上に、インドネシア語ページがございます）。</p>
-<p><strong>理解が変われば、職場が変わる。</strong><br>
+<p><strong></strong><br>
 その第一歩として、まずは研修内容をご体験ください。</p>`
   },
 
