@@ -31,7 +31,7 @@ window.LP_CONFIG = {
     bg_image: '../images/hero_bg_neural.png',
     img_main: '../images/photo_trainer_takaoka.jpg',
     img_sub1: '../images/online_training.jpg',
-      subtitle: '',
+      subtitle: '理解が変われば、職場が変わる。',
     title: '行動科学が明かす部下・後輩マネジメントの秘訣 ─セミナー第２弾',
     date_label: '開催日時',
     date: '<strong>2026年6月10日（水）　15:00〜16:00</strong><br>（ジャカルタ時間）',
