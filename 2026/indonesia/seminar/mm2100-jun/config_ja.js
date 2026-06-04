@@ -108,6 +108,7 @@ window.LP_CONFIG = {
 
   target: {
     en: 'TARGET',
+    img: '/assets/images/online_training.jpg',
     title: 'このような方におすすめです',
     items: [
       'インドネシア法人の経営者、拠点責任者',
@@ -210,9 +211,9 @@ window.LP_CONFIG = {
     title: 'お問い合わせ先',
     body: `セミナーに関するご質問はお気軽にご連絡ください。<br><br>
 <span style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
-  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>セミナー担当：<strong>加藤</strong></span></span>
-  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">✉</span><span><a href="mailto:support@ws-partners.com.sg" style="color:rgba(255,255,255,.85);text-decoration:underline">support@ws-partners.com.sg</a></span></span>
-  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6569784066" style="color:rgba(255,255,255,.85);text-decoration:underline">+65-6978-4066</a></span></span>
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>セミナー担当：<strong>松下・友澤</strong></span></span>
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">✉</span><span><a href="mailto:support@ws-partners.com.sg" style="color:#0050b3;text-decoration:underline">support@ws-partners.com.sg</a></span></span>
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6569784066" style="color:#0050b3;text-decoration:underline">+65-6978-4066</a></span></span>
 </span>`
   },
 

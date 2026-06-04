@@ -12,7 +12,7 @@
   <meta property="og:description" id="og-description" content="">
   <meta property="og:image" id="og-image" content="">
   <meta property="og:type" content="website">
-  <link id="favicon" rel="icon" type="image/png" href="images/favicon.png">
+  <link id="favicon" rel="icon" type="image/svg+xml" href="/assets/logos/symbol.svg">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
     /* ========================================
@@ -685,6 +685,8 @@
       .sec-title  { font-size: 1.4rem; }
       .header-buttons .btn-lang { display: none; }
     }
+    /* === LP-specific override: cancel-body scroll-box ===*/
+    #cancel-body.scroll-box { max-height: none; overflow-y: visible; }
   </style>
 </head>
 <body>
@@ -699,7 +701,7 @@
   <div class="header-top">
     <div class="container">
       <div class="header-logo">
-        <a href="#"><img id="header-logo" src="images/logo.png" alt="WS PARTNERS"></a>
+        <a href="#"><img id="header-logo" src="/assets/logos/logo.svg" alt="WS PARTNERS"></a>
       </div>
       <div class="header-action">
         <div class="header-contact-row">
@@ -832,7 +834,7 @@
 <section id="target" class="bg-alt">
   <div class="container">
     <div class="section-image reveal">
-      <img id="target-img" src="images/photo_target_leader.jpg" alt="">
+      <img id="target-img" src="/assets/images/online_training.jpg" alt="">
     </div>
     <h2 class="sec-title reveal" style="margin-bottom:24px">
       <span class="en" id="target-en"></span>
@@ -988,7 +990,7 @@
 <footer>
   <div class="container">
     <div class="footer-logo">
-      <img id="footer-logo" src="images/logo.png" alt="WS PARTNERS">
+      <img id="footer-logo" src="/assets/logos/logo.svg" alt="WS PARTNERS">
     </div>
     <div class="footer-links" id="footer-links"></div>
     <p id="footer-address" style="margin-bottom:8px"></p>
