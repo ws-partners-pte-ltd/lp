@@ -28,8 +28,8 @@ window.LP_CONFIG = {
   ],
 
   hero: {
-    bg_image: 'images/hero_bg.jpg',
-    img_main: 'images/photo_trainer_kato.jpg',
+    bg_image: '/assets/scenery/08.jpg',
+    img_main: '/assets/photos/trainers/kato.jpg',
     img_sub1: '',
     img_sub2: '',
     subtitle: '70社・800名以上の支援から見えた<br>現地化を進める企業の共通点',
@@ -91,7 +91,7 @@ window.LP_CONFIG = {
   issues: {
     en: 'CHALLENGES',
     title: 'こんなお悩みはありませんか？',
-    img: 'images/photo_team_issues.jpg',
+    img: '/assets/images/online_training.jpg',
     items: [
       '優秀なプレイヤーを昇格させたが、マネージャーとして期待通りに機能していない',
       '自分から課題を見つけ、周囲を巻き込んで動く力が弱い',
@@ -173,7 +173,7 @@ window.LP_CONFIG = {
     title: '講師',
     items: [
       {
-        img: 'images/photo_trainer_kato.jpg',
+        img: '/assets/photos/trainers/kato.jpg',
         name: '加藤 健太　Kenta Kato',
         role: 'WS PARTNERS PTE LTD　代表（Managing Director）',
         profile: 'ASEANの日系企業を中心に、現地人材育成、マネジメント研修、組織開発、現地化支援に従事。インドネシア、マレーシア、タイ、シンガポール、ベトナムなど、ASEAN各国の日系企業に対して、現地マネージャー育成や日本人駐在員向けマネジメント支援を提供。インドネシアでは10年間にわたり、70社以上・800名以上のインドネシア人マネージャーの育成に関わる。現場でのインタビュー、研修、コンサルティング経験をもとに、日系企業における現地化とマネージャー育成の実践知を発信している。'
