@@ -263,7 +263,7 @@ window.LP_CONFIG = {
     hubspot_portal_id: '※HubSpotのポータルIDをここに記入',
     hubspot_form_id:   '※インドネシア用HubSpotフォームIDをここに記入',
     hubspot_region:    'na1',
-    thank_you_url:     '/_template/_thank-you.html?prog=mm2100-jun-seminar'
+    thank_you_url:     '/_template/_thank-you.html'
   }
 
 };
