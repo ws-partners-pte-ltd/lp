@@ -25,7 +25,6 @@ window.LP_CONFIG = {
     { href: '#program',    label: '当日のプログラム' },
     { href: '#instructor', label: '講師紹介' },
     { href: '#company',    label: '会社概要' },
-    { href: '#cancel',     label: 'MM2100研修について' },
     { href: '#apply',      label: 'お申し込み' }
   ],
 
