@@ -1064,13 +1064,15 @@
     <div class="section-image reveal">
       <img id="issues-img" src="images/photo_team_issues.jpg" alt="">
     </div>
-    <h2 class="sec-title reveal" style="margin-bottom:24px">
+    <h2 class="sec-title reveal" style="margin-bottom:16px">
       <span class="en" id="issues-en"></span>
       <span id="issues-title"></span>
     </h2>
+    <p id="issues-body" style="font-size:var(--fs-body);color:var(--text-muted);margin-bottom:24px;line-height:1.8" class="reveal"></p>
     <div class="issue-box reveal">
       <ul class="issue-checklist" id="issues-list"></ul>
     </div>
+    <p id="issues-footer" style="font-size:var(--fs-body);color:var(--text-main);margin-top:24px;margin-bottom:32px;line-height:1.8;font-weight:500" class="reveal"></p>
     <div style="text-align:center">
       <a href="#apply" class="btn-cta reveal">無料で申し込む</a>
     </div>
@@ -1334,6 +1336,8 @@
     renderSection('issues', c.issues, function(d){
       setEl('issues-en',    d.en    || '');
       setEl('issues-title', d.title || '');
+      if (d.body)   setEl('issues-body',   d.body);
+      if (d.footer) setEl('issues-footer', d.footer);
       if (d.img) setAttr('issues-img','src', d.img);
       var ul = document.getElementById('issues-list');
       if (ul && d.items) {
