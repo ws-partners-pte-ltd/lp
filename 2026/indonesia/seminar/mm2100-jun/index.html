@@ -257,14 +257,14 @@
     }
     .hero-overlay {
       position: absolute; inset: 0;
-      background: linear-gradient(to right, rgba(0,0,0,.52) 0%, rgba(0,0,0,.18) 100%);
+      background: linear-gradient(to right, rgba(0,0,0,.65) 0%, rgba(0,0,0,.32) 100%);
     }
     .hero-bg {
-      position: absolute; inset: 0;
-      background-image: url('images/hero_bg.jpg');
+      position: absolute; inset: -8px;
       background-size: cover;
       background-position: center 65%;
       z-index: 0;
+      filter: blur(5px);
     }
     .hero-container {
       position: relative; z-index: 1;
@@ -279,11 +279,12 @@
     .hero-text-content { flex: 1; color: #fff; }
 
     .hero-subtitle {
-      font-size: clamp(0.68rem, 1.15vw, 0.80rem);
+      font-size: clamp(0.95rem, 1.7vw, 1.1rem);
       font-weight: 700;
-      color: #fff;
+      color: var(--secondary);
       margin-top: 0;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
+      letter-spacing: 0.02em;
     }
     .hero-title {
       font-size: clamp(1.55rem, 3.2vw, 2.2rem);  /* 参考LP合わせ */
@@ -392,8 +393,8 @@
       padding: 8px;
       animation: floatBadge 4s ease-in-out infinite;
     }
-    .badge-en { font-size: clamp(1.0rem, 2.0vh, 1.3rem); font-weight: 900; line-height: 1.25; margin-bottom: 3px; text-shadow: 1px 1px 3px rgba(0,0,0,.2); }
-    .badge-ja { font-size: clamp(1.0rem, 2.0vh, 1.3rem); font-weight: 900; line-height: 1.3; text-shadow: 1px 1px 3px rgba(0,0,0,.2); }
+    .badge-en { font-size: clamp(1.15rem, 2.5vh, 1.7rem); font-weight: 900; line-height: 1.25; margin-bottom: 5px; text-shadow: 1px 1px 3px rgba(0,0,0,.2); }
+    .badge-ja { font-size: clamp(1.1rem, 2.3vh, 1.55rem); font-weight: 900; line-height: 1.3; text-shadow: 1px 1px 3px rgba(0,0,0,.2); }
 
     .scroll-indicator {
       position: absolute;
@@ -985,8 +986,8 @@
   <div class="hero-overlay"></div>
   <div class="hero-container">
     <div class="hero-text-content reveal">
-      <h1 class="hero-title" id="hero-title"></h1>
       <p class="hero-subtitle" id="hero-subtitle"></p>
+      <h1 class="hero-title" id="hero-title"></h1>
       <div class="hero-target-box" id="hero-target-box" style="display:none"></div>
       <div class="hero-info-box">
         <div class="info-date-row">
