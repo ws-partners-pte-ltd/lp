@@ -38,7 +38,7 @@ window.LP_CONFIG = {
     format_label: '【会場】',
     format: 'MM2100オフィス（対面開催）',
     date_label: '【日時】',
-    date: '<strong>2026年6月24日（水）　16:00〜17:30頃（WIB）</strong><small style="display:block;font-size:0.76em;font-weight:400;opacity:0.85;margin-top:3px">※懇親会（軽食・ドリンク付き）も含みます。</small>',
+    date: '<strong>2026年6月24日（水）　16:00〜17:30頃（WIB）</strong><small style="display:inline;font-size:0.76em;font-weight:400;opacity:0.85;margin-left:6px">※懇親会（軽食・ドリンク付き）も含みます。</small>',
     deadline_label: '【参加費】',
     deadline: '<strong>無料</strong>',
     close_label: '【申込締切】',
