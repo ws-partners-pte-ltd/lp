@@ -38,7 +38,7 @@ window.LP_CONFIG = {
     format_label: '【会場】',
     format: 'マレーシア日本人商工会議所（JACTIM）21階',
     date_label: '【日時】',
-    date: '<strong style="font-size:0.88em">2026年7月17日（金）　15:00〜17:30（マレーシア時間）</strong><small style="display:block;font-size:0.76em;font-weight:400;opacity:0.85;margin-top:2px">※ご予定が合わない方に、別日程で同内容のオンラインセミナーを開催します。→<a href="https://us02web.zoom.us/webinar/register/WN_GlrBxT_uRFSp_MBy0PwsIQ" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">詳細はこちらをクリック</a></small>',
+    date: '<strong style="font-size:0.78em">2026年7月17日（金）　15:00〜17:30（マレーシア時間）</strong><small style="display:block;font-size:0.7em;font-weight:400;opacity:0.85;margin-top:2px">※ご予定が合わない方に、別日程で同内容のオンラインセミナーを開催します。→<a href="https://us02web.zoom.us/webinar/register/WN_GlrBxT_uRFSp_MBy0PwsIQ" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">詳細はこちらをクリック</a></small>',
     deadline_label: '【参加費】',
     deadline: '<strong>無料</strong>',
     close_label: '【申込締切】',
