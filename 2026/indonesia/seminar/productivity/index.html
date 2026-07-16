@@ -279,7 +279,7 @@
     .hero-text-content { flex: 1; color: #fff; }
 
     .hero-subtitle {
-      font-size: clamp(0.68rem, 1.15vw, 0.80rem);
+      font-size: clamp(0.9rem, 1.5vw, 1.05rem);
       font-weight: 700;
       color: #fff;
       margin-top: 0;
@@ -366,7 +366,7 @@
     }
     .img-collage:hover { transform: scale(1.05) !important; z-index: 10; }
     /* online image: top-right, slight positive rotation */
-    .img-online  { width: 58%; top: 5%; right: -3%; transform: rotate(3deg);  z-index: 2; }
+    .img-online  { width: 58%; top: 16%; right: -3%; transform: rotate(3deg);  z-index: 2; }
     /* instructor photo: bottom-left, slight negative rotation */
     .img-instructor { width: 58%; top: 5%; left: -3%; transform: rotate(-3deg); z-index: 2; object-position: center top; }
 
@@ -380,8 +380,8 @@
       top: 54%; left: 0; right: 0; margin: 0 auto;
       transform: rotate(-5deg);
       z-index: 10;
-      width: clamp(160px, 30vh, 260px);
-      height: clamp(160px, 30vh, 260px);
+      width: clamp(178px, 32vh, 282px);
+      height: clamp(178px, 32vh, 282px);
       background: linear-gradient(135deg, #f1c40f 0%, #e67e22 100%);
       border-radius: 50%;
       display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -392,8 +392,8 @@
       padding: 8px;
       animation: floatBadge 4s ease-in-out infinite;
     }
-    .badge-en { font-size: clamp(1.0rem, 2.0vh, 1.3rem); font-weight: 900; line-height: 1.25; margin-bottom: 3px; text-shadow: 1px 1px 3px rgba(0,0,0,.2); }
-    .badge-ja { font-size: clamp(1.0rem, 2.0vh, 1.3rem); font-weight: 900; line-height: 1.3; text-shadow: 1px 1px 3px rgba(0,0,0,.2); }
+    .badge-en { font-size: clamp(1.05rem, 2.2vh, 1.4rem); font-weight: 900; line-height: 1.25; margin-bottom: 3px; text-shadow: 1px 1px 3px rgba(0,0,0,.2); }
+    .badge-ja { font-size: clamp(1.2rem, 2.6vh, 1.6rem); font-weight: 900; line-height: 1.3; text-shadow: 1px 1px 3px rgba(0,0,0,.2); }
 
     .scroll-indicator {
       position: absolute;
@@ -838,7 +838,7 @@
       /* ── Hero ── */
       .hero { height: auto; min-height: 100vh; padding-bottom: 60px; }
       .hero-container { flex-direction: column; padding: clamp(72px,9vh,100px) 16px 32px; gap: 20px; }
-      .hero-subtitle { margin-top: 0.5rem; font-size: 0.92rem; }
+      .hero-subtitle { margin-top: 0.5rem; font-size: 1.12rem; }
       .hero-title { font-size: clamp(1.15rem, 4.5vw, 1.45rem); }
       .hero-info-box { padding: 10px 14px; margin-bottom: 1.5vh; }
       .info-date-val { font-size: 0.98rem; }
@@ -856,7 +856,7 @@
         margin: 0 auto;
       }
       /* モバイルでは画像を少し小さく・位置を調整してカブリを軽減 */
-      .img-online     { width: 55%; top: 2%; right: 2%; }
+      .img-online     { width: 55%; top: 11%; right: 2%; }
       .img-instructor { width: 55%; top: 2%; left: 2%; }
       .scroll-indicator { display: none; }
 
@@ -940,7 +940,7 @@
     <div class="container">
       <div class="header-logo">
         <a href="https://www.ws-partners.com.sg/">
-          <img src="/assets/logos/logo.svg" alt="WS PARTNERS" id="header-logo">
+          <img src="/assets/logos/indonesia/logo.svg" alt="WS PARTNERS Indonesia" id="header-logo">
         </a>
       </div>
       <div class="header-action">
@@ -1215,7 +1215,7 @@
     document.head.appendChild(s);
   }
 
-  loadScript(configFile, onConfigLoaded, 'config_ja.js?v=20260509');
+  loadScript(configFile, onConfigLoaded, 'config_ja.js?v=20260716c');
 
   /* --------------------------------------------------
      2. Init after config is loaded

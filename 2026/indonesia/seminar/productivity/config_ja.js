@@ -14,8 +14,8 @@ window.LP_CONFIG = {
   },
 
   header: {
-    phone: '+65-6978-4066',
-    hours: '受付時間：平日 9:00～18:00（シンガポール時間）',
+    phone: '+62 823 2122 8694',
+    hours: '受付時間：平日 9:00～18:00（ジャカルタ時間）',
     cta_text: '無料で申し込む'
   },
 
@@ -46,22 +46,22 @@ window.LP_CONFIG = {
     cta_text: '無料で申し込む',
     target_label: '【対象】',
     target: 'インドネシアの日系企業にお勤めの経営層・管理職層の日本人の方（新任駐在員の方にもおすすめ）',
-    badge_en: 'ONLINE SEMINAR',
-    badge_ja: 'Zoom<br>開催'
+    badge_en: 'オンラインセミナー',
+    badge_ja: '参加費：無料'
   },
 
   consult: {
     en: 'ABOUT THIS SEMINAR',
     title: '「従業員満足度100%」は、本当に組織が健全なサインでしょうか？',
     body: `<p style="font-size:1.05rem;line-height:1.9">インドネシア拠点で、こんなフラストレーションを感じたことはありませんか？</p>
-<ul style="margin:14px 0 18px 0;padding-left:1.2em;line-height:1.9">
-  <li>「On Progress（今やってます）」と言うが、結局締め切り直前にパニックになる</li>
-  <li>ミスを注意すると Baper（感情的になる）したり、Mogok（拗ねて黙り込む）したりする</li>
-  <li>「私の仕事じゃない」と部署間で責任を押し付け合う（セクショナリズム）</li>
-  <li>「めっちゃ頑張りました！」という感覚報告ばかりで、ファクト（数字）がない</li>
-</ul>
+<blockquote style="margin:16px 0 18px 0;padding:16px 24px;border-left:4px solid #0050b3;background:#eef4ff;border-radius:0 10px 10px 0;font-style:italic;color:#2d3748;line-height:2.05">
+  「On Progress（今やってます）」と言うが、結局締め切り直前にパニックになる<br>
+  ミスを注意すると Baper（感情的になる）したり、Mogok（拗ねて黙り込む）したりする<br>
+  「私の仕事じゃない」と部署間で責任を押し付け合う（セクショナリズム）<br>
+  「めっちゃ頑張りました！」という感覚報告ばかりで、ファクト（数字）がない
+</blockquote>
 <p>多くの日系企業では、ローカルスタッフとの関係性を大切にしようとするあまり、厳しく指導できず、腫れ物に触るようなマネジメントになってしまうことが多々あります。</p>
-<p>そして、従業員アンケートを実施すると「満足度100%」という結果が出て安心してしまう。しかし、これは非常に危険な状態です。それはエンゲージメントが高いのではなく、単に「波風が立たず居心地が良いだけの『ぬるま湯組織』」になっている可能性が極めて高いからです。インドネシア特有の「ABS精神（Asal Bapak Senang：ボスが喜べばそれでいい）」による強烈な忖度文化が、真の課題を隠してしまっています。</p>
+<p>そして、従業員アンケートを実施すると「満足度100%」という結果が出て安心してしまう。しかし、これは非常に危険な状態です。それはエンゲージメントが高いのではなく、単に「波風が立たず居心地が良いだけの『ぬるま湯組織』」になっている可能性が極めて高いからです。<strong style="background:linear-gradient(transparent 55%, #ffe08a 55%);font-weight:700">インドネシア特有の「ABS精神（Asal Bapak Senang：ボスが喜べばそれでいい）」による強烈な忖度文化</strong>が、真の課題を隠してしまっています。</p>
 <p>本セミナーでは、在インドネシア日系企業が陥りやすい「4つの生産性の壁」を紐解き、組織を変えるための最大のパラダイムシフトをお伝えします。それは、<strong>「心理的安全性（意識）を高めても、スタッフに実務スキルがなければ組織は空回りする」</strong>という事実です。</p>
 <p>スタッフの実行スキル（優先順位・定量的思考）と、現地マネジャーのマネジメントスキル。この「鏡合わせ」の両輪をどのように組織にインストールし、自律駆動型のプロフェッショナル集団を創り上げるのか。明日から使える具体的な仕組みとアイディアをお持ち帰りください。</p>
 <div style="background:#e8f0fb;border:2px solid #0050b3;border-radius:12px;padding:18px 22px;margin:18px 0 4px 0">
@@ -81,7 +81,7 @@ window.LP_CONFIG = {
   issues: {
     en: 'CHALLENGES',
     title: 'このようなお悩みはありませんか？',
-    img: '/assets/photos/seminar/workshop_scene.jpg',
+    img: 'images/photo_team_issues.jpg?v=20260716c',
     items: [
       'スタッフが目先のやりやすい仕事から着手し、常に「直前バタバタ」を繰り返している',
       'Malu（恥）を極度に恐れ、トラブルや遅れの報告が致命傷になるまで上がってこない',
@@ -186,14 +186,14 @@ window.LP_CONFIG = {
 <span style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>セミナー事務局</span></span>
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">✉</span><span><a href="mailto:support@ws-partners.com.sg" style="color:rgba(255,255,255,.85);text-decoration:underline">support@ws-partners.com.sg</a></span></span>
-  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6569784066" style="color:rgba(255,255,255,.85);text-decoration:underline">+65-6978-4066</a></span></span>
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6282321228694" style="color:rgba(255,255,255,.85);text-decoration:underline">+62 823 2122 8694</a></span></span>
 </span>`
   },
 
   apply: {
     en: 'APPLY',
     title: 'セミナーへのお申し込み',
-    body: `下記ボタンより、Zoomの参加登録ページへお進みください。<strong>参加費は無料</strong>です。<br>ご登録後、当日の視聴に必要なURLなどをZoomよりご案内いたします。`,
+    body: `下記ボタンより、Zoomの参加登録ページへお進みください。<strong>参加費は無料</strong>です。<br>ご登録後、当日の視聴に必要なURLをご案内いたします。`,
     mailto_subject: '',
     mailto_href: ''
   },
@@ -215,7 +215,8 @@ window.LP_CONFIG = {
 
       { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">PT WILLSEED PARTNERS INDONESIA</strong>' },
       { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
-      { label: '電話番号', value: '+65 9185 2747' },
+      { label: '電話番号', value: '+62 823 2122 8694' },
+      { label: '代表者',  value: 'Director 櫻井 和樹' },
       { label: '設立',    value: '2026年4月1日' }
     ]
   },
@@ -225,8 +226,8 @@ window.LP_CONFIG = {
       { href: 'https://ws-partners.com.sg/', label: '会社サイト' },
       { href: 'mailto:support@ws-partners.com.sg', label: 'お問い合わせ' }
     ],
-    address: '1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989',
-    copyright: '© 2026 WS PARTNERS PTE LTD. All Rights Reserved.'
+    address: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220',
+    copyright: '© 2026 PT WILLSEED PARTNERS INDONESIA. All Rights Reserved.'
   },
 
   forms: {
