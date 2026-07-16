@@ -29,8 +29,8 @@ window.LP_CONFIG = {
   ],
 
   hero: {
-    bg_image: 'images/hero_bg.jpg',
-    img_main: 'images/photo_trainer_sakurai.jpg',
+    bg_image: 'images/hero_bg.jpg?v=20260716',
+    img_main: 'images/photo_trainer_sakurai.jpg?v=20260716',
     img_sub1: '',
     img_sub2: '',
     subtitle: '〜「ぬるま湯組織」を脱却し、意識とスキルの両輪で<br>自律駆動型チームを創る60分〜',
@@ -145,7 +145,7 @@ window.LP_CONFIG = {
     title: '登壇者紹介',
     items: [
       {
-        img: 'images/photo_trainer_sakurai.jpg',
+        img: 'images/photo_trainer_sakurai.jpg?v=20260716',
         name: '櫻井 和樹　Kazuki Sakurai',
         role: 'WS PARTNERS PTE LTD　ディレクター・インドネシア法人拠点長<br>プロコーチ兼産業カウンセラー、Master of Business Administration（経営学修士）',
         profile: `株式会社グロービスにて社会人向け教育コンテンツの開発・法人営業を担う。
