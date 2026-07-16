@@ -166,7 +166,7 @@ window.LP_CONFIG = {
     en: '',
     title: '生産性を高める鍵は、「厳しい管理」でも「ぬるま湯の関係」でもありません',
     body: `<p>インドネシア拠点の生産性を劇的に高めるために必要なのは、仕組みやルールで厳しく管理することではありません。かといって、波風を立てずに仲良く働ける「ぬるま湯」の関係性をつくるだけでも不十分です。</p>
-<p>真に必要なのは、日本人の意図を理解して現場に落とし込む<strong style="background:linear-gradient(transparent 55%, #ffe08a 55%);font-weight:700">「現地マネジャーのマネジメントスキル」</strong>と、自ら数字で考え優先順位をつけて動く<strong style="background:linear-gradient(transparent 55%, #ffe08a 55%);font-weight:700">「現地スタッフの実行スキル」</strong>。この両輪が噛み合って初めて、心理的安全性は「成果」へと結実します。</p>
+<p>真に必要なのは、日本人の意図を理解して現場に落とし込む<strong style="font-weight:700;background:linear-gradient(transparent calc(100% - 4px), #f39c12 calc(100% - 4px))">「現地マネジャーのマネジメントスキル」</strong>と、自ら数字で考え優先順位をつけて動く<strong style="font-weight:700;background:linear-gradient(transparent calc(100% - 4px), #f39c12 calc(100% - 4px))">「現地スタッフの実行スキル」</strong>。この両輪が噛み合って初めて、心理的安全性は「成果」へと結実します。</p>
 <p>本セミナーでは、在インドネシア日系企業が日々直面するリアルな課題をもとに、組織の意識とスキルの両方を底上げし、感情のロスタイムがない、爆速で意思決定できる強い組織をつくるための具体的なロードマップをお伝えします。スタッフを「指示待ち」から「自律駆動型プロフェッショナル」へ変えたいと願う皆様のご参加を、心よりお待ちしております。</p>
 <div style="background:rgba(243,156,18,.15);border:2px solid #f39c12;border-radius:10px;padding:20px 24px;margin:16px 0 4px 0">
   <p style="font-size:0.85rem;font-weight:700;color:#f39c12;letter-spacing:0.05em;margin:0 0 12px 0">── このセミナーは、こんな方におすすめです ──</p>
