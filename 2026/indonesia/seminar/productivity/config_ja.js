@@ -236,7 +236,7 @@ window.LP_CONFIG = {
     hubspot_form_id:   '',
     hubspot_region:    'na1',
     thank_you_url:     '',
-    zoom_url:          ''
+    zoom_url:          'https://us02web.zoom.us/webinar/register/WN_XH2PXw1xSdqmPPajI9WAHQ#/registration'
   }
 
 };

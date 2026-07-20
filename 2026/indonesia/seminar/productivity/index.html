@@ -1215,7 +1215,7 @@
     document.head.appendChild(s);
   }
 
-  loadScript(configFile, onConfigLoaded, 'config_ja.js?v=20260716e');
+  loadScript(configFile, onConfigLoaded, 'config_ja.js?v=20260716f');
 
   /* --------------------------------------------------
      2. Init after config is loaded
@@ -1401,7 +1401,7 @@
     initScrollReveal();
 
     /* Init form */
-    var _zb=document.getElementById('zoom-apply-btn'); if(_zb && c.forms && c.forms.zoom_url){ _zb.href=c.forms.zoom_url; }
+    if(c.forms && c.forms.zoom_url){ var _z=c.forms.zoom_url; document.querySelectorAll('a.btn-cta, a.btn-entry-header, a.btn-bar-entry').forEach(function(a){ a.setAttribute('href',_z); a.setAttribute('target','_blank'); a.setAttribute('rel','noopener'); }); }
     initForm(c.forms);
   }
 
