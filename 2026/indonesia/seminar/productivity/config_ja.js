@@ -7,7 +7,7 @@ window.LP_CONFIG = {
 
   meta: {
     lang: 'ja',
-    title: '従業員満足度100%の罠。インドネシア拠点の生産性が上がらない本当の理由 2026年8月26日 | WS PARTNERS',
+    title: '「仲は良いのに、成果が出ない」インドネシア拠点の落とし穴 2026年8月26日 | WS PARTNERS',
     description: 'インドネシアの日系企業にお勤めの経営層・管理職層の日本人向け無料オンラインセミナー。2026年8月26日（水）Zoom開催。「ぬるま湯組織」を脱却し、意識とスキルの両輪で自律駆動型チームを創る60分。',
     other_lang_label: null,
     other_lang_url:   null
@@ -30,11 +30,11 @@ window.LP_CONFIG = {
 
   hero: {
     bg_image: 'images/hero_bg.jpg?v=20260716',
-    img_main: 'images/photo_trainer_sakurai.jpg?v=20260716',
+    img_main: 'images/photo_trainer_sakurai.jpg?v=20260722',
     img_sub1: '',
     img_sub2: '',
     subtitle: '〜「ぬるま湯組織」を脱却し、意識とスキルの両輪で<br>自律駆動型チームを創る60分〜',
-    title: '従業員満足度100%の罠。<br>インドネシア拠点の生産性が<br>上がらない本当の理由',
+    title: '「仲は良いのに、成果が出ない」<br>インドネシア拠点の落とし穴',
     format_label: '【形式】',
     format: 'オンライン開催（Web会議ツール Zoom）',
     date_label: '【日時】',
@@ -103,7 +103,7 @@ window.LP_CONFIG = {
     detail_title: 'セミナー情報',
     schedule_title: 'タイムテーブル（ジャカルタ時間 15:00〜16:00）',
     details: [
-      { label: '名称',     value: '従業員満足度100%の罠。インドネシア拠点の生産性が上がらない本当の理由' },
+      { label: '名称',     value: '「仲は良いのに、成果が出ない」インドネシア拠点の落とし穴' },
       { label: '開催日時', value: '2026年8月26日（水）15:00〜16:00（ジャカルタ時間）' },
       { label: '形式',     value: 'オンライン開催（Web会議ツール Zoom にて開催）' },
       { label: '参加費',   value: '無料' },
@@ -145,7 +145,7 @@ window.LP_CONFIG = {
     title: '登壇者紹介',
     items: [
       {
-        img: 'images/photo_trainer_sakurai.jpg?v=20260716',
+        img: 'images/photo_trainer_sakurai.jpg?v=20260722',
         name: '櫻井 和樹　Kazuki Sakurai',
         role: 'WS PARTNERS PTE LTD　ディレクター・インドネシア法人拠点長<br>プロコーチ兼産業カウンセラー、Master of Business Administration（経営学修士）',
         profile: `株式会社グロービスにて社会人向け教育コンテンツの開発・法人営業を担う。
