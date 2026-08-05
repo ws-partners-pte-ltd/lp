@@ -1,14 +1,14 @@
 /* ==================================================================
-   LP_CONFIG — タイ 「任せる」セミナー 2026年8月25日 (日本語版)
+   LP_CONFIG — タイ 「任せる」セミナー 2026年9月9日 (日本語版)
    Path: 2026/thailand/seminar/delegation/config_ja.js
-   Updated: 2026-08-05 v1 新規作成（オンライン/Zoom申込・日本語単言語）
+   Updated: 2026-08-05 v2 開催日を2026年9月9日（水）に修正（LP原稿タブ準拠）
    ================================================================== */
 window.LP_CONFIG = {
 
   meta: {
     lang: 'ja',
-    title: 'なぜタイ人マネジャーは部下に任せられないのか？ 2026年8月25日 | WS PARTNERS',
-    description: 'タイの日系企業にお勤めの経営層・拠点長・人事責任者向け無料オンラインセミナー。2026年8月25日（火）15:00〜16:00（タイ時間）、Zoom開催・日本語で実施。タイ人マネジャーが部下に任せられない3層・7つの構造を解き明かし、「管理する人」から「人を通じて成果を出す人」への転換を考える60分。',
+    title: 'なぜタイ人マネジャーは部下に任せられないのか？ 2026年9月9日 | WS PARTNERS',
+    description: 'タイの日系企業にお勤めの経営層・拠点長・人事責任者向け無料オンラインセミナー。2026年9月9日（水）15:00〜16:00（タイ時間）、Zoom開催・日本語で実施。タイ人マネジャーが部下に任せられない3層・7つの構造を解き明かし、「管理する人」から「人を通じて成果を出す人」への転換を考える60分。',
     other_lang_label: null,
     other_lang_url:   null
   },
@@ -39,7 +39,7 @@ window.LP_CONFIG = {
     format_label: '【形式】',
     format: 'オンライン開催（Web会議ツール Zoom）／日本語で実施',
     date_label: '【日時】',
-    date: '<strong>2026年8月25日（火）<br>15:00〜16:00（タイ時間）</strong>',
+    date: '<strong>2026年9月9日（水）<br>15:00〜16:00（タイ時間）</strong>',
     deadline_label: '【所要時間】',
     deadline: '全60分｜本編45分・サービス紹介10分・質疑応答5分',
     close_label: '【参加費】',
@@ -104,14 +104,14 @@ window.LP_CONFIG = {
     schedule_title: 'プログラム（全60分／タイ時間 15:00〜16:00）<span style="display:block;font-size:0.82rem;font-weight:400;color:var(--text-muted);margin-top:8px;line-height:1.7">※セミナー本編終了後、WS PARTNERSのサービスを約10分間ご紹介し、最後に質疑応答の時間を設けます。</span>',
     details: [
       { label: '名称',     value: 'なぜタイ人マネジャーは部下に任せられないのか？<br><span style="font-size:0.9em;color:#4a5568">―「管理する人」から「人を通じて成果を出す人」へ―</span>' },
-      { label: '開催日',   value: '2026年8月25日（火）' },
+      { label: '開催日',   value: '2026年9月9日（水）' },
       { label: '開催時間', value: '15:00〜16:00（タイ時間）<br><span style="font-size:0.9em;color:#4a5568">・15:00〜15:45　セミナー本編<br>・15:45〜15:55　WS PARTNERSサービス紹介<br>・15:55〜16:00　質疑応答</span>' },
       { label: '開催形式', value: 'オンライン開催（Web会議ツール Zoom にて開催）' },
       { label: '参加費',   value: '無料' },
       { label: '使用言語', value: '日本語' },
       { label: '対象',     value: '・タイ現地法人の日本人社長、MD、拠点長<br>・日本人経営層、部門責任者<br>・人事責任者、HR、HRD担当者<br>・タイ人マネジャーの育成責任を持つ日本人の方<br>・現地化、後継者育成、権限移譲を推進している企業' },
       { label: '参加方法', value: 'お申し込みいただいた方に、参加用URLを別途ご案内します。' },
-      { label: '申込締切', value: '2026年8月25日（火）午前10:00（タイ時間）' },
+      { label: '申込締切', value: '2026年9月9日（水）午前10:00（タイ時間）' },
       { label: '講師',     value: '加藤 健太（WS PARTNERS 代表）' },
       { label: '主催',     value: 'WS PARTNERS PTE LTD' }
     ],
