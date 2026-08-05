@@ -139,7 +139,7 @@ window.LP_CONFIG = {
       {
         part: 'PART 5',
         title: '質疑応答 ＆ アンケート・閉会',
-        body: `セミナー内容に関するご質問にお答えします。<br><span style="font-size:0.92em;color:var(--text-muted)">※本編終了後（15:45〜15:55）に、WS PARTNERSのタイ人マネジャー育成・組織開発支援について約10分間ご紹介します。</span>`
+        body: `セミナー内容に関するご質問にお答えします。<br><span style="font-size:0.92em;color:var(--text-muted)">※本編終了後に、WS PARTNERSのタイ人マネジャー育成・組織開発支援について約10分間ご紹介します。</span>`
       }
     ]
   },
