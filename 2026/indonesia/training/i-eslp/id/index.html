@@ -224,6 +224,69 @@
         #lang-switch:hover { background: #c0392b !important; }
         @media (max-width: 900px) { .header-buttons #lang-switch { display: none !important; } }
 
+        /* ===== I-ESLP hero refresh (2026-08) ===== */
+        .hero-title {
+            font-size: clamp(1.65rem, 3.0vw, 2.75rem) !important;
+            line-height: 1.15 !important;
+            letter-spacing: 0.01em;
+            margin-bottom: 2vh !important;
+            text-shadow: 0 3px 18px rgba(0,0,0,0.55);
+        }
+        .hero-title .ttl-main { display:block; }
+        .hero-title .ttl-abbr {
+            display:inline-block; margin-top:0.35em; padding:0.12em 0.7em;
+            background: var(--accent-orange); color:#fff; border-radius:10px;
+            font-size: 0.62em; letter-spacing:0.08em; box-shadow:0 6px 18px rgba(243,156,18,.45);
+        }
+        .hero-subtitle { font-size: clamp(0.9rem, 1.25vw, 1.12rem) !important; margin-bottom: 1.4vh !important; }
+        .hero { height: auto !important; min-height: 100vh; padding-bottom: 4vh !important; }
+        .hero-container { padding-top: 1vh; }
+        .hero-text-content { flex: 1.35 !important; max-width: 720px !important; }
+        .hero-visual-content { flex: 0.95 !important; }
+
+        /* large instructor portrait */
+        .hero-portrait { position: relative; width: min(100%, 330px); margin: 0 auto; }
+        .hero-portrait img {
+            width: 100%; max-height: 52vh; object-fit: cover; object-position: center 18%;
+            border-radius: 20px; display: block;
+            box-shadow: 0 26px 60px rgba(0,0,0,.45);
+            border: 5px solid rgba(255,255,255,.92);
+        }
+        .hero-portrait .pf-cap {
+            position: absolute; left: 50%; bottom: -16px; transform: translateX(-50%);
+            background: rgba(4,20,52,.94); color:#fff; padding: 9px 20px; border-radius: 30px;
+            font-size: 0.82rem; font-weight: 700; white-space: nowrap;
+            box-shadow: 0 10px 24px rgba(0,0,0,.35); border:1px solid rgba(255,255,255,.18);
+        }
+        .hero-portrait .pf-cap small { display:block; font-weight:500; font-size:0.74em; color: var(--secondary); }
+        .hero-portrait .pf-badge {
+            position: absolute; top: -20px; right: -20px; width: 104px; height: 104px; border-radius: 50%;
+            background: var(--accent-orange); color:#fff; display:flex; flex-direction:column;
+            align-items:center; justify-content:center; text-align:center; line-height:1.25;
+            box-shadow: 0 12px 28px rgba(243,156,18,.5); border:3px solid rgba(255,255,255,.9);
+        }
+        .hero-portrait .pf-badge b { font-size:0.66rem; letter-spacing:0.12em; display:block; }
+        .hero-portrait .pf-badge span { font-size:0.78rem; font-weight:900; display:block; margin-top:2px; }
+        @media (max-width: 900px) {
+            .hero-portrait { width: min(74%, 300px); margin-top: 18px; }
+            .hero-portrait .pf-badge { width:82px; height:82px; top:-14px; right:-8px; }
+        }
+
+        /* ===== illustration eyecatches ===== */
+        .ill-band { display:flex; align-items:center; justify-content:center; gap:26px; flex-wrap:wrap; margin: 0 auto 26px; max-width: 900px; }
+        .ill-band img { width: min(220px, 42vw); height:auto; }
+        .ill-band .ill-lead { flex:1; min-width:260px; font-size:1rem; line-height:1.9; color: var(--text-muted); }
+        .ill-inline { float:right; width:132px; margin:0 0 10px 16px; }
+        .ill-card { display:block; width:96px; height:auto; margin:0 auto 12px; }
+        .ill-day { position:absolute; top:16px; right:16px; width:104px; background:#fff; padding:6px; border-radius:12px; box-shadow:0 6px 16px rgba(0,0,0,.28); }
+        .timeline-content { position:relative; padding-right: 140px !important; }
+        @media (max-width: 700px) {
+            .timeline-content { padding-right: 30px !important; }
+            .ill-day { position: static; display:block; width:110px; margin: 0 0 12px auto; }
+            .ill-inline { float:none; display:block; margin: 0 auto 14px; }
+        }
+        .sec-ill { display:block; width: min(240px, 60vw); margin: 0 auto 22px; }
+
 </style>
 </head>
 <body>
@@ -273,7 +336,7 @@
         <div class="container hero-container">
             <div class="hero-text-content reveal-left">
                 <h2 class="hero-subtitle">MBA Praktis × Diskusi Lintas Industri — Enam bulan untuk berkembang dari &ldquo;pelaksana&rdquo; menjadi &ldquo;pemimpin bisnis&rdquo;</h2>
-                <h1 class="hero-title">Indonesia Executive Strategy &amp; Leadership Program<br>(I-ESLP)</h1>
+                <h1 class="hero-title"><span class="ttl-main">Indonesia Executive Strategy<br>&amp; Leadership Program</span><span class="ttl-abbr">I-ESLP</span></h1>
                 <div class="hero-info-box">
                     <p class="lead">Sekolah eksekutif lintas industri bagi Direktur dan manajemen senior<br>perusahaan Jepang di Indonesia</p>
                     <p class="date">Dimulai November 2026<br>6 sesi, sebulan sekali (tatap muka)</p>
@@ -286,13 +349,10 @@
                 <a href="#apply" class="btn-cta">Daftar Sekarang</a>
             </div>
             <div class="hero-visual-content reveal-right">
-                <div class="hero-images-wrapper">
-                    <img src="../images/hero_meeting.webp" alt="Diskusi lintas industri" class="img-collage img-online">
-                    <img src="../images/workshop_scene.jpg" alt="Sekolah eksekutif" class="img-collage img-instructor">
-                    <div class="hero-badge-circle">
-                        <span class="badge-en">EXECUTIVE</span>
-                        <span class="badge-ja">Lintas<br>Industri</span>
-                    </div>
+                <div class="hero-portrait">
+                    <img src="../images/photo_trainer_sakurai.jpg?v=20260811b" alt="Pengajar">
+                    <div class="pf-badge"><b>EXECUTIVE</b><span>Lintas<br>Industri</span></div>
+                    <div class="pf-cap">Kazuki Sakurai (MBA)<small>※Pengajar masih diseleksi / foto sementara</small></div>
                 </div>
             </div>
         </div>
@@ -308,6 +368,7 @@
                     <p style="font-size: clamp(1.4rem, 3vw, 2.1rem); font-weight: 900; color: var(--bg-dark); line-height: 1.4; margin-bottom: 18px;">
                         &ldquo;Break the Shell, Build the Future&rdquo;
                     </p>
+                    <img src="/assets/illustrations/08_iceberg.png" alt="Break the Shell" class="sec-ill">
                     <p style="font-size: 1.05rem; font-weight: 700; color: var(--text-main);">
                         Program intensif enam bulan untuk memecahkan &ldquo;cangkang&rdquo; asumsi perusahaan sendiri dan memperoleh perspektif seorang pemimpin bisnis.
                     </p>
@@ -332,6 +393,7 @@
                 <span class="en">Challenges</span>
                 Apakah Anda merasakan hal-hal berikut?
             </h2>
+            <img src="/assets/illustrations/09_brick_wall.png" alt="Walls" class="sec-ill">
             <p class="reveal" style="text-align:center; color: var(--text-muted); margin-bottom: 35px; font-size: 1rem;">Banyak eksekutif yang sedang bertumbuh merasakan tiga hambatan berikut.</p>
             <div class="feature-grid reveal delay-100" style="max-width: 1000px; margin: 0 auto;">
                 <div class="feature-card">
@@ -363,6 +425,7 @@
                 <span class="en">To-Be</span>
                 Tiga Kualitas Pemimpin Perusahaan Masa Depan
             </h2>
+            <img src="/assets/illustrations/02_staircase_leadership.png" alt="To-Be" class="sec-ill">
             <p class="reveal" style="text-align:center; color: var(--text-muted); margin-bottom: 40px; font-size: 1rem;">The &ldquo;Ideal&rdquo; Indonesian Executive</p>
             <div class="value-grid" style="max-width: 1100px; margin: 0 auto;">
                 <div class="value-card reveal delay-100">
@@ -453,6 +516,7 @@
                 </div>
             </div>
             <div class="independent-box reveal delay-200" style="max-width: 900px; margin: 30px auto 0;">
+                <img src="/assets/illustrations/10_team_shield.png" alt="Benefits" class="ill-inline">
                 <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 15px; font-weight: 900;">Manfaat bagi Perusahaan</h3>
                 <ul style="padding-left: 20px; margin-bottom: 0; line-height: 1.9;">
                     <li style="list-style-type: disc; margin-bottom: 12px;"><strong>Keluar dari &ldquo;katak dalam tempurung&rdquo;:</strong> Berdiskusi dengan talenta manajerial unggul di luar grup perusahaan sendiri membantu menempatkan asumsi internal dalam perspektif yang lebih luas.</li>
@@ -470,6 +534,7 @@
                 <span class="en">Learning Model</span>
                 Model Pembelajaran (Input-Output Cycle)
             </h2>
+            <img src="/assets/illustrations/13_handoff_delivery.png" alt="Input-Output Cycle" class="sec-ill">
             <p class="reveal" style="text-align: center; color: var(--text-muted); margin-bottom: 35px; font-size: 1rem;">Setiap sesi dirancang dalam tiga tahap — &ldquo;sebelum → saat → sesudah&rdquo; — agar pembelajaran benar-benar berubah menjadi tindakan.</p>
             <div class="domain-grid reveal delay-100" style="max-width: 1000px; margin: 0 auto; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
                 <div class="domain-card" style="text-align:left;">
@@ -498,6 +563,7 @@
                 <span class="en">Target</span>
                 Peserta yang Dituju
             </h2>
+            <img src="/assets/illustrations/il_m_dialogue_meeting.png" alt="Target" class="sec-ill">
             <div class="reveal" style="max-width: 900px; margin: 0 auto;">
                 <img src="../images/Indonesia_04.jpg" alt="Pemandangan Indonesia" class="section-image" style="margin-left: auto; margin-right: auto; max-height: 320px;">
             </div>
@@ -546,6 +612,7 @@
             <div class="timeline">
                 <div class="timeline-item reveal-right delay-100">
                     <div class="timeline-content">
+                        <img src="/assets/illustrations/il_m_manager_tablet.png" alt="" class="ill-day">
                         <span class="part-label">【Day 1】</span>
                         <span class="date-label">Tanggal sedang difinalisasi (dimulai November 2026)</span>
                         <h3>Perspektif Pemimpin Bisnis dan Kepemimpinan</h3>
@@ -556,6 +623,7 @@
                 </div>
                 <div class="timeline-item reveal-right delay-200">
                     <div class="timeline-content">
+                        <img src="/assets/illustrations/il_m_roadmap_goal.png" alt="" class="ill-day">
                         <span class="part-label">【Day 2】</span>
                         <span class="date-label">Tanggal sedang difinalisasi</span>
                         <h3>Strategi Bisnis dan Keunggulan Kompetitif</h3>
@@ -566,6 +634,7 @@
                 </div>
                 <div class="timeline-item reveal-right delay-300">
                     <div class="timeline-content">
+                        <img src="/assets/illustrations/il_m_gears_blueprint.png" alt="" class="ill-day">
                         <span class="part-label">【Day 3】</span>
                         <span class="date-label">Tanggal sedang difinalisasi</span>
                         <h3>Pemasaran dan Inovasi</h3>
@@ -576,6 +645,7 @@
                 </div>
                 <div class="timeline-item reveal-right delay-100">
                     <div class="timeline-content">
+                        <img src="/assets/illustrations/il_m_qc_inspection.png" alt="" class="ill-day">
                         <span class="part-label">【Day 4】</span>
                         <span class="date-label">Tanggal sedang difinalisasi</span>
                         <h3>Akuntansi Strategis dan Pengambilan Keputusan</h3>
@@ -586,6 +656,7 @@
                 </div>
                 <div class="timeline-item reveal-right delay-200">
                     <div class="timeline-content">
+                        <img src="/assets/illustrations/il_m_dialogue_meeting2.png" alt="" class="ill-day">
                         <span class="part-label">【Day 5】</span>
                         <span class="date-label">Tanggal sedang difinalisasi</span>
                         <h3>Manajemen Organisasi dan Pengembangan SDM</h3>
@@ -596,6 +667,7 @@
                 </div>
                 <div class="timeline-item reveal-right delay-300">
                     <div class="timeline-content">
+                        <img src="/assets/illustrations/il_m_flowchart_gears.png" alt="" class="ill-day">
                         <span class="part-label">【Day 6】</span>
                         <span class="date-label">Tanggal sedang difinalisasi</span>
                         <h3>Integrasi Pandangan Manajerial dan Deklarasi Kepemimpinan</h3>
@@ -620,6 +692,7 @@
                 <span class="en">Future Vision</span>
                 Peta Jalan 5 Tahun
             </h2>
+            <img src="/assets/illustrations/14_hot_air_balloon.png" alt="Future Vision" class="sec-ill">
             <div class="reveal" style="text-align: center; margin-bottom: 30px;">
                 <p style="color: var(--text-muted); font-size: 1rem;">Dimulai dari diskusi lintas industri di antara perusahaan Jepang, lalu diperluas secara bertahap ke tingkat global.</p>
             </div>
@@ -695,6 +768,7 @@
                 </ul>
             </div>
             <div class="issue-box reveal delay-300">
+                <img src="/assets/illustrations/il_m_kanban_board.png" alt="Flow" class="ill-inline">
                 <h3 style="color: var(--primary); margin-bottom: 25px;">【Alur dari Pendaftaran hingga Pelaksanaan】</h3>
                 <ol style="padding-left: 30px; font-size: 0.95rem; line-height: 1.8;">
                     <li style="margin-bottom: 15px;">Silakan mendaftar melalui formulir di bagian bawah halaman ini.</li>
