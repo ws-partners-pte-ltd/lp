@@ -571,6 +571,106 @@
             .trainer-desc { text-align: left; }
             .trainer-block { padding: 24px 20px; }
         }
+
+        /* ================================================================
+           I-ESLP 追補（2026-08-14 その2）
+           (1) グローバルメニューをゴールドの帯にして浮き上がらせる
+           (2) ヒーローをスクロールなしで1画面に収める
+           (3) ヒーロー背景のオーバーレイを元の状態に戻す
+           ================================================================ */
+
+        /* -- (1) グローバルメニュー：ゴールドの帯 -- */
+        .site-header { box-shadow: 0 4px 24px rgba(20,14,0,.22); }
+        .header-bottom {
+            background: linear-gradient(180deg,#f6dda0 0%,#e0c069 42%,#c9a84c 72%,#ab8628 100%);
+            border-top: 1px solid rgba(255,255,255,.6);
+            border-bottom: 2px solid #7d5f11;
+            box-shadow: 0 10px 24px rgba(0,0,0,.38), inset 0 1px 0 rgba(255,255,255,.55);
+            position: relative;
+            z-index: 3;
+        }
+        .nav-container a {
+            color: #131c30;
+            font-weight: 700;
+            letter-spacing: .07em;
+            text-shadow: 0 1px 0 rgba(255,255,255,.42);
+        }
+        .nav-container a:hover { color: #000000; }
+        .nav-container a::after { background: #131c30; height: 2px; }
+        @media (max-width: 768px) {
+            .header-bottom { box-shadow: 0 10px 24px rgba(0,0,0,.42); }
+            .nav-container a { border-bottom: 1px solid rgba(19,28,48,.22); }
+            .nav-container a:last-child { border-bottom: none; }
+        }
+
+        /* -- (3) ヒーロー背景オーバーレイを元に戻す -- */
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0,30,80,0.65) 0%, rgba(0,30,80,0.25) 100%) !important;
+        }
+
+        /* -- (2) ヒーローを1画面(100vh)に収める：PCのみ -- */
+        @media (min-width: 769px) {
+            .hero {
+                height: 100vh !important;
+                min-height: 600px;
+                padding-top: var(--header-total-height) !important;
+                padding-bottom: 0 !important;
+                overflow: hidden;
+            }
+            .hero-container { padding-top: 0 !important; align-items: center; }
+            .hero-text-content { transform: none !important; }
+
+            .hero-subtitle {
+                font-size: clamp(.78rem, 1.55vh, 1.02rem) !important;
+                margin-bottom: 1vh !important;
+            }
+            .hero-title {
+                font-size: clamp(1.32rem, 3.25vh, 2.35rem) !important;
+                margin-bottom: 1.5vh !important;
+            }
+            .hero-title .ttl-abbr { margin-top: .28em; }
+
+            .hero-info-box {
+                padding: clamp(10px, 2vh, 22px) clamp(16px, 2.2vw, 32px) !important;
+                margin-bottom: 2vh !important;
+            }
+            .hero-info-box .lead {
+                font-size: clamp(.76rem, 1.5vh, .98rem) !important;
+                margin-bottom: 1vh !important;
+            }
+            .hero-info-box .date {
+                font-size: clamp(1.02rem, 2.55vh, 1.6rem) !important;
+                margin-bottom: 1vh !important;
+            }
+            .hero-info-box .deadline {
+                font-size: clamp(.74rem, 1.4vh, .95rem) !important;
+                margin-bottom: .7vh !important;
+            }
+            .hero-info-box .note {
+                font-size: clamp(.66rem, 1.2vh, .84rem) !important;
+                line-height: 1.55 !important;
+            }
+            .hero .btn-cta {
+                font-size: clamp(.88rem, 1.8vh, 1.08rem) !important;
+                padding: clamp(8px, 1.5vh, 14px) clamp(22px, 3vw, 42px) !important;
+            }
+
+            .hero-visual-content { transform: none !important; height: auto !important; }
+            .hero-portrait { width: min(100%, 300px); }
+            .hero-portrait img { max-height: 44vh !important; }
+
+            .scroll-indicator { bottom: 1.1vh !important; font-size: .56rem !important; }
+            .scroll-indicator::after { height: clamp(12px, 2.2vh, 24px) !important; }
+
+            .hero::before {
+                top: calc(var(--header-total-height) + 16px) !important;
+                left: 22px !important; width: 84px !important; height: 84px !important;
+            }
+            .hero::after {
+                bottom: 22px !important; right: 22px !important;
+                width: 84px !important; height: 84px !important;
+            }
+        }
 </style>
 </head>
 <body>
