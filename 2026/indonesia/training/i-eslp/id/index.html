@@ -686,6 +686,85 @@
         @media (max-width: 700px) {
             .ill-day { width: 118px !important; }
         }
+
+        /* -- ヒーローをもう一回り大きく（SCROLL位置は変えない・2026-08-14 その3） -- */
+        @media (min-width: 769px) {
+            .hero-subtitle { font-size: clamp(.86rem, 1.78vh, 1.16rem) !important; margin-bottom: 1.1vh !important; }
+            .hero-title    { font-size: clamp(1.5rem, 3.72vh, 2.72rem) !important; margin-bottom: 1.7vh !important; }
+
+            .hero-info-box { padding: clamp(12px, 2.3vh, 26px) clamp(18px, 2.5vw, 36px) !important; margin-bottom: 2.2vh !important; }
+            .hero-info-box .lead     { font-size: clamp(.84rem, 1.72vh, 1.12rem) !important; margin-bottom: 1.1vh !important; }
+            .hero-info-box .date     { font-size: clamp(1.15rem, 2.92vh, 1.84rem) !important; margin-bottom: 1.1vh !important; }
+            .hero-info-box .deadline { font-size: clamp(.82rem, 1.6vh, 1.06rem) !important; margin-bottom: .8vh !important; }
+            .hero-info-box .note     { font-size: clamp(.72rem, 1.36vh, .94rem) !important; }
+
+            .hero .btn-cta {
+                font-size: clamp(.96rem, 2.02vh, 1.2rem) !important;
+                padding: clamp(10px, 1.72vh, 16px) clamp(26px, 3.4vw, 48px) !important;
+            }
+
+            .hero-text-content { max-width: 780px !important; }
+            .hero-portrait { width: min(100%, 342px); }
+            .hero-portrait img { max-height: 50vh !important; }
+            .hero-portrait .pf-badge { width: 116px; height: 116px; top: -22px; right: -22px; }
+            .hero-portrait .pf-cap { font-size: .9rem; padding: 10px 22px; bottom: -18px; }
+
+            /* SCROLL は元の位置のまま（下げない） */
+            .scroll-indicator { bottom: 1.1vh !important; }
+        }
+
+        /* -- 大型化に伴い、ヒーローの横幅も広げて意図した行組みを維持 -- */
+        @media (min-width: 1200px) {
+            .hero .container { max-width: 1320px; }
+            .hero-text-content { max-width: 880px !important; }
+        }
+
+        /* -- ワイド画面では小見出しも1行に収まる幅を確保 -- */
+        @media (min-width: 1500px) {
+            .hero .container { max-width: 1400px; }
+            .hero-text-content { max-width: 960px !important; }
+        }
+
+        /* -- 超ワイド画面（2000px以上）でも題名を2行組みに保つ -- */
+        @media (min-width: 2000px) {
+            .hero .container { max-width: 1640px; }
+            .hero-text-content { max-width: 1120px !important; }
+        }
+
+        /* -- 小見出しは1行に収める（本文サイズは維持） -- */
+        @media (min-width: 1200px) {
+            .hero-container { gap: 3vw !important; }
+            .hero-text-content { flex: 1.5 !important; }
+            .hero-subtitle { font-size: clamp(.82rem, 1.6vh, 1.06rem) !important; }
+        }
+
+        /* -- カリキュラムのカードを背景から分離して読みやすく（2026-08-14 その4） -- */
+        .program-section { background: linear-gradient(180deg,#05080f 0%,#0a1120 100%); }
+        .timeline-content {
+            background: linear-gradient(180deg,#18233d 0%,#111b32 100%) !important;
+            border: 1px solid rgba(201,168,76,.38) !important;
+            box-shadow: 0 12px 30px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.06) !important;
+        }
+        .timeline-content:hover {
+            background: linear-gradient(180deg,#1e2a48 0%,#16213c 100%) !important;
+            border-color: rgba(201,168,76,.72) !important;
+        }
+        .timeline-content h3 { color: #ffffff; }
+        .timeline-content span.date-label { color: rgba(236,227,204,.72); }
+        .timeline-content p.session-desc { color: rgba(244,238,224,.92); }
+        .cur-block { border-left: 2px solid rgba(201,168,76,.65); }
+        .cur-block p { color: rgba(244,238,224,.92); }
+        .cur-tag { background: rgba(201,168,76,.22); border-color: rgba(201,168,76,.5); }
+        .cur-tag.apply { background: rgba(255,255,255,.14); color: #f2ece0; border-color: rgba(255,255,255,.28); }
+        .timeline::before { background: linear-gradient(to bottom, rgba(201,168,76,.08), var(--gold), rgba(201,168,76,.08)); }
+        .timeline-item::before { box-shadow: 0 0 0 4px #05080f, 0 0 16px rgba(240,208,128,.6); }
+        /* 個社別オプションのボックスも同様に分離 */
+        .program-section .info-box,
+        .program-section > .container > div[style*="rgba(255,255,255"] {
+            background: linear-gradient(180deg,#18233d 0%,#111b32 100%) !important;
+            border: 1px solid rgba(201,168,76,.38) !important;
+            box-shadow: 0 12px 30px rgba(0,0,0,.5) !important;
+        }
 </style>
 </head>
 <body>
@@ -1077,7 +1156,7 @@
                 </div>
             </div>
 
-            <div class="reveal delay-300" style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(201,168,76,0.12); border-radius: var(--radius-md); max-width: 850px; margin-left: auto; margin-right: auto; border: 1px solid rgba(201,168,76,0.40);">
+            <div class="reveal delay-300" style="text-align: center; margin-top: 40px; padding: 20px; background: linear-gradient(180deg,#18233d 0%,#111b32 100%); border-radius: var(--radius-md); max-width: 850px; margin-left: auto; margin-right: auto; border: 1px solid rgba(201,168,76,0.45); box-shadow: 0 12px 30px rgba(0,0,0,.5);">
                 <h4 style="color: var(--secondary); margin-bottom: 10px; font-size: 1.2rem;">【Opsi Khusus Perusahaan】</h4>
                 <p style="font-size: 1rem; color: rgba(255,255,255,0.9);">Setelah Day 6, dimungkinkan untuk menyelenggarakan &ldquo;sesi presentasi usulan transformasi internal (Day 7)&rdquo; sebagai opsi khusus perusahaan Anda.<br><span style="font-size: 0.9rem;">Kami juga akan menyampaikan laporan ringkas mengenai pelaksanaan dan sikap peserta kepada penanggung jawab program.</span></p>
             </div>
