@@ -193,11 +193,11 @@ window.LP_CONFIG = {
     title: 'Pengajar',
     items: [
       {
-        img:     '../images/workshop_scene.jpg',
-        name:    'Sedang dalam proses seleksi',
-        role:    'Kami sedang menyeleksi pengajar yang memiliki gelar MBA sekaligus pemahaman mendalam tentang praktik manajemen perusahaan Jepang di Indonesia',
-        label:   'Dalam finalisasi',
-        profile: 'Untuk program ini, kami sedang menyeleksi jajaran pengajar yang memadukan pengetahuan sistematis manajemen bisnis (MBA) dengan pemahaman mendalam tentang realitas manajemen perusahaan Jepang di Indonesia.\n\nProfil pengajar akan diumumkan di halaman ini setelah ditetapkan. Untuk pertanyaan lebih lanjut, silakan hubungi kontak kami.'
+        img:     '../images/photo_trainer_agus.webp?v=20260814',
+        name:    'Agus Ismail, S.T., M.B.A.',
+        role:    'Director / Commissioner / UICM Vice Chancellor',
+        label:   'Menjembatani garis depan bisnis dengan dunia akademik',
+        profile: 'Seorang pemimpin strategis dengan pengalaman lebih dari 20 tahun di institusi keuangan global. Saat ini beliau memimpin di titik temu antara industri, keuangan, dan dunia akademik: Direktur perusahaan solusi human capital, Komisaris bank syariah, dan Wakil Rektor universitas.\n\n【Jabatan Utama Saat Ini】\nDirector PT FAST Indo Talenta (FITALENTA) / Komisaris Bank Syariah AlSalaam / Wakil Rektor Universitas Insan Cendekia Mandiri (UICM)\n\n【Pengalaman Profesional Utama】\nHead of HR & Learning, Generali Indonesia (11 tahun) / Organization Development Manager, Rabobank International / Head of Customer Division, Bank Danamon\n\n【Bidang Keahlian】\nManajemen Human Capital (HRM/OD) / DX & Eksekusi Strategi / Tata Kelola Perusahaan / Inovasi Sosial\n\n【Pendidikan & Sertifikasi】\nExecutive MBA SBM ITB, sedang menempuh Doctor of Science in Management SBM ITB / Tersertifikasi BNSP: Komisaris Bank Syariah dan Asesor / Master Coach (Sales & Service Excellence)'
       }
     ]
   },

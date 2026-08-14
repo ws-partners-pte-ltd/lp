@@ -190,11 +190,11 @@ window.LP_CONFIG = {
     title: '講師の紹介',
     items: [
       {
-        img:     '../images/workshop_scene.jpg',
-        name:    '講師選定中',
-        role:    'MBAホルダーかつインドネシア日系企業の経営実務に精通した講師陣を選定中です',
-        label:   '調整中',
-        profile: '本プログラムでは、経営学（MBA）の体系的知見と、インドネシア日系企業の経営現場に対する深い理解を兼ね備えた講師陣を選定しております。\n\n講師が確定次第、本ページにてプロフィールをご案内いたします。個別のご照会につきましては、お問い合わせ先までご連絡ください。'
+        img:     '../images/photo_trainer_agus.webp?v=20260814',
+        name:    'Agus Ismail, S.T., M.B.A.',
+        role:    'Director ／ Commissioner ／ UICM Vice Chancellor',
+        label:   'ビジネスの最前線とアカデミアを繋ぐ',
+        profile: 'グローバル金融機関で20年以上のキャリアを持つ戦略リーダー。現在は、人的資本ソリューション企業の取締役、シャリア銀行の監査役、そして大学の副学長として、産業・金融・学術の交差点で指揮を執っています。\n\n【現在の主要な役職】\nPT FAST Indo Talenta（FITALENTA）取締役／Bank Syariah AlSalaam 監査役（コミッショナー）／Universitas Insan Cendekia Mandiri（UICM）副学長\n\n【主な実務経歴】\nGenerali Indonesia 人事・教育部門ヘッド（11年）／Rabobank International 組織開発マネージャー／Bank Danamon 顧客部門ヘッド\n\n【専門領域】\n人的資本経営（HRM／OD）／DX・戦略実行／コーポレートガバナンス／社会的イノベーション\n\n【学歴・資格】\nバンドン工科大学（SBM ITB）Executive MBA、同大学 経営学博士課程在籍／BNSP公認 シャリア銀行監査役・アセッサー／マスターコーチ（Sales & Service Excellence）'
       }
     ]
   },
