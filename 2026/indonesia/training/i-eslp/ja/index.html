@@ -671,6 +671,21 @@
                 width: 84px !important; height: 84px !important;
             }
         }
+
+        /* -- 円形バッジ型イラスト（2026-08-14 差し替え）: 白いカード枠は不要 -- */
+        .ill-day {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+            box-shadow: none !important;
+            width: 116px !important;
+            filter: drop-shadow(0 8px 18px rgba(0,0,0,.45));
+        }
+        .sec-ill { width: min(232px, 58vw); }
+        .ill-inline { width: 148px; }
+        @media (max-width: 700px) {
+            .ill-day { width: 118px !important; }
+        }
 </style>
 </head>
 <body>
@@ -752,7 +767,7 @@
                     <p style="font-size: clamp(1.4rem, 3vw, 2.1rem); font-weight: 900; color: var(--bg-dark); line-height: 1.4; margin-bottom: 18px;">
                         &ldquo;Break the Shell, Build the Future&rdquo;
                     </p>
-                    <img src="/assets/illustrations/08_iceberg.png" alt="Break the Shell" class="sec-ill">
+                    <img src="/assets/illustrations/il_c_break_the_shell.png?v=20260814b" alt="Break the Shell" class="sec-ill">
                     <p style="font-size: 1.05rem; font-weight: 700; color: var(--text-main);">
                         自社の常識（Shell）を破り、経営者としての視座を獲得する6ヶ月間の集中コース。
                     </p>
@@ -777,7 +792,7 @@
                 <span class="en">Challenges</span>
                 変革を阻む「3つの壁」
             </h2>
-            <img src="/assets/illustrations/09_brick_wall.png" alt="Walls" class="sec-ill">
+            <img src="/assets/illustrations/il_c_break_the_wall.png?v=20260814b" alt="Walls" class="sec-ill">
             <p class="reveal" style="text-align:center; color: var(--text-muted); margin-bottom: 35px; font-size: 1rem;">理想の経営者像（To-Be）に対し、ナショナルスタッフの経営幹部登用が進むなかで立ちはだかる課題です。</p>
             <div class="feature-grid reveal delay-100" style="max-width: 1000px; margin: 0 auto;">
                 <div class="feature-card">
@@ -809,7 +824,7 @@
                 <span class="en">To-Be</span>
                 これからの現地法人トップに求められる3つの要件
             </h2>
-            <img src="/assets/illustrations/02_staircase_leadership.png" alt="To-Be" class="sec-ill">
+            <img src="/assets/illustrations/il_c_three_pillars.png?v=20260814b" alt="To-Be" class="sec-ill">
             <p class="reveal" style="text-align:center; color: var(--text-muted); margin-bottom: 40px; font-size: 1rem;">The &ldquo;Ideal&rdquo; Indonesian Executive</p>
             <div class="value-grid" style="max-width: 1100px; margin: 0 auto;">
                 <div class="value-card reveal delay-100">
@@ -900,7 +915,7 @@
                 </div>
             </div>
             <div class="independent-box reveal delay-200" style="max-width: 900px; margin: 30px auto 0;">
-                <img src="/assets/illustrations/10_team_shield.png" alt="Benefits" class="ill-inline">
+                <img src="/assets/illustrations/il_c_talent_development.png?v=20260814b" alt="Benefits" class="ill-inline">
                 <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 15px; font-weight: 900;">導入企業様にとってのメリット</h3>
                 <ul style="padding-left: 20px; margin-bottom: 0; line-height: 1.9;">
                     <li style="list-style-type: disc; margin-bottom: 12px;"><strong>「井の中の蛙」からの脱却：</strong>自社グループ以外の優秀な経営人材と議論することで、自社の常識を相対化できます。</li>
@@ -918,7 +933,7 @@
                 <span class="en">Learning Model</span>
                 学習モデル（Input-Output Cycle）
             </h2>
-            <img src="/assets/illustrations/13_handoff_delivery.png" alt="Input-Output Cycle" class="sec-ill">
+            <img src="/assets/illustrations/il_c_dx_ai_cloud.png?v=20260814b" alt="Input-Output Cycle" class="sec-ill">
             <p class="reveal" style="text-align: center; color: var(--text-muted); margin-bottom: 35px; font-size: 1rem;">毎回のセッションを「事前 → 当日 → 事後」の3段階で設計し、学びを確実に行動へ変えます。</p>
             <div class="domain-grid reveal delay-100" style="max-width: 1000px; margin: 0 auto; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
                 <div class="domain-card" style="text-align:left;">
@@ -947,7 +962,7 @@
                 <span class="en">Target</span>
                 本プログラムの対象者
             </h2>
-            <img src="/assets/illustrations/il_m_dialogue_meeting.png" alt="Target" class="sec-ill">
+            <img src="/assets/illustrations/il_c_cross_industry_network.png?v=20260814b" alt="Target" class="sec-ill">
             <div class="reveal" style="max-width: 900px; margin: 0 auto;">
                 <img src="../images/Indonesia_04.jpg" alt="インドネシアの風景" class="section-image" style="margin-left: auto; margin-right: auto; max-height: 320px;">
             </div>
@@ -996,7 +1011,7 @@
             <div class="timeline">
                 <div class="timeline-item reveal-right delay-100">
                     <div class="timeline-content">
-                        <img src="/assets/illustrations/il_m_manager_tablet.png" alt="" class="ill-day">
+                        <img src="/assets/illustrations/il_c_executive_vision.png?v=20260814b" alt="" class="ill-day">
                         <span class="part-label">【Day 1】</span>
                         <span class="date-label">日程調整中（2026年11月開講予定）</span>
                         <h3>経営者の視座とリーダーシップ</h3>
@@ -1007,7 +1022,7 @@
                 </div>
                 <div class="timeline-item reveal-right delay-200">
                     <div class="timeline-content">
-                        <img src="/assets/illustrations/il_m_roadmap_goal.png" alt="" class="ill-day">
+                        <img src="/assets/illustrations/il_c_strategy_chess.png?v=20260814b" alt="" class="ill-day">
                         <span class="part-label">【Day 2】</span>
                         <span class="date-label">日程調整中</span>
                         <h3>経営戦略と競争優位</h3>
@@ -1018,7 +1033,7 @@
                 </div>
                 <div class="timeline-item reveal-right delay-300">
                     <div class="timeline-content">
-                        <img src="/assets/illustrations/il_m_gears_blueprint.png" alt="" class="ill-day">
+                        <img src="/assets/illustrations/il_c_innovation_lab.png?v=20260814b" alt="" class="ill-day">
                         <span class="part-label">【Day 3】</span>
                         <span class="date-label">日程調整中</span>
                         <h3>マーケティングとイノベーション</h3>
@@ -1029,7 +1044,7 @@
                 </div>
                 <div class="timeline-item reveal-right delay-100">
                     <div class="timeline-content">
-                        <img src="/assets/illustrations/il_m_qc_inspection.png" alt="" class="ill-day">
+                        <img src="/assets/illustrations/il_c_data_decision.png?v=20260814b" alt="" class="ill-day">
                         <span class="part-label">【Day 4】</span>
                         <span class="date-label">日程調整中</span>
                         <h3>戦略会計と意思決定</h3>
@@ -1040,7 +1055,7 @@
                 </div>
                 <div class="timeline-item reveal-right delay-200">
                     <div class="timeline-content">
-                        <img src="/assets/illustrations/il_m_dialogue_meeting2.png" alt="" class="ill-day">
+                        <img src="/assets/illustrations/il_c_alliance_roundtable.png?v=20260814b" alt="" class="ill-day">
                         <span class="part-label">【Day 5】</span>
                         <span class="date-label">日程調整中</span>
                         <h3>組織マネジメントと人材育成</h3>
@@ -1051,7 +1066,7 @@
                 </div>
                 <div class="timeline-item reveal-right delay-300">
                     <div class="timeline-content">
-                        <img src="/assets/illustrations/il_m_flowchart_gears.png" alt="" class="ill-day">
+                        <img src="/assets/illustrations/il_c_succession_torch.png?v=20260814b" alt="" class="ill-day">
                         <span class="part-label">【Day 6】</span>
                         <span class="date-label">日程調整中</span>
                         <h3>経営観の統合とリーダーシップ宣言</h3>
@@ -1076,7 +1091,7 @@
                 <span class="en">Future Vision</span>
                 5年間のロードマップ
             </h2>
-            <img src="/assets/illustrations/14_hot_air_balloon.png" alt="Future Vision" class="sec-ill">
+            <img src="/assets/illustrations/il_c_growth_tree.png?v=20260814b" alt="Future Vision" class="sec-ill">
             <div class="reveal" style="text-align: center; margin-bottom: 30px;">
                 <p style="color: var(--text-muted); font-size: 1rem;">まずは日系企業の中での他流試合から始め、段階的にグローバルへ拡張していきます。</p>
             </div>
@@ -1200,7 +1215,7 @@
                 </ul>
             </div>
             <div class="issue-box reveal delay-300">
-                <img src="/assets/illustrations/il_m_kanban_board.png" alt="Flow" class="ill-inline">
+                <img src="/assets/illustrations/il_c_value_and_support.png?v=20260814b" alt="Flow" class="ill-inline">
                 <h3 style="color: var(--primary); margin-bottom: 25px;">【お申し込み後からプログラム参加までの流れ】</h3>
                 <ol style="padding-left: 30px; font-size: 0.95rem; line-height: 1.8;">
                     <li style="margin-bottom: 15px;">本サイト下のフォームからお申し込みください。</li>
