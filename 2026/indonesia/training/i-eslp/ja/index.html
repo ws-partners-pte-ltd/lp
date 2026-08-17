@@ -1018,6 +1018,125 @@
             .company-box { align-items: stretch !important; }
             .company-img { align-self: stretch; height: auto; max-height: none !important; object-fit: cover; }
         }
+
+        /* ── バッジ：講師の頭に重ならないよう上へ／文言は1行ずつでバルーンいっぱいに ── */
+        .hero-portrait .pf-badge {
+            top: -104px !important;
+            right: -34px !important;
+            padding: 4px !important;
+            line-height: 1.15 !important;
+        }
+        .hero-portrait .pf-badge b {
+            display: block;
+            white-space: nowrap;
+            font-weight: 900;
+            letter-spacing: -0.01em;
+        }
+        .hero-portrait .pf-badge i {
+            display: block; font-style: normal; font-weight: 700;
+            margin: 2px 0 !important; opacity: .78;
+        }
+        @media (max-width: 900px) {
+            .hero-portrait .pf-badge {
+                width: 132px !important; height: 132px !important;
+                top: -70px !important; right: -6px !important;
+            }
+        }
+
+        /* ── 講師紹介：1段目と2段目のボックスの間に余白を入れる ── */
+        .trainer-grid { gap: 22px !important; }
+        .trainer-grid + .trainer-grid { margin-top: 24px !important; }
+
+        .hero-portrait .pf-badge b { font-size: 1.16rem; }
+        .hero-portrait .pf-badge i { font-size: .92rem; }
+        @media (max-width: 900px) {
+            .hero-portrait .pf-badge b { font-size: .88rem; }
+            .hero-portrait .pf-badge i { font-size: .72rem; }
+        }
+
+        /* バッジ：頭に重ならないよう右上の背景側へ逃がす */
+        .hero-portrait .pf-badge { top: -100px !important; right: -84px !important; }
+        @media (max-width: 900px) {
+            .hero-portrait .pf-badge { top: -66px !important; right: -4px !important; }
+        }
+
+        /* 中間幅（901〜1279px）ではバルーンを少し小さくして画面外にはみ出さないようにする */
+        @media (min-width: 901px) and (max-width: 1279px) {
+            .hero-portrait .pf-badge {
+                width: 148px !important; height: 148px !important;
+                top: -82px !important; right: -54px !important;
+            }
+            .hero-portrait .pf-badge b { font-size: .98rem !important; }
+            .hero-portrait .pf-badge i { font-size: .8rem !important; margin: 1px 0 !important; }
+        }
+
+        /* 3枚目カードの破線をやめ、実線＋控えめな影に（破線は未完成に見えるため） */
+        .value-grid .value-card:nth-child(3n+3) {
+            box-shadow: 0 10px 24px rgba(60,45,10,.10) !important;
+            border: 1px solid rgba(201,168,76,.55) !important;
+            background: #fffdf7 !important;
+        }
+        .feature-grid .feature-card:nth-child(4n+2) { border-style: solid !important; }
+
+        /* 901〜1080px はバルーンをさらに内側へ（画面右にはみ出さないように） */
+        @media (min-width: 901px) and (max-width: 1080px) {
+            .hero-portrait .pf-badge {
+                width: 140px !important; height: 140px !important;
+                top: -78px !important; right: -40px !important;
+            }
+            .hero-portrait .pf-badge b { font-size: .92rem !important; }
+            .hero-portrait .pf-badge i { font-size: .76rem !important; }
+        }
+
+        /* 901〜1010px はさらに小さく（頭を確実に避け、かつ画面内に収める） */
+        @media (min-width: 901px) and (max-width: 1010px) {
+            .hero-portrait .pf-badge {
+                width: 132px !important; height: 132px !important;
+                top: -74px !important; right: -42px !important;
+            }
+            .hero-portrait .pf-badge b { font-size: .86rem !important; }
+            .hero-portrait .pf-badge i { font-size: .72rem !important; margin: 1px 0 !important; }
+        }
+
+        /* モバイルでもバルーンが頭に重ならないよう小さく右上へ */
+        @media (max-width: 900px) {
+            .hero-portrait .pf-badge {
+                width: 112px !important; height: 112px !important;
+                top: -56px !important; right: -26px !important;
+            }
+            .hero-portrait .pf-badge b { font-size: .74rem !important; }
+            .hero-portrait .pf-badge i { font-size: .64rem !important; margin: 1px 0 !important; }
+        }
+
+        /* スマホ（480px以下）はさらに小さくして頭を完全に避ける */
+        @media (max-width: 480px) {
+            .hero-portrait .pf-badge {
+                width: 104px !important; height: 104px !important;
+                top: -50px !important; right: -14px !important;
+            }
+            .hero-portrait .pf-badge b { font-size: .68rem !important; }
+            .hero-portrait .pf-badge i { font-size: .58rem !important; }
+        }
+
+        /* 900px以下：バルーンを写真の真上に置いて頭と完全に分離する */
+        @media (max-width: 900px) {
+            .hero-portrait { padding-top: 118px; }
+            .hero-portrait .pf-badge {
+                width: 112px !important; height: 112px !important;
+                top: 0 !important; right: 0 !important;
+            }
+            .hero-portrait .pf-badge b { font-size: .74rem !important; }
+            .hero-portrait .pf-badge i { font-size: .62rem !important; margin: 1px 0 !important; }
+        }
+        @media (max-width: 480px) {
+            .hero-portrait { padding-top: 108px; }
+            .hero-portrait .pf-badge {
+                width: 104px !important; height: 104px !important;
+                top: 0 !important; right: 0 !important;
+            }
+            .hero-portrait .pf-badge b { font-size: .7rem !important; }
+            .hero-portrait .pf-badge i { font-size: .6rem !important; }
+        }
 </style>
 </head>
 <body>
@@ -1082,7 +1201,7 @@
             <div class="hero-visual-content reveal-right">
                 <div class="hero-portrait">
                     <img src="../images/photo_trainer_agus_hero.webp?v=20260814" alt="講師 Agus Ismail, S.T., M.B.A.">
-                    <div class="pf-badge"><b>「実践的<br>MBA」</b><i>×</i><b>「異業種<br>他流試合」</b></div>
+                    <div class="pf-badge"><b>実践的MBA</b><i>×</i><b>異業種他流試合</b></div>
                     <div class="pf-cap">Agus Ismail, S.T., M.B.A.<small>Director ／ Commissioner ／ UICM Vice Chancellor</small></div>
                 </div>
             </div>
