@@ -1137,6 +1137,22 @@
             .hero-portrait .pf-badge b { font-size: .7rem !important; }
             .hero-portrait .pf-badge i { font-size: .6rem !important; }
         }
+
+        /* バルーンと頭の距離を半分に（78px → 39px）。写真幅は全デスクトップ幅で342px固定なので
+           ブレークポイントごとにバルーン中心を頭方向へ移動させた値を指定する */
+        @media (min-width: 1280px) {
+            .hero-portrait .pf-badge { top: -71px !important; right: -58px !important; }
+        }
+        @media (min-width: 1011px) and (max-width: 1279px) {
+            .hero-portrait .pf-badge { top: -52px !important; right: -30px !important; }
+        }
+        @media (min-width: 901px) and (max-width: 1010px) {
+            .hero-portrait .pf-badge { top: -42px !important; right: -17px !important; }
+        }
+
+        /* スマホ・タブレットも頭との距離を半分に（バルーン用の上余白を詰める） */
+        @media (max-width: 900px) { .hero-portrait { padding-top: 72px; } }
+        @media (max-width: 480px) { .hero-portrait { padding-top: 64px; } }
 </style>
 </head>
 <body>
