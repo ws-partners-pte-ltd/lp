@@ -915,6 +915,109 @@
         .interview-card { padding: 24px 26px; }
         #apply .form-wrapper { padding: 30px 34px; }
         .trainer-hero { padding: 24px 28px; }
+
+        /* ================================================================
+           微調整（2026-08-17）
+           ヒーローの小見出し・リードを拡大／バッジを1.5倍でコピー変更／
+           講師ボックスの上下余白を回復／受講料2列の高さ揃え／会社2社を横並び
+           ================================================================ */
+
+        /* ── (1)(2) ヒーロー：小見出しとリードを拡大 ── */
+        @media (min-width: 769px) {
+            .hero-subtitle {
+                font-size: clamp(.94rem, 1.05vw + .45vh, 1.34rem) !important;
+                line-height: 1.5 !important;
+                margin-bottom: 1.2vh !important;
+            }
+            .hero-info-box .lead {
+                font-size: clamp(.94rem, 1.9vh, 1.28rem) !important;
+                line-height: 1.65 !important;
+                margin-bottom: 1.2vh !important;
+            }
+        }
+
+        /* ── (3) ヒーローのバッジ：1.5倍・キーワードを大きく太字に ── */
+        .hero-portrait .pf-badge {
+            width: 174px; height: 174px;
+            top: -26px; right: -26px;
+            padding: 6px;
+            line-height: 1.2;
+        }
+        .hero-portrait .pf-badge b {
+            display: block;
+            font-size: .86rem; font-weight: 900; letter-spacing: 0;
+            line-height: 1.22;
+        }
+        .hero-portrait .pf-badge i {
+            display: block; font-style: normal;
+            font-size: .78rem; font-weight: 700;
+            margin: 3px 0; opacity: .72;
+        }
+        @media (max-width: 900px) {
+            .hero-portrait .pf-badge { width: 128px; height: 128px; top: -16px; right: -10px; }
+            .hero-portrait .pf-badge b { font-size: .66rem; }
+            .hero-portrait .pf-badge i { font-size: .62rem; margin: 2px 0; }
+        }
+
+        /* ── (4) 本文中のキーワード強調 ── */
+        .kw {
+            font-weight: 900; color: var(--gold-dk);
+            background: linear-gradient(transparent 58%, rgba(201,168,76,.28) 58%);
+            padding: 0 .05em;
+        }
+
+        /* ── (6) 講師プロフィールのボックス：上下に余白を戻す ── */
+        .trainer-block { padding: 30px 28px 32px !important; }
+        .trainer-block h4 { margin-bottom: 20px !important; padding-bottom: 13px !important; }
+        .trainer-list li { margin-bottom: 17px !important; }
+        .trainer-list li:last-child { margin-bottom: 2px !important; }
+        .trainer-list li strong { margin-bottom: 5px !important; }
+        .trainer-creds li { margin-bottom: 11px !important; }
+        .trainer-creds li:last-child { margin-bottom: 2px !important; }
+        .trainer-chips { gap: 12px; }
+        .trainer-chips span { padding: 11px 17px; }
+        .trainer-hero { padding: 30px 32px !important; }
+
+        /* ── (7) 受講料・キャンセル規定の2列：高さを揃える ── */
+        @media (min-width: 1000px) {
+            #pricing > .container,
+            #cancel  > .container { align-items: stretch !important; }
+            #pricing > .container > .issue-box,
+            #cancel  > .container > .info-box,
+            #cancel  > .container > .reveal.delay-100 { height: 100%; }
+            #pricing > .container > .sec-title,
+            #pricing > .container > .info-box,
+            #pricing > .container > div:last-child { height: auto; }
+        }
+
+        /* ── (8) 弊社について：2社を横並びに ── */
+        @media (min-width: 1000px) {
+            #company > .container { max-width: 1120px !important; }
+            .company-box { align-items: flex-start; gap: 28px; }
+            .company-img { width: 30%; max-height: 260px; }
+            .company-info {
+                width: 70%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+            .company-info > h3,
+            .company-info > p:nth-of-type(1) { grid-column: 1 / -1; margin-bottom: 0 !important; }
+            .company-info > p:nth-of-type(2),
+            .company-info > p:nth-of-type(3) { margin-bottom: 0 !important; }
+        }
+
+        /* 仕上げ：バッジ文字をもう少し大きく／会社写真を枠の高さに合わせる */
+        .hero-portrait .pf-badge b { font-size: .95rem; }
+        .hero-portrait .pf-badge i { font-size: .82rem; }
+        @media (max-width: 900px) {
+            .hero-portrait .pf-badge b { font-size: .68rem; }
+            .hero-portrait .pf-badge i { font-size: .63rem; }
+        }
+        @media (min-width: 1000px) {
+            .company-box { align-items: stretch !important; }
+            .company-img { align-self: stretch; height: auto; max-height: none !important; object-fit: cover; }
+        }
 </style>
 </head>
 <body>
@@ -979,7 +1082,7 @@
             <div class="hero-visual-content reveal-right">
                 <div class="hero-portrait">
                     <img src="../images/photo_trainer_agus_hero.webp?v=20260814" alt="Pengajar Agus Ismail, S.T., M.B.A.">
-                    <div class="pf-badge"><b>EXECUTIVE</b><span>Lintas<br>Industri</span></div>
+                    <div class="pf-badge"><b>MBA<br>Praktis</b><i>×</i><b>Lintas<br>Industri</b></div>
                     <div class="pf-cap">Agus Ismail, S.T., M.B.A.<small>Director / Commissioner / UICM Vice Chancellor</small></div>
                 </div>
             </div>
@@ -1007,7 +1110,7 @@
                         <div style="background: var(--accent-orange); color: #fff; padding: 8px 20px; border-radius: 30px; font-size: 0.9rem; font-weight: 900; white-space: nowrap;">Peserta: <strong style="font-size:1.15rem;">Level Director / GM</strong></div>
                     </div>
                     <p style="margin-bottom: 1.5em;">Seiring semakin banyaknya staf nasional yang dipromosikan ke posisi eksekutif, banyak perusahaan Jepang di Indonesia menghadapi tantangan yang sama: <strong style="background:linear-gradient(transparent 55%, #ffe08a 55%);font-weight:700;">kemampuan menjalankan operasional sudah kuat, tetapi perspektif untuk memimpin bisnis secara keseluruhan belum terbentuk.</strong></p>
-                    <p style="margin-bottom: 1.5em;">I-ESLP menjawab tantangan ini melalui dua pendekatan: &ldquo;MBA praktis&rdquo; dan &ldquo;diskusi lintas industri&rdquo;. Selain manufaktur, para eksekutif dari perusahaan dagang, lembaga keuangan, dan perusahaan IT dengan model bisnis berbeda berkumpul di ruang kelas yang sama, menganalisis bisnis satu sama lain menggunakan kerangka MBA, lalu mendiskusikannya.</p>
+                    <p style="margin-bottom: 1.5em;">I-ESLP menjawab tantangan ini melalui dua pendekatan: <strong class="kw">&ldquo;MBA praktis&rdquo;</strong> dan <strong class="kw">&ldquo;diskusi lintas industri&rdquo;</strong>. Selain manufaktur, para eksekutif dari perusahaan dagang, lembaga keuangan, dan perusahaan IT dengan model bisnis berbeda berkumpul di ruang kelas yang sama, menganalisis bisnis satu sama lain menggunakan kerangka MBA, lalu mendiskusikannya.</p>
                     <p style="margin-bottom: 0;">Perspektif yang tidak mungkin diperoleh di dalam perusahaan sendiri, dan jaringan eksekutif lintas industri — keduanya Anda dapatkan dalam enam bulan.</p>
                 </div>
             </div>
@@ -1193,7 +1296,6 @@
             </h2>
             <img src="/assets/illustrations/il_c_cross_industry_network.png?v=20260814b" alt="Target" class="sec-ill">
             <div class="reveal" style="max-width: 900px; margin: 0 auto;">
-                <img src="../images/Indonesia_04.jpg" alt="Pemandangan Indonesia" class="section-image" style="margin-left: auto; margin-right: auto; max-height: 320px;">
             </div>
             <div class="issue-box reveal delay-100" style="margin-bottom: 30px; max-width: 900px; margin-left: auto; margin-right: auto;">
                 <ul style="padding-left: 0;">
