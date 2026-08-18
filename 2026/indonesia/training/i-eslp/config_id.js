@@ -35,7 +35,7 @@ window.LP_CONFIG = {
     img_online:     '../images/hero_meeting.webp',
     img_instructor: '../images/workshop_scene.jpg',
     subtitle:       'Enam bulan untuk berkembang dari "pelaksana" menjadi "pemimpin bisnis"',
-    title:          'Indonesia Executive Strategy &amp; Leadership Program (I-ESLP)',
+    title:          'Cross-industry Executive Program (CEP)',
     date_label:     'Waktu Pelaksanaan',
     date:           'Dimulai November 2026\n6 sesi, sebulan sekali (tatap muka)',
     deadline_label: 'Pendaftaran',
@@ -123,11 +123,11 @@ window.LP_CONFIG = {
     schedule_title: 'Struktur Kurikulum (6 Sesi)',
     details: [
       { label: 'Format',  value: 'Sekolah terbuka dengan seleksi (tatap muka / face-to-face)' },
-      { label: 'Lokasi',  value: 'Jakarta atau MM2100 (sedang difinalisasi)' },
+      { label: 'Lokasi',  value: 'Jakarta atau sekitar Jakarta' },
       { label: 'Jumlah',  value: '6 sesi / sebulan sekali (3–4 jam per sesi)' },
       { label: 'Mulai',   value: 'November 2026 (tanggal setiap sesi sedang difinalisasi)' },
       { label: 'Bahasa',  value: 'Bahasa Indonesia (Phase 1)' },
-      { label: 'Kuota',   value: 'Sedang difinalisasi (seleksi, jumlah terbatas)' },
+      { label: 'Kuota',   value: '10 orang (jumlah terbatas)' },
       { label: 'Jumlah peserta minimum', value: '3 perusahaan / 5 peserta' },
       { label: 'Status program', value: 'Program pelatihan korporat non-gelar (non-degree). Tidak memberikan gelar akademik MBA' },
       { label: 'Kehadiran', value: 'Pada prinsipnya kehadiran pada seluruh 6 sesi diwajibkan' }
