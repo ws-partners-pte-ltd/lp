@@ -1153,7 +1153,18 @@
         /* スマホ・タブレットも頭との距離を半分に（バルーン用の上余白を詰める） */
         @media (max-width: 900px) { .hero-portrait { padding-top: 72px; } }
         @media (max-width: 480px) { .hero-portrait { padding-top: 64px; } }
-</style>
+
+        /* ===== Language toggle: vertical centering (2026-08-18) ===== */
+        .header-buttons { align-items: stretch; }
+        .header-buttons #lang-switch {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 0 15px !important;
+            line-height: 1 !important;
+            min-height: 45px;
+        }
+    </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
