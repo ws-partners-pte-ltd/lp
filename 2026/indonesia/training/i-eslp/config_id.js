@@ -14,8 +14,8 @@ window.LP_CONFIG = {
   },
 
   header: {
-    phone: '+65-6978-4066',
-    hours: 'Jam kerja: Senin–Jumat 9:00–18:00 (Waktu Singapura)',
+    phone: '+62 823-2122-8694',
+    hours: 'Jam kerja: Senin–Jumat 9:00–18:00 (WIB)',
     cta_text: 'Daftar Sekarang'
   },
 
@@ -128,6 +128,8 @@ window.LP_CONFIG = {
       { label: 'Mulai',   value: 'November 2026 (tanggal setiap sesi sedang difinalisasi)' },
       { label: 'Bahasa',  value: 'Bahasa Indonesia (Phase 1)' },
       { label: 'Kuota',   value: 'Sedang difinalisasi (seleksi, jumlah terbatas)' },
+      { label: 'Jumlah peserta minimum', value: '3 perusahaan / 5 peserta' },
+      { label: 'Status program', value: 'Program pelatihan korporat non-gelar (non-degree). Tidak memberikan gelar akademik MBA' },
       { label: 'Kehadiran', value: 'Pada prinsipnya kehadiran pada seluruh 6 sesi diwajibkan' }
     ],
     schedule: [
@@ -207,7 +209,7 @@ window.LP_CONFIG = {
     title: 'Biaya Program',
     subtitle: 'Biaya (6 sesi) per peserta',
     currency: '',
-    amount: 'Sedang difinalisasi',
+    amount: 'Silakan hubungi kami',
     note: `※Biaya program masih dalam proses finalisasi dan akan diumumkan di halaman ini setelah ditetapkan.
 ※Bagi perusahaan yang menghubungi kami, kami menyediakan estimasi biaya secara individual.
 ※Pembayaran umumnya dilakukan dalam mata uang Dolar Singapura. Jika hal ini menyulitkan, silakan berkonsultasi dengan kami.
