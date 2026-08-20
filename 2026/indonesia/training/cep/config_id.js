@@ -51,7 +51,7 @@ window.LP_CONFIG = {
     title: 'Konsultasi Online Gratis',
     body: 'Anda dapat berkonsultasi secara online mengenai detail program ini maupun rencana pengembangan calon pemimpin perusahaan Anda. Silakan pilih waktu yang tersedia melalui tautan di bawah ini.',
     btn_text: 'Jadwalkan Konsultasi',
-    btn_url: 'https://calendar.app.google/FwJJ68bYx8JXVsnR9'
+    btn_url: 'https://calendar.app.google/2XVPvTzGn8v9BZfG7'
   },
 
   issues: {
@@ -232,7 +232,7 @@ window.LP_CONFIG = {
     name: 'PT WILLSEED PARTNERS INDONESIA',
     items: [
       { label: 'Alamat',  value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
-      { label: 'Telepon', value: '+65 9185 2747' },
+      { label: 'Telepon', value: '+62 823-2122-8694' },
       { label: 'Berdiri', value: '1 April 2026' },
       { label: 'Direktur', value: 'Director Kazuki Sakurai' },
       { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">WS PARTNERS PTE LTD</strong>' },

@@ -51,7 +51,7 @@ window.LP_CONFIG = {
     title: '無料オンライン個別相談会',
     body: '本プログラムの詳細や、貴社の次期経営者候補の育成方針について、オンラインで個別にご相談いただけます。下記リンクより空き時間をリアルタイムでご確認いただき、その場でご予約いただけます。',
     btn_text: '個別相談会を予約する',
-    btn_url: 'https://calendar.app.google/FwJJ68bYx8JXVsnR9'
+    btn_url: 'https://calendar.app.google/2XVPvTzGn8v9BZfG7'
   },
 
   issues: {
@@ -229,7 +229,7 @@ window.LP_CONFIG = {
     name: 'PT WILLSEED PARTNERS INDONESIA',
     items: [
       { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
-      { label: '電話番号', value: '+65 9185 2747' },
+      { label: '電話番号', value: '+62 823-2122-8694' },
       { label: '設立',    value: '2026年4月1日' },
       { label: '代表者',  value: 'Director 櫻井 和樹' },
       { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">WS PARTNERS PTE LTD</strong>' },
