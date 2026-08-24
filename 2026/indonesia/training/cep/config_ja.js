@@ -196,7 +196,7 @@ window.LP_CONFIG = {
         name:    'Agus Ismail, S.T., M.B.A.',
         role:    'Director ／ Commissioner ／ UICM Vice Chancellor',
         label:   'ビジネスの最前線とアカデミアを繋ぐ',
-        profile: 'グローバル金融機関で20年以上のキャリアを持つ戦略リーダー。現在は、人的資本ソリューション企業の取締役、シャリア銀行のコミサリス（Commissioner）、そして大学の副学長として、産業・金融・学術の交差点で指揮を執っています。\n\n【現在の主要な役職】\nPT FAST Indo Talenta（FITALENTA）取締役／Bank Syariah AlSalaam コミサリス（Commissioner）／Universitas Insan Cendekia Mandiri（UICM）副学長\n\n【主な実務経歴】\nGenerali Indonesia 人事・教育部門ヘッド（11年）／Rabobank International 組織開発マネージャー／Bank Danamon 顧客部門ヘッド\n\n【専門領域】\n人的資本経営（HRM／OD）／DX・戦略実行／コーポレートガバナンス／社会的イノベーション\n\n【学歴・資格】\nバンドン工科大学（SBM ITB）Executive MBA、同大学 経営学博士課程在籍／BNSP公認 シャリア銀行コミサリス・アセッサー／マスターコーチ（Sales & Service Excellence）'
+        profile: 'グローバル金融機関で20年以上のキャリアを持つ戦略リーダー。現在は、人的資本ソリューション企業の取締役、シャリア銀行のコミッショナー、そして大学の副学長として、産業・金融・学術の交差点で指揮を執っています。\n\n【現在の主要な役職】\nPT FAST Indo Talenta（FITALENTA）取締役／Bank Syariah AlSalaam コミッショナー（Komisaris）／Universitas Insan Cendekia Mandiri（UICM）副学長\n\n【主な実務経歴】\nGenerali Indonesia 人事・教育部門ヘッド（11年）／Rabobank International 組織開発マネージャー／Bank Danamon 顧客部門ヘッド\n\n【専門領域】\n人的資本経営（HRM／OD）／DX・戦略実行／コーポレートガバナンス／社会的イノベーション\n\n【学歴・資格】\nバンドン工科大学（SBM ITB）Executive MBA、同大学 経営学博士課程在籍／BNSP公認 シャリア銀行コミッショナー・アセッサー／マスターコーチ（Sales & Service Excellence）'
       }
     ]
   },
