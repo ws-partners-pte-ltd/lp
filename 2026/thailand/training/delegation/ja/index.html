@@ -827,14 +827,38 @@
         /* ヒーロー：バンコクの夕景＋講師コラージュ。
            背景は姉妹LP（無料ウェビナー 2026/thailand/seminar/delegation）と同じ写真を
            /assets/ に置いて共有し、無料→有料の導線に視覚的な連続性を持たせている。 */
+        /* 鉄則：ヒーローはファーストビュー（1画面）に必ず収める。
+           height を 100svh に固定し、内側の余白を詰める。svh はモバイルの
+           アドレスバー伸縮で高さが変わらない単位。 */
         .hero.hero-delegation {
-            background-image: url('/assets/scenery/bangkok_dusk.jpg?v=20260910');
+            background-image: url('/assets/scenery/30.jpg?v=20260911');
             background-size: cover;
-            background-position: center 58%;
+            background-position: center 42%;
             background-attachment: scroll; /* fixed は iOS で崩れる */
-            height: auto;
-            min-height: min(100vh, 840px);
-            padding: calc(var(--header-total-height) + 50px) 0 60px;
+            height: 100vh;
+            height: 100svh;
+            min-height: 560px;
+            max-height: 100svh;
+            padding: calc(var(--header-total-height) + 14px) 0 34px;
+        }
+        /* 1画面に収めるための詰め */
+        .hero.hero-delegation .hero-text-content { transform: none; }
+        .hero.hero-delegation .hero-visual-content { transform: none; height: clamp(250px, 50vh, 470px); }
+        .hero.hero-delegation .hero-eyebrow { margin-bottom: 12px; }
+        .hero.hero-delegation .hero-lead { margin-bottom: 18px; }
+        .hero.hero-delegation .hero-facts { gap: 10px; margin-bottom: 20px; }
+        /* 鉄則：ヒーローのキャッチは1行。折り返さない */
+        .hero.hero-delegation .hero-quote {
+            font-size: min(2.05rem, 2.5vw + 0.35rem);
+            white-space: nowrap;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 820px) {
+            .hero.hero-delegation { height: 100svh; min-height: 520px; padding: calc(60px + 44px + 16px) 0 26px; }
+            /* モバイルはコラージュを外して1画面に収める（講師写真は Instructor 節にある） */
+            .hero.hero-delegation .hero-visual-content { display: none; }
+            .hero.hero-delegation .hero-facts { max-width: 100%; margin-left: auto; margin-right: auto; }
+            .hero.hero-delegation .hero-quote { font-size: min(1.85rem, 5vw); }
         }
         .hero.hero-delegation .hero-overlay {
             background:
@@ -882,6 +906,31 @@
         }
         @keyframes spinSlow { to { transform: rotate(360deg); } }
 
+
+        /* =========================================
+           鉄則：白背景の上に白いテキストボックスを置かない。
+           白地セクションのカードは必ず色を入れて境界を見えるようにする。
+        ========================================= */
+        .value-section .value-card,
+        .value-section .info-box,
+        .value-section .feature-card,
+        .value-section .independent-box,
+        .value-section .issue-box,
+        .company-section .company-box,
+        #features .pillar {
+            background: linear-gradient(180deg, #f2f7fe 0%, #e7f0fb 100%);
+            border: 1px solid #cddff2;
+        }
+        /* Issues：箇条書きの横に挿絵を置く */
+        .issue-box.issue-split {
+            display: grid; grid-template-columns: 1fr 290px; gap: 36px; align-items: center;
+        }
+        .issue-box.issue-split .issue-checklist { margin-bottom: 0; }
+        .issue-box.issue-split img { width: 100%; margin: 0; }
+        @media (max-width: 780px) {
+            .issue-box.issue-split { grid-template-columns: 1fr; gap: 22px; }
+            .issue-box.issue-split img { width: min(100%, 250px); margin: 0 auto; }
+        }
         /* 汎用：イラストを枠なしで置く */
         .ill { background: transparent; border: none; padding: 0; filter: drop-shadow(0 10px 18px rgba(4,20,52,.18)); }
         .ill-sm { width: 84px; }
@@ -895,18 +944,25 @@
 
         /* 悪循環ループ */
         .loop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin: 28px auto 0; max-width: 960px; }
+        /* 鉄則：白地セクションに白いカードを置かない。
+           悪循環は 01→04 で地の色を濃くしていき、悪化していく感じを色でも出す。 */
         .loop-step {
-            position: relative; background: var(--bg-surface); border: 1px solid #e6ecf3; border-radius: var(--radius-md);
-            padding: 22px 18px; text-align: center; box-shadow: var(--shadow-sm);
+            position: relative; border: none; border-radius: var(--radius-md);
+            padding: 22px 18px; text-align: center; box-shadow: 0 10px 18px -6px rgba(4,20,52,.35);
         }
-        .loop-step b { display: block; color: var(--primary); font-size: .74rem; letter-spacing: .12em; margin-bottom: 8px; }
-        .loop-step p { font-size: .94rem; font-weight: 700; color: var(--text-main); line-height: 1.6; margin: 0; }
+        .loop-step:nth-child(1) { background: linear-gradient(160deg, #2f6fb8 0%, #1f5697 100%); }
+        .loop-step:nth-child(2) { background: linear-gradient(160deg, #1f5697 0%, #14417c 100%); }
+        .loop-step:nth-child(3) { background: linear-gradient(160deg, #14417c 0%, #0c2f60 100%); }
+        .loop-step:nth-child(4) { background: linear-gradient(160deg, #d97706 0%, #b45309 100%); }
+        .loop-step b { display: block; color: rgba(255,255,255,.72); font-size: .74rem; letter-spacing: .12em; margin-bottom: 8px; }
+        .loop-step:nth-child(4) b { color: rgba(255,255,255,.82); }
+        .loop-step p { font-size: .94rem; font-weight: 700; color: #fff; line-height: 1.6; margin: 0; }
         .loop-step::after {
             content: '▶'; position: absolute; right: -12px; top: 50%; transform: translateY(-50%);
-            color: #c3d2e4; font-size: .8rem;
+            color: #9db6d4; font-size: .8rem;
         }
-        .loop-step:last-child::after { content: '↻'; right: 50%; top: auto; bottom: -26px; transform: translateX(50%); font-size: 1.1rem; color: var(--accent-orange); }
-        @media (max-width: 640px) { .loop-step::after { content: '▼'; right: 50%; top: auto; bottom: -13px; transform: translateX(50%); } .loop-step:last-child::after { bottom: -26px; } }
+        .loop-step:last-child::after { content: none; }
+        @media (max-width: 640px) { .loop-step::after { content: '▼'; right: 50%; top: auto; bottom: -13px; transform: translateX(50%); } }
 
         /* 5つの層（本質的な課題） */
         .layer-list { max-width: 900px; margin: 36px auto 0; display: grid; gap: 14px; }
@@ -1080,7 +1136,7 @@
                 </div>
                 <div class="header-buttons">
                     <a href="../th/" class="btn-lang">Thai Language</a>
-                    <a href="#contact" class="btn-entry-header">お問い合わせ</a>
+                    <a href="#contact" class="btn-entry-header">受講申し込み</a>
                 </div>
                 <button class="hamburger-btn" id="hamburger-btn" aria-label="メニューを開く">
                     <span></span><span></span><span></span>
@@ -1089,7 +1145,7 @@
         </div>
         <div class="header-btn-bar">
             <a href="../th/" class="btn-bar-lang">Thai Language</a>
-            <a href="#contact" class="btn-bar-entry">お問い合わせ</a>
+            <a href="#contact" class="btn-bar-entry">受講申し込み</a>
         </div>
         <nav class="header-bottom" id="mobile-nav">
             <div class="container nav-container">
@@ -1113,7 +1169,7 @@
         <div class="container hero-container">
             <div class="hero-text-content reveal-left">
                 <span class="hero-eyebrow">全5回・スクール型マネジメントプログラム</span>
-                <h1 class="hero-quote">「任せたい。<br>でも、<br><span class="hl">任せられない</span>。」</h1>
+                <h1 class="hero-quote">「任せたい。でも、<span class="hl">任せられない</span>。」</h1>
                 <p class="hero-lead">
                     プレイヤー型マネジャーから、<br>
                     <span class="mk-d">人を通じて成果を生み出すマネジャー</span>へ。
@@ -1124,7 +1180,7 @@
                     <div class="hero-fact"><span class="k">TARGET</span><span class="v">タイ人マネジャー・<br>管理職候補</span></div>
                     <div class="hero-fact"><span class="k">SCHEDULE</span><span class="v">2026年11月開始<br>定員10名</span></div>
                 </div>
-                <a href="#contact" class="btn-cta">開催のご案内を受け取る</a>
+                <a href="#contact" class="btn-cta">受講申し込み</a>
             </div>
 
             <div class="hero-visual-content reveal-right">
@@ -1186,7 +1242,7 @@
                 こんな企業・マネジャーに<br>おすすめのプログラムです
             </h2>
 
-            <div class="issue-box reveal delay-100" style="max-width: 900px; margin: 0 auto;">
+            <div class="issue-box issue-split reveal delay-100" style="max-width: 980px; margin: 0 auto;">
                 <ul class="issue-checklist">
                     <li>マネジャー自身が業務を抱え込みすぎている</li>
                     <li>部下に仕事を任せられていない</li>
@@ -1196,7 +1252,7 @@
                     <li>部下が上司の指示待ちになっている</li>
                     <li>次世代リーダーがなかなか育たない</li>
                 </ul>
-                <img src="/assets/illustrations/il_tangled_communication.png" alt="任せられないという壁" class="ill ill-lg" style="margin: 26px auto 0;">
+                <img src="/assets/illustrations/il_m_kanban_board.png" alt="マネジャーに仕事が集中している状態" class="ill">
             </div>
 
             <div class="issue-box reveal delay-200" style="margin: 30px auto 0; max-width: 900px; background: linear-gradient(to right, rgba(0,80,179,0.03), rgba(0,223,216,0.03)); border: 1px solid rgba(0,80,179,0.1); text-align: center;">
@@ -1263,13 +1319,13 @@
             <div class="shift-box reveal delay-100">
                 <div class="shift-card from">
                     <span class="lbl">BEFORE</span>
-                    <strong>Player型<br>Manager</strong>
+                    <strong>プレイヤー型の<br>マネジャー</strong>
                     <p style="font-size: .9rem; color: var(--text-muted); margin-top: 12px; line-height: 1.75;">自分自身が高い成果を出すことが役割</p>
                 </div>
                 <div class="shift-arrow">➡</div>
                 <div class="shift-card to">
                     <span class="lbl">AFTER</span>
-                    <strong>People<br>Manager</strong>
+                    <strong>人を活かす<br>マネジャー</strong>
                     <p style="font-size: .9rem; color: var(--text-muted); margin-top: 12px; line-height: 1.75;">メンバー一人ひとりの能力を引き出し、人を通じてチームの成果を最大化する</p>
                 </div>
             </div>
@@ -1336,7 +1392,7 @@
         <div class="container">
             <div class="cta-banner-inner reveal">
                 <h2>プレイヤー型マネジャーからの脱却、<br>次世代マネジャーの育成に着手しませんか</h2>
-                <a href="#contact" class="btn-cta">開催のご案内を受け取る</a>
+                <a href="#contact" class="btn-cta">受講申し込み</a>
             </div>
         </div>
     </div>
@@ -1417,8 +1473,8 @@
                         <p class="s-q">Q.「任せっぱなしにも、介入しすぎにもならないためには？」</p>
                         <span class="s-h">LEARNING POINTS</span>
                         <ul>
-                            <li>Feedback：何ができていたか／期待との差は何か</li>
-                            <li>Advice：答えを教えず、考えるための補助線を与える</li>
+                            <li>フィードバック：何ができていたか／期待との差は何か</li>
+                            <li>アドバイス：答えを教えず、考えるための補助線を与える</li>
                             <li>知恵化：経験を振り返り、次にも使える原則へ変える</li>
                             <li>部下の仕事を奪わずに成果と成長を支援する</li>
                         </ul>
@@ -1457,13 +1513,12 @@
         <div class="container">
             <h2 class="sec-title reveal">
                 <span class="en">Delegation 3 Elements</span>
-                「これ、やっておいて」だけでは<br>Delegationとは言えません
+                「これ、やっておいて」だけでは<br>Delegation（委任）とは言えません
             </h2>
             <p class="reveal" style="text-align: center; color: var(--text-muted); font-size: 1rem; max-width: 720px; margin: 0 auto;">
                 適切に任せるために重要なのが、次の3つです。これらを明確にすることで、<br class="sp-br">
                 <span class="mk">丸投げでも細かすぎる指示でもない</span>Delegationを実現します。
             </p>
-                <img src="/assets/illustrations/il_three_bricklayers.png" alt="同じ作業でも、意味付けで見え方が変わる" class="ill" style="width:380px; margin: 0 auto 8px; display:block;">
 
             <div class="pillar-grid">
                 <div class="pillar reveal delay-100">
@@ -1513,11 +1568,11 @@
 
             <div class="flow-line reveal delay-100">
                 <div class="flow-node">
-                    <b>① Feedback</b>
+                    <b>① フィードバック</b>
                     <p>何ができていたか。期待との差は何か。事実に基づいて返す。</p>
                 </div>
                 <div class="flow-node">
-                    <b>② Advice</b>
+                    <b>② アドバイス</b>
                     <p>答えを教えるのではなく、考えるための補助線を与える。</p>
                 </div>
                 <div class="flow-node">
@@ -1529,7 +1584,7 @@
             <div class="reveal delay-200" style="max-width: 900px; margin: 34px auto 0; background: var(--bg-dark); color: #fff; border-radius: var(--radius-lg); padding: 32px 36px; text-align: center;">
                 <p style="font-size: .78rem; letter-spacing: .14em; color: var(--secondary); font-weight: 900; margin-bottom: 14px;">DESIGN THE WHOLE CHAIN</p>
                 <p style="font-size: clamp(.95rem, 2vw, 1.22rem); font-weight: 900; line-height: 1.9; margin-bottom: 14px;">
-                    Experience ➡ Reflection ➡ Principle ➡ Application
+                    経験 ➡ 振り返り ➡ 原則化 ➡ 応用
                 </p>
                 <p style="font-size: .95rem; color: rgba(255,255,255,.85); line-height: 1.85; margin: 0;">
                     ここまで設計することで、経験が<span class="mk-d">能力</span>へ変わります。<br>
@@ -1717,7 +1772,7 @@
                     </li>
                     <li style="list-style-type: none;">
                         <strong style="color: var(--primary);">・実施言語</strong><br>
-                        <span style="background:#fffaf0; padding:2px 8px; border-radius:4px; color:var(--accent-orange-dark); font-weight:700;">調整中</span>　確定次第、本ページにて公開いたします。
+                        タイ語で実施します。
                     </li>
                 </ul>
                 <p style="margin: 22px 0 0; color: var(--primary); font-weight: 700; font-size: .95rem;">タイ人の視点で書かれた、タイ語ページもご用意しています。</p>
@@ -1739,7 +1794,6 @@
             </h2>
 
             <div class="info-box reveal delay-100" style="margin-bottom: 26px;">
-                <h3 style="color: var(--bg-dark); margin-bottom: 18px;">確定している内容</h3>
                 <ul style="padding-left: 0;">
                     <li style="list-style-type: none; margin-bottom: 10px;">📌 <strong>形式：</strong>オンライン（Web会議ツール Zoom 使用）</li>
                     <li style="list-style-type: none; margin-bottom: 10px;">📌 <strong>開講：</strong>2026年11月開始（各回の日程は調整中）</li>
@@ -1747,6 +1801,7 @@
                     <li style="list-style-type: none; margin-bottom: 10px;">📌 <strong>定員：</strong>10名（他社合同クラス）</li>
                     <li style="list-style-type: none; margin-bottom: 10px;">📌 <strong>お申し込み単位：</strong><span class="mk">1名からご参加いただけます</span></li>
                     <li style="list-style-type: none; margin-bottom: 10px;">📌 <strong>対象：</strong>タイの日系企業のマネジャー・管理職候補</li>
+                    <li style="list-style-type: none; margin-bottom: 10px;">📌 <strong>実施言語：</strong>タイ語</li>
                     <li style="list-style-type: none;">📌 <strong>出席：</strong><span style="color:#e53e3e; font-weight:700;">原則、5回すべてに出席が必要です。</span></li>
                 </ul>
             </div>
@@ -1754,7 +1809,7 @@
             <div class="tbd-box reveal delay-200">
                 <b>各回の日程と受講料は現在調整中です</b>
                 <p>
-                    各回の開催日・時間／申込締切／受講料／実施言語が確定次第、本ページを更新し、お申し込みフォームを公開いたします。<br>
+                    各回の開催日・時間／申込締切／受講料が確定次第、本ページを更新し、お申し込みフォームを公開いたします。<br>
                     先行してご案内をご希望の場合は、<a href="#contact" style="color:var(--primary); text-decoration:underline; font-weight:700;">お問い合わせ先</a>までご連絡ください。
                 </p>
             </div>
@@ -1886,7 +1941,7 @@
                 <img src="/assets/illustrations/il_goal_setting_roadmap.png" alt="" class="ill ill-md" style="margin: 0 auto 20px;">
                 <p style="color: rgba(255,255,255,.88); font-size: clamp(.98rem, 2vw, 1.15rem); line-height: 1.95; max-width: 720px; margin: 0 auto;">
                     プレイヤーとしての優秀さから、<br>
-                    <span class="mk-d">People Manager としての優秀さへ。</span>
+                    <span class="mk-d">人を活かすマネジャーとしての優秀さへ。</span>
                 </p>
             </div>
         </div>
@@ -1961,7 +2016,7 @@
                     </div>
                     <p style="font-size: 0.9rem; margin-top: 15px;">個社別（貴社のみ）での実施のご相談についても承ります。</p>
                     <p style="text-align:center; margin-top: 22px;">
-                        <a href="mailto:support@ws-partners.com.sg?subject=%E3%80%90%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%80%91%E4%BB%BB%E3%81%9B%E3%82%8B%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E7%A0%94%E4%BF%AE%EF%BC%88%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AB%E5%9E%8B%E3%83%BB%E5%85%A85%E5%9B%9E%EF%BC%89" class="btn-cta" style="font-size: 1rem;">メールでお問い合わせ</a>
+                        <a href="mailto:support@ws-partners.com.sg?subject=%E3%80%90%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%80%91%E4%BB%BB%E3%81%9B%E3%82%8B%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E7%A0%94%E4%BF%AE%EF%BC%88%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AB%E5%9E%8B%E3%83%BB%E5%85%A85%E5%9B%9E%EF%BC%89" class="btn-cta" style="font-size: 1rem;">メールで申し込む</a>
                     </p>
                 </div>
             </div>

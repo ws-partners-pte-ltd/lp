@@ -826,15 +826,58 @@
         /* ヒーロー：バンコクの夕景＋講師コラージュ。
            背景は姉妹LP（無料ウェビナー 2026/thailand/seminar/delegation）と同じ写真を
            /assets/ に置いて共有し、無料→有料の導線に視覚的な連続性を持たせている。 */
+        /* 鉄則：ヒーローはファーストビュー（1画面）に必ず収める。
+           height を 100svh に固定し、内側の余白を詰める。svh はモバイルの
+           アドレスバー伸縮で高さが変わらない単位。 */
         .hero.hero-delegation {
-            background-image: url('/assets/scenery/bangkok_dusk.jpg?v=20260910');
+            background-image: url('/assets/scenery/30.jpg?v=20260911');
             background-size: cover;
-            background-position: center 58%;
+            background-position: center 42%;
             background-attachment: scroll; /* fixed は iOS で崩れる */
-            height: auto;
-            min-height: min(100vh, 840px);
-            padding: calc(var(--header-total-height) + 50px) 0 60px;
+            height: 100vh;
+            height: 100svh;
+            min-height: 560px;
+            max-height: 100svh;
+            padding: calc(var(--header-total-height) + 14px) 0 34px;
         }
+        /* 1画面に収めるための詰め */
+        .hero.hero-delegation .hero-text-content { transform: none; }
+        .hero.hero-delegation .hero-visual-content { transform: none; height: clamp(250px, 50vh, 470px); }
+        .hero.hero-delegation .hero-eyebrow { margin-bottom: 12px; }
+        .hero.hero-delegation .hero-lead { margin-bottom: 18px; }
+        .hero.hero-delegation .hero-facts { gap: 10px; margin-bottom: 20px; }
+        /* 鉄則：ヒーローのキャッチは1行。折り返さない */
+        .hero.hero-delegation .hero-quote {
+            font-size: min(2.05rem, 2.5vw + 0.35rem);
+            white-space: nowrap;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 820px) {
+            .hero.hero-delegation { height: 100svh; min-height: 520px; padding: calc(60px + 44px + 16px) 0 26px; }
+            /* モバイルはコラージュを外して1画面に収める（講師写真は Instructor 節にある） */
+            .hero.hero-delegation .hero-visual-content { display: none; }
+            .hero.hero-delegation .hero-facts { max-width: 100%; margin-left: auto; margin-right: auto; }
+            .hero.hero-delegation .hero-quote { font-size: min(1.85rem, 5vw); }
+        }
+        .hero.hero-delegation .hero-overlay {
+            background:
+                linear-gradient(100deg, rgba(3,14,38,.96) 0%, rgba(3,14,38,.90) 34%, rgba(4,26,68,.72) 58%, rgba(4,26,68,.46) 100%),
+                linear-gradient(to bottom, rgba(3,14,38,.55) 0%, rgba(3,14,38,0) 30%);
+        }
+        /* 文字側の保険：写真の明部に重なっても落ちないように */
+        .hero.hero-delegation .hero-quote,
+        .hero.hero-delegation .hero-lead { text-shadow: 0 2px 12px rgba(0,0,0,.55); }
+        .hero.hero-delegation .hero-fact {
+            background: rgba(3,14,38,.62);
+            border-color: rgba(255,255,255,.24);
+        }
+        .hero.hero-delegation::after {
+            content: ''; position: absolute; inset: 0; opacity: .5; pointer-events: none;
+            background-image: radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
+            background-size: 26px 26px;
+        }
+
+
         .hero.hero-delegation .hero-overlay {
             background:
                 linear-gradient(100deg, rgba(3,14,38,.96) 0%, rgba(3,14,38,.90) 34%, rgba(4,26,68,.72) 58%, rgba(4,26,68,.46) 100%),
@@ -881,6 +924,31 @@
         }
         @keyframes spinSlow { to { transform: rotate(360deg); } }
 
+
+        /* =========================================
+           鉄則：白背景の上に白いテキストボックスを置かない。
+           白地セクションのカードは必ず色を入れて境界を見えるようにする。
+        ========================================= */
+        .value-section .value-card,
+        .value-section .info-box,
+        .value-section .feature-card,
+        .value-section .independent-box,
+        .value-section .issue-box,
+        .company-section .company-box,
+        #features .pillar {
+            background: linear-gradient(180deg, #f2f7fe 0%, #e7f0fb 100%);
+            border: 1px solid #cddff2;
+        }
+        /* Issues：箇条書きの横に挿絵を置く */
+        .issue-box.issue-split {
+            display: grid; grid-template-columns: 1fr 290px; gap: 36px; align-items: center;
+        }
+        .issue-box.issue-split .issue-checklist { margin-bottom: 0; }
+        .issue-box.issue-split img { width: 100%; margin: 0; }
+        @media (max-width: 780px) {
+            .issue-box.issue-split { grid-template-columns: 1fr; gap: 22px; }
+            .issue-box.issue-split img { width: min(100%, 250px); margin: 0 auto; }
+        }
         /* 汎用：イラストを枠なしで置く */
         .ill { background: transparent; border: none; padding: 0; filter: drop-shadow(0 10px 18px rgba(4,20,52,.18)); }
         .ill-sm { width: 84px; }
@@ -894,18 +962,25 @@
 
         /* 悪循環ループ */
         .loop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin: 28px auto 0; max-width: 960px; }
+        /* 鉄則：白地セクションに白いカードを置かない。
+           悪循環は 01→04 で地の色を濃くしていき、悪化していく感じを色でも出す。 */
         .loop-step {
-            position: relative; background: var(--bg-surface); border: 1px solid #e6ecf3; border-radius: var(--radius-md);
-            padding: 22px 18px; text-align: center; box-shadow: var(--shadow-sm);
+            position: relative; border: none; border-radius: var(--radius-md);
+            padding: 22px 18px; text-align: center; box-shadow: 0 10px 18px -6px rgba(4,20,52,.35);
         }
-        .loop-step b { display: block; color: var(--primary); font-size: .74rem; letter-spacing: .12em; margin-bottom: 8px; }
-        .loop-step p { font-size: .94rem; font-weight: 700; color: var(--text-main); line-height: 1.6; margin: 0; }
+        .loop-step:nth-child(1) { background: linear-gradient(160deg, #2f6fb8 0%, #1f5697 100%); }
+        .loop-step:nth-child(2) { background: linear-gradient(160deg, #1f5697 0%, #14417c 100%); }
+        .loop-step:nth-child(3) { background: linear-gradient(160deg, #14417c 0%, #0c2f60 100%); }
+        .loop-step:nth-child(4) { background: linear-gradient(160deg, #d97706 0%, #b45309 100%); }
+        .loop-step b { display: block; color: rgba(255,255,255,.72); font-size: .74rem; letter-spacing: .12em; margin-bottom: 8px; }
+        .loop-step:nth-child(4) b { color: rgba(255,255,255,.82); }
+        .loop-step p { font-size: .94rem; font-weight: 700; color: #fff; line-height: 1.6; margin: 0; }
         .loop-step::after {
             content: '▶'; position: absolute; right: -12px; top: 50%; transform: translateY(-50%);
-            color: #c3d2e4; font-size: .8rem;
+            color: #9db6d4; font-size: .8rem;
         }
-        .loop-step:last-child::after { content: '↻'; right: 50%; top: auto; bottom: -26px; transform: translateX(50%); font-size: 1.1rem; color: var(--accent-orange); }
-        @media (max-width: 640px) { .loop-step::after { content: '▼'; right: 50%; top: auto; bottom: -13px; transform: translateX(50%); } .loop-step:last-child::after { bottom: -26px; } }
+        .loop-step:last-child::after { content: none; }
+        @media (max-width: 640px) { .loop-step::after { content: '▼'; right: 50%; top: auto; bottom: -13px; transform: translateX(50%); } }
 
         /* 5つの層（本質的な課題） */
         .layer-list { max-width: 900px; margin: 36px auto 0; display: grid; gap: 14px; }
@@ -1079,7 +1154,7 @@
                 </div>
                 <div class="header-buttons">
                     <a href="../ja/" class="btn-lang">日本語</a>
-                    <a href="#contact" class="btn-entry-header">สอบถาม</a>
+                    <a href="#contact" class="btn-entry-header">สมัครเข้าอบรม</a>
                 </div>
                 <button class="hamburger-btn" id="hamburger-btn" aria-label="เปิดเมนู">
                     <span></span><span></span><span></span>
@@ -1088,7 +1163,7 @@
         </div>
         <div class="header-btn-bar">
             <a href="../ja/" class="btn-bar-lang">日本語</a>
-            <a href="#contact" class="btn-bar-entry">สอบถาม</a>
+            <a href="#contact" class="btn-bar-entry">สมัครเข้าอบรม</a>
         </div>
         <nav class="header-bottom" id="mobile-nav">
             <div class="container nav-container">
@@ -1112,7 +1187,7 @@
         <div class="container hero-container">
             <div class="hero-text-content reveal-left">
                 <span class="hero-eyebrow">หลักสูตรต่อเนื่อง 5 ครั้ง สำหรับผู้จัดการ</span>
-                <h1 class="hero-quote">“อยากมอบงาน<br>แต่<span class="hl">มอบไม่ได้</span>”</h1>
+                <h1 class="hero-quote">“อยากมอบงาน แต่<span class="hl">มอบไม่ได้</span>”</h1>
                 <p class="hero-lead">
                     หลักสูตรที่พาผู้จัดการก้าวจากการเป็นคนที่ “ทำงานเก่งที่สุดในทีม”<br>
                     ไปสู่<span class="mk-d">ผู้ที่สร้างผลงานผ่านคนอื่น</span>
@@ -1123,7 +1198,7 @@
                     <div class="hero-fact"><span class="k">กลุ่มเป้าหมาย</span><span class="v">ผู้จัดการ และ<br>ผู้ที่จะก้าวขึ้นเป็นผู้จัดการ</span></div>
                     <div class="hero-fact"><span class="k">กำหนดการ</span><span class="v">เริ่มพฤศจิกายน 2026<br>รับ 10 ท่าน</span></div>
                 </div>
-                <a href="#contact" class="btn-cta">สอบถามรายละเอียด</a>
+                <a href="#contact" class="btn-cta">สมัครเข้าอบรม</a>
             </div>
 
             <div class="hero-visual-content reveal-right">
@@ -1187,7 +1262,7 @@
                 มุมมองจากฝ่ายบุคลากรและผู้บริหาร
             </p>
 
-            <div class="issue-box reveal delay-100" style="max-width: 900px; margin: 0 auto;">
+            <div class="issue-box issue-split reveal delay-100" style="max-width: 980px; margin: 0 auto;">
                 <ul class="issue-checklist">
                     <li>ผู้จัดการรับงานไว้กับตัวมากเกินไป จนไม่มีเวลาทำงานเชิงบริหาร</li>
                     <li>งานสำคัญกระจายไปยังทีมได้น้อย และผูกอยู่กับคนเพียงไม่กี่คน</li>
@@ -1197,7 +1272,7 @@
                     <li>ทีมงานไม่แน่ใจว่าตัดสินใจเองได้ถึงระดับไหน จึงต้องรอความชัดเจนจากหัวหน้า</li>
                     <li>แผนสร้างผู้นำรุ่นถัดไปยังไม่คืบหน้าเท่าที่ควร</li>
                 </ul>
-                <img src="/assets/illustrations/il_tangled_communication.png" alt="กำแพงของการมอบหมายงาน" class="ill ill-lg" style="margin: 26px auto 0;">
+                <img src="/assets/illustrations/il_m_kanban_board.png" alt="งานไปกองอยู่ที่ผู้จัดการ" class="ill">
             </div>
 
             <div class="issue-box reveal delay-200" style="margin: 30px auto 0; max-width: 900px; background: linear-gradient(to right, rgba(0,80,179,0.03), rgba(0,223,216,0.03)); border: 1px solid rgba(0,80,179,0.1); text-align: center;">
@@ -1264,13 +1339,13 @@
             <div class="shift-box reveal delay-100">
                 <div class="shift-card from">
                     <span class="lbl">BEFORE</span>
-                    <strong>Player<br>Manager</strong>
+                    <strong>ผู้จัดการที่<br>ลงมือทำเอง</strong>
                     <p style="font-size: .9rem; color: var(--text-muted); margin-top: 12px; line-height: 1.75;">บทบาทคือการทำผลงานให้ได้สูงที่สุดด้วยตัวเอง</p>
                 </div>
                 <div class="shift-arrow">➡</div>
                 <div class="shift-card to">
                     <span class="lbl">AFTER</span>
-                    <strong>People<br>Manager</strong>
+                    <strong>ผู้จัดการที่<br>พัฒนาคน</strong>
                     <p style="font-size: .9rem; color: var(--text-muted); margin-top: 12px; line-height: 1.75;">ดึงศักยภาพของสมาชิกแต่ละคนออกมา และทำให้ผลงานของทีมสูงที่สุด</p>
                 </div>
             </div>
@@ -1337,7 +1412,7 @@
         <div class="container">
             <div class="cta-banner-inner reveal">
                 <h2>เริ่มสร้างผู้จัดการที่มอบหมายงานได้<br>และผู้นำรุ่นถัดไปขององค์กร</h2>
-                <a href="#contact" class="btn-cta">สอบถามรายละเอียด</a>
+                <a href="#contact" class="btn-cta">สมัครเข้าอบรม</a>
             </div>
         </div>
     </div>
@@ -1418,8 +1493,8 @@
                         <p class="s-q">คำถามหลัก: “จะติดตามอย่างไร ไม่ให้ปล่อยไว้ และไม่เข้าไปแทรกมากเกินไป”</p>
                         <span class="s-h">สิ่งที่จะได้เรียน</span>
                         <ul>
-                            <li>Feedback: อะไรที่ทำได้ดี และห่างจากความคาดหวังตรงไหน</li>
-                            <li>Advice: ไม่ให้คำตอบ แต่ให้เส้นทางความคิดเพิ่มเติม</li>
+                            <li>การให้ฟีดแบ็ก: อะไรที่ทำได้ดี และห่างจากความคาดหวังตรงไหน</li>
+                            <li>การให้คำแนะนำ: ไม่ให้คำตอบ แต่ให้เส้นทางความคิดเพิ่มเติม</li>
                             <li>การถอดบทเรียน: เปลี่ยนประสบการณ์ให้เป็นหลักที่ใช้ได้ในครั้งต่อไป</li>
                             <li>การสนับสนุนทั้งผลงานและการเติบโต โดยไม่ดึงงานกลับมาทำเอง</li>
                         </ul>
@@ -1464,7 +1539,6 @@
                 การมอบหมายงานที่ได้ผลต้องมี 3 องค์ประกอบนี้ครบ เมื่อชัดเจนทั้งสามข้อ<br class="sp-br">
                 การมอบงานจะ<span class="mk">ไม่กลายเป็นการโยนงาน และไม่ต้องลงไปคุมทุกขั้น</span>
             </p>
-                <img src="/assets/illustrations/il_three_bricklayers.png" alt="งานเดียวกัน แต่ความหมายที่ได้รับต่างกัน" class="ill" style="width:380px; margin: 0 auto 8px; display:block;">
 
             <div class="pillar-grid">
                 <div class="pillar reveal delay-100">
@@ -1514,11 +1588,11 @@
 
             <div class="flow-line reveal delay-100">
                 <div class="flow-node">
-                    <b>① Feedback</b>
+                    <b>① การให้ฟีดแบ็ก</b>
                     <p>สะท้อนจากข้อเท็จจริงว่าอะไรทำได้ดี และห่างจากความคาดหวังตรงไหน</p>
                 </div>
                 <div class="flow-node">
-                    <b>② Advice</b>
+                    <b>② การให้คำแนะนำ</b>
                     <p>ไม่ให้คำตอบตรง ๆ แต่เพิ่มเส้นทางความคิดให้ไปต่อได้เอง</p>
                 </div>
                 <div class="flow-node">
@@ -1530,7 +1604,7 @@
             <div class="reveal delay-200" style="max-width: 900px; margin: 34px auto 0; background: var(--bg-dark); color: #fff; border-radius: var(--radius-lg); padding: 32px 36px; text-align: center;">
                 <p style="font-size: .78rem; letter-spacing: .14em; color: var(--secondary); font-weight: 900; margin-bottom: 14px;">DESIGN THE WHOLE CHAIN</p>
                 <p style="font-size: clamp(.95rem, 2vw, 1.22rem); font-weight: 900; line-height: 1.9; margin-bottom: 14px;">
-                    Experience ➡ Reflection ➡ Principle ➡ Application
+                    ประสบการณ์ ➡ การทบทวน ➡ การสรุปเป็นหลักการ ➡ การนำไปใช้
                 </p>
                 <p style="font-size: .95rem; color: rgba(255,255,255,.85); line-height: 1.85; margin: 0;">
                     เมื่อออกแบบครบทั้งสายนี้ ประสบการณ์จะกลายเป็น<span class="mk-d">ความสามารถ</span><br>
@@ -1718,8 +1792,7 @@
                     </li>
                     <li style="list-style-type: none;">
                         <strong style="color: var(--primary);">ภาษาที่ใช้ในการอบรม</strong><br>
-                        <span style="background:#fffaf0; padding:2px 8px; border-radius:4px; color:var(--accent-orange-dark); font-weight:700;">อยู่ระหว่างพิจารณา</span>　จะแจ้งในหน้านี้เมื่อกำหนดแล้ว
-                    </li>
+                        อบรมเป็นภาษาไทย</li>
                 </ul>
                 <p style="margin: 22px 0 0; color: var(--primary); font-weight: 700; font-size: .95rem;">มีหน้าภาษาญี่ปุ่นสำหรับผู้ประสานงานชาวญี่ปุ่นด้วย</p>
                 <p style="margin-top: 10px;">
@@ -1740,7 +1813,6 @@
             </h2>
 
             <div class="info-box reveal delay-100" style="margin-bottom: 26px;">
-                <h3 style="color: var(--bg-dark); margin-bottom: 18px;">ส่วนที่กำหนดแล้ว</h3>
                 <ul style="padding-left: 0;">
                     <li style="list-style-type: none; margin-bottom: 10px;">📌 <strong>รูปแบบ:</strong> ออนไลน์ (ใช้ Zoom)</li>
                     <li style="list-style-type: none; margin-bottom: 10px;">📌 <strong>เริ่มหลักสูตร:</strong> พฤศจิกายน 2026 (วันของแต่ละครั้งอยู่ระหว่างกำหนด)</li>
@@ -1748,6 +1820,7 @@
                     <li style="list-style-type: none; margin-bottom: 10px;">📌 <strong>จำนวนที่รับ:</strong> 10 ท่าน (เรียนร่วมกับผู้เข้าอบรมจากบริษัทอื่น)</li>
                     <li style="list-style-type: none; margin-bottom: 10px;">📌 <strong>การสมัคร:</strong> <span class="mk">สมัครได้ตั้งแต่ 1 ท่าน</span></li>
                     <li style="list-style-type: none; margin-bottom: 10px;">📌 <strong>กลุ่มเป้าหมาย:</strong> ผู้จัดการและผู้ที่จะก้าวขึ้นเป็นผู้จัดการ ในบริษัทญี่ปุ่นในประเทศไทย</li>
+                    <li style="list-style-type: none; margin-bottom: 10px;">📌 <strong>ภาษาที่ใช้:</strong> ภาษาไทย</li>
                     <li style="list-style-type: none;">📌 <strong>การเข้าร่วม:</strong> <span style="color:#e53e3e; font-weight:700;">โดยหลักการต้องเข้าร่วมครบทั้ง 5 ครั้ง</span></li>
                 </ul>
             </div>
@@ -1755,7 +1828,7 @@
             <div class="tbd-box reveal delay-200">
                 <b>วันของแต่ละครั้งและค่าธรรมเนียม อยู่ระหว่างจัดเตรียม</b>
                 <p>
-                    เมื่อกำหนดวันและเวลาของแต่ละครั้ง วันปิดรับสมัคร ค่าธรรมเนียม และภาษาที่ใช้เรียบร้อยแล้ว เราจะปรับปรุงหน้านี้และเปิดแบบฟอร์มรับสมัคร<br>
+                    เมื่อกำหนดวันและเวลาของแต่ละครั้ง วันปิดรับสมัคร ค่าธรรมเนียมเรียบร้อยแล้ว เราจะปรับปรุงหน้านี้และเปิดแบบฟอร์มรับสมัคร<br>
                     หากต้องการรับข้อมูลล่วงหน้า กรุณาติดต่อเราตาม<a href="#contact" style="color:var(--primary); text-decoration:underline; font-weight:700;">ช่องทางด้านล่าง</a>
                 </p>
             </div>
@@ -1884,7 +1957,7 @@
                 <img src="/assets/illustrations/il_goal_setting_roadmap.png" alt="" class="ill ill-md" style="margin: 0 auto 20px;">
                 <p style="color: rgba(255,255,255,.88); font-size: clamp(.98rem, 2vw, 1.15rem); line-height: 1.95; max-width: 740px; margin: 0 auto;">
                     จากความเก่งในฐานะผู้ปฏิบัติงาน<br>
-                    <span class="mk-d">ไปสู่ความเก่งในฐานะ People Manager</span>
+                    <span class="mk-d">ไปสู่ความเก่งในฐานะผู้จัดการที่พัฒนาคน</span>
                 </p>
             </div>
         </div>

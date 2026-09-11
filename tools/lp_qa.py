@@ -163,6 +163,24 @@ def check_render(lp_dir, pages):
             rec(OK if d['heroLum'] < 90 else NG, '%s: ヒーロー文字のコントラスト' % t,
                 '輝度 %.0f（90未満が目標）' % d['heroLum'])
 
+        # 鉄則① ヒーローはファーストビュー（1画面）に収める
+        if d.get('heroFits') is not None:
+            rec(OK if d['heroFits'] else NG, '%s: ヒーローが1画面に収まる' % t,
+                'ヒーロー下端 %spx / 画面 %spx' % (d.get('heroBottom'), d.get('viewportH')))
+
+        # 鉄則② ヒーローのキャッチは1行
+        if d.get('catchLines') is not None:
+            det = '%d行「%s」' % (d['catchLines'], d.get('catchText', ''))
+            if d.get('catchClipped'):
+                det += ' ※横に見切れている'
+            rec(OK if (d['catchLines'] == 1 and not d.get('catchClipped')) else NG,
+                '%s: キャッチが1行' % t, det)
+
+        # 鉄則③ 白地の上に境界の見えない白いカードを置かない
+        if d.get('whiteOnWhite') is not None:
+            rec(NG if d['whiteOnWhite'] else OK, '%s: 白地×白カードなし' % t,
+                ', '.join(d['whiteOnWhite'][:4]))
+
 
 def main():
     ap = argparse.ArgumentParser()

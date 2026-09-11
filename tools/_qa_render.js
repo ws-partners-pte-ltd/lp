@@ -46,12 +46,80 @@ function serve(port) {
       });
       await pg.waitForTimeout(600);
 
-      const d = await pg.evaluate(() => ({
-        hScroll: document.documentElement.scrollWidth > window.innerWidth + 1,
-        broken: [...document.querySelectorAll('img')]
-          .filter(i => !i.complete || i.naturalWidth === 0)
-          .map(i => (i.getAttribute('src') || '').slice(-46)),
-      }));
+      const d = await pg.evaluate(() => {
+        const out = {
+          hScroll: document.documentElement.scrollWidth > window.innerWidth + 1,
+          broken: [...document.querySelectorAll('img')]
+            .filter(i => !i.complete || i.naturalWidth === 0)
+            .map(i => (i.getAttribute('src') || '').slice(-46)),
+        };
+
+        // --- 鉄則1: ヒーローがファーストビューに収まるか ---
+        window.scrollTo(0, 0);
+        const hero = document.querySelector('.hero');
+        if (hero) {
+          const r = hero.getBoundingClientRect();
+          out.heroBottom = Math.round(r.bottom);
+          out.viewportH = window.innerHeight;
+          out.heroFits = r.bottom <= window.innerHeight + 2;
+        }
+
+        // --- 鉄則2: ヒーローのキャッチは1行 ---
+        const q = document.querySelector('.hero-quote, .hero-title, .hero h1');
+        if (q) {
+          const cs = getComputedStyle(q);
+          let lh = parseFloat(cs.lineHeight);
+          if (!lh || isNaN(lh)) lh = parseFloat(cs.fontSize) * 1.3;
+          out.catchLines = Math.max(1, Math.round(q.getBoundingClientRect().height / lh));
+          out.catchClipped = q.scrollWidth > q.clientWidth + 1;
+          out.catchText = (q.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 40);
+        }
+
+        // --- 鉄則3: 白地セクションの上の白いカード（境界が見えない箱） ---
+        const px = v => parseFloat(v) || 0;
+        const toRgb = v => { const m = (v || '').match(/[\d.]+/g); return m ? m.map(Number) : null; };
+        const nearWhite = c => !!c && (c[3] === undefined || c[3] > 0.85) && c[0] >= 246 && c[1] >= 246 && c[2] >= 246;
+        const groundOf = el => {
+          let p = el.parentElement;
+          while (p) {
+            const cs = getComputedStyle(p);
+            if (cs.backgroundImage && cs.backgroundImage !== 'none') return null; // 写真やグラデ地は対象外
+            const c = toRgb(cs.backgroundColor);
+            if (c && (c[3] === undefined || c[3] > 0.5)) return c;
+            p = p.parentElement;
+          }
+          return null;
+        };
+        const hasVisibleBorder = cs => ['Top','Right','Bottom','Left'].some(side => {
+          if (px(cs['border' + side + 'Width']) < 1) return false;
+          if (cs['border' + side + 'Style'] === 'none') return false;
+          const c = toRgb(cs['border' + side + 'Color']);
+          return !!c && !(c[3] !== undefined && c[3] < 0.15) && !nearWhite(c);
+        });
+        const vpArea = window.innerWidth * window.innerHeight;
+        const offenders = [];
+        for (const el of document.querySelectorAll('div,section,article,li,ul,aside')) {
+          const cs = getComputedStyle(el);
+          if (cs.backgroundImage && cs.backgroundImage !== 'none') continue;
+          const bg = toRgb(cs.backgroundColor);
+          if (!nearWhite(bg)) continue;
+          const looksLikeCard = cs.boxShadow !== 'none' || px(cs.borderTopLeftRadius) >= 8;
+          if (!looksLikeCard) continue;
+          const r = el.getBoundingClientRect();
+          const area = r.width * r.height;
+          if (area < 5000 || area > vpArea * 0.7) continue;
+          if (!nearWhite(groundOf(el))) continue;
+          if (hasVisibleBorder(cs)) continue;
+          const sel = el.tagName.toLowerCase()
+            + (el.id ? '#' + el.id : '')
+            + (el.className && typeof el.className === 'string'
+                ? '.' + el.className.trim().split(/\s+/).filter(c => !/^(reveal|delay|is-visible)/.test(c)).slice(0, 2).join('.')
+                : '');
+          if (!offenders.includes(sel)) offenders.push(sel);
+        }
+        out.whiteOnWhite = offenders.slice(0, 8);
+        return out;
+      });
 
       // ヒーローのテキスト側（左半分）の明度を測る。白文字が読めるかの実測。
       let heroLum = null;
