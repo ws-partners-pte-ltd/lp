@@ -90,12 +90,15 @@ function serve(port) {
           }
           return null;
         };
-        const hasVisibleBorder = cs => ['Top','Right','Bottom','Left'].some(side => {
+        // 1辺だけのアクセントバー（border-left: 5px solid ... など）は「枠」ではない。
+        // 3辺以上に見える線があって初めて、地との境界が成立しているとみなす。
+        const visibleBorderSides = cs => ['Top','Right','Bottom','Left'].filter(side => {
           if (px(cs['border' + side + 'Width']) < 1) return false;
           if (cs['border' + side + 'Style'] === 'none') return false;
           const c = toRgb(cs['border' + side + 'Color']);
           return !!c && !(c[3] !== undefined && c[3] < 0.15) && !nearWhite(c);
-        });
+        }).length;
+        const hasVisibleBorder = cs => visibleBorderSides(cs) >= 3;
         const vpArea = window.innerWidth * window.innerHeight;
         const offenders = [];
         for (const el of document.querySelectorAll('div,section,article,li,ul,aside')) {

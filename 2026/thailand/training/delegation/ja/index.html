@@ -843,7 +843,8 @@
         }
         /* 1画面に収めるための詰め */
         .hero.hero-delegation .hero-text-content { transform: none; }
-        .hero.hero-delegation .hero-visual-content { transform: none; height: clamp(250px, 50vh, 470px); }
+        .hero.hero-delegation .hero-visual-content { transform: none; flex: 1.15; height: clamp(290px, 58vh, 545px); }
+        .hero.hero-delegation .hero-images-wrapper { max-width: 64vh; }
         .hero.hero-delegation .hero-eyebrow { margin-bottom: 12px; }
         .hero.hero-delegation .hero-lead { margin-bottom: 18px; }
         .hero.hero-delegation .hero-facts { gap: 10px; margin-bottom: 20px; }
@@ -920,6 +921,14 @@
         #features .pillar {
             background: linear-gradient(180deg, #f2f7fe 0%, #e7f0fb 100%);
             border: 1px solid #cddff2;
+        }
+        /* layer-row は左のアクセントバー（5px）を潰さないよう、地と三辺だけ変える。
+           border の一括指定にすると MINDSET 行のインライン指定（オレンジ）まで 1px になる。 */
+        .value-section .layer-row {
+            background: linear-gradient(180deg, #f2f7fe 0%, #e7f0fb 100%);
+            border-top: 1px solid #cddff2;
+            border-right: 1px solid #cddff2;
+            border-bottom: 1px solid #cddff2;
         }
         /* Issues：箇条書きの横に挿絵を置く */
         .issue-box.issue-split {
