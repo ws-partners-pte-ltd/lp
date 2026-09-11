@@ -824,14 +824,30 @@
         /* =========================================
            Delegation LP — 固有スタイル
         ========================================= */
-        /* ヒーロー：写真を使わずグラデーション＋イラストで構成（他LPとの差別化） */
+        /* ヒーロー：バンコクの夕景＋講師コラージュ。
+           背景は姉妹LP（無料ウェビナー 2026/thailand/seminar/delegation）と同じ写真を
+           /assets/ に置いて共有し、無料→有料の導線に視覚的な連続性を持たせている。 */
         .hero.hero-delegation {
-            background: radial-gradient(circle at 78% 18%, rgba(0,223,216,.20) 0%, rgba(0,223,216,0) 46%),
-                        linear-gradient(135deg, #041434 0%, #072a63 52%, #0050b3 100%);
-            min-height: auto;
-            padding: calc(var(--header-total-height) + 60px) 0 70px;
+            background-image: url('/assets/scenery/bangkok_dusk.jpg?v=20260910');
+            background-size: cover;
+            background-position: center 58%;
+            background-attachment: scroll; /* fixed は iOS で崩れる */
+            height: auto;
+            min-height: min(100vh, 840px);
+            padding: calc(var(--header-total-height) + 50px) 0 60px;
         }
-        .hero.hero-delegation .hero-overlay { display: none; }
+        .hero.hero-delegation .hero-overlay {
+            background:
+                linear-gradient(100deg, rgba(3,14,38,.96) 0%, rgba(3,14,38,.90) 34%, rgba(4,26,68,.72) 58%, rgba(4,26,68,.46) 100%),
+                linear-gradient(to bottom, rgba(3,14,38,.55) 0%, rgba(3,14,38,0) 30%);
+        }
+        /* 文字側の保険：写真の明部に重なっても落ちないように */
+        .hero.hero-delegation .hero-quote,
+        .hero.hero-delegation .hero-lead { text-shadow: 0 2px 12px rgba(0,0,0,.55); }
+        .hero.hero-delegation .hero-fact {
+            background: rgba(3,14,38,.62);
+            border-color: rgba(255,255,255,.24);
+        }
         .hero.hero-delegation::after {
             content: ''; position: absolute; inset: 0; opacity: .5; pointer-events: none;
             background-image: radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
@@ -1093,6 +1109,7 @@
          Hero
     ========================================= -->
     <section class="hero hero-delegation">
+        <div class="hero-overlay"></div>
         <div class="container hero-container">
             <div class="hero-text-content reveal-left">
                 <span class="hero-eyebrow">全5回・スクール型マネジメントプログラム</span>
@@ -1111,9 +1128,13 @@
             </div>
 
             <div class="hero-visual-content reveal-right">
-                <div class="hero-art">
-                    <div class="ring"></div>
-                    <img src="/assets/illustrations/13_handoff_delivery.png" alt="仕事を任せる">
+                <div class="hero-images-wrapper">
+                    <img src="/assets/images/online_training.jpg" alt="オンライン研修の様子" class="img-collage img-online">
+                    <img src="/assets/photos/trainers/alia.jpg" alt="講師 Alia Ratanavirakul" class="img-collage img-instructor">
+                    <div class="hero-badge-circle">
+                        <span class="badge-en">ONLINE</span>
+                        <span class="badge-ja">全5回<br>スクール型</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1175,7 +1196,7 @@
                     <li>部下が上司の指示待ちになっている</li>
                     <li>次世代リーダーがなかなか育たない</li>
                 </ul>
-                <img src="/assets/illustrations/09_brick_wall.png" alt="任せられないという壁" class="ill ill-lg" style="margin: 26px auto 0;">
+                <img src="/assets/illustrations/il_tangled_communication.png" alt="任せられないという壁" class="ill ill-lg" style="margin: 26px auto 0;">
             </div>
 
             <div class="issue-box reveal delay-200" style="margin: 30px auto 0; max-width: 900px; background: linear-gradient(to right, rgba(0,80,179,0.03), rgba(0,223,216,0.03)); border: 1px solid rgba(0,80,179,0.1); text-align: center;">
@@ -1237,6 +1258,7 @@
                 <span class="en">Concept</span>
                 「自分が成果を出す」から<br>「人を通じて成果を出す」へ
             </h2>
+                <img src="/assets/illustrations/il_manager_with_tablet.png" alt="人を通じて成果を出すマネジャー" class="ill" style="width:190px; margin: 0 auto 8px; display:block;">
 
             <div class="shift-box reveal delay-100">
                 <div class="shift-card from">
@@ -1280,27 +1302,27 @@
             <div class="step-ribbon reveal delay-100">
                 <div class="step-chip">
                     <b>STEP 1</b>
-                    <img src="/assets/illustrations/02_staircase_leadership.png" alt="役割転換" class="ill">
+                    <img src="/assets/illustrations/il_dialogue_communication.png" alt="役割転換" class="ill">
                     <p>役割転換</p>
                 </div>
                 <div class="step-chip">
                     <b>STEP 2</b>
-                    <img src="/assets/illustrations/10_team_shield.png" alt="関係構築" class="ill">
+                    <img src="/assets/illustrations/il_hr_mentoring.png" alt="関係構築" class="ill">
                     <p>関係構築</p>
                 </div>
                 <div class="step-chip">
                     <b>STEP 3</b>
-                    <img src="/assets/illustrations/13_handoff_delivery.png" alt="任せる" class="ill">
+                    <img src="/assets/illustrations/il_planning_work_structure.png" alt="任せる" class="ill">
                     <p>任せる</p>
                 </div>
                 <div class="step-chip">
                     <b>STEP 4</b>
-                    <img src="/assets/illustrations/il_m_dialogue_meeting.png" alt="育てる" class="ill">
+                    <img src="/assets/illustrations/il_feedback_and_growth.png" alt="育てる" class="ill">
                     <p>育てる</p>
                 </div>
                 <div class="step-chip">
                     <b>STEP 5</b>
-                    <img src="/assets/illustrations/08_iceberg.png" alt="心理を越える" class="ill">
+                    <img src="/assets/illustrations/il_risk_management.png" alt="心理を越える" class="ill">
                     <p>心理を越える</p>
                 </div>
             </div>
@@ -1334,7 +1356,7 @@
 
             <div style="max-width: 950px; margin: 0 auto;">
                 <div class="session-card reveal delay-100">
-                    <div class="s-art"><img src="/assets/illustrations/02_staircase_leadership.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_dialogue_communication.png" alt=""></div>
                     <div>
                         <span class="s-no">第1回</span>
                         <h3>マネジャーとしての役割認識と<br>リーダーとしてのあり方</h3>
@@ -1353,7 +1375,7 @@
                 </div>
 
                 <div class="session-card reveal delay-100">
-                    <div class="s-art"><img src="/assets/illustrations/10_team_shield.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_hr_mentoring.png" alt=""></div>
                     <div>
                         <span class="s-no">第2回</span>
                         <h3>人材保全 —— 任せられる関係をつくる</h3>
@@ -1371,7 +1393,7 @@
                 </div>
 
                 <div class="session-card reveal delay-200">
-                    <div class="s-art"><img src="/assets/illustrations/13_handoff_delivery.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_planning_work_structure.png" alt=""></div>
                     <div>
                         <span class="s-no">第3回</span>
                         <h3>人材育成① —— 適切に仕事を任せる</h3>
@@ -1388,7 +1410,7 @@
                 </div>
 
                 <div class="session-card reveal delay-200">
-                    <div class="s-art"><img src="/assets/illustrations/il_m_dialogue_meeting.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_feedback_and_growth.png" alt=""></div>
                     <div>
                         <span class="s-no">第4回</span>
                         <h3>人材育成② —— 任せた後のフォローアップ</h3>
@@ -1405,7 +1427,7 @@
                 </div>
 
                 <div class="session-card reveal delay-300">
-                    <div class="s-art"><img src="/assets/illustrations/08_iceberg.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_risk_management.png" alt=""></div>
                     <div>
                         <span class="s-no">第5回</span>
                         <h3>人材育成③ —— 「任せられない」心理を乗り越える</h3>
@@ -1441,6 +1463,7 @@
                 適切に任せるために重要なのが、次の3つです。これらを明確にすることで、<br class="sp-br">
                 <span class="mk">丸投げでも細かすぎる指示でもない</span>Delegationを実現します。
             </p>
+                <img src="/assets/illustrations/il_three_bricklayers.png" alt="同じ作業でも、意味付けで見え方が変わる" class="ill" style="width:380px; margin: 0 auto 8px; display:block;">
 
             <div class="pillar-grid">
                 <div class="pillar reveal delay-100">
@@ -1486,6 +1509,7 @@
                 <span class="en">Follow-up Model</span>
                 経験しただけでは、<br>人は必ずしも成長しません
             </h2>
+                <img src="/assets/illustrations/il_mentoring_ojt.png" alt="任せた後のフォローアップ" class="ill" style="width:210px; margin: 0 auto 8px; display:block;">
 
             <div class="flow-line reveal delay-100">
                 <div class="flow-node">
@@ -1859,7 +1883,7 @@
             </div>
 
             <div class="reveal delay-200" style="text-align: center; margin-top: 40px;">
-                <img src="/assets/illustrations/14_hot_air_balloon.png" alt="" class="ill ill-md" style="margin: 0 auto 20px;">
+                <img src="/assets/illustrations/il_goal_setting_roadmap.png" alt="" class="ill ill-md" style="margin: 0 auto 20px;">
                 <p style="color: rgba(255,255,255,.88); font-size: clamp(.98rem, 2vw, 1.15rem); line-height: 1.95; max-width: 720px; margin: 0 auto;">
                     プレイヤーとしての優秀さから、<br>
                     <span class="mk-d">People Manager としての優秀さへ。</span>

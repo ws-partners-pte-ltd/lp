@@ -823,14 +823,30 @@
         /* =========================================
            Delegation LP — 固有スタイル
         ========================================= */
-        /* ヒーロー：写真を使わずグラデーション＋イラストで構成（他LPとの差別化） */
+        /* ヒーロー：バンコクの夕景＋講師コラージュ。
+           背景は姉妹LP（無料ウェビナー 2026/thailand/seminar/delegation）と同じ写真を
+           /assets/ に置いて共有し、無料→有料の導線に視覚的な連続性を持たせている。 */
         .hero.hero-delegation {
-            background: radial-gradient(circle at 78% 18%, rgba(0,223,216,.20) 0%, rgba(0,223,216,0) 46%),
-                        linear-gradient(135deg, #041434 0%, #072a63 52%, #0050b3 100%);
-            min-height: auto;
-            padding: calc(var(--header-total-height) + 60px) 0 70px;
+            background-image: url('/assets/scenery/bangkok_dusk.jpg?v=20260910');
+            background-size: cover;
+            background-position: center 58%;
+            background-attachment: scroll; /* fixed は iOS で崩れる */
+            height: auto;
+            min-height: min(100vh, 840px);
+            padding: calc(var(--header-total-height) + 50px) 0 60px;
         }
-        .hero.hero-delegation .hero-overlay { display: none; }
+        .hero.hero-delegation .hero-overlay {
+            background:
+                linear-gradient(100deg, rgba(3,14,38,.96) 0%, rgba(3,14,38,.90) 34%, rgba(4,26,68,.72) 58%, rgba(4,26,68,.46) 100%),
+                linear-gradient(to bottom, rgba(3,14,38,.55) 0%, rgba(3,14,38,0) 30%);
+        }
+        /* 文字側の保険：写真の明部に重なっても落ちないように */
+        .hero.hero-delegation .hero-quote,
+        .hero.hero-delegation .hero-lead { text-shadow: 0 2px 12px rgba(0,0,0,.55); }
+        .hero.hero-delegation .hero-fact {
+            background: rgba(3,14,38,.62);
+            border-color: rgba(255,255,255,.24);
+        }
         .hero.hero-delegation::after {
             content: ''; position: absolute; inset: 0; opacity: .5; pointer-events: none;
             background-image: radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
@@ -1092,6 +1108,7 @@
          Hero
     ========================================= -->
     <section class="hero hero-delegation">
+        <div class="hero-overlay"></div>
         <div class="container hero-container">
             <div class="hero-text-content reveal-left">
                 <span class="hero-eyebrow">หลักสูตรต่อเนื่อง 5 ครั้ง สำหรับผู้จัดการ</span>
@@ -1110,9 +1127,13 @@
             </div>
 
             <div class="hero-visual-content reveal-right">
-                <div class="hero-art">
-                    <div class="ring"></div>
-                    <img src="/assets/illustrations/13_handoff_delivery.png" alt="การมอบหมายงาน">
+                <div class="hero-images-wrapper">
+                    <img src="/assets/images/online_training.jpg" alt="บรรยากาศการอบรมออนไลน์" class="img-collage img-online">
+                    <img src="/assets/photos/trainers/alia.jpg" alt="วิทยากร Alia Ratanavirakul" class="img-collage img-instructor">
+                    <div class="hero-badge-circle">
+                        <span class="badge-en">ONLINE</span>
+                        <span class="badge-ja">5 ครั้ง<br>ต่อเนื่อง</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1176,7 +1197,7 @@
                     <li>ทีมงานไม่แน่ใจว่าตัดสินใจเองได้ถึงระดับไหน จึงต้องรอความชัดเจนจากหัวหน้า</li>
                     <li>แผนสร้างผู้นำรุ่นถัดไปยังไม่คืบหน้าเท่าที่ควร</li>
                 </ul>
-                <img src="/assets/illustrations/09_brick_wall.png" alt="กำแพงของการมอบหมายงาน" class="ill ill-lg" style="margin: 26px auto 0;">
+                <img src="/assets/illustrations/il_tangled_communication.png" alt="กำแพงของการมอบหมายงาน" class="ill ill-lg" style="margin: 26px auto 0;">
             </div>
 
             <div class="issue-box reveal delay-200" style="margin: 30px auto 0; max-width: 900px; background: linear-gradient(to right, rgba(0,80,179,0.03), rgba(0,223,216,0.03)); border: 1px solid rgba(0,80,179,0.1); text-align: center;">
@@ -1238,6 +1259,7 @@
                 <span class="en">Concept</span>
                 จาก “สร้างผลงานด้วยตัวเอง”<br>สู่ “สร้างผลงานผ่านคนอื่น”
             </h2>
+                <img src="/assets/illustrations/il_manager_with_tablet.png" alt="ผู้จัดการที่สร้างผลงานผ่านคนอื่น" class="ill" style="width:190px; margin: 0 auto 8px; display:block;">
 
             <div class="shift-box reveal delay-100">
                 <div class="shift-card from">
@@ -1281,27 +1303,27 @@
             <div class="step-ribbon reveal delay-100">
                 <div class="step-chip">
                     <b>ขั้นที่ 1</b>
-                    <img src="/assets/illustrations/02_staircase_leadership.png" alt="" class="ill">
+                    <img src="/assets/illustrations/il_dialogue_communication.png" alt="" class="ill">
                     <p>ทบทวนบทบาท</p>
                 </div>
                 <div class="step-chip">
                     <b>ขั้นที่ 2</b>
-                    <img src="/assets/illustrations/10_team_shield.png" alt="" class="ill">
+                    <img src="/assets/illustrations/il_hr_mentoring.png" alt="" class="ill">
                     <p>สร้างความไว้วางใจ</p>
                 </div>
                 <div class="step-chip">
                     <b>ขั้นที่ 3</b>
-                    <img src="/assets/illustrations/13_handoff_delivery.png" alt="" class="ill">
+                    <img src="/assets/illustrations/il_planning_work_structure.png" alt="" class="ill">
                     <p>มอบหมายงาน</p>
                 </div>
                 <div class="step-chip">
                     <b>ขั้นที่ 4</b>
-                    <img src="/assets/illustrations/il_m_dialogue_meeting.png" alt="" class="ill">
+                    <img src="/assets/illustrations/il_feedback_and_growth.png" alt="" class="ill">
                     <p>พัฒนาคน</p>
                 </div>
                 <div class="step-chip">
                     <b>ขั้นที่ 5</b>
-                    <img src="/assets/illustrations/08_iceberg.png" alt="" class="ill">
+                    <img src="/assets/illustrations/il_risk_management.png" alt="" class="ill">
                     <p>ก้าวข้ามความกังวล</p>
                 </div>
             </div>
@@ -1335,7 +1357,7 @@
 
             <div style="max-width: 950px; margin: 0 auto;">
                 <div class="session-card reveal delay-100">
-                    <div class="s-art"><img src="/assets/illustrations/02_staircase_leadership.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_dialogue_communication.png" alt=""></div>
                     <div>
                         <span class="s-no">ครั้งที่ 1</span>
                         <h3>บทบาทของผู้จัดการ<br>และการวางตัวในฐานะผู้นำ</h3>
@@ -1354,7 +1376,7 @@
                 </div>
 
                 <div class="session-card reveal delay-100">
-                    <div class="s-art"><img src="/assets/illustrations/10_team_shield.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_hr_mentoring.png" alt=""></div>
                     <div>
                         <span class="s-no">ครั้งที่ 2</span>
                         <h3>การดูแลบุคลากร —— สร้างความสัมพันธ์ที่มอบงานกันได้</h3>
@@ -1372,7 +1394,7 @@
                 </div>
 
                 <div class="session-card reveal delay-200">
-                    <div class="s-art"><img src="/assets/illustrations/13_handoff_delivery.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_planning_work_structure.png" alt=""></div>
                     <div>
                         <span class="s-no">ครั้งที่ 3</span>
                         <h3>การพัฒนาบุคลากร ① —— มอบหมายงานอย่างเหมาะสม</h3>
@@ -1389,7 +1411,7 @@
                 </div>
 
                 <div class="session-card reveal delay-200">
-                    <div class="s-art"><img src="/assets/illustrations/il_m_dialogue_meeting.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_feedback_and_growth.png" alt=""></div>
                     <div>
                         <span class="s-no">ครั้งที่ 4</span>
                         <h3>การพัฒนาบุคลากร ② —— การติดตามหลังมอบงาน</h3>
@@ -1406,7 +1428,7 @@
                 </div>
 
                 <div class="session-card reveal delay-300">
-                    <div class="s-art"><img src="/assets/illustrations/08_iceberg.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_risk_management.png" alt=""></div>
                     <div>
                         <span class="s-no">ครั้งที่ 5</span>
                         <h3>การพัฒนาบุคลากร ③ —— ก้าวข้ามความกังวลที่ทำให้มอบงานไม่ได้</h3>
@@ -1442,6 +1464,7 @@
                 การมอบหมายงานที่ได้ผลต้องมี 3 องค์ประกอบนี้ครบ เมื่อชัดเจนทั้งสามข้อ<br class="sp-br">
                 การมอบงานจะ<span class="mk">ไม่กลายเป็นการโยนงาน และไม่ต้องลงไปคุมทุกขั้น</span>
             </p>
+                <img src="/assets/illustrations/il_three_bricklayers.png" alt="งานเดียวกัน แต่ความหมายที่ได้รับต่างกัน" class="ill" style="width:380px; margin: 0 auto 8px; display:block;">
 
             <div class="pillar-grid">
                 <div class="pillar reveal delay-100">
@@ -1487,6 +1510,7 @@
                 <span class="en">Follow-up Model</span>
                 การได้ลงมือทำ<br>ไม่ได้แปลว่าคนจะเติบโตเสมอ
             </h2>
+                <img src="/assets/illustrations/il_mentoring_ojt.png" alt="การติดตามหลังมอบงาน" class="ill" style="width:210px; margin: 0 auto 8px; display:block;">
 
             <div class="flow-line reveal delay-100">
                 <div class="flow-node">
@@ -1857,7 +1881,7 @@
             </div>
 
             <div class="reveal delay-200" style="text-align: center; margin-top: 40px;">
-                <img src="/assets/illustrations/14_hot_air_balloon.png" alt="" class="ill ill-md" style="margin: 0 auto 20px;">
+                <img src="/assets/illustrations/il_goal_setting_roadmap.png" alt="" class="ill ill-md" style="margin: 0 auto 20px;">
                 <p style="color: rgba(255,255,255,.88); font-size: clamp(.98rem, 2vw, 1.15rem); line-height: 1.95; max-width: 740px; margin: 0 auto;">
                     จากความเก่งในฐานะผู้ปฏิบัติงาน<br>
                     <span class="mk-d">ไปสู่ความเก่งในฐานะ People Manager</span>
