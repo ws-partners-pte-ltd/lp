@@ -8,29 +8,30 @@ window.LP_CONFIG = {
   meta: {
     lang: 'ja',
     title: '評価の9割は、目標設定で決まる｜2026年10月28日 無料オンラインセミナー | WS PARTNERS',
-    description: '在インドネシア日系企業の経営者向け無料オンラインセミナー。2026年10月28日（水）15:00〜16:00（ジャカルタ時間）、Zoom開催・日本語で実施。評価が毎年全員同じ点数で返ってくる原因を「目標が書けなくなる3つの場面」から整理し、制度を変えずに経営者が明日から着手できる打ち手をご紹介する60分。',
+    description: '在インドネシア日系企業の経営者向け無料オンラインセミナー。2026年10月28日（水）15:00〜16:00（ジャカルタ時間）、Zoom開催・日本語で実施。インドネシアで評価に差がつかない原因を「目標が書けなくなる3つの場面」から整理し、制度を変えずに経営者が明日から着手できる打ち手をご紹介する60分。講師：櫻井和樹（WS PARTNERS インドネシア法人拠点長）。',
     other_lang_label: null,
     other_lang_url:   null
   },
 
   header: {
-    phone: '+65-6978-4066',
-    hours: '受付時間：平日 9:00～18:00（シンガポール時間）',
+    phone: '+62 823 2122 8694',
+    hours: '受付時間：平日 9:00～18:00（ジャカルタ時間）',
     cta_text: '無料で申し込む'
   },
 
   nav: [
     { href: '#consult', label: 'セミナー概要' },
     { href: '#issues',  label: 'このような課題をお持ちの方へ' },
-    { href: '#program', label: '開催概要' },
-    { href: '#company', label: '会社概要' },
+    { href: '#program',    label: '開催概要' },
+    { href: '#instructor', label: '登壇者' },
+    { href: '#company',    label: '会社概要' },
     { href: '#faq',     label: 'よくあるご質問' },
     { href: '#apply',   label: 'お申し込み' }
   ],
 
   hero: {
     bg_image: '/assets/lp-hero-images/hero_jakarta_skyline_dusk.webp?v=20260915',
-    img_main: '/assets/lp-hero-images/hero_meeting_jakarta_clean.webp',
+    img_main: '/assets/photos/trainers/sakurai.jpg',
     img_sub1: '/assets/images/online_training.jpg',
     img_sub2: '',
     subtitle: '〜 目標設定から見直す、評価が機能する組織づくり 〜',
@@ -52,12 +53,12 @@ window.LP_CONFIG = {
 
   consult: {
     en: 'ABOUT THIS SEMINAR',
-    title: 'なぜ、評価は毎年<br>全員同じ点数で返ってくるのか？',
+    title: 'なぜ、インドネシアでは<br>評価で差がつかないのか？',
     body: `<blockquote style="margin:0 0 18px 0;padding:16px 24px;border-left:4px solid #0050b3;background:#eef4ff;border-radius:0 10px 10px 0;font-style:italic;color:#2d3748;line-height:2.05;font-size:1.05rem">
   <span style="display:block;font-style:normal;font-size:0.95rem;color:#4a5568;margin-bottom:10px">在インドネシア日系企業の経営者から、こんな声を聞いたことはありませんか。</span>
-  「昇給を配る根拠が、評価から出てこない」<br>
-  「ローカル管理職に任せても、報告は“彼は頑張っています”で止まる」<br>
-  「“人材育成の強化”という目標を、期末に判定できない」
+  「昇給をさせる理由が、評価結果から見えてこない」<br>
+  「ローカル管理職に評価を任せても、報告は“彼は頑張っています”で、それ以外の理由がない」<br>
+  「“人材育成の強化”という定性的な目標を、期末に判定できない」
 </blockquote>
 <p>日本人経営者とローカル管理職のあいだで起きるこうした行き詰まりの背景には、制度の不備ではなく、<strong style="background:linear-gradient(transparent 55%, #ffe08a 55%);font-weight:700">「目標が書けなくなる場面」</strong>があります。</p>
 <div style="background:#e8f0fb;border:2px solid #0050b3;border-radius:12px;padding:18px 22px;margin:18px 0">
@@ -115,7 +116,7 @@ window.LP_CONFIG = {
       { label: '対象',     value: '在インドネシア日系企業の経営者・経営幹部の方' },
       { label: '参加方法', value: 'お申し込みいただいた方に、参加用URLを別途ご案内します。' },
       { label: '申込締切', value: '2026年10月28日（水）午前10:00（ジャカルタ時間）' },
-      { label: '講師',     value: '' },
+      { label: '講師',     value: '櫻井 和樹（WS PARTNERS PTE LTD ディレクター・インドネシア法人拠点長）' },
       { label: '主催',     value: 'PT WILLSEED PARTNERS INDONESIA' }
     ],
     schedule: [
@@ -132,7 +133,18 @@ window.LP_CONFIG = {
     ]
   },
 
-  instructor: null,
+  instructor: {
+    en: 'SPEAKER',
+    title: '登壇者紹介',
+    items: [
+      {
+        img: '/assets/photos/trainers/sakurai.jpg?v=20260916',
+        name: '櫻井 和樹　Kazuki Sakurai',
+        role: 'WS PARTNERS PTE LTD　ディレクター・インドネシア法人拠点長<br>プロコーチ兼産業カウンセラー、Master of Business Administration（経営学修士）',
+        profile: `株式会社グロービスにて社会人向け教育コンテンツの開発・法人営業を担う。<br><br>株式会社セルムにて組織・人材開発コンサルタントとして、主に大手企業のリーダー向けのコーチ・研修講師を担当する傍ら、人事制度構築・経営人材開発・育成体系構築・ダイバーシティマネジメント推進など幅広いプロジェクトに携わる。<br><br>その後株式会社mentoで法人向けコーチングプラットフォームの事業開発に従事。主にセールスとして大手企業の開拓を行う。<br><br>2026年4月よりインドネシア拠点長として、主にインドネシア日系企業の「経営の現地化」パートナーとして、組織変革・人材開発を支援している。`
+      }
+    ]
+  },
 
   pricing: null,
 
@@ -189,7 +201,7 @@ window.LP_CONFIG = {
     title: 'お問い合わせ先',
     body: `セミナーに関するご質問はお気軽にご連絡ください。<br><br>
 <span style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
-  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>オンラインセミナー担当</span></span>
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>オンラインセミナー担当：<strong>松下・友澤</strong></span></span>
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">✉</span><span><a href="mailto:support@ws-partners.com.sg" style="color:rgba(255,255,255,.85);text-decoration:underline">support@ws-partners.com.sg</a></span></span>
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6569784066" style="color:rgba(255,255,255,.85);text-decoration:underline">+65-6978-4066</a></span></span>
 </span>`
@@ -206,9 +218,13 @@ window.LP_CONFIG = {
   company: {
     en: 'ABOUT US',
     title: '弊社について',
-    img: '/assets/images/ws-partners.jpeg',
-    name: 'WS PARTNERS PTE LTD',
+    img: '/assets/lp-hero-images/hero_jakarta_skyline_day.webp?v=20260916',
+    name: 'PT WILLSEED PARTNERS INDONESIA',
     items: [
+      { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
+      { label: '電話番号', value: '+65 9185 2747' },
+      { label: '設立',    value: '2026年4月1日' },
+      { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">WS PARTNERS PTE LTD</strong>' },
       { label: '【WS PARTNERSのミッション】', value: '私たちWS PARTNERSは、ASEANの日系現地法人を対象に、現地人材の育成・駐在員の現地適応・組織や人材上の問題解決を通じて、日本企業のグローバルビジネスに貢献します。' },
       { label: '所在地',   value: '1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989' },
       { label: '電話番号', value: '+65 6978 4066' },
@@ -216,11 +232,7 @@ window.LP_CONFIG = {
       { label: 'Web',     value: '<a href="https://ws-partners.com.sg/" style="color:var(--primary)" target="_blank">https://ws-partners.com.sg/</a>' },
       { label: '株主',    value: '株式会社ウィル・シード / CL HOLDINGS PTE LTD' },
       { label: '代表者',  value: 'Managing Director 加藤 健太' },
-      { label: '事業内容', value: 'ASEAN諸国における日系現地法人および海外グループ企業向けに、コンサルティングおよび教育サービスを提供<br>※河合塾グループ（株式会社KJホールディングス）の一員です' },
-      { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">PT WILLSEED PARTNERS INDONESIA</strong>' },
-      { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
-      { label: '電話番号', value: '+65 9185 2747' },
-      { label: '設立',    value: '2026年4月1日' }
+      { label: '事業内容', value: 'ASEAN諸国における日系現地法人および海外グループ企業向けに、コンサルティングおよび教育サービスを提供<br>※河合塾グループ（株式会社KJホールディングス）の一員です' }
     ]
   },
 
