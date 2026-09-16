@@ -203,7 +203,7 @@ window.LP_CONFIG = {
 <span style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>オンラインセミナー担当：<strong>松下・友澤</strong></span></span>
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">✉</span><span><a href="mailto:support@ws-partners.com.sg" style="color:rgba(255,255,255,.85);text-decoration:underline">support@ws-partners.com.sg</a></span></span>
-  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6569784066" style="color:rgba(255,255,255,.85);text-decoration:underline">+65-6978-4066</a></span></span>
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6282321228694" style="color:rgba(255,255,255,.85);text-decoration:underline">+62 823 2122 8694</a></span></span>
 </span>`
   },
 
@@ -251,7 +251,7 @@ window.LP_CONFIG = {
     hubspot_form_id:   '',
     hubspot_region:    'na1',
     thank_you_url:     '',
-    zoom_url:          ''
+    zoom_url:          'https://us02web.zoom.us/webinar/register/WN_PI_mGtfpSbWzfnnLH8iFqw'
   }
 
 };
