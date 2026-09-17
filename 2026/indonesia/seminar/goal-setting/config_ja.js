@@ -61,15 +61,13 @@ window.LP_CONFIG = {
   「“人材育成の強化”という定性的な目標を、期末に判定できない」
 </blockquote>
 <p>日本人経営者とローカル管理職のあいだで起きるこうした行き詰まりの背景には、制度の不備ではなく、<strong style="background:linear-gradient(transparent 55%, #ffe08a 55%);font-weight:700">「目標が書けなくなる場面」</strong>があります。</p>
-<div style="background:#e8f0fb;border:2px solid #0050b3;border-radius:12px;padding:18px 22px;margin:18px 0">
-  <p style="font-size:0.85rem;font-weight:700;color:#0050b3;letter-spacing:0.05em;margin:0 0 14px 0;text-align:center">── 目標が書けなくなるのは、こういう場面です ──</p>
-  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
-    <span style="background:#fff;border:1px solid #c3d5ef;border-radius:10px;padding:12px 10px;text-align:center;font-weight:700;font-size:0.97rem;color:#1a202c">未来が描けない</span>
-    <span style="background:#fff;border:1px solid #c3d5ef;border-radius:10px;padding:12px 10px;text-align:center;font-weight:700;font-size:0.97rem;color:#1a202c">数字がない<br><span style="font-size:0.82em;font-weight:400;color:#4a5568">（バックオフィス）</span></span>
-    <span style="background:#fff;border:1px solid #c3d5ef;border-radius:10px;padding:12px 10px;text-align:center;font-weight:700;font-size:0.97rem;color:#1a202c">測れない<br><span style="font-size:0.82em;font-weight:400;color:#4a5568">（定性目標）</span></span>
-    <span style="background:#fff;border:1px solid #c3d5ef;border-radius:10px;padding:12px 10px;text-align:center;font-weight:700;font-size:0.97rem;color:#1a202c">所与の目標を、<br>割っただけ</span>
-  </div>
-</div>
+<p style="font-size:0.92rem;font-weight:700;color:#0050b3;letter-spacing:0.04em;margin:18px 0 8px 0">── 目標が書けなくなるのは、こういう場面です ──</p>
+<ul style="margin:0 0 18px 0;padding-left:1.4em;line-height:2">
+  <li><strong>未来が描けない</strong></li>
+  <li><strong>数字がない</strong>（バックオフィス）</li>
+  <li><strong>測れない</strong>（定性目標）</li>
+  <li><strong>所与の目標を、割っただけ</strong></li>
+</ul>
 <p>これらが整理されないままでは、どんな制度を入れても、期末の分布は変わりません。</p>
 <p>本セミナーでは、実際に弊社が現地管理職向けに実施している<strong>目標設定研修の一部</strong>をご紹介します。</p>
 <div style="background:#e8f0fb;border:2px solid #0050b3;border-radius:12px;padding:18px 22px;margin:18px 0 4px 0">
@@ -90,11 +88,10 @@ window.LP_CONFIG = {
     title: 'このような課題をお持ちの方へ',
     img: '/assets/illustrations/il_goal_setting_roadmap.png',
     items: [
-      '人件費は毎年上がるのに、昇給を配る根拠が評価から出てこない',
-      '評価がほぼ全員同じ点数で返ってきて、賞与に差をつけられない',
-      'ローカル管理職に任せたいが、報告が「彼は頑張っています」で止まる',
-      '経理・人事・総務・ITなど、数字のない部門の評価がどうしても横並びになる',
-      '「人材育成の強化」のような目標を、期末に達成したのか判定できない'
+      '評価に差がつかず、メリハリのある昇給・賞与の配分ができない',
+      'ローカル管理職に評価を任せたいが、「彼は頑張っています」というコメントしかあがってこない',
+      '経理・人事・総務・ITなど、定量で測ることが難しい部門の評価がどうしても横並びになる',
+      '「人材育成の強化」のような定性的な目標を、期末に達成したのか判定できない'
     ]
   },
 
@@ -222,7 +219,7 @@ window.LP_CONFIG = {
     name: 'PT WILLSEED PARTNERS INDONESIA',
     items: [
       { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
-      { label: '電話番号', value: '+65 9185 2747' },
+      { label: '電話番号', value: '+62 823 2122 8694' },
       { label: '設立',    value: '2026年4月1日' },
       { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">WS PARTNERS PTE LTD</strong>' },
       { label: '【WS PARTNERSのミッション】', value: '私たちWS PARTNERSは、ASEANの日系現地法人を対象に、現地人材の育成・駐在員の現地適応・組織や人材上の問題解決を通じて、日本企業のグローバルビジネスに貢献します。' },
