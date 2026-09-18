@@ -844,7 +844,7 @@
         /* 1画面に収めるための詰め */
         .hero.hero-completion .hero-text-content { transform: none; }
         .hero.hero-completion .hero-visual-content { transform: none; flex: 1.15; height: clamp(290px, 58vh, 545px); }
-        .hero.hero-completion .hero-images-wrapper { max-width: 64vh; }
+        .hero.hero-completion .hero-images-wrapper { max-width: min(64vh, 42vw); }
         .hero.hero-completion .hero-eyebrow { margin-bottom: 12px; }
         .hero.hero-completion .hero-lead { margin-bottom: 18px; }
         .hero.hero-completion .hero-facts { gap: 10px; margin-bottom: 20px; }
@@ -863,16 +863,18 @@
         }
         .hero.hero-completion .hero-overlay {
             background:
-                linear-gradient(100deg, rgba(3,14,38,.96) 0%, rgba(3,14,38,.90) 34%, rgba(4,26,68,.72) 58%, rgba(4,26,68,.46) 100%),
-                linear-gradient(to bottom, rgba(3,14,38,.55) 0%, rgba(3,14,38,0) 30%);
+                linear-gradient(100deg, rgba(24,20,80,.96) 0%, rgba(40,32,108,.93) 44%, rgba(66,50,146,.74) 70%, rgba(96,74,186,.32) 100%),
+                linear-gradient(to bottom, rgba(22,18,72,.45) 0%, rgba(22,18,72,0) 32%);
         }
         /* 文字側の保険：写真の明部に重なっても落ちないように */
         .hero.hero-completion .hero-quote,
         .hero.hero-completion .hero-lead { text-shadow: 0 2px 12px rgba(0,0,0,.55); }
         .hero.hero-completion .hero-fact {
-            background: rgba(3,14,38,.62);
-            border-color: rgba(255,255,255,.24);
+            background: linear-gradient(135deg, rgba(42,66,206,.80) 0%, rgba(0,128,200,.66) 100%);
+            border: 1px solid rgba(150,205,255,.62);
+            box-shadow: 0 6px 18px rgba(20,24,80,.30);
         }
+        .hero.hero-completion .hero-fact span.k { color: #b6e6ff; }
         .hero.hero-completion::after {
             content: ''; position: absolute; inset: 0; opacity: .5; pointer-events: none;
             background-image: radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
@@ -1114,13 +1116,43 @@
 
         /* 最終ゴール */
         .goal-eq {
-            display: grid; grid-template-columns: 1fr auto 1fr; gap: 16px; align-items: center;
-            max-width: 780px; margin: 30px auto 0; text-align: center;
+            display: flex; flex-wrap: nowrap; justify-content: center; align-items: stretch;
+            gap: 14px; max-width: 900px; margin: 30px auto 0; text-align: center;
         }
+        .goal-eq div.box { flex: 1 1 0; min-width: 0; display: flex; align-items: center; justify-content: center; }
+        .goal-eq span.op { flex: 0 0 auto; align-self: center; }
         .goal-eq div.box { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22); border-radius: 14px; padding: 22px 18px; }
         .goal-eq div.box strong { display: block; font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 900; color: #fff; line-height: 1.5; }
         .goal-eq span.op { font-size: 1.8rem; font-weight: 900; color: var(--secondary); }
-        @media (max-width: 620px) { .goal-eq { grid-template-columns: 1fr; } }
+        @media (max-width: 720px) { .goal-eq { flex-wrap: wrap; } .goal-eq div.box { flex: 1 1 100%; } }
+
+        /* ヒーローのプログラム名：商品名が一目で分かるように */
+        .hero-program {
+            display: inline-block;
+            font-size: clamp(1.02rem, 1.5vw + .3rem, 1.42rem);
+            font-weight: 900; line-height: 1.35; color: #fff;
+            letter-spacing: .01em; margin: 0 0 12px;
+            padding: 8px 20px 8px 18px; border-radius: 10px;
+            border-left: 5px solid var(--accent-orange);
+            background: rgba(255,255,255,.14);
+            backdrop-filter: blur(5px);
+            text-shadow: 0 2px 10px rgba(0,0,0,.45);
+        }
+        .hero-program .abbr {
+            display: inline-block; margin-left: 10px; padding: 2px 10px; border-radius: 6px;
+            background: var(--accent-orange); color: #fff; font-size: .82em; font-weight: 900;
+            letter-spacing: .06em; vertical-align: 2px;
+        }
+        @media (max-width: 860px) { .hero-program { font-size: 1.02rem; padding: 7px 14px; } }
+
+        /* ラベルが長い対応表用：左列を広げて不自然な折返しを防ぐ */
+        .tt.tt-wide .tt-row { grid-template-columns: 208px 1fr; }
+        .tt.tt-wide .tt-row span.t { line-height: 1.6; }
+        @media (max-width: 560px) { .tt.tt-wide .tt-row { grid-template-columns: 140px 1fr; } }
+        /* 見出しが長い layer-row 用 */
+        .layer-list.ll-wide .layer-row { grid-template-columns: 210px 1fr; }
+        .layer-list.ll-wide .layer-row .tag em { line-height: 1.5; }
+        @media (max-width: 760px) { .layer-list.ll-wide .layer-row { grid-template-columns: 1fr; gap: 8px; } }
 
         /* PC で改行し、狭い画面では詰める */
         .sp-br { display: inline; }
@@ -1145,7 +1177,7 @@
                 </div>
                 <div class="header-buttons">
                     <a href="../th/" class="btn-lang">ภาษาไทย</a>
-                    <a href="#contact" class="btn-entry-header">お問い合わせ</a>
+                    <a href="#contact" class="btn-entry-header">受講申し込み</a>
                 </div>
                 <button class="hamburger-btn" id="hamburger-btn" aria-label="メニューを開く">
                     <span></span><span></span><span></span>
@@ -1154,7 +1186,7 @@
         </div>
         <div class="header-btn-bar">
             <a href="../th/" class="btn-bar-lang">ภาษาไทย</a>
-            <a href="#contact" class="btn-bar-entry">お問い合わせ</a>
+            <a href="#contact" class="btn-bar-entry">受講申し込み</a>
         </div>
         <nav class="header-bottom" id="mobile-nav">
             <div class="container nav-container">
@@ -1178,6 +1210,7 @@
         <div class="container hero-container">
             <div class="hero-text-content reveal-left">
                 <span class="hero-eyebrow">全5回・スクール型 実践プログラム</span>
+                <p class="hero-program">仕事の進め方・完遂力プログラム</p>
                 <h1 class="hero-quote">任された仕事を、<span class="hl">自律的に、最後まで</span>。</h1>
                 <p class="hero-lead">
                     報連相・問題解決・ロジカルシンキングを、<br>
@@ -1189,7 +1222,7 @@
                     <div class="hero-fact"><span class="k">TARGET</span><span class="v">タイ人一般スタッフ〜<br>次期リーダー候補</span></div>
                     <div class="hero-fact"><span class="k">TUITION</span><span class="v">SGD 900<br>（1名・全5回）</span></div>
                 </div>
-                <a href="#contact" class="btn-cta">開催案内を希望する</a>
+                <a href="#contact" class="btn-cta">受講申し込み</a>
             </div>
 
             <div class="hero-visual-content reveal-right">
@@ -1260,7 +1293,7 @@
                     <li>作業は終えていても、依頼者の期待を満たしていない</li>
                     <li>研修には参加しているが、受講後の取り組みや変化が見えにくい</li>
                 </ul>
-                <img src="/assets/illustrations/il_m_kanban_board.png" alt="仕事の進め方に課題がある状態" class="ill">
+                <img src="/assets/illustrations/il_tangled_communication.png" alt="仕事の進め方に課題がある状態" class="ill">
             </div>
 
             <div class="issue-box reveal delay-200" style="margin: 30px auto 0; max-width: 900px; background: linear-gradient(to right, rgba(0,80,179,0.03), rgba(0,223,216,0.03)); border: 1px solid rgba(0,80,179,0.1); text-align: center;">
@@ -1318,7 +1351,7 @@
                 <span class="en">Concept</span>
                 「指示された作業を終える」から<br>「期待された成果まで進める」へ
             </h2>
-                <img src="/assets/illustrations/il_goal_setting_roadmap.png" alt="成果まで仕事を進める" class="ill" style="width:190px; margin: 0 auto 8px; display:block;">
+                <img src="/assets/illustrations/il_three_bricklayers.png" alt="成果まで仕事を進める" class="ill" style="width:190px; margin: 0 auto 8px; display:block;">
 
             <div class="shift-box reveal delay-100">
                 <div class="shift-card from">
@@ -1366,27 +1399,27 @@
             <div class="step-ribbon reveal delay-100">
                 <div class="step-chip">
                     <b>STEP 1</b>
-                    <img src="/assets/illustrations/il_manager_with_tablet.png" alt="全体をつかむ" class="ill">
+                    <img src="/assets/illustrations/il_m_gears_blueprint.png" alt="全体をつかむ" class="ill">
                     <p>全体をつかむ</p>
                 </div>
                 <div class="step-chip">
                     <b>STEP 2</b>
-                    <img src="/assets/illustrations/il_planning_work_structure.png" alt="組み立てる" class="ill">
+                    <img src="/assets/illustrations/il_m_flowchart_gears.png" alt="組み立てる" class="ill">
                     <p>組み立てる</p>
                 </div>
                 <div class="step-chip">
                     <b>STEP 3</b>
-                    <img src="/assets/illustrations/il_dialogue_communication.png" alt="すり合わせる" class="ill">
+                    <img src="/assets/illustrations/il_m_dialogue_meeting.png" alt="すり合わせる" class="ill">
                     <p>すり合わせる</p>
                 </div>
                 <div class="step-chip">
                     <b>STEP 4</b>
-                    <img src="/assets/illustrations/il_risk_management.png" alt="進める" class="ill">
+                    <img src="/assets/illustrations/il_thinking_decision_tree.png" alt="進める" class="ill">
                     <p>進める</p>
                 </div>
                 <div class="step-chip">
                     <b>STEP 5</b>
-                    <img src="/assets/illustrations/il_feedback_and_growth.png" alt="やり切る" class="ill">
+                    <img src="/assets/illustrations/il_m_qc_inspection.png" alt="やり切る" class="ill">
                     <p>やり切る</p>
                 </div>
             </div>
@@ -1400,7 +1433,7 @@
         <div class="container">
             <div class="cta-banner-inner reveal">
                 <h2>「知っている」で終わらせず、<br>仕事の中で使えるスタッフを育てませんか</h2>
-                <a href="#contact" class="btn-cta">開催案内を希望する</a>
+                <a href="#contact" class="btn-cta">受講申し込み</a>
             </div>
         </div>
     </div>
@@ -1420,7 +1453,7 @@
 
             <div style="max-width: 950px; margin: 0 auto;">
                 <div class="session-card reveal delay-100">
-                    <div class="s-art"><img src="/assets/illustrations/il_manager_with_tablet.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_m_gears_blueprint.png" alt=""></div>
                     <div>
                         <span class="s-no">第1回</span>
                         <h3>仕事の全体像をつかみ、<br>期待成果を確認する</h3>
@@ -1437,7 +1470,7 @@
                 </div>
 
                 <div class="session-card reveal delay-100">
-                    <div class="s-art"><img src="/assets/illustrations/il_planning_work_structure.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_m_flowchart_gears.png" alt=""></div>
                     <div>
                         <span class="s-no">第2回</span>
                         <h3>状況を整理し、進め方を組み立てる</h3>
@@ -1454,7 +1487,7 @@
                 </div>
 
                 <div class="session-card reveal delay-200">
-                    <div class="s-art"><img src="/assets/illustrations/il_dialogue_communication.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_m_dialogue_meeting.png" alt=""></div>
                     <div>
                         <span class="s-no">第3回</span>
                         <h3>自分の考えを持ち、<br>関係者とすり合わせる</h3>
@@ -1471,7 +1504,7 @@
                 </div>
 
                 <div class="session-card reveal delay-200">
-                    <div class="s-art"><img src="/assets/illustrations/il_risk_management.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_thinking_decision_tree.png" alt=""></div>
                     <div>
                         <span class="s-no">第4回</span>
                         <h3>実行・進捗を管理し、問題に対応する</h3>
@@ -1488,7 +1521,7 @@
                 </div>
 
                 <div class="session-card reveal delay-300">
-                    <div class="s-art"><img src="/assets/illustrations/il_feedback_and_growth.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_m_qc_inspection.png" alt=""></div>
                     <div>
                         <span class="s-no">第5回</span>
                         <h3>成果を確認し、最後までやり切る</h3>
@@ -1575,13 +1608,13 @@
                 必要な能力を選び、組み合わせて使うための地図です。
             </p>
 
-            <div class="tt reveal delay-100">
-                <div class="tt-row"><span class="t">目的・期待を<br>確認する</span><span class="d">目的を捉える力／質問力</span></div>
-                <div class="tt-row"><span class="t">状況を<br>整理する</span><span class="d">情報収集力／事実と解釈を分ける力</span></div>
-                <div class="tt-row"><span class="t">進め方を<br>組み立てる</span><span class="d">論理的思考／選択肢を考える力／計画力</span></div>
-                <div class="tt-row"><span class="t">関係者と<br>すり合わせる</span><span class="d">報連相／説明力／調整力</span></div>
-                <div class="tt-row"><span class="t">実行・進捗を<br>管理する</span><span class="d">段取り力／進捗管理／問題解決</span></div>
-                <div class="tt-row"><span class="t">成果を確認し、<br>改善する</span><span class="d">確認する力／振り返る力／改善する力</span></div>
+            <div class="tt tt-wide reveal delay-100">
+                <div class="tt-row"><span class="t">目的・期待を確認する</span><span class="d">目的を捉える力／質問力</span></div>
+                <div class="tt-row"><span class="t">状況を整理する</span><span class="d">情報収集力／事実と解釈を分ける力</span></div>
+                <div class="tt-row"><span class="t">進め方を組み立てる</span><span class="d">論理的思考／選択肢を考える力／計画力</span></div>
+                <div class="tt-row"><span class="t">関係者とすり合わせる</span><span class="d">報連相／説明力／調整力</span></div>
+                <div class="tt-row"><span class="t">実行・進捗を管理する</span><span class="d">段取り力／進捗管理／問題解決</span></div>
+                <div class="tt-row"><span class="t">成果を確認し、改善する</span><span class="d">確認する力／振り返る力／改善する力</span></div>
             </div>
 
             <div class="reveal delay-200" style="max-width: 900px; margin: 34px auto 0; background: var(--bg-dark); color: #fff; border-radius: var(--radius-lg); padding: 32px 36px; text-align: center;">
@@ -1611,7 +1644,7 @@
                 受講者ごとの取り組みを上司の皆様に共有します。
             </p>
 
-            <div class="layer-list">
+            <div class="layer-list ll-wide">
                 <div class="layer-row reveal delay-100">
                     <div class="tag">01<em>受講・課題への取り組み</em></div>
                     <p>出欠、課題提出、演習への取り組み状況</p>
@@ -1689,12 +1722,12 @@
             <p class="reveal" style="text-align: center; color: var(--text-muted); font-size: 1rem;">初回は前回実践の振り返りに代えて、仕事の全体像を確認します。<br>最終回は総合演習と全体の振り返りを中心に、一部構成を変更します。</p>
 
             <div class="tt reveal delay-100">
-                <div class="tt-row"><span class="t">0〜20分</span><span class="d">前回の職場実践を振り返る</span></div>
-                <div class="tt-row"><span class="t">20〜35分</span><span class="d">共通ケースで、今の課題をつかむ</span></div>
-                <div class="tt-row"><span class="t">35〜55分</span><span class="d">必要な考え方・スキルを学ぶ</span></div>
-                <div class="tt-row"><span class="t">55〜95分</span><span class="d">個人演習・少人数討議・ロールプレイ</span></div>
-                <div class="tt-row"><span class="t">95〜110分</span><span class="d">フィードバックを受け、回答・進め方を修正する</span></div>
-                <div class="tt-row"><span class="t">110〜120分</span><span class="d">次回までの職場実践を決める</span></div>
+                <div class="tt-row"><span class="t">20分</span><span class="d">前回の職場実践を振り返る</span></div>
+                <div class="tt-row"><span class="t">15分</span><span class="d">共通ケースで、今の課題をつかむ</span></div>
+                <div class="tt-row"><span class="t">20分</span><span class="d">必要な考え方・スキルを学ぶ</span></div>
+                <div class="tt-row"><span class="t">40分</span><span class="d">個人演習・少人数討議・ロールプレイ</span></div>
+                <div class="tt-row"><span class="t">15分</span><span class="d">フィードバックを受け、回答・進め方を修正する</span></div>
+                <div class="tt-row"><span class="t">10分</span><span class="d">次回までの職場実践を決める</span></div>
             </div>
         </div>
     </section>
@@ -1733,7 +1766,7 @@
             </div>
 
             <div class="reveal delay-200" style="text-align: center; margin-top: 40px;">
-                <img src="/assets/illustrations/il_c_growth_tree.png" alt="仕事を通じて人が育つ" class="ill ill-md" style="margin: 0 auto 18px;">
+                <img src="/assets/illustrations/il_c_talent_development.png" alt="仕事を通じて人が育つ" class="ill ill-md" style="margin: 0 auto 18px;">
                 <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.9; max-width: 760px; margin: 0 auto;">
                     上記は育成目標であり、全員に同じ変化や業績向上を保証するものではありません。<br>
                     研修中の取り組みと職場実践を通じて、<span class="mk">各人の変化と次の課題</span>を確認します。
@@ -1953,7 +1986,7 @@
             </div>
 
             <div class="reveal delay-200" style="text-align: center; margin-top: 40px;">
-                <img src="/assets/illustrations/il_goal_setting_roadmap.png" alt="" class="ill ill-md" style="margin: 0 auto 20px;">
+                <img src="/assets/illustrations/il_m_roadmap_goal.png" alt="" class="ill ill-md" style="margin: 0 auto 20px;">
                 <p style="color: rgba(255,255,255,.88); font-size: clamp(.98rem, 2vw, 1.15rem); line-height: 1.95; max-width: 760px; margin: 0 auto;">
                     目的をつかむ。状況を整理する。進め方を考える。周囲とすり合わせる。<br>
                     変化に対応し、最後まで確認する。<br>

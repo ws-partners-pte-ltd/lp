@@ -843,7 +843,7 @@
         /* 1画面に収めるための詰め */
         .hero.hero-completion .hero-text-content { transform: none; }
         .hero.hero-completion .hero-visual-content { transform: none; flex: 1.15; height: clamp(290px, 58vh, 545px); }
-        .hero.hero-completion .hero-images-wrapper { max-width: 64vh; }
+        .hero.hero-completion .hero-images-wrapper { max-width: min(64vh, 42vw); }
         .hero.hero-completion .hero-eyebrow { margin-bottom: 12px; }
         .hero.hero-completion .hero-lead { margin-bottom: 18px; }
         .hero.hero-completion .hero-facts { gap: 10px; margin-bottom: 20px; }
@@ -862,16 +862,18 @@
         }
         .hero.hero-completion .hero-overlay {
             background:
-                linear-gradient(100deg, rgba(3,14,38,.96) 0%, rgba(3,14,38,.90) 34%, rgba(4,26,68,.72) 58%, rgba(4,26,68,.46) 100%),
-                linear-gradient(to bottom, rgba(3,14,38,.55) 0%, rgba(3,14,38,0) 30%);
+                linear-gradient(100deg, rgba(24,20,80,.96) 0%, rgba(40,32,108,.93) 44%, rgba(66,50,146,.74) 70%, rgba(96,74,186,.32) 100%),
+                linear-gradient(to bottom, rgba(22,18,72,.45) 0%, rgba(22,18,72,0) 32%);
         }
         /* 文字側の保険：写真の明部に重なっても落ちないように */
         .hero.hero-completion .hero-quote,
         .hero.hero-completion .hero-lead { text-shadow: 0 2px 12px rgba(0,0,0,.55); }
         .hero.hero-completion .hero-fact {
-            background: rgba(3,14,38,.62);
-            border-color: rgba(255,255,255,.24);
+            background: linear-gradient(135deg, rgba(42,66,206,.80) 0%, rgba(0,128,200,.66) 100%);
+            border: 1px solid rgba(150,205,255,.62);
+            box-shadow: 0 6px 18px rgba(20,24,80,.30);
         }
+        .hero.hero-completion .hero-fact span.k { color: #b6e6ff; }
         .hero.hero-completion::after {
             content: ''; position: absolute; inset: 0; opacity: .5; pointer-events: none;
             background-image: radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
@@ -881,16 +883,18 @@
 
         .hero.hero-completion .hero-overlay {
             background:
-                linear-gradient(100deg, rgba(3,14,38,.96) 0%, rgba(3,14,38,.90) 34%, rgba(4,26,68,.72) 58%, rgba(4,26,68,.46) 100%),
-                linear-gradient(to bottom, rgba(3,14,38,.55) 0%, rgba(3,14,38,0) 30%);
+                linear-gradient(100deg, rgba(24,20,80,.96) 0%, rgba(40,32,108,.93) 44%, rgba(66,50,146,.74) 70%, rgba(96,74,186,.32) 100%),
+                linear-gradient(to bottom, rgba(22,18,72,.45) 0%, rgba(22,18,72,0) 32%);
         }
         /* 文字側の保険：写真の明部に重なっても落ちないように */
         .hero.hero-completion .hero-quote,
         .hero.hero-completion .hero-lead { text-shadow: 0 2px 12px rgba(0,0,0,.55); }
         .hero.hero-completion .hero-fact {
-            background: rgba(3,14,38,.62);
-            border-color: rgba(255,255,255,.24);
+            background: linear-gradient(135deg, rgba(42,66,206,.80) 0%, rgba(0,128,200,.66) 100%);
+            border: 1px solid rgba(150,205,255,.62);
+            box-shadow: 0 6px 18px rgba(20,24,80,.30);
         }
+        .hero.hero-completion .hero-fact span.k { color: #b6e6ff; }
         .hero.hero-completion::after {
             content: ''; position: absolute; inset: 0; opacity: .5; pointer-events: none;
             background-image: radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
@@ -1132,13 +1136,43 @@
 
         /* 最終ゴール */
         .goal-eq {
-            display: grid; grid-template-columns: 1fr auto 1fr; gap: 16px; align-items: center;
-            max-width: 780px; margin: 30px auto 0; text-align: center;
+            display: flex; flex-wrap: nowrap; justify-content: center; align-items: stretch;
+            gap: 14px; max-width: 900px; margin: 30px auto 0; text-align: center;
         }
+        .goal-eq div.box { flex: 1 1 0; min-width: 0; display: flex; align-items: center; justify-content: center; }
+        .goal-eq span.op { flex: 0 0 auto; align-self: center; }
         .goal-eq div.box { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22); border-radius: 14px; padding: 22px 18px; }
         .goal-eq div.box strong { display: block; font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 900; color: #fff; line-height: 1.5; }
         .goal-eq span.op { font-size: 1.8rem; font-weight: 900; color: var(--secondary); }
-        @media (max-width: 620px) { .goal-eq { grid-template-columns: 1fr; } }
+        @media (max-width: 720px) { .goal-eq { flex-wrap: wrap; } .goal-eq div.box { flex: 1 1 100%; } }
+
+        /* ヒーローのプログラム名：商品名が一目で分かるように */
+        .hero-program {
+            display: inline-block;
+            font-size: clamp(1.02rem, 1.5vw + .3rem, 1.42rem);
+            font-weight: 900; line-height: 1.35; color: #fff;
+            letter-spacing: .01em; margin: 0 0 12px;
+            padding: 8px 20px 8px 18px; border-radius: 10px;
+            border-left: 5px solid var(--accent-orange);
+            background: rgba(255,255,255,.14);
+            backdrop-filter: blur(5px);
+            text-shadow: 0 2px 10px rgba(0,0,0,.45);
+        }
+        .hero-program .abbr {
+            display: inline-block; margin-left: 10px; padding: 2px 10px; border-radius: 6px;
+            background: var(--accent-orange); color: #fff; font-size: .82em; font-weight: 900;
+            letter-spacing: .06em; vertical-align: 2px;
+        }
+        @media (max-width: 860px) { .hero-program { font-size: 1.02rem; padding: 7px 14px; } }
+
+        /* ラベルが長い対応表用：左列を広げて不自然な折返しを防ぐ */
+        .tt.tt-wide .tt-row { grid-template-columns: 208px 1fr; }
+        .tt.tt-wide .tt-row span.t { line-height: 1.6; }
+        @media (max-width: 560px) { .tt.tt-wide .tt-row { grid-template-columns: 140px 1fr; } }
+        /* 見出しが長い layer-row 用 */
+        .layer-list.ll-wide .layer-row { grid-template-columns: 210px 1fr; }
+        .layer-list.ll-wide .layer-row .tag em { line-height: 1.5; }
+        @media (max-width: 760px) { .layer-list.ll-wide .layer-row { grid-template-columns: 1fr; gap: 8px; } }
 
         /* PC で改行し、狭い画面では詰める */
         .sp-br { display: inline; }
@@ -1163,7 +1197,7 @@
                 </div>
                 <div class="header-buttons">
                     <a href="../ja/" class="btn-lang">日本語</a>
-                    <a href="#contact" class="btn-entry-header">สอบถาม</a>
+                    <a href="#contact" class="btn-entry-header">สมัครเข้าอบรม</a>
                 </div>
                 <button class="hamburger-btn" id="hamburger-btn" aria-label="เปิดเมนู">
                     <span></span><span></span><span></span>
@@ -1172,7 +1206,7 @@
         </div>
         <div class="header-btn-bar">
             <a href="../ja/" class="btn-bar-lang">日本語</a>
-            <a href="#contact" class="btn-bar-entry">สอบถาม</a>
+            <a href="#contact" class="btn-bar-entry">สมัครเข้าอบรม</a>
         </div>
         <nav class="header-bottom" id="mobile-nav">
             <div class="container nav-container">
@@ -1196,6 +1230,7 @@
         <div class="container hero-container">
             <div class="hero-text-content reveal-left">
                 <span class="hero-eyebrow">หลักสูตรต่อเนื่อง 5 ครั้ง สำหรับพนักงานคนไทย</span>
+                <p class="hero-program">Work Completion Program</p>
                 <h1 class="hero-quote">รับงานมาแล้ว <span class="hl">ทำให้จบได้เอง</span></h1>
                 <p class="hero-lead">
                     เชื่อมทักษะการรายงานสื่อสาร การแก้ปัญหา และการคิดเชิงตรรกะ<br>
@@ -1207,7 +1242,7 @@
                     <div class="hero-fact"><span class="k">กลุ่มเป้าหมาย</span><span class="v">พนักงาน ถึงผู้ที่จะ<br>ก้าวขึ้นเป็นหัวหน้า</span></div>
                     <div class="hero-fact"><span class="k">ค่าอบรม</span><span class="v">SGD 900<br>(1 ท่าน 5 ครั้ง)</span></div>
                 </div>
-                <a href="#contact" class="btn-cta">ขอรายละเอียดการจัดอบรม</a>
+                <a href="#contact" class="btn-cta">สมัครเข้าอบรม</a>
             </div>
 
             <div class="hero-visual-content reveal-right">
@@ -1274,7 +1309,7 @@
                     <li>ทำงานเสร็จตามที่ได้รับมอบหมายแล้ว แต่ยังต้องแก้อีกหลายรอบ</li>
                     <li>งานมักมาเร่งตอนใกล้กำหนดส่ง เพราะไม่ได้เผื่อเวลาประสานงานไว้</li>
                 </ul>
-                <img src="/assets/illustrations/il_m_kanban_board.png" alt="สถานการณ์การทำงานที่ติดขัด" class="ill">
+                <img src="/assets/illustrations/il_tangled_communication.png" alt="สถานการณ์การทำงานที่ติดขัด" class="ill">
             </div>
 
             <div class="issue-box reveal delay-200" style="margin: 30px auto 0; max-width: 900px; background: linear-gradient(to right, rgba(0,80,179,0.03), rgba(0,223,216,0.03)); border: 1px solid rgba(0,80,179,0.1); text-align: center;">
@@ -1332,7 +1367,7 @@
                 <span class="en">Concept</span>
                 จากการทำงานที่ได้รับสั่งให้เสร็จ<br>สู่การทำงานให้ถึงผลลัพธ์ที่คาดหวัง
             </h2>
-                <img src="/assets/illustrations/il_goal_setting_roadmap.png" alt="ทำงานให้ถึงผลลัพธ์" class="ill" style="width:190px; margin: 0 auto 8px; display:block;">
+                <img src="/assets/illustrations/il_three_bricklayers.png" alt="ทำงานให้ถึงผลลัพธ์" class="ill" style="width:190px; margin: 0 auto 8px; display:block;">
 
             <div class="shift-box reveal delay-100">
                 <div class="shift-card from">
@@ -1380,27 +1415,27 @@
             <div class="step-ribbon reveal delay-100">
                 <div class="step-chip">
                     <b>STEP 1</b>
-                    <img src="/assets/illustrations/il_manager_with_tablet.png" alt="เห็นภาพรวม" class="ill">
+                    <img src="/assets/illustrations/il_m_gears_blueprint.png" alt="เห็นภาพรวม" class="ill">
                     <p>เห็นภาพรวม</p>
                 </div>
                 <div class="step-chip">
                     <b>STEP 2</b>
-                    <img src="/assets/illustrations/il_planning_work_structure.png" alt="วางแผน" class="ill">
+                    <img src="/assets/illustrations/il_m_flowchart_gears.png" alt="วางแผน" class="ill">
                     <p>วางแผน</p>
                 </div>
                 <div class="step-chip">
                     <b>STEP 3</b>
-                    <img src="/assets/illustrations/il_dialogue_communication.png" alt="สื่อสารและตกลง" class="ill">
+                    <img src="/assets/illustrations/il_m_dialogue_meeting.png" alt="สื่อสารและตกลง" class="ill">
                     <p>สื่อสารและตกลง</p>
                 </div>
                 <div class="step-chip">
                     <b>STEP 4</b>
-                    <img src="/assets/illustrations/il_risk_management.png" alt="ลงมือและติดตาม" class="ill">
+                    <img src="/assets/illustrations/il_thinking_decision_tree.png" alt="ลงมือและติดตาม" class="ill">
                     <p>ลงมือและติดตาม</p>
                 </div>
                 <div class="step-chip">
                     <b>STEP 5</b>
-                    <img src="/assets/illustrations/il_feedback_and_growth.png" alt="ปิดงานให้สำเร็จ" class="ill">
+                    <img src="/assets/illustrations/il_m_qc_inspection.png" alt="ปิดงานให้สำเร็จ" class="ill">
                     <p>ปิดงานให้สำเร็จ</p>
                 </div>
             </div>
@@ -1414,7 +1449,7 @@
         <div class="container">
             <div class="cta-banner-inner reveal">
                 <h2>ไม่หยุดแค่รู้ แต่ใช้ได้จริงกับงานตรงหน้า</h2>
-                <a href="#contact" class="btn-cta">ขอรายละเอียดการจัดอบรม</a>
+                <a href="#contact" class="btn-cta">สมัครเข้าอบรม</a>
             </div>
         </div>
     </div>
@@ -1434,7 +1469,7 @@
 
             <div style="max-width: 950px; margin: 0 auto;">
                 <div class="session-card reveal delay-100">
-                    <div class="s-art"><img src="/assets/illustrations/il_manager_with_tablet.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_m_gears_blueprint.png" alt=""></div>
                     <div>
                         <span class="s-no">ครั้งที่ 1</span>
                         <h3>เห็นภาพรวมของงาน<br>และยืนยันผลลัพธ์ที่คาดหวัง</h3>
@@ -1451,7 +1486,7 @@
                 </div>
 
                 <div class="session-card reveal delay-100">
-                    <div class="s-art"><img src="/assets/illustrations/il_planning_work_structure.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_m_flowchart_gears.png" alt=""></div>
                     <div>
                         <span class="s-no">ครั้งที่ 2</span>
                         <h3>จัดระเบียบสถานการณ์<br>และวางลำดับการทำงาน</h3>
@@ -1468,7 +1503,7 @@
                 </div>
 
                 <div class="session-card reveal delay-200">
-                    <div class="s-art"><img src="/assets/illustrations/il_dialogue_communication.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_m_dialogue_meeting.png" alt=""></div>
                     <div>
                         <span class="s-no">ครั้งที่ 3</span>
                         <h3>มีความคิดของตัวเอง<br>และตกลงกับผู้เกี่ยวข้อง</h3>
@@ -1485,7 +1520,7 @@
                 </div>
 
                 <div class="session-card reveal delay-200">
-                    <div class="s-art"><img src="/assets/illustrations/il_risk_management.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_thinking_decision_tree.png" alt=""></div>
                     <div>
                         <span class="s-no">ครั้งที่ 4</span>
                         <h3>ลงมือ ติดตามความคืบหน้า<br>และรับมือกับปัญหา</h3>
@@ -1502,7 +1537,7 @@
                 </div>
 
                 <div class="session-card reveal delay-300">
-                    <div class="s-art"><img src="/assets/illustrations/il_feedback_and_growth.png" alt=""></div>
+                    <div class="s-art"><img src="/assets/illustrations/il_m_qc_inspection.png" alt=""></div>
                     <div>
                         <span class="s-no">ครั้งที่ 5</span>
                         <h3>ตรวจสอบผลลัพธ์<br>และปิดงานให้สำเร็จ</h3>
@@ -1587,13 +1622,13 @@
                 นี่ไม่ใช่รายการทักษะที่ต้องท่องให้ครบ แต่เป็นแผนที่สำหรับเลือกใช้ทักษะให้เหมาะกับสถานการณ์
             </p>
 
-            <div class="tt reveal delay-100">
-                <div class="tt-row"><span class="t">ยืนยัน<br>ความคาดหวัง</span><span class="d">การจับวัตถุประสงค์ และการตั้งคำถาม</span></div>
-                <div class="tt-row"><span class="t">จัดระเบียบ<br>สถานการณ์</span><span class="d">การรวบรวมข้อมูล และการแยกข้อเท็จจริงจากการตีความ</span></div>
-                <div class="tt-row"><span class="t">วางลำดับ<br>การทำงาน</span><span class="d">การคิดเชิงตรรกะ การคิดทางเลือก และการวางแผน</span></div>
-                <div class="tt-row"><span class="t">ตกลงกับ<br>ผู้เกี่ยวข้อง</span><span class="d">การรายงานสื่อสาร การอธิบาย และการประสานงาน</span></div>
-                <div class="tt-row"><span class="t">ลงมือและ<br>ติดตามงาน</span><span class="d">การจัดลำดับงาน การติดตามความคืบหน้า และการแก้ปัญหา</span></div>
-                <div class="tt-row"><span class="t">ตรวจสอบ<br>และปรับปรุง</span><span class="d">การตรวจสอบผลงาน การทบทวน และการปรับปรุง</span></div>
+            <div class="tt tt-wide reveal delay-100">
+                <div class="tt-row"><span class="t">ยืนยันความคาดหวัง</span><span class="d">การจับวัตถุประสงค์ และการตั้งคำถาม</span></div>
+                <div class="tt-row"><span class="t">จัดระเบียบสถานการณ์</span><span class="d">การรวบรวมข้อมูล และการแยกข้อเท็จจริงจากการตีความ</span></div>
+                <div class="tt-row"><span class="t">วางลำดับการทำงาน</span><span class="d">การคิดเชิงตรรกะ การคิดทางเลือก และการวางแผน</span></div>
+                <div class="tt-row"><span class="t">ตกลงกับผู้เกี่ยวข้อง</span><span class="d">การรายงานสื่อสาร การอธิบาย และการประสานงาน</span></div>
+                <div class="tt-row"><span class="t">ลงมือและติดตามงาน</span><span class="d">การจัดลำดับงาน การติดตามความคืบหน้า และการแก้ปัญหา</span></div>
+                <div class="tt-row"><span class="t">ตรวจสอบและปรับปรุง</span><span class="d">การตรวจสอบผลงาน การทบทวน และการปรับปรุง</span></div>
             </div>
 
             <div class="reveal delay-200" style="max-width: 900px; margin: 34px auto 0; background: var(--bg-dark); color: #fff; border-radius: var(--radius-lg); padding: 32px 36px; text-align: center;">
@@ -1623,7 +1658,7 @@
                 เพื่อให้การพัฒนาเดินต่อในที่ทำงานจริง
             </p>
 
-            <div class="layer-list">
+            <div class="layer-list ll-wide">
                 <div class="layer-row reveal delay-100">
                     <div class="tag">01<em>การเข้าอบรมและการทำงานที่ได้รับ</em></div>
                     <p>การเข้าร่วม การส่งงาน และการมีส่วนร่วมในกิจกรรม</p>
@@ -1701,12 +1736,12 @@
             <p class="reveal" style="text-align: center; color: var(--text-muted); font-size: 1rem;">ครั้งแรกจะใช้เวลาช่วงต้นทำความเข้าใจภาพรวมของงานแทนการทบทวน<br>ครั้งสุดท้ายจะเน้นกรณีศึกษารวมและการทบทวนภาพรวม</p>
 
             <div class="tt reveal delay-100">
-                <div class="tt-row"><span class="t">0 - 20 นาที</span><span class="d">ทบทวนการนำไปใช้จริงจากครั้งก่อน</span></div>
-                <div class="tt-row"><span class="t">20 - 35 นาที</span><span class="d">จับโจทย์ปัจจุบันผ่านกรณีศึกษาร่วม</span></div>
-                <div class="tt-row"><span class="t">35 - 55 นาที</span><span class="d">เรียนแนวคิดและทักษะที่จำเป็น</span></div>
-                <div class="tt-row"><span class="t">55 - 95 นาที</span><span class="d">ฝึกปฏิบัติรายบุคคล อภิปรายกลุ่มย่อย และบทบาทสมมติ</span></div>
-                <div class="tt-row"><span class="t">95 - 110 นาที</span><span class="d">รับฟีดแบ็กและปรับคำตอบกับวิธีทำงาน</span></div>
-                <div class="tt-row"><span class="t">110 - 120 นาที</span><span class="d">กำหนดสิ่งที่จะนำไปใช้จริงก่อนครั้งถัดไป</span></div>
+                <div class="tt-row"><span class="t">20 นาที</span><span class="d">ทบทวนการนำไปใช้จริงจากครั้งก่อน</span></div>
+                <div class="tt-row"><span class="t">15 นาที</span><span class="d">จับโจทย์ปัจจุบันผ่านกรณีศึกษาร่วม</span></div>
+                <div class="tt-row"><span class="t">20 นาที</span><span class="d">เรียนแนวคิดและทักษะที่จำเป็น</span></div>
+                <div class="tt-row"><span class="t">40 นาที</span><span class="d">ฝึกปฏิบัติรายบุคคล อภิปรายกลุ่มย่อย และบทบาทสมมติ</span></div>
+                <div class="tt-row"><span class="t">15 นาที</span><span class="d">รับฟีดแบ็กและปรับคำตอบกับวิธีทำงาน</span></div>
+                <div class="tt-row"><span class="t">10 นาที</span><span class="d">กำหนดสิ่งที่จะนำไปใช้จริงก่อนครั้งถัดไป</span></div>
             </div>
         </div>
     </section>
@@ -1745,7 +1780,7 @@
             </div>
 
             <div class="reveal delay-200" style="text-align: center; margin-top: 40px;">
-                <img src="/assets/illustrations/il_c_growth_tree.png" alt="การเติบโตผ่านการทำงาน" class="ill ill-md" style="margin: 0 auto 18px;">
+                <img src="/assets/illustrations/il_c_talent_development.png" alt="การเติบโตผ่านการทำงาน" class="ill ill-md" style="margin: 0 auto 18px;">
                 <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.9; max-width: 760px; margin: 0 auto;">
                     รายการข้างต้นเป็นเป้าหมายของการพัฒนา ไม่ใช่การรับประกันว่าทุกท่านจะเปลี่ยนแปลงเท่ากันหรือผลประกอบการจะดีขึ้น<br>
                     เราจะยืนยัน<span class="mk">ความเปลี่ยนแปลงและโจทย์ถัดไปของแต่ละท่าน</span>ผ่านการอบรมและการนำไปใช้จริง
@@ -1961,7 +1996,7 @@
             </div>
 
             <div class="reveal delay-200" style="text-align: center; margin-top: 40px;">
-                <img src="/assets/illustrations/il_goal_setting_roadmap.png" alt="" class="ill ill-md" style="margin: 0 auto 20px;">
+                <img src="/assets/illustrations/il_m_roadmap_goal.png" alt="" class="ill ill-md" style="margin: 0 auto 20px;">
                 <p style="color: rgba(255,255,255,.88); font-size: clamp(.98rem, 2vw, 1.15rem); line-height: 1.95; max-width: 760px; margin: 0 auto;">
                     จับวัตถุประสงค์ จัดระเบียบสถานการณ์ วางลำดับการทำงาน ตกลงกับผู้เกี่ยวข้อง<br>
                     รับมือกับความเปลี่ยนแปลง และตรวจสอบจนถึงที่สุด<br>

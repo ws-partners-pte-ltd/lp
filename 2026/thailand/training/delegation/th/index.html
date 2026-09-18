@@ -843,7 +843,7 @@
         /* 1画面に収めるための詰め */
         .hero.hero-delegation .hero-text-content { transform: none; }
         .hero.hero-delegation .hero-visual-content { transform: none; flex: 1.15; height: clamp(290px, 58vh, 545px); }
-        .hero.hero-delegation .hero-images-wrapper { max-width: 64vh; }
+        .hero.hero-delegation .hero-images-wrapper { max-width: min(64vh, 42vw); }
         .hero.hero-delegation .hero-eyebrow { margin-bottom: 12px; }
         .hero.hero-delegation .hero-lead { margin-bottom: 18px; }
         .hero.hero-delegation .hero-facts { gap: 10px; margin-bottom: 20px; }
@@ -862,16 +862,18 @@
         }
         .hero.hero-delegation .hero-overlay {
             background:
-                linear-gradient(100deg, rgba(3,14,38,.96) 0%, rgba(3,14,38,.90) 34%, rgba(4,26,68,.72) 58%, rgba(4,26,68,.46) 100%),
-                linear-gradient(to bottom, rgba(3,14,38,.55) 0%, rgba(3,14,38,0) 30%);
+                linear-gradient(100deg, rgba(2,44,72,.95) 0%, rgba(3,68,100,.89) 40%, rgba(0,108,138,.60) 66%, rgba(0,150,170,.26) 100%),
+                linear-gradient(to bottom, rgba(2,40,66,.45) 0%, rgba(2,40,66,0) 32%);
         }
         /* 文字側の保険：写真の明部に重なっても落ちないように */
         .hero.hero-delegation .hero-quote,
         .hero.hero-delegation .hero-lead { text-shadow: 0 2px 12px rgba(0,0,0,.55); }
         .hero.hero-delegation .hero-fact {
-            background: rgba(3,14,38,.62);
-            border-color: rgba(255,255,255,.24);
+            background: linear-gradient(135deg, rgba(0,132,196,.62) 0%, rgba(0,168,214,.46) 100%);
+            border: 1px solid rgba(140,235,255,.62);
+            box-shadow: 0 6px 18px rgba(0,40,70,.28);
         }
+        .hero.hero-delegation .hero-fact span.k { color: #a8f4ff; }
         .hero.hero-delegation::after {
             content: ''; position: absolute; inset: 0; opacity: .5; pointer-events: none;
             background-image: radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
@@ -881,16 +883,18 @@
 
         .hero.hero-delegation .hero-overlay {
             background:
-                linear-gradient(100deg, rgba(3,14,38,.96) 0%, rgba(3,14,38,.90) 34%, rgba(4,26,68,.72) 58%, rgba(4,26,68,.46) 100%),
-                linear-gradient(to bottom, rgba(3,14,38,.55) 0%, rgba(3,14,38,0) 30%);
+                linear-gradient(100deg, rgba(2,44,72,.95) 0%, rgba(3,68,100,.89) 40%, rgba(0,108,138,.60) 66%, rgba(0,150,170,.26) 100%),
+                linear-gradient(to bottom, rgba(2,40,66,.45) 0%, rgba(2,40,66,0) 32%);
         }
         /* 文字側の保険：写真の明部に重なっても落ちないように */
         .hero.hero-delegation .hero-quote,
         .hero.hero-delegation .hero-lead { text-shadow: 0 2px 12px rgba(0,0,0,.55); }
         .hero.hero-delegation .hero-fact {
-            background: rgba(3,14,38,.62);
-            border-color: rgba(255,255,255,.24);
+            background: linear-gradient(135deg, rgba(0,132,196,.62) 0%, rgba(0,168,214,.46) 100%);
+            border: 1px solid rgba(140,235,255,.62);
+            box-shadow: 0 6px 18px rgba(0,40,70,.28);
         }
+        .hero.hero-delegation .hero-fact span.k { color: #a8f4ff; }
         .hero.hero-delegation::after {
             content: ''; position: absolute; inset: 0; opacity: .5; pointer-events: none;
             background-image: radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
@@ -1132,13 +1136,43 @@
 
         /* 最終ゴール */
         .goal-eq {
-            display: grid; grid-template-columns: 1fr auto 1fr; gap: 16px; align-items: center;
-            max-width: 780px; margin: 30px auto 0; text-align: center;
+            display: flex; flex-wrap: nowrap; justify-content: center; align-items: stretch;
+            gap: 14px; max-width: 900px; margin: 30px auto 0; text-align: center;
         }
+        .goal-eq div.box { flex: 1 1 0; min-width: 0; display: flex; align-items: center; justify-content: center; }
+        .goal-eq span.op { flex: 0 0 auto; align-self: center; }
         .goal-eq div.box { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22); border-radius: 14px; padding: 22px 18px; }
         .goal-eq div.box strong { display: block; font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 900; color: #fff; line-height: 1.5; }
         .goal-eq span.op { font-size: 1.8rem; font-weight: 900; color: var(--secondary); }
-        @media (max-width: 620px) { .goal-eq { grid-template-columns: 1fr; } }
+        @media (max-width: 720px) { .goal-eq { flex-wrap: wrap; } .goal-eq div.box { flex: 1 1 100%; } }
+
+        /* ヒーローのプログラム名：商品名が一目で分かるように */
+        .hero-program {
+            display: inline-block;
+            font-size: clamp(1.02rem, 1.5vw + .3rem, 1.42rem);
+            font-weight: 900; line-height: 1.35; color: #fff;
+            letter-spacing: .01em; margin: 0 0 12px;
+            padding: 8px 20px 8px 18px; border-radius: 10px;
+            border-left: 5px solid var(--accent-orange);
+            background: rgba(255,255,255,.14);
+            backdrop-filter: blur(5px);
+            text-shadow: 0 2px 10px rgba(0,0,0,.45);
+        }
+        .hero-program .abbr {
+            display: inline-block; margin-left: 10px; padding: 2px 10px; border-radius: 6px;
+            background: var(--accent-orange); color: #fff; font-size: .82em; font-weight: 900;
+            letter-spacing: .06em; vertical-align: 2px;
+        }
+        @media (max-width: 860px) { .hero-program { font-size: 1.02rem; padding: 7px 14px; } }
+
+        /* ラベルが長い対応表用：左列を広げて不自然な折返しを防ぐ */
+        .tt.tt-wide .tt-row { grid-template-columns: 208px 1fr; }
+        .tt.tt-wide .tt-row span.t { line-height: 1.6; }
+        @media (max-width: 560px) { .tt.tt-wide .tt-row { grid-template-columns: 140px 1fr; } }
+        /* 見出しが長い layer-row 用 */
+        .layer-list.ll-wide .layer-row { grid-template-columns: 210px 1fr; }
+        .layer-list.ll-wide .layer-row .tag em { line-height: 1.5; }
+        @media (max-width: 760px) { .layer-list.ll-wide .layer-row { grid-template-columns: 1fr; gap: 8px; } }
 
         /* PC で改行し、狭い画面では詰める */
         .sp-br { display: inline; }
@@ -1196,6 +1230,7 @@
         <div class="container hero-container">
             <div class="hero-text-content reveal-left">
                 <span class="hero-eyebrow">หลักสูตรต่อเนื่อง 5 ครั้ง สำหรับผู้จัดการ</span>
+                <p class="hero-program">Empowering Management Program<span class="abbr">EMP</span></p>
                 <h1 class="hero-quote">“อยากมอบงาน แต่<span class="hl">มอบไม่ได้</span>”</h1>
                 <p class="hero-lead">
                     หลักสูตรที่พาผู้จัดการก้าวจากการเป็นคนที่ “ทำงานเก่งที่สุดในทีม”<br>
@@ -1634,7 +1669,7 @@
             </h2>
 
             <div class="berg-wrap reveal delay-100">
-                <img src="/assets/illustrations/08_iceberg.png" alt="ความเสี่ยงที่มองเห็น และความกังวลที่อยู่ข้างใต้" class="ill" style="width: 100%;">
+                <img src="/assets/illustrations/il_ambiguous_figure.png" alt="ความเสี่ยงที่มองเห็น และความกังวลที่อยู่ข้างใต้" class="ill" style="width: 100%;">
                 <div class="berg-cols">
                     <div class="berg-col real">
                         <span class="lbl">REAL BUSINESS RISK</span>
@@ -1716,12 +1751,12 @@
             <p class="reveal" style="text-align: center; color: var(--text-muted); font-size: 1rem;">ด้านล่างเป็นโครงสร้างของครั้งที่ใช้เวลา 2 ชั่วโมง<br>บางครั้งจะขยายเป็น 2.5 ชั่วโมง เพื่อเพิ่มเวลาฝึกปฏิบัติและ Role Play</p>
 
             <div class="tt reveal delay-100">
-                <div class="tt-row"><span class="t">0–20 นาที</span><span class="d">ทบทวนผลการนำไปปฏิบัติจากครั้งก่อน</span></div>
-                <div class="tt-row"><span class="t">20–40 นาที</span><span class="d">กรณีศึกษาและการตั้งประเด็น</span></div>
-                <div class="tt-row"><span class="t">40–70 นาที</span><span class="d">ทฤษฎีและกรอบแนวคิด</span></div>
-                <div class="tt-row"><span class="t">70–100 นาที</span><span class="d">ฝึกปฏิบัติจากงานและทีมของตัวเอง</span></div>
-                <div class="tt-row"><span class="t">100–115 นาที</span><span class="d">Role Play และให้ Feedback ระหว่างผู้เข้าอบรม</span></div>
-                <div class="tt-row"><span class="t">115–120 นาที</span><span class="d">กำหนดสิ่งที่จะนำไปปฏิบัติก่อนครั้งถัดไป</span></div>
+                <div class="tt-row"><span class="t">20 นาที</span><span class="d">ทบทวนผลการนำไปปฏิบัติจากครั้งก่อน</span></div>
+                <div class="tt-row"><span class="t">20 นาที</span><span class="d">กรณีศึกษาและการตั้งประเด็น</span></div>
+                <div class="tt-row"><span class="t">30 นาที</span><span class="d">ทฤษฎีและกรอบแนวคิด</span></div>
+                <div class="tt-row"><span class="t">30 นาที</span><span class="d">ฝึกปฏิบัติจากงานและทีมของตัวเอง</span></div>
+                <div class="tt-row"><span class="t">15 นาที</span><span class="d">Role Play และให้ Feedback ระหว่างผู้เข้าอบรม</span></div>
+                <div class="tt-row"><span class="t">5 นาที</span><span class="d">กำหนดสิ่งที่จะนำไปปฏิบัติก่อนครั้งถัดไป</span></div>
             </div>
         </div>
     </section>
