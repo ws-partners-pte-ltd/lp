@@ -896,6 +896,35 @@
                     linear-gradient(to bottom, rgba(4,18,58,.34) 0%, rgba(4,18,58,0) 26%);
             }
         }
+        /* 背の低いウィンドウでヒーローが切れないよう段階的に詰める。
+           lp_qa は高さ900pxで測るが、実ウィンドウはそれより低いことが多く、
+           CTAが画面外に出て見えなくなる（2026-09-22 に実機で発生）。 */
+        @media (max-height: 900px) {
+            .hero.hero-delegation { padding: calc(var(--header-total-height) + 16px) 0 26px; }
+            .hero.hero-delegation .hero-eyebrow { margin-bottom: 9px; }
+            .hero.hero-delegation .hero-program { margin-bottom: 9px; }
+            .hero.hero-delegation .hero-lead { margin-bottom: 13px; }
+            .hero.hero-delegation .hero-facts { gap: 8px; margin-bottom: 13px; }
+            .hero.hero-delegation .hero-fact { padding: 9px 14px; }
+        }
+        @media (max-height: 800px) {
+            .hero.hero-delegation { padding: calc(var(--header-total-height) + 8px) 0 22px; }
+            .hero.hero-delegation .hero-quote { font-size: min(1.78rem, 2.5vw + 0.35rem); margin-bottom: 7px; }
+            /* バッジが2行に折り返すとヒーローが一気に重くなる。1行に収まる大きさまで落とす */
+            .hero.hero-delegation .hero-program { font-size: clamp(.94rem, 1.2vw + .22rem, 1.18rem); padding: 6px 16px 6px 14px; margin-bottom: 8px; }
+            .hero.hero-delegation .hero-program .abbr { margin-left: 8px; padding: 2px 8px; }
+            .hero.hero-delegation .hero-lead { font-size: .95rem; margin-bottom: 10px; }
+            .hero.hero-delegation .hero-facts { gap: 7px; margin-bottom: 11px; }
+            .hero.hero-delegation .hero-fact { padding: 7px 13px; }
+            .hero-fact span.k { font-size: .67rem; margin-bottom: 2px; }
+            .hero-fact span.v { font-size: .9rem; line-height: 1.4; }
+            .hero-fact.fact-fee span.v { font-size: 1.1rem; }
+        }
+        @media (max-height: 700px) {
+            .hero.hero-delegation .hero-eyebrow { display: none; }
+            .hero.hero-delegation .hero-facts { margin-bottom: 9px; }
+            .hero.hero-delegation .hero-fact { padding: 6px 12px; }
+        }
         .hero-eyebrow {
             display: inline-block; background: rgba(0,223,216,.14); border: 1px solid rgba(0,223,216,.45);
             color: var(--secondary); font-weight: 700; font-size: .82rem; letter-spacing: .12em;
@@ -1233,8 +1262,8 @@
                     <span class="mk-d">人を通じて成果を生み出すマネジャー</span>へ。
                 </p>
                 <div class="hero-facts">
-                    <div class="hero-fact"><span class="k">FORMAT</span><span class="v">オンライン開催<br>（Zoom）</span></div>
-                    <div class="hero-fact"><span class="k">SESSIONS</span><span class="v">1回2時間<br>× 全5回</span></div>
+                    <div class="hero-fact"><span class="k">FORMAT</span><span class="v">オンライン開催（Zoom）</span></div>
+                    <div class="hero-fact"><span class="k">SESSIONS</span><span class="v">1回2時間 × 全5回</span></div>
                     <div class="hero-fact"><span class="k">TARGET</span><span class="v">タイ人マネジャー・<br>管理職候補</span></div>
                     <div class="hero-fact"><span class="k">SCHEDULE</span><span class="v">2026年11月12日開始<br>定員10名</span></div>
                     <div class="hero-fact fact-fee"><span class="k">TUITION</span><span class="v">SGD 1,100<span class="sub">1名・全5回／参考 約 THB 28,700</span></span></div>
