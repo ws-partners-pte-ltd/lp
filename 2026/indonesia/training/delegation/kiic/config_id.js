@@ -13,7 +13,7 @@
 window.LP_CONFIG = {
 
   forms: {
-    google_url:        '',
+    google_url:        'https://docs.google.com/forms/d/e/1FAIpQLScjOEb74F7UQiV1-a7J7nCv-hpVrGi5Hn5_grhppo5he2SZmw/viewform?embedded=true',
     hubspot_portal_id: '',
     hubspot_form_id:   '',
     hubspot_region:    'na1',

@@ -10,7 +10,7 @@ window.LP_CONFIG = {
   forms: {
     /* フェーズ1：申込フォーム未設置。空文字のままだとフォームiframeは描画されず、
        メール申込のみが表示されます。フェーズ2で embedded URL を貼れば復活します。 */
-    google_url:        '',
+    google_url:        'https://docs.google.com/forms/d/e/1FAIpQLSeqysAkmBK8s4ibZJdGG_SzPd2mIybOyYENc37b3sfnS4oSjQ/viewform?embedded=true',
 
     hubspot_portal_id: '',
     hubspot_form_id:   '',

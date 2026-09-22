@@ -8,7 +8,7 @@
 window.LP_CONFIG = {
 
   forms: {
-    google_url:        '',
+    google_url:        'https://docs.google.com/forms/d/e/1FAIpQLSeqysAkmBK8s4ibZJdGG_SzPd2mIybOyYENc37b3sfnS4oSjQ/viewform?embedded=true',
     hubspot_portal_id: '',
     hubspot_form_id:   '',
     hubspot_region:    'na1',

@@ -11,7 +11,7 @@ window.LP_CONFIG = {
   forms: {
     /* フェーズ1：申込フォーム未設置。空文字のあいだ CTA は #contact（メール申込）を指します。
        フォーム作成後に embedded URL を入れ、index.html のCTA href も併せて差し替えること。 */
-    google_url:        '',
+    google_url:        'https://docs.google.com/forms/d/e/1FAIpQLSexhtUiMlnS1lCus89jlkqovRbBPYEpSENElzJpqEBlLbSNUg/viewform?embedded=true',
 
     hubspot_portal_id: '',
     hubspot_form_id:   '',
