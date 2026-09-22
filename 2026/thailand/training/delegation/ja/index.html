@@ -837,7 +837,7 @@
             height: 100svh;
             min-height: 560px;
             max-height: 100svh;
-            padding: calc(var(--header-total-height) + 52px) 0 28px;
+            padding: calc(var(--header-total-height) + 26px) 0 34px;
         }
         /* 1画面に収めるための詰め */
         .hero.hero-delegation .hero-text-content { transform: none; }
@@ -845,7 +845,7 @@
         .hero.hero-delegation .hero-images-wrapper { max-width: min(64vh, 42vw); }
         .hero.hero-delegation .hero-eyebrow { margin-bottom: 12px; }
         .hero.hero-delegation .hero-lead { margin-bottom: 18px; }
-        .hero.hero-delegation .hero-facts { gap: 10px; margin-bottom: 20px; }
+        .hero.hero-delegation .hero-facts { gap: 9px; margin-bottom: 16px; }
         /* 鉄則：ヒーローのキャッチは1行。折り返さない */
         .hero.hero-delegation .hero-quote {
             font-size: min(2.05rem, 2.5vw + 0.35rem);
@@ -877,6 +877,24 @@
             content: ''; position: absolute; inset: 0; opacity: .5; pointer-events: none;
             background-image: radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
             background-size: 26px 26px;
+        }
+        /* ヒーローの受講料：判断材料なので折りたたまず2列ぶち抜きで出す */
+        .hero-facts .fact-fee { grid-column: 1 / -1; }
+        /* 地が青なので半透明オレンジを重ねると濁る。箱は兄弟と同じガラス調のまま、
+           左の細いオレンジ罫と金額の文字色だけで price を立たせる。 */
+        .hero.hero-delegation .hero-fact.fact-fee { border-left: 4px solid var(--accent-orange); }
+        .hero.hero-delegation .hero-fact.fact-fee span.k { color: #ffcf8a; }
+        .hero-fact.fact-fee span.v { font-size: 1.24rem; font-weight: 900; color: #ffc861; letter-spacing: .01em; }
+        .hero-fact.fact-fee span.sub { display: inline-block; margin-left: 10px; font-size: .76rem; font-weight: 700; color: rgba(255,255,255,.9); }
+        @media (max-width: 620px) { .hero-fact.fact-fee span.sub { display: block; margin-left: 0; margin-top: 3px; } }
+        /* 900px 付近はテキスト列が狭まり、右側の明るい面とコラージュが
+           コントラスト計測の左帯に入り込む。文字が乗る左だけ濃さを足す。 */
+        @media (max-width: 1100px) {
+            .hero.hero-delegation .hero-overlay {
+                background:
+                    linear-gradient(100deg, rgba(4,18,58,.66) 0%, rgba(4,22,64,.46) 42%, rgba(4,30,76,.16) 72%, rgba(4,40,90,0) 100%),
+                    linear-gradient(to bottom, rgba(4,18,58,.34) 0%, rgba(4,18,58,0) 26%);
+            }
         }
         .hero-eyebrow {
             display: inline-block; background: rgba(0,223,216,.14); border: 1px solid rgba(0,223,216,.45);
@@ -1175,7 +1193,7 @@
                 </div>
                 <div class="header-buttons">
                     <a href="../th/" class="btn-lang">ภาษาไทย</a>
-                    <a href="#contact" class="btn-entry-header">受講申し込み</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_YAULfNQY1PlKvC6Tibg48qLhDt1NWQT-iKTV4hBe1iOXZw/viewform" target="_blank" rel="noopener" class="btn-entry-header">受講申し込み</a>
                 </div>
                 <button class="hamburger-btn" id="hamburger-btn" aria-label="メニューを開く">
                     <span></span><span></span><span></span>
@@ -1184,7 +1202,7 @@
         </div>
         <div class="header-btn-bar">
             <a href="../th/" class="btn-bar-lang">ภาษาไทย</a>
-            <a href="#contact" class="btn-bar-entry">受講申し込み</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_YAULfNQY1PlKvC6Tibg48qLhDt1NWQT-iKTV4hBe1iOXZw/viewform" target="_blank" rel="noopener" class="btn-bar-entry">受講申し込み</a>
         </div>
         <nav class="header-bottom" id="mobile-nav">
             <div class="container nav-container">
@@ -1219,8 +1237,9 @@
                     <div class="hero-fact"><span class="k">SESSIONS</span><span class="v">1回2時間<br>× 全5回</span></div>
                     <div class="hero-fact"><span class="k">TARGET</span><span class="v">タイ人マネジャー・<br>管理職候補</span></div>
                     <div class="hero-fact"><span class="k">SCHEDULE</span><span class="v">2026年11月12日開始<br>定員10名</span></div>
+                    <div class="hero-fact fact-fee"><span class="k">TUITION</span><span class="v">SGD 1,100<span class="sub">1名・全5回／参考 約 THB 28,700</span></span></div>
                 </div>
-                <a href="#contact" class="btn-cta">受講申し込み</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_YAULfNQY1PlKvC6Tibg48qLhDt1NWQT-iKTV4hBe1iOXZw/viewform" target="_blank" rel="noopener" class="btn-cta">受講申し込み</a>
             </div>
 
             <div class="hero-visual-content reveal-right">
@@ -1432,7 +1451,7 @@
         <div class="container">
             <div class="cta-banner-inner reveal">
                 <h2>プレイヤー型マネジャーからの脱却、<br>次世代マネジャーの育成に着手しませんか</h2>
-                <a href="#contact" class="btn-cta">受講申し込み</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_YAULfNQY1PlKvC6Tibg48qLhDt1NWQT-iKTV4hBe1iOXZw/viewform" target="_blank" rel="noopener" class="btn-cta">受講申し込み</a>
             </div>
         </div>
     </div>
