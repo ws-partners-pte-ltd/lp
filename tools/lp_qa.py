@@ -23,7 +23,9 @@ def rec(status, item, detail=''):
 
 # 旧世代イラスト（G:の正本に残っていない＝使ってはいけない）
 OLD_ASSETS = ['02_staircase_leadership', '03_maybe_uncertainty', '09_brick_wall',
-              '10_team_shield', '13_handoff_delivery', '14_hot_air_balloon']
+              '10_team_shield', '13_handoff_delivery', '14_hot_air_balloon',
+              # Kazu からLPでの使用不可と指示（2026-09-23）。カタログには残すがLPには載せない
+              'il_tangled_communication', 'il_ambiguous_figure']
 
 # 現地語ページに残っていてはいけない日本語組版記号
 JP_TYPO = ['【', '】', '※', '｜', '＜', '＞', '／', '・', '　']
