@@ -66,6 +66,14 @@ def check_static(lp_dir, pages, published):
         rec(OK if not used_old else NG, '%s: 旧世代イラスト不使用' % tag,
             '' if not used_old else '使用中: ' + ', '.join(used_old))
 
+        # ③-b Googleフォームの埋め込み禁止（2026-09-23 方針：申込は別ページへ直リンク）
+        embed = []
+        if re.search(r'<iframe[^>]+docs\.google\.com/forms', src): embed.append('<iframe> 直書き')
+        if 'google-form-iframe' in src: embed.append('google-form-iframe')
+        if re.search(r"createElement\('iframe'\)", src) and 'GOOGLE_FORM_URL' in src: embed.append('JSでiframe生成')
+        rec(OK if not embed else NG, '%s: フォーム埋め込みなし' % tag,
+            '' if not embed else '申込フォームはLPに埋め込まず別ページへ直リンクする: ' + ', '.join(embed))
+
         # ④ /assets/ 参照のリンク切れ
         missing = []
         for m in re.findall(r'["\'(]/assets/([^"\')\s?]+)', src):

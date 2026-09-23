@@ -1050,7 +1050,7 @@
         </div>
         <div class="header-buttons">
           <a id="btn-lang" href="#" class="btn-lang"></a>
-          <a href="#apply" class="btn-entry-header" id="header-cta-text">無料で申し込む</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaeGyIotlcsWFoweHhDfy-I_vq4oBnhc0kfcDyB5kyDM6Jsg/viewform" class="btn-entry-header" id="header-cta-text" target="_blank" rel="noopener">無料で申し込む</a>
         </div>
         <button class="hamburger-btn" id="hamburger-btn" aria-label="メニューを開く">
           <span></span><span></span><span></span>
@@ -1072,7 +1072,7 @@
   <!-- モバイル専用ボタンバー（ヘッダー直下・横100%） -->
   <div class="header-btn-bar">
     <a id="btn-bar-lang" href="#" class="btn-bar-lang">Indonesian Language</a>
-    <a href="#apply" class="btn-bar-entry" id="btn-bar-entry">無料で申し込む</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaeGyIotlcsWFoweHhDfy-I_vq4oBnhc0kfcDyB5kyDM6Jsg/viewform" class="btn-bar-entry" id="btn-bar-entry" target="_blank" rel="noopener">無料で申し込む</a>
   </div>
   <nav class="header-bottom" id="mobile-nav">
     <div class="nav-container" id="nav-links"></div>
@@ -1098,7 +1098,7 @@
         <p class="date" id="hero-deadline"></p>
         <p class="note"  id="hero-note"></p>
       </div>
-      <a href="#apply" class="btn-cta pulse reveal delay-100" id="hero-cta-text">無料で申し込む</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaeGyIotlcsWFoweHhDfy-I_vq4oBnhc0kfcDyB5kyDM6Jsg/viewform" class="btn-cta pulse reveal delay-100" id="hero-cta-text" target="_blank" rel="noopener">無料で申し込む</a>
     </div>
     <div class="hero-visual-content reveal-right">
       <div class="hero-images-wrapper">
@@ -1150,7 +1150,7 @@
       <ul class="issue-checklist" id="issues-list"></ul>
     </div>
     <div style="text-align:center">
-      <a href="#apply" class="btn-cta reveal">無料で申し込む</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaeGyIotlcsWFoweHhDfy-I_vq4oBnhc0kfcDyB5kyDM6Jsg/viewform" class="btn-cta reveal" target="_blank" rel="noopener">無料で申し込む</a>
     </div>
   </div>
 </section>
@@ -1246,7 +1246,7 @@
       <div class="price-amount"><span class="currency" id="pricing-currency">SGD </span><span id="pricing-amount"></span></div>
       <p class="price-note" id="pricing-note"></p>
       <div style="margin-top:24px">
-        <a href="#apply" class="btn-cta">無料で申し込む</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaeGyIotlcsWFoweHhDfy-I_vq4oBnhc0kfcDyB5kyDM6Jsg/viewform" class="btn-cta" target="_blank" rel="noopener">無料で申し込む</a>
       </div>
     </div>
     <div id="pricing-flow" style="margin-top:40px"></div>
@@ -1295,7 +1295,7 @@
     </h2>
     <div class="scroll-box reveal" id="cancel-body"></div>
     <div class="btn-cta-wrap reveal">
-      <a href="#apply" class="btn-cta pulse">無料で申し込む</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaeGyIotlcsWFoweHhDfy-I_vq4oBnhc0kfcDyB5kyDM6Jsg/viewform" class="btn-cta pulse" target="_blank" rel="noopener">無料で申し込む</a>
     </div>
     <div id="cancel-contact-box" style="margin-top:32px" class="reveal">
       <h3 style="font-size:var(--fs-h3);margin-bottom:12px" id="contact-title"></h3>
@@ -1320,32 +1320,15 @@
          style="color:#7ecfff; text-decoration:underline;">利用規約・プライバシーポリシー</a>をお読みの上、同意して送信してください。
     </p>
 
-    <div class="form-wrapper">
-      <!-- Loading state -->
-      <div id="form-loading">フォームを読み込み中...</div>
-
-      <!-- Google Form (primary) -->
-      <div id="google-form-wrap" style="display:none">
-        <iframe
-          id="google-form-iframe"
-          src="""
-          width="100%"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          title="申込フォーム"
-        >読み込んでいます…</iframe>
+    <div class="form-wrapper" style="background:#fff;border-radius:var(--radius, 16px);padding:40px 32px;max-width:680px;margin:0 auto;text-align:center;">
+        <p style="font-size:clamp(1rem,2.2vw,1.18rem); font-weight:900; color:#1a202c; line-height:1.7; margin-bottom:10px;">お申し込みは、別ページの申込フォームから承ります</p>
+        <p style="font-size:.95rem; color:#4a5568; line-height:1.95; margin-bottom:26px;">下のボタンを押すと、<strong>別タブで申込フォーム</strong>が開きます。<br>ご入力・送信が完了しましたら、このページは閉じていただいて構いません。</p>
+        <a id="apply-form-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeaeGyIotlcsWFoweHhDfy-I_vq4oBnhc0kfcDyB5kyDM6Jsg/viewform" target="_blank" rel="noopener" class="btn-cta">申込フォームを開く</a>
       </div>
-
-      <!-- HubSpot Form (fallback) -->
-      <div id="hubspot-form-wrap"
-           style="background:#fff;border-radius:var(--radius);padding:32px;display:none">
-      </div>
-    </div>
 
       <!-- メール申込み案内（セキュリティ上Googleフォームが表示されない方向け） -->
       <div style="margin-top:32px; padding:20px 24px; background:#f0f4ff; border-radius:12px; border-left:4px solid #0050b3; max-width:680px; margin-left:auto; margin-right:auto;">
-        <p style="font-size:0.9rem; color:#1a365d; font-weight:700; margin-bottom:8px;">🔒 フォームが表示されない方へ（企業のセキュリティ設定等）</p>
+        <p style="font-size:0.9rem; color:#1a365d; font-weight:700; margin-bottom:8px;">🔒 フォームが開けない方へ（企業のセキュリティ設定等）</p>
         <p style="font-size:0.88rem; color:#2d3748; margin-bottom:12px;">
           下の「メールで申し込む」ボタンをクリックすると、メール本文にフォームと同じ質問項目が自動で挿入されます。各項目にご回答の上、送信してください。折り返しご連絡いたします。
         </p>
@@ -1661,146 +1644,19 @@
     initForm(c.forms);
   }
 
-  /* --------------------------------------------------
-     3. Form: Google iframe + HubSpot fallback
-        + Thank-you redirect after submission
+    /* --------------------------------------------------
+     3. Form: 申込フォームはLPに埋め込まず、別タブで開く（2026-09-23 方針変更）
+        申込ボタンのhrefはHTML側に直書き。config に google_url があればそれで上書きする。
      -------------------------------------------------- */
   function initForm(forms) {
-    if (!forms) return;
-
-    var TIMEOUT_MS    = 5000;
-    var googleWrap    = document.getElementById('google-form-wrap');
-    var hubspotWrap   = document.getElementById('hubspot-form-wrap');
-    var formLoading   = document.getElementById('form-loading');
-    var googleIframe  = document.getElementById('google-form-iframe');
-    var thankYouUrl   = forms.thank_you_url || '_thank-you.html';
-
-    /* -- Try Google Form first -- */
-    if (forms.google_url) {
-      /* 別タブバナー */
-      var directUrl = forms.google_url.replace('?embedded=true&', '?').replace('?embedded=true', '');
-      var fallbackBanner = document.createElement('div');
-      fallbackBanner.style.cssText = 'text-align:center; margin-bottom:16px; padding:14px 20px; background:#fff8ec; border-radius:10px; border:1px solid #f5c97a; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;';
-      fallbackBanner.innerHTML =
-        '<span style="color:#7a5000; font-size:0.9rem;">&#x26A0;&#xFE0F; フォームが表示されない場合（Edge・Safari等）はこちら</span>' +
-        '<a href="' + directUrl + '" target="_blank" rel="noopener" ' +
-        'style="display:inline-block; background:#f39c12; color:#fff; font-weight:700; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:0.95rem; white-space:nowrap;">&#x1F4DD; 別タブで申込フォームを開く</a>';
-      googleWrap.insertBefore(fallbackBanner, googleWrap.firstChild);
-
-      /* ---- New-tab submission detection ---- */
-      (function () {
-        var progMatch = thankYouUrl.match(/[?&]prog=([^&]+)/);
-        var eventName = progMatch ? decodeURIComponent(progMatch[1].replace(/\+/g, ' ')) : '';
-        var langMatch = thankYouUrl.match(/[?&]lang=([^&]+)/);
-        var lang = langMatch ? langMatch[1] : 'ja';
-        var tyI18n = {
-          ja: {
-            title: 'のお申し込みを受け付けました',
-            titleDefault: 'お申し込みありがとうございます。',
-            sub: 'ご登録いただいたインドネシア人受講者様のメールアドレスへ、受付完了メールを送信いたしました。',
-            infoHtml: '<p style="margin:0 0 10px;">当日の視聴には、以下のURLからZoomへの事前登録が必要です。<br>リンク先よりご登録をお願いいたします。</p>' + '<p style="margin:0 0 10px;"><strong>Zoom事前登録URL：</strong><br><a href="https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg" target="_blank" rel="noopener" style="color:#0050b3;word-break:break-all;">https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg</a></p>' + '<p style="font-size:0.82rem;color:#888;margin:0;">※メールが届かない場合は、迷惑メールフォルダをご確認ください。<br>※本案内は、日本人上司の方のメールアドレスには配信されません。</p>',
-            backBtn: 'LPページへ戻る'
-          },
-          id: {
-            title: ' Telah Diterima',
-            titleDefault: 'Terima kasih atas pendaftaran Anda.',
-            sub: 'Email konfirmasi penerimaan telah dikirimkan ke alamat email peserta Indonesia yang terdaftar.',
-            infoHtml: '<p style="margin:0 0 10px;">Untuk menonton pada hari acara, Anda perlu mendaftar terlebih dahulu melalui Zoom dengan menggunakan URL berikut.<br>Silakan melanjutkan pendaftaran melalui tautan di bawah ini.</p>' + '<p style="margin:0 0 10px;"><strong>URL Pendaftaran Zoom:</strong><br><a href="https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg" target="_blank" rel="noopener" style="color:#0050b3;word-break:break-all;">https://us02web.zoom.us/webinar/register/WN_pTmh02uZTwi2mPrLc49QCg</a></p>' + '<p style="font-size:0.82rem;color:#888;margin:0;">※ Jika email tidak diterima, silakan periksa folder spam Anda.<br>※ Informasi ini tidak dikirimkan ke alamat email atasan (staf Jepang).</p>',
-            backBtn: 'Kembali ke halaman ini'
-          },
-          th: {
-            title: ' ได้รับการสมัครของคุณแล้ว',
-            titleDefault: 'รับการสมัครของคุณแล้ว',
-            sub: 'ขอบคุณที่กรอกแบบฟอร์ม เราจะส่งข้อมูล Zoom และรายละเอียดอื่น ๆ ทางอีเมล',
-            emailHead: 'อีเมลยืนยัน',
-            emailBody: 'เราได้ส่งอีเมลยืนยันอัตโนมัติไปยังที่อยู่อีเมลของคุณแล้ว หากยังไม่ได้รับ โปรดตรวจสอบในโฟลเดอร์สแปม',
-            contactHead: 'ติดต่อเรา',
-            backBtn: 'กลับไปที่หน้าหลัก'
-          }
-        };
-        var t = tyI18n[lang] || tyI18n['ja'];
-        var newTabTy = document.getElementById('newtab-thankyou');
-        if (!newTabTy) return;
-        var titleText = t.titleDefault;
-        document.getElementById('ty-title').textContent = titleText;
-        document.getElementById('ty-sub').textContent = t.sub;
-        document.getElementById('ty-info').innerHTML = t.infoHtml || '';
-        document.getElementById('ty-back').textContent = t.backBtn;
-        var newTabLink = fallbackBanner.querySelector('a');
-        if (newTabLink) {
-          newTabLink.addEventListener('click', function () {
-          });
-        }
-      })();
-      /* ---- end: new-tab detection ---- */
-
-      googleIframe.src = forms.google_url;
-
-      var googleLoaded = false;
-      var googleTimer  = setTimeout(function () {
-        if (!googleLoaded) showHubspot();
-      }, TIMEOUT_MS);
-
-      /* タブ切り替えによる誤検知防止: ページが再表示された時刻を記録 */
-      var lastPageVisibleAt = 0;
-      document.addEventListener('visibilitychange', function () {
-        if (!document.hidden) lastPageVisibleAt = Date.now();
-      });
-
-      googleIframe.addEventListener('load', function () {
-        clearTimeout(googleTimer);
-
-        if (!googleLoaded) {
-          /* First load = form is ready */
-          googleLoaded = true;
-          formLoading.style.display  = 'none';
-          googleWrap.style.display   = 'block';
-        } else {
-          /* Second load = user submitted the form → redirect to thank-you */
-          /* ただしタブ切り替え後2秒以内のreloadは誤検知のため無視 */
-          if (Date.now() - lastPageVisibleAt < 2000) return;
-          window.location.href = thankYouUrl;
-        }
-      });
-
-      googleIframe.addEventListener('error', function () {
-        clearTimeout(googleTimer);
-        showHubspot();
-      });
-    } else {
-      showHubspot();
-    }
-
-    /* -- HubSpot fallback -- */
-    function showHubspot() {
-      formLoading.style.display  = 'none';
-      googleWrap.style.display   = 'none';
-      hubspotWrap.style.display  = 'block';
-
-      if (!forms.hubspot_portal_id || !forms.hubspot_form_id) return;
-      if (forms.hubspot_portal_id.indexOf('※') !== -1) return; /* not configured yet */
-
-      /* Load HubSpot embed script */
-      var hs = document.createElement('script');
-      hs.src  = '//js.hsforms.net/forms/embed/v2.js';
-      hs.charset = 'utf-8';
-      hs.type = 'text/javascript';
-      hs.onload = function () {
-        if (typeof hbspt === 'undefined') return;
-        hbspt.forms.create({
-          region:   forms.hubspot_region   || 'na1',
-          portalId: forms.hubspot_portal_id,
-          formId:   forms.hubspot_form_id,
-          target:   '#hubspot-form-wrap',
-          onFormSubmit: function () {
-            /* Redirect to thank-you page after submission */
-            setTimeout(function () {
-              window.location.href = thankYouUrl;
-            }, 500);
-          }
-        });
-      };
-      document.head.appendChild(hs);
+    if (!forms || !forms.google_url || forms.google_url.indexOf('※') !== -1) return;
+    var direct = forms.google_url.replace('?embedded=true&', '?').replace('?embedded=true', '');
+    var list = document.querySelectorAll('a.btn-cta, a.btn-entry-header, a.btn-bar-entry, a#apply-form-btn');
+    for (var i = 0; i < list.length; i++) {
+      var a = list[i];
+      if (a.id === 'consult-btn') continue;
+      var h = a.getAttribute('href') || '';
+      if (h.indexOf('docs.google.com/forms') !== -1) a.setAttribute('href', direct);
     }
   }
 
