@@ -1,5 +1,5 @@
 /* ==================================================================
-   LP_CONFIG — Thailand / Work Completion Practice School (5 sessions) — TH
+   LP_CONFIG — Thailand / Work Completion Program (5 sessions) — TH
    Path: 2026/thailand/training/completion/config_th.js
    Created: 2026-09-18
    ------------------------------------------------------------------
