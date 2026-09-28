@@ -225,7 +225,7 @@ window.LP_CONFIG = {
   company: {
     en: 'ABOUT US',
     title: '弊社について',
-    img: '../images/ws-partners.jpeg',
+    img: '/assets/images/company_jakarta.webp',
     name: 'PT WILLSEED PARTNERS INDONESIA',
     items: [
       { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
@@ -282,8 +282,8 @@ window.LP_CONFIG = {
       { href: 'https://www.ws-partners.com.sg/', label: '会社サイト' },
       { href: 'mailto:support@ws-partners.com.sg', label: 'お問い合わせ' }
     ],
-    address: '1 Marina Blvd, #20-00, Singapore 018989',
-    copyright: '© WS PARTNERS PTE LTD'
+    address: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220',
+    copyright: '© 2026 PT WILLSEED PARTNERS INDONESIA. All Rights Reserved.'
   },
 
   forms: {

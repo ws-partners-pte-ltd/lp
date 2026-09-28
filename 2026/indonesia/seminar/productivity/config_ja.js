@@ -201,9 +201,14 @@ window.LP_CONFIG = {
   company: {
     en: 'ABOUT US',
     title: '弊社について',
-    img: '/assets/images/ws-partners.jpeg',
-    name: 'WS PARTNERS PTE LTD',
+    img: '/assets/images/company_jakarta.webp',
+    name: 'PT WILLSEED PARTNERS INDONESIA',
     items: [
+      { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
+      { label: '電話番号', value: '+62 823 2122 8694' },
+      { label: '代表者',  value: 'Director 櫻井 和樹' },
+      { label: '設立',    value: '2026年4月1日' },
+      { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">WS PARTNERS PTE LTD</strong>' },
       { label: '【WS PARTNERSのミッション】', value: '私たちWS PARTNERSは、ASEANの日系現地法人を対象に、現地人材の育成・駐在員の現地適応・組織や人材上の問題解決を通じて、日本企業のグローバルビジネスに貢献します。' },
       { label: '所在地',   value: '1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989' },
       { label: '電話番号', value: '+65 6978 4066' },
@@ -211,13 +216,7 @@ window.LP_CONFIG = {
       { label: 'Web',     value: '<a href="https://ws-partners.com.sg/" style="color:var(--primary)" target="_blank">https://ws-partners.com.sg/</a>' },
       { label: '株主',    value: '株式会社ウィル・シード / CL HOLDINGS PTE LTD' },
       { label: '代表者',  value: 'Managing Director 加藤 健太' },
-      { label: '事業内容', value: 'ASEAN諸国における日系現地法人および海外グループ企業向けに、コンサルティングおよび教育サービスを提供<br>※河合塾グループ（株式会社KJホールディングス）の一員です' },
-
-      { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">PT WILLSEED PARTNERS INDONESIA</strong>' },
-      { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
-      { label: '電話番号', value: '+62 823 2122 8694' },
-      { label: '代表者',  value: 'Director 櫻井 和樹' },
-      { label: '設立',    value: '2026年4月1日' }
+      { label: '事業内容', value: 'ASEAN諸国における日系現地法人および海外グループ企業向けに、コンサルティングおよび教育サービスを提供<br>※河合塾グループ（株式会社KJホールディングス）の一員です' }
     ]
   },
 

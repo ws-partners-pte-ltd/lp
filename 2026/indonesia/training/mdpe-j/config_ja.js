@@ -13,8 +13,8 @@ window.LP_CONFIG = {
   },
 
   header: {
-    phone: '+65-6978-4066',
-    hours: '受付時間：平日 9:00～18:00（シンガポール時間）',
+    phone: '+62 823-2122-8694',
+    hours: '受付時間：平日 9:00〜18:00（インドネシア西部時間 WIB）',
     cta_text: '受講申し込み'
   },
 
@@ -188,9 +188,14 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
   company: {
     en: 'ABOUT US',
     title: '弊社について',
-    img: 'images/ws-partners.jpeg',
-    name: 'WS PARTNERS PTE LTD',
+    img: '/assets/images/company_jakarta.webp',
+    name: 'PT WILLSEED PARTNERS INDONESIA',
     items: [
+      { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
+      { label: '電話番号', value: '+62 823-2122-8694' },
+      { label: '設立',    value: '2026年4月1日' },
+      { label: '代表者',  value: 'Director 櫻井 和樹' },
+      { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">WS PARTNERS PTE LTD</strong>' },
       { label: '【WS PARTNERSのミッション】', value: '私たちWS PARTNERSは、ASEANの日系現地法人を対象に、現地人材の育成・駐在員の現地適応・組織や人材上の問題解決を通じて、日本企業のグローバルビジネスに貢献します。' },
       { label: '所在地',   value: '1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989' },
       { label: '電話番号', value: '+65 6978 4066' },
@@ -198,11 +203,7 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
       { label: 'Web',     value: 'https://www.ws-partners.com.sg/' },
       { label: '株主',    value: '株式会社ウィル・シード / CL HOLDINGS PTE LTD' },
       { label: '代表者',  value: 'Managing Director 加藤 健太' },
-      { label: '事業内容', value: '日系大手・中堅企業のASEAN諸国の現地法人・海外グループ企業向けコンサルティングと教育サービス提供' },
-      { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">PT WILLSEED PARTNERS INDONESIA</strong>' },
-      { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
-      { label: '電話番号', value: '+65 9185 2747' },
-      { label: '設立',    value: '2026年4月1日' }
+      { label: '事業内容', value: '日系大手・中堅企業のASEAN諸国の現地法人・海外グループ企業向けコンサルティングと教育サービス提供' }
     ]
   },
 
@@ -259,8 +260,8 @@ https://calendar.app.google/FwJJ68bYx8JXVsnR9
       { href: 'https://www.ws-partners.com.sg/', label: '会社サイト' },
       { href: 'mailto:support@ws-partners.com.sg', label: 'お問い合わせ' }
     ],
-    address: '1 Marina Blvd, #20-00, Singapore 018989',
-    copyright: '© WS PARTNERS PTE LTD'
+    address: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220',
+    copyright: '© 2026 PT WILLSEED PARTNERS INDONESIA. All Rights Reserved.'
   },
 
   forms: {

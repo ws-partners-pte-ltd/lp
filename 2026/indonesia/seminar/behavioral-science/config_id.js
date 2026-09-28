@@ -13,8 +13,8 @@ window.LP_CONFIG = {
   },
 
   header: {
-    phone: '+65-6978-4066',
-    hours: 'Jam Kerja: Senin–Jumat, 09:00–18:00 (Waktu Singapura)',
+    phone: '+62 823-2122-8694',
+    hours: 'Jam layanan: Senin–Jumat 09.00–18.00 (WIB)',
     cta_text: 'Daftar Gratis'
   },
 
@@ -150,7 +150,7 @@ Dan mekanisme itu — bisa Anda ubah, sebagai <strong>manajer dan pemimpin</stro
       { label: 'Format',     value: 'Online via Zoom (dalam Bahasa Indonesia)' },
       { label: 'Penyelenggara', value: 'PT WILLSEED PARTNERS INDONESIA' },
       { label: 'Biaya',      value: 'Gratis' },
-      { label: 'Kontak',     value: '<span style="display:block;line-height:2">PIC Seminar Online: Matsushita / Tomozawa<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6569784066" style="color:var(--primary)">+65-6978-4066</a></span>' }
+      { label: 'Kontak',     value: '<span style="display:block;line-height:2">PIC Seminar Online: Matsushita / Tomozawa<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6282321228694" style="color:var(--primary)">+62 823-2122-8694</a></span>' }
     ],
     schedule: [
       {
@@ -228,7 +228,7 @@ Jadikan seminar ini sebagai langkah pertama Anda.</p>`
 <span style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>PIC Seminar Online: <strong>Matsushita / Tomozawa</strong></span></span>
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">✉</span><span><a href="mailto:support@ws-partners.com.sg" style="color:rgba(255,255,255,.85);text-decoration:underline">support@ws-partners.com.sg</a></span></span>
-  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6569784066" style="color:rgba(255,255,255,.85);text-decoration:underline">+65-6978-4066</a></span></span>
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6282321228694" style="color:rgba(255,255,255,.85);text-decoration:underline">+62 823-2122-8694</a></span></span>
 </span>`
   },
 
@@ -241,9 +241,14 @@ Jadikan seminar ini sebagai langkah pertama Anda.</p>`
   company: {
     en: 'ABOUT US',
     title: 'Tentang Kami',
-    img: '../images/ws-partners.jpeg',
-    name: 'WS PARTNERS PTE LTD',
+    img: '/assets/images/company_jakarta.webp',
+    name: 'PT WILLSEED PARTNERS INDONESIA',
     items: [
+      { label: 'Alamat',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
+      { label: 'Telepon',  value: '+62 823-2122-8694' },
+      { label: 'Berdiri',  value: '1 April 2026' },
+      { label: 'Direktur', value: 'Director Kazuki Sakurai' },
+      { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">WS PARTNERS PTE LTD</strong>' },
       { label: 'Misi WS PARTNERS', value: 'WS PARTNERS melayani anak perusahaan Jepang di ASEAN, berkontribusi pada bisnis global Jepang melalui pengembangan sumber daya manusia lokal, adaptasi ekspatriat, dan pemecahan masalah organisasi.' },
       { label: 'Alamat',   value: '1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989' },
       { label: 'Telepon',  value: '+65 6978 4066' },
@@ -251,11 +256,7 @@ Jadikan seminar ini sebagai langkah pertama Anda.</p>`
       { label: 'Web',      value: '<a href="https://www.ws-partners.com.sg/" style="color:var(--primary)" target="_blank">https://www.ws-partners.com.sg/</a>' },
       { label: 'Pemegang Saham', value: 'WillSeed Co., Ltd. / CL HOLDINGS PTE LTD' },
       { label: 'Direktur', value: 'Managing Director Kenta Kato' },
-      { label: 'Bidang Usaha', value: 'Menyediakan layanan konsultasi dan pendidikan untuk anak perusahaan Jepang dan grup perusahaan di negara-negara ASEAN<br>※ Anggota Grup Kawai Juku (KJ Holdings Co., Ltd.)' },
-      { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">PT WILLSEED PARTNERS INDONESIA</strong>' },
-      { label: 'Alamat',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
-      { label: 'Telepon',  value: '+65 9185 2747' },
-      { label: 'Berdiri',  value: '1 April 2026' }
+      { label: 'Bidang Usaha', value: 'Menyediakan layanan konsultasi dan pendidikan untuk anak perusahaan Jepang dan grup perusahaan di negara-negara ASEAN<br>※ Anggota Grup Kawai Juku (KJ Holdings Co., Ltd.)' }
     ]
   },
 
@@ -264,8 +265,8 @@ Jadikan seminar ini sebagai langkah pertama Anda.</p>`
       { href: 'https://www.ws-partners.com.sg/', label: 'Website Kami' },
       { href: 'mailto:support@ws-partners.com.sg', label: 'Hubungi Kami' }
     ],
-    address: '1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989',
-    copyright: '© 2026 WS PARTNERS PTE LTD. All Rights Reserved.'
+    address: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220',
+    copyright: '© 2026 PT WILLSEED PARTNERS INDONESIA. All Rights Reserved.'
   },
 
   forms: {

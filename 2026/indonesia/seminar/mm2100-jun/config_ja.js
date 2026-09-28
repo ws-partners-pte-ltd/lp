@@ -14,8 +14,8 @@ window.LP_CONFIG = {
   },
 
   header: {
-    phone: '+65-6978-4066',
-    hours: '受付時間：平日 9:00～18:00（シンガポール時間）',
+    phone: '+62 823-2122-8694',
+    hours: '受付時間：平日 9:00〜18:00（インドネシア西部時間 WIB）',
     cta_text: '無料で申し込む'
   },
 
@@ -140,7 +140,7 @@ window.LP_CONFIG = {
       { label: '主催',     value: 'WS PARTNERS' },
       { label: '備考',     value: 'セミナー終了後、軽食・ドリンクをご用意したネットワーキングの時間を予定しております。参加企業同士の情報交換の場として、ぜひご活用ください。' },
       { label: 'オンライン開催', value: '当日ご参加できない方向けに、2026年7月2日（木）15:00〜16:00（WIB）にオンライン（Zoom）で同内容のセミナーを開催します。<br><a href="https://us02web.zoom.us/webinar/register/WN_htYUypY6ShOMbTlPQjjeJw" target="_blank" rel="noopener" style="color:var(--primary);font-weight:700;">→ オンラインセミナーに申し込む</a>' },
-      { label: 'お問合せ', value: '<span style="display:block;line-height:2">セミナー担当：加藤<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6569784066" style="color:var(--primary)">+65-6978-4066</a></span>' }
+      { label: 'お問合せ', value: '<span style="display:block;line-height:2">セミナー担当：加藤<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6282321228694" style="color:var(--primary)">+62 823-2122-8694</a></span>' }
     ],
     schedule: [
       {
@@ -217,7 +217,7 @@ window.LP_CONFIG = {
 <span style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>セミナー担当：<strong>松下・友澤</strong></span></span>
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">✉</span><span><a href="mailto:support@ws-partners.com.sg" style="color:rgba(255,255,255,.85);text-decoration:underline">support@ws-partners.com.sg</a></span></span>
-  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6569784066" style="color:rgba(255,255,255,.85);text-decoration:underline">+65-6978-4066</a></span></span>
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6282321228694" style="color:rgba(255,255,255,.85);text-decoration:underline">+62 823-2122-8694</a></span></span>
 </span>`
   },
 
@@ -232,9 +232,14 @@ window.LP_CONFIG = {
   company: {
     en: 'ABOUT US',
     title: '弊社について',
-    img: '/assets/images/ws-partners.jpeg',
-    name: 'WS PARTNERS PTE LTD',
+    img: '/assets/images/company_jakarta.webp',
+    name: 'PT WILLSEED PARTNERS INDONESIA',
     items: [
+      { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
+      { label: '電話番号', value: '+62 823-2122-8694' },
+      { label: '設立',    value: '2026年4月1日' },
+      { label: '代表者',  value: 'Director 櫻井 和樹' },
+      { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">WS PARTNERS PTE LTD</strong>' },
       { label: '【WS PARTNERSのミッション】', value: '私たちWS PARTNERSは、ASEANの日系現地法人を対象に、現地人材の育成・駐在員の現地適応・組織や人材上の問題解決を通じて、日本企業のグローバルビジネスに貢献します。' },
       { label: '所在地',   value: '1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989' },
       { label: '電話番号', value: '+65 6978 4066' },
@@ -242,11 +247,7 @@ window.LP_CONFIG = {
       { label: 'Web',     value: '<a href="https://www.ws-partners.com.sg/" style="color:var(--primary)" target="_blank">https://www.ws-partners.com.sg/</a>' },
       { label: '株主',    value: '株式会社ウィル・シード / CL HOLDINGS PTE LTD' },
       { label: '代表者',  value: 'Managing Director 加藤 健太' },
-      { label: '事業内容', value: 'ASEAN諸国における日系現地法人および海外グループ企業向けに、コンサルティングおよび教育サービスを提供<br>※河合塾グループ（株式会社KJホールディングス）の一員です' },
-      { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">PT WILLSEED PARTNERS INDONESIA</strong>' },
-      { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
-      { label: '電話番号', value: '+65 9185 2747' },
-      { label: '設立',    value: '2026年4月1日' }
+      { label: '事業内容', value: 'ASEAN諸国における日系現地法人および海外グループ企業向けに、コンサルティングおよび教育サービスを提供<br>※河合塾グループ（株式会社KJホールディングス）の一員です' }
     ]
   },
 
@@ -255,8 +256,8 @@ window.LP_CONFIG = {
       { href: 'https://www.ws-partners.com.sg/', label: '会社サイト' },
       { href: 'mailto:support@ws-partners.com.sg', label: 'お問い合わせ' }
     ],
-    address: '1 MARINA BOULEVARD, #20-00, ONE MARINA BOULEVARD, SINGAPORE 018989',
-    copyright: '© 2026 WS PARTNERS PTE LTD. All Rights Reserved.'
+    address: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220',
+    copyright: '© 2026 PT WILLSEED PARTNERS INDONESIA. All Rights Reserved.'
   },
 
   forms: {

@@ -225,11 +225,11 @@ window.LP_CONFIG = {
   company: {
     en: 'ABOUT US',
     title: '弊社について',
-    img: '../images/ws-partners.jpeg',
+    img: '/assets/images/company_jakarta.webp',
     name: 'PT WILLSEED PARTNERS INDONESIA',
     items: [
       { label: '所在地',   value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
-      { label: '電話番号', value: '+65 9185 2747' },
+      { label: '電話番号', value: '+62 823-2122-8694' },
       { label: '設立',    value: '2026年4月1日' },
       { label: '代表者',  value: 'Director 櫻井 和樹' },
       { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">WS PARTNERS PTE LTD</strong>' },
@@ -282,8 +282,8 @@ window.LP_CONFIG = {
       { href: 'https://www.ws-partners.com.sg/', label: '会社サイト' },
       { href: 'mailto:support@ws-partners.com.sg', label: 'お問い合わせ' }
     ],
-    address: '1 Marina Blvd, #20-00, Singapore 018989',
-    copyright: '© WS PARTNERS PTE LTD'
+    address: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220',
+    copyright: '© 2026 PT WILLSEED PARTNERS INDONESIA. All Rights Reserved.'
   },
 
   forms: {

@@ -228,11 +228,11 @@ window.LP_CONFIG = {
   company: {
     en: 'ABOUT US',
     title: 'Tentang Kami',
-    img: '../images/ws-partners.jpeg',
+    img: '/assets/images/company_jakarta.webp',
     name: 'PT WILLSEED PARTNERS INDONESIA',
     items: [
       { label: 'Alamat',  value: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220' },
-      { label: 'Telepon', value: '+65 9185 2747' },
+      { label: 'Telepon', value: '+62 823-2122-8694' },
       { label: 'Berdiri', value: '1 April 2026' },
       { label: 'Direktur', value: 'Director Kazuki Sakurai' },
       { label: '', value: '<strong style="display:block;font-size:1.05em;color:var(--text-main);margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0">WS PARTNERS PTE LTD</strong>' },
@@ -283,8 +283,8 @@ window.LP_CONFIG = {
       { href: 'https://www.ws-partners.com.sg/', label: 'Situs Perusahaan' },
       { href: 'mailto:support@ws-partners.com.sg', label: 'Kontak' }
     ],
-    address: '1 Marina Blvd, #20-00, Singapore 018989',
-    copyright: '© WS PARTNERS PTE LTD'
+    address: 'Flow Office Space, MidPlaza 1 Jl. Jend. Sudirman Kav. 10-11, Karet Tengsin Tanah Abang, Jakarta Pusat 10220',
+    copyright: '© 2026 PT WILLSEED PARTNERS INDONESIA. All Rights Reserved.'
   },
 
   forms: {
