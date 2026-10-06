@@ -1588,6 +1588,33 @@
         @media (min-width: 821px) and (max-height: 760px) { .hero.hero-delegation .hero-quote { font-size: min(1.85rem, 2.1vw); } }
         @media (max-width: 820px) { .hero.hero-delegation .hero-quote { font-size: min(1.6rem, 4.9vw); } }
 
+        /* 2026-10-06 ヒーロー上端に余白を確保し、下端（申込ボタン）も1画面に収める */
+        @media (min-width: 993px) {
+            .hero.hero-delegation { height: auto !important; max-height: none !important; min-height: 100svh; padding-top: calc(var(--header-total-height) + 32px) !important; padding-bottom: 28px !important; }
+            .hero.hero-delegation .hero-container { height: auto !important; min-height: 0; }
+            .hero.hero-delegation .hero-eyebrow { margin-bottom: 12px !important; }
+        }
+        @media (min-width: 993px) and (max-height: 800px) {
+            .hero.hero-delegation { padding-top: calc(var(--header-total-height) + 26px) !important; padding-bottom: 18px !important; }
+            .hero.hero-delegation .hero-eyebrow { font-size: .82rem; padding-top: 4px; padding-bottom: 4px; margin-bottom: 10px !important; }
+            .hero.hero-delegation .hero-quote { font-size: min(1.75rem, 2.05vw); margin-bottom: 6px; }
+            .hero.hero-delegation .hero-program { font-size: clamp(1rem, .9vw + .3rem, 1.22rem); padding: 5px 14px 5px 12px; margin-bottom: 7px; }
+            .hero-lead-v2 { font-size: .88rem !important; line-height: 1.55 !important; margin-bottom: 7px !important; }
+            .hero.hero-delegation .hero-fact { padding: 5px 11px; }
+            .hero.hero-delegation .hero-fact span.v { font-size: .84rem; line-height: 1.4; }
+            .hero.hero-delegation .hero-fact.fact-fee span.v { font-size: 1.05rem !important; }
+            .hero.hero-delegation .hero-fact.fact-fee span.sub { font-size: .74rem; }
+            .hero.hero-delegation .hero-facts { margin-bottom: 6px; }
+            .hero-deadline { font-size: .88rem; margin-bottom: 7px; }
+            .hero.hero-delegation .btn-cta { padding-top: 10px; padding-bottom: 10px; }
+        }
+        @media (min-width: 993px) and (max-height: 680px) {
+            .hero.hero-delegation { padding-top: calc(var(--header-total-height) + 22px) !important; padding-bottom: 12px !important; }
+            .hero.hero-delegation .hero-quote { font-size: min(1.55rem, 1.9vw); }
+            .hero-lead-v2 { font-size: .84rem !important; line-height: 1.5 !important; }
+            .hero.hero-delegation .hero-program .abbr { margin-top: 3px; }
+        }
+
     </style>
 </head>
 <body>
