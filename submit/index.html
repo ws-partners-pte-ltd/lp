@@ -7,32 +7,209 @@
 <meta name="referrer" content="no-referrer">
 <title>Assignment submission | WS PARTNERS</title>
 <style>
-  html, body { margin: 0; height: 100%; background: #fafafa; }
-  body { font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
-  #app { display: block; border: 0; width: 100%; height: 100%; }
-  #msg { display: none; max-width: 520px; margin: 48px auto; padding: 0 16px; color: #333; font-size: 16px; line-height: 1.6; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Thai", "Sarabun", sans-serif; margin: 0; padding: 24px 16px; color: #222; background: #fafafa; }
+  .card { max-width: 520px; margin: 0 auto; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 24px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .sub { color: #666; font-size: 14px; margin: 0 0 20px; }
+  label { display: block; font-weight: 600; margin: 16px 0 6px; }
+  select, input[type=text] { width: 100%; box-sizing: border-box; padding: 10px; font-size: 16px; border: 1px solid #bbb; border-radius: 6px; background: #fff; }
+  input[type=file] { font-size: 15px; max-width: 100%; }
+  .hint { color: #666; font-size: 13px; margin-top: 4px; }
+  .err { color: #b00020; font-size: 14px; margin-top: 4px; display: none; }
+  .err ul, .ok ul { margin: 6px 0 0; padding-left: 20px; }
+  .err li, .ok li { font-size: 13px; word-break: break-all; }
+  button { margin-top: 24px; width: 100%; padding: 12px; font-size: 16px; background: #1a73e8; color: #fff; border: 0; border-radius: 6px; cursor: pointer; }
+  button:disabled { background: #9bbbe8; cursor: default; }
+  #f, #done { display: none; }
+  #done .ok { background: #e6f4ea; border: 1px solid #b7dfc0; border-radius: 6px; padding: 16px; font-size: 16px; }
+  #loading { color: #666; font-size: 15px; }
+  .l2 { display: block; font-size: 0.82em; font-weight: 400; color: #777; margin-top: 2px; }
+  .err .l2 { color: #c4606f; }
+  button .l2 { color: #dbe7fb; }
+  .ok .l2 { color: #5a7a62; }
 </style>
 </head>
 <body>
 <!--
-  WS PARTNERS 宿題提出ページの外側（2026-10-30）。
-  受講者が開く URL：このページ?t=<研修ごとの鍵>。鍵をそのまま中の提出ページ（Google Apps Script）に渡すだけ。
-  このファイルに鍵・パスワードは入らない。中の提出ページの URL を変えるときは APP_URL だけを直す。
+  WS PARTNERS 宿題提出ページ（GitHub 側の画面・2026-11-03 版2）。
+  受講者が開く URL：このページ?t=<研修ごとの鍵>。
+  画面はこのページで作り、研修名・選択肢・文言は Google Apps Script（APP_URL?api=info）から JSON で受け取る。
+  ファイルは1つずつ base64 にして APP_URL へ POST（Content-Type: text/plain）。保存・台帳・通知は Apps Script 側。
+  このファイルに鍵・パスワードは入らない。GTM などの計測タグは入れない（鍵が計測に残らないように）。
 -->
-<iframe id="app" title="Assignment submission" hidden></iframe>
-<p id="msg">This link is not valid. Please ask your facilitator.</p>
+<div class="card">
+  <h1 id="title">Assignment submission</h1>
+  <p class="sub" id="sub"></p>
+  <p id="loading">Loading…</p>
+  <div class="err" id="err-load"></div>
+
+  <form id="f" onsubmit="return false;">
+    <label for="choice" id="lab-choice"></label>
+    <select id="choice" name="choice"></select>
+    <div class="err" id="err-choice"></div>
+
+    <label for="name" id="lab-name"></label>
+    <input type="text" id="name" name="name" autocomplete="name" maxlength="80">
+    <div class="err" id="err-name"></div>
+
+    <label for="file" id="lab-file"></label>
+    <input type="file" id="file" name="file" multiple>
+    <div class="hint" id="hint-file"></div>
+    <div class="err" id="err-file"></div>
+
+    <div class="err" id="err-form"></div>
+    <button id="btn" type="button"></button>
+  </form>
+
+  <div id="done"><div class="ok" id="done-text"></div></div>
+</div>
+
 <script>
-  (function () {
-    var APP_URL = 'https://script.google.com/macros/s/AKfycbxPMHfGKS9eLyFmEviyomJRHF8ehOOCPSCHTlPl7kraFzZM0kDzEY4QIS70i9AuaHZ_/exec';
-    var t = new URLSearchParams(location.search).get('t') || '';
-    if (!/^[0-9a-f]{64}$/.test(t)) {          // 鍵の形（英小文字と数字64桁）でなければ中を開かない
-      document.getElementById('msg').style.display = 'block';
-      return;
+(function () {
+  var APP_URL = 'https://script.google.com/macros/s/AKfycbxPMHfGKS9eLyFmEviyomJRHF8ehOOCPSCHTlPl7kraFzZM0kDzEY4QIS70i9AuaHZ_/exec';
+  var INVALID = 'This link is not valid. Please ask your facilitator.';
+  var LOAD_FAIL = 'The page could not be loaded. Please reload, or ask your facilitator.';
+  var token = new URLSearchParams(location.search).get('t') || '';
+  var $ = function (id) { return document.getElementById(id); };
+
+  var T = null, MAX_MB = 25, MAX_FILES = 10, EXT = ['docx', 'pptx', 'pdf', 'jpg', 'jpeg', 'png', 'heic'];
+  // pending: 送れなかった分（再送はそれだけ）。choice/name は1枚目の値で固定
+  var st = { pending: [], pages: 0, stamp: '', sent: [], sessionLabel: '', at: '', choice: '', name: '' };
+
+  function fail(msg) { $('loading').style.display = 'none'; var e = $('err-load'); e.textContent = msg; e.style.display = 'block'; }
+  if (!/^[0-9a-f]{64}$/.test(token)) { fail(INVALID); return; }
+
+  function text(key, vars) {
+    var a = T.primary[key] || '', b = T.secondary ? (T.secondary[key] || '') : '';
+    Object.keys(vars || {}).forEach(function (k) { a = a.split('{' + k + '}').join(vars[k]); b = b.split('{' + k + '}').join(vars[k]); });
+    return { a: a, b: b };
+  }
+  // 文言を要素に入れる（1行目＝主言語、2行目＝英語）。items があれば箇条書き
+  function put(el, key, extra, vars, items) {
+    el.textContent = '';
+    var t = text(key, vars);
+    var a = document.createElement('span'); a.textContent = t.a + (extra || ''); el.appendChild(a);
+    if (T.secondary) { var b = document.createElement('span'); b.className = 'l2'; b.textContent = t.b + (extra || ''); el.appendChild(b); }
+    if (items && items.length) {
+      var ul = document.createElement('ul');
+      items.forEach(function (s) { var li = document.createElement('li'); li.textContent = s; ul.appendChild(li); });
+      el.appendChild(ul);
     }
-    var f = document.getElementById('app');
-    f.src = APP_URL + '?t=' + encodeURIComponent(t);
-    f.hidden = false;
-  })();
+  }
+  function reason(key) { var t = text(key); return t.a + (t.b ? ' / ' + t.b : ''); }
+  function clearErrors() { ['choice', 'name', 'file', 'form'].forEach(function (k) { var el = $('err-' + k); el.textContent = ''; el.style.display = 'none'; }); }
+  function showError(field, key, items) { var el = $('err-' + (field || 'form')) || $('err-form'); put(el, key, '', null, items); el.style.display = 'block'; }
+  function ext(name) { return (String(name).split('.').pop() || '').toLowerCase(); }
+
+  // ── 研修名・選択肢・文言を受け取って画面を作る ──
+  fetch(APP_URL + '?api=info&t=' + encodeURIComponent(token), { redirect: 'follow' })
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      if (!d || !d.ok) { fail((d && d.message) || INVALID); return; }
+      T = d.pack; MAX_MB = d.maxMb || MAX_MB; MAX_FILES = d.maxFiles || MAX_FILES; if (d.allowedExt) EXT = d.allowedExt;
+      document.title = 'Assignment submission | WS PARTNERS';
+      $('title').textContent = d.title;
+      put($('sub'), 'sub');
+      put($('lab-choice'), 'dateLabel'); put($('lab-name'), 'nameLabel'); put($('lab-file'), 'fileLabel'); put($('btn'), 'submit');
+      $('hint-file').textContent = (T.secondary || T.primary).fileHint;   // 形式の案内は英語の1行
+      $('file').accept = EXT.map(function (x) { return '.' + x; }).join(',');
+      var sel = $('choice');
+      var ph = document.createElement('option'); ph.value = '';
+      ph.textContent = T.primary.datePlaceholder + (T.secondary ? ' / ' + T.secondary.datePlaceholder : '');
+      sel.appendChild(ph);
+      (d.choices || []).forEach(function (c) { var o = document.createElement('option'); o.value = c.value; o.textContent = c.label; sel.appendChild(o); });
+      $('loading').style.display = 'none';
+      $('f').style.display = 'block';
+      $('btn').onclick = send;
+    })
+    .catch(function () { fail(LOAD_FAIL); });
+
+  function checkFiles(files) {
+    var bad = [];
+    files.forEach(function (f) {
+      if (EXT.indexOf(ext(f.name)) < 0) bad.push(f.name + ' — ' + reason('errExt'));
+      else if (f.size <= 0) bad.push(f.name + ' — ' + reason('errEmpty'));
+      else if (f.size > MAX_MB * 1024 * 1024) bad.push(f.name + ' — ' + reason('errSize'));
+    });
+    return bad;
+  }
+  // 送信中・再送待ちの間は受講日と名前を固定（送る値は st の1枚目の値）
+  function lock(on) {
+    $('name').readOnly = on;
+    $('choice').style.pointerEvents = on ? 'none' : '';
+    $('choice').style.background = on ? '#f3f3f3' : '';
+    $('file').disabled = on;
+  }
+  function toBase64(file) {
+    return new Promise(function (resolve, reject) {
+      var r = new FileReader();
+      r.onload = function () { var s = String(r.result); resolve(s.slice(s.indexOf(',') + 1)); };
+      r.onerror = function () { reject(r.error); };
+      r.readAsDataURL(file);
+    });
+  }
+  function postOne(item) {
+    return toBase64(item.file).then(function (data) {
+      var body = JSON.stringify({ t: token, choice: st.choice, name: st.name, stamp: st.stamp,
+        page: String(item.page), pages: String(st.pages), fileName: item.file.name,
+        mimeType: item.file.type || 'application/octet-stream', data: data });
+      // text/plain にして事前確認（プリフライト）を起こさない
+      return fetch(APP_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: body, redirect: 'follow' });
+    }).then(function (r) { return r.json(); });
+  }
+
+  function send() {
+    clearErrors();
+    var queue;
+    if (st.pending.length) {
+      queue = st.pending.slice();                      // 再送：送れなかった分だけ
+    } else {
+      var choice = $('choice').value, name = $('name').value.trim();
+      if (!choice) { showError('choice', 'errDate'); return; }
+      if (!name) { showError('name', 'errName'); return; }
+      var files = Array.prototype.slice.call($('file').files || []);
+      if (!files.length) { showError('file', 'errFile'); return; }
+      if (files.length > MAX_FILES) { showError('file', 'errTooMany'); return; }
+      var bad = checkFiles(files);
+      if (bad.length) { showError('file', 'errCheck', bad); return; }   // 1つでもだめなら1つも送らない
+      st = { pending: [], pages: files.length, stamp: '', sent: [], sessionLabel: '', at: '', choice: choice, name: name };
+      queue = files.map(function (f, i) { return { file: f, page: i + 1 }; });
+    }
+    var btn = $('btn');
+    btn.disabled = true;
+    lock(true);
+    var failed = [], total = queue.length;
+
+    function finish() {
+      if (failed.length) {
+        st.pending = failed.map(function (x) { return x.item; });
+        showError('form', 'errSome', failed.map(function (x) { return x.item.file.name + (x.message ? ' — ' + x.message : ''); }));
+        btn.disabled = false; put(btn, 'submit');
+        return;
+      }
+      lock(false);
+      $('f').style.display = 'none';
+      put($('done-text'), 'received', ': ' + st.sessionLabel + ' / ' + st.at, null, st.sent);
+      $('done').style.display = 'block';
+    }
+    function sendOne(i) {
+      if (i >= total) { finish(); return; }
+      var item = queue[i];
+      put(btn, 'sending', '', { i: i + 1, n: total });
+      postOne(item).then(function (r) {
+        if (r && r.ok) {
+          st.sent.push(r.fileName); st.stamp = r.stamp || st.stamp;
+          st.sessionLabel = r.session; st.at = r.at;
+        } else {
+          failed.push({ item: item, message: (r && r.message) || reason('errGeneric') });
+        }
+      }).catch(function () {
+        failed.push({ item: item, message: reason('errUpload') });
+      }).then(function () { sendOne(i + 1); });
+    }
+    sendOne(0);
+  }
+})();
 </script>
 </body>
 </html>
