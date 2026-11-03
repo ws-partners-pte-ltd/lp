@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Assignment submission | WS PARTNERS</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #fafafa; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+  #app { display: block; border: 0; width: 100%; height: 100%; }
+  #msg { display: none; max-width: 520px; margin: 48px auto; padding: 0 16px; color: #333; font-size: 16px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<!--
+  WS PARTNERS 宿題提出ページの外側（2026-10-30）。
+  受講者が開く URL：このページ?t=<研修ごとの鍵>。鍵をそのまま中の提出ページ（Google Apps Script）に渡すだけ。
+  このファイルに鍵・パスワードは入らない。中の提出ページの URL を変えるときは APP_URL だけを直す。
+-->
+<iframe id="app" title="Assignment submission" hidden></iframe>
+<p id="msg">This link is not valid. Please ask your facilitator.</p>
+<script>
+  (function () {
+    var APP_URL = 'https://script.google.com/macros/s/AKfycbxPMHfGKS9eLyFmEviyomJRHF8ehOOCPSCHTlPl7kraFzZM0kDzEY4QIS70i9AuaHZ_/exec';
+    var t = new URLSearchParams(location.search).get('t') || '';
+    if (!/^[0-9a-f]{64}$/.test(t)) {          // 鍵の形（英小文字と数字64桁）でなければ中を開かない
+      document.getElementById('msg').style.display = 'block';
+      return;
+    }
+    var f = document.getElementById('app');
+    f.src = APP_URL + '?t=' + encodeURIComponent(t);
+    f.hidden = false;
+  })();
+</script>
+</body>
+</html>
