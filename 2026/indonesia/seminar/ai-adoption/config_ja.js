@@ -1,20 +1,50 @@
 /* ============================================================
-   LP_CONFIG — インドネシア 共催セミナー（WS PARTNERS × フォーポイント）日本語版【下書き】
+   LP_CONFIG — インドネシア 共催セミナー（フォーポイント × WS PARTNERS）日本語版【下書き】
    Path: 2026/indonesia/seminar/ai-adoption/config_ja.js
    Base: 2026/malaysia/seminar/cross-cultural/（FITOKIO共催）
-   Draft: 2026-11-10 フォーポイント側ブロックのみ原稿反映。
-          「TBD」の黄色マーカー部分は弊社情報・開催情報の確定後に差し替える。
+   2026-11-10 v2: WSP原稿「WSP フォーポイント共催セミナー LP掲載原稿 20261110」
+                 （Google Doc 1bm6qy-_pwrsux_EUw4feut5PNNS4onCwwr1qn0R5HNc）を反映。
+                 第1部＝フォーポイント、第2部＝WS PARTNERS。オンライン（Zoom）開催。
+                 申込は Zoom 参加登録に一本化（forms.zoom_url）。Googleフォーム・mailto・GAS は作らない。
+   未確定は TBD('…')（画面では黄色マーカー）。
    ============================================================ */
 var TBD = function (t) {
   return '<span style="background:#fff3bf;color:#7c5e00;font-weight:700;padding:0 4px;border-radius:3px">【TBD】' + t + '</span>';
 };
 
+/* 見出しブロック・チェックリストの共通部品 */
+var PART_H = function (label, title, sub, first) {
+  return '<h3 style="font-size:1.1rem;font-weight:700;color:var(--primary);border-left:4px solid var(--primary);padding-left:12px;margin:' + (first ? '0' : '40px') + ' 0 6px 0">' + label + '：' + title + '</h3>' +
+         '<p style="font-size:0.95rem;color:var(--text-muted);margin:0 0 16px 16px">' + sub + '</p>';
+};
+var GAIN_BOX = function (heading, items) {
+  return '<div style="background:#e8f0fb;border:2px solid #0050b3;border-radius:12px;padding:18px 22px;margin:16px 0">' +
+    '<p style="font-size:0.85rem;font-weight:700;color:#0050b3;letter-spacing:0.1em;margin:0 0 12px 0">── ' + heading + ' ──</p>' +
+    '<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">' +
+    items.map(function (t) {
+      return '<li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c"><span style="color:#0050b3;flex-shrink:0">✓</span><span>' + t + '</span></li>';
+    }).join('') + '</ul></div>';
+};
+var ISSUE = function (head, sub) {
+  return '<span style="display:block"><strong>' + head + '</strong><span style="display:block;font-size:0.92em;color:var(--text-muted);margin-top:4px">' + sub + '</span></span>';
+};
+
+var FULL_TITLE   = 'AI時代のインドネシア拠点経営';
+var FULL_SUB     = '生産性を高める仕組みと、考え・判断するマネジャーの育て方';
+var P1_TITLE     = 'AI導入・活用の進め方';
+var P1_SUB       = '～セキュアな環境整備から、現場で使える仕組みづくりまで～';
+var P2_TITLE     = 'AI時代、インドネシア人マネジャーの「考える力」をどう育てるか';
+var P2_SUB       = '～「論理・認識・知性」から見直す、任せ方と育て方～';
+var DATE_TXT     = '2026年12月9日（水）15:00〜17:00（ジャカルタ時間）';
+var TARGET_TXT   = 'インドネシア日系企業の経営者・経営幹部、拠点責任者、日本人マネジャー、人事・人材育成責任者、管理部門責任者、IT・DX推進担当者';
+var TARGET_NOTE  = 'AI導入による業務の生産性向上と、現地マネジャーへの権限移譲・育成をあわせて進めたい方におすすめです。';
+
 window.LP_CONFIG = {
 
   meta: {
     lang: 'ja',
-    title: '無料合同セミナー：AI導入・活用の進め方 | WS PARTNERS × フォーポイント',
-    description: '生成AIを安全に導入し、現場に定着させるための進め方を解説する無料合同セミナー。WS PARTNERS × 株式会社フォーポイント共催。インドネシア（ジャカルタ）開催。',
+    title: 'AI時代のインドネシア拠点経営 セミナー | WS PARTNERS × フォーポイント',
+    description: '2026年12月9日15:00〜17:00（現地時間）、オンライン（Zoom）開催。インドネシア日系企業向けに、安全なAI導入・定着の仕組みと、現地マネジャーの考える力を育てる任せ方を解説。フォーポイントとWS PARTNERSが、AI活用と人材育成をつなぎます。',
     other_lang_label: null,
     other_lang_url:   null
   },
@@ -36,58 +66,56 @@ window.LP_CONFIG = {
 
   hero: {
     bg_image: '/assets/lp-hero-images/hero_jakarta_skyline_dusk.webp?v=20261110',
-    img_main: 'images/photo_trainer_wsp_tbd.png',
-    img_sub1: 'images/photo_trainer_kato_go.jpg',
+    img_main: 'images/photo_trainer_kato_go.jpg',
+    img_sub1: '/assets/photos/trainers/kato.jpg',
     img_sub2: '',
-    subtitle: '第一部：' + TBD('弊社パートのタイトル') + '<br>第二部：AI導入・活用の進め方 ～セキュアな環境整備から、現場で使える仕組みづくりまで～',
-    title: '無料合同セミナー：<br>' + TBD('全体タイトル'),
-    format_label: '【会場】',
-    format: TBD('会場名'),
+    subtitle: '第1部：' + P1_TITLE + ' ' + P1_SUB + '<br>第2部：' + P2_TITLE + ' ' + P2_SUB,
+    title: FULL_TITLE + '<br><span style="font-size:0.62em;display:block;margin-top:6px">生産性を高める仕組みと、<br>考え・判断するマネジャーの育て方</span>',
+    format_label: '【開催形式】',
+    format: 'オンライン（Zoom）',
     date_label: '【日時】',
-    date: '<strong style="font-size:0.78em">' + TBD('開催日・時間') + '</strong>',
+    date: '<strong style="font-size:0.78em">' + DATE_TXT + '</strong>',
     deadline_label: '【参加費】',
     deadline: '<strong>無料</strong>',
     close_label: '【申込締切】',
     close: TBD('申込締切'),
     cta_text: '無料で申し込む',
     target_label: '【対象】',
-    target: TBD('全体の対象者（弊社パートと合わせて確定）'),
+    target: 'インドネシア日系企業の経営者・経営幹部、拠点責任者、日本人マネジャー、人事・管理部門・IT/DX推進の責任者',
     badge_en: '無料合同セミナー',
     badge_ja: '日本語で実施！'
   },
 
   consult: {
     en: 'ABOUT THIS SEMINAR',
-    title: '無料合同セミナー：' + TBD('全体タイトル'),
-    body: `<h3 style="font-size:1.1rem;font-weight:700;color:var(--primary);border-left:4px solid var(--primary);padding-left:12px;margin:0 0 16px 0">第一部：${TBD('弊社パートのタイトル')}</h3>
-<p>${TBD('弊社パートの概要・得られること（原稿受領後に差し替え）')}</p>
-
-<h3 style="font-size:1.1rem;font-weight:700;color:var(--primary);border-left:4px solid var(--primary);padding-left:12px;margin:32px 0 6px 0">第二部：AI導入・活用の進め方</h3>
-<p style="font-size:0.95rem;color:var(--text-muted);margin:0 0 16px 16px">～セキュアな環境整備から、現場で使える仕組みづくりまで～</p>
-<p style="font-size:1.15rem;font-weight:700;line-height:1.7;color:#1a202c;margin:0 0 6px 0">AI導入は、ツール選びではなく<br><span style="background:linear-gradient(transparent 55%, #ffe08a 55%)">「業務・人・ルールの再設計」</span>から。</p>
+    title: FULL_TITLE + '<br><span style="font-size:0.7em">' + FULL_SUB + '</span>',
+    body:
+      /* ── 第1部：フォーポイント ── */
+      PART_H('第1部', P1_TITLE, P1_SUB, true) +
+`<p style="font-size:1.15rem;font-weight:700;line-height:1.7;color:#1a202c;margin:0 0 6px 0">AI導入は、ツール選びではなく<br><span style="background:linear-gradient(transparent 55%, #ffe08a 55%)">「業務・人・ルールの再設計」</span>から。</p>
 <p style="font-weight:700;color:var(--primary);margin:0 0 18px 0">「安全に使える」から「現場で成果を生み出す」へ。</p>
 <p>生成AIの進化により、これまで専門知識や多額のシステム投資が必要だった業務の効率化・自動化が、より身近なものになっています。</p>
 <p>一方で、「社内情報をAIに入力しても安全なのか」「どの業務からAI化すればよいのか」「導入しても社員が使いこなせないのではないか」といった懸念から、導入が進まない企業も少なくありません。</p>
-<p>本セミナーでは、会計・税務・法務の専門業務にAIを取り入れ、AIコンサルティングも行っている株式会社フォーポイントの実践経験をもとに、企業が<strong>安全かつ効果的にAIを導入・活用するための考え方と具体的な進め方</strong>を解説します。</p>
-<p>AI導入を単なるツールの導入として捉えるのではなく、業務の見直し、セキュリティ環境の整備、人材育成、社内での運用体制づくりまで、一連のプロセスを体系的にご紹介します。</p>
-<div style="background:#e8f0fb;border:2px solid #0050b3;border-radius:12px;padding:18px 22px;margin:16px 0">
-  <p style="font-size:0.85rem;font-weight:700;color:#0050b3;letter-spacing:0.1em;margin:0 0 12px 0">── 本セミナーで得られること ──</p>
-  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
-    <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0">✓</span><span>生成AIの基礎と、企業利用で押さえるべき<strong>セキュリティ</strong></span>
-    </li>
-    <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0">✓</span><span>AI導入を成功させるための<strong>5つの秘訣</strong></span>
-    </li>
-    <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0">✓</span><span>自社業務のAI化を<strong>どこから始めるか</strong>の見極め方</span>
-    </li>
-    <li style="display:flex;align-items:flex-start;gap:10px;font-weight:700;font-size:1rem;color:#1a202c">
-      <span style="color:#0050b3;flex-shrink:0">✓</span><span>AI導入から社内定着・自走までの<strong>ロードマップ</strong></span>
-    </li>
-  </ul>
-</div>
-<p style="font-weight:700;color:var(--primary);margin-top:18px">「守りを固めてから、攻めに転じる。」――セキュリティと業務効率化を両立するAI導入を、ぜひこの機会にご確認ください。</p>`,
+<p>本講演では、会計・税務・法務の専門業務にAIを取り入れ、AIコンサルティングも行っている株式会社フォーポイントの実践経験をもとに、企業が<strong>安全かつ効果的にAIを導入・活用するための考え方と具体的な進め方</strong>を解説します。</p>
+<p>AI導入を単なるツールの導入として捉えるのではなく、業務の見直し、セキュリティ環境の整備、人材育成、社内での運用体制づくりまで、一連のプロセスを体系的にご紹介します。</p>` +
+      GAIN_BOX('第1部で得られること', [
+        '生成AIの基礎と、企業利用で押さえるべき<strong>セキュリティ</strong>',
+        'AI導入を成功させるための<strong>5つの秘訣</strong>',
+        '自社業務のAI化を<strong>どこから始めるか</strong>の見極め方',
+        'AI導入から社内定着・自走までの<strong>ロードマップ</strong>'
+      ]) +
+      /* ── 第2部：WS PARTNERS ── */
+      PART_H('第2部', P2_TITLE, P2_SUB, false) +
+`<p style="font-size:1.15rem;font-weight:700;line-height:1.7;color:#1a202c;margin:0 0 18px 0"><span style="background:linear-gradient(transparent 55%, #ffe08a 55%)">AIが出した案を、自社の判断に変えられるか。</span></p>
+<p>AIで情報整理や資料作成が効率化されても、「何を課題として捉えるか」「提案の前提は妥当か」「何を優先し、現場をどう動かすか」という判断は、経営者やマネジャーに求められます。AIを使うほど、自社の状況を踏まえて問いを立て、答えを確かめる力が重要になります。</p>
+<p>一方、現地マネジャーに「もっと自分で考えて」と伝えても、事情の説明やその場の対応で止まってしまう。言葉は通じているのに、期待した提案が出てこない。こうした場面を、意欲や能力の一言で片づけていないでしょうか。</p>
+<p>本講演では、納得する筋道の違いである<strong>「論理」</strong>、言葉から思い浮かべる行動の違いである<strong>「認識」</strong>、その仕事で複雑な関係を組み立てる力である<strong>「知性」</strong>の三つから、育成上の課題を整理します。具体例から共通課題を捉え、対策を比較し、現場の行動に落とし込む。その「具体と抽象の往復」を育てるために、任せる仕事、問いかけ、支援の仕方をどう変えるかを解説します。</p>` +
+      GAIN_BOX('第2部で得られること', [
+        'AIに任せる業務と、人が担う<strong>課題設定・判断</strong>を整理する視点',
+        '現地マネジャーの提案が期待に届かない理由を、<strong>「論理・認識・知性」</strong>から見立てる方法',
+        '事実整理から比較・抽象化・対策の検討へ、<strong>思考を進める問いかけ</strong>の考え方',
+        '本人の現在地に合わせ、<strong>仕事の難易度、判断範囲、途中レビュー</strong>を設計する方法'
+      ]),
     btn_text: '無料で申し込む',
     btn_url: '#apply'
   },
@@ -97,12 +125,15 @@ window.LP_CONFIG = {
     title: 'このようなお悩みはありませんか？',
     img: '/assets/illustrations/il_c_dx_ai_cloud.png',
     items: [
-      TBD('弊社パートのお悩み（原稿受領後に追加）'),
-      '<span style="display:block"><strong>AI導入に興味はあるが、何から始めればよいかわからない</strong><span style="display:block;font-size:0.92em;color:var(--text-muted);margin-top:4px">自社のどの業務にAIを活用できるのか、具体的なイメージが持てない。</span></span>',
-      '<span style="display:block"><strong>情報漏えいやセキュリティが心配で、AI導入に踏み切れない</strong><span style="display:block;font-size:0.92em;color:var(--text-muted);margin-top:4px">機密情報・個人情報の取扱いや、日本本社の情報システム部門の承認が課題となっている。</span></span>',
-      '<span style="display:block"><strong>ChatGPTやCopilotなどを導入したものの、十分に活用できていない</strong><span style="display:block;font-size:0.92em;color:var(--text-muted);margin-top:4px">一部の社員だけが利用しており、組織全体の生産性向上につながっていない。</span></span>',
-      '<span style="display:block"><strong>経理・人事・総務などの間接業務を効率化したい</strong><span style="display:block;font-size:0.92em;color:var(--text-muted);margin-top:4px">資料作成、翻訳、データ集計、報告業務などに時間を取られ、本来注力すべき業務に十分な時間を使えていない。</span></span>',
-      '<span style="display:block"><strong>AIを活用できる人材を育て、社内で継続的に活用したい</strong><span style="display:block;font-size:0.92em;color:var(--text-muted);margin-top:4px">外部ベンダーに頼り続けるのではなく、自社主導でAIを活用・改善できる体制を構築したい。</span></span>'
+      ISSUE('AI導入に興味はあるが、何から始めればよいかわからない', '自社のどの業務にAIを活用できるのか、具体的なイメージが持てない。'),
+      ISSUE('情報漏えいやセキュリティが心配で、AI導入に踏み切れない', '機密情報・個人情報の取扱いや、日本本社の情報システム部門の承認が課題となっている。'),
+      ISSUE('ChatGPTやCopilotなどを導入したものの、十分に活用できていない', '一部の社員だけが利用しており、組織全体の生産性向上につながっていない。'),
+      ISSUE('経理・人事・総務などの間接業務を効率化したい', '資料作成、翻訳、データ集計、報告業務などに時間を取られ、本来注力すべき業務に十分な時間を使えていない。'),
+      ISSUE('AIを活用できる人材を育て、社内で継続的に活用したい', '外部ベンダーに頼り続けるのではなく、自社主導でAIを活用・改善できる体制を構築したい。'),
+      ISSUE('AIで資料は作れても、提案の妥当性を判断できない', '整った報告や改善案は出てくるが、自社の状況や制約を踏まえているのか、結局日本人側が確かめている。'),
+      ISSUE('「もっと考えて」と伝えても、提案が深まらない', '現地マネジャーに改善を任せたいのに、出来事の説明や目の前の応急処置で止まってしまう。'),
+      ISSUE('同じ言葉を使っているのに、期待する行動が違う', '「挑戦して」「営業を強化して」と伝えても、相手が思い描く仕事と、上司が求める成果がかみ合わない。'),
+      ISSUE('現地マネジャーに、どこまで任せてよいか迷う', '業務を任せたい一方で、支援の仕方や判断範囲が曖昧になり、問題の整理や意思決定を引き取り続けている。')
     ]
   },
 
@@ -114,29 +145,25 @@ window.LP_CONFIG = {
     en: 'EVENT OVERVIEW',
     title: '開催概要',
     detail_title: 'セミナー情報',
-    schedule_title: 'タイムテーブル（ジャカルタ時間）',
+    schedule_title: 'プログラム（ジャカルタ時間）',
     details: [
-      { label: '名称',     value: '無料合同セミナー：' + TBD('全体タイトル') },
-      { label: '開催日',   value: TBD('開催日') },
-      { label: '時間',     value: TBD('時間（ジャカルタ時間）') },
+      { label: '名称',     value: FULL_TITLE + '<br>' + FULL_SUB },
+      { label: '開催日',   value: '2026年12月9日（水）' },
+      { label: '時間',     value: '15:00〜17:00（ジャカルタ時間）' },
+      { label: '開催形式', value: 'オンライン（Zoom）<br><span style="font-size:0.9em;color:#4a5568">お申し込み後、当日の視聴に必要なURLをご案内いたします。</span>' },
       { label: '締切',     value: TBD('申込締切') },
-      { label: '会場',     value: TBD('会場名・住所') },
       { label: '主催',     value: 'PT WILLSEED PARTNERS INDONESIA' },
       { label: '共催',     value: '株式会社フォーポイント' },
       { label: '参加費',   value: '無料' },
-      { label: '対象',     value: 'インドネシアをはじめとする海外拠点の経営者・経営幹部、管理部門責任者、人事・総務・経理責任者、IT・DX推進担当者など<br><span style="font-size:0.9em;color:#4a5568">特に、AIの導入を検討している企業や、導入後の社内活用・定着に課題を感じている企業の皆様におすすめです。</span><br>' + TBD('弊社パートの対象者と統合') },
+      { label: '対象',     value: TARGET_TXT + '<br><span style="font-size:0.9em;color:#4a5568">' + TARGET_NOTE + '</span>' },
       { label: 'お問合せ', value: '<span style="display:block;line-height:2">セミナー担当：' + TBD('担当者名') + '<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6282321228694" style="color:var(--primary)">+62 823 2122 8694</a></span>' }
     ],
     schedule: [
       {
-        part: TBD('時間'),
-        title: '第一部：' + TBD('弊社パートのタイトル'),
-        body: TBD('弊社パートの講演内容')
-      },
-      {
-        part: TBD('時間'),
-        title: '第二部：AI導入・活用の進め方 ～セキュアな環境整備から、現場で使える仕組みづくりまで～',
-        body: `<strong>1. 生成AIの基礎と企業利用におけるセキュリティ</strong><br>
+        part: '15:00〜 ' + TBD('時間配分'),
+        title: '第1部：' + P1_TITLE + ' ' + P1_SUB,
+        body: `<span style="display:block;font-size:0.9em;color:#4a5568;margin-bottom:8px">登壇：加藤 豪（株式会社フォーポイント 代表取締役）</span>
+<strong>1. 生成AIの基礎と企業利用におけるセキュリティ</strong><br>
 ・生成AIの仕組みと、できること・できないこと<br>
 ・入力した機密情報や個人情報はどう扱われるのか<br>
 ・法人向けAIサービスの安全な利用環境と、インドネシアの個人情報保護法への対応<br><br>
@@ -154,8 +181,21 @@ window.LP_CONFIG = {
 ・社内のAI推進人材の育成と継続的な活用体制づくり`
       },
       {
-        part: TBD('時間'),
-        title: TBD('懇親会・質疑応答など'),
+        part: TBD('時間配分'),
+        title: '第2部：' + P2_TITLE + ' ' + P2_SUB,
+        body: `<span style="display:block;font-size:0.9em;color:#4a5568;margin-bottom:8px">登壇：加藤 健太（WS PARTNERS PTE LTD 代表）</span>
+<strong>1. AI時代にマネジャーが担う思考と判断</strong><br>
+AIによる効率化が進む仕事と、人が責任を持つ課題設定・優先順位の判断を整理。AIの提案を自社の現場に照らして検証し、人を動かすマネジメントを考えます。<br><br>
+<strong>2. なぜ「もっと自分で考えて」が機能しないのか</strong><br>
+「事情の説明で終わる」「同じ言葉でも期待する行動が違う」「応急処置にとどまる」。こうした場面を「論理・認識・知性」の三つから捉え直し、育成の焦点を明確にします。<br><br>
+<strong>3. 具体と抽象を行き来する力をどう育てるか</strong><br>
+一つの出来事を説明する段階から、複数の事例を比較し、共通する課題を見つけ、対策を選ぶ段階へ。架空の業務事例を使い、思考を一段深めるために必要な作業を分解します。<br><br>
+<strong>4. 考える経験を積める任せ方と支援の設計</strong><br>
+目的と期待成果、扱う範囲、判断できる権限、途中で確認する点を具体化。本人ができることを見ながら支援を減らし、分析や判断も任せられる組織に近づけるアプローチを紹介します。`
+      },
+      {
+        part: TBD('時間配分') + ' 〜17:00',
+        title: '質疑応答',
         body: ''
       }
     ]
@@ -166,16 +206,16 @@ window.LP_CONFIG = {
     title: '登壇者紹介',
     items: [
       {
-        img: 'images/photo_trainer_wsp_tbd.png',
-        name: '【TBD】弊社登壇者名',
-        role: 'WS PARTNERS PTE LTD',
-        profile: TBD('プロフィール')
-      },
-      {
         img: 'images/photo_trainer_kato_go.jpg',
         name: '加藤 豪　Go Kato',
-        role: '株式会社フォーポイント 代表取締役<br>PT FOUR POINT INDONESIA President Director<br>米国公認会計士（USCPA, Inactive）',
+        role: '第1部 登壇<br>株式会社フォーポイント 代表取締役<br>PT FOUR POINT INDONESIA President Director<br>米国公認会計士（USCPA, Inactive）',
         profile: '東京の大手コンサルティングファームで会計・税務・内部監査業務に従事し、多数の国際案件を経験。2016年に同社タイ現地法人のManaging Director、2017年に日系会計事務所のインドネシア現地法人Directorに就任。2022年にPT FOUR POINT INDONESIA、2024年に株式会社フォーポイントを設立。<br><br>現在は東南アジア進出企業に対し、会計・税務、労務・法務・M&amp;A等の支援を行うとともに、システム開発、AIコンサルティングにも取り組む。社内には会計士・税理士・弁護士などの専門家に加え、多数のITエンジニアを擁し、「AI×士業」という独自の強みを活かしたプロダクトの開発を推進している。自社業務へのAI導入・活用を積極的に進めており、その実践経験をもとに、セキュリティと業務効率化を両立させるAI導入のあり方を提案している。'
+      },
+      {
+        img: '/assets/photos/trainers/kato.jpg',
+        name: '加藤 健太　Kenta Kato',
+        role: '第2部 登壇<br>WS PARTNERS PTE LTD　代表（Managing Director）',
+        profile: 'キャリアを通じて一貫して「人と組織の可能性の最大化」をミッションとして従事。リクルートグループにて入社3年目に年間MVP（約2,000名中1位）を受賞し、新規事業開発コンテスト「NEW RING」では準グランプリを獲得。精神障がい者の社会復帰支援事業の立ち上げを推進した。その後、株式会社ウィルシードにて大手商社・自動車関連メーカー向けの人材教育コンサルタントとして育成体系構築やマネジメント研修を担当。<br><br>2017年にWS Partnersの立ち上げに参画し、2018年より弊社代表としてASEAN（マレーシア、シンガポール、インドネシア、タイ、ベトナム）の日系企業の人材育成・組織開発を推進している。現地文化と企業の構造的課題を踏まえ、「ReactiveからProactiveへの転換」を軸としたGM育成施策や組織変革プロジェクトを多数推進。人の思考発達や組織知のメカニズム探究を仕事の中心とし、スポーツマネジメントとの橋渡しにも関心を持つ。'
       }
     ]
   },
@@ -185,23 +225,25 @@ window.LP_CONFIG = {
 
   cancel: {
     en: '',
-    title: TBD('弊社パートの訴求見出し'),
-    body: `<p>${TBD('弊社パートの訴求本文（ベースLPではここに「マネジメントは自然と身に付くスキルではありません」の段落）')}</p>
+    title: 'AI活用を進める今、マネジャーに何を任せ、どう育てますか。',
+    body: `<p>AIを安全に使う仕組みと、その出力を現場の判断・行動につなげる力。どちらも、自社の生産性を高めるために必要です。</p>
+<p>第1部では、セキュリティを確保しながらAIを導入し、現場に定着させる進め方を解説します。第2部では、インドネシア人マネジャーの「考える力」を育てるために、期待する役割の伝え方と、仕事の任せ方を具体的に考えます。</p>
+<p>AIに任せること、人に任せること、そして人が育つために必要な支援を、あわせて見直す機会としてご参加ください。</p>
 <div style="background:rgba(243,156,18,.15);border:2px solid #f39c12;border-radius:10px;padding:20px 24px;margin:14px 0 18px 0">
   <p style="font-size:0.85rem;font-weight:700;color:#f39c12;letter-spacing:0.05em;margin:0 0 12px 0">── こんな方にぜひご参加ください ──</p>
   <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
     <li style="display:flex;align-items:flex-start;gap:12px;font-weight:700;font-size:1rem;color:#fff">
-      <span style="color:#f39c12;font-size:1.2em;line-height:1;flex-shrink:0">✔</span>AIの導入を検討しているが、安全性や進め方に不安がある方
+      <span style="color:#f39c12;font-size:1.2em;line-height:1;flex-shrink:0">✔</span>安全にAIを導入し、社内で継続的に活用できる体制をつくりたい方
     </li>
     <li style="display:flex;align-items:flex-start;gap:12px;font-weight:700;font-size:1rem;color:#fff">
-      <span style="color:#f39c12;font-size:1.2em;line-height:1;flex-shrink:0">✔</span>AIを導入したものの、社内での活用・定着に課題を感じている方
+      <span style="color:#f39c12;font-size:1.2em;line-height:1;flex-shrink:0">✔</span>AIを使う現地マネジャーの、課題設定・分析・判断の力を高めたい方
     </li>
     <li style="display:flex;align-items:flex-start;gap:12px;font-weight:700;font-size:1rem;color:#fff">
-      <span style="color:#f39c12;font-size:1.2em;line-height:1;flex-shrink:0">✔</span>AIに仕事を任せ、人はより付加価値の高い仕事へシフトしたい方
+      <span style="color:#f39c12;font-size:1.2em;line-height:1;flex-shrink:0">✔</span>日本人が判断を引き取り続ける状態を変え、現地マネジャーに任せる範囲を広げたい方
     </li>
   </ul>
 </div>
-<p>参加費は<strong>無料</strong>です。ぜひお気軽にご参加ください。</p>`
+<p>参加費は<strong>無料</strong>、オンライン（Zoom）でどこからでもご参加いただけます。</p>`
   },
 
   contact: {
@@ -217,9 +259,9 @@ window.LP_CONFIG = {
   apply: {
     en: 'APPLY',
     title: 'セミナーへのお申し込み',
-    body: `下記の申込フォームからお申し込みください。<strong>参加費は無料</strong>です。<br>お申し込み後、改めてメールにて当日のご案内をいたします。<br><br>${TBD('申込フォーム（GASビルダーで生成予定）')}`,
+    body: '下記ボタンより、Zoomの参加登録ページへお進みください。<strong>参加費は無料</strong>です。<br>ご登録後、当日の視聴に必要なURLをご案内いたします。',
     mailto_subject: '',
-    mailto_href: '@@MAILTO_HREF@@'
+    mailto_href: ''
   },
 
   company: {
@@ -258,6 +300,7 @@ window.LP_CONFIG = {
     hubspot_portal_id: '',
     hubspot_form_id:   '',
     hubspot_region:    'na1',
-    thank_you_url:     '_thank-you.html'
+    thank_you_url:     '',
+    zoom_url:          ''   // TODO: Zoom参加登録URL（決まったらここに入れると全CTAに反映）
   }
 };

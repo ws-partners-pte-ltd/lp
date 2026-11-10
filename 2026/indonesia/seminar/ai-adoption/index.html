@@ -1017,8 +1017,8 @@
     </div>
     <div class="hero-visual-content reveal-right">
       <div class="hero-images-wrapper">
-        <img id="hero-img-sub1" class="img-collage img-online" src="images/photo_trainer_kato_go.jpg" alt="">
-        <img id="hero-img-main" class="img-collage img-instructor" src="images/photo_trainer_wsp_tbd.png" alt="">
+        <img id="hero-img-sub1" class="img-collage img-online" src="/assets/photos/trainers/kato.jpg" alt="加藤 健太">
+        <img id="hero-img-main" class="img-collage img-instructor" src="images/photo_trainer_kato_go.jpg" alt="加藤 豪">
         <div class="hero-badge-circle">
           <span class="badge-en" id="badge-en"></span>
           <span class="badge-ja" id="badge-ja"></span>
@@ -1160,26 +1160,14 @@
 
     <p style="text-align:center; font-size:0.88rem; color:rgba(255,255,255,.8); margin-bottom:18px;">
       <a href="https://ws-partners.com.sg/privacy/" target="_blank" rel="noopener"
-         style="color:#7ecfff; text-decoration:underline;">利用規約・プライバシーポリシー</a>をお読みの上、同意して送信してください。
+         style="color:#7ecfff; text-decoration:underline;">利用規約・プライバシーポリシー</a>をお読みの上、ご登録ください。
     </p>
 
-    <div class="form-wrapper" style="background:#fff;border-radius:var(--radius, 16px);padding:40px 32px;max-width:680px;margin:0 auto;text-align:center;">
-        <p style="font-size:clamp(1rem,2.2vw,1.18rem); font-weight:900; color:#1a202c; line-height:1.7; margin-bottom:10px;">お申し込みは、別ページの申込フォームから承ります</p>
-        <p style="font-size:.95rem; color:#4a5568; line-height:1.95; margin-bottom:26px;">下のボタンを押すと、<strong>別タブで申込フォーム</strong>が開きます。<br>ご入力・送信が完了しましたら、このページは閉じていただいて構いません。</p>
-        <a id="apply-form-btn" href="#apply" class="btn-cta" style="opacity:.55;pointer-events:none">申込フォームは準備中です</a><!-- TODO公開時: href を申込フォームURL・target="_blank"・文言「申込フォームを開く」に戻す -->
-      </div>
-
-      <!-- メール申込み案内（セキュリティ上Googleフォームが表示されない方向け） -->
-      <div style="margin-top:32px; padding:20px 24px; background:#f0f4ff; border-radius:12px; border-left:4px solid #0050b3; max-width:680px; margin-left:auto; margin-right:auto;">
-        <p style="font-size:0.9rem; color:#1a365d; font-weight:700; margin-bottom:8px;">🔒 フォームが開けない方へ（企業のセキュリティ設定等）</p>
-        <p style="font-size:0.88rem; color:#2d3748; margin-bottom:12px;">
-          下の「メールで申し込む」ボタンをクリックすると、メール本文にフォームと同じ質問項目が自動で挿入されます。各項目にご回答の上、送信してください。折り返しご連絡いたします。
-        </p>
-        <a href="#apply" style="opacity:.55;pointer-events:none" data-todo="mailto_href"
-           style="display:inline-block; background:#0050b3; color:#fff; font-weight:700; padding:10px 24px; border-radius:8px; text-decoration:none; font-size:0.9rem;">
-          ✉️ メールで申し込む
-        </a>
-      </div>
+    <div style="max-width:680px;margin:0 auto;text-align:center">
+      <!-- Zoom参加登録URLは config_ja.js の forms.zoom_url に入れる。未設定のあいだは準備中表示 -->
+      <a id="zoom-apply-btn" href="#apply" class="btn-cta" style="font-size:1.15rem;padding:18px 48px;display:inline-block;opacity:.55;pointer-events:none">参加登録ページは準備中です</a>
+      <p style="margin-top:18px;font-size:0.85rem;color:rgba(255,255,255,.65);">※ボタンをクリックすると、Zoomの参加登録ページが開きます。</p>
+    </div>
 
   </div>
 </section>
@@ -1219,7 +1207,7 @@
 
   function loadScript(src, cb, fallbackSrc) {
     var s = document.createElement('script');
-    s.src = src + (src.endsWith('.js') ? '?v=8' : '');
+    s.src = src + (src.endsWith('.js') ? '?v=20261110b' : '');
     s.onload  = cb;
     s.onerror = function () {
       if (fallbackSrc) {
@@ -1415,6 +1403,15 @@
     initScrollReveal();
 
     /* Init form */
+    /* Zoom: forms.zoom_url があれば全CTAを参加登録ページへ */
+    if (c.forms && c.forms.zoom_url) {
+      var _z = c.forms.zoom_url;
+      document.querySelectorAll('a.btn-cta, a.btn-entry-header, a.btn-bar-entry').forEach(function (a) {
+        a.setAttribute('href', _z); a.setAttribute('target', '_blank'); a.setAttribute('rel', 'noopener');
+      });
+      var _zb = document.getElementById('zoom-apply-btn');
+      if (_zb) { _zb.textContent = '無料で申し込む'; _zb.style.opacity = ''; _zb.style.pointerEvents = ''; _zb.classList.add('pulse'); }
+    }
     initForm(c.forms);
   }
 
