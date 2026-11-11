@@ -6,7 +6,7 @@
                  （Google Doc 1bm6qy-_pwrsux_EUw4feut5PNNS4onCwwr1qn0R5HNc）を反映。
                  第1部＝フォーポイント、第2部＝WS PARTNERS。オンライン（Zoom）開催。
                  申込は Zoom 参加登録に一本化（forms.zoom_url）。Googleフォーム・mailto・GAS は作らない。
-   未確定は TBD('…')（画面では黄色マーカー）。
+   2026-11-11 v3: 申込締切・担当・時間配分・Zoom登録URLを確定（松下さん連絡）。本公開。
    ============================================================ */
 var TBD = function (t) {
   return '<span style="background:#fff3bf;color:#7c5e00;font-weight:700;padding:0 4px;border-radius:3px">【TBD】' + t + '</span>';
@@ -78,7 +78,7 @@ window.LP_CONFIG = {
     deadline_label: '【参加費】',
     deadline: '<strong>無料</strong>',
     close_label: '【申込締切】',
-    close: TBD('申込締切'),
+    close: '当日 午前10:00（ジャカルタ時間）',
     cta_text: '無料で申し込む',
     target_label: '【対象】',
     target: 'インドネシア日系企業の経営者・経営幹部、拠点責任者、日本人マネジャー、人事・管理部門・IT/DX推進の責任者',
@@ -151,16 +151,16 @@ window.LP_CONFIG = {
       { label: '開催日',   value: '2026年12月9日（水）' },
       { label: '時間',     value: '15:00〜17:00（ジャカルタ時間）' },
       { label: '開催形式', value: 'オンライン（Zoom）<br><span style="font-size:0.9em;color:#4a5568">お申し込み後、当日の視聴に必要なURLをご案内いたします。</span>' },
-      { label: '締切',     value: TBD('申込締切') },
+      { label: '締切',     value: '2026年12月9日（水）午前10:00（ジャカルタ時間）' },
       { label: '主催',     value: 'PT WILLSEED PARTNERS INDONESIA' },
       { label: '共催',     value: '株式会社フォーポイント' },
       { label: '参加費',   value: '無料' },
       { label: '対象',     value: TARGET_TXT + '<br><span style="font-size:0.9em;color:#4a5568">' + TARGET_NOTE + '</span>' },
-      { label: 'お問合せ', value: '<span style="display:block;line-height:2">セミナー担当：' + TBD('担当者名') + '<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6282321228694" style="color:var(--primary)">+62 823 2122 8694</a></span>' }
+      { label: 'お問合せ', value: '<span style="display:block;line-height:2">セミナー担当：松下・友澤<br><a href="mailto:support@ws-partners.com.sg" style="color:var(--primary)">support@ws-partners.com.sg</a><br><a href="tel:+6282321228694" style="color:var(--primary)">+62 823 2122 8694</a></span>' }
     ],
     schedule: [
       {
-        part: '15:00〜 ' + TBD('時間配分'),
+        part: '15:00〜15:40',
         title: '第1部：' + P1_TITLE + ' ' + P1_SUB,
         body: `<span style="display:block;font-size:0.9em;color:#4a5568;margin-bottom:8px">登壇：加藤 豪（株式会社フォーポイント 代表取締役）</span>
 <strong>1. 生成AIの基礎と企業利用におけるセキュリティ</strong><br>
@@ -181,7 +181,7 @@ window.LP_CONFIG = {
 ・社内のAI推進人材の育成と継続的な活用体制づくり`
       },
       {
-        part: TBD('時間配分'),
+        part: '15:40〜16:20',
         title: '第2部：' + P2_TITLE + ' ' + P2_SUB,
         body: `<span style="display:block;font-size:0.9em;color:#4a5568;margin-bottom:8px">登壇：加藤 健太（WS PARTNERS PTE LTD 代表）</span>
 <strong>1. AI時代にマネジャーが担う思考と判断</strong><br>
@@ -194,7 +194,7 @@ AIによる効率化が進む仕事と、人が責任を持つ課題設定・優
 目的と期待成果、扱う範囲、判断できる権限、途中で確認する点を具体化。本人ができることを見ながら支援を減らし、分析や判断も任せられる組織に近づけるアプローチを紹介します。`
       },
       {
-        part: TBD('時間配分') + ' 〜17:00',
+        part: '16:20〜17:00',
         title: '質疑応答',
         body: ''
       }
@@ -250,7 +250,7 @@ AIによる効率化が進む仕事と、人が責任を持つ課題設定・優
     title: 'お問い合わせ先',
     body: `セミナーに関するご質問はお気軽にご連絡ください。<br><br>
 <span style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
-  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>セミナー担当：${TBD('担当者名')}</span></span>
+  <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">👤</span><span>セミナー担当：<strong>松下・友澤</strong></span></span>
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">✉</span><span><a href="mailto:support@ws-partners.com.sg" style="color:rgba(255,255,255,.85);text-decoration:underline">support@ws-partners.com.sg</a></span></span>
   <span style="display:flex;align-items:flex-start;gap:10px"><span style="opacity:.6;min-width:20px">📞</span><span><a href="tel:+6282321228694" style="color:rgba(255,255,255,.85);text-decoration:underline">+62 823 2122 8694</a></span></span>
 </span>`
@@ -301,6 +301,6 @@ AIによる効率化が進む仕事と、人が責任を持つ課題設定・優
     hubspot_form_id:   '',
     hubspot_region:    'na1',
     thank_you_url:     '',
-    zoom_url:          ''   // TODO: Zoom参加登録URL（決まったらここに入れると全CTAに反映）
+    zoom_url:          'https://us02web.zoom.us/webinar/register/WN__3tW1wQBTMqDAL80X44Ksg'
   }
 };

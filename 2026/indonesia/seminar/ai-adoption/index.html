@@ -6,7 +6,6 @@
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TLGVMTDZ');</script>
   <!-- End Google Tag Manager -->
-  <meta name="robots" content="noindex, nofollow">
   <title id="page-title">研修LP | WS PARTNERS</title>
   <meta id="meta-description" name="description" content="">
   <meta property="og:title" id="og-title" content="">
@@ -926,6 +925,11 @@
     #newtab-thankyou .ty-info { background: #f4f7f9; border-radius: 10px; padding: 16px 20px; text-align: left; margin-bottom: 20px; font-size: 0.875rem; color: var(--text-muted); line-height: 1.7; }
     #newtab-thankyou .ty-back { display: inline-block; background: var(--primary); color: #fff; font-weight: 700; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-size: 0.95rem; }
     #newtab-thankyou .ty-back:hover { opacity: .85; }
+    /* ai-adoption: 2部構成の長いサブタイトルでスマホのヒーローが1画面を超えるため縮める */
+    @media (max-width: 600px) {
+      .hero-subtitle { font-size: 0.8rem !important; line-height: 1.6 !important; margin-top: 0.4rem; }
+      .hero-title span { font-size: 0.58em !important; }
+    }
   </style>
 </head>
 <body>
@@ -1207,7 +1211,7 @@
 
   function loadScript(src, cb, fallbackSrc) {
     var s = document.createElement('script');
-    s.src = src + (src.endsWith('.js') ? '?v=20261110b' : '');
+    s.src = src + (src.endsWith('.js') ? '?v=20261111' : '');
     s.onload  = cb;
     s.onerror = function () {
       if (fallbackSrc) {
@@ -1527,8 +1531,5 @@
   }
 })();
 </script>
-<!-- DRAFT-BANNER: 本公開時にこのブロックを削除 -->
-<div id="draft-banner" style="position:fixed;left:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:9999;background:#7c5e00;color:#fff;font:700 12px/1.5 'Noto Sans JP',sans-serif;padding:8px 14px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25);max-width:calc(100vw - 24px)">確認用の下書きです（未公開）｜黄色の【TBD】は確定待ち・お申し込みはまだ受け付けていません</div>
-<!-- /DRAFT-BANNER -->
 </body>
 </html>
