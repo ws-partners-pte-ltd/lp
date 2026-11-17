@@ -94,8 +94,8 @@ window.LP_CONFIG = {
     body:
       /* ── 全体：第1部と第2部の関係 ── */
 `<p style="font-size:1.15rem;font-weight:700;line-height:1.7;color:#1a202c;margin:0 0 12px 0">AIを導入するだけでは、組織の成果は最大化しない。<br><span style="background:linear-gradient(transparent 55%, #ffe08a 55%)">AIを活用して成果を生み出せる人と組織を、どうつくるか。</span></p>
-<p>AIを安全に導入し、業務で活用することは重要です。しかし、AIの分析や提案を実際の成果につなげるには、それを使う人材の課題解決力と、主体的な判断を支える組織の仕組みが欠かせません。</p>
-<p>本セミナーは、AIの進化を単なる業務効率化ではなく、<strong>人材と組織の能力向上</strong>につなげるための2部構成です。</p>
+<p>AIを安全に導入し、業務で効果的に活用することは、生産性の向上や新たな価値創出に向けた重要な取り組みです。同時に、AIの進化を最大限に生かすためには、それを活用する人材の課題解決力を高め、主体的な判断と行動を支える組織づくりも欠かせません。</p>
+<p>本セミナーでは、<strong>「AIの導入・活用による業務の高度化・効率化」と「人材の課題解決力・組織能力の向上」</strong>の両面から、AI時代のインドネシア現地法人に求められる取り組みを考えます。</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:16px 0 12px">
   <div style="background:#fff;border:2px solid #0050b3;border-radius:12px;padding:16px 18px;min-width:0">
     <p style="font-size:0.8rem;font-weight:700;color:#0050b3;letter-spacing:0.08em;margin:0 0 6px">第1部　株式会社フォーポイント</p>
@@ -105,8 +105,7 @@ window.LP_CONFIG = {
     <p style="font-size:0.8rem;font-weight:700;color:#d35400;letter-spacing:0.08em;margin:0 0 6px">第2部　WS PARTNERS</p>
     <p style="font-weight:700;margin:0;line-height:1.6">AI時代に求められる<strong>課題解決力</strong>と、現地マネジャーの思考力を高める<strong>育成・マネジメント</strong>を学ぶ</p>
   </div>
-</div>
-<p style="margin:0 0 8px">2つの講演をつなぐ共通テーマは<strong>「抽象化」</strong>です。AIは大量の情報からパターンを見いだし、共通する原因や問題の仮説を示すことができます。ただし、その仮説が自社の実態に合っているかを確かめ、判断するのは人の役割です。</p>` +
+</div>` +
       /* ── 第1部：フォーポイント ── */
       PART_H('第1部', P1_TITLE, P1_SUB, false) +
 `<p style="font-size:1.15rem;font-weight:700;line-height:1.7;color:#1a202c;margin:0 0 6px 0">AI導入は、ツール選びではなく<br><span style="background:linear-gradient(transparent 55%, #ffe08a 55%)">「業務・人・ルールの再設計」</span>から。</p>
