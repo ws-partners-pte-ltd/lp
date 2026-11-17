@@ -127,26 +127,7 @@ window.LP_CONFIG = {
 <p>インドネシアの日系企業で、こうした課題を感じる経営者・日本人マネジャーは少なくありません。</p>
 <p>生成AIの進化によって、情報収集や分析、問題の原因仮説の提示まで、AIが支援できる領域は広がっています。一方で、AIの回答が必ずしも自社の実態や課題の本質を正しく捉えているとは限りません。</p>
 <p>だからこそ重要になるのが、個別の事象から共通する問題を見いだす<strong>「抽象化」</strong>、そして具体と抽象を行き来しながら、課題の本質を捉え、判断する力です。</p>
-<p>では、なぜ現地マネジャーに「もっと自分で考えて」と伝えても、期待する課題解決につながらないのでしょうか。本講演では、その背景を<strong>「論理・認識・知性」</strong>という3つの観点から読み解きます。さらに、実際の職場を想定したケースを通じて、現地マネジャーの課題解決力を高めるための、具体的な仕事の任せ方や育成・マネジメントのポイントを解説します。</p>
-<div style="background:#e8f0fb;border:2px solid #0050b3;border-radius:12px;padding:18px 22px;margin:18px 0">
-  <p style="font-size:0.85rem;font-weight:700;color:#0050b3;letter-spacing:0.1em;margin:0 0 12px 0">── 課題解決力の発揮を妨げる3つの壁 ──</p>
-  <div style="display:flex;flex-direction:column;gap:12px">
-    <div><p style="font-weight:700;margin:0">① 論理の違い：何を「筋が通っている」と感じるか</p><p style="font-size:0.92em;color:var(--text-muted);margin:2px 0 0">例：出荷遅延の報告で、担当者の事情を説明するのか、原因・影響・対応策を整理するのか。求められる判断の目的によって、必要な説明の筋道は変わります。</p></div>
-    <div><p style="font-weight:700;margin:0">② 認識の違い：同じ言葉から何を思い描くか</p><p style="font-size:0.92em;color:var(--text-muted);margin:2px 0 0">例：「営業強化」を訪問件数を増やすことと捉えるか、顧客課題の把握と価値提案の強化と捉えるか。言葉が同じでも、行動は変わります。</p></div>
-    <div><p style="font-weight:700;margin:0">③ 知性の違い：どこまで複雑な関係を捉えられるか</p><p style="font-size:0.92em;color:var(--text-muted);margin:2px 0 0">個別の出来事を説明することと、複数の出来事から共通する問題を見いだし、因果関係や改善策を考えることでは、必要な思考作業が異なります。</p></div>
-  </div>
-  <p style="font-size:0.8rem;color:var(--text-muted);margin:12px 0 0">※ここでの「知性」は、人の優劣や国籍による違いではなく、その業務で求められる思考の構造の違いを指します。</p>
-</div>
-<div style="background:#fff;border:1px solid #cbd5e0;border-radius:12px;padding:18px 22px;margin:18px 0">
-  <p style="font-size:0.85rem;font-weight:700;color:#4a5568;letter-spacing:0.05em;margin:0 0 12px 0">架空ケース：出荷遅延を、どこまで考えるか</p>
-  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:0.95em">
-    <li><strong style="color:#0050b3">A 事象の整理</strong>　担当者の欠勤により、梱包開始が遅れた。</li>
-    <li><strong style="color:#0050b3">B 共通問題の抽象化</strong>　複数の工程で担当者が不在になると仕事が止まる。共通する問題は属人化ではないか。</li>
-    <li><strong style="color:#0050b3">C 因果関係の検討</strong>　属人性が高いほど代替対応が難しく、納期が不安定になる。</li>
-    <li><strong style="color:#0050b3">D 複数要素を統合した判断</strong>　多能工化は必要だが、品質・納期・育成コストを踏まえ、段階的に進める。</li>
-  </ul>
-  <p style="font-size:0.92em;margin:12px 0 0">AからDまで、どれも「考えている」ことに変わりはありません。違うのは、考えていることの構造と複雑さです。上司が求める思考と、部下が実際に行っている思考作業の間には、ギャップがあるかもしれません。また、AIが「属人化」という問題を示せたとしても、それが現実の原因かどうかは、現場で確かめる必要があります。</p>
-</div>`,
+<p>では、なぜ現地マネジャーに「もっと自分で考えて」と伝えても、期待する課題解決につながらないのでしょうか。本講演では、その背景を<strong>「論理・認識・知性」</strong>という3つの観点から読み解きます。さらに、実際の職場を想定したケースを通じて、現地マネジャーの課題解決力を高めるための、具体的な仕事の任せ方や育成・マネジメントのポイントを解説します。</p>`,
     btn_text: '無料で申し込む',
     btn_url: '#apply'
   },
